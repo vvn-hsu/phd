@@ -218,6 +218,20 @@ def page_fallback_fields(html: str) -> dict:
 
 # --------------------------------------------------------------------------- adapters
 
+def harvest_links(soup, base: str, pattern, seen: dict[str, dict]) -> None:
+    """把頁面上符合 pattern 的職缺連結收進 seen。"""
+    for anchor in soup.find_all("a", href=True):
+        absolute = urljoin(base, anchor["href"])
+        if not pattern.search(absolute):
+            continue
+        title = clean(anchor.get_text(" ")) or clean(anchor.get("title") or "")
+        if len(title) < 6:
+            continue
+        key = job_id(absolute)
+        if key not in seen:
+            seen[key] = {"url": absolute, "title": title}
+
+
 def sample_hrefs(soup, base: str, limit: int = 12) -> list[str]:
     """列出頁面上像職缺的連結，用來猜 link_pattern。"""
     jobish = re.compile(r"job|vacan|vacature|stelle|career|position|anstall|ledig|phd|promov", re.I)
@@ -237,6 +251,9 @@ def sample_hrefs(soup, base: str, limit: int = 12) -> list[str]:
 def adapter_links(source: dict, cfg: dict) -> tuple[list[dict], str]:
     pattern = re.compile(source["link_pattern"])
     timeout = source.get("timeout", cfg["timeout"])
+    pages = max(1, int(source.get("pages", 1)))
+    page_param = source.get("page_param", "page")
+    page_start = int(source.get("page_start", 0))
     errors = []
     for url in source["urls"]:
         try:
@@ -246,17 +263,7 @@ def adapter_links(source: dict, cfg: dict) -> tuple[list[dict], str]:
             continue
         soup = BeautifulSoup(html, "lxml")
         seen: dict[str, dict] = {}
-        for anchor in soup.find_all("a", href=True):
-            href = anchor["href"]
-            absolute = urljoin(url, href)
-            if not pattern.search(absolute):
-                continue
-            title = clean(anchor.get_text(" ")) or clean(anchor.get("title") or "")
-            if len(title) < 6:
-                continue
-            key = job_id(absolute)
-            if key not in seen:
-                seen[key] = {"url": absolute, "title": title}
+        harvest_links(soup, url, pattern, seen)
         # 列表頁沒東西就試下一個候選網址；JSON-LD 有時直接掛在列表頁上
         for node in extract_jsonld(html):
             fields = jsonld_to_fields(node)
@@ -269,6 +276,21 @@ def adapter_links(source: dict, cfg: dict) -> tuple[list[dict], str]:
             key = job_id(link)
             record = seen.setdefault(key, {"url": link, "title": fields["title"]})
             record.update({k: v for k, v in fields.items() if v})
+        if seen and pages > 1:
+            # 有分頁就往後翻，翻到沒有新職缺為止
+            for page in range(page_start + 1, page_start + pages):
+                joiner = "&" if "?" in url else "?"
+                next_url = f"{url}{joiner}{page_param}={page}"
+                before = len(seen)
+                try:
+                    extra_soup = BeautifulSoup(fetch(next_url, timeout), "lxml")
+                except Exception as exc:  # noqa: BLE001 - 翻頁失敗就用已經抓到的
+                    log(f"       ↳ 第 {page} 頁抓取失敗：{exc}")
+                    break
+                harvest_links(extra_soup, next_url, pattern, seen)
+                if len(seen) == before:
+                    break
+                time.sleep(0.5)
         if seen:
             return list(seen.values()), url
         errors.append(f"{url} -> 0 links matched")

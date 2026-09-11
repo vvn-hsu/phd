@@ -54,6 +54,7 @@ sources:
       - https://euraxess.ec.europa.eu/jobs/search?f%5B0%5D=research_profile%3A1
       - https://euraxess.ec.europa.eu/jobs/search
     link_pattern: '/jobs/\d+'
+    pages: 12          # 一頁 10 筆，往後翻到沒有新職缺為止
     enrich: jsonld
 
   - id: jobsacuk

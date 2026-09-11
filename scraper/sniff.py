@@ -49,6 +49,23 @@ def sniff(url: str) -> None:
     soup = BeautifulSoup(html, "lxml")
     print("  <title>:", run.clean(soup.title.get_text() if soup.title else "")[:100])
 
+    feeds = [l.get("href") for l in soup.find_all("link", rel=True)
+             if "alternate" in " ".join(l.get("rel")) and "xml" in (l.get("type") or "")]
+    if feeds:
+        print("  頁面自己宣告的 feed：")
+        for feed_url in feeds[:6]:
+            print("    ", urljoin(url, feed_url))
+
+    endpoints = Counter()
+    for match in re.finditer(r"""https?://[^"'\s<>\\]{10,160}""", html):
+        candidate = match.group(0)
+        if re.search(r"/api/|graphql|\.json|/rss|/feed|search\?|/jobs\?", candidate, re.I):
+            endpoints[candidate.rstrip("\\")] += 1
+    if endpoints:
+        print("  頁面裡出現的 API / feed 網址：")
+        for candidate, count in endpoints.most_common(12):
+            print(f"    {count:>3}  {candidate[:140]}")
+
     ld = run.extract_jsonld(html)
     print(f"  JSON-LD JobPosting：{len(ld)} 個")
     for node in ld[:3]:

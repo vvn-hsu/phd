@@ -131,11 +131,17 @@ function saveSet(key, set){
 }
 const seen = loadSet(LS.seen), starred = loadSet(LS.star);
 
-// 上次造訪：進頁面時把「這次」寫進去，但比較時用上一次的時間戳
+// 上次造訪：同一天內重開好幾次，基準日都維持在「上一個有來的日子」
 let prevVisit = '';
 try {
-  prevVisit = localStorage.getItem(LS.visit) || '';
-  localStorage.setItem(LS.visit, new Date().toISOString().slice(0,10));
+  const todayStr = new Date().toISOString().slice(0,10);
+  let current = localStorage.getItem(LS.visit) || '';
+  prevVisit = localStorage.getItem(LS.prevVisit) || '';
+  if (current !== todayStr) {
+    prevVisit = current;                         // 今天第一次來，把上次那天當基準
+    localStorage.setItem(LS.prevVisit, prevVisit);
+    localStorage.setItem(LS.visit, todayStr);
+  }
 } catch {}
 
 const state = { data:null, q:'', school:'', country:'', sort:'new',
