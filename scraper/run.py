@@ -47,7 +47,8 @@ PHD_STRONG = re.compile(
 PHD_WEAK = re.compile(r"(\bdoctoral\b|\bdoctorate\b|research\s+student)", re.I)
 POSTDOC = re.compile(r"(post[\s\-]?doc|postdoctoral|post[\s\-]?doctoral)", re.I)
 
-KEEP_CLOSED_DAYS = 45  # 職缺從列表消失後，還在資料裡保留幾天
+KEEP_CLOSED_DAYS = 45
+SCORE_VERSION = 2   # 計分規則改過就 +1，舊資料會自動重抓重算  # 職缺從列表消失後，還在資料裡保留幾天
 
 
 # --------------------------------------------------------------------------- 工具
@@ -520,6 +521,7 @@ def enrich_job(job: dict, timeout: int) -> None:
     page_score, page_hits = score_topics(page_text, min_weight=2)
     job["page_score"] = page_score
     job["page_topics"] = page_hits
+    job["score_version"] = SCORE_VERSION
     if job.get("found_via"):
         job["query_ok"] = query_matches(job["found_via"], page_text)
 
@@ -650,6 +652,8 @@ def main() -> int:
         old = known.get(job["id"], {})
         if not old:
             return True
+        if old.get("score_version") != SCORE_VERSION:
+            return True    # 計分規則換過了，這筆要重算
         if old.get("enrich_attempts", 0) >= 3:
             return False
         unknown_university = (not old.get("university")
@@ -670,7 +674,8 @@ def main() -> int:
     for job in fresh.values():
         old = known.get(job["id"], {})
         for key in ("posted", "deadline", "location", "department", "summary", "university",
-                    "enrich_attempts", "page_score", "page_topics", "query_ok"):
+                    "enrich_attempts", "page_score", "page_topics", "query_ok",
+                    "score_version"):
             if key == "university" and old.get(key) == old.get("source_name"):
                 continue  # 舊版把來源名稱當學校存進去過，那不是真的雇主
             if not job.get(key) and old.get(key):
