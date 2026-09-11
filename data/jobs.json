@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-11T08:22:57+00:00",
+ "generated_at": "2026-09-11T08:25:21+00:00",
  "date": "2026-09-11",
  "counts": {
   "open": 9,
@@ -75,7 +75,7 @@
    "status": "error",
    "count": 0,
    "url_used": "",
-   "error": "https://www.dtu.dk/english/about/job-and-career/vacant-positions -> 0 links matched; https://efzu.dtu.dk/ -> ConnectionError: HTTPSConnectionPool(host='efzu.dtu.dk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='efzu.dtu.dk', port=443): Failed to resolve 'efzu.dtu.dk' ([Errno -2] Name or service not known)\"))"
+   "error": "https://www.dtu.dk/english/about/job-and-career/vacant-positions -> 0 links matched; https://efzu.dtu.dk/ -> ConnectionError: HTTPSConnectionPool(host='efzu.dtu.dk', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTP"
   },
   {
    "id": "kuleuven",
