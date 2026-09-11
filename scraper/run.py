@@ -120,6 +120,16 @@ def query_of(url: str) -> str:
     return ""
 
 
+def query_matches(query: str, blob: str) -> bool:
+    """搜尋引擎常常很鬆（搜 human-computer interaction 會跑出植物細胞學），
+    所以要確認關鍵字真的出現在職缺內文，才算是真的命中。"""
+    words = [w for w in re.split(r"[^a-z0-9]+", (query or "").lower()) if len(w) >= 4]
+    if not words:
+        return False
+    low = blob.lower()
+    return all(re.search(rf"\b{re.escape(w)}", low) for w in words)
+
+
 def term_label(term: str) -> str:
     """把正則寫法的關鍵字變回人看得懂的字，給網頁當標籤用。"""
     label = re.sub(r"\[[-\s]+\]", " ", term)          # [- ] -> 空白
@@ -656,12 +666,20 @@ def main() -> int:
     for job in fresh.values():
         score, hits = score_topics(
             job.get("title", ""), job.get("summary", ""), job.get("department", ""))
-        # 從 HCI 關鍵字搜尋進來的，這件事本身就是證據
+        # 從 HCI 關鍵字搜尋進來的：關鍵字真的出現在內文才給滿分，
+        # 只是被搜尋引擎鬆散地撈出來的話只給 1 分，不足以自己過門檻。
         boost = job.get("topic_boost", 0)
         if boost:
-            score += boost
-            label = f"搜尋：{job['found_via']}" if job.get("found_via") else "HCI 關鍵字搜尋"
-            hits = [label] + hits
+            blob = " ".join([job.get("title", ""), job.get("summary", ""),
+                             job.get("department", "")])
+            query = job.get("found_via", "")
+            if query_matches(query, blob):
+                score += boost
+                hits = [f"搜尋：{query}"] + hits
+            else:
+                score += 1
+                if query:
+                    hits = hits + [f"搜尋：{query}（內文未出現）"]
         job["topic_score"], job["topics"] = score, hits[:8]
 
     # 查不到雇主就讓 university 留空，網頁顯示時自己退回來源名稱。

@@ -137,6 +137,12 @@ def main():
           run.score_topics("PhD in Human-Computer Interaction and VR")[0] >= 5, True)
     check("HCI 分數：不相關的是 0",
           run.score_topics("PhD in Inhalation Toxicology")[0], 0)
+    check("關鍵字真的出現在內文才算命中",
+          run.query_matches("human-computer interaction",
+                            "A PhD on human computer interaction in cars"), True)
+    check("搜尋引擎亂撈的不算命中",
+          run.query_matches("human-computer interaction",
+                            "PhD position in Plant Cell and Molecular Biology"), False)
     check("搜尋網址取得出關鍵字",
           run.query_of("https://x/jobs?q=human-AI+interaction"), "human-AI interaction")
     check("關鍵字標籤看得懂",
