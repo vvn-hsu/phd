@@ -137,6 +137,7 @@ def main():
           run.score_topics("PhD in Human-Computer Interaction and VR")[0] >= 5, True)
     check("HCI 分數：不相關的是 0",
           run.score_topics("PhD in Inhalation Toxicology")[0], 0)
+    check("網域分組取最後兩段", run.site_of("https://uu.varbi.com/en/what:job/jobID:1/"), "varbi.com")
     check("關鍵字真的出現在內文才算命中",
           run.query_matches("human-computer interaction",
                             "A PhD on human computer interaction in cars"), True)

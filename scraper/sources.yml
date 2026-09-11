@@ -93,7 +93,10 @@ sources:
     type: links
     enabled: true
     urls:
-      - https://euraxess.ec.europa.eu/jobs/search?f%5B0%5D=research_profile%3A1
+      # sort[name]=created&sort[direction]=DESC 是站上自己的「最新優先」連結；
+      # 不加的話回來的是一批舊的獎學金／研究助理公告
+      - https://euraxess.ec.europa.eu/jobs/search?sort%5Bname%5D=created&sort%5Bdirection%5D=DESC&f%5B0%5D=job_research_profile%3A447
+      - https://euraxess.ec.europa.eu/jobs/search?sort%5Bname%5D=created&sort%5Bdirection%5D=DESC
       - https://euraxess.ec.europa.eu/jobs/search
     link_pattern: '/jobs/\d+'
     pages: 3           # 一頁 10 筆；翻太多頁會被 429
@@ -141,6 +144,58 @@ sources:
 
   # DTU 的職缺清單是 JS 渲染的，HTML 裡只有導覽列，先關掉。
   # 要修的話得找出它背後的 API（用 scraper/sniff.py 看）。
+  # 下面幾所學校都用 Varbi，版型跟 KTH 一樣，所以同一組 link_pattern 就能抓。
+  # 其中某個 subdomain 不存在的話，那個來源會顯示 error，不影響其他來源。
+  - id: uu
+    name: Uppsala universitet
+    country: SE
+    homepage: https://uu.varbi.com/en/
+    type: links
+    enabled: true
+    urls: [https://uu.varbi.com/en/]
+    link_pattern: 'what:job/jobID:\d+'
+    enrich: jsonld
+
+  - id: su
+    name: Stockholms universitet
+    country: SE
+    homepage: https://su.varbi.com/en/
+    type: links
+    enabled: true
+    urls: [https://su.varbi.com/en/]
+    link_pattern: 'what:job/jobID:\d+'
+    enrich: jsonld
+
+  - id: lu
+    name: Lunds universitet
+    country: SE
+    homepage: https://lu.varbi.com/en/
+    type: links
+    enabled: true
+    urls: [https://lu.varbi.com/en/]
+    link_pattern: 'what:job/jobID:\d+'
+    enrich: jsonld
+
+  - id: liu
+    name: Linköpings universitet
+    country: SE
+    homepage: https://liu.varbi.com/en/
+    type: links
+    enabled: true
+    urls: [https://liu.varbi.com/en/]
+    link_pattern: 'what:job/jobID:\d+'
+    enrich: jsonld
+
+  - id: umu
+    name: Umeå universitet
+    country: SE
+    homepage: https://umu.varbi.com/en/
+    type: links
+    enabled: true
+    urls: [https://umu.varbi.com/en/]
+    link_pattern: 'what:job/jobID:\d+'
+    enrich: jsonld
+
   - id: dtu
     name: DTU（丹麥技術大學）
     country: DK

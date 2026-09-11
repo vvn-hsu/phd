@@ -34,7 +34,8 @@ user interface、conversational agent、visualization、affective computing⋯�
 只是被搜尋引擎鬆散撈出來、內文沒出現的只加 1 分——那些站的全文搜尋很鬆，
 搜 human-computer interaction 會跑出植物細胞學。
 
-同一個來源裡多數頁面都出現的詞會被當成網站樣板、不採計——KTH 每一頁的頁尾
+同一個網域裡多數頁面都出現的詞會被當成網站樣板、不採計（用網域而不是來源分組，
+因為 Varbi 上的各校是不同 subdomain 但共用同一套版型）——KTH 每一頁的頁尾
 都有 "user experience" 和 "accessibility"，不處理的話 28 筆全會被誤判成相關。
 
 廣泛＝3 分以上，嚴格＝6 分以上。要放寬或收緊就改 `scraper/topics.yml`。
@@ -54,6 +55,7 @@ AcademicTransfer 和 EURAXESS——因為 HCI 的缺常常排不進「最新職�
 | jobs.ac.uk（英國） | 關：搜尋結果要 JS 才渲染，HTML 裡只有贊助職缺 |
 | ETH Zürich | 開 |
 | KTH（kth.varbi.com） | 開 |
+| Uppsala、Stockholm、Lund、Linköping、Umeå（都是 Varbi，跟 KTH 同一套版型） | 開 |
 | TU München | 開 |
 | DTU、KU Leuven、Chalmers | 關：清單要 JS 才渲染，HTML 裡只有導覽列 |
 
