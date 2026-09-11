@@ -66,6 +66,11 @@ def sniff(url: str) -> None:
         for candidate, count in endpoints.most_common(12):
             print(f"    {count:>3}  {candidate[:140]}")
 
+    if os.environ.get("SNIFF_TEXT"):
+        print("  --- 頁面可見文字前 2000 字 ---")
+        print("  " + run.clean(soup.get_text(" "))[:2000])
+        print("  --- 文字結束 ---")
+
     ld = run.extract_jsonld(html)
     print(f"  JSON-LD JobPosting：{len(ld)} 個")
     for node in ld[:3]:

@@ -60,13 +60,15 @@ sources:
   - id: jobsacuk
     name: jobs.ac.uk（英國）
     country: UK
-    homepage: https://www.jobs.ac.uk/search/phd
+    homepage: https://www.jobs.ac.uk/search/?keywords=PhD
     type: links
     enabled: true
     urls:
-      - https://www.jobs.ac.uk/search/phd
-      - https://www.jobs.ac.uk/search/?keywords=phd
-    link_pattern: '/job/[A-Z0-9]{3,}'
+      # /search/phd 是導覽頁，列的職缺跟 PhD 無關；keywords 搜尋才是真的結果
+      - https://www.jobs.ac.uk/search/?keywords=PhD&sortOrder=1
+      - https://www.jobs.ac.uk/search/?keywords=PhD
+    link_pattern: '/job/[A-Z]{2,4}\d{2,}'
+    pages: 5
     enrich: jsonld
 
   - id: ethz
@@ -84,32 +86,35 @@ sources:
   - id: kth
     name: KTH Royal Institute of Technology
     country: SE
-    homepage: https://www.kth.se/en/om/work-at-kth/lediga-jobb
+    homepage: https://kth.varbi.com/en/
     type: links
     enabled: true
     urls:
-      - https://www.kth.se/en/om/work-at-kth/lediga-jobb
-    link_pattern: 'kth\.varbi\.com/[\w\-/]*job[\w\-/]*|/jobs/\d+'
+      # kth.se 那頁只是 iframe 外殼（而且會回 500），真正的清單在 Varbi
+      - https://kth.varbi.com/en/
+    link_pattern: 'what:job/jobID:\d+'
     enrich: jsonld
 
+  # DTU 的職缺清單是 JS 渲染的，HTML 裡只有導覽列，先關掉。
+  # 要修的話得找出它背後的 API（用 scraper/sniff.py 看）。
   - id: dtu
     name: DTU（丹麥技術大學）
     country: DK
     homepage: https://www.dtu.dk/english/about/job-and-career/vacant-positions
     type: links
-    enabled: true
+    enabled: false
     urls:
       - https://www.dtu.dk/english/about/job-and-career/vacant-positions
-      - https://efzu.dtu.dk/
     link_pattern: 'job[\w\-/]*/\d+|/vacant-positions/job'
     enrich: jsonld
 
+  # KU Leuven 的職缺清單同樣是 JS 渲染，先關掉。
   - id: kuleuven
     name: KU Leuven
     country: BE
     homepage: https://www.kuleuven.be/personeel/jobsite/en/vacancies
     type: links
-    enabled: true
+    enabled: false
     urls:
       - https://www.kuleuven.be/personeel/jobsite/en/vacancies?category=phd
       - https://www.kuleuven.be/personeel/jobsite/en/vacancies
@@ -128,13 +133,38 @@ sources:
     link_pattern: '/jobs/[\w\-]+/[\w\-]+'
     enrich: jsonld
 
+  # Chalmers 的清單是 JS 渲染，chalmers.varbi.com 也不存在，先關掉。
   - id: chalmers
     name: Chalmers
     country: SE
     homepage: https://www.chalmers.se/en/about-chalmers/work-with-us/vacancies/
     type: links
-    enabled: true
+    enabled: false
     urls:
       - https://www.chalmers.se/en/about-chalmers/work-with-us/vacancies/
     link_pattern: 'varbi\.com/[\w\-/]*|/vacancies/[\w\-]+'
+    enrich: jsonld
+
+  - id: academicpositions
+    name: Academic Positions（歐洲彙整站）
+    country: EU
+    homepage: https://academicpositions.com/find-jobs/position/phd
+    type: links
+    enabled: true
+    urls:
+      - https://academicpositions.com/find-jobs/position/phd
+      - https://academicpositions.com/jobs/position/phd
+    link_pattern: '/ad/[\w\-]+/\d+'
+    pages: 3
+    enrich: jsonld
+
+  - id: ethz_extra
+    name: ETH Zürich（第二頁以後）
+    country: CH
+    homepage: https://jobs.ethz.ch/
+    type: links
+    enabled: false
+    urls:
+      - https://jobs.ethz.ch/
+    link_pattern: '/job/view/\d+'
     enrich: jsonld

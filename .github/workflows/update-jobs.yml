@@ -13,6 +13,10 @@ on:
         description: "偵查網址（空白分隔）；填了就只跑偵查"
         type: string
         default: ""
+      sniff_text:
+        description: "偵查時一併印出頁面文字"
+        type: boolean
+        default: false
   push:
     paths:
       - "scraper/**"
@@ -47,6 +51,7 @@ jobs:
         if: ${{ inputs.sniff != '' }}
         env:
           SNIFF_URLS: ${{ inputs.sniff }}
+          SNIFF_TEXT: ${{ inputs.sniff_text && '1' || '' }}
         run: python scraper/sniff.py $SNIFF_URLS
 
       - name: 抓取職缺

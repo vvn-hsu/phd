@@ -60,8 +60,20 @@ GitHub 的 `schedule` 只會在**預設分支**上跑。目前這些檔案在 `c
     urls:                       # 依序嘗試，第一個抓到東西的就用
       - https://www.uu.nl/en/organisation/working-at-utrecht-university/jobs
     link_pattern: '/vacancy/\d+'   # 職缺網址長什麼樣（正則）
+    pages: 5                    # 要往後翻幾頁（預設 1，不翻頁）
+    page_param: page            # 翻頁參數名稱（預設 page）
     enrich: jsonld              # 對新職缺再抓詳細頁補截止日
 ```
+
+不知道對方網站的職缺網址長什麼樣時，先用偵查工具：
+
+```bash
+python scraper/sniff.py "https://www.uu.nl/en/organisation/working-at-utrecht-university/jobs"
+```
+
+它會印出：頁面上連結的形狀統計（數字換成 `{n}` 之後分群）、有沒有 schema.org JobPosting、
+頁面自己宣告的 RSS feed、以及 HTML 裡出現的 API 網址。
+在 GitHub 上也可以跑：Actions → 更新博士職缺 → Run workflow，把網址填進 `sniff` 欄位（空白分隔）。
 
 `links` 這個 adapter 是靠職缺網址的形狀抓連結，不靠 CSS class，對方改版時比較不會整個壞掉。
 加完先跑 `python scraper/run.py --only uu --probe` 確認抓得到。
