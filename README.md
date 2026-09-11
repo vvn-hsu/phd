@@ -93,6 +93,9 @@ GitHub 的 `schedule` 只會在**預設分支**上跑。這個 repo 的預設分
 
 也可以手動跑：Actions → 更新博士職缺 → Run workflow。
 
+`data/jobs.json` 是整份重新產生的，不跟遠端做三方合併——提交前會先對齊遠端、
+再把這次的結果放回去。兩次執行重疊時以後跑完的那次為準，漏掉的下一次會再抓到。
+
 ## 新增一所學校
 
 編 `scraper/sources.yml`，加一段：

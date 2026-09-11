@@ -26,7 +26,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: update-jobs-${{ github.ref }}
+  group: update-jobs
   cancel-in-progress: false
 
 jobs:
@@ -72,10 +72,24 @@ jobs:
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data
-          git commit -m "chore: 更新職缺資料 $(date -u +%Y-%m-%d)"
+          # data/jobs.json 是整份重新產生的，不要跟遠端做三方合併（一定會衝突）。
+          # 作法：先把這次的結果收到旁邊，對齊遠端，再把結果放回去。
+          # 兩次執行重疊時以「後跑完的那次」為準，漏掉的職缺下一次會再抓到。
+          mkdir -p "${RUNNER_TEMP}/out" && cp -r data/. "${RUNNER_TEMP}/out/"
           for i in 1 2 3 4; do
-            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            git fetch origin "${GITHUB_REF_NAME}"
+            git reset --hard FETCH_HEAD
+            cp -r "${RUNNER_TEMP}/out/." data/
+            if [ -z "$(git status --porcelain data)" ]; then
+              echo "遠端已經是同樣的資料，不用提交。"
+              exit 0
+            fi
+            git add data
+            git commit -m "chore: 更新職缺資料 $(date -u +%Y-%m-%d)"
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              exit 0
+            fi
+            echo "推送失敗（可能有另一次執行同時推），第 ${i} 次重試"
             sleep $((2 ** i))
           done
           exit 1
