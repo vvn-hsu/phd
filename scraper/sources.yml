@@ -18,23 +18,8 @@ defaults:
   timeout: 30
 
 sources:
-  # TU Delft 排在 AcademicTransfer 前面，重複的職缺才會歸在 TU Delft 名下。
-  # tudelft.nl 自己那頁是 JS 渲染的，所以直接打 AcademicTransfer 的雇主篩選。
-  - id: tudelft
-    name: TU Delft
-    country: NL
-    homepage: https://www.tudelft.nl/over-tu-delft/werken-bij-tu-delft/vacatures
-    type: links
-    enabled: true
-    urls:
-      - https://www.academictransfer.com/en/jobs/?employer=technische-universiteit-delft&category=phd
-      - https://www.academictransfer.com/en/jobs/?q=delft&category=phd
-    link_pattern: '/(en|nl)/jobs/\d+'
-    pages: 2
-    enrich: jsonld
-
   - id: academictransfer
-    name: AcademicTransfer（荷蘭各大學）
+    name: AcademicTransfer（荷蘭各大學，含 TU Delft）
     country: NL
     homepage: https://www.academictransfer.com/en/jobs/
     type: links
@@ -44,7 +29,6 @@ sources:
       - https://www.academictransfer.com/en/jobs/?category=phd
       - https://www.academictransfer.com/en/jobs/
     link_pattern: '/(en|nl)/jobs/\d+'
-    pages: 4
     enrich: jsonld
 
   - id: euraxess
@@ -65,7 +49,8 @@ sources:
     country: UK
     homepage: https://www.jobs.ac.uk/search/?keywords=PhD
     type: links
-    enabled: true
+    # 搜尋結果是 JS 渲染的，HTML 裡只有幾則贊助職缺（而且都不是博士），先關掉
+    enabled: false
     urls:
       # /search/phd 是導覽頁，列的職缺跟 PhD 無關；keywords 搜尋才是真的結果
       - https://www.jobs.ac.uk/search/?keywords=PhD&sortOrder=1

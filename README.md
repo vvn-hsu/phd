@@ -15,6 +15,21 @@
 - 職缺從對方網站消失後，會標成「已下架」再留 45 天
 - 最下面的「來源狀態」會顯示哪些網站抓成功、哪些掛了
 
+## 目前的來源
+
+| 來源 | 狀態 |
+| --- | --- |
+| AcademicTransfer（荷蘭各大學，TU Delft 的職缺都在這） | 開 |
+| EURAXESS（全歐洲，翻 12 頁） | 開 |
+| Academic Positions（彙整站） | 開 |
+| jobs.ac.uk（英國） | 關：搜尋結果要 JS 才渲染，HTML 裡只有贊助職缺 |
+| ETH Zürich | 開 |
+| KTH（kth.varbi.com） | 開 |
+| TU München | 開 |
+| DTU、KU Leuven、Chalmers | 關：清單要 JS 才渲染，HTML 裡只有導覽列 |
+
+網頁最下面的「來源狀態」看的是每天實際跑出來的結果，以那邊為準。
+
 ## 怎麼看
 
 **GitHub Pages**：repo 的 Settings → Pages → Source 選 `Deploy from a branch`，分支選這個分支、資料夾選 `/ (root)`，
@@ -83,4 +98,7 @@ python scraper/sniff.py "https://www.uu.nl/en/organisation/working-at-utrecht-un
 - 每個來源的解析都是對著別人的網站猜的，對方改版或擋機器人（Cloudflare、需要 JS 才渲染的頁面）就會失效。
   網頁最下面的「來源狀態」就是用來發現這件事的：某個來源長期 error 或 0 筆，就是該去修 `sources.yml`。
 - 只用標題判斷是不是博士職缺，偶爾會漏掉標題寫得很怪的（例：只寫 "Vacancy 2026-045"）。
+- 學校名稱來自職缺詳細頁（schema.org JobPosting 或頁面上的「Organisation/Company」欄位）。
+  抓不到的時候會退回顯示來源名稱，例如「EURAXESS（全歐洲）」，那代表不知道是哪一校，不是真的雇主。
+- AcademicTransfer 沒有可用的分頁參數（`?page=2` 回傳同一批），所以荷蘭那邊一次只看得到最新的一頁。
 - 沒有寄信通知，要自己開網頁看。

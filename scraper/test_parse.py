@@ -116,8 +116,8 @@ def main():
     check("JSON-LD 學校", ld.get("university"), "Delft University of Technology")
     check("JSON-LD 地點", ld.get("location"), "Delft, NL")
     check("JSON-LD 截止日", ld.get("deadline"), "2026-10-15")
-    check("沒有 JSON-LD 時用來源名當學校",
-          by_title.get("PhD Position on Floating Wind Turbines", {}).get("university"), "Test")
+    check("沒有 JSON-LD 時學校先留空（補抓詳細頁後才退回來源名）",
+          by_title.get("PhD Position on Floating Wind Turbines", {}).get("university"), "")
 
     check("標題切掉尾巴的雜訊",
           run.tidy_title("PhD Position Movement Biomarkers 100%, Zurich, fixed-term | ETH"),

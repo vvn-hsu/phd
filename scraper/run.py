@@ -462,7 +462,7 @@ def collect(source: dict, cfg: dict) -> list[dict]:
             "id": job_id(item["url"]),
             "source": source["id"],
             "source_name": source["name"],
-            "university": item.get("university") or source["name"],
+            "university": item.get("university", ""),  # 補抓詳細頁後才決定，見 main()
             "country": source.get("country", ""),
             "title": title,
             "url": item["url"],
@@ -543,6 +543,11 @@ def main() -> int:
         for job in to_enrich:
             enrich_job(job, cfg["timeout"])
             time.sleep(0.7)
+
+    for job in fresh.values():
+        # 詳細頁沒給雇主的話，才退回用來源名稱，免得把別校職缺掛在某一校名下
+        if not job.get("university"):
+            job["university"] = job["source_name"]
 
     merged: dict[str, dict] = {}
     for job in fresh.values():
