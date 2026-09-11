@@ -201,6 +201,19 @@ def page_fallback_fields(html: str) -> dict:
         "meta", attrs={"property": "og:description"}
     )
     text = clean(soup.get_text(" "))
+    org = ""
+    om = re.search(
+        r"(?:Organisation/Company|Organisation|Employer|Hosting Institution|Institution|Werkgever)"
+        r"\s*[:：]?\s+(.{3,70}?)\s*(?:Department|Research Field|Researcher Profile|Country|"
+        r"Application Deadline|Type of Contract|Job Status|Offer Starting Date|Reference Number|"
+        r"Funding|Is the job|Location|$)",
+        text, re.I,
+    )
+    if om:
+        candidate = om.group(1).strip(" ·-–—:")
+        if 3 <= len(candidate) <= 70:
+            org = candidate
+
     deadline = ""
     m = re.search(
         r"(?:deadline|apply before|closing date|sluitingsdatum|reageren voor|"
@@ -209,8 +222,15 @@ def page_fallback_fields(html: str) -> dict:
     )
     if m:
         deadline = parse_date(m.group(1))
+    posted = ""
+    pm = re.search(r"Posted on:?\s*(\d{1,2}\s+\w{3,12}\s+\d{4}|\d{4}-\d{2}-\d{2})", text, re.I)
+    if pm:
+        posted = parse_date(pm.group(1))
+
     return {
         "title": title,
+        "university": org,
+        "posted": posted,
         "summary": clean(desc.get("content"))[:400] if desc else "",
         "deadline": deadline,
     }
@@ -218,18 +238,57 @@ def page_fallback_fields(html: str) -> dict:
 
 # --------------------------------------------------------------------------- adapters
 
+def tidy_title(text: str) -> str:
+    """列表頁的錨點文字常常把地點、工時、日期一起塞進來，切掉後面那些。"""
+    text = clean(text)
+    first = text.split("|")[0].strip(" ,;·-")
+    if len(first) >= 12:
+        text = first
+    return text[:160]
+
+
+def title_from_slug(url: str) -> str:
+    """從網址推標題，給那種整張卡片是圖層、錨點沒有文字的列表頁用。"""
+    parts = [p for p in urlparse(url).path.strip("/").split("/") if p]
+    for part in reversed(parts):
+        if part.isdigit() or len(part) < 6:
+            continue
+        words = re.split(r"[-_+]", re.sub(r"\.(html?|aspx|php)$", "", part))
+        words = [w for w in words if w and not w.isdigit()]
+        if len(words) >= 2:
+            return " ".join(w.capitalize() if w.islower() else w for w in words)[:160]
+    return ""
+
+
+def link_title(anchor, url: str) -> tuple[str, bool]:
+    """盡量找出這個連結的職缺標題，回傳（標題, 是不是用網址猜的）。"""
+    for candidate in (anchor.get_text(" "), anchor.get("title"), anchor.get("aria-label")):
+        title = tidy_title(candidate or "")
+        if len(title) >= 6:
+            return title, False
+    img = anchor.find("img")
+    if img and len(tidy_title(img.get("alt") or "")) >= 6:
+        return tidy_title(img.get("alt")), False
+    parent = anchor.find_parent(["article", "li", "div"])
+    if parent:
+        heading = parent.find(["h1", "h2", "h3", "h4"])
+        if heading and len(tidy_title(heading.get_text(" "))) >= 6:
+            return tidy_title(heading.get_text(" ")), False
+    return title_from_slug(url), True
+
+
 def harvest_links(soup, base: str, pattern, seen: dict[str, dict]) -> None:
     """把頁面上符合 pattern 的職缺連結收進 seen。"""
     for anchor in soup.find_all("a", href=True):
         absolute = urljoin(base, anchor["href"])
         if not pattern.search(absolute):
             continue
-        title = clean(anchor.get_text(" ")) or clean(anchor.get("title") or "")
+        title, guessed = link_title(anchor, absolute)
         if len(title) < 6:
             continue
         key = job_id(absolute)
         if key not in seen:
-            seen[key] = {"url": absolute, "title": title}
+            seen[key] = {"url": absolute, "title": title, "title_guessed": guessed}
 
 
 def sample_hrefs(soup, base: str, limit: int = 12) -> list[str]:
@@ -371,8 +430,9 @@ def enrich_job(job: dict, timeout: int) -> None:
     for key, value in fields.items():
         if value and not job.get(key):
             job[key] = value
-    if nodes and fields.get("title"):
-        job["title"] = fields["title"] or job["title"]
+    if fields.get("title") and (nodes or job.get("title_guessed")):
+        job["title"] = fields["title"]
+        job["title_guessed"] = False
 
 
 def load_previous() -> dict:
@@ -411,6 +471,7 @@ def collect(source: dict, cfg: dict) -> list[dict]:
             "posted": item.get("posted", ""),
             "deadline": item.get("deadline", ""),
             "summary": item.get("summary", ""),
+            "title_guessed": bool(item.get("title_guessed")),
         }
         out.append(record)
     if not out and dropped:

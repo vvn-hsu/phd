@@ -48,6 +48,7 @@
   .job h2 a{color:var(--ink);text-decoration:none}
   .job h2 a:hover{text-decoration:underline;color:var(--accent)}
   .meta{grid-column:1;color:var(--muted);font-size:12.5px;display:flex;flex-wrap:wrap;gap:4px 10px}
+  .meta strong{color:var(--ink);font-weight:600}
   .side{grid-column:2;grid-row:1/span 3;display:flex;flex-direction:column;align-items:flex-end;gap:6px}
   .tag{font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
   .tag.new{color:var(--new);background:var(--new-bg);border-color:transparent;font-weight:600}
@@ -235,8 +236,10 @@ function render(){
     if (job.status === 'closed') tags.push('<span class="tag closed">已下架</span>');
     if (dd !== null && dd >= 0 && dd <= 14) tags.push(`<span class="tag soon">剩 ${dd} 天</span>`);
     if (job.country) tags.push(`<span class="tag">${esc(job.country)}</span>`);
+    const uni = job.university || job.source_name;
     const meta = [
-      esc(job.university || job.source_name),
+      `<strong>${esc(uni)}</strong>`,
+      uni !== job.source_name && `來源 ${esc(job.source_name)}`,
       job.department && esc(job.department),
       job.location && esc(job.location),
       job.posted && '發布 ' + job.posted,

@@ -46,6 +46,7 @@ LISTING = """<html><body>
 <a href="/en/jobs/999">Postdoc in Fluid Dynamics</a>
 <a href="/about">About us</a>
 <a href="/en/jobs/555">ok</a>
+<a href="/en/jobs/363889/phd-co-production-of-land-use-futures/"><span></span></a>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"JobPosting","title":"PhD Candidate Structural Health",
  "url":"https://example.org/en/jobs/777","datePosted":"2026-09-01","validThrough":"2026-10-15",
@@ -56,6 +57,9 @@ LISTING = """<html><body>
 
 DETAIL = """<html><head><title>x</title></head><body>
 <h1>PhD position: Offshore Wind</h1>
+<p>Posted on: 11 September 2026</p>
+<p>Organisation/Company Delft University of Technology</p>
+<p>Research Field Engineering</p>
 <p>Application deadline: 30 November 2026</p></body></html>"""
 
 
@@ -69,10 +73,13 @@ def main():
     source = {"id": "t", "name": "Test", "country": "NL", "type": "links",
               "link_pattern": r"/en/jobs/\d+", "urls": ["https://example.org/en/jobs/"]}
     items, _ = run.adapter_links(source, {"timeout": 10})
-    check("連結去重後筆數", len(items), 3)  # 12345（含重複網址）、999、777；"ok" 標題太短被略過
+    check("連結去重後筆數", len(items), 4)  # 12345（含重複網址）、999、777、363889；"ok" 標題太短
+    check("錨點沒文字時用網址 slug 當標題",
+          run.title_from_slug("https://x/en/jobs/363889/phd-co-production-of-land-use-futures/"),
+          "Phd Co Production Of Land Use Futures")
 
     records = run.collect(dict(source), {"timeout": 10, "filter": "phd"})
-    check("過濾後筆數", len(records), 2)
+    check("過濾後筆數", len(records), 3)
     by_title = {r["title"]: r for r in records}
     ld = by_title.get("PhD Candidate Structural Health", {})
     check("JSON-LD 學校", ld.get("university"), "Delft University of Technology")
@@ -81,7 +88,18 @@ def main():
     check("沒有 JSON-LD 時用來源名當學校",
           by_title.get("PhD Position on Floating Wind Turbines", {}).get("university"), "Test")
 
+    check("標題切掉尾巴的雜訊",
+          run.tidy_title("PhD Position Movement Biomarkers 100%, Zurich, fixed-term | ETH"),
+          "PhD Position Movement Biomarkers 100%, Zurich, fixed-term")
+    check("標題前段太短時保留全文",
+          run.tidy_title("PhD | Quantum Computing at TU Delft"),
+          "PhD | Quantum Computing at TU Delft")
+
     check("詳細頁 fallback 截止日", run.page_fallback_fields(DETAIL)["deadline"], "2026-11-30")
+    check("詳細頁 fallback 學校",
+          run.page_fallback_fields(DETAIL)["university"], "Delft University of Technology")
+    check("詳細頁 fallback 發布日",
+          run.page_fallback_fields(DETAIL)["posted"], "2026-09-11")
     check("詳細頁 fallback 標題", run.page_fallback_fields(DETAIL)["title"], "PhD position: Offshore Wind")
 
     if FAILS:

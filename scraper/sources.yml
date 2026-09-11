@@ -14,8 +14,21 @@
 
 defaults:
   filter: phd
-  max_enrich: 25
+  max_enrich: 80
   timeout: 30
+
+  - id: tudelft
+    name: TU Delft
+    country: NL
+    homepage: https://www.tudelft.nl/over-tu-delft/werken-bij-tu-delft/vacatures
+    type: links
+    enabled: true
+    urls:
+      - https://www.academictransfer.com/en/jobs/?employer=technische-universiteit-delft&category=phd
+      - https://www.tudelft.nl/over-tu-delft/werken-bij-tu-delft/vacatures
+      - https://careers.tudelft.nl/
+    link_pattern: '/(en|nl)/jobs/\d+|/vacatures/[\w\-/]+'
+    enrich: jsonld
 
 sources:
   - id: academictransfer
@@ -29,19 +42,7 @@ sources:
       - https://www.academictransfer.com/en/jobs/?category=phd
       - https://www.academictransfer.com/en/jobs/
     link_pattern: '/(en|nl)/jobs/\d+'
-    enrich: jsonld
-
-  - id: tudelft
-    name: TU Delft
-    country: NL
-    homepage: https://www.tudelft.nl/over-tu-delft/werken-bij-tu-delft/vacatures
-    type: links
-    enabled: true
-    urls:
-      - https://www.academictransfer.com/en/jobs/?employer=technische-universiteit-delft&category=phd
-      - https://www.tudelft.nl/over-tu-delft/werken-bij-tu-delft/vacatures
-      - https://careers.tudelft.nl/
-    link_pattern: '/(en|nl)/jobs/\d+|/vacatures/[\w\-/]+'
+    pages: 4
     enrich: jsonld
 
   - id: euraxess
