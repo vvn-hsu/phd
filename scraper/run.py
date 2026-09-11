@@ -111,16 +111,20 @@ def is_phd(title: str, extra: str = "") -> bool:
 
 
 def fetch(url: str, timeout: int = 30) -> str:
+    """抓網頁。4xx 直接放棄（重試也是一樣的結果），只有連線問題和 5xx/429 才重試。"""
     last = None
-    for attempt in range(3):
+    for attempt in range(2):
         try:
             resp = SESSION.get(url, timeout=timeout, allow_redirects=True)
             if resp.status_code == 200:
                 return resp.text
             last = f"HTTP {resp.status_code}"
-        except requests.RequestException as exc:  # 網路瞬斷就重試
-            last = f"{type(exc).__name__}: {exc}"
-        time.sleep(2 ** attempt)
+            if 400 <= resp.status_code < 500 and resp.status_code != 429:
+                break
+        except requests.RequestException as exc:
+            last = f"{type(exc).__name__}: {str(exc)[:120]}"
+        if attempt == 0:
+            time.sleep(2)
     raise RuntimeError(last or "unknown error")
 
 
@@ -214,6 +218,22 @@ def page_fallback_fields(html: str) -> dict:
 
 # --------------------------------------------------------------------------- adapters
 
+def sample_hrefs(soup, base: str, limit: int = 12) -> list[str]:
+    """列出頁面上像職缺的連結，用來猜 link_pattern。"""
+    jobish = re.compile(r"job|vacan|vacature|stelle|career|position|anstall|ledig|phd|promov", re.I)
+    shapes: dict[str, str] = {}
+    for anchor in soup.find_all("a", href=True):
+        absolute = urljoin(base, anchor["href"])
+        path = urlparse(absolute).path
+        if not jobish.search(absolute):
+            continue
+        key = re.sub(r"\d+", "{n}", f"{urlparse(absolute).netloc}{path}")
+        shapes.setdefault(key, absolute)
+        if len(shapes) >= limit:
+            break
+    return [f"{k}   例：{v[:90]}" for k, v in shapes.items()] or ["（找不到任何像職缺的連結，頁面可能要 JS 才渲染）"]
+
+
 def adapter_links(source: dict, cfg: dict) -> tuple[list[dict], str]:
     pattern = re.compile(source["link_pattern"])
     timeout = source.get("timeout", cfg["timeout"])
@@ -252,6 +272,10 @@ def adapter_links(source: dict, cfg: dict) -> tuple[list[dict], str]:
         if seen:
             return list(seen.values()), url
         errors.append(f"{url} -> 0 links matched")
+        log(f"       ↳ {url} 抓到 {len(soup.find_all('a', href=True))} 個連結但沒有符合 "
+            f"{source['link_pattern']!r}；可能的職缺連結：")
+        for sample in sample_hrefs(soup, url):
+            log(f"         {sample}")
     raise RuntimeError("; ".join(errors) or "no urls configured")
 
 
@@ -344,11 +368,13 @@ def collect(source: dict, cfg: dict) -> list[dict]:
     items, used_url = adapter(source, cfg)
     source["_used_url"] = used_url
     out = []
+    dropped: list[str] = []
     for item in items:
         title = clean(item.get("title"))
         if not title:
             continue
         if source.get("filter", cfg["filter"]) == "phd" and not is_phd(title, item.get("summary", "")):
+            dropped.append(title)
             continue
         record = {
             "id": job_id(item["url"]),
@@ -365,6 +391,10 @@ def collect(source: dict, cfg: dict) -> list[dict]:
             "summary": item.get("summary", ""),
         }
         out.append(record)
+    if not out and dropped:
+        log(f"       ↳ {len(dropped)} 筆都被 PhD 過濾擋掉，樣本標題：")
+        for title in dropped[:8]:
+            log(f"         · {title[:90]}")
     return out
 
 
