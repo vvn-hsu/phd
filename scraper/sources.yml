@@ -1,0 +1,139 @@
+# 職缺來源設定。
+#
+# type:
+#   links  - 抓列表頁 HTML，用 link_pattern 找出職缺連結，錨點文字當標題
+#   rss    - 抓 RSS/Atom feed
+#   jsonld - 抓頁面裡 schema.org JobPosting 的 JSON-LD
+#
+# 共用欄位：
+#   urls        - 候選網址，依序嘗試，第一個抓到東西的就用（其餘跳過）
+#   enrich      - jsonld：對新職缺再抓一次詳細頁，補發布日／截止日／系所
+#   filter      - phd（預設，只留博士職缺）／none（全留）
+#   max_enrich  - 每次執行最多補抓幾個詳細頁
+#   enabled     - false 時整個來源跳過
+
+defaults:
+  filter: phd
+  max_enrich: 25
+  timeout: 30
+
+sources:
+  - id: academictransfer
+    name: AcademicTransfer（荷蘭各大學）
+    country: NL
+    homepage: https://www.academictransfer.com/en/jobs/
+    type: links
+    enabled: true
+    urls:
+      - https://www.academictransfer.com/en/jobs/?category=phd&sort=date
+      - https://www.academictransfer.com/en/jobs/?category=phd
+      - https://www.academictransfer.com/en/jobs/
+    link_pattern: '/(en|nl)/jobs/\d+'
+    enrich: jsonld
+
+  - id: tudelft
+    name: TU Delft
+    country: NL
+    homepage: https://www.tudelft.nl/over-tu-delft/werken-bij-tu-delft/vacatures
+    type: links
+    enabled: true
+    urls:
+      - https://www.academictransfer.com/en/jobs/?employer=technische-universiteit-delft&category=phd
+      - https://www.tudelft.nl/over-tu-delft/werken-bij-tu-delft/vacatures
+      - https://careers.tudelft.nl/
+    link_pattern: '/(en|nl)/jobs/\d+|/vacatures/[\w\-/]+'
+    enrich: jsonld
+
+  - id: euraxess
+    name: EURAXESS（全歐洲）
+    country: EU
+    homepage: https://euraxess.ec.europa.eu/jobs/search
+    type: links
+    enabled: true
+    urls:
+      - https://euraxess.ec.europa.eu/jobs/search?f%5B0%5D=research_profile%3A1
+      - https://euraxess.ec.europa.eu/jobs/search
+    link_pattern: '/jobs/\d+'
+    enrich: jsonld
+
+  - id: jobsacuk
+    name: jobs.ac.uk（英國）
+    country: UK
+    homepage: https://www.jobs.ac.uk/search/phd
+    type: links
+    enabled: true
+    urls:
+      - https://www.jobs.ac.uk/search/phd
+      - https://www.jobs.ac.uk/search/?keywords=phd
+    link_pattern: '/job/[A-Z0-9]{3,}'
+    enrich: jsonld
+
+  - id: ethz
+    name: ETH Zürich
+    country: CH
+    homepage: https://jobs.ethz.ch/
+    type: links
+    enabled: true
+    urls:
+      - https://jobs.ethz.ch/job/search?query=doctoral
+      - https://jobs.ethz.ch/
+    link_pattern: '/job/view/\d+|/job/\d+'
+    enrich: jsonld
+
+  - id: kth
+    name: KTH Royal Institute of Technology
+    country: SE
+    homepage: https://www.kth.se/en/om/work-at-kth/lediga-jobb
+    type: links
+    enabled: true
+    urls:
+      - https://www.kth.se/en/om/work-at-kth/lediga-jobb
+    link_pattern: 'kth\.varbi\.com/[\w\-/]*job[\w\-/]*|/jobs/\d+'
+    enrich: jsonld
+
+  - id: dtu
+    name: DTU（丹麥技術大學）
+    country: DK
+    homepage: https://www.dtu.dk/english/about/job-and-career/vacant-positions
+    type: links
+    enabled: true
+    urls:
+      - https://www.dtu.dk/english/about/job-and-career/vacant-positions
+      - https://efzu.dtu.dk/
+    link_pattern: 'job[\w\-/]*/\d+|/vacant-positions/job'
+    enrich: jsonld
+
+  - id: kuleuven
+    name: KU Leuven
+    country: BE
+    homepage: https://www.kuleuven.be/personeel/jobsite/en/vacancies
+    type: links
+    enabled: true
+    urls:
+      - https://www.kuleuven.be/personeel/jobsite/en/vacancies?category=phd
+      - https://www.kuleuven.be/personeel/jobsite/en/vacancies
+    link_pattern: '/jobsite/(en/)?\d+'
+    enrich: jsonld
+
+  - id: tum
+    name: TU München
+    country: DE
+    homepage: https://portal.mytum.de/jobs/
+    type: links
+    enabled: true
+    urls:
+      - https://portal.mytum.de/jobs/wissenschaftler/
+      - https://portal.mytum.de/jobs/
+    link_pattern: '/jobs/[\w\-]+/[\w\-]+'
+    enrich: jsonld
+
+  - id: chalmers
+    name: Chalmers
+    country: SE
+    homepage: https://www.chalmers.se/en/about-chalmers/work-with-us/vacancies/
+    type: links
+    enabled: true
+    urls:
+      - https://www.chalmers.se/en/about-chalmers/work-with-us/vacancies/
+    link_pattern: 'varbi\.com/[\w\-/]*|/vacancies/[\w\-]+'
+    enrich: jsonld

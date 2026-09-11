@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>博士職缺追蹤</title>
+<style>
+  :root{
+    --bg:#f7f7f5; --panel:#fff; --ink:#1b1b1a; --muted:#6b6a66; --line:#e3e2dd;
+    --accent:#1f5fb4; --new:#0f7a4d; --new-bg:#e3f4ea; --warn:#9a3412; --warn-bg:#fdeee4;
+    --star:#c58a00; --closed:#8a8a86;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#16161a; --panel:#1e1e23; --ink:#e9e8e4; --muted:#a09f9a; --line:#32323a;
+      --accent:#7aa9ee; --new:#5ed49b; --new-bg:#12312333; --warn:#f0a882; --warn-bg:#3a241a;
+      --star:#e3b23c; --closed:#76757f;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+    font-size:15px;line-height:1.55}
+  .wrap{max-width:1040px;margin:0 auto;padding-block:24px;padding-left:16px;padding-right:16px}
+  h1{font-size:20px;margin:0 0 4px}
+  .sub{color:var(--muted);font-size:13px;margin-bottom:18px}
+  .stats{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px;min-width:104px}
+  .stat b{display:block;font-size:22px;line-height:1.2}
+  .stat span{color:var(--muted);font-size:12px}
+  .controls{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:14px}
+  .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .row + .row{margin-top:8px}
+  input[type=search],select{background:var(--bg);color:var(--ink);border:1px solid var(--line);
+    border-radius:8px;padding:7px 10px;font:inherit;font-size:14px}
+  input[type=search]{flex:1 1 220px;min-width:0}
+  .chip{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:999px;
+    padding:5px 12px;font-size:13px;cursor:pointer}
+  .chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+  .btn{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:8px;
+    padding:6px 11px;font-size:13px;cursor:pointer}
+  .list{display:flex;flex-direction:column;gap:8px}
+  .job{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;
+    display:grid;grid-template-columns:1fr auto;gap:6px 12px}
+  .job.unseen{border-left:3px solid var(--accent)}
+  .job.closed{opacity:.55}
+  .job h2{grid-column:1;margin:0;font-size:15px;font-weight:600}
+  .job h2 a{color:var(--ink);text-decoration:none}
+  .job h2 a:hover{text-decoration:underline;color:var(--accent)}
+  .meta{grid-column:1;color:var(--muted);font-size:12.5px;display:flex;flex-wrap:wrap;gap:4px 10px}
+  .side{grid-column:2;grid-row:1/span 3;display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+  .tag{font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+  .tag.new{color:var(--new);background:var(--new-bg);border-color:transparent;font-weight:600}
+  .tag.soon{color:var(--warn);background:var(--warn-bg);border-color:transparent}
+  .tag.closed{color:var(--closed)}
+  .star{background:none;border:none;cursor:pointer;font-size:17px;line-height:1;padding:0;color:var(--line)}
+  .star[aria-pressed="true"]{color:var(--star)}
+  .summary{grid-column:1;color:var(--muted);font-size:13px;margin:0;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  details.sources{margin-top:22px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px}
+  details.sources summary{cursor:pointer;font-size:14px}
+  table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+  th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--muted);font-weight:500}
+  td.err{color:var(--warn);word-break:break-all;max-width:420px}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}
+  .dot.ok{background:var(--new)} .dot.empty{background:var(--star)} .dot.error{background:#d14343}
+  .empty-state{background:var(--panel);border:1px dashed var(--line);border-radius:12px;padding:28px;
+    text-align:center;color:var(--muted)}
+  footer{margin-top:28px;color:var(--muted);font-size:12px}
+  a{color:var(--accent)}
+  @media (max-width:560px){
+    .job{grid-template-columns:1fr}
+    .side{grid-column:1;grid-row:auto;flex-direction:row;align-items:center}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>博士職缺追蹤</h1>
+  <div class="sub" id="updated">載入中…</div>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="controls">
+    <div class="row">
+      <input type="search" id="q" placeholder="搜尋標題、學校、系所、關鍵字（例：wind, machine learning）">
+      <select id="school"><option value="">所有學校／來源</option></select>
+      <select id="country"><option value="">所有國家</option></select>
+      <select id="sort">
+        <option value="new">最新發現優先</option>
+        <option value="deadline">截止日近的優先</option>
+        <option value="posted">發布日新的優先</option>
+        <option value="school">依學校排序</option>
+      </select>
+    </div>
+    <div class="row">
+      <button class="chip" id="f-since" aria-pressed="false">自上次造訪新增</button>
+      <button class="chip" id="f-today" aria-pressed="false">今天新增</button>
+      <button class="chip" id="f-unseen" aria-pressed="false">未讀</button>
+      <button class="chip" id="f-star" aria-pressed="false">已收藏</button>
+      <button class="chip" id="f-soon" aria-pressed="false">14 天內截止</button>
+      <button class="chip" id="f-closed" aria-pressed="false">含已下架</button>
+      <button class="btn" id="mark-all">全部標為已讀</button>
+      <button class="btn" id="reset">清除篩選</button>
+    </div>
+  </div>
+
+  <div class="list" id="list"></div>
+
+  <details class="sources">
+    <summary>來源狀態（哪些網站抓成功）</summary>
+    <table id="src-table"><thead><tr><th>來源</th><th>國家</th><th>筆數</th><th>說明</th></tr></thead><tbody></tbody></table>
+  </details>
+
+  <footer>
+    資料由 <code>scraper/run.py</code> 每天自動抓取並寫進 <code>data/jobs.json</code>。
+    已讀、收藏、上次造訪時間只存在這台裝置的瀏覽器裡。
+  </footer>
+</div>
+
+<script>
+const LS = {
+  seen: 'phdtrack.seen', star: 'phdtrack.star', visit: 'phdtrack.lastVisit', prevVisit: 'phdtrack.prevVisit'
+};
+function loadSet(key){
+  try { return new Set(JSON.parse(localStorage.getItem(key) || '[]')); } catch { return new Set(); }
+}
+function saveSet(key, set){
+  try { localStorage.setItem(key, JSON.stringify([...set])); } catch {}
+}
+const seen = loadSet(LS.seen), starred = loadSet(LS.star);
+
+// 上次造訪：進頁面時把「這次」寫進去，但比較時用上一次的時間戳
+let prevVisit = '';
+try {
+  prevVisit = localStorage.getItem(LS.visit) || '';
+  localStorage.setItem(LS.visit, new Date().toISOString().slice(0,10));
+} catch {}
+
+const state = { data:null, q:'', school:'', country:'', sort:'new',
+  since:false, today:false, unseen:false, star:false, soon:false, closed:false };
+
+const $ = (id) => document.getElementById(id);
+const fmt = (d) => d || '—';
+const daysTo = (d) => {
+  if (!d) return null;
+  const ms = new Date(d + 'T00:00:00Z') - new Date(new Date().toISOString().slice(0,10) + 'T00:00:00Z');
+  return Math.round(ms / 86400000);
+};
+
+async function boot(){
+  try {
+    const res = await fetch('data/jobs.json?t=' + Date.now(), {cache:'no-store'});
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    state.data = await res.json();
+  } catch (err) {
+    $('updated').textContent = '讀不到 data/jobs.json（' + err.message + '）。' +
+      '本機請用 python3 -m http.server 開，不要直接用 file:// 開檔。';
+    $('list').innerHTML = '<div class="empty-state">還沒有資料。先跑一次 <code>python scraper/run.py</code>，或等 GitHub Actions 跑完。</div>';
+    return;
+  }
+  const d = state.data;
+  $('updated').textContent = '最後更新：' + (d.generated_at || '未知').replace('T',' ').replace('+00:00',' UTC') +
+    '　·　上次造訪：' + (prevVisit || '這是第一次');
+
+  const sinceCount = d.jobs.filter(j => isNew(j)).length;
+  $('stats').innerHTML = [
+    ['開放中', d.counts?.open ?? d.jobs.filter(j=>j.status!=='closed').length],
+    ['今天新增', d.counts?.new_today ?? 0],
+    ['自上次造訪', sinceCount],
+    ['已收藏', d.jobs.filter(j=>starred.has(j.id)).length],
+  ].map(([label, val]) => `<div class="stat"><b>${val}</b><span>${label}</span></div>`).join('');
+
+  const schools = [...new Set(d.jobs.map(j => j.university || j.source_name).filter(Boolean))].sort();
+  $('school').append(...schools.map(s => new Option(s, s)));
+  const countries = [...new Set(d.jobs.map(j => j.country).filter(Boolean))].sort();
+  $('country').append(...countries.map(c => new Option(c, c)));
+
+  renderSources(d.sources || []);
+  bind();
+  render();
+}
+
+function isNew(job){
+  if (job.status === 'closed') return false;
+  if (!prevVisit) return job.first_seen === state.data?.date;
+  return (job.first_seen || '') > prevVisit;
+}
+
+function matches(job){
+  if (job.status === 'closed' && !state.closed) return false;
+  if (state.since && !isNew(job)) return false;
+  if (state.today && job.first_seen !== state.data.date) return false;
+  if (state.unseen && seen.has(job.id)) return false;
+  if (state.star && !starred.has(job.id)) return false;
+  if (state.soon){ const dd = daysTo(job.deadline); if (dd === null || dd < 0 || dd > 14) return false; }
+  if (state.school && (job.university || job.source_name) !== state.school) return false;
+  if (state.country && job.country !== state.country) return false;
+  if (state.q){
+    const blob = [job.title, job.university, job.source_name, job.department, job.location, job.summary]
+      .join(' ').toLowerCase();
+    if (!state.q.toLowerCase().split(/\s+/).every(t => blob.includes(t))) return false;
+  }
+  return true;
+}
+
+function sortJobs(jobs){
+  const by = {
+    new: (a,b) => (b.first_seen||'').localeCompare(a.first_seen||'') || (b.posted||'').localeCompare(a.posted||''),
+    posted: (a,b) => (b.posted||'').localeCompare(a.posted||''),
+    deadline: (a,b) => (a.deadline||'9999').localeCompare(b.deadline||'9999'),
+    school: (a,b) => (a.university||a.source_name||'').localeCompare(b.university||b.source_name||''),
+  }[state.sort];
+  return [...jobs].sort(by);
+}
+
+function render(){
+  const jobs = sortJobs(state.data.jobs.filter(matches));
+  const list = $('list');
+  if (!jobs.length){
+    list.innerHTML = '<div class="empty-state">這組條件下沒有職缺。</div>';
+    return;
+  }
+  list.innerHTML = jobs.map(job => {
+    const dd = daysTo(job.deadline);
+    const tags = [];
+    if (isNew(job)) tags.push('<span class="tag new">NEW</span>');
+    if (job.status === 'closed') tags.push('<span class="tag closed">已下架</span>');
+    if (dd !== null && dd >= 0 && dd <= 14) tags.push(`<span class="tag soon">剩 ${dd} 天</span>`);
+    if (job.country) tags.push(`<span class="tag">${esc(job.country)}</span>`);
+    const meta = [
+      esc(job.university || job.source_name),
+      job.department && esc(job.department),
+      job.location && esc(job.location),
+      job.posted && '發布 ' + job.posted,
+      job.deadline && '截止 ' + job.deadline,
+      '發現於 ' + fmt(job.first_seen),
+    ].filter(Boolean).map(x => `<span>${x}</span>`).join('');
+    return `<article class="job ${seen.has(job.id) ? '' : 'unseen'} ${job.status === 'closed' ? 'closed' : ''}" data-id="${job.id}">
+      <h2><a href="${esc(job.url)}" target="_blank" rel="noopener">${esc(job.title)}</a></h2>
+      <div class="meta">${meta}</div>
+      ${job.summary ? `<p class="summary">${esc(job.summary)}</p>` : ''}
+      <div class="side">
+        <button class="star" data-star="${job.id}" aria-pressed="${starred.has(job.id)}" title="收藏">★</button>
+        ${tags.join(' ')}
+      </div>
+    </article>`;
+  }).join('');
+}
+
+function esc(s){ return String(s ?? '').replace(/[&<>"']/g, c => (
+  {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+function renderSources(sources){
+  $('src-table').querySelector('tbody').innerHTML = sources.map(s => `
+    <tr>
+      <td><span class="dot ${s.status}"></span>${s.homepage ? `<a href="${esc(s.homepage)}" target="_blank" rel="noopener">${esc(s.name)}</a>` : esc(s.name)}</td>
+      <td>${esc(s.country)}</td>
+      <td>${s.count}</td>
+      <td class="err">${esc(s.error || (s.status === 'ok' ? s.url_used : '抓到頁面但沒有符合的職缺'))}</td>
+    </tr>`).join('');
+}
+
+function bind(){
+  $('q').addEventListener('input', e => { state.q = e.target.value.trim(); render(); });
+  for (const id of ['school','country','sort'])
+    $(id).addEventListener('change', e => { state[id] = e.target.value; render(); });
+  for (const [id, key] of [['f-since','since'],['f-today','today'],['f-unseen','unseen'],
+                           ['f-star','star'],['f-soon','soon'],['f-closed','closed']]){
+    $(id).addEventListener('click', e => {
+      state[key] = !state[key];
+      e.currentTarget.setAttribute('aria-pressed', String(state[key]));
+      render();
+    });
+  }
+  $('reset').addEventListener('click', () => {
+    Object.assign(state, {q:'',school:'',country:'',since:false,today:false,unseen:false,star:false,soon:false,closed:false});
+    $('q').value=''; $('school').value=''; $('country').value='';
+    document.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed','false'));
+    render();
+  });
+  $('mark-all').addEventListener('click', () => {
+    state.data.jobs.forEach(j => seen.add(j.id));
+    saveSet(LS.seen, seen); render();
+  });
+  $('list').addEventListener('click', e => {
+    const starBtn = e.target.closest('[data-star]');
+    if (starBtn){
+      const id = starBtn.dataset.star;
+      starred.has(id) ? starred.delete(id) : starred.add(id);
+      saveSet(LS.star, starred);
+      starBtn.setAttribute('aria-pressed', String(starred.has(id)));
+      e.preventDefault();
+      return;
+    }
+    const link = e.target.closest('a[href]');
+    const card = e.target.closest('.job');
+    if (link && card){ seen.add(card.dataset.id); saveSet(LS.seen, seen); card.classList.remove('unseen'); }
+  });
+}
+
+boot();
+</script>
+</body>
+</html>

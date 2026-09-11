@@ -1,0 +1,97 @@
+#!/usr/bin/env python3
+"""不連網的解析測試：python scraper/test_parse.py"""
+import os
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import run  # noqa: E402
+
+FAILS = []
+
+
+def check(label, got, want):
+    if got != want:
+        FAILS.append(f"{label}: 得到 {got!r}，預期 {want!r}")
+
+
+TITLES = [
+    ("PhD Position in Quantum Computing", True),
+    ("PhD-position: Urban Flooding", True),
+    ("Promovendus Hydrologie", True),
+    ("Doktorandin / Doktorand (m/w/d)", True),
+    ("Doctoral Candidate in Machine Learning", True),
+    ("Doctoral researcher, 4 years", True),
+    ("Early Stage Researcher (ESR) in Photonics", True),
+    ("Research Assistant / PhD student", True),
+    ("Postdoctoral Researcher in Robotics", False),
+    ("Post-doctoral fellow in Fluid Dynamics", False),
+    ("Assistant Professor of Physics", False),
+    ("Lab Technician", False),
+    ("Tenure Track position", False),
+]
+
+DATES = [
+    ("2026-09-01", "2026-09-01"),
+    ("2026-09-01T10:00:00+02:00", "2026-09-01"),
+    ("15 October 2026", "2026-10-15"),
+    ("01/09/2026", "2026-09-01"),
+    ("garbage", ""),
+    ("", ""),
+    ("1823-01-01", ""),
+]
+
+LISTING = """<html><body>
+<a href="/en/jobs/12345">PhD Position on Floating Wind Turbines</a>
+<a href="/en/jobs/12345?utm_source=x">PhD Position on Floating Wind Turbines</a>
+<a href="/en/jobs/999">Postdoc in Fluid Dynamics</a>
+<a href="/about">About us</a>
+<a href="/en/jobs/555">ok</a>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"JobPosting","title":"PhD Candidate Structural Health",
+ "url":"https://example.org/en/jobs/777","datePosted":"2026-09-01","validThrough":"2026-10-15",
+ "hiringOrganization":{"@type":"Organization","name":"Delft University of Technology"},
+ "jobLocation":{"@type":"Place","address":{"addressLocality":"Delft","addressCountry":"NL"}},
+ "description":"<p>We seek a <b>PhD</b> candidate.</p>"}
+</script></body></html>"""
+
+DETAIL = """<html><head><title>x</title></head><body>
+<h1>PhD position: Offshore Wind</h1>
+<p>Application deadline: 30 November 2026</p></body></html>"""
+
+
+def main():
+    for title, want in TITLES:
+        check(f"is_phd({title!r})", run.is_phd(title), want)
+    for raw, want in DATES:
+        check(f"parse_date({raw!r})", run.parse_date(raw), want)
+
+    run.fetch = lambda url, timeout=30: LISTING
+    source = {"id": "t", "name": "Test", "country": "NL", "type": "links",
+              "link_pattern": r"/en/jobs/\d+", "urls": ["https://example.org/en/jobs/"]}
+    items, _ = run.adapter_links(source, {"timeout": 10})
+    check("連結去重後筆數", len(items), 3)  # 12345（含重複網址）、999、777；"ok" 標題太短被略過
+
+    records = run.collect(dict(source), {"timeout": 10, "filter": "phd"})
+    check("過濾後筆數", len(records), 2)
+    by_title = {r["title"]: r for r in records}
+    ld = by_title.get("PhD Candidate Structural Health", {})
+    check("JSON-LD 學校", ld.get("university"), "Delft University of Technology")
+    check("JSON-LD 地點", ld.get("location"), "Delft, NL")
+    check("JSON-LD 截止日", ld.get("deadline"), "2026-10-15")
+    check("沒有 JSON-LD 時用來源名當學校",
+          by_title.get("PhD Position on Floating Wind Turbines", {}).get("university"), "Test")
+
+    check("詳細頁 fallback 截止日", run.page_fallback_fields(DETAIL)["deadline"], "2026-11-30")
+    check("詳細頁 fallback 標題", run.page_fallback_fields(DETAIL)["title"], "PhD position: Offshore Wind")
+
+    if FAILS:
+        print("測試失敗：")
+        for f in FAILS:
+            print("  -", f)
+        return 1
+    print("所有解析測試通過")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
