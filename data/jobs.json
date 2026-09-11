@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-11T16:23:36+00:00",
+ "generated_at": "2026-09-11T16:30:13+00:00",
  "date": "2026-09-11",
  "topic_thresholds": {
   "broad": 3,
@@ -23,16 +23,6 @@
    "error": ""
   },
   {
-   "id": "euraxess_hci",
-   "name": "EURAXESS（HCI 關鍵字搜尋）",
-   "country": "EU",
-   "homepage": "https://euraxess.ec.europa.eu/jobs/search?keywords=human-computer%20interaction",
-   "status": "empty",
-   "count": 0,
-   "url_used": "10 個搜尋網址",
-   "error": ""
-  },
-  {
    "id": "academictransfer",
    "name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
    "country": "NL",
@@ -49,7 +39,7 @@
    "homepage": "https://euraxess.ec.europa.eu/jobs/search",
    "status": "empty",
    "count": 0,
-   "url_used": "https://euraxess.ec.europa.eu/jobs/search",
+   "url_used": "https://euraxess.ec.europa.eu/jobs/search?f%5B0%5D=research_profile%3A1",
    "error": ""
   },
   {
@@ -399,11 +389,8 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
-   "employment": "TEMPORARY",
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
