@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-11T08:39:58+00:00",
+ "generated_at": "2026-09-11T08:42:04+00:00",
  "date": "2026-09-11",
  "counts": {
   "open": 72,
@@ -307,9 +307,9 @@
    "id": "40f6286ad9b446b6",
    "source": "academicpositions",
    "source_name": "Academic Positions（歐洲彙整站）",
-   "university": "Academic Positions（歐洲彙整站）",
+   "university": "ETH Zürich",
    "country": "EU",
-   "title": "Doctoral Position in Customer-Facing AI in Marketing and Service PhD research on customer-facing genAI: voice agent prompting, AI-to-human handovers, and multim",
+   "title": "Doctoral Position in Customer-Facing AI in Marketing and Service",
    "url": "https://academicpositions.com/ad/eth-zurich/2026/doctoral-position-in-customer-facing-ai-in-marketing-and-service/252078",
    "location": "Zurich, Switzerland",
    "department": "",
@@ -317,6 +317,7 @@
    "deadline": "",
    "summary": "PhD research on customer-facing genAI: voice agent prompting, AI-to-human handovers, and multimodal marketing prediction. Lab+field experiments with partners; Europe-based, fluent English.",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -415,9 +416,9 @@
    "id": "1c6f1425ee2339f1",
    "source": "academicpositions",
    "source_name": "Academic Positions（歐洲彙整站）",
-   "university": "Academic Positions（歐洲彙整站）",
+   "university": "ETH Zürich",
    "country": "EU",
-   "title": "Doctoral position in experimental characterization of semiconductor nanocrystals PhD research on semiconductor nanocrystals: single‑particle/ensemble spectrosco",
+   "title": "Doctoral position in experimental characterization of semiconductor nanocrystals",
    "url": "https://academicpositions.com/ad/eth-zurich/2026/doctoral-position-in-experimental-characterization-of-semiconductor-nanocrystals/251871",
    "location": "Zurich, Switzerland",
    "department": "",
@@ -425,6 +426,7 @@
    "deadline": "",
    "summary": "PhD research on semiconductor nanocrystals: single‑particle/ensemble spectroscopy + cryo‑EM to link size/shape/surface to optics; MSc in related field.",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -739,9 +741,9 @@
    "id": "2ba03d0b0f6706d4",
    "source": "academicpositions",
    "source_name": "Academic Positions（歐洲彙整站）",
-   "university": "Academic Positions（歐洲彙整站）",
+   "university": "AMOLF",
    "country": "EU",
-   "title": "PhD student Femtosecond study and control of surfactants on water Study surfactant/water interfaces with ultrafast spectroscopy (vibrational SFG); probe ions/ad",
+   "title": "PhD student Femtosecond study and control of surfactants on water",
    "url": "https://academicpositions.com/ad/amolf/2025/phd-student-femtosecond-study-and-control-of-surfactants-on-water/228442",
    "location": "Amsterdam, The Netherlands",
    "department": "",
@@ -749,6 +751,7 @@
    "deadline": "",
    "summary": "Study surfactant/water interfaces with ultrafast spectroscopy (vibrational SFG); probe ions/additives & mixed surfactants to cut surface tension at far lower concentrations. MSc Physics/Phys Chem.",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -757,9 +760,9 @@
    "id": "d7d547bf973f42e3",
    "source": "academicpositions",
    "source_name": "Academic Positions（歐洲彙整站）",
-   "university": "Academic Positions（歐洲彙整站）",
+   "university": "AMOLF",
    "country": "EU",
-   "title": "PhD - student Femtosecond Electrochemistry Study aqueous electrolytes at electrode surfaces with ultrafast spectroscopy (femtosecond SFG) to reveal structure/dy",
+   "title": "PhD - student Femtosecond Electrochemistry",
    "url": "https://academicpositions.com/ad/amolf/2025/phd-student-femtosecond-electrochemistry/228441",
    "location": "Amsterdam, The Netherlands",
    "department": "",
@@ -767,6 +770,7 @@
    "deadline": "",
    "summary": "Study aqueous electrolytes at electrode surfaces with ultrafast spectroscopy (femtosecond SFG) to reveal structure/dynamics during electrochemical reactions. MSc Physics/Physical Chemistry. 4-year PhD.",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -803,6 +807,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Computer Science The goal of this project is to develop video-based methods to monitor a human’s physiological parameters such as heart rate, breathing pat",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -821,6 +826,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Technology and Health We are looking for a highly motivated individual with a strong interest in medical technology development and research who would like to",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -839,6 +845,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Computer Science Social-network platforms moderate content using classifiers trained on contested value judgments. In this project we aim to develop algorithms",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -857,6 +864,7 @@
    "deadline": "",
    "summary": "The position will be based at the Chair of Marketing Analytics, which is part of the Heilbronn Data Science Center and the TUM School of Management at the TUM Campus Heilbronn. The position is expected to start as soon as possible for an initial term of three years",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -875,6 +883,7 @@
    "deadline": "",
    "summary": "",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -893,6 +902,7 @@
    "deadline": "",
    "summary": "Am Lehrstuhl für Educational Monitoring and Effectiveness und dem Zentrum für Internationale Bildungsvergleichsstudien (ZIB) e.V. der TUM School of Social Sciences and Technology suchen wir zum nächstmöglichen Zeitpunkt eine*n Doktorand*in oder Post-Doktorand*in PISA (m/w/d) in Vollzeit (100%, E13 TV-L).",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -911,6 +921,7 @@
    "deadline": "",
    "summary": "Projektbeskrivning Forskarutbildningsämne: Datalogi Vid Center för cyberförsvar och informationssäkerhet (CDIS) samarbetar KTH, Försvarsmakten och andra myndigheter i syfte att stärka och bredda",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -929,6 +940,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Information and Communication Technologies We invite applications for doctoral student positions with the Networked Systems Security (NSS) lab at EECS/CLS. We",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -947,6 +959,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Electrical Engineering The project is funded by the Swedish Research Council and the Wallenberg Centre for Quantum Technology (WACQT) and addresses fundamental",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -965,6 +978,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Information and Communication Technology In this doctoral project, you will contribute to the theory formation for mobile sub-terahertz (sub-THz) and terahertz",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -983,6 +997,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Electrical Engineering The project concerns information- and coding-theoretic methods for analysing and improving the resilience and efficiency of federated ma",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -1001,6 +1016,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Engineering Mechanics FLOW is a strong community of researchers engaged in fundamental and applied research in fluid mechanics within the department of Enginee",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -1019,6 +1035,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: physics The project will focus on theoretical condensed matter physics, with particular emphasis on quantum many-body physics. The research will mainly employ",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -1037,6 +1054,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Vehicle, Maritime and Aerospace Engineering The position is part of a project within the FFI Zero Emissions programme on acoustic source characterisation of el",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -1055,6 +1073,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Theoretical Condensed Matter Physics The group of Egor Babaev at the Department of Physics of KTH Royal Institute of Technology has an opening for one Doctoral",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -1073,6 +1092,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Energy Technology Industrial process heat represents a major challenge in the transition towards a climate-neutral energy system, as a large share of industria",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -1091,6 +1111,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Chemical Science and Engineering Flow batteries are an excellent technology for stationary and long-duration (8+ hours) energy storage. In terms of cost and",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -1109,6 +1130,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Information and Communication Technology Currently, there are no effective methods for protecting implementations of cryptographic algorithms from fault attack",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -1127,6 +1149,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Physics, specialization in Nuclear Engineering The group of Nuclear Power Safety in Division of Nuclear Science and Engineering (NSE) conducts research on acci",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -1145,6 +1168,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Technology and health AI-Driven Finite Element Human Body Modelling and Injury Biomechanics for Improved Traffic Safety This project develops an AI-driven plat",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -1163,6 +1187,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: BIO Biotechnology – Cancer Bioinformatics We are looking for a motivated PhD student to join our lab at KTH/SciLifeLab in Stockholm, where we focus on precis",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -1181,6 +1206,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Biological Physics The Hannebelle Lab at the Division of Biophysics, Department of Applied Physics, studies the physical mechanisms of infection. We are based",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -1199,6 +1225,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Information and Communication Technology We at the Department of Computing and Learning Systems (CLS) are seeking a PhD student to join a fully funded resear",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -1217,6 +1244,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Electrical Engineering Funded by FFI, the TERMINATOR project investigates how fast-switching silicon carbide (SiC) and gallium nitride (GaN) power electronics",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -1235,6 +1263,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Chemistry This PhD project explores the behavior of electrolytes within nanoporous electrodes, with particular emphasis on how pore size, morphology, and surfa",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -1253,6 +1282,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Biological Physics The AICell Lab ( https://aicell.io ) in the department of Applied Physics at KTH and Science for Life Laboratory pursues interdisciplinary r",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -1271,6 +1301,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Micro and Nano Systems The Micro and Nanosystems Lab invites applications for a Ph.D. student position. We are seeking applicants who have a desire to conduct",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -1289,6 +1320,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Physics The PhD student will conduct research in the field of X-ray astronomy, with an emphasis on emission associated with supernovae and their remnants. The",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -1307,6 +1339,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Production engineering We are seeking a motivated PhD student in intelligent robotics for production, with a focus on robot learning and AI-enabled automation.",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -1325,6 +1358,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Computer Science The Division of Robotics, Perception and Learning has an open position for a doctoral student with a background and strong interest in deep",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -1343,6 +1377,7 @@
    "deadline": "",
    "summary": "Project description Third-cycle subject: Electrical Engineering We are seeking a doctoral student for research in electromagnetic scattering, radar cross-section (RCS) analysis, and periodic electroma",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
@@ -1361,6 +1396,7 @@
    "deadline": "",
    "summary": "",
    "title_guessed": false,
+   "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open"
