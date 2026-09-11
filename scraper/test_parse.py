@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """不連網的解析測試：python scraper/test_parse.py"""
 import os
+import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -63,7 +64,37 @@ DETAIL = """<html><head><title>x</title></head><body>
 <p>Application deadline: 30 November 2026</p></body></html>"""
 
 
+def check_sources():
+    """sources.yml 本身的健檢：格式壞掉的話這裡就會擋下來。"""
+    import yaml
+
+    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "sources.yml"),
+              encoding="utf-8") as fh:
+        config = yaml.safe_load(fh)
+    check("sources.yml 有 defaults", isinstance(config.get("defaults"), dict), True)
+    sources = config.get("sources")
+    check("sources.yml 有 sources 清單", isinstance(sources, list) and len(sources) > 0, True)
+    if not isinstance(sources, list):
+        return
+    ids = [s.get("id") for s in sources]
+    check("來源 id 不重複", len(ids), len(set(ids)))
+    for source in sources:
+        label = source.get("id", "?")
+        check(f"{label} 有 name", bool(source.get("name")), True)
+        check(f"{label} 有 urls", bool(source.get("urls")), True)
+        check(f"{label} type 合法", source.get("type", "links") in run.ADAPTERS, True)
+        if source.get("type", "links") == "links":
+            pattern = source.get("link_pattern")
+            check(f"{label} 有 link_pattern", bool(pattern), True)
+            if pattern:
+                try:
+                    re.compile(pattern)
+                except re.error as exc:
+                    FAILS.append(f"{label} 的 link_pattern 不是合法正則：{exc}")
+
+
 def main():
+    check_sources()
     for title, want in TITLES:
         check(f"is_phd({title!r})", run.is_phd(title), want)
     for raw, want in DATES:

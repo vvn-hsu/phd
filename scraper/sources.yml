@@ -17,6 +17,9 @@ defaults:
   max_enrich: 80
   timeout: 30
 
+sources:
+  # TU Delft 排在 AcademicTransfer 前面，重複的職缺才會歸在 TU Delft 名下。
+  # tudelft.nl 自己那頁是 JS 渲染的，所以直接打 AcademicTransfer 的雇主篩選。
   - id: tudelft
     name: TU Delft
     country: NL
@@ -25,12 +28,11 @@ defaults:
     enabled: true
     urls:
       - https://www.academictransfer.com/en/jobs/?employer=technische-universiteit-delft&category=phd
-      - https://www.tudelft.nl/over-tu-delft/werken-bij-tu-delft/vacatures
-      - https://careers.tudelft.nl/
-    link_pattern: '/(en|nl)/jobs/\d+|/vacatures/[\w\-/]+'
+      - https://www.academictransfer.com/en/jobs/?q=delft&category=phd
+    link_pattern: '/(en|nl)/jobs/\d+'
+    pages: 2
     enrich: jsonld
 
-sources:
   - id: academictransfer
     name: AcademicTransfer（荷蘭各大學）
     country: NL
