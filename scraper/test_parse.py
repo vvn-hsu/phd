@@ -137,6 +137,8 @@ def main():
           run.score_topics("PhD in Human-Computer Interaction and VR")[0] >= 5, True)
     check("HCI 分數：不相關的是 0",
           run.score_topics("PhD in Inhalation Toxicology")[0], 0)
+    check("搜尋網址取得出關鍵字",
+          run.query_of("https://x/jobs?q=human-AI+interaction"), "human-AI interaction")
     check("關鍵字標籤看得懂",
           run.term_label("conversational (agent|interface|ai)"), "conversational agent")
 

@@ -8,6 +8,7 @@
 # 共用欄位：
 #   urls        - 候選網址，依序嘗試，第一個抓到東西的就用（其餘跳過）
 #   mode        - first（預設）／all：all 會把每個網址都抓一遍再合併，關鍵字搜尋用這個
+#   topic_boost - 這個來源本身就是 HCI 導向時，給每筆職缺加的相關度分數
 #   enrich      - jsonld：對新職缺再抓一次詳細頁，補發布日／截止日／系所
 #   filter      - phd（預設，只留博士職缺）／none（全留）
 #   max_enrich  - 每次執行最多補抓幾個詳細頁
@@ -28,6 +29,7 @@ sources:
     type: links
     enabled: true
     mode: all
+    topic_boost: 3
     urls:
       - https://www.academictransfer.com/en/jobs?q=human-computer+interaction
       - https://www.academictransfer.com/en/jobs?q=interaction+design
@@ -53,6 +55,7 @@ sources:
     type: links
     enabled: true
     mode: all
+    topic_boost: 3
     urls:
       - https://euraxess.ec.europa.eu/jobs/search?keywords=human-computer+interaction
       - https://euraxess.ec.europa.eu/jobs/search?keywords=interaction+design

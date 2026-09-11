@@ -17,7 +17,7 @@ import sys
 import time
 import traceback
 from datetime import date, datetime, timezone
-from urllib.parse import urljoin, urlparse
+from urllib.parse import parse_qs, urljoin, urlparse
 
 import requests
 import yaml
@@ -109,6 +109,15 @@ def is_phd(title: str, extra: str = "") -> bool:
     if POSTDOC.search(blob):
         return False
     return bool(PHD_WEAK.search(blob))
+
+
+def query_of(url: str) -> str:
+    """從搜尋網址取出關鍵字，例如 ?q=human-AI+interaction -> human-AI interaction。"""
+    params = parse_qs(urlparse(url).query)
+    for key in ("q", "keywords", "search", "query"):
+        if params.get(key):
+            return params[key][0].replace("+", " ").strip()
+    return ""
 
 
 def term_label(term: str) -> str:
@@ -404,7 +413,11 @@ def adapter_links(source: dict, cfg: dict) -> tuple[list[dict], str]:
         if seen:
             if mode != "all":
                 return list(seen.values()), url
-            pooled.update(seen)
+            query = query_of(url)
+            for key, item in seen.items():
+                if key not in pooled:
+                    item["found_via"] = query
+                    pooled[key] = item
             used.append(url)
             time.sleep(0.5)
             continue
@@ -537,6 +550,8 @@ def collect(source: dict, cfg: dict) -> list[dict]:
             "deadline": item.get("deadline", ""),
             "summary": item.get("summary", ""),
             "title_guessed": bool(item.get("title_guessed")),
+            "found_via": item.get("found_via", ""),
+            "topic_boost": int(source.get("topic_boost", 0)),
         }
         out.append(record)
     if not out and dropped:
@@ -639,8 +654,15 @@ def main() -> int:
 
     # 算 HCI 相關度（要在補抓之後，摘要那時候才有）
     for job in fresh.values():
-        job["topic_score"], job["topics"] = score_topics(
+        score, hits = score_topics(
             job.get("title", ""), job.get("summary", ""), job.get("department", ""))
+        # 從 HCI 關鍵字搜尋進來的，這件事本身就是證據
+        boost = job.get("topic_boost", 0)
+        if boost:
+            score += boost
+            label = f"搜尋：{job['found_via']}" if job.get("found_via") else "HCI 關鍵字搜尋"
+            hits = [label] + hits
+        job["topic_score"], job["topics"] = score, hits[:8]
 
     # 查不到雇主就讓 university 留空，網頁顯示時自己退回來源名稱。
     # 寫進資料的話，下一輪會被當成「已經知道學校了」而不再補抓。

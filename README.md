@@ -26,6 +26,9 @@
 分數規則：strong 的詞 3 分（human-computer interaction、usability、interaction design、
 human factors、HCI/CSCW/HRI/UX⋯），medium 2 分（VR/AR/XR、eye tracking、accessibility、
 conversational agent、visualization、affective computing⋯），weak 1 分。
+另外，從 HCI 關鍵字搜尋來源進來的職缺，光是「被那組關鍵字搜到」就加 3 分
+（`sources.yml` 的 `topic_boost`），卡片上會顯示是哪個關鍵字搜到的。
+
 廣泛＝2 分以上，嚴格＝5 分以上。要放寬或收緊就改 `scraper/topics.yml`。
 
 除了一般來源之外，另外有兩個「HCI 關鍵字搜尋」來源，直接拿 HCI 的詞去搜
