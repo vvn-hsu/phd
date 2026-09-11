@@ -646,7 +646,7 @@ def main() -> int:
             return False
         unknown_university = (not old.get("university")
                               or old.get("university") == old.get("source_name"))
-        return unknown_university or not old.get("deadline")
+        return unknown_university or not old.get("deadline") or "page_score" not in old
 
     candidates = [j for j in fresh.values() if j["id"] not in known]
     candidates += [j for j in fresh.values() if j["id"] in known and needs_enrich(j)]

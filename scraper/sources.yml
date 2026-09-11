@@ -16,7 +16,7 @@
 
 defaults:
   filter: phd
-  max_enrich: 80
+  max_enrich: 130
   timeout: 30
 
 sources:
