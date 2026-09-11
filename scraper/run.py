@@ -435,6 +435,13 @@ def enrich_job(job: dict, timeout: int) -> None:
         job["title_guessed"] = False
 
 
+def dedupe_key(job: dict) -> str:
+    """同一個職缺常常同時登在 EURAXESS 和學校自己的系統上，用標題＋學校當指紋。"""
+    def norm(text: str) -> str:
+        return re.sub(r"[^a-z0-9]+", " ", (text or "").lower()).strip()[:90]
+    return f"{norm(job.get('title'))}|{norm(job.get('university'))}"
+
+
 def load_previous() -> dict:
     if not os.path.exists(DATA):
         return {"jobs": []}
@@ -548,6 +555,21 @@ def main() -> int:
         # 詳細頁沒給雇主的話，才退回用來源名稱，免得把別校職缺掛在某一校名下
         if not job.get("university"):
             job["university"] = job["source_name"]
+
+    # 跨來源去重：標題和學校都一樣就當同一個職缺，留先出現的來源
+    deduped: dict[str, dict] = {}
+    duplicates = 0
+    for job in fresh.values():
+        key = dedupe_key(job)
+        first = deduped.get(key)
+        if first is None:
+            deduped[key] = job
+            continue
+        first.setdefault("also_at", []).append({"source": job["source_name"], "url": job["url"]})
+        duplicates += 1
+    if duplicates:
+        log(f"跨來源重複 {duplicates} 筆，已合併")
+    fresh = deduped
 
     merged: dict[str, dict] = {}
     for job in fresh.values():

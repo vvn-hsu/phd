@@ -245,6 +245,8 @@ function render(){
       job.posted && '發布 ' + job.posted,
       job.deadline && '截止 ' + job.deadline,
       '發現於 ' + fmt(job.first_seen),
+      (job.also_at || []).length && `另見 ${job.also_at.map(a =>
+        `<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.source)}</a>`).join('、')}`,
     ].filter(Boolean).map(x => `<span>${x}</span>`).join('');
     return `<article class="job ${seen.has(job.id) ? '' : 'unseen'} ${job.status === 'closed' ? 'closed' : ''}" data-id="${job.id}">
       <h2><a href="${esc(job.url)}" target="_blank" rel="noopener">${esc(job.title)}</a></h2>

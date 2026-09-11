@@ -129,6 +129,13 @@ def main():
     check("詳細頁 fallback 截止日", run.page_fallback_fields(DETAIL)["deadline"], "2026-11-30")
     check("詳細頁 fallback 學校",
           run.page_fallback_fields(DETAIL)["university"], "Delft University of Technology")
+    check("同標題同學校算同一個職缺",
+          run.dedupe_key({"title": "PhD Position on Wind", "university": "TU Delft"}),
+          run.dedupe_key({"title": "PhD  position   on wind!", "university": "TU  Delft"}))
+    check("同標題不同學校不算重複",
+          run.dedupe_key({"title": "PhD in ML", "university": "TU Delft"})
+          != run.dedupe_key({"title": "PhD in ML", "university": "KTH"}), True)
+
     check("詳細頁 fallback 發布日",
           run.page_fallback_fields(DETAIL)["posted"], "2026-09-11")
     check("詳細頁 fallback 標題", run.page_fallback_fields(DETAIL)["title"], "PhD position: Offshore Wind")
