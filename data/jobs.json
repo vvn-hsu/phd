@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-09-11T09:28:41+00:00",
+ "generated_at": "2026-09-11T09:35:19+00:00",
  "date": "2026-09-11",
  "topic_thresholds": {
   "broad": 2,
   "strict": 5
  },
  "counts": {
-  "open": 95,
-  "new_today": 95,
-  "closed_kept": 32,
-  "hci_broad": 6
+  "open": 93,
+  "new_today": 93,
+  "closed_kept": 35,
+  "hci_broad": 46
  },
  "sources": [
   {
@@ -48,7 +48,7 @@
    "country": "EU",
    "homepage": "https://euraxess.ec.europa.eu/jobs/search",
    "status": "ok",
-   "count": 3,
+   "count": 1,
    "url_used": "https://euraxess.ec.europa.eu/jobs/search",
    "error": ""
   },
@@ -113,7 +113,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": []
   },
@@ -133,7 +133,12 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 1,
+   "page_topics": [
+    "stakeholder"
+   ],
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -204,12 +209,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 2,
+   "page_topics": [
+    "qualitative research",
+    "stakeholder"
+   ],
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 2,
+   "topics": [
+    "qualitative research",
+    "stakeholder"
+   ]
   },
   {
    "id": "997d09b649365c6c",
@@ -321,12 +335,18 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 2,
+   "page_topics": [
+    "accessibility"
+   ],
+   "query_ok": false,
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 1,
+   "topic_score": 3,
    "topics": [
+    "accessibility",
     "搜尋：human-computer interaction（內文未出現）"
    ]
   },
@@ -373,6 +393,32 @@
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "closed",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "696698cbc33cbd0c",
+   "source": "academictransfer",
+   "source_name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
+   "university": "University of Groningen",
+   "country": "NL",
+   "title": "PhD in Adapative Regulatory Frameworks for the Hydrogen Economy",
+   "url": "https://www.academictransfer.com/en/jobs/363891/phd-in-adapative-regulatory-frameworks-for-the-hydrogen-economy/",
+   "location": "Groningen, NL",
+   "department": "",
+   "posted": "2026-09-11",
+   "deadline": "2026-10-11",
+   "summary": "Are you an enthusiastic lawyer and/or public administration scholar with a curious research mind? Would you like to use your expertise to make a direct contribution to one of the major societal challenges of our time: the energy transition? Then we are looking for you! What are you going to do? As a PhD candidate, you will investigate how the regulation of the hydrogen economy can be designed in s",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
    "topic_score": 0,
    "topics": []
   },
@@ -438,7 +484,10 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 0,
+   "page_topics": [],
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -928,7 +977,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": []
   },
@@ -948,7 +997,11 @@
    "title_guessed": false,
    "found_via": "data visualization",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 0,
+   "page_topics": [],
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -973,13 +1026,17 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 0,
+   "page_topics": [],
+   "query_ok": true,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 1,
+   "topic_score": 3,
    "topics": [
-    "搜尋：interaction design（內文未出現）"
+    "搜尋：interaction design"
    ]
   },
   {
@@ -1001,7 +1058,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open",
+   "status": "closed",
    "topic_score": 1,
    "topics": [
     "digital twin"
@@ -1023,12 +1080,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 2,
+   "page_topics": [
+    "socio technical",
+    "stakeholder"
+   ],
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 2,
+   "topics": [
+    "socio technical",
+    "stakeholder"
+   ]
   },
   {
    "id": "2d72fd055beec099",
@@ -1046,7 +1112,10 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 0,
+   "page_topics": [],
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1069,13 +1138,17 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 0,
+   "page_topics": [],
+   "query_ok": true,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 1,
+   "topic_score": 3,
    "topics": [
-    "搜尋：human factors（內文未出現）"
+    "搜尋：human factors"
    ]
   },
   {
@@ -1094,13 +1167,20 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 1,
+   "page_topics": [
+    "stakeholder"
+   ],
+   "query_ok": true,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 1,
+   "topic_score": 4,
    "topics": [
-    "搜尋：interaction design（內文未出現）"
+    "搜尋：interaction design",
+    "stakeholder"
    ]
   },
   {
@@ -1119,13 +1199,20 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 1,
+   "page_topics": [
+    "socio technical"
+   ],
+   "query_ok": true,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 1,
+   "topic_score": 4,
    "topics": [
-    "搜尋：interaction design（內文未出現）"
+    "搜尋：interaction design",
+    "socio technical"
    ]
   },
   {
@@ -1144,12 +1231,19 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 1,
+   "page_topics": [
+    "stakeholder"
+   ],
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 1,
+   "topic_score": 2,
    "topics": [
+    "stakeholder",
     "搜尋：accessibility（內文未出現）"
    ]
   },
@@ -1169,13 +1263,21 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 2,
+   "page_topics": [
+    "cognitive load",
+    "stakeholder"
+   ],
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 2,
+   "topic_score": 3,
    "topics": [
     "cognitive load",
+    "stakeholder",
     "搜尋：human-centered design（內文未出現）"
    ]
   },
@@ -1195,12 +1297,24 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 6,
+   "page_topics": [
+    "design research",
+    "qualitative research",
+    "socio technical",
+    "stakeholder"
+   ],
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 2,
+   "topic_score": 7,
    "topics": [
+    "design research",
+    "qualitative research",
+    "socio technical",
     "stakeholder",
     "搜尋：human-centered design（內文未出現）"
    ]
@@ -1221,7 +1335,11 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 0,
+   "page_topics": [],
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1246,13 +1364,22 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 3,
+   "page_topics": [
+    "accessibility",
+    "qualitative research"
+   ],
+   "query_ok": true,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 1,
+   "topic_score": 6,
    "topics": [
-    "搜尋：accessibility（內文未出現）"
+    "搜尋：accessibility",
+    "accessibility",
+    "qualitative research"
    ]
   },
   {
@@ -1284,7 +1411,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "International Max Planck Research School for Translational Psychiatry (IMPRS-TP)",
    "country": "EU",
-   "title": "Upcoming fully funded PhD Positions in Neurosciences and Translational Psychiatry research, including a residency/PhD track option for medical doctors Fully fun",
+   "title": "Upcoming fully funded PhD Positions in Neurosciences and Translational Psychiatry research, including a residency/PhD track option for medical doctors",
    "url": "https://academicpositions.com/ad/international-max-planck-research-school-for-translational-psychiatry-imprs-tp/2026/upcoming-fully-funded-phd-positions-in-neurosciences-and-translational-psychiatry-research-including-a-residency-phd-track-option-for-medical-doctors/243079",
    "location": "Munich, Germany",
    "department": "",
@@ -1294,12 +1421,20 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 4,
+   "page_topics": [
+    "user interface",
+    "cognitive load"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 4,
+   "topics": [
+    "user interface",
+    "cognitive load"
+   ]
   },
   {
    "id": "aab8b2e40f0aed7d",
@@ -1317,12 +1452,21 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 2,
+   "page_topics": [
+    "user behaviour",
+    "end user"
+   ],
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 1,
+   "topic_score": 3,
    "topics": [
+    "user behaviour",
+    "end user",
     "搜尋：accessibility（內文未出現）"
    ]
   },
@@ -1342,7 +1486,11 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 0,
+   "page_topics": [],
+   "query_ok": false,
+   "employment": "FULL_TIME",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1367,7 +1515,11 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 0,
+   "page_topics": [],
+   "query_ok": false,
+   "employment": "FULL_TIME",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1392,13 +1544,17 @@
    "title_guessed": false,
    "found_via": "data visualization",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 0,
+   "page_topics": [],
+   "query_ok": true,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 1,
+   "topic_score": 3,
    "topics": [
-    "搜尋：data visualization（內文未出現）"
+    "搜尋：data visualization"
    ]
   },
   {
@@ -1417,7 +1573,11 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 0,
+   "page_topics": [],
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1432,7 +1592,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "University of Basel",
    "country": "EU",
-   "title": "Two PhD Positions in Second Language Acquisition / Study Abroad Research (100%) Fully funded 4-year PhD (100%) in Basel: research study abroad effects on L2 pro",
+   "title": "Two PhD Positions in Second Language Acquisition / Study Abroad Research (100%)",
    "url": "https://academicpositions.com/ad/university-of-basel/2026/two-phd-positions-in-second-language-acquisition-study-abroad-research-100/252259",
    "location": "Basel, Switzerland",
    "department": "",
@@ -1442,12 +1602,20 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 4,
+   "page_topics": [
+    "user interface",
+    "qualitative research"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 4,
+   "topics": [
+    "user interface",
+    "qualitative research"
+   ]
   },
   {
    "id": "dc63e84f1764083e",
@@ -1465,13 +1633,20 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 1,
+   "page_topics": [
+    "stakeholder"
+   ],
+   "query_ok": true,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 1,
+   "topic_score": 4,
    "topics": [
-    "搜尋：human factors（內文未出現）"
+    "搜尋：human factors",
+    "stakeholder"
    ]
   },
   {
@@ -1490,13 +1665,17 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 0,
+   "page_topics": [],
+   "query_ok": true,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 1,
+   "topic_score": 3,
    "topics": [
-    "搜尋：human factors（內文未出現）"
+    "搜尋：human factors"
    ]
   },
   {
@@ -1528,7 +1707,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "University of Eastern Finland",
    "country": "EU",
-   "title": "Doctoral Researcher (PhD Student), Inhalation Toxicology PhD researcher in inhalation toxicology studying microgravity effects on human respiratory cells; exten",
+   "title": "Doctoral Researcher (PhD Student), Inhalation Toxicology",
    "url": "https://academicpositions.com/ad/university-of-eastern-finland/2026/doctoral-researcher-phd-student-inhalation-toxicology/252065",
    "location": "Kuopio, Finland",
    "department": "",
@@ -1538,12 +1717,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 3,
+   "page_topics": [
+    "user interface"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 3,
+   "topics": [
+    "user interface"
+   ]
   },
   {
    "id": "6cd1256c70bd3461",
@@ -1551,7 +1736,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "KU Leuven",
    "country": "EU",
-   "title": "Automated Eating Activity Tracking System for Anorexia Nervosa Using AI and Wearable Sensors Fully funded PhD: build AI + wrist IMU wearables to track eating be",
+   "title": "Automated Eating Activity Tracking System for Anorexia Nervosa Using AI and Wearable Sensors",
    "url": "https://academicpositions.com/ad/ku-leuven/2026/automated-eating-activity-tracking-system-for-anorexia-nervosa-using-ai-and-wearable-sensors/252035",
    "location": "Leuven, Belgium",
    "department": "",
@@ -1561,12 +1746,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 6,
+   "page_topics": [
+    "user interface",
+    "wearable",
+    "wearable sensor"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 3,
+   "topic_score": 6,
    "topics": [
+    "user interface",
     "wearable",
     "wearable sensor"
    ]
@@ -1577,7 +1769,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "Eindhoven University of Technology",
    "country": "EU",
-   "title": "PhD position robust multi-criteria optical design under uncertainty PhD research in applied math: develop robust multi-criteria inverse freeform optical design",
+   "title": "PhD position robust multi-criteria optical design under uncertainty",
    "url": "https://academicpositions.com/ad/eindhoven-university-of-technology/2026/phd-position-robust-multi-criteria-optical-design-under-uncertainty/251981",
    "location": "Eindhoven, The Netherlands",
    "department": "",
@@ -1587,12 +1779,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 3,
+   "page_topics": [
+    "user interface"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 3,
+   "topics": [
+    "user interface"
+   ]
   },
   {
    "id": "69a2157515149d6e",
@@ -1610,13 +1808,24 @@
    "title_guessed": false,
    "found_via": "eye tracking",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 5,
+   "page_topics": [
+    "eye tracking",
+    "EEG",
+    "cognitive load"
+   ],
+   "query_ok": true,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 1,
+   "topic_score": 8,
    "topics": [
-    "搜尋：eye tracking（內文未出現）"
+    "搜尋：eye tracking",
+    "eye tracking",
+    "EEG",
+    "cognitive load"
    ]
   },
   {
@@ -1635,7 +1844,13 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 1,
+   "page_topics": [
+    "stakeholder"
+   ],
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1651,7 +1866,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "Vrije Universiteit Brussel (VUB)",
    "country": "EU",
-   "title": "PhD Position in Multimodal Sensor Design for Agrifood Fully funded PhD: design miniaturized handheld UV‑VIS‑NIR/fluorescence/Raman sensor using freeform optics",
+   "title": "PhD Position in Multimodal Sensor Design for Agrifood",
    "url": "https://academicpositions.com/ad/vrije-universiteit-brussel/2026/phd-position-in-multimodal-sensor-design-for-agrifood/251982",
    "location": "Brussels, Belgium",
    "department": "",
@@ -1661,12 +1876,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 3,
+   "page_topics": [
+    "user interface"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 3,
+   "topics": [
+    "user interface"
+   ]
   },
   {
    "id": "6c504d216fe9c9b9",
@@ -1674,7 +1895,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "International Max Planck Research School for Translational Psychiatry (IMPRS-TP)",
    "country": "EU",
-   "title": "Fully funded PhD Positions in Neuroscience and Translational Psychiatry, with a Residency/PhD track for medical doctors Fully funded PhD positions in neuroscien",
+   "title": "Fully funded PhD Positions in Neuroscience and Translational Psychiatry, with a Residency/PhD track for medical doctors",
    "url": "https://academicpositions.com/ad/international-max-planck-research-school-for-translational-psychiatry-imprs-tp/2026/fully-funded-phd-positions-in-neuroscience-and-translational-psychiatry-with-a-residency-phd-track-for-medical-doctors/243078",
    "location": "Munich, Germany",
    "department": "",
@@ -1684,12 +1905,20 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 4,
+   "page_topics": [
+    "user interface",
+    "cognitive load"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 4,
+   "topics": [
+    "user interface",
+    "cognitive load"
+   ]
   },
   {
    "id": "f7aafdfdad3dd8a3",
@@ -1707,7 +1936,11 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 0,
+   "page_topics": [],
+   "query_ok": false,
+   "employment": "FULL_TIME",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1755,14 +1988,32 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 16,
+   "page_topics": [
+    "human computer interaction",
+    "human centered computing",
+    "human centred computing",
+    "usability",
+    "wearable",
+    "user behaviour",
+    "end user"
+   ],
+   "query_ok": true,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 4,
+   "topic_score": 19,
    "topics": [
+    "搜尋：human-computer interaction",
+    "human computer interaction",
     "human centered computing",
-    "搜尋：human-computer interaction（內文未出現）"
+    "human centred computing",
+    "usability",
+    "wearable",
+    "user behaviour",
+    "end user"
    ]
   },
   {
@@ -1771,7 +2022,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "KU Leuven",
    "country": "EU",
-   "title": "PhD on Scalable Wide-Area EMT Simulation and Automated Stability Assessment Fully funded 4-year PhD (Genk, Belgium) developing scalable EMT simulation & automat",
+   "title": "PhD on Scalable Wide-Area EMT Simulation and Automated Stability Assessment",
    "url": "https://academicpositions.com/ad/ku-leuven/2026/phd-on-scalable-wide-area-emt-simulation-and-automated-stability-assessment/251800",
    "location": "Leuven, Belgium",
    "department": "",
@@ -1781,12 +2032,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 3,
+   "page_topics": [
+    "user interface"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 3,
+   "topics": [
+    "user interface"
+   ]
   },
   {
    "id": "15ded5137e2723a7",
@@ -1804,14 +2061,33 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 31,
+   "page_topics": [
+    "human computer interaction",
+    "user experience",
+    "human factors",
+    "user study",
+    "mixed reality",
+    "extended reality",
+    "haptic",
+    "wearable"
+   ],
+   "query_ok": true,
+   "employment": "FULL_TIME",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 3,
+   "topic_score": 34,
    "topics": [
-    "XR",
-    "搜尋：human-computer interaction（內文未出現）"
+    "搜尋：human-computer interaction",
+    "human computer interaction",
+    "user experience",
+    "human factors",
+    "user study",
+    "mixed reality",
+    "extended reality",
+    "haptic"
    ]
   },
   {
@@ -1830,12 +2106,19 @@
    "title_guessed": false,
    "found_via": "conversational agent",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 1,
+   "page_topics": [
+    "robotics"
+   ],
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 1,
+   "topic_score": 2,
    "topics": [
+    "robotics",
     "搜尋：conversational agent（內文未出現）"
    ]
   },
@@ -1845,7 +2128,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "Eindhoven University of Technology",
    "country": "EU",
-   "title": "PhD on Computational growth and remodeling of cartilage microtissues Build finite-element growth/remodeling models of cartilage microtissues; analyze mechanics-",
+   "title": "PhD on Computational growth and remodeling of cartilage microtissues",
    "url": "https://academicpositions.com/ad/eindhoven-university-of-technology/2026/phd-on-computational-growth-and-remodeling-of-cartilage-microtissues/251365",
    "location": "Eindhoven, The Netherlands",
    "department": "",
@@ -1855,12 +2138,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 3,
+   "page_topics": [
+    "user interface"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 3,
+   "topics": [
+    "user interface"
+   ]
   },
   {
    "id": "11c4d77b873c9c95",
@@ -1878,7 +2167,11 @@
    "title_guessed": false,
    "found_via": "conversational agent",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 0,
+   "page_topics": [],
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1893,7 +2186,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "Vlerick Business School",
    "country": "EU",
-   "title": "PhD Researcher: AI-driven Employee-Customer Relationship Management in the Service Sector Conduct 4-year PhD research on AI-driven employee-customer relationshi",
+   "title": "PhD Researcher: AI-driven Employee-Customer Relationship Management in the Service Sector",
    "url": "https://academicpositions.com/ad/vlerick-business-school/2026/phd-researcher-ai-driven-employee-customer-relationship-management-in-the-service-sector/244064",
    "location": "Brussels, Belgium",
    "department": "",
@@ -1903,12 +2196,20 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 4,
+   "page_topics": [
+    "user interface",
+    "stakeholder"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 4,
+   "topics": [
+    "user interface",
+    "stakeholder"
+   ]
   },
   {
    "id": "78a7feed7cd1356e",
@@ -1916,7 +2217,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "Mohammed VI Polytechnic University",
    "country": "EU",
-   "title": "CAS - Global health, public health in Africa Submit a proposal on global health and public health in Africa. PhD required. Teach medical ethics in English, cond",
+   "title": "CAS - Global health, public health in Africa",
    "url": "https://academicpositions.com/ad/mohammed-vi-polytechnic-university/2026/cas-global-health-public-health-in-africa/243487",
    "location": "Benguerir, Morocco",
    "department": "",
@@ -1926,12 +2227,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 3,
+   "page_topics": [
+    "user interface"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 3,
+   "topics": [
+    "user interface"
+   ]
   },
   {
    "id": "006b74bbd1d35120",
@@ -1949,12 +2256,21 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 1,
+   "page_score": 4,
+   "page_topics": [
+    "explainable ai",
+    "prototyping"
+   ],
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 1,
+   "topic_score": 5,
    "topics": [
+    "explainable ai",
+    "prototyping",
     "搜尋：accessibility（內文未出現）"
    ]
   },
@@ -1964,7 +2280,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "International Max Planck Research School on Cellular Biophysics (IMPRS-CBP)",
    "country": "EU",
-   "title": "PhD Positions at International Max Planck Research School on Cellular Biophysics Fully funded PhD program in cellular biophysics with interdisciplinary research",
+   "title": "PhD Positions at International Max Planck Research School on Cellular Biophysics",
    "url": "https://academicpositions.com/ad/international-max-planck-research-school-on-cellular-biophysics-imprs-cbp/2026/phd-positions-at-international-max-planck-research-school-on-cellular-biophysics/242409",
    "location": "Frankfurt am Main, Germany",
    "department": "",
@@ -1974,12 +2290,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 3,
+   "page_topics": [
+    "user interface"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 3,
+   "topics": [
+    "user interface"
+   ]
   },
   {
    "id": "1ba497afe46c3a96",
@@ -1987,7 +2309,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "European Molecular Biology Laboratory (EMBL)",
    "country": "EU",
-   "title": "Upcoming Fully Funded PhD Positions in Life Sciences Join an international team for fully funded PhD positions in molecular life sciences. Open to diverse STEM",
+   "title": "Upcoming Fully Funded PhD Positions in Life Sciences",
    "url": "https://academicpositions.com/ad/european-molecular-biology-laboratory-embl/2026/upcoming-fully-funded-phd-positions-in-life-sciences/243569",
    "location": "Heidelberg, Germany",
    "department": "",
@@ -1997,12 +2319,20 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 4,
+   "page_topics": [
+    "user interface",
+    "robotics"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 4,
+   "topics": [
+    "user interface",
+    "robotics"
+   ]
   },
   {
    "id": "93d26820055b08cc",
@@ -2010,7 +2340,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "Max Planck Institute of Immunobiology and Epigenetics",
    "country": "EU",
-   "title": "Fully funded doctoral positions at the International Max Planck Research School for Epigenetics, Biophysics and Metabolism (IMPRS-EBM) Fully funded PhD program",
+   "title": "Fully funded doctoral positions at the International Max Planck Research School for Epigenetics, Biophysics and Metabolism (IMPRS-EBM)",
    "url": "https://academicpositions.com/ad/max-planck-institute-immunobiology-epigenetics/2026/fully-funded-doctoral-positions-at-the-international-max-planck-research-school-for-epigenetics-biophysics-and-metabolism-imprs-ebm/241108",
    "location": "Freiburg im Breisgau, Germany",
    "department": "",
@@ -2020,12 +2350,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 3,
+   "page_topics": [
+    "user interface"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 3,
+   "topics": [
+    "user interface"
+   ]
   },
   {
    "id": "fc6b94ae50d90ba7",
@@ -2033,7 +2369,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "IMPRS for Molecular Organ Biology",
    "country": "EU",
-   "title": "Upcoming 10+ fully funded PhD positions at the IMPRS for Molecular Organ Biology Fully funded PhD positions in an international program exploring genetics, deve",
+   "title": "Upcoming 10+ fully funded PhD positions at the IMPRS for Molecular Organ Biology",
    "url": "https://academicpositions.com/ad/imprs-for-molecular-organ-biology/2026/upcoming-10-fully-funded-phd-positions-at-the-imprs-for-molecular-organ-biology/241039",
    "location": "Bad Nauheim, Germany",
    "department": "",
@@ -2043,12 +2379,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 3,
+   "page_topics": [
+    "user interface"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 3,
+   "topics": [
+    "user interface"
+   ]
   },
   {
    "id": "569d54e8e8b076af",
@@ -2056,7 +2398,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "University of Luxembourg",
    "country": "EU",
-   "title": "Doctoral researcher in Translational Neuroscience PhD project on GBA1-associated Parkinson's disease using iPSC-derived neuronal models. Requires cell culture,",
+   "title": "Doctoral researcher in Translational Neuroscience",
    "url": "https://academicpositions.com/ad/university-of-luxembourg/2026/doctoral-researcher-in-translational-neuroscience/243894",
    "location": "Esch-sur-Alzette, Luxembourg",
    "department": "",
@@ -2066,12 +2408,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 3,
+   "page_topics": [
+    "user interface"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 3,
+   "topics": [
+    "user interface"
+   ]
   },
   {
    "id": "3bff445459f63685",
@@ -2079,7 +2427,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "University of Luxembourg",
    "country": "EU",
-   "title": "Doctoral researcher positions in Finance Join a top-ranked, international finance department for a PhD with rigorous coursework, research opportunities, and com",
+   "title": "Doctoral researcher positions in Finance",
    "url": "https://academicpositions.com/ad/university-of-luxembourg/2026/doctoral-researcher-positions-in-finance/243620",
    "location": "Esch-sur-Alzette, Luxembourg",
    "department": "",
@@ -2089,12 +2437,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 3,
+   "page_topics": [
+    "user interface"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 3,
+   "topics": [
+    "user interface"
+   ]
   },
   {
    "id": "a8804eafe9706857",
@@ -2102,7 +2456,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "University of Luxembourg",
    "country": "EU",
-   "title": "Doctoral researcher in Network Traffic Obfuscation Join a dynamic research group to advance network traffic obfuscation, collaborate with industry, teach, and p",
+   "title": "Doctoral researcher in Network Traffic Obfuscation",
    "url": "https://academicpositions.com/ad/university-of-luxembourg/2026/doctoral-researcher-in-network-traffic-obfuscation/243588",
    "location": "Luxembourg, Luxembourg",
    "department": "",
@@ -2112,12 +2466,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 3,
+   "page_topics": [
+    "user interface"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 3,
+   "topics": [
+    "user interface"
+   ]
   },
   {
    "id": "17a8b7152c63231e",
@@ -2125,7 +2485,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "University of Luxembourg",
    "country": "EU",
-   "title": "Doctoral researcher in AI for Cybersecurity Join a multidisciplinary team to research AI for cybersecurity, collaborate with industry, and contribute to teachin",
+   "title": "Doctoral researcher in AI for Cybersecurity",
    "url": "https://academicpositions.com/ad/university-of-luxembourg/2026/doctoral-researcher-in-ai-for-cybersecurity/243589",
    "location": "Luxembourg, Luxembourg",
    "department": "",
@@ -2135,12 +2495,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 3,
+   "page_topics": [
+    "user interface"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 3,
+   "topics": [
+    "user interface"
+   ]
   },
   {
    "id": "42b9befec29a0299",
@@ -2148,7 +2514,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "MQV & IMPRS Quantum Education Program",
    "country": "EU",
-   "title": "Upcoming PhD Positions MQV & Max Planck IMPRS Doctoral Fellowships in Quantum Science and Technology: Fall 2026 Open Call Fully funded PhD fellowships in quantu",
+   "title": "Upcoming PhD Positions MQV & Max Planck IMPRS Doctoral Fellowships in Quantum Science and Technology: Fall 2026 Open Call",
    "url": "https://academicpositions.com/ad/mqv-imprs-quantum-education-program/2026/upcoming-phd-positions-mqv-max-planck-imprs-doctoral-fellowships-in-quantum-science-and-technology-fall-2026-open-call/239609",
    "location": "Munich, Germany",
    "department": "",
@@ -2158,12 +2524,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 3,
+   "page_topics": [
+    "user interface"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 3,
+   "topics": [
+    "user interface"
+   ]
   },
   {
    "id": "f7dc409ec4d66fc9",
@@ -2171,7 +2543,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "Max Planck Institute for Solid State Research",
    "country": "EU",
-   "title": "Fully funded PhD positions (doctoral researcher) at Max Planck Graduate Center for Quantum Materials (f/m/d) Join a vibrant PhD program in quantum materials. Fu",
+   "title": "Fully funded PhD positions (doctoral researcher) at Max Planck Graduate Center for Quantum Materials (f/m/d)",
    "url": "https://academicpositions.com/ad/max-planck-institute-for-solid-state-research/2025/fully-funded-phd-positions-doctoral-researcher-at-max-planck-graduate-center-for-quantum-materials-f-m-d/238895",
    "location": "Stuttgart, Germany",
    "department": "",
@@ -2181,12 +2553,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 3,
+   "page_topics": [
+    "user interface"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 3,
+   "topics": [
+    "user interface"
+   ]
   },
   {
    "id": "4ee8d19c570f0d8b",
@@ -2194,7 +2572,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "Karolinska Institutet",
    "country": "EU",
-   "title": "PhD position – Computational Neuroscience and Systems Biology. Theme: Neural dynamics underlying survival behaviors Funded PhD in computational neuroscience: mo",
+   "title": "PhD position – Computational Neuroscience and Systems Biology. Theme: Neural dynamics underlying survival behaviors",
    "url": "https://academicpositions.com/ad/karolinska-institutet/2025/phd-position-computational-neuroscience-and-systems-biology-theme-neural-dynamics-underlying-survival-behaviors/241536",
    "location": "Stockholm, Sweden",
    "department": "",
@@ -2204,12 +2582,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 3,
+   "page_topics": [
+    "user interface"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 3,
+   "topics": [
+    "user interface"
+   ]
   },
   {
    "id": "a714974b2d2c63be",
@@ -2240,7 +2624,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "University of Luxembourg",
    "country": "EU",
-   "title": "PhD in Informatics Join an interdisciplinary research group tackling global challenges in ICT, energy, and policy. Strong analytical, programming, and communica",
+   "title": "PhD in Informatics",
    "url": "https://academicpositions.com/ad/university-of-luxembourg/2025/phd-in-informatics/240073",
    "location": "Luxembourg, Luxembourg",
    "department": "",
@@ -2250,12 +2634,20 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 4,
+   "page_topics": [
+    "user interface",
+    "stakeholder"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 4,
+   "topics": [
+    "user interface",
+    "stakeholder"
+   ]
   },
   {
    "id": "19f74e929dd37afb",
@@ -2263,7 +2655,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "University of Luxembourg",
    "country": "EU",
-   "title": "PhD Candidate in Radar-Based 4D Imaging & Massive-MIMO PhD research on optimizing antenna placement and waveform design for Massive MIMO 4D imaging radars. Requ",
+   "title": "PhD Candidate in Radar-Based 4D Imaging & Massive-MIMO",
    "url": "https://academicpositions.com/ad/university-of-luxembourg/2025/phd-candidate-in-radar-based-4d-imaging-massive-mimo/239148",
    "location": "Luxembourg, Luxembourg",
    "department": "",
@@ -2273,12 +2665,22 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 6,
+   "page_topics": [
+    "user interface",
+    "gesture recognition",
+    "robotics"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 6,
+   "topics": [
+    "user interface",
+    "gesture recognition",
+    "robotics"
+   ]
   },
   {
    "id": "2ba03d0b0f6706d4",
@@ -2332,7 +2734,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "University of Twente",
    "country": "EU",
-   "title": "PhD position in IC Design group 4-year fully funded PhD in analog/RF IC design (advanced CMOS, test-chip lab). MSc EE (Analog/RF) with excellent grades; creativ",
+   "title": "PhD position in IC Design group",
    "url": "https://academicpositions.com/ad/university-of-twente/2022/phd-position-in-ic-design-group/188333",
    "location": "Enschede, The Netherlands",
    "department": "",
@@ -2342,12 +2744,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 3,
+   "page_topics": [
+    "user interface"
+   ],
+   "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 0,
-   "topics": []
+   "topic_score": 3,
+   "topics": [
+    "user interface"
+   ]
   },
   {
    "id": "6cf932fb1495ecd9",
