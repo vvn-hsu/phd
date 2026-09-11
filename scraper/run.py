@@ -439,7 +439,7 @@ def dedupe_key(job: dict) -> str:
     """同一個職缺常常同時登在 EURAXESS 和學校自己的系統上，用標題＋學校當指紋。"""
     def norm(text: str) -> str:
         return re.sub(r"[^a-z0-9]+", " ", (text or "").lower()).strip()[:90]
-    return f"{norm(job.get('title'))}|{norm(job.get('university'))}"
+    return f"{norm(job.get('title'))}|{norm(job.get('university') or job.get('source_name'))}"
 
 
 def load_previous() -> dict:
@@ -552,7 +552,9 @@ def main() -> int:
             return True
         if old.get("enrich_attempts", 0) >= 3:
             return False
-        return not old.get("university") or not old.get("deadline")
+        unknown_university = (not old.get("university")
+                              or old.get("university") == old.get("source_name"))
+        return unknown_university or not old.get("deadline")
 
     candidates = [j for j in fresh.values() if j["id"] not in known]
     candidates += [j for j in fresh.values() if j["id"] in known and needs_enrich(j)]
@@ -569,16 +571,16 @@ def main() -> int:
         old = known.get(job["id"], {})
         for key in ("posted", "deadline", "location", "department", "summary", "university",
                     "enrich_attempts"):
+            if key == "university" and old.get(key) == old.get("source_name"):
+                continue  # 舊版把來源名稱當學校存進去過，那不是真的雇主
             if not job.get(key) and old.get(key):
                 job[key] = old[key]
         job["first_seen"] = old.get("first_seen") or stamp
         job["last_seen"] = stamp
         job["status"] = "open"
 
-    # 詳細頁和舊資料都問不到雇主，才退回顯示來源名稱
-    for job in fresh.values():
-        if not job.get("university"):
-            job["university"] = job["source_name"]
+    # 查不到雇主就讓 university 留空，網頁顯示時自己退回來源名稱。
+    # 寫進資料的話，下一輪會被當成「已經知道學校了」而不再補抓。
 
     # 跨來源去重：標題和學校都一樣就當同一個職缺，留先出現的來源
     merged: dict[str, dict] = {}
