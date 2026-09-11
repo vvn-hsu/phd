@@ -13,7 +13,7 @@ weights:
 
 thresholds:
   broad: 3     # 網頁預設：HCI 相關（廣泛）
-  strict: 8    # 嚴格模式
+  strict: 6    # 嚴格模式
 
 strong:
   terms:

@@ -34,7 +34,10 @@ user interface、conversational agent、visualization、affective computing⋯�
 只是被搜尋引擎鬆散撈出來、內文沒出現的只加 1 分——那些站的全文搜尋很鬆，
 搜 human-computer interaction 會跑出植物細胞學。
 
-廣泛＝3 分以上，嚴格＝8 分以上。要放寬或收緊就改 `scraper/topics.yml`。
+同一個來源裡多數頁面都出現的詞會被當成網站樣板、不採計——KTH 每一頁的頁尾
+都有 "user experience" 和 "accessibility"，不處理的話 28 筆全會被誤判成相關。
+
+廣泛＝3 分以上，嚴格＝6 分以上。要放寬或收緊就改 `scraper/topics.yml`。
 
 除了一般來源之外，另外有兩個「HCI 關鍵字搜尋」來源，直接拿 HCI 的詞去搜
 AcademicTransfer 和 EURAXESS——因為 HCI 的缺常常排不進「最新職缺」那一頁。

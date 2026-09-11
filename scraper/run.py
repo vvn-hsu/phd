@@ -166,6 +166,12 @@ def load_topics(path: str = TOPICS) -> None:
     _TOPIC_RULES = rules
 
 
+def topic_weights() -> dict[str, int]:
+    """標籤 -> 權重，用來在扣掉樣板用詞之後重算分數。"""
+    load_topics()
+    return {label: weight for _, weight, label in _TOPIC_RULES}
+
+
 def score_topics(*parts: str, min_weight: int = 1) -> tuple[int, list[str]]:
     """回傳 (HCI 相關度分數, 命中的詞)。同一個詞只算一次。
 
@@ -685,12 +691,35 @@ def main() -> int:
         job["status"] = "open"
 
     # 算 HCI 相關度（要在補抓之後，摘要那時候才有）
+    # 有些學校的網站樣板本身就含 HCI 的詞（KTH 每一頁的頁尾都有
+    # "user experience" 和 "accessibility"），那不是職缺內容。
+    # 同一個來源裡多數頁面都出現的詞，就當成樣板、不採計。
+    page_term_count: dict[tuple[str, str], int] = {}
+    source_pages: dict[str, int] = {}
+    for job in fresh.values():
+        if "page_topics" not in job:
+            continue
+        source_pages[job["source"]] = source_pages.get(job["source"], 0) + 1
+        for term in set(job.get("page_topics") or []):
+            key = (job["source"], term)
+            page_term_count[key] = page_term_count.get(key, 0) + 1
+    boilerplate = {key for key, count in page_term_count.items()
+                   if source_pages.get(key[0], 0) >= 4
+                   and count >= 0.6 * source_pages[key[0]]}
+    if boilerplate:
+        log("判定為網站樣板、不採計的用詞：" +
+            ", ".join(sorted(f"{src}:{term}" for src, term in boilerplate))[:300])
+
+    weights = topic_weights()
     for job in fresh.values():
         score, hits = score_topics(
             job.get("title", ""), job.get("summary", ""), job.get("department", ""))
-        # 補抓過詳細頁的話，整頁文字算出來的分數比較可信
-        if job.get("page_score", 0) > score:
-            score, hits = job["page_score"], job.get("page_topics", hits)
+        # 補抓過詳細頁的話，整頁文字算出來的分數比較可信（扣掉樣板用詞之後）
+        page_hits = [t for t in (job.get("page_topics") or [])
+                     if (job["source"], t) not in boilerplate]
+        page_score = sum(weights.get(t, 0) for t in page_hits)
+        if page_score > score:
+            score, hits = page_score, page_hits
         # 從 HCI 關鍵字搜尋進來的：關鍵字真的出現在內文才給滿分，
         # 只是被搜尋引擎鬆散地撈出來的話只給 1 分，不足以自己過門檻。
         boost = job.get("topic_boost", 0)
