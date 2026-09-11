@@ -7,6 +7,7 @@
 #
 # 共用欄位：
 #   urls        - 候選網址，依序嘗試，第一個抓到東西的就用（其餘跳過）
+#   mode        - first（預設）／all：all 會把每個網址都抓一遍再合併，關鍵字搜尋用這個
 #   enrich      - jsonld：對新職缺再抓一次詳細頁，補發布日／截止日／系所
 #   filter      - phd（預設，只留博士職缺）／none（全留）
 #   max_enrich  - 每次執行最多補抓幾個詳細頁
@@ -18,6 +19,54 @@ defaults:
   timeout: 30
 
 sources:
+  # 以下兩個是針對 HCI 的關鍵字搜尋。一般來源抓的是「全部領域的最新職缺」，
+  # HCI 的缺常常排不進那一頁，所以另外用關鍵字直接搜。
+  - id: academictransfer_hci
+    name: AcademicTransfer（HCI 關鍵字搜尋）
+    country: NL
+    homepage: https://www.academictransfer.com/en/jobs?q=human-computer+interaction
+    type: links
+    enabled: true
+    mode: all
+    urls:
+      - https://www.academictransfer.com/en/jobs?q=human-computer+interaction
+      - https://www.academictransfer.com/en/jobs?q=interaction+design
+      - https://www.academictransfer.com/en/jobs?q=user+experience
+      - https://www.academictransfer.com/en/jobs?q=usability
+      - https://www.academictransfer.com/en/jobs?q=human-centered+design
+      - https://www.academictransfer.com/en/jobs?q=human-AI+interaction
+      - https://www.academictransfer.com/en/jobs?q=human-robot+interaction
+      - https://www.academictransfer.com/en/jobs?q=virtual+reality
+      - https://www.academictransfer.com/en/jobs?q=augmented+reality
+      - https://www.academictransfer.com/en/jobs?q=eye+tracking
+      - https://www.academictransfer.com/en/jobs?q=conversational+agent
+      - https://www.academictransfer.com/en/jobs?q=accessibility
+      - https://www.academictransfer.com/en/jobs?q=data+visualization
+      - https://www.academictransfer.com/en/jobs?q=human+factors
+    link_pattern: '/(en|nl)/jobs/\d+'
+    enrich: jsonld
+
+  - id: euraxess_hci
+    name: EURAXESS（HCI 關鍵字搜尋）
+    country: EU
+    homepage: https://euraxess.ec.europa.eu/jobs/search?keywords=human-computer%20interaction
+    type: links
+    enabled: true
+    mode: all
+    urls:
+      - https://euraxess.ec.europa.eu/jobs/search?keywords=human-computer+interaction
+      - https://euraxess.ec.europa.eu/jobs/search?keywords=interaction+design
+      - https://euraxess.ec.europa.eu/jobs/search?keywords=user+experience
+      - https://euraxess.ec.europa.eu/jobs/search?keywords=usability
+      - https://euraxess.ec.europa.eu/jobs/search?keywords=human-robot+interaction
+      - https://euraxess.ec.europa.eu/jobs/search?keywords=virtual+reality
+      - https://euraxess.ec.europa.eu/jobs/search?keywords=augmented+reality
+      - https://euraxess.ec.europa.eu/jobs/search?keywords=eye+tracking
+      - https://euraxess.ec.europa.eu/jobs/search?keywords=accessibility
+      - https://euraxess.ec.europa.eu/jobs/search?keywords=human+factors
+    link_pattern: '/jobs/\d+'
+    enrich: jsonld
+
   - id: academictransfer
     name: AcademicTransfer（荷蘭各大學，含 TU Delft）
     country: NL

@@ -17,10 +17,26 @@
   另一個連結顯示在「另見」
 - 最下面的「來源狀態」會顯示哪些網站抓成功、哪些掛了
 
+## HCI 相關度
+
+抓進來的職缺都會用 `scraper/topics.yml` 的關鍵字表算一個 `topic_score`，
+命中的詞會顯示在職缺卡片上。網頁預設只顯示「HCI 相關（廣泛）」，
+上方的主題選單可以切到「嚴格」或「全部領域」。
+
+分數規則：strong 的詞 3 分（human-computer interaction、usability、interaction design、
+human factors、HCI/CSCW/HRI/UX⋯），medium 2 分（VR/AR/XR、eye tracking、accessibility、
+conversational agent、visualization、affective computing⋯），weak 1 分。
+廣泛＝2 分以上，嚴格＝5 分以上。要放寬或收緊就改 `scraper/topics.yml`。
+
+除了一般來源之外，另外有兩個「HCI 關鍵字搜尋」來源，直接拿 HCI 的詞去搜
+AcademicTransfer 和 EURAXESS——因為 HCI 的缺常常排不進「最新職缺」那一頁。
+
 ## 目前的來源
 
 | 來源 | 狀態 |
 | --- | --- |
+| AcademicTransfer（HCI 關鍵字搜尋，14 組關鍵字） | 開 |
+| EURAXESS（HCI 關鍵字搜尋，10 組關鍵字） | 開 |
 | AcademicTransfer（荷蘭各大學，TU Delft 的職缺都在這） | 開 |
 | EURAXESS（全歐洲，翻 12 頁） | 開 |
 | Academic Positions（彙整站） | 開 |

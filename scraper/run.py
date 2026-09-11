@@ -27,6 +27,7 @@ from dateutil import parser as dateparser
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data", "jobs.json")
 CONFIG = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sources.yml")
+TOPICS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "topics.yml")
 
 UA = (
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -108,6 +109,53 @@ def is_phd(title: str, extra: str = "") -> bool:
     if POSTDOC.search(blob):
         return False
     return bool(PHD_WEAK.search(blob))
+
+
+def term_label(term: str) -> str:
+    """把正則寫法的關鍵字變回人看得懂的字，給網頁當標籤用。"""
+    label = re.sub(r"\[[-\s]+\]", " ", term)          # [- ] -> 空白
+    label = re.sub(r"\(([^)|]+)(\|[^)]*)?\)", r"\1", label)  # (a|b) -> a
+    label = re.sub(r"\[([a-z])[a-z]\]", r"\1", label)          # visuali[sz]ation -> visualization
+    label = label.replace("?", "").replace("\\", "")
+    return re.sub(r"\s+", " ", label).strip()
+
+
+_TOPIC_RULES: list[tuple[re.Pattern, int, str]] = []
+_TOPIC_THRESHOLDS = {"broad": 2, "strict": 5}
+
+
+def load_topics(path: str = TOPICS) -> None:
+    """把 topics.yml 編成一組 (正則, 權重, 標籤)。"""
+    global _TOPIC_RULES, _TOPIC_THRESHOLDS
+    if _TOPIC_RULES:
+        return
+    with open(path, encoding="utf-8") as fh:
+        config = yaml.safe_load(fh)
+    weights = config.get("weights", {})
+    _TOPIC_THRESHOLDS = config.get("thresholds", _TOPIC_THRESHOLDS)
+    rules = []
+    for group in ("strong", "medium", "weak"):
+        weight = int(weights.get(group, 1))
+        block = config.get(group) or {}
+        for term in block.get("terms") or []:
+            rules.append((re.compile(term, re.I), weight, term_label(term)))
+        for abbrev in block.get("abbrev") or []:
+            rules.append((re.compile(rf"\b{re.escape(abbrev)}\b"), weight, abbrev))
+    _TOPIC_RULES = rules
+
+
+def score_topics(*parts: str) -> tuple[int, list[str]]:
+    """回傳 (HCI 相關度分數, 命中的詞)。同一個詞只算一次。"""
+    load_topics()
+    blob = " ".join(p for p in parts if p)
+    score = 0
+    hits: list[str] = []
+    for pattern, weight, label in _TOPIC_RULES:
+        if pattern.search(blob):
+            score += weight
+            if label not in hits:
+                hits.append(label)
+    return score, hits[:8]
 
 
 def fetch(url: str, timeout: int = 30) -> str:
@@ -313,7 +361,10 @@ def adapter_links(source: dict, cfg: dict) -> tuple[list[dict], str]:
     pages = max(1, int(source.get("pages", 1)))
     page_param = source.get("page_param", "page")
     page_start = int(source.get("page_start", 0))
+    mode = source.get("mode", "first")   # first：第一個有結果就停；all：每個都抓再合併
     errors = []
+    pooled: dict[str, dict] = {}
+    used: list[str] = []
     for url in source["urls"]:
         try:
             html = fetch(url, timeout)
@@ -351,12 +402,19 @@ def adapter_links(source: dict, cfg: dict) -> tuple[list[dict], str]:
                     break
                 time.sleep(0.5)
         if seen:
-            return list(seen.values()), url
+            if mode != "all":
+                return list(seen.values()), url
+            pooled.update(seen)
+            used.append(url)
+            time.sleep(0.5)
+            continue
         errors.append(f"{url} -> 0 links matched")
         log(f"       ↳ {url} 抓到 {len(soup.find_all('a', href=True))} 個連結但沒有符合 "
             f"{source['link_pattern']!r}；可能的職缺連結：")
         for sample in sample_hrefs(soup, url):
             log(f"         {sample}")
+    if pooled:
+        return list(pooled.values()), f"{len(used)} 個搜尋網址"
     raise RuntimeError("; ".join(errors) or "no urls configured")
 
 
@@ -579,6 +637,11 @@ def main() -> int:
         job["last_seen"] = stamp
         job["status"] = "open"
 
+    # 算 HCI 相關度（要在補抓之後，摘要那時候才有）
+    for job in fresh.values():
+        job["topic_score"], job["topics"] = score_topics(
+            job.get("title", ""), job.get("summary", ""), job.get("department", ""))
+
     # 查不到雇主就讓 university 留空，網頁顯示時自己退回來源名稱。
     # 寫進資料的話，下一輪會被當成「已經知道學校了」而不再補抓。
 
@@ -624,10 +687,13 @@ def main() -> int:
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "date": stamp,
+        "topic_thresholds": _TOPIC_THRESHOLDS,
         "counts": {
             "open": sum(1 for j in jobs if j.get("status") == "open"),
             "new_today": new_today,
             "closed_kept": disappeared,
+            "hci_broad": sum(1 for j in jobs if j.get("status") == "open"
+                             and j.get("topic_score", 0) >= _TOPIC_THRESHOLDS.get("broad", 2)),
         },
         "sources": reports,
         "jobs": jobs,

@@ -126,6 +126,20 @@ def main():
           run.tidy_title("PhD | Quantum Computing at TU Delft"),
           "PhD | Quantum Computing at TU Delft")
 
+    # mode: all 會把每個候選網址的結果合併
+    source_all = dict(source, mode="all",
+                      urls=["https://example.org/en/jobs/?q=a", "https://example.org/en/jobs/?q=b"])
+    items_all, used = run.adapter_links(source_all, {"timeout": 10})
+    check("mode all 合併後仍然去重", len(items_all), 4)
+    check("mode all 回報用了幾個網址", used, "2 個搜尋網址")
+
+    check("HCI 分數：命中 strong 加 medium",
+          run.score_topics("PhD in Human-Computer Interaction and VR")[0] >= 5, True)
+    check("HCI 分數：不相關的是 0",
+          run.score_topics("PhD in Inhalation Toxicology")[0], 0)
+    check("關鍵字標籤看得懂",
+          run.term_label("conversational (agent|interface|ai)"), "conversational agent")
+
     check("詳細頁 fallback 截止日", run.page_fallback_fields(DETAIL)["deadline"], "2026-11-30")
     check("詳細頁 fallback 學校",
           run.page_fallback_fields(DETAIL)["university"], "Delft University of Technology")
