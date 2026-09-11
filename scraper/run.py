@@ -506,6 +506,15 @@ def enrich_job(job: dict, timeout: int) -> None:
     except Exception as exc:  # noqa: BLE001
         job.setdefault("notes", f"詳細頁抓取失敗：{exc}")
         return
+    # 用整頁文字算 HCI 相關度，比只看 400 字的摘要準得多，算完存起來
+    # 只看前 8000 字：職缺描述通常在前面，頁尾的「無障礙聲明」之類的會誤判
+    page_text = clean(BeautifulSoup(html, "lxml").get_text(" "))[:8000]
+    page_score, page_hits = score_topics(page_text)
+    job["page_score"] = page_score
+    job["page_topics"] = page_hits
+    if job.get("found_via"):
+        job["query_ok"] = query_matches(job["found_via"], page_text)
+
     nodes = extract_jsonld(html)
     fields = jsonld_to_fields(nodes[0]) if nodes else page_fallback_fields(html)
     for key, value in fields.items():
@@ -653,7 +662,7 @@ def main() -> int:
     for job in fresh.values():
         old = known.get(job["id"], {})
         for key in ("posted", "deadline", "location", "department", "summary", "university",
-                    "enrich_attempts"):
+                    "enrich_attempts", "page_score", "page_topics", "query_ok"):
             if key == "university" and old.get(key) == old.get("source_name"):
                 continue  # 舊版把來源名稱當學校存進去過，那不是真的雇主
             if not job.get(key) and old.get(key):
@@ -666,6 +675,9 @@ def main() -> int:
     for job in fresh.values():
         score, hits = score_topics(
             job.get("title", ""), job.get("summary", ""), job.get("department", ""))
+        # 補抓過詳細頁的話，整頁文字算出來的分數比較可信
+        if job.get("page_score", 0) > score:
+            score, hits = job["page_score"], job.get("page_topics", hits)
         # 從 HCI 關鍵字搜尋進來的：關鍵字真的出現在內文才給滿分，
         # 只是被搜尋引擎鬆散地撈出來的話只給 1 分，不足以自己過門檻。
         boost = job.get("topic_boost", 0)
@@ -673,7 +685,8 @@ def main() -> int:
             blob = " ".join([job.get("title", ""), job.get("summary", ""),
                              job.get("department", "")])
             query = job.get("found_via", "")
-            if query_matches(query, blob):
+            verified = job["query_ok"] if "query_ok" in job else query_matches(query, blob)
+            if verified:
                 score += boost
                 hits = [f"搜尋：{query}"] + hits
             else:
