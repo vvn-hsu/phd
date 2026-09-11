@@ -47,7 +47,7 @@ AcademicTransfer 和 EURAXESS——因為 HCI 的缺常常排不進「最新職�
 | EURAXESS（HCI 關鍵字搜尋，10 組關鍵字） | 開 |
 | AcademicTransfer（荷蘭各大學，TU Delft 的職缺都在這） | 開 |
 | EURAXESS（全歐洲，翻 12 頁） | 開 |
-| Academic Positions（彙整站） | 開 |
+| Academic Positions（彙整站） | 關：卡片文字會整團變成標題，多半是招生廣告 |
 | jobs.ac.uk（英國） | 關：搜尋結果要 JS 才渲染，HTML 裡只有贊助職缺 |
 | ETH Zürich | 開 |
 | KTH（kth.varbi.com） | 開 |

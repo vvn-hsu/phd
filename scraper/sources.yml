@@ -190,7 +190,10 @@ sources:
     country: EU
     homepage: https://academicpositions.com/find-jobs/position/phd
     type: links
-    enabled: true
+    # 這個站列表頁的卡片文字會整團被當成標題（"PhD in Informatics Join an
+    # interdisciplinary..."），而且多半是「即將開放」的招生廣告、沒有截止日，
+    # 對 HCI 沒什麼幫助，先關掉。
+    enabled: false
     urls:
       - https://academicpositions.com/find-jobs/position/phd
       - https://academicpositions.com/jobs/position/phd
