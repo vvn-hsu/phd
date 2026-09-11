@@ -155,6 +155,11 @@ def main():
           run.term_label("conversational (agent|interface|ai)"), "conversational agent")
 
     check("詳細頁 fallback 截止日", run.page_fallback_fields(DETAIL)["deadline"], "2026-11-30")
+    check("Varbi 的 Last application date 也讀得到",
+          run.page_fallback_fields(
+              "<html><body><h1>PhD in HCI</h1>"
+              "<p>Last application date 30 Oct 2026</p></body></html>")["deadline"],
+          "2026-10-30")
     check("詳細頁 fallback 學校",
           run.page_fallback_fields(DETAIL)["university"], "Delft University of Technology")
     check("同標題同學校算同一個職缺",

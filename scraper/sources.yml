@@ -176,12 +176,13 @@ sources:
     link_pattern: 'what:job/jobID:\d+'
     enrich: jsonld
 
+  # liu.varbi.com 不存在（404），Linköping 用的不是 Varbi。
   - id: liu
     name: Linköpings universitet
     country: SE
     homepage: https://liu.varbi.com/en/
     type: links
-    enabled: true
+    enabled: false
     urls: [https://liu.varbi.com/en/]
     link_pattern: 'what:job/jobID:\d+'
     enrich: jsonld

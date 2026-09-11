@@ -306,8 +306,10 @@ def page_fallback_fields(html: str) -> dict:
 
     deadline = ""
     m = re.search(
-        r"(?:deadline|apply before|closing date|sluitingsdatum|reageren voor|"
-        r"application deadline)[^\d]{0,40}(\d{1,2}[\s\-/\.][\w]{2,12}[\s\-/\.]\d{2,4}|\d{4}-\d{2}-\d{2})",
+        r"(?:deadline|apply before|apply by|closing date|sluitingsdatum|reageren voor|"
+        r"application deadline|last application date|sista ans\u00f6kningsdag|"
+        r"bewerbungsfrist|date limite)"
+        r"[^\d]{0,40}(\d{1,2}[\s\-/\.][\w]{2,12}[\s\-/\.]\d{2,4}|\d{4}-\d{2}-\d{2})",
         text, re.I,
     )
     if m:
