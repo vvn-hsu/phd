@@ -544,48 +544,63 @@ def main() -> int:
         return 0
 
     stamp = today()
-    to_enrich = [j for j in fresh.values() if j["id"] not in known][: cfg["max_enrich"]]
+
+    # 補抓詳細頁：新職缺優先，其次是還缺學校／截止日的舊職缺（最多重試 3 次就放棄）
+    def needs_enrich(job: dict) -> bool:
+        old = known.get(job["id"], {})
+        if not old:
+            return True
+        if old.get("enrich_attempts", 0) >= 3:
+            return False
+        return not old.get("university") or not old.get("deadline")
+
+    candidates = [j for j in fresh.values() if j["id"] not in known]
+    candidates += [j for j in fresh.values() if j["id"] in known and needs_enrich(j)]
+    to_enrich = candidates[: cfg["max_enrich"]]
     if not args.no_enrich:
-        log(f"補抓 {len(to_enrich)} 個新職缺的詳細頁…")
+        log(f"補抓 {len(to_enrich)} 個職缺的詳細頁（{sum(1 for j in to_enrich if j['id'] not in known)} 個是新的）…")
         for job in to_enrich:
             enrich_job(job, cfg["timeout"])
+            job["enrich_attempts"] = known.get(job["id"], {}).get("enrich_attempts", 0) + 1
             time.sleep(0.7)
 
+    # 這次沒補到的欄位，用舊資料補回來，別讓已經查到的學校被洗掉
     for job in fresh.values():
-        # 詳細頁沒給雇主的話，才退回用來源名稱，免得把別校職缺掛在某一校名下
+        old = known.get(job["id"], {})
+        for key in ("posted", "deadline", "location", "department", "summary", "university",
+                    "enrich_attempts"):
+            if not job.get(key) and old.get(key):
+                job[key] = old[key]
+        job["first_seen"] = old.get("first_seen") or stamp
+        job["last_seen"] = stamp
+        job["status"] = "open"
+
+    # 詳細頁和舊資料都問不到雇主，才退回顯示來源名稱
+    for job in fresh.values():
         if not job.get("university"):
             job["university"] = job["source_name"]
 
     # 跨來源去重：標題和學校都一樣就當同一個職缺，留先出現的來源
-    deduped: dict[str, dict] = {}
+    merged: dict[str, dict] = {}
     duplicates = 0
+    absorbed: set[str] = set()   # 被併掉的 id，不要在下面又被當成「已下架」復活
+    seen_keys: dict[str, dict] = {}
     for job in fresh.values():
         key = dedupe_key(job)
-        first = deduped.get(key)
-        if first is None:
-            deduped[key] = job
+        first = seen_keys.get(key)
+        if first is not None:
+            first.setdefault("also_at", []).append({"source": job["source_name"], "url": job["url"]})
+            absorbed.add(job["id"])
+            duplicates += 1
             continue
-        first.setdefault("also_at", []).append({"source": job["source_name"], "url": job["url"]})
-        duplicates += 1
+        seen_keys[key] = job
+        merged[job["id"]] = job
     if duplicates:
         log(f"跨來源重複 {duplicates} 筆，已合併")
-    fresh = deduped
-
-    merged: dict[str, dict] = {}
-    for job in fresh.values():
-        old = known.get(job["id"], {})
-        job["first_seen"] = old.get("first_seen") or stamp
-        job["last_seen"] = stamp
-        job["status"] = "open"
-        # 舊資料裡補過的欄位不要被空值蓋掉
-        for key in ("posted", "deadline", "location", "department", "summary", "university"):
-            if not job.get(key) and old.get(key):
-                job[key] = old[key]
-        merged[job["id"]] = job
 
     disappeared = 0
     for jid, old in known.items():
-        if jid in merged:
+        if jid in merged or jid in absorbed:
             continue
         last_seen = old.get("last_seen") or old.get("first_seen") or stamp
         try:

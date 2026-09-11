@@ -56,13 +56,15 @@ python scraper/run.py --only tudelft,euraxess
 python scraper/test_parse.py       # 不連網的解析測試
 ```
 
-## 每日排程的前提
+## 每日排程
 
-GitHub 的 `schedule` 只會在**預設分支**上跑。目前這些檔案在 `claude/tu-delft-phd-tracker-5sj9u5`，
-要讓它每天自動跑，得把這個分支合併進預設分支（或把它設成預設分支）。
-在其他分支上只有 `push` 和手動 `workflow_dispatch` 會觸發。
+GitHub 的 `schedule` 只會在**預設分支**上跑。這個 repo 的預設分支目前就是
+`claude/tu-delft-phd-tracker-5sj9u5`（因為它是第一個推上去的分支），所以排程直接就會動，
+不用另外合併。之後如果把預設分支換掉，記得把這些檔案一起帶過去。
 
 排程超過 60 天沒有任何 commit 活動時，GitHub 會自動停用；有自動 commit 資料的話通常不會遇到。
+
+也可以手動跑：Actions → 更新博士職缺 → Run workflow。
 
 ## 新增一所學校
 
