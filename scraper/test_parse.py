@@ -143,6 +143,11 @@ def main():
     check("搜尋引擎亂撈的不算命中",
           run.query_matches("human-computer interaction",
                             "PhD position in Plant Cell and Molecular Biology"), False)
+    check("片語要連在一起才算命中",
+          run.query_matches("interaction design",
+                            "the interaction between design and policy"), False)
+    check("整頁計分忽略弱詞",
+          run.score_topics("we look for prototyping experience", min_weight=2)[0], 0)
     check("搜尋網址取得出關鍵字",
           run.query_of("https://x/jobs?q=human-AI+interaction"), "human-AI interaction")
     check("關鍵字標籤看得懂",

@@ -123,11 +123,13 @@ def query_of(url: str) -> str:
 def query_matches(query: str, blob: str) -> bool:
     """搜尋引擎常常很鬆（搜 human-computer interaction 會跑出植物細胞學），
     所以要確認關鍵字真的出現在職缺內文，才算是真的命中。"""
-    words = [w for w in re.split(r"[^a-z0-9]+", (query or "").lower()) if len(w) >= 4]
+    words = [w for w in re.split(r"[^a-z0-9]+", (query or "").lower()) if w]
     if not words:
         return False
-    low = blob.lower()
-    return all(re.search(rf"\b{re.escape(w)}", low) for w in words)
+    # 整個片語要連在一起，不能拆成單字各自比對，
+    # 否則 "interaction design" 會在任何同時提到 interaction 和 design 的頁面命中
+    phrase = r"[\s\-\u2010-\u2015/]*".join(re.escape(w) for w in words)
+    return re.search(phrase, blob.lower()) is not None
 
 
 def term_label(term: str) -> str:
@@ -163,13 +165,19 @@ def load_topics(path: str = TOPICS) -> None:
     _TOPIC_RULES = rules
 
 
-def score_topics(*parts: str) -> tuple[int, list[str]]:
-    """回傳 (HCI 相關度分數, 命中的詞)。同一個詞只算一次。"""
+def score_topics(*parts: str, min_weight: int = 1) -> tuple[int, list[str]]:
+    """回傳 (HCI 相關度分數, 命中的詞)。同一個詞只算一次。
+
+    min_weight 用來忽略權重太低的泛用詞——整頁文字計分時會用，
+    不然 "stakeholder" 這種字在任何職缺頁的樣板文字裡都會出現。
+    """
     load_topics()
     blob = " ".join(p for p in parts if p)
     score = 0
     hits: list[str] = []
     for pattern, weight, label in _TOPIC_RULES:
+        if weight < min_weight:
+            continue
         if pattern.search(blob):
             score += weight
             if label not in hits:
@@ -509,7 +517,7 @@ def enrich_job(job: dict, timeout: int) -> None:
     # 用整頁文字算 HCI 相關度，比只看 400 字的摘要準得多，算完存起來
     # 只看前 8000 字：職缺描述通常在前面，頁尾的「無障礙聲明」之類的會誤判
     page_text = clean(BeautifulSoup(html, "lxml").get_text(" "))[:8000]
-    page_score, page_hits = score_topics(page_text)
+    page_score, page_hits = score_topics(page_text, min_weight=2)
     job["page_score"] = page_score
     job["page_topics"] = page_hits
     if job.get("found_via"):

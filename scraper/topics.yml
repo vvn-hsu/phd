@@ -12,8 +12,8 @@ weights:
   weak: 1
 
 thresholds:
-  broad: 2     # 網頁預設：HCI 相關（廣泛）
-  strict: 5    # 嚴格模式
+  broad: 3     # 網頁預設：HCI 相關（廣泛）
+  strict: 8    # 嚴格模式
 
 strong:
   terms:
@@ -33,14 +33,14 @@ strong:
     - cognitive ergonomics
     - participatory design
     - co[- ]design
-    - user interface
     - user stud(y|ies)
     - interaction technique
-    - design research
   abbrev: [HCI, CSCW, HRI, UX, CHI]
 
 medium:
   terms:
+    - user interface
+    - design research
     - virtual reality
     - augmented reality
     - mixed reality
@@ -80,24 +80,17 @@ medium:
     - behaviou?r change
     - driving simulator
     - automated driving
-    - prototyping
-  abbrev: [VR, AR, XR, BCI, XAI, UI, EEG]
+  abbrev: [VR, AR, XR, BCI, XAI, EEG]
 
 weak:
   terms:
+    - prototyping
     - user (behaviou?r|requirement|need|percepti)
     - end[- ]user
     - interface design
     - cognitive (load|science|psychology)
     - human perception
-    - qualitative (research|method|stud)
     - socio[- ]technical
-    - human performance
-    - stakeholder
     - ethnograph
-    - survey stud
-    - digital twin
-    - robotics
     - wearable sensor
-    - smart home
   abbrev: []

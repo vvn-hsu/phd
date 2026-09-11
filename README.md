@@ -25,11 +25,16 @@
 
 分數規則：strong 的詞 3 分（human-computer interaction、usability、interaction design、
 human factors、HCI/CSCW/HRI/UX⋯），medium 2 分（VR/AR/XR、eye tracking、accessibility、
-conversational agent、visualization、affective computing⋯），weak 1 分。
-另外，從 HCI 關鍵字搜尋來源進來的職缺，光是「被那組關鍵字搜到」就加 3 分
-（`sources.yml` 的 `topic_boost`），卡片上會顯示是哪個關鍵字搜到的。
+user interface、conversational agent、visualization、affective computing⋯），weak 1 分。
 
-廣泛＝2 分以上，嚴格＝5 分以上。要放寬或收緊就改 `scraper/topics.yml`。
+分數是拿職缺詳細頁的前 8000 字算的（比只看摘要準）。整頁計分時會忽略 weak 的詞，
+不然 `prototyping`、`end-user` 這種字在任何職缺頁的樣板文字裡都會出現。
+從 HCI 關鍵字搜尋來源進來的職缺，如果那組關鍵字**整個片語**真的出現在職缺內文，
+再加 3 分（`sources.yml` 的 `topic_boost`），卡片上會顯示是哪組關鍵字搜到的。
+只是被搜尋引擎鬆散撈出來、內文沒出現的只加 1 分——那些站的全文搜尋很鬆，
+搜 human-computer interaction 會跑出植物細胞學。
+
+廣泛＝3 分以上，嚴格＝8 分以上。要放寬或收緊就改 `scraper/topics.yml`。
 
 除了一般來源之外，另外有兩個「HCI 關鍵字搜尋」來源，直接拿 HCI 的詞去搜
 AcademicTransfer 和 EURAXESS——因為 HCI 的缺常常排不進「最新職缺」那一頁。
