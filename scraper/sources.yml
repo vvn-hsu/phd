@@ -9,6 +9,7 @@
 #   urls        - 候選網址，依序嘗試，第一個抓到東西的就用（其餘跳過）
 #   mode        - first（預設）／all：all 會把每個網址都抓一遍再合併，關鍵字搜尋用這個
 #   topic_boost - 這個來源本身就是 HCI 導向時，給每筆職缺加的相關度分數
+#   delay       - 每次請求之間等幾秒（預設 0.5），對方會 429 的話調大
 #   enrich      - jsonld：對新職缺再抓一次詳細頁，補發布日／截止日／系所
 #   filter      - phd（預設，只留博士職缺）／none（全留）
 #   max_enrich  - 每次執行最多補抓幾個詳細頁
@@ -53,7 +54,9 @@ sources:
     country: EU
     homepage: https://euraxess.ec.europa.eu/jobs/search?keywords=human-computer%20interaction
     type: links
-    enabled: true
+    # EURAXESS 的 ?keywords= 沒有作用：10 組不同關鍵字回來的是完全同一批職缺
+    # （log 裡的樣本標題一模一樣），而且多打幾次就被 429。先關掉。
+    enabled: false
     mode: all
     topic_boost: 3
     urls:
@@ -93,7 +96,8 @@ sources:
       - https://euraxess.ec.europa.eu/jobs/search?f%5B0%5D=research_profile%3A1
       - https://euraxess.ec.europa.eu/jobs/search
     link_pattern: '/jobs/\d+'
-    pages: 12          # 一頁 10 筆，往後翻到沒有新職缺為止
+    pages: 3           # 一頁 10 筆；翻太多頁會被 429
+    delay: 2
     enrich: jsonld
 
   - id: jobsacuk

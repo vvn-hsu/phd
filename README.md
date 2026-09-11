@@ -47,9 +47,9 @@ AcademicTransfer 和 EURAXESS——因為 HCI 的缺常常排不進「最新職�
 | 來源 | 狀態 |
 | --- | --- |
 | AcademicTransfer（HCI 關鍵字搜尋，14 組關鍵字） | 開 |
-| EURAXESS（HCI 關鍵字搜尋，10 組關鍵字） | 開 |
+| EURAXESS（HCI 關鍵字搜尋） | 關：`?keywords=` 沒有作用，10 組關鍵字回來的是同一批職缺 |
 | AcademicTransfer（荷蘭各大學，TU Delft 的職缺都在這） | 開 |
-| EURAXESS（全歐洲，翻 12 頁） | 開 |
+| EURAXESS（全歐洲，翻 3 頁） | 開，但不穩：翻頁會被 429，回來的常常是非博士的公告 |
 | Academic Positions（彙整站） | 關：卡片文字會整團變成標題，多半是招生廣告 |
 | jobs.ac.uk（英國） | 關：搜尋結果要 JS 才渲染，HTML 裡只有贊助職缺 |
 | ETH Zürich | 開 |

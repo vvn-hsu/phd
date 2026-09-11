@@ -396,6 +396,7 @@ def adapter_links(source: dict, cfg: dict) -> tuple[list[dict], str]:
     page_param = source.get("page_param", "page")
     page_start = int(source.get("page_start", 0))
     mode = source.get("mode", "first")   # first：第一個有結果就停；all：每個都抓再合併
+    delay = float(source.get("delay", 0.5))   # 每次請求之間等幾秒，避免被 429
     errors = []
     pooled: dict[str, dict] = {}
     used: list[str] = []
@@ -434,7 +435,7 @@ def adapter_links(source: dict, cfg: dict) -> tuple[list[dict], str]:
                 harvest_links(extra_soup, next_url, pattern, seen)
                 if len(seen) == before:
                     break
-                time.sleep(0.5)
+                time.sleep(delay)
         if seen:
             if mode != "all":
                 return list(seen.values()), url
@@ -444,7 +445,7 @@ def adapter_links(source: dict, cfg: dict) -> tuple[list[dict], str]:
                     item["found_via"] = query
                     pooled[key] = item
             used.append(url)
-            time.sleep(0.5)
+            time.sleep(delay)
             continue
         errors.append(f"{url} -> 0 links matched")
         log(f"       ↳ {url} 抓到 {len(soup.find_all('a', href=True))} 個連結但沒有符合 "

@@ -89,6 +89,16 @@ def sniff(url: str) -> None:
         key = f"{parsed.netloc}{shape(parsed.path)}"
         shapes[key] += 1
         samples.setdefault(key, (absolute, text))
+    queries = Counter()
+    for href, _ in anchors:
+        qs = urlparse(urljoin(url, href)).query
+        if qs:
+            queries[qs[:120]] += 1
+    if queries:
+        print("  連結上出現的 query string（看得出有哪些篩選參數）：")
+        for qs, count in queries.most_common(15):
+            print(f"    {count:>3}  {qs}")
+
     print("  連結形狀（出現次數 / 形狀 / 樣本）：")
     for key, count in shapes.most_common(25):
         link, text = samples[key]
