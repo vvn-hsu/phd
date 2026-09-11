@@ -1,12 +1,37 @@
 {
- "generated_at": "2026-09-11T08:48:45+00:00",
+ "generated_at": "2026-09-11T09:11:33+00:00",
  "date": "2026-09-11",
+ "topic_thresholds": {
+  "broad": 2,
+  "strict": 5
+ },
  "counts": {
-  "open": 70,
-  "new_today": 70,
-  "closed_kept": 0
+  "open": 95,
+  "new_today": 95,
+  "closed_kept": 3,
+  "hci_broad": 3
  },
  "sources": [
+  {
+   "id": "academictransfer_hci",
+   "name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "country": "NL",
+   "homepage": "https://www.academictransfer.com/en/jobs?q=human-computer+interaction",
+   "status": "ok",
+   "count": 25,
+   "url_used": "14 個搜尋網址",
+   "error": ""
+  },
+  {
+   "id": "euraxess_hci",
+   "name": "EURAXESS（HCI 關鍵字搜尋）",
+   "country": "EU",
+   "homepage": "https://euraxess.ec.europa.eu/jobs/search?keywords=human-computer%20interaction",
+   "status": "ok",
+   "count": 1,
+   "url_used": "10 個搜尋網址",
+   "error": ""
+  },
   {
    "id": "academictransfer",
    "name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
@@ -23,8 +48,8 @@
    "country": "EU",
    "homepage": "https://euraxess.ec.europa.eu/jobs/search",
    "status": "ok",
-   "count": 5,
-   "url_used": "https://euraxess.ec.europa.eu/jobs/search?f%5B0%5D=research_profile%3A1",
+   "count": 3,
+   "url_used": "https://euraxess.ec.europa.eu/jobs/search",
    "error": ""
   },
   {
@@ -70,6 +95,27 @@
  ],
  "jobs": [
   {
+   "id": "f967b143e5a24fd8",
+   "source": "euraxess",
+   "source_name": "EURAXESS（全歐洲）",
+   "university": "Universidad de Alicante",
+   "country": "EU",
+   "title": "Pre-doctoral Researcher (Investigador en formación) I-PI 54-26",
+   "url": "https://euraxess.ec.europa.eu/jobs/465315",
+   "location": "",
+   "department": "",
+   "posted": "2026-09-11",
+   "deadline": "2026-09-25",
+   "summary": "Applications are invited by the University of Alicante President to create a pre-shortlist of candidates for the recruitment of research staff (contract type: fixed-term contract; job category: pre-doctoral researcher) to collaborate with the project “Continuous optimiz",
+   "title_guessed": false,
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
    "id": "4cc0af0cfcfd31a3",
    "source": "academictransfer",
    "source_name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
@@ -86,7 +132,11 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 1,
+   "topics": [
+    "stakeholder"
+   ]
   },
   {
    "id": "f8a51cc082bfd762",
@@ -105,7 +155,30 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "9323b6dae761fdf7",
+   "source": "euraxess_hci",
+   "source_name": "EURAXESS（HCI 關鍵字搜尋）",
+   "university": "Technical University of Munich",
+   "country": "EU",
+   "title": "PhD position in Plant Cell and Molecular Biology (m/f/d)",
+   "url": "https://euraxess.ec.europa.eu/jobs/465328",
+   "location": "",
+   "department": "",
+   "posted": "2026-09-11",
+   "deadline": "2026-12-31",
+   "summary": "A funded PhD student position is available at the Chair of Plant Systems Biology at the School of Life Sciences of the Technische Universität München in Freising-Weihenstephan.",
+   "title_guessed": false,
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "10fce2d8c1e57e80",
@@ -124,7 +197,9 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "5449a32f50e87ca5",
@@ -143,7 +218,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "closed"
   },
   {
    "id": "7a3a290c2bac7084",
@@ -162,7 +237,7 @@
    "enrich_attempts": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "closed"
   },
   {
    "id": "c8c621e21d2bf16f",
@@ -181,7 +256,72 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "closed"
+  },
+  {
+   "id": "85e27f2fbd6a78b7",
+   "source": "euraxess",
+   "source_name": "EURAXESS（全歐洲）",
+   "university": "DTU Electro",
+   "country": "EU",
+   "title": "15 PhD positions in the MSCA Doctoral Network QuEST: Educating tomorrow’s European researchers in silicon quantum electrodynamics at the deep nanoscale.",
+   "url": "https://euraxess.ec.europa.eu/jobs/465312",
+   "location": "",
+   "department": "",
+   "posted": "2026-09-11",
+   "deadline": "2027-03-31",
+   "summary": "15 PhD positions in the MSCA Doctoral Network QuEST: Educating tomorrow’s European researchers in silicon quantum electrodynamics at the deep nanoscale. Grant Agreement No. 101312406",
+   "title_guessed": false,
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "f4fdd5dc62ad3889",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Leiden University",
+   "country": "NL",
+   "title": "Two PhD candidates, Descriptive/Documentary Linguistics in Indonesia",
+   "url": "https://www.academictransfer.com/en/jobs/363844/two-phd-candidates-descriptivedocumentary-linguistics-in-indonesia/",
+   "location": "Leiden, NL",
+   "department": "",
+   "posted": "2026-09-10",
+   "deadline": "2026-10-25",
+   "summary": "Faculty of Humanities, Leiden University Centre for Linguistics Is looking for: Two PhD candidates, Descriptive/Documentary Linguistics in Indonesia Starting date: Between February-July 2027; exact date to be determined by mutual agreement. Vacancy number: 16880 Deadline : October 25, 2026 Description Leiden University Centre for Linguistics (LUCL) invites applications for two fully funded PhD pos",
+   "title_guessed": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "ee791506b7ded80f",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Eindhoven University of Technology (TU/e)",
+   "country": "NL",
+   "title": "PhD in Dynamic Space–Time Interfaces for High-Speed THz Beam Control",
+   "url": "https://www.academictransfer.com/en/jobs/363851/phd-in-dynamic-spacetime-interfaces-for-high-speed-thz-beam-control/",
+   "location": "Eindhoven, NL",
+   "department": "",
+   "posted": "2026-09-10",
+   "deadline": "2026-11-10",
+   "summary": "What new physics emerges when a THz interface changes on the timescale of the wave itself? In this PhD project, you will develop dynamically modulated THz interfaces and explore frequency conversion, beam steering, and nonreciprocal propagation through electromagnetic design, device development, and THz experiments. Information The sub-THz regime is emerging as an important platform for future wir",
+   "title_guessed": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "ad533efa9eeb8325",
@@ -200,7 +340,11 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 1,
+   "topics": [
+    "digital twin"
+   ]
   },
   {
    "id": "a25c40539e12dbbc",
@@ -220,12 +364,8 @@
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "also_at": [
-    {
-     "source": "EURAXESS（全歐洲）",
-     "url": "https://euraxess.ec.europa.eu/jobs/465188"
-    }
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "2d72fd055beec099",
@@ -245,12 +385,188 @@
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "also_at": [
-    {
-     "source": "EURAXESS（全歐洲）",
-     "url": "https://euraxess.ec.europa.eu/jobs/465189"
-    }
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "fc50ea2ab201599f",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Radboud University",
+   "country": "NL",
+   "title": "PhD Position: ‘Beyond the Odds’ – Unravelling Pathways to Gambling-related Harm",
+   "url": "https://www.academictransfer.com/en/jobs/363826/phd-position-beyond-the-odds-unravelling-pathways-to-gambling-related-harm/",
+   "location": "Nijmegen, NL",
+   "department": "",
+   "posted": "2026-09-09",
+   "deadline": "2026-09-30",
+   "summary": "Why do some people develop gambling-related harm while others, despite similar experiences and circumstances, do not? In this ZonMw-funded PhD project, you will use longitudinal panel data and advanced quantitative methods to uncover how psychological, social and economic factors shape vulnerability to gambling-related harm over time. As a PhD candidate, you will work in a highly interdisciplinary",
+   "title_guessed": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "78a89b16161ffcba",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Wageningen University & Research",
+   "country": "NL",
+   "title": "PhD position Landscape Governance",
+   "url": "https://www.academictransfer.com/en/jobs/363800/phd-position-landscape-governance/",
+   "location": "Wageningen, NL",
+   "department": "",
+   "posted": "2026-09-08",
+   "deadline": "2026-10-05",
+   "summary": "Are you a systems thinker passionate about bending the curve of biodiversity loss in agricultural landscapes? Are you looking for a meaningful research path with impact on the ground? Are you eager to join a stimulating environment, collaborate across academic fields, and engage with private and public actors? Are you enthusiastic to dive into effective planning and governance arrangements for bio",
+   "title_guessed": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "707ce4a8fe401109",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Delft University of Technology (TU Delft)",
+   "country": "NL",
+   "title": "PhD Position Future Energy Infrastructure Planning Under Uncertainty in collaboration with Stedin",
+   "url": "https://www.academictransfer.com/en/jobs/363810/phd-position-future-energy-infrastructure-planning-under-uncertainty-in-collaboration-with-stedin/",
+   "location": "Delft, NL",
+   "department": "",
+   "posted": "2026-09-08",
+   "deadline": "2026-10-08",
+   "summary": "Do you want to develop innovative solutions to support urgent energy infrastructure planning challenges? Do you want to have direct real-world impact by working closely with the Dutch distribution grid operator Stedin? Job description Grid operators, such as Stedin, must urgently plan near-term investments in energy infrastructure to ensure a carbon-neutral, robust, adequate, cost-effective, and s",
+   "title_guessed": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "0c93ffc67a06e952",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Naturalis",
+   "country": "NL",
+   "title": "PhD student North Sea Power (Marine foodwebs)",
+   "url": "https://www.academictransfer.com/en/jobs/363747/phd-student-north-sea-power-marine-foodwebs/",
+   "location": "Leiden, NL",
+   "department": "",
+   "posted": "2026-09-07",
+   "deadline": "2026-09-28",
+   "summary": "Pursuing a PhD at Naturalis in Leiden (the Netherlands) means working on research with a truly global impact — contributing directly to biodiversity. And you'll be well supported every step of the way. With 3,200 m² of state-of-the-art lab facilities, housed in a museum with more than 40 million natural history objects, dedicated mentorship, and access to our broad international network, this posi",
+   "title_guessed": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "ffd40d31cbc70cc9",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Tilburg University",
+   "country": "NL",
+   "title": "PhD researcher on AI-assisted reverse engineering of integrated circuits (1 FTE)",
+   "url": "https://www.academictransfer.com/en/jobs/363728/phd-researcher-on-ai-assisted-reverse-engineering-of-integrated-circuits-1-fte/",
+   "location": "Tilburg, NL",
+   "department": "",
+   "posted": "2026-09-04",
+   "deadline": "2026-11-01",
+   "summary": "The Cognitive Science & Artificial Intelligence Research Center at Tilburg University hosts the Secure Hardware Intelligence Extraction and Logic Deconstruction (SHIELD) research project, a scientific initiative focused on AI-assisted reverse engineering of integrated circuits for hardware assurance and intelligence analysis. The project is conducted within the Deep Learning for Perception and Dat",
+   "title_guessed": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 1,
+   "topics": [
+    "cognitive load"
    ]
+  },
+  {
+   "id": "68045120d9a7fc20",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Delft University of Technology (TU Delft)",
+   "country": "NL",
+   "title": "PhD Position Transition Pathways and Innovation for Circular Consumption of E-bikes and Electronics",
+   "url": "https://www.academictransfer.com/en/jobs/363721/phd-position-transition-pathways-and-innovation-for-circular-consumption-of-e-bikes-and-electronics/",
+   "location": "Delft, NL",
+   "department": "",
+   "posted": "2026-09-04",
+   "deadline": "2026-09-30",
+   "summary": "Do you want to understand how to organise the transition to circular consumption of e-bikes, employing stakeholder workshops, scenarios, and pathways, and diving into circular consumption ecosystems? Job description If this question sparks your interest and you are motivated to pursue a PhD in circular consumption niches and the transition to circular consumption, you might be our new colleague fo",
+   "title_guessed": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 1,
+   "topics": [
+    "stakeholder"
+   ]
+  },
+  {
+   "id": "7be57e4793a5d192",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Amsterdam UMC",
+   "country": "NL",
+   "title": "MSCA-DN PhD position in liquid biomarkers for leukodystrophies (Tübingen, GE)",
+   "url": "https://www.academictransfer.com/en/jobs/363694/msca-dn-phd-position-in-liquid-biomarkers-for-leukodystrophies-tubingen-ge/",
+   "location": "Amsterdam, NL",
+   "department": "",
+   "posted": "2026-09-03",
+   "deadline": "2026-10-05",
+   "summary": "POLARIS doctoral network POLARIS is a European Marie Skłodowska-Curie Doctoral Network focused on accelerating therapy development for leukodystrophies: rare genetic disorders affecting the brain's white matter. The network aims to strengthen the full translational pathway, from understanding disease mechanisms and developing disease models to preclinical therapy testing, clinical readiness and pa",
+   "title_guessed": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "1effabfc93e195e4",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Amsterdam UMC",
+   "country": "NL",
+   "title": "MSCA-DN PhD in regulatory & access pathways for leukodystrophy (Utrecht, NL)",
+   "url": "https://www.academictransfer.com/en/jobs/363695/msca-dn-phd-in-regulatory-access-pathways-for-leukodystrophy-utrecht-nl/",
+   "location": "Amsterdam, NL",
+   "department": "",
+   "posted": "2026-09-03",
+   "deadline": "2026-10-05",
+   "summary": "POLARIS doctoral network POLARIS is a European Marie Skłodowska-Curie Doctoral Network focused on accelerating therapy development for leukodystrophies: rare genetic disorders affecting the brain's white matter. The network aims to strengthen the full translational pathway, from understanding disease mechanisms and developing disease models to preclinical therapy testing, clinical readiness and pa",
+   "title_guessed": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "174ab0bc8497fe63",
@@ -269,7 +585,119 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "aab8b2e40f0aed7d",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Eindhoven University of Technology (TU/e)",
+   "country": "NL",
+   "title": "PhD in photonic integration and qubit hardware development for quantum computing",
+   "url": "https://www.academictransfer.com/en/jobs/363608/phd-in-photonic-integration-and-qubit-hardware-development-for-quantum-computing/",
+   "location": "Eindhoven, NL",
+   "department": "",
+   "posted": "2026-09-01",
+   "deadline": "2026-09-30",
+   "summary": "Are you passionate about quantum technologies, integrated photonics and eager to further develop a Rydberg atom quantum computing platform as a 24/7 user facility for hybrid quantum comping? Join us! We are looking for a candidate that drives the qubit hardware development and the implementation of integrated photonics. Information At TU/e, the ultracold atom laboratory of CQT, part of the Center ",
+   "title_guessed": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "fdd52609370d07f3",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Maastricht University (UM)",
+   "country": "NL",
+   "title": "PhD Candidate in Supramolecular Hydrogels for Biomaterials and Tissue Engineering",
+   "url": "https://www.academictransfer.com/en/jobs/363636/phd-candidate-in-supramolecular-hydrogels-for-biomaterials-and-tissue-engineering/",
+   "location": "Maastricht, NL",
+   "department": "",
+   "posted": "2026-09-01",
+   "deadline": "2026-09-20",
+   "summary": "Welcome to Maastricht University! Join us in developing new supramolecular polymeric materials for dynamic and responsive biomaterials and bioinks. In this PhD project, you will design, synthesize and characterize polymers with tailored chemical and mechanical properties, connecting molecular-level design with material properties and applications in bioengineering. PhD Candidate in Supramolecular ",
+   "title_guessed": false,
+   "employment": "FULL_TIME",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "11fcf7a1435eee28",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Maastricht University (UM)",
+   "country": "NL",
+   "title": "PhD Candidate in NeuroAI for Auditory Neuroscience",
+   "url": "https://www.academictransfer.com/en/jobs/363629/phd-candidate-in-neuroai-for-auditory-neuroscience/",
+   "location": "Maastricht, NL",
+   "department": "",
+   "posted": "2026-09-01",
+   "deadline": "2026-09-20",
+   "summary": "Welcome to Maastricht University! How does the human brain transform complex natural sounds into meaningful percepts, and can artificial neural networks help us understand this process? Join the NASCE project and combine advanced neuroimaging with AI to investigate the computational principles of real-world hearing. PhD Candidate in NeuroAI for Auditory Neuroscience Our goal: Understand how the hu",
+   "title_guessed": false,
+   "employment": "FULL_TIME",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "2bb1504f2d0f5976",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Maastricht University (UM)",
+   "country": "NL",
+   "title": "PhD candidate - Medical image analysis and AI in hemostasis reseach",
+   "url": "https://www.academictransfer.com/en/jobs/363584/phd-candidate-medical-image-analysis-and-ai-in-hemostasis-reseach/",
+   "location": "Maastricht, NL",
+   "department": "",
+   "posted": "2026-08-31",
+   "deadline": "2026-09-20",
+   "summary": "Welcome to Maastricht University! Would you like to use artificial intelligence to advance medical research and diagnostics? In this innovative research project at Maastricht University, you will develop AI solutions that automate the analysis of microscopic images and contribute to improving the diagnosis of bleeding and coagulation disorders. You will work at the intersection of biomedical scien",
+   "title_guessed": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "6dfacc2a069aeeee",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Royal Netherlands Academy of Arts and Sciences (KNAW)",
+   "country": "NL",
+   "title": "PhD position: Exposing the contribution of epialleles to heritable variation in plants",
+   "url": "https://www.academictransfer.com/en/jobs/363554/phd-position-exposing-the-contribution-of-epialleles-to-heritable-variation-in-plants/",
+   "location": "Wageningen, NL",
+   "department": "",
+   "posted": "2026-08-28",
+   "deadline": "2026-10-01",
+   "summary": "To face climate change and other environmental challenges, the capacity for rapid adaptation is crucial for both natural plant populations and crops. Heritable trait variation fuels such adaptation. While heritable trait variation in plants can arise from genetic and epigenetic sources alike, the true contribution of epigenetics to plant adaptation remains uncertain. The primary challenge lies in ",
+   "title_guessed": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "dab08e841e85277e",
@@ -288,7 +716,53 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "dc63e84f1764083e",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "University of Amsterdam (UvA)",
+   "country": "NL",
+   "title": "PhD in Modelling Offshore Windfarm Impacts on Marine Bird Populations",
+   "url": "https://www.academictransfer.com/en/jobs/363488/phd-in-modelling-offshore-windfarm-impacts-on-marine-bird-populations/",
+   "location": "Amsterdam, NL",
+   "department": "",
+   "posted": "2026-08-26",
+   "deadline": "2026-09-30",
+   "summary": "Are you interested in exploring the potential consequences of offshore wind farms for marine bird populations using mathematical and computational approaches? The Institute of Biodiversity and Ecosystem Dynamics is looking for a highly motivated PhD student to develop models that account for lethal and sublethal impacts of offshore wind farms on bird life history to predict their population level ",
+   "title_guessed": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "4faa009a5026f939",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Erasmus MC (University Medical Center Rotterdam)",
+   "country": "NL",
+   "title": "PhD-student to study transcription stress in neurons",
+   "url": "https://www.academictransfer.com/en/jobs/363457/phd-student-to-study-transcription-stress-in-neurons/",
+   "location": "Rotterdam, NL",
+   "department": "",
+   "posted": "2026-08-24",
+   "deadline": "2026-09-13",
+   "summary": "Correct gene transcription by RNA polymerase II to transcribe new RNA molecules is crucial for proper cell function. However, transcription by RNA polymerases can be blocked by DNA damage, for example by UV-light or other chemicals. This transcription-blocking DNA damage can therefore cause cellular dysfunction and cell death, eventually resulting in DNA damage-induced aging and genome instability",
+   "title_guessed": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "40f6286ad9b446b6",
@@ -296,7 +770,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "ETH Zürich",
    "country": "EU",
-   "title": "Doctoral Position in Customer-Facing AI in Marketing and Service",
+   "title": "Doctoral Position in Customer-Facing AI in Marketing and Service PhD research on customer-facing genAI: voice agent prompting, AI-to-human handovers, and multim",
    "url": "https://academicpositions.com/ad/eth-zurich/2026/doctoral-position-in-customer-facing-ai-in-marketing-and-service/252078",
    "location": "Zurich, Switzerland",
    "department": "",
@@ -307,7 +781,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "9685f2e2ef1cff57",
@@ -326,7 +802,9 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "6cd1256c70bd3461",
@@ -345,7 +823,12 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 3,
+   "topics": [
+    "wearable",
+    "wearable sensor"
+   ]
   },
   {
    "id": "b72d20082f800a5f",
@@ -364,7 +847,55 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "69a2157515149d6e",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Vrije Universiteit Amsterdam (VU)",
+   "country": "NL",
+   "title": "PhD position (4 years) on the Role of Foveal Processing in Spatial Attention",
+   "url": "https://www.academictransfer.com/en/jobs/363344/phd-position-4-years-on-the-role-of-foveal-processing-in-spatial-attention/",
+   "location": "Amsterdam, NL",
+   "department": "",
+   "posted": "2026-08-17",
+   "deadline": "2026-09-30",
+   "summary": "Preferred starting date: January 1, 2027 at the latest We offer a four-year PhD position within the NWO-funded project “The Role of Foveal Processing in Spatial Attention.” The project investigates the novel hypothesis that directing attention to an object in peripheral vision recruits foveal brain systems normally involved in high-resolution central vision. Ultimately, it aims to develop a new th",
+   "title_guessed": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "5020f5e00019607a",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Eindhoven University of Technology (TU/e)",
+   "country": "NL",
+   "title": "PhD in Spatial System Mapping and Decision-Support Design for Nature-Inclusive Agrifood Transitions",
+   "url": "https://www.academictransfer.com/en/jobs/363340/phd-in-spatial-system-mapping-and-decision-support-design-for-nature-inclusive-agrifood-transitions/",
+   "location": "Eindhoven, NL",
+   "department": "",
+   "posted": "2026-08-17",
+   "deadline": "2026-09-17",
+   "summary": "Are you motivated to contribute to the transition toward nature-inclusive agriculture and horticulture? Do you want to work at the interface of geospatial technologies, information systems, biodiversity restoration, and real-world decision-making by farmers and agrifood stakeholders? Join the NWO-KIC project RISE – Resilient Integrated Systems for Ecosystem restoration as a PhD candidate. You will",
+   "title_guessed": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 1,
+   "topics": [
+    "stakeholder"
+   ]
   },
   {
    "id": "484969634f3b8335",
@@ -383,7 +914,9 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "6c504d216fe9c9b9",
@@ -402,7 +935,31 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "f7aafdfdad3dd8a3",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Delft University of Technology (TU Delft)",
+   "country": "NL",
+   "title": "PhD Position Biomaterial Sciences Transcutaneous, Needle-Free Vascular Access for Hemodialysis",
+   "url": "https://www.academictransfer.com/en/jobs/363298/phd-position-biomaterial-sciences-transcutaneous-needle-free-vascular-access-for-hemodialysis/",
+   "location": "Delft, NL",
+   "department": "",
+   "posted": "2026-08-14",
+   "deadline": "2026-09-13",
+   "summary": "Help build a needle-free future for dialysis patients. Join TU Delft and LUMC to develop a transcutaneous vascular access, uniting biomaterials, medical technology and clinical nephrology. Job description Fundamental biomedical research and clinical impact come together in this four-year PhD project within the TRANSPORT programme. As a PhD candidate, you will work on the development of an innovati",
+   "title_guessed": false,
+   "employment": "FULL_TIME",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "1c6f1425ee2339f1",
@@ -410,7 +967,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "ETH Zürich",
    "country": "EU",
-   "title": "Doctoral position in experimental characterization of semiconductor nanocrystals",
+   "title": "Doctoral position in experimental characterization of semiconductor nanocrystals PhD research on semiconductor nanocrystals: single‑particle/ensemble spectrosco",
    "url": "https://academicpositions.com/ad/eth-zurich/2026/doctoral-position-in-experimental-characterization-of-semiconductor-nanocrystals/251871",
    "location": "Zurich, Switzerland",
    "department": "",
@@ -421,7 +978,33 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "7fa890ac448d8fa6",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "The Open Universiteit (OU)",
+   "country": "NL",
+   "title": "PhD position on ‘Restoring Communicative Agency: Human-centered AI smart glasses for people with speech impairments’",
+   "url": "https://www.academictransfer.com/en/jobs/363228/phd-position-on-restoring-communicative-agency-human-centered-ai-smart-glasses-for-people-with-speech-impairments/",
+   "location": "Heerlen, NL",
+   "department": "",
+   "posted": "2026-08-10",
+   "deadline": "2026-09-13",
+   "summary": "The Project Imagine trying to have a conversation while cooking or carrying groceries, but the only way you can communicate is by typing on the phone or using sign language. For many people with severe speech and hearing impairments, this is a daily reality. Current assistive tools, such as typing text to speech or sign language interpreters, require users to drop whatever they are doing just to c",
+   "title_guessed": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 3,
+   "topics": [
+    "human centered computing"
+   ]
   },
   {
    "id": "6843e20f7474e396",
@@ -440,7 +1023,55 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "15ded5137e2723a7",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Delft University of Technology (TU Delft)",
+   "country": "NL",
+   "title": "PhD Position Cognitive Guidance in XR to Improve Independent Mobility for People with Disabilities",
+   "url": "https://www.academictransfer.com/en/jobs/362999/phd-position-cognitive-guidance-in-xr-to-improve-independent-mobility-for-people-with-disabilities/",
+   "location": "Delft, NL",
+   "department": "",
+   "posted": "2026-07-28",
+   "deadline": "2026-09-15",
+   "summary": "Are you passionate about human behavior, XR technology, and real societal impact? Join us in studying how people interact with complex environments and empowering individuals with disabilities with XR Job description Navigating complex public transportation environments is an enormous challenge for many individuals with visual, hearing, motor, or cognitive disabilities, limiting their independence",
+   "title_guessed": false,
+   "employment": "FULL_TIME",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 2,
+   "topics": [
+    "XR"
+   ]
+  },
+  {
+   "id": "a6ca641fc24d308e",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Eindhoven University of Technology (TU/e)",
+   "country": "NL",
+   "title": "PhD in Security-aware task planning and control of multi-agent systems",
+   "url": "https://www.academictransfer.com/en/jobs/362815/phd-in-security-aware-task-planning-and-control-of-multi-agent-systems/",
+   "location": "Eindhoven, NL",
+   "department": "",
+   "posted": "2026-07-21",
+   "deadline": "2026-09-13",
+   "summary": "Are you fascinated by how large teams of connected autonomous systems can coordinate complex missions intelligently and safely without revealing sensitive information? As a PhD candidate, you will develop verifiable, secure-by-construction planning and control algorithms, contributing to trustworthy autonomy in societal-critical domains. Information Teams of connected autonomous systems such as ro",
+   "title_guessed": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "e521f44e68e00042",
@@ -459,7 +1090,31 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "11c4d77b873c9c95",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "University of Amsterdam (UvA)",
+   "country": "NL",
+   "title": "Three PhD positions in Homogeneous Catalysis and Photochemical conversions",
+   "url": "https://www.academictransfer.com/en/jobs/362755/three-phd-positions-in-homogeneous-catalysis-and-photochemical-conversions/",
+   "location": "Amsterdam, NL",
+   "department": "",
+   "posted": "2026-07-17",
+   "deadline": "2026-10-02",
+   "summary": "Are you interested in contributing to a more sustainable chemical industry? We have PhD projects, in collaboration with the chemical industry, where you'll do exactly that! Join our team! The Van 't Hoff Institute for Molecular Sciences (HIMS) is one of eight institutes of the University of Amsterdam, (UvA) Faculty of Science . HIMS performs internationally recognized chemistry and molecular resea",
+   "title_guessed": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "eaaf6d1a0ac459c9",
@@ -478,7 +1133,9 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "78a7feed7cd1356e",
@@ -497,7 +1154,31 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "006b74bbd1d35120",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Vrije Universiteit Amsterdam (VU)",
+   "country": "NL",
+   "title": "Three fully funded PhD positions in Competition Law and AI",
+   "url": "https://www.academictransfer.com/en/jobs/361774/three-fully-funded-phd-positions-in-competition-law-and-ai/",
+   "location": "Amsterdam, NL",
+   "department": "",
+   "posted": "2026-06-12",
+   "deadline": "2026-09-15",
+   "summary": "Every EU competition agency, and most agencies worldwide, now relies on AI and other computational tools to enforce competition law. The legal framework has not kept pace. ATLANTIS , a five-year project funded by an ERC Consolidator Grant (grant agreement 101228709), builds that framework. I am Thibault Schrepel, Associate Professor of Law at Vrije Universiteit Amsterdam, and I am hiring three PhD",
+   "title_guessed": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-11",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "b100b47ee0ef859a",
@@ -516,7 +1197,9 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "1ba497afe46c3a96",
@@ -535,7 +1218,9 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "93d26820055b08cc",
@@ -554,7 +1239,9 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "fc6b94ae50d90ba7",
@@ -573,7 +1260,9 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "569d54e8e8b076af",
@@ -592,7 +1281,9 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "3bff445459f63685",
@@ -611,7 +1302,9 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "a8804eafe9706857",
@@ -630,7 +1323,9 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "17a8b7152c63231e",
@@ -649,7 +1344,9 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "42b9befec29a0299",
@@ -668,7 +1365,9 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "f7dc409ec4d66fc9",
@@ -687,7 +1386,9 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "4ee8d19c570f0d8b",
@@ -706,7 +1407,9 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "07ae085c2717d06d",
@@ -725,7 +1428,9 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "19f74e929dd37afb",
@@ -744,7 +1449,9 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "2ba03d0b0f6706d4",
@@ -752,7 +1459,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "AMOLF",
    "country": "EU",
-   "title": "PhD student Femtosecond study and control of surfactants on water",
+   "title": "PhD student Femtosecond study and control of surfactants on water Study surfactant/water interfaces with ultrafast spectroscopy (vibrational SFG); probe ions/ad",
    "url": "https://academicpositions.com/ad/amolf/2025/phd-student-femtosecond-study-and-control-of-surfactants-on-water/228442",
    "location": "Amsterdam, The Netherlands",
    "department": "",
@@ -763,7 +1470,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "d7d547bf973f42e3",
@@ -771,7 +1480,7 @@
    "source_name": "Academic Positions（歐洲彙整站）",
    "university": "AMOLF",
    "country": "EU",
-   "title": "PhD - student Femtosecond Electrochemistry",
+   "title": "PhD - student Femtosecond Electrochemistry Study aqueous electrolytes at electrode surfaces with ultrafast spectroscopy (femtosecond SFG) to reveal structure/dy",
    "url": "https://academicpositions.com/ad/amolf/2025/phd-student-femtosecond-electrochemistry/228441",
    "location": "Amsterdam, The Netherlands",
    "department": "",
@@ -782,7 +1491,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "5e9e00b1885b9c65",
@@ -801,7 +1512,9 @@
    "enrich_attempts": 1,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "6cf932fb1495ecd9",
@@ -820,7 +1533,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "80163c18b73c5769",
@@ -839,7 +1554,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "705f9f0dcf374ef1",
@@ -858,7 +1575,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "725c72eaa3e3e732",
@@ -877,7 +1596,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "1ac77025ea351172",
@@ -896,7 +1617,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "ae31f738781e7279",
@@ -915,7 +1638,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "1f6fba8282f624fa",
@@ -934,7 +1659,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "1aa0f1198c9661e2",
@@ -953,7 +1680,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "ccbd32d96779eacb",
@@ -972,7 +1701,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "fdb3d69362d89cd4",
@@ -991,7 +1722,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "8a36beebcfa52f33",
@@ -1010,7 +1743,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "d3c5c36635c3a957",
@@ -1029,7 +1764,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "d8ad3f5d7a4cd126",
@@ -1048,7 +1785,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "f7b3251b8b1e8a48",
@@ -1067,7 +1806,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "79f3fc68850f83be",
@@ -1086,7 +1827,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "dd5b6bf19e6cd2c7",
@@ -1105,7 +1848,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "ff66c7a2dd62e6d1",
@@ -1124,7 +1869,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "4cb60a0fae8b020d",
@@ -1143,7 +1890,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "010a3e1116ef57cd",
@@ -1162,7 +1911,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "4e5adc2a4862d8b6",
@@ -1181,7 +1932,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "42db6ec81a498609",
@@ -1200,7 +1953,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "5b7950cbfdb2a1dc",
@@ -1219,7 +1974,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "e95fb6324186dc79",
@@ -1238,7 +1995,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "0add7e760cd1c16e",
@@ -1257,7 +2016,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "1c8731ce4071262a",
@@ -1276,7 +2037,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "77f9e75bed2f4b06",
@@ -1295,7 +2058,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "fc83a1ae0ca916a1",
@@ -1314,7 +2079,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "f99c49d6fec001ae",
@@ -1333,7 +2100,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "2a3b7e96c4c7897d",
@@ -1352,7 +2121,11 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 1,
+   "topics": [
+    "robotics"
+   ]
   },
   {
    "id": "1ceae0ccac5de45e",
@@ -1371,7 +2144,11 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 1,
+   "topics": [
+    "robotics"
+   ]
   },
   {
    "id": "9dc75fc4aadf25bd",
@@ -1390,7 +2167,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "d6b8bdb2eb92b6a8",
@@ -1409,7 +2188,9 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
-   "status": "open"
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   }
  ]
 }
