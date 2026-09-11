@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-09-11T09:49:36+00:00",
+ "generated_at": "2026-09-11T09:56:44+00:00",
  "date": "2026-09-11",
  "topic_thresholds": {
   "broad": 3,
-  "strict": 8
+  "strict": 6
  },
  "counts": {
   "open": 64,
   "new_today": 64,
   "closed_kept": 64,
-  "hci_broad": 43
+  "hci_broad": 17
  },
  "sources": [
   {
@@ -49,7 +49,7 @@
    "homepage": "https://euraxess.ec.europa.eu/jobs/search",
    "status": "ok",
    "count": 1,
-   "url_used": "https://euraxess.ec.europa.eu/jobs/search",
+   "url_used": "https://euraxess.ec.europa.eu/jobs/search?f%5B0%5D=research_profile%3A1",
    "error": ""
   },
   {
@@ -125,20 +125,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 1,
    "page_topics": [
     "stakeholder"
    ],
    "score_version": 2,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 1,
-   "topics": [
-    "stakeholder"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "98e2b374ff586f7b",
@@ -202,22 +199,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "qualitative research",
     "stakeholder"
    ],
    "score_version": 2,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 2,
-   "topics": [
-    "qualitative research",
-    "stakeholder"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "997d09b649365c6c",
@@ -329,13 +322,12 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "accessibility"
    ],
    "score_version": 2,
-   "query_ok": false,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -407,11 +399,8 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
-   "employment": "TEMPORARY",
    "enrich_attempts": 2,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -480,11 +469,8 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
-   "employment": "TEMPORARY",
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -996,12 +982,8 @@
    "title_guessed": false,
    "found_via": "data visualization",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
-   "query_ok": false,
-   "employment": "TEMPORARY",
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1026,12 +1008,9 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
-   "query_ok": true,
-   "employment": "TEMPORARY",
    "enrich_attempts": 3,
+   "query_ok": true,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1081,18 +1060,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "socio technical",
     "stakeholder"
    ],
    "score_version": 2,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 2,
+   "topic_score": 1,
    "topics": [
     "socio technical",
     "stakeholder"
@@ -1114,11 +1092,8 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
-   "employment": "TEMPORARY",
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1141,12 +1116,9 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
-   "query_ok": true,
-   "employment": "TEMPORARY",
    "enrich_attempts": 3,
+   "query_ok": true,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1171,21 +1143,19 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
+   "enrich_attempts": 3,
    "page_score": 1,
    "page_topics": [
     "stakeholder"
    ],
-   "score_version": 2,
    "query_ok": true,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 4,
+   "topic_score": 3,
    "topics": [
-    "搜尋：interaction design",
-    "stakeholder"
+    "搜尋：interaction design"
    ]
   },
   {
@@ -1204,14 +1174,13 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
+   "enrich_attempts": 3,
    "page_score": 1,
    "page_topics": [
     "socio technical"
    ],
-   "score_version": 2,
    "query_ok": true,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1237,20 +1206,17 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
+   "enrich_attempts": 3,
    "page_score": 1,
    "page_topics": [
     "stakeholder"
    ],
    "score_version": 2,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 2,
+   "topic_score": 1,
    "topics": [
-    "stakeholder",
     "搜尋：accessibility（內文未出現）"
    ]
   },
@@ -1270,22 +1236,19 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "cognitive load",
     "stakeholder"
    ],
    "score_version": 2,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 3,
+   "topic_score": 2,
    "topics": [
     "cognitive load",
-    "stakeholder",
     "搜尋：human-centered design（內文未出現）"
    ]
   },
@@ -1305,14 +1268,12 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "design research"
    ],
    "score_version": 2,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1338,12 +1299,8 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
-   "query_ok": false,
-   "employment": "TEMPORARY",
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1368,14 +1325,13 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "accessibility"
    ],
-   "score_version": 2,
    "query_ok": true,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1455,15 +1411,13 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "user behaviour",
     "end user"
    ],
    "score_version": 2,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1490,12 +1444,8 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
-   "query_ok": false,
-   "employment": "FULL_TIME",
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1520,12 +1470,8 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
-   "query_ok": false,
-   "employment": "FULL_TIME",
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1550,12 +1496,9 @@
    "title_guessed": false,
    "found_via": "data visualization",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
-   "query_ok": true,
-   "employment": "TEMPORARY",
    "enrich_attempts": 3,
+   "query_ok": true,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1580,12 +1523,8 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
-   "query_ok": false,
-   "employment": "TEMPORARY",
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1641,21 +1580,19 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
+   "enrich_attempts": 3,
    "page_score": 1,
    "page_topics": [
     "stakeholder"
    ],
-   "score_version": 2,
    "query_ok": true,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 4,
+   "topic_score": 3,
    "topics": [
-    "搜尋：human factors",
-    "stakeholder"
+    "搜尋：human factors"
    ]
   },
   {
@@ -1674,12 +1611,9 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
-   "query_ok": true,
-   "employment": "TEMPORARY",
    "enrich_attempts": 3,
+   "query_ok": true,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1818,15 +1752,14 @@
    "title_guessed": false,
    "found_via": "eye tracking",
    "topic_boost": 3,
+   "enrich_attempts": 3,
    "page_score": 4,
    "page_topics": [
     "eye tracking",
     "EEG"
    ],
-   "score_version": 2,
    "query_ok": true,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1853,20 +1786,17 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
+   "enrich_attempts": 3,
    "page_score": 1,
    "page_topics": [
     "stakeholder"
    ],
    "score_version": 2,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 2,
+   "topic_score": 1,
    "topics": [
-    "stakeholder",
     "搜尋：interaction design（內文未出現）"
    ]
   },
@@ -1946,12 +1876,8 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
-   "query_ok": false,
-   "employment": "FULL_TIME",
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -1999,6 +1925,7 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
+   "enrich_attempts": 3,
    "page_score": 14,
    "page_topics": [
     "human computer interaction",
@@ -2007,10 +1934,8 @@
     "usability",
     "wearable"
    ],
-   "score_version": 2,
    "query_ok": true,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -2069,6 +1994,7 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
+   "enrich_attempts": 3,
    "page_score": 30,
    "page_topics": [
     "human computer interaction",
@@ -2080,14 +2006,12 @@
     "haptic",
     "wearable"
    ],
-   "score_version": 2,
    "query_ok": true,
-   "employment": "FULL_TIME",
-   "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 33,
+   "topic_score": 23,
    "topics": [
     "搜尋：human-computer interaction",
     "human computer interaction",
@@ -2115,20 +2039,17 @@
    "title_guessed": false,
    "found_via": "conversational agent",
    "topic_boost": 3,
+   "enrich_attempts": 3,
    "page_score": 1,
    "page_topics": [
     "robotics"
    ],
    "score_version": 2,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 2,
+   "topic_score": 1,
    "topics": [
-    "robotics",
     "搜尋：conversational agent（內文未出現）"
    ]
   },
@@ -2177,12 +2098,8 @@
    "title_guessed": false,
    "found_via": "conversational agent",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
-   "query_ok": false,
-   "employment": "TEMPORARY",
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -2267,14 +2184,12 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "explainable ai"
    ],
    "score_version": 2,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -2783,21 +2698,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "80163c18b73c5769",
@@ -2815,21 +2727,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "705f9f0dcf374ef1",
@@ -2847,6 +2756,7 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 8,
    "page_topics": [
     "user experience",
@@ -2854,15 +2764,12 @@
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 8,
+   "topic_score": 3,
    "topics": [
-    "user experience",
-    "human ai interaction",
-    "accessibility"
+    "human ai interaction"
    ]
   },
   {
@@ -2881,10 +2788,8 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
    "enrich_attempts": 4,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -2907,10 +2812,8 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
    "enrich_attempts": 4,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -2933,10 +2836,8 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
    "enrich_attempts": 4,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -2959,10 +2860,8 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
    "enrich_attempts": 4,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -2985,21 +2884,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "ccbd32d96779eacb",
@@ -3017,21 +2913,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "fdb3d69362d89cd4",
@@ -3049,21 +2942,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "8a36beebcfa52f33",
@@ -3081,21 +2971,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "d3c5c36635c3a957",
@@ -3113,6 +3000,7 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 7,
    "page_topics": [
     "user experience",
@@ -3120,14 +3008,11 @@
     "VR"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 7,
+   "topic_score": 2,
    "topics": [
-    "user experience",
-    "accessibility",
     "VR"
    ]
   },
@@ -3147,21 +3032,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "f7b3251b8b1e8a48",
@@ -3179,21 +3061,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "79f3fc68850f83be",
@@ -3211,21 +3090,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "dd5b6bf19e6cd2c7",
@@ -3243,10 +3119,8 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
    "enrich_attempts": 4,
+   "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
@@ -3269,21 +3143,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "4cb60a0fae8b020d",
@@ -3301,21 +3172,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "010a3e1116ef57cd",
@@ -3333,21 +3201,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "4e5adc2a4862d8b6",
@@ -3365,21 +3230,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "42db6ec81a498609",
@@ -3397,21 +3259,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "5b7950cbfdb2a1dc",
@@ -3429,21 +3288,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "e95fb6324186dc79",
@@ -3461,21 +3317,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "0add7e760cd1c16e",
@@ -3493,21 +3346,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "1c8731ce4071262a",
@@ -3525,21 +3375,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "77f9e75bed2f4b06",
@@ -3557,21 +3404,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "fc83a1ae0ca916a1",
@@ -3589,21 +3433,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "f99c49d6fec001ae",
@@ -3621,21 +3462,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "2a3b7e96c4c7897d",
@@ -3653,21 +3491,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "1ceae0ccac5de45e",
@@ -3685,21 +3520,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "9dc75fc4aadf25bd",
@@ -3717,21 +3549,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
-   "topic_score": 5,
-   "topics": [
-    "user experience",
-    "accessibility"
-   ]
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "d6b8bdb2eb92b6a8",
@@ -3749,6 +3578,7 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 6,
    "page_topics": [
     "virtual reality",
@@ -3756,7 +3586,6 @@
     "VR"
    ],
    "score_version": 2,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-11",
    "status": "open",
