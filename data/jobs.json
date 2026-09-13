@@ -1,14 +1,14 @@
 {
- "generated_at": "2026-09-12T09:03:37+00:00",
- "date": "2026-09-12",
+ "generated_at": "2026-09-13T10:00:43+00:00",
+ "date": "2026-09-13",
  "topic_thresholds": {
   "broad": 3,
   "strict": 6
  },
  "counts": {
-  "open": 111,
-  "new_today": 3,
-  "closed_kept": 73,
+  "open": 108,
+  "new_today": 2,
+  "closed_kept": 77,
   "hci_broad": 21
  },
  "sources": [
@@ -28,7 +28,7 @@
    "country": "NL",
    "homepage": "https://www.academictransfer.com/en/jobs/",
    "status": "ok",
-   "count": 4,
+   "count": 3,
    "url_used": "https://www.academictransfer.com/en/jobs/?category=phd&sort=date",
    "error": ""
   },
@@ -37,8 +37,8 @@
    "name": "EURAXESS（全歐洲）",
    "country": "EU",
    "homepage": "https://euraxess.ec.europa.eu/jobs/search",
-   "status": "empty",
-   "count": 0,
+   "status": "ok",
+   "count": 2,
    "url_used": "https://euraxess.ec.europa.eu/jobs/search?sort%5Bname%5D=created&sort%5Bdirection%5D=DESC&f%5B0%5D=job_research_profile%3A447",
    "error": ""
   },
@@ -58,7 +58,7 @@
    "country": "SE",
    "homepage": "https://kth.varbi.com/en/",
    "status": "ok",
-   "count": 28,
+   "count": 25,
    "url_used": "https://kth.varbi.com/en/",
    "error": ""
   },
@@ -115,6 +115,64 @@
  ],
  "jobs": [
   {
+   "id": "23fd0b3fc2a4eb21",
+   "source": "euraxess",
+   "source_name": "EURAXESS（全歐洲）",
+   "university": "",
+   "country": "EU",
+   "title": "PhD in Contrast Ultrasound Imaging of Nanobubbles for Cancer Diagnostics",
+   "url": "https://euraxess.ec.europa.eu/jobs/465587",
+   "location": "",
+   "department": "",
+   "posted": "2026-09-13",
+   "deadline": "2026-10-11",
+   "summary": "Advance your research career and opportunities with EURAXESS. Discover jobs, funding, and partnerships, and programmes for innovation and career growth.",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 2,
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
+  },
+  {
+   "id": "f0ffc42ce007ec4f",
+   "source": "euraxess",
+   "source_name": "EURAXESS（全歐洲）",
+   "university": "Lunds universitet",
+   "country": "EU",
+   "title": "Doctoral student in Physics: Topoelectronic Quantum Devices in 2D Materials",
+   "url": "https://euraxess.ec.europa.eu/jobs/465498",
+   "location": "",
+   "department": "",
+   "posted": "2026-09-12",
+   "deadline": "2026-10-09",
+   "summary": "Description of the workplace",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 2,
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-13",
+   "last_seen": "2026-09-13",
+   "status": "open",
+   "topic_score": 0,
+   "topics": [],
+   "also_at": [
+    {
+     "source": "Lunds universitet",
+     "url": "https://lu.varbi.com/en/what:job/jobID:953827/"
+    }
+   ]
+  },
+  {
    "id": "52296602e5c365a7",
    "source": "academictransfer_hci",
    "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
@@ -130,16 +188,15 @@
    "title_guessed": false,
    "found_via": "virtual reality",
    "topic_boost": 3,
+   "enrich_attempts": 1,
    "page_score": 2,
    "page_topics": [
     "virtual reality"
    ],
-   "score_version": 2,
    "query_ok": true,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 1,
+   "score_version": 2,
    "first_seen": "2026-09-12",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 5,
    "topics": [
@@ -163,13 +220,10 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
-   "employment": "TEMPORARY",
    "enrich_attempts": 1,
+   "score_version": 2,
    "first_seen": "2026-09-12",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -190,13 +244,10 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
-   "employment": "TEMPORARY",
    "enrich_attempts": 1,
+   "score_version": 2,
    "first_seen": "2026-09-12",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -520,7 +571,7 @@
    "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-12",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": []
   },
@@ -1102,7 +1153,7 @@
    "enrich_attempts": 3,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -1129,7 +1180,7 @@
    "query_ok": true,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -1237,7 +1288,7 @@
    "query_ok": true,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -1268,7 +1319,7 @@
    "query_ok": true,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -1299,7 +1350,7 @@
    "query_ok": true,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 4,
    "topics": [
@@ -1330,7 +1381,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -1361,7 +1412,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 2,
    "topics": [
@@ -1392,7 +1443,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -1419,7 +1470,7 @@
    "enrich_attempts": 3,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -1450,7 +1501,7 @@
    "query_ok": true,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 5,
    "topics": [
@@ -1536,7 +1587,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -1564,7 +1615,7 @@
    "enrich_attempts": 3,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -1590,7 +1641,7 @@
    "enrich_attempts": 3,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -1617,7 +1668,7 @@
    "query_ok": true,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -1643,7 +1694,7 @@
    "enrich_attempts": 3,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -1705,7 +1756,7 @@
    "query_ok": true,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -1732,7 +1783,7 @@
    "query_ok": true,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -1878,7 +1929,7 @@
    "query_ok": true,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 7,
    "topics": [
@@ -1910,7 +1961,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -1996,7 +2047,7 @@
    "enrich_attempts": 3,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -2054,7 +2105,7 @@
    "query_ok": true,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 17,
    "topics": [
@@ -2126,7 +2177,7 @@
    "query_ok": true,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 23,
    "topics": [
@@ -2163,7 +2214,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -2218,7 +2269,7 @@
    "enrich_attempts": 3,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -2308,7 +2359,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -2815,14 +2866,14 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -2843,15 +2894,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -2880,7 +2931,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -2901,12 +2952,10 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -2927,14 +2976,14 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -2955,12 +3004,10 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -2981,12 +3028,10 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3007,15 +3052,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -3042,15 +3087,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3071,15 +3116,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3100,15 +3145,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3129,15 +3174,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3158,15 +3203,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3187,15 +3232,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3245,14 +3290,14 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "chatbot"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 2,
    "topics": [
@@ -3275,12 +3320,10 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3301,15 +3344,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3330,15 +3373,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3359,15 +3402,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3396,7 +3439,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3417,15 +3460,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3446,15 +3489,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3475,12 +3518,10 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3501,12 +3542,10 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3527,15 +3566,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3556,15 +3595,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3585,6 +3624,7 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 7,
    "page_topics": [
     "user experience",
@@ -3592,9 +3632,8 @@
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 2,
    "topics": [
@@ -3617,6 +3656,7 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 15,
    "page_topics": [
     "human centred computing",
@@ -3627,9 +3667,8 @@
     "chatbot"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 10,
    "topics": [
@@ -3655,14 +3694,14 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "explainable ai"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 2,
    "topics": [
@@ -3685,6 +3724,7 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 14,
    "page_topics": [
     "user experience",
@@ -3695,9 +3735,8 @@
     "XR"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 9,
    "topics": [
@@ -3723,15 +3762,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3752,6 +3791,7 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 7,
    "page_topics": [
     "user experience",
@@ -3759,9 +3799,8 @@
     "VR"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 2,
    "topics": [
@@ -3813,15 +3852,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3851,7 +3890,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -3877,7 +3916,7 @@
    "enrich_attempts": 4,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3898,15 +3937,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3927,12 +3966,10 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3953,15 +3990,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -3982,12 +4019,10 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4008,12 +4043,10 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4034,15 +4067,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4066,7 +4099,7 @@
    "enrich_attempts": 4,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4116,7 +4149,7 @@
    "enrich_attempts": 4,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4140,7 +4173,7 @@
    "enrich_attempts": 4,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4161,14 +4194,14 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 3,
    "page_topics": [
     "human factors"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -4199,7 +4232,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4220,12 +4253,10 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4254,7 +4285,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4283,7 +4314,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4312,7 +4343,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4342,7 +4373,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 2,
    "topics": [
@@ -4373,7 +4404,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4402,7 +4433,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4431,7 +4462,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4455,7 +4486,7 @@
    "enrich_attempts": 4,
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4484,7 +4515,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4513,33 +4544,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
-   "status": "open",
-   "topic_score": 0,
-   "topics": []
-  },
-  {
-   "id": "d86a7ded72bea732",
-   "source": "lu",
-   "source_name": "Lunds universitet",
-   "university": "",
-   "country": "SE",
-   "title": "Doctoral student in Physics: Topoelectronic Quantum Devices in 2D Materials",
-   "url": "https://lu.varbi.com/en/what:job/jobID:953827/",
-   "location": "",
-   "department": "",
-   "posted": "",
-   "deadline": "2026-10-09",
-   "summary": "Description of the workplace The position is placed at the Division of Solid-State Physics at the Department of Physics, a division with around 100 employees where extensive research is carried out",
-   "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
-   "enrich_attempts": 3,
-   "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4568,7 +4573,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4597,7 +4602,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4627,7 +4632,7 @@
    "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-12",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": []
   },
@@ -4656,7 +4661,7 @@
    "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-12",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": []
   },
@@ -4684,7 +4689,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4705,12 +4710,10 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4739,7 +4742,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4760,6 +4763,7 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 14,
    "page_topics": [
     "human computer interaction",
@@ -4770,9 +4774,8 @@
     "visual analytics"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 14,
    "topics": [
@@ -4808,7 +4811,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4837,7 +4840,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4866,7 +4869,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4887,12 +4890,10 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4921,7 +4922,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4950,7 +4951,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -4971,14 +4972,14 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -5007,7 +5008,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -5028,12 +5029,10 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -5063,7 +5062,7 @@
    "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-12",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": []
   },
@@ -5083,12 +5082,10 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -5118,7 +5115,7 @@
    ],
    "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 6,
    "topics": [
@@ -5143,12 +5140,10 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -5169,15 +5164,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
     "user experience",
     "accessibility"
    ],
    "score_version": 2,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -5198,12 +5193,10 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
@@ -5224,12 +5217,10 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 2,
    "enrich_attempts": 3,
+   "score_version": 2,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-12",
+   "last_seen": "2026-09-13",
    "status": "open",
    "topic_score": 0,
    "topics": []
