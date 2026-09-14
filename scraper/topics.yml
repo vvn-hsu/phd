@@ -1,9 +1,8 @@
 # HCI 相關度的關鍵字表，以及用來快速掃視的中文標籤。
 #
-# strong / medium / weak：算 HCI 相關度用的，格式是「正則: 中文標籤」。
-#   strong 3 分、medium 2 分、weak 1 分；weak 在整頁計分時不採計
-#   （那種字在任何職缺頁的樣板文字裡都會出現）。
-# abbrev：縮寫，必須大小寫完全吻合才算（免得 "ar"、"ux" 在別的字裡誤中）。
+# terms / abbrev：算 HCI 相關度用的，格式是「正則: 中文標籤」，每個命中 2 分。
+#   abbrev 必須大小寫完全吻合才算（免得 "ar"、"ux" 在別的字裡誤中）。
+#   同一個中文標籤可以對到多個正則（例如 VR XR AR），只會算一次。
 # fields：不算分，只是貼在卡片上讓人一眼看出這個職缺在做什麼。
 #
 # 想放寬或收緊就改這裡的詞或 thresholds。
@@ -14,99 +13,55 @@ weights:
   weak: 1
 
 thresholds:
-  broad: 3     # 網頁預設：HCI 相關（廣泛）
-  strict: 6    # 嚴格模式
-
-strong:
-  terms:
-    "human[- ]computer interaction": 人機互動
-    "human[- ]centered (computing|design|ai|artificial)": 以人為中心
-    "human[- ]centred (computing|design|ai|artificial)": 以人為中心
-    "user[- ]centered design": 使用者中心設計
-    "user[- ]centred design": 使用者中心設計
-    "interaction design": 互動設計
-    "user experience": 使用者體驗
-    "usability": 易用性
-    "computer[- ]supported cooperative work": 電腦支援協作
-    "human[- ]robot interaction": 人機器人互動
-    "human[- ]agent interaction": 人與代理人互動
-    "human[- ]ai (interaction|collaboration|teaming)": 人與 AI 協作
-    "human factors": 人因
-    "cognitive ergonomics": 認知人因
-    "participatory design": 參與式設計
-    "co[- ]design": 共同設計
-    "user stud(y|ies)": 使用者研究
-    "interaction technique": 互動技術
-  abbrev:
-    HCI: 人機互動
-    CSCW: 電腦支援協作
-    HRI: 人機器人互動
-    UX: 使用者體驗
-    CHI: CHI
+  broad: 2     # 網頁預設：HCI 相關（廣泛）＝命中一個關鍵字就算
+  strict: 6    # 嚴格模式＝命中三個關鍵字，或關鍵字搜尋命中再加一個
 
 medium:
   terms:
-    "user interface": 使用者介面
-    "design research": 設計研究
-    "virtual reality": 虛擬實境
-    "augmented reality": 擴增實境
-    "mixed reality": 混合實境
-    "extended reality": 延展實境
+    "virtual reality": VR XR AR
+    "augmented reality": VR XR AR
+    "mixed reality": VR XR AR
+    "extended reality": VR XR AR
+    "eye[- ]tracking": 眼動追蹤
+    "brain[- ]computer interface": 腦機介面
     "haptic": 觸覺回饋
     "wearable": 穿戴式
-    "ubiquitous computing": 普適運算
-    "tangible (interaction|interface)": 實體互動
-    "eye[- ]tracking": 眼動追蹤
-    "gaze": 視線
-    "brain[- ]computer interface": 腦機介面
     "accessibility": 無障礙
-    "assistive technolog": 輔助科技
     "inclusive design": 包容性設計
     "conversational (agent|interface|ai)": 對話式代理
     "chatbot": 聊天機器人
     "voice (assistant|interface)": 語音介面
-    "dialogue system": 對話系統
     "speech interface": 語音介面
-    "social computing": 社會運算
-    "crowdsourcing": 群眾外包
+    "dialogue system": 對話系統
     "(information|data|scientific) visuali[sz]ation": 資料視覺化
     "visual analytics": 視覺分析
     "affective computing": 情感運算
     "emotion recognition": 情緒辨識
     "multimodal interaction": 多模態互動
     "gesture (recognition|interaction)": 手勢互動
-    "usable (privacy|security)": 可用的隱私安全
+    "explainable (ai|machine learning)": 可解釋 AI
     "persuasive technolog": 說服式科技
     "serious game": 嚴肅遊戲
     "game design": 遊戲設計
     "teleoperation": 遠端操作
     "situation awareness": 情境覺察
-    "trust in (automation|ai|technology)": 對科技的信任
-    "explainable (ai|machine learning)": 可解釋 AI
-    "digital (health|wellbeing|well-being) intervention": 數位健康介入
     "behaviou?r change": 行為改變
-    "driving simulator": 駕駛模擬
     "automated driving": 自動駕駛
+    "driving simulator": 駕駛模擬
+    "social computing": 社會運算
+    "crowdsourcing": 群眾外包
+    "ubiquitous computing": 普適運算
+    "cognitive ergonomics": 認知人因
+    "participatory design": 參與式設計
+    "user interface": 使用者介面
+    "design research": 設計研究
   abbrev:
-    VR: 虛擬實境
-    AR: 擴增實境
-    XR: 延展實境
+    VR: VR XR AR
+    AR: VR XR AR
+    XR: VR XR AR
     BCI: 腦機介面
-    XAI: 可解釋 AI
     EEG: 腦電
-
-weak:
-  terms:
-    "prototyping": 原型製作
-    "user (behaviou?r|requirement|need|percepti)": 使用者需求
-    "end[- ]user": 終端使用者
-    "interface design": 介面設計
-    "cognitive (load|science|psychology)": 認知
-    "human perception": 人類知覺
-    "socio[- ]technical": 社會技術
-    "ethnograph": 民族誌
-    "wearable sensor": 穿戴感測
-  abbrev: {}
+    XAI: 可解釋 AI
 
 # 只用來貼標籤、不算 HCI 分數。純粹為了能一眼掃出這個職缺在做什麼。
 fields:

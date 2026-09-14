@@ -48,7 +48,7 @@ PHD_WEAK = re.compile(r"(\bdoctoral\b|\bdoctorate\b|research\s+student)", re.I)
 POSTDOC = re.compile(r"(post[\s\-]?doc|postdoctoral|post[\s\-]?doctoral)", re.I)
 
 KEEP_CLOSED_DAYS = 45   # 職缺從列表消失後，還在資料裡保留幾天
-SCORE_VERSION = 3       # 計分規則改過就 +1，舊資料會自動重抓重算
+SCORE_VERSION = 4       # 計分規則改過就 +1，舊資料會自動重抓重算
 
 
 # --------------------------------------------------------------------------- 工具
@@ -209,17 +209,6 @@ def dedupe_keep_order(items) -> list[str]:
     return out
 
 
-def zh_of(text: str) -> str:
-    """把英文關鍵字換成中文標籤（找不到就回空字串）。"""
-    if not text:
-        return ""
-    load_topics()
-    for pattern, _weight, label in _TOPIC_RULES:
-        if pattern.search(text):
-            return label
-    return ""
-
-
 def topic_weights() -> dict[str, int]:
     """標籤 -> 權重，用來在扣掉樣板用詞之後重算分數。"""
     load_topics()
@@ -239,10 +228,11 @@ def score_topics(*parts: str, min_weight: int = 1) -> tuple[int, list[str]]:
     for pattern, weight, label in _TOPIC_RULES:
         if weight < min_weight:
             continue
+        if label in hits:
+            continue          # 同一個中文標籤對到多個正則時只算一次
         if pattern.search(blob):
             score += weight
-            if label not in hits:
-                hits.append(label)
+            hits.append(label)
     return score, hits[:8]
 
 
@@ -786,16 +776,12 @@ def main() -> int:
                              job.get("department", "")])
             query = job.get("found_via", "")
             verified = job["query_ok"] if "query_ok" in job else query_matches(query, blob)
-            query_zh = zh_of(query) or query
             if verified:
                 score += boost
-                # 同一個詞已經在命中清單裡就不要再貼一個「搜尋：」標籤，掃起來多餘
-                if query_zh not in hits:
-                    hits = [query_zh] + hits
+                hits = hits + ["HCI 關鍵字搜尋"]
             else:
                 score += 1
-                if query and query_zh not in hits:
-                    hits = hits + [f"{query_zh}（弱）"]
+                hits = hits + ["HCI 關鍵字搜尋（弱）"]
         job["topic_score"], job["topics"] = score, dedupe_keep_order(hits)[:6]
         job["fields"] = field_tags(job.get("title", ""), job.get("summary", ""),
                                    job.get("department", ""))

@@ -133,8 +133,8 @@ def main():
     check("mode all 合併後仍然去重", len(items_all), 4)
     check("mode all 回報用了幾個網址", used, "2 個搜尋網址")
 
-    check("HCI 分數：命中 strong 加 medium",
-          run.score_topics("PhD in Human-Computer Interaction and VR")[0] >= 5, True)
+    check("HCI 分數：命中兩個關鍵字是 4 分",
+          run.score_topics("PhD on gaze and haptics in VR")[0], 4)
     check("HCI 分數：不相關的是 0",
           run.score_topics("PhD in Inhalation Toxicology")[0], 0)
     check("網域分組取最後兩段", run.site_of("https://uu.varbi.com/en/what:job/jobID:1/"), "varbi.com")
@@ -148,12 +148,15 @@ def main():
           run.query_matches("interaction design",
                             "the interaction between design and policy"), False)
     check("關鍵字標籤是中文",
-          run.score_topics("PhD in Human-Computer Interaction with eye tracking")[1],
-          ["人機互動", "眼動追蹤"])
+          run.score_topics("PhD on eye tracking in virtual reality")[1],
+          ["VR XR AR", "眼動追蹤"])
+    check("VR / AR / XR 合成一個標籤",
+          run.score_topics("augmented reality and mixed reality study")[1], ["VR XR AR"])
+    check("同一個標籤只算一次",
+          run.score_topics("augmented reality and mixed reality study")[0], 2)
     check("領域標籤是中文",
           run.field_tags("PhD on clinical imaging for patients"), ["醫療", "影像視覺"])
-    check("英文關鍵字換得到中文", run.zh_of("eye tracking"), "眼動追蹤")
-    check("整頁計分忽略弱詞",
+    check("整頁計分忽略弱詞（現在沒有弱詞了，泛用字不該命中）",
           run.score_topics("we look for prototyping experience", min_weight=2)[0], 0)
     check("搜尋網址取得出關鍵字",
           run.query_of("https://x/jobs?q=human-AI+interaction"), "human-AI interaction")
