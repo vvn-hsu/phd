@@ -164,6 +164,10 @@ def main():
           run.tool_tags("We use Unity and Python, run semi-structured interviews "
                         "and co-design workshops"),
           ["Unity", "Python", "訪談", "工作坊"])
+    check("城市去掉 County", run.clean_city("Stockholm County"), "Stockholm")
+    check("城市去掉瑞典文所有格", run.clean_city("Stockholms län"), "Stockholm")
+    check("國碼不是城市", run.clean_city("AT"), "")
+    check("多字城市保留", run.clean_city("The Hague"), "The Hague")
     check("詳細頁抓得到城市",
           run.page_fallback_fields(
               "<html><body><h1>PhD</h1><p>Work location Uppsala</p></body></html>")["city"],

@@ -99,7 +99,7 @@ tools:
   "(python|numpy|pandas|scikit)": Python
   "(\\bin r\\b|\\br studio\\b|rstudio|\\bggplot)": R
   "\\bmatlab\\b": MATLAB
-  "(javascript|typescript|react|web front)": JavaScript
+  "(typescript|react\\.?js|vue\\.js|web development|front-?end develop)": 前端開發
   "(c\\+\\+|\\bc# )": C++/C#
   "(pytorch|tensorflow|keras|hugging ?face)": PyTorch/TensorFlow
   "(arduino|raspberry pi|microcontroller|esp32)": Arduino

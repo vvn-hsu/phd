@@ -51,7 +51,7 @@ PHD_WEAK = re.compile(r"(\bdoctoral\b|\bdoctorate\b|research\s+student)", re.I)
 POSTDOC = re.compile(r"(post[\s\-]?doc|postdoctoral|post[\s\-]?doctoral)", re.I)
 
 KEEP_CLOSED_DAYS = 45   # 職缺從列表消失後，還在資料裡保留幾天
-SCORE_VERSION = 5       # 計分規則改過就 +1，舊資料會自動重抓重算
+SCORE_VERSION = 6       # 計分規則改過就 +1，舊資料會自動重抓重算
 
 
 # --------------------------------------------------------------------------- 工具
@@ -310,6 +310,21 @@ def extract_jsonld(html: str) -> list[dict]:
     return out
 
 
+def clean_city(text: str) -> str:
+    """把抓到的地點收拾乾淨：去掉 County／län／Region 之類的字尾，
+    也擋掉「AT」這種其實是國碼的東西。"""
+    city = clean(text).strip(" ,.;:·-")
+    suffix = re.compile(r"\s*(county|municipality|region|province|kommun|l\u00e4n)\s*$", re.I)
+    if suffix.search(city):
+        city = suffix.sub("", city)
+        city = re.sub(r"s$", "", city)   # 瑞典文的所有格：Stockholms l\u00e4n -> Stockholm
+    if len(city) < 4 and city.isupper():
+        return ""
+    if len(city) < 3 or len(city) > 40:
+        return ""
+    return city
+
+
 def jsonld_to_fields(node: dict) -> dict:
     org = node.get("hiringOrganization") or {}
     if isinstance(org, list):
@@ -327,7 +342,8 @@ def jsonld_to_fields(node: dict) -> dict:
     return {
         "title": clean(node.get("title")),
         "university": clean(org.get("name") if isinstance(org, dict) else ""),
-        "city": city,
+        "city": clean_city(city),
+        "country": country[:3].upper() if len(country) <= 3 else country[:24],
         "location": ", ".join(p for p in (city, country) if p),
         "department": clean(node.get("employmentUnit", {}).get("name")
                             if isinstance(node.get("employmentUnit"), dict) else ""),
@@ -384,7 +400,7 @@ def page_fallback_fields(html: str) -> dict:
         text,
     )
     if cm:
-        city = cm.group(1).strip()
+        city = clean_city(cm.group(1))
 
     posted = ""
     pm = re.search(r"Posted on:?\s*(\d{1,2}\s+\w{3,12}\s+\d{4}|\d{4}-\d{2}-\d{2})", text, re.I)
@@ -661,7 +677,7 @@ def collect(source: dict, cfg: dict) -> list[dict]:
             "source": source["id"],
             "source_name": source["name"],
             "university": item.get("university", ""),  # 補抓詳細頁後才決定，見 main()
-            "country": source.get("country", ""),
+            "country": item.get("country", ""),   # 補抓完才退回來源設定，見 main()
             "title": title,
             "url": item["url"],
             "city": item.get("city", ""),
@@ -767,7 +783,7 @@ def main() -> int:
         old = known.get(job["id"], {})
         for key in ("posted", "deadline", "location", "department", "summary", "university",
                     "enrich_attempts", "page_score", "page_topics", "query_ok",
-                    "score_version", "fields", "page_tools", "tools", "city"):
+                    "score_version", "fields", "page_tools", "tools", "city", "country"):
             if key == "university" and old.get(key) == old.get("source_name"):
                 continue  # 舊版把來源名稱當學校存進去過，那不是真的雇主
             if not job.get(key) and old.get(key):
@@ -832,11 +848,17 @@ def main() -> int:
     # 城市：詳細頁沒寫的話，從 location（"Delft, NL"）截前半段，
     # 再不然用來源設定裡的 city（單一校區的學校才設）
     default_city = {src["id"]: src.get("city", "") for src in config["sources"]}
+    default_country = {src["id"]: src.get("country", "") for src in config["sources"]}
     for job in fresh.values():
         if not job.get("city") and job.get("location"):
-            job["city"] = job["location"].split(",")[0].strip()
+            job["city"] = clean_city(job["location"].split(",")[0])
         if not job.get("city"):
             job["city"] = default_city.get(job["source"], "")
+        job["city"] = clean_city(job["city"])
+        # 跨國的彙整站（Unijobs、EURAXESS）不能用來源的國家當答案，
+        # 詳細頁有寫才算，沒寫就退回來源設定
+        if not job.get("country"):
+            job["country"] = default_country.get(job["source"], "")
 
     # 查不到雇主就讓 university 留空，網頁顯示時自己退回來源名稱。
     # 寫進資料的話，下一輪會被當成「已經知道學校了」而不再補抓。
