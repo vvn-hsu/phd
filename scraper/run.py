@@ -47,8 +47,8 @@ PHD_STRONG = re.compile(
 PHD_WEAK = re.compile(r"(\bdoctoral\b|\bdoctorate\b|research\s+student)", re.I)
 POSTDOC = re.compile(r"(post[\s\-]?doc|postdoctoral|post[\s\-]?doctoral)", re.I)
 
-KEEP_CLOSED_DAYS = 45
-SCORE_VERSION = 2   # 計分規則改過就 +1，舊資料會自動重抓重算  # 職缺從列表消失後，還在資料裡保留幾天
+KEEP_CLOSED_DAYS = 45   # 職缺從列表消失後，還在資料裡保留幾天
+SCORE_VERSION = 3       # 計分規則改過就 +1，舊資料會自動重抓重算
 
 
 # --------------------------------------------------------------------------- 工具
@@ -151,6 +151,7 @@ def term_label(term: str) -> str:
 
 
 _TOPIC_RULES: list[tuple[re.Pattern, int, str]] = []
+_FIELD_RULES: list[tuple[re.Pattern, str]] = []
 _TOPIC_THRESHOLDS = {"broad": 2, "strict": 5}
 
 
@@ -167,11 +168,56 @@ def load_topics(path: str = TOPICS) -> None:
     for group in ("strong", "medium", "weak"):
         weight = int(weights.get(group, 1))
         block = config.get(group) or {}
-        for term in block.get("terms") or []:
-            rules.append((re.compile(term, re.I), weight, term_label(term)))
-        for abbrev in block.get("abbrev") or []:
-            rules.append((re.compile(rf"\b{re.escape(abbrev)}\b"), weight, abbrev))
+        for term, label in as_pairs(block.get("terms")):
+            rules.append((re.compile(term, re.I), weight, label or term_label(term)))
+        for abbrev, label in as_pairs(block.get("abbrev")):
+            rules.append((re.compile(rf"\b{re.escape(abbrev)}\b"), weight, label or abbrev))
     _TOPIC_RULES = rules
+
+    global _FIELD_RULES
+    _FIELD_RULES = [(re.compile(pattern, re.I), label)
+                    for pattern, label in as_pairs(config.get("fields"))]
+
+
+def as_pairs(block) -> list[tuple[str, str]]:
+    """設定檔可以寫成 {正則: 中文標籤} 或單純的清單，兩種都吃。"""
+    if not block:
+        return []
+    if isinstance(block, dict):
+        return [(str(k), str(v)) for k, v in block.items()]
+    return [(str(item), "") for item in block]
+
+
+def field_tags(*parts: str, limit: int = 3) -> list[str]:
+    """貼在卡片上的中文領域標籤，不影響 HCI 分數。"""
+    load_topics()
+    blob = " ".join(p for p in parts if p)
+    tags: list[str] = []
+    for pattern, label in _FIELD_RULES:
+        if label not in tags and pattern.search(blob):
+            tags.append(label)
+        if len(tags) >= limit:
+            break
+    return tags
+
+
+def dedupe_keep_order(items) -> list[str]:
+    out: list[str] = []
+    for item in items:
+        if item not in out:
+            out.append(item)
+    return out
+
+
+def zh_of(text: str) -> str:
+    """把英文關鍵字換成中文標籤（找不到就回空字串）。"""
+    if not text:
+        return ""
+    load_topics()
+    for pattern, _weight, label in _TOPIC_RULES:
+        if pattern.search(text):
+            return label
+    return ""
 
 
 def topic_weights() -> dict[str, int]:
@@ -692,7 +738,7 @@ def main() -> int:
         old = known.get(job["id"], {})
         for key in ("posted", "deadline", "location", "department", "summary", "university",
                     "enrich_attempts", "page_score", "page_topics", "query_ok",
-                    "score_version"):
+                    "score_version", "fields"):
             if key == "university" and old.get(key) == old.get("source_name"):
                 continue  # 舊版把來源名稱當學校存進去過，那不是真的雇主
             if not job.get(key) and old.get(key):
@@ -740,14 +786,17 @@ def main() -> int:
                              job.get("department", "")])
             query = job.get("found_via", "")
             verified = job["query_ok"] if "query_ok" in job else query_matches(query, blob)
+            query_zh = zh_of(query) or query
             if verified:
                 score += boost
-                hits = [f"搜尋：{query}"] + hits
+                hits = [f"搜尋：{query_zh}"] + hits
             else:
                 score += 1
                 if query:
-                    hits = hits + [f"搜尋：{query}（內文未出現）"]
-        job["topic_score"], job["topics"] = score, hits[:8]
+                    hits = hits + [f"搜尋：{query_zh}（內文未出現）"]
+        job["topic_score"], job["topics"] = score, dedupe_keep_order(hits)[:6]
+        job["fields"] = field_tags(job.get("title", ""), job.get("summary", ""),
+                                   job.get("department", ""))
 
     # 查不到雇主就讓 university 留空，網頁顯示時自己退回來源名稱。
     # 寫進資料的話，下一輪會被當成「已經知道學校了」而不再補抓。

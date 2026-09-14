@@ -1,10 +1,12 @@
-# HCI 相關度的關鍵字表。抓取時會用標題、摘要、系所名稱去比對，
-# 算出 topic_score 和命中的詞，網頁再拿去篩選。
+# HCI 相關度的關鍵字表，以及用來快速掃視的中文標籤。
 #
-# terms  - 不分大小寫的片語（會當成正則，空白可以用 [- ] 之類的寫法）
-# abbrev - 縮寫，必須大小寫完全吻合才算（免得 "ar"、"ux" 在別的字裡誤中）
+# strong / medium / weak：算 HCI 相關度用的，格式是「正則: 中文標籤」。
+#   strong 3 分、medium 2 分、weak 1 分；weak 在整頁計分時不採計
+#   （那種字在任何職缺頁的樣板文字裡都會出現）。
+# abbrev：縮寫，必須大小寫完全吻合才算（免得 "ar"、"ux" 在別的字裡誤中）。
+# fields：不算分，只是貼在卡片上讓人一眼看出這個職缺在做什麼。
 #
-# 想放寬或收緊就直接改這裡的詞或 thresholds。
+# 想放寬或收緊就改這裡的詞或 thresholds。
 
 weights:
   strong: 3
@@ -17,80 +19,117 @@ thresholds:
 
 strong:
   terms:
-    - human[- ]computer interaction
-    - human[- ]centered (computing|design|ai|artificial)
-    - human[- ]centred (computing|design|ai|artificial)
-    - user[- ]centered design
-    - user[- ]centred design
-    - interaction design
-    - user experience
-    - usability
-    - computer[- ]supported cooperative work
-    - human[- ]robot interaction
-    - human[- ]agent interaction
-    - human[- ]ai (interaction|collaboration|teaming)
-    - human factors
-    - cognitive ergonomics
-    - participatory design
-    - co[- ]design
-    - user stud(y|ies)
-    - interaction technique
-  abbrev: [HCI, CSCW, HRI, UX, CHI]
+    "human[- ]computer interaction": 人機互動
+    "human[- ]centered (computing|design|ai|artificial)": 以人為中心
+    "human[- ]centred (computing|design|ai|artificial)": 以人為中心
+    "user[- ]centered design": 使用者中心設計
+    "user[- ]centred design": 使用者中心設計
+    "interaction design": 互動設計
+    "user experience": 使用者體驗
+    "usability": 易用性
+    "computer[- ]supported cooperative work": 電腦支援協作
+    "human[- ]robot interaction": 人機器人互動
+    "human[- ]agent interaction": 人與代理人互動
+    "human[- ]ai (interaction|collaboration|teaming)": 人與 AI 協作
+    "human factors": 人因
+    "cognitive ergonomics": 認知人因
+    "participatory design": 參與式設計
+    "co[- ]design": 共同設計
+    "user stud(y|ies)": 使用者研究
+    "interaction technique": 互動技術
+  abbrev:
+    HCI: 人機互動
+    CSCW: 電腦支援協作
+    HRI: 人機器人互動
+    UX: 使用者體驗
+    CHI: CHI
 
 medium:
   terms:
-    - user interface
-    - design research
-    - virtual reality
-    - augmented reality
-    - mixed reality
-    - extended reality
-    - haptic
-    - wearable
-    - ubiquitous computing
-    - tangible (interaction|interface)
-    - eye[- ]tracking
-    - gaze
-    - brain[- ]computer interface
-    - accessibility
-    - assistive technolog
-    - inclusive design
-    - conversational (agent|interface|ai)
-    - chatbot
-    - voice (assistant|interface)
-    - dialogue system
-    - speech interface
-    - social computing
-    - crowdsourcing
-    - (information|data|scientific) visuali[sz]ation
-    - visual analytics
-    - affective computing
-    - emotion recognition
-    - multimodal interaction
-    - gesture (recognition|interaction)
-    - usable (privacy|security)
-    - persuasive technolog
-    - serious game
-    - game design
-    - teleoperation
-    - situation awareness
-    - trust in (automation|ai|technology)
-    - explainable (ai|machine learning)
-    - digital (health|wellbeing|well-being) intervention
-    - behaviou?r change
-    - driving simulator
-    - automated driving
-  abbrev: [VR, AR, XR, BCI, XAI, EEG]
+    "user interface": 使用者介面
+    "design research": 設計研究
+    "virtual reality": 虛擬實境
+    "augmented reality": 擴增實境
+    "mixed reality": 混合實境
+    "extended reality": 延展實境
+    "haptic": 觸覺回饋
+    "wearable": 穿戴式
+    "ubiquitous computing": 普適運算
+    "tangible (interaction|interface)": 實體互動
+    "eye[- ]tracking": 眼動追蹤
+    "gaze": 視線
+    "brain[- ]computer interface": 腦機介面
+    "accessibility": 無障礙
+    "assistive technolog": 輔助科技
+    "inclusive design": 包容性設計
+    "conversational (agent|interface|ai)": 對話式代理
+    "chatbot": 聊天機器人
+    "voice (assistant|interface)": 語音介面
+    "dialogue system": 對話系統
+    "speech interface": 語音介面
+    "social computing": 社會運算
+    "crowdsourcing": 群眾外包
+    "(information|data|scientific) visuali[sz]ation": 資料視覺化
+    "visual analytics": 視覺分析
+    "affective computing": 情感運算
+    "emotion recognition": 情緒辨識
+    "multimodal interaction": 多模態互動
+    "gesture (recognition|interaction)": 手勢互動
+    "usable (privacy|security)": 可用的隱私安全
+    "persuasive technolog": 說服式科技
+    "serious game": 嚴肅遊戲
+    "game design": 遊戲設計
+    "teleoperation": 遠端操作
+    "situation awareness": 情境覺察
+    "trust in (automation|ai|technology)": 對科技的信任
+    "explainable (ai|machine learning)": 可解釋 AI
+    "digital (health|wellbeing|well-being) intervention": 數位健康介入
+    "behaviou?r change": 行為改變
+    "driving simulator": 駕駛模擬
+    "automated driving": 自動駕駛
+  abbrev:
+    VR: 虛擬實境
+    AR: 擴增實境
+    XR: 延展實境
+    BCI: 腦機介面
+    XAI: 可解釋 AI
+    EEG: 腦電
 
 weak:
   terms:
-    - prototyping
-    - user (behaviou?r|requirement|need|percepti)
-    - end[- ]user
-    - interface design
-    - cognitive (load|science|psychology)
-    - human perception
-    - socio[- ]technical
-    - ethnograph
-    - wearable sensor
-  abbrev: []
+    "prototyping": 原型製作
+    "user (behaviou?r|requirement|need|percepti)": 使用者需求
+    "end[- ]user": 終端使用者
+    "interface design": 介面設計
+    "cognitive (load|science|psychology)": 認知
+    "human perception": 人類知覺
+    "socio[- ]technical": 社會技術
+    "ethnograph": 民族誌
+    "wearable sensor": 穿戴感測
+  abbrev: {}
+
+# 只用來貼標籤、不算 HCI 分數。純粹為了能一眼掃出這個職缺在做什麼。
+fields:
+  "(medical|clinical|hospital|patient|health care|healthcare|nursing)": 醫療
+  "(neuroscien|neural circuit|brain|cognitive neuro)": 神經科學
+  "(machine learning|deep learning|neural network|artificial intelligence|large language model)": 機器學習
+  "(robot|autonomous system)": 機器人
+  "(energy|hydrogen|battery|power grid|wind farm|windfarm|solar|nuclear)": 能源
+  "(material science|materials|polymer|catalys|chemistry|alloy)": 材料化學
+  "quantum": 量子
+  "(photonic|semiconductor|optical|laser|microscop)": 光電半導體
+  "(climate|environmental|ecolog|sustainab|biodiversity)": 氣候環境
+  "(biolog|cell biology|molecular|genetic|protein|genom)": 生命科學
+  "(education|learning analytics|teaching|classroom|pedagog)": 教育
+  "(\\blaw\\b|policy|governance|regulat|ethic)": 法律政策
+  "(linguistic|language acquisition|translation|speech recognition)": 語言
+  "(computer vision|image analysis|imaging|image processing)": 影像視覺
+  "(cyber ?security|privacy|cryptograph|network security)": 資安隱私
+  "(mobility|transport|traffic|vehicle|driving|logistic)": 交通移動
+  "(agri|food science|crop|farming|soil)": 農業食品
+  "(economic|finance|marketing|management|business|consumer)": 經濟商管
+  "(urban|architect|built environment|spatial planning|landscape)": 建築城市
+  "(audio|acoustic|speech|sound|music)": 音訊語音
+  "(manufactur|production system|industrial engineering|mechanical)": 製造工程
+  "(statistic|mathematic|optimi[sz]ation|numerical)": 數學最佳化
+  "(social science|sociolog|psycholog|anthropolog)": 社會心理

@@ -51,7 +51,8 @@
   .meta{grid-column:1;color:var(--muted);font-size:12.5px;display:flex;flex-wrap:wrap;gap:4px 10px}
   .meta strong{color:var(--ink);font-weight:600}
   .topics em{font-style:normal;font-size:11px;padding:1px 7px;margin-right:4px;border-radius:999px;
-    background:var(--new-bg);color:var(--new)}
+    background:var(--new-bg);color:var(--new);white-space:nowrap}
+  .topics.fields em{background:transparent;color:var(--muted);border:1px solid var(--line)}
   .side{grid-column:2;grid-row:1/span 3;display:flex;flex-direction:column;align-items:flex-end;gap:6px}
   .tag{font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
   .tag.new{color:var(--new);background:var(--new-bg);border-color:transparent;font-weight:600}
@@ -91,8 +92,9 @@
 
   <div class="controls">
     <div class="row">
-      <input type="search" id="q" placeholder="搜尋標題、學校、系所、關鍵字（例：wind, machine learning）">
+      <input type="search" id="q" placeholder="搜尋標題、學校、系所、中文標籤（例：人機互動、眼動追蹤、醫療）">
       <select id="school"><option value="">所有學校／來源</option></select>
+      <select id="field"><option value="">所有領域標籤</option></select>
       <select id="country"><option value="">所有國家</option></select>
       <select id="topic">
         <option value="broad">HCI 相關（廣泛）</option>
@@ -157,7 +159,7 @@ try {
   }
 } catch {}
 
-const state = { data:null, q:'', school:'', country:'', sort:'relevance', topic:'broad',
+const state = { data:null, q:'', school:'', country:'', field:'', sort:'relevance', topic:'broad',
   since:false, today:false, unseen:false, star:false, soon:false, closed:false };
 
 const $ = (id) => document.getElementById(id);
@@ -189,6 +191,11 @@ async function boot(){
   $('school').append(...schools.map(s => new Option(s, s)));
   const countries = [...new Set(d.jobs.map(j => j.country).filter(Boolean))].sort();
   $('country').append(...countries.map(c => new Option(c, c)));
+  const fieldCounts = new Map();
+  for (const job of d.jobs) for (const f of job.fields || [])
+    fieldCounts.set(f, (fieldCounts.get(f) || 0) + 1);
+  const fields = [...fieldCounts.entries()].sort((a,b) => b[1]-a[1] || a[0].localeCompare(b[0],'zh-Hant'));
+  $('field').append(...fields.map(([f,n]) => new Option(`${f}（${n}）`, f)));
 
   renderSources(d.sources || []);
   bind();
@@ -219,9 +226,10 @@ function matches(job){
   if (state.soon){ const dd = daysTo(job.deadline); if (dd === null || dd < 0 || dd > 14) return false; }
   if (state.school && (job.university || job.source_name) !== state.school) return false;
   if (state.country && job.country !== state.country) return false;
+  if (state.field && !(job.fields || []).includes(state.field)) return false;
   if (state.q){
-    const blob = [job.title, job.university, job.source_name, job.department, job.location, job.summary]
-      .join(' ').toLowerCase();
+    const blob = [job.title, job.university, job.source_name, job.department, job.location,
+      job.summary, ...(job.topics || []), ...(job.fields || [])].join(' ').toLowerCase();
     if (!state.q.toLowerCase().split(/\s+/).every(t => blob.includes(t))) return false;
   }
   return true;
@@ -265,6 +273,8 @@ function render(){
       '發現於 ' + fmt(job.first_seen),
       (job.topics || []).length && `<span class="topics">${job.topics.slice(0,4)
         .map(t => `<em>${esc(t)}</em>`).join('')}</span>`,
+      (job.fields || []).length && `<span class="topics fields">${job.fields
+        .map(t => `<em>${esc(t)}</em>`).join('')}</span>`,
       (job.also_at || []).length && `另見 ${job.also_at.map(a =>
         `<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.source)}</a>`).join('、')}`,
     ].filter(Boolean).map(x => `<span>${x}</span>`).join('');
@@ -307,7 +317,7 @@ function renderSources(sources){
 
 function bind(){
   $('q').addEventListener('input', e => { state.q = e.target.value.trim(); render(); });
-  for (const id of ['school','country','sort'])
+  for (const id of ['school','country','field','sort'])
     $(id).addEventListener('change', e => { state[id] = e.target.value; render(); });
   $('topic').addEventListener('change', e => { state.topic = e.target.value; renderStats(); render(); });
   for (const [id, key] of [['f-since','since'],['f-today','today'],['f-unseen','unseen'],
@@ -319,8 +329,8 @@ function bind(){
     });
   }
   $('reset').addEventListener('click', () => {
-    Object.assign(state, {q:'',school:'',country:'',since:false,today:false,unseen:false,star:false,soon:false,closed:false});
-    $('q').value=''; $('school').value=''; $('country').value='';
+    Object.assign(state, {q:'',school:'',country:'',field:'',since:false,today:false,unseen:false,star:false,soon:false,closed:false});
+    $('q').value=''; $('school').value=''; $('country').value=''; $('field').value='';
     document.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed','false'));
     render();
   });

@@ -147,11 +147,17 @@ def main():
     check("片語要連在一起才算命中",
           run.query_matches("interaction design",
                             "the interaction between design and policy"), False)
+    check("關鍵字標籤是中文",
+          run.score_topics("PhD in Human-Computer Interaction with eye tracking")[1],
+          ["人機互動", "眼動追蹤"])
+    check("領域標籤是中文",
+          run.field_tags("PhD on clinical imaging for patients"), ["醫療", "影像視覺"])
+    check("英文關鍵字換得到中文", run.zh_of("eye tracking"), "眼動追蹤")
     check("整頁計分忽略弱詞",
           run.score_topics("we look for prototyping experience", min_weight=2)[0], 0)
     check("搜尋網址取得出關鍵字",
           run.query_of("https://x/jobs?q=human-AI+interaction"), "human-AI interaction")
-    check("關鍵字標籤看得懂",
+    check("沒給中文時退回從正則推標籤",
           run.term_label("conversational (agent|interface|ai)"), "conversational agent")
 
     check("詳細頁 fallback 截止日", run.page_fallback_fields(DETAIL)["deadline"], "2026-11-30")
