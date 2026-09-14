@@ -1,13 +1,13 @@
 {
- "generated_at": "2026-09-14T07:00:33+00:00",
+ "generated_at": "2026-09-14T07:06:55+00:00",
  "date": "2026-09-14",
  "topic_thresholds": {
   "broad": 3,
   "strict": 6
  },
  "counts": {
-  "open": 108,
-  "new_today": 6,
+  "open": 110,
+  "new_today": 8,
   "closed_kept": 83,
   "hci_broad": 18
  },
@@ -28,7 +28,7 @@
    "country": "NL",
    "homepage": "https://www.academictransfer.com/en/jobs/",
    "status": "ok",
-   "count": 4,
+   "count": 5,
    "url_used": "https://www.academictransfer.com/en/jobs/?category=phd&sort=date",
    "error": ""
   },
@@ -88,7 +88,7 @@
    "country": "SE",
    "homepage": "https://lu.varbi.com/en/",
    "status": "ok",
-   "count": 10,
+   "count": 11,
    "url_used": "https://lu.varbi.com/en/",
    "error": ""
   },
@@ -133,13 +133,43 @@
    "page_score": 0,
    "page_topics": [],
    "score_version": 3,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
    "topics": [],
    "fields": []
+  },
+  {
+   "id": "71e4ae75ac4e6c58",
+   "source": "academictransfer",
+   "source_name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
+   "university": "Universitair Medisch Centrum Utrecht (UMC Utrecht)",
+   "country": "NL",
+   "title": "Promovendus Hersenstimulatie voor verbetering van revalidatie na beroerte",
+   "url": "https://www.academictransfer.com/en/jobs/363919/promovendus-hersenstimulatie-voor-verbetering-van-revalidatie-na-beroerte/",
+   "location": "Utrecht, NL",
+   "department": "",
+   "posted": "2026-09-14",
+   "deadline": "2026-10-04",
+   "summary": "Als onderdeel van het B-STARS (Brain STimulation to Advance Recovery after Stroke) team doe je onderzoek naar het verbeteren van herstel na een beroerte met behulp van transcraniële magnetische stimulatie (TMS), een vorm van hersenstimulatie. TMS is een niet-invasieve hersenstimulatiebehandeling waarmee hersenactiviteit beïnvloed kan worden door middel van elektromagnetische inductie. Door onderde",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-14",
+   "last_seen": "2026-09-14",
+   "status": "open",
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "神經科學"
+   ]
   },
   {
    "id": "b2e9d7de4d93baa8",
@@ -157,23 +187,22 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 1,
    "page_score": 2,
    "page_topics": [
     "包容性設計"
    ],
    "score_version": 3,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 1,
+   "fields": [
+    "能源",
+    "氣候環境"
+   ],
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 2,
    "topics": [
     "包容性設計"
-   ],
-   "fields": [
-    "能源",
-    "氣候環境"
    ]
   },
   {
@@ -192,20 +221,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
-   "employment": "TEMPORARY",
    "enrich_attempts": 1,
+   "score_version": 3,
+   "fields": [
+    "材料化學",
+    "光電半導體"
+   ],
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "材料化學",
-    "光電半導體"
-   ]
+   "topics": []
   },
   {
    "id": "55ebf30570ec0cd8",
@@ -223,19 +249,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
-   "employment": "TEMPORARY",
    "enrich_attempts": 1,
+   "score_version": 3,
+   "fields": [
+    "光電半導體"
+   ],
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "光電半導體"
-   ]
+   "topics": []
   },
   {
    "id": "aba597fd8fb93156",
@@ -253,21 +276,17 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
-   "query_ok": false,
-   "employment": "TEMPORARY",
    "enrich_attempts": 1,
+   "score_version": 3,
+   "fields": [
+    "醫療"
+   ],
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 1,
    "topics": [
-    "搜尋：以人為中心（內文未出現）"
-   ],
-   "fields": [
-    "醫療"
+    "以人為中心（弱）"
    ]
   },
   {
@@ -286,22 +305,51 @@
    "title_guessed": false,
    "found_via": "data visualization",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
-   "query_ok": false,
-   "employment": "TEMPORARY",
    "enrich_attempts": 1,
+   "score_version": 3,
+   "fields": [
+    "語言",
+    "社會心理"
+   ],
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 1,
    "topics": [
-    "搜尋：資料視覺化（內文未出現）"
+    "資料視覺化（弱）"
+   ]
+  },
+  {
+   "id": "df30c234a5e63d23",
+   "source": "lu",
+   "source_name": "Lunds universitet",
+   "university": "",
+   "country": "SE",
+   "title": "PhD student in Chromatin & Genome Integrity",
+   "url": "https://lu.varbi.com/en/what:job/jobID:965334/",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-10-04",
+   "summary": "Description of the workplace The Chromatin &amp; Genome Integrity Lab (Stem Cell Center &amp; Department of Experimental Medical Science, Faculty of Medicine), led by Dr. Giulia Saredi, studies the me",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 5,
+   "page_topics": [
+    "使用者體驗",
+    "無障礙"
    ],
+   "score_version": 3,
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-14",
+   "last_seen": "2026-09-14",
+   "status": "open",
+   "topic_score": 0,
+   "topics": [],
    "fields": [
-    "語言",
-    "社會心理"
+    "醫療",
+    "生命科學"
    ]
   },
   {
@@ -323,16 +371,16 @@
    "page_score": 0,
    "page_topics": [],
    "score_version": 3,
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
+   "fields": [
+    "影像視覺",
+    "音訊語音"
+   ],
    "first_seen": "2026-09-13",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "影像視覺",
-    "音訊語音"
-   ]
+   "topics": []
   },
   {
    "id": "f0ffc42ce007ec4f",
@@ -350,19 +398,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
    "enrich_attempts": 2,
+   "score_version": 3,
+   "fields": [
+    "材料化學",
+    "量子"
+   ],
    "first_seen": "2026-09-13",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
    "topics": [],
-   "fields": [
-    "材料化學",
-    "量子"
-   ],
    "also_at": [
     {
      "source": "Lunds universitet",
@@ -386,24 +432,22 @@
    "title_guessed": false,
    "found_via": "virtual reality",
    "topic_boost": 3,
+   "enrich_attempts": 2,
    "page_score": 2,
    "page_topics": [
     "虛擬實境"
    ],
-   "score_version": 3,
    "query_ok": true,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 2,
+   "score_version": 3,
+   "fields": [
+    "機器學習"
+   ],
    "first_seen": "2026-09-12",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 5,
    "topics": [
-    "搜尋：虛擬實境",
     "虛擬實境"
-   ],
-   "fields": [
-    "機器學習"
    ]
   },
   {
@@ -422,11 +466,8 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
-   "employment": "TEMPORARY",
    "enrich_attempts": 2,
+   "score_version": 3,
    "first_seen": "2026-09-12",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -1356,21 +1397,17 @@
    "title_guessed": false,
    "found_via": "data visualization",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
-   "query_ok": false,
-   "employment": "TEMPORARY",
    "enrich_attempts": 4,
+   "score_version": 3,
+   "fields": [
+    "語言"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 1,
    "topics": [
-    "搜尋：資料視覺化（內文未出現）"
-   ],
-   "fields": [
-    "語言"
+    "資料視覺化（弱）"
    ]
   },
   {
@@ -1389,18 +1426,15 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
-   "query_ok": true,
-   "employment": "TEMPORARY",
    "enrich_attempts": 4,
+   "query_ok": true,
+   "score_version": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 3,
    "topics": [
-    "搜尋：互動設計"
+    "互動設計"
    ],
    "fields": []
   },
@@ -1501,22 +1535,19 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
-   "query_ok": true,
-   "employment": "TEMPORARY",
    "enrich_attempts": 4,
+   "query_ok": true,
+   "score_version": 3,
+   "fields": [
+    "經濟商管",
+    "社會心理"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 3,
    "topics": [
-    "搜尋：人因"
-   ],
-   "fields": [
-    "經濟商管",
-    "社會心理"
+    "人因"
    ]
   },
   {
@@ -1535,25 +1566,24 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
+   "enrich_attempts": 4,
    "page_score": 1,
    "page_topics": [
     "stakeholder"
    ],
-   "score_version": 3,
    "query_ok": true,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "score_version": 3,
+   "fields": [
+    "氣候環境",
+    "法律政策",
+    "農業食品"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 3,
    "topics": [
-    "搜尋：互動設計"
-   ],
-   "fields": [
-    "氣候環境",
-    "法律政策",
-    "農業食品"
+    "互動設計"
    ]
   },
   {
@@ -1572,23 +1602,22 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
+   "enrich_attempts": 4,
    "page_score": 1,
    "page_topics": [
     "socio technical"
    ],
-   "score_version": 3,
    "query_ok": true,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "score_version": 3,
+   "fields": [
+    "能源"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 3,
    "topics": [
-    "搜尋：互動設計"
-   ],
-   "fields": [
-    "能源"
+    "互動設計"
    ]
   },
   {
@@ -1607,23 +1636,21 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
+   "enrich_attempts": 4,
    "page_score": 1,
    "page_topics": [
     "stakeholder"
    ],
    "score_version": 3,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "fields": [
+    "氣候環境"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 1,
    "topics": [
-    "搜尋：無障礙（內文未出現）"
-   ],
-   "fields": [
-    "氣候環境"
+    "無障礙（弱）"
    ]
   },
   {
@@ -1642,25 +1669,23 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
+   "enrich_attempts": 4,
    "page_score": 2,
    "page_topics": [
     "cognitive load",
     "stakeholder"
    ],
    "score_version": 3,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "fields": [
+    "機器學習"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 2,
    "topics": [
     "認知",
-    "搜尋：以人為中心（內文未出現）"
-   ],
-   "fields": [
-    "機器學習"
+    "以人為中心（弱）"
    ]
   },
   {
@@ -1679,21 +1704,19 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
+   "enrich_attempts": 4,
    "page_score": 2,
    "page_topics": [
     "設計研究"
    ],
    "score_version": 3,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 3,
    "topics": [
     "設計研究",
-    "搜尋：以人為中心（內文未出現）"
+    "以人為中心（弱）"
    ],
    "fields": []
   },
@@ -1713,23 +1736,19 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
-   "query_ok": false,
-   "employment": "TEMPORARY",
    "enrich_attempts": 4,
+   "score_version": 3,
+   "fields": [
+    "醫療",
+    "神經科學",
+    "生命科學"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 1,
    "topics": [
-    "搜尋：人機互動（內文未出現）"
-   ],
-   "fields": [
-    "醫療",
-    "神經科學",
-    "生命科學"
+    "人機互動（弱）"
    ]
   },
   {
@@ -1748,26 +1767,24 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
+   "enrich_attempts": 4,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 3,
    "query_ok": true,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "score_version": 3,
+   "fields": [
+    "醫療",
+    "神經科學",
+    "生命科學"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 5,
    "topics": [
-    "搜尋：無障礙",
     "無障礙"
-   ],
-   "fields": [
-    "醫療",
-    "神經科學",
-    "生命科學"
    ]
   },
   {
@@ -1840,25 +1857,23 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
+   "enrich_attempts": 4,
    "page_score": 2,
    "page_topics": [
     "user behaviour",
     "end user"
    ],
    "score_version": 3,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "fields": [
+    "量子",
+    "光電半導體"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 1,
    "topics": [
-    "搜尋：無障礙（內文未出現）"
-   ],
-   "fields": [
-    "量子",
-    "光電半導體"
+    "無障礙（弱）"
    ]
   },
   {
@@ -1877,23 +1892,19 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
-   "query_ok": false,
-   "employment": "FULL_TIME",
    "enrich_attempts": 4,
+   "score_version": 3,
+   "fields": [
+    "材料化學",
+    "生命科學",
+    "製造工程"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 1,
    "topics": [
-    "搜尋：互動設計（內文未出現）"
-   ],
-   "fields": [
-    "材料化學",
-    "生命科學",
-    "製造工程"
+    "互動設計（弱）"
    ]
   },
   {
@@ -1912,23 +1923,19 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
-   "query_ok": false,
-   "employment": "FULL_TIME",
    "enrich_attempts": 4,
+   "score_version": 3,
+   "fields": [
+    "神經科學",
+    "機器學習",
+    "影像視覺"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 1,
    "topics": [
-    "搜尋：人機互動（內文未出現）"
-   ],
-   "fields": [
-    "神經科學",
-    "機器學習",
-    "影像視覺"
+    "人機互動（弱）"
    ]
   },
   {
@@ -1947,23 +1954,20 @@
    "title_guessed": false,
    "found_via": "data visualization",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
-   "query_ok": true,
-   "employment": "TEMPORARY",
    "enrich_attempts": 4,
+   "query_ok": true,
+   "score_version": 3,
+   "fields": [
+    "醫療",
+    "機器學習",
+    "光電半導體"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 3,
    "topics": [
-    "搜尋：資料視覺化"
-   ],
-   "fields": [
-    "醫療",
-    "機器學習",
-    "光電半導體"
+    "資料視覺化"
    ]
   },
   {
@@ -1982,23 +1986,19 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
-   "query_ok": false,
-   "employment": "TEMPORARY",
    "enrich_attempts": 4,
+   "score_version": 3,
+   "fields": [
+    "氣候環境",
+    "生命科學",
+    "農業食品"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 1,
    "topics": [
-    "搜尋：無障礙（內文未出現）"
-   ],
-   "fields": [
-    "氣候環境",
-    "生命科學",
-    "農業食品"
+    "無障礙（弱）"
    ]
   },
   {
@@ -2048,25 +2048,24 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
+   "enrich_attempts": 4,
    "page_score": 1,
    "page_topics": [
     "stakeholder"
    ],
-   "score_version": 3,
    "query_ok": true,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "score_version": 3,
+   "fields": [
+    "能源",
+    "氣候環境",
+    "數學最佳化"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 3,
    "topics": [
-    "搜尋：人因"
-   ],
-   "fields": [
-    "能源",
-    "氣候環境",
-    "數學最佳化"
+    "人因"
    ]
   },
   {
@@ -2226,26 +2225,24 @@
    "title_guessed": false,
    "found_via": "eye tracking",
    "topic_boost": 3,
+   "enrich_attempts": 4,
    "page_score": 4,
    "page_topics": [
     "眼動追蹤",
     "腦電"
    ],
-   "score_version": 3,
    "query_ok": true,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "score_version": 3,
+   "fields": [
+    "神經科學"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 7,
    "topics": [
-    "搜尋：眼動追蹤",
     "眼動追蹤",
     "腦電"
-   ],
-   "fields": [
-    "神經科學"
    ]
   },
   {
@@ -2264,24 +2261,22 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
+   "enrich_attempts": 4,
    "page_score": 1,
    "page_topics": [
     "stakeholder"
    ],
    "score_version": 3,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "fields": [
+    "氣候環境",
+    "農業食品"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 1,
    "topics": [
-    "搜尋：互動設計（內文未出現）"
-   ],
-   "fields": [
-    "氣候環境",
-    "農業食品"
+    "互動設計（弱）"
    ]
   },
   {
@@ -2478,6 +2473,7 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
+   "enrich_attempts": 4,
    "page_score": 30,
    "page_topics": [
     "人機互動",
@@ -2489,24 +2485,22 @@
     "觸覺回饋",
     "穿戴式"
    ],
-   "score_version": 3,
    "query_ok": true,
-   "employment": "FULL_TIME",
-   "enrich_attempts": 4,
+   "score_version": 3,
+   "fields": [
+    "交通移動"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 23,
    "topics": [
-    "搜尋：人機互動",
     "人機互動",
     "使用者體驗",
     "人因",
     "使用者研究",
-    "混合實境"
-   ],
-   "fields": [
-    "交通移動"
+    "混合實境",
+    "延展實境"
    ]
   },
   {
@@ -2584,23 +2578,19 @@
    "title_guessed": false,
    "found_via": "conversational agent",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
-   "query_ok": false,
-   "employment": "TEMPORARY",
    "enrich_attempts": 4,
+   "score_version": 3,
+   "fields": [
+    "材料化學",
+    "氣候環境",
+    "生命科學"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 1,
    "topics": [
-    "搜尋：對話式代理（內文未出現）"
-   ],
-   "fields": [
-    "材料化學",
-    "氣候環境",
-    "生命科學"
+    "對話式代理（弱）"
    ]
   },
   {
@@ -2679,24 +2669,22 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
+   "enrich_attempts": 4,
    "page_score": 2,
    "page_topics": [
     "可解釋 AI"
    ],
    "score_version": 3,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "fields": [
+    "法律政策"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 3,
    "topics": [
     "可解釋 AI",
-    "搜尋：無障礙（內文未出現）"
-   ],
-   "fields": [
-    "法律政策"
+    "無障礙（弱）"
    ]
   },
   {
@@ -3198,21 +3186,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "氣候環境",
+    "生命科學"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "氣候環境",
-    "生命科學"
-   ]
+   "topics": []
   },
   {
    "id": "046206074190610c",
@@ -3230,22 +3218,22 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "經濟商管",
+    "數學最佳化"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "經濟商管",
-    "數學最佳化"
-   ]
+   "topics": []
   },
   {
    "id": "6cf932fb1495ecd9",
@@ -3263,21 +3251,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
+   "fields": [
+    "影像視覺"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "影像視覺"
-   ]
+   "topics": []
   },
   {
    "id": "0f1bf1c50a059169",
@@ -3295,20 +3283,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
    "enrich_attempts": 4,
-   "first_seen": "2026-09-11",
-   "last_seen": "2026-09-14",
-   "status": "open",
-   "topic_score": 0,
-   "topics": [],
+   "score_version": 3,
    "fields": [
     "機器學習",
     "能源",
     "數學最佳化"
-   ]
+   ],
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-14",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "75dface829d533a1",
@@ -3326,20 +3312,20 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "教育"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "教育"
-   ]
+   "topics": []
   },
   {
    "id": "76c381e61c0eaf86",
@@ -3357,19 +3343,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
    "enrich_attempts": 4,
+   "score_version": 3,
+   "fields": [
+    "機器學習",
+    "數學最佳化"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "機器學習",
-    "數學最佳化"
-   ]
+   "topics": []
   },
   {
    "id": "d489f680a51c112e",
@@ -3387,19 +3371,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
    "enrich_attempts": 4,
+   "score_version": 3,
+   "fields": [
+    "醫療",
+    "影像視覺"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "醫療",
-    "影像視覺"
-   ]
+   "topics": []
   },
   {
    "id": "0cd2d39db32603d6",
@@ -3417,13 +3399,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -3453,21 +3435,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "社會心理"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "社會心理"
-   ]
+   "topics": []
   },
   {
    "id": "d5ceb815aa65813d",
@@ -3485,13 +3467,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -3515,22 +3497,22 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "氣候環境",
+    "教育"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "氣候環境",
-    "教育"
-   ]
+   "topics": []
   },
   {
    "id": "2f1f09aca8dbc5c9",
@@ -3548,21 +3530,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "量子"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "量子"
-   ]
+   "topics": []
   },
   {
    "id": "b19c0c68e3f8ac9b",
@@ -3580,21 +3562,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "量子"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "量子"
-   ]
+   "topics": []
   },
   {
    "id": "ca9fe033cdef6ca1",
@@ -3612,21 +3594,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "材料化學"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "材料化學"
-   ]
+   "topics": []
   },
   {
    "id": "c0360adb4f88d640",
@@ -3673,21 +3655,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 2,
    "page_topics": [
     "聊天機器人"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "醫療"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 2,
    "topics": [
     "聊天機器人"
-   ],
-   "fields": [
-    "醫療"
    ]
   },
   {
@@ -3706,19 +3688,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
    "enrich_attempts": 4,
+   "score_version": 3,
+   "fields": [
+    "醫療",
+    "教育"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "醫療",
-    "教育"
-   ]
+   "topics": []
   },
   {
    "id": "a2ee737948470364",
@@ -3736,22 +3716,22 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "醫療",
+    "氣候環境"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "醫療",
-    "氣候環境"
-   ]
+   "topics": []
   },
   {
    "id": "e3911bbc7c4fad6c",
@@ -3769,21 +3749,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "醫療"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "醫療"
-   ]
+   "topics": []
   },
   {
    "id": "c390901e1f422c3c",
@@ -3801,22 +3781,22 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "醫療",
+    "生命科學"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "醫療",
-    "生命科學"
-   ]
+   "topics": []
   },
   {
    "id": "80163c18b73c5769",
@@ -3834,22 +3814,22 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
+   "fields": [
+    "醫療",
+    "影像視覺"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "醫療",
-    "影像視覺"
-   ]
+   "topics": []
   },
   {
    "id": "703777115ea254fb",
@@ -3867,21 +3847,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "材料化學"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "材料化學"
-   ]
+   "topics": []
   },
   {
    "id": "5f9c4596e7abd2a8",
@@ -3899,21 +3879,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "材料化學"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "材料化學"
-   ]
+   "topics": []
   },
   {
    "id": "7b60eb0c6fb2eaab",
@@ -3931,18 +3911,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
    "enrich_attempts": 4,
+   "score_version": 3,
+   "fields": [
+    "教育"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "教育"
-   ]
+   "topics": []
   },
   {
    "id": "2929558e08bcccf9",
@@ -3960,18 +3938,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
    "enrich_attempts": 4,
+   "score_version": 3,
+   "fields": [
+    "教育"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "教育"
-   ]
+   "topics": []
   },
   {
    "id": "6172f5ff6abee793",
@@ -3989,21 +3965,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "交通移動"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "交通移動"
-   ]
+   "topics": []
   },
   {
    "id": "b9d1069d333239b7",
@@ -4021,22 +3997,22 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "機器學習",
+    "教育"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "機器學習",
-    "教育"
-   ]
+   "topics": []
   },
   {
    "id": "2ee0b6f56e06ac78",
@@ -4054,6 +4030,7 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 7,
    "page_topics": [
     "使用者體驗",
@@ -4061,17 +4038,16 @@
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "機器學習",
+    "教育"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 2,
    "topics": [
     "穿戴式"
-   ],
-   "fields": [
-    "機器學習",
-    "教育"
    ]
   },
   {
@@ -4090,6 +4066,7 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 15,
    "page_topics": [
     "以人為中心",
@@ -4100,7 +4077,9 @@
     "聊天機器人"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "教育"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4110,9 +4089,6 @@
     "共同設計",
     "使用者介面",
     "聊天機器人"
-   ],
-   "fields": [
-    "教育"
    ]
   },
   {
@@ -4131,22 +4107,22 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 2,
    "page_topics": [
     "可解釋 AI"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "教育",
+    "資安隱私"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 2,
    "topics": [
     "可解釋 AI"
-   ],
-   "fields": [
-    "教育",
-    "資安隱私"
    ]
   },
   {
@@ -4165,6 +4141,7 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 14,
    "page_topics": [
     "使用者體驗",
@@ -4175,7 +4152,9 @@
     "延展實境"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "教育"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4185,9 +4164,6 @@
     "混合實境",
     "實體互動",
     "延展實境"
-   ],
-   "fields": [
-    "教育"
    ]
   },
   {
@@ -4206,21 +4182,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "教育"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "教育"
-   ]
+   "topics": []
   },
   {
    "id": "61d1be98b1edaf21",
@@ -4238,6 +4214,7 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 7,
    "page_topics": [
     "使用者體驗",
@@ -4245,17 +4222,16 @@
     "虛擬實境"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "材料化學",
+    "教育"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 2,
    "topics": [
     "虛擬實境"
-   ],
-   "fields": [
-    "材料化學",
-    "教育"
    ]
   },
   {
@@ -4303,21 +4279,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "材料化學"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "材料化學"
-   ]
+   "topics": []
   },
   {
    "id": "705f9f0dcf374ef1",
@@ -4335,6 +4311,7 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 8,
    "page_topics": [
     "使用者體驗",
@@ -4342,7 +4319,6 @@
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4368,18 +4344,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
    "enrich_attempts": 5,
+   "score_version": 3,
+   "fields": [
+    "經濟商管"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "經濟商管"
-   ]
+   "topics": []
   },
   {
    "id": "424a7d14fcd02b07",
@@ -4397,21 +4371,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "量子"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "量子"
-   ]
+   "topics": []
   },
   {
    "id": "67960fcb220ef1fe",
@@ -4429,19 +4403,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
    "enrich_attempts": 4,
+   "score_version": 3,
+   "fields": [
+    "醫療",
+    "神經科學"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "醫療",
-    "神經科學"
-   ]
+   "topics": []
   },
   {
    "id": "c7849a35c367859f",
@@ -4459,23 +4431,23 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
-   "first_seen": "2026-09-11",
-   "last_seen": "2026-09-14",
-   "status": "open",
-   "topic_score": 0,
-   "topics": [],
    "fields": [
     "醫療",
     "材料化學",
     "生命科學"
-   ]
+   ],
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-14",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "a94840cca7b3b7e4",
@@ -4493,18 +4465,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
    "enrich_attempts": 4,
+   "score_version": 3,
+   "fields": [
+    "材料化學"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "材料化學"
-   ]
+   "topics": []
   },
   {
    "id": "bcac10c01dda8782",
@@ -4522,19 +4492,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
    "enrich_attempts": 4,
+   "score_version": 3,
+   "fields": [
+    "材料化學",
+    "生命科學"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "材料化學",
-    "生命科學"
-   ]
+   "topics": []
   },
   {
    "id": "e2fb338187d6e856",
@@ -4552,13 +4520,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4582,10 +4550,8 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
    "enrich_attempts": 5,
+   "score_version": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4635,19 +4601,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
    "enrich_attempts": 5,
+   "score_version": 3,
+   "fields": [
+    "教育",
+    "社會心理"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "教育",
-    "社會心理"
-   ]
+   "topics": []
   },
   {
    "id": "1f6fba8282f624fa",
@@ -4665,10 +4629,8 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
    "enrich_attempts": 5,
+   "score_version": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4692,12 +4654,12 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 3,
    "page_topics": [
     "人因"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4723,13 +4685,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4753,10 +4715,8 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
    "enrich_attempts": 4,
+   "score_version": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4780,21 +4740,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
+   "fields": [
+    "量子"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "量子"
-   ]
+   "topics": []
   },
   {
    "id": "fdb3d69362d89cd4",
@@ -4812,13 +4772,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4842,13 +4802,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4872,6 +4832,7 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 7,
    "page_topics": [
     "使用者體驗",
@@ -4879,7 +4840,6 @@
     "虛擬實境"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4905,21 +4865,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
+   "fields": [
+    "量子"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "量子"
-   ]
+   "topics": []
   },
   {
    "id": "f7b3251b8b1e8a48",
@@ -4937,22 +4897,22 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
+   "fields": [
+    "交通移動",
+    "音訊語音"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "交通移動",
-    "音訊語音"
-   ]
+   "topics": []
   },
   {
    "id": "79f3fc68850f83be",
@@ -4970,13 +4930,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5000,20 +4960,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
    "enrich_attempts": 5,
-   "first_seen": "2026-09-11",
-   "last_seen": "2026-09-14",
-   "status": "open",
-   "topic_score": 0,
-   "topics": [],
+   "score_version": 3,
    "fields": [
     "能源",
     "氣候環境",
     "經濟商管"
-   ]
+   ],
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-14",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "ff66c7a2dd62e6d1",
@@ -5031,21 +4989,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
+   "fields": [
+    "能源"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "能源"
-   ]
+   "topics": []
   },
   {
    "id": "4cb60a0fae8b020d",
@@ -5063,21 +5021,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
+   "fields": [
+    "資安隱私"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "資安隱私"
-   ]
+   "topics": []
   },
   {
    "id": "010a3e1116ef57cd",
@@ -5095,21 +5053,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
+   "fields": [
+    "能源"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "能源"
-   ]
+   "topics": []
   },
   {
    "id": "4e5adc2a4862d8b6",
@@ -5127,21 +5085,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
+   "fields": [
+    "交通移動"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "交通移動"
-   ]
+   "topics": []
   },
   {
    "id": "42db6ec81a498609",
@@ -5217,13 +5175,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5247,20 +5205,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
    "enrich_attempts": 4,
-   "first_seen": "2026-09-11",
-   "last_seen": "2026-09-14",
-   "status": "open",
-   "topic_score": 0,
-   "topics": [],
+   "score_version": 3,
    "fields": [
     "能源",
     "氣候環境",
     "法律政策"
-   ]
+   ],
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-14",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "0add7e760cd1c16e",
@@ -5278,13 +5234,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5308,6 +5264,7 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 14,
    "page_topics": [
     "人機互動",
@@ -5318,7 +5275,6 @@
     "視覺分析"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5349,21 +5305,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
+   "fields": [
+    "材料化學"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "材料化學"
-   ]
+   "topics": []
   },
   {
    "id": "77f9e75bed2f4b06",
@@ -5381,21 +5337,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
+   "fields": [
+    "生命科學"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "生命科學"
-   ]
+   "topics": []
   },
   {
    "id": "fc83a1ae0ca916a1",
@@ -5413,21 +5369,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
+   "fields": [
+    "醫療"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "醫療"
-   ]
+   "topics": []
   },
   {
    "id": "976ffe3fab47bc16",
@@ -5445,20 +5401,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
    "enrich_attempts": 4,
-   "first_seen": "2026-09-11",
-   "last_seen": "2026-09-14",
-   "status": "open",
-   "topic_score": 0,
-   "topics": [],
+   "score_version": 3,
    "fields": [
     "材料化學",
     "氣候環境",
     "生命科學"
-   ]
+   ],
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-14",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "f99c49d6fec001ae",
@@ -5476,13 +5430,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5506,21 +5460,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
+   "fields": [
+    "機器人"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "機器人"
-   ]
+   "topics": []
   },
   {
    "id": "abf6a6f881237c37",
@@ -5538,21 +5492,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "教育",
+    "法律政策"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "教育",
-    "法律政策"
-   ]
+   "topics": []
   },
   {
    "id": "1ceae0ccac5de45e",
@@ -5570,22 +5524,22 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
+   "fields": [
+    "機器人",
+    "建築城市"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "機器人",
-    "建築城市"
-   ]
+   "topics": []
   },
   {
    "id": "babc9869a3640d69",
@@ -5656,10 +5610,8 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
    "enrich_attempts": 4,
+   "score_version": 3,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5683,13 +5635,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 5,
    "page_score": 6,
    "page_topics": [
     "虛擬實境",
     "眼動追蹤"
    ],
    "score_version": 3,
-   "enrich_attempts": 5,
+   "fields": [
+    "經濟商管"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5697,9 +5652,6 @@
    "topics": [
     "虛擬實境",
     "眼動追蹤"
-   ],
-   "fields": [
-    "經濟商管"
    ]
   },
   {
@@ -5718,19 +5670,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
    "enrich_attempts": 4,
+   "score_version": 3,
+   "fields": [
+    "材料化學",
+    "量子"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "材料化學",
-    "量子"
-   ]
+   "topics": []
   },
   {
    "id": "6f37ca3e860d996d",
@@ -5748,22 +5698,22 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
     "使用者體驗",
     "無障礙"
    ],
    "score_version": 3,
-   "enrich_attempts": 4,
+   "fields": [
+    "氣候環境",
+    "教育"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "氣候環境",
-    "教育"
-   ]
+   "topics": []
   },
   {
    "id": "2a1d2a31b9c690b7",
@@ -5781,20 +5731,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
    "enrich_attempts": 4,
-   "first_seen": "2026-09-11",
-   "last_seen": "2026-09-14",
-   "status": "open",
-   "topic_score": 0,
-   "topics": [],
+   "score_version": 3,
    "fields": [
     "能源",
     "材料化學",
     "農業食品"
-   ]
+   ],
+   "first_seen": "2026-09-11",
+   "last_seen": "2026-09-14",
+   "status": "open",
+   "topic_score": 0,
+   "topics": []
   },
   {
    "id": "2d2ff355a5e7e984",
@@ -5812,19 +5760,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "score_version": 3,
    "enrich_attempts": 4,
+   "score_version": 3,
+   "fields": [
+    "教育",
+    "資安隱私"
+   ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "教育",
-    "資安隱私"
-   ]
+   "topics": []
   }
  ]
 }
