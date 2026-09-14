@@ -776,16 +776,21 @@ def main() -> int:
         for job in to_enrich:
             enrich_job(job, cfg["timeout"])
             job["enrich_attempts"] = known.get(job["id"], {}).get("enrich_attempts", 0) + 1
+            job["_enriched"] = True
             time.sleep(0.7)
 
     # 這次沒補到的欄位，用舊資料補回來，別讓已經查到的學校被洗掉
     for job in fresh.values():
         old = known.get(job["id"], {})
+        # 這次剛重抓過的職缺，page_* 就以這次算出來的為準（可能是空的），
+        # 不然規則改掉之後舊標籤會一直被補回來。tools / fields / topics
+        # 都是從 page_* 重算的衍生欄位，本來就不接回舊值。
+        page_keys = {"page_score", "page_topics", "page_tools", "query_ok", "score_version"}
         for key in ("posted", "deadline", "location", "department", "summary", "university",
                     "enrich_attempts", "page_score", "page_topics", "query_ok",
                     "score_version", "page_tools", "city", "country"):
-            # 注意：tools / fields / topics 都是每次從 page_* 重算的衍生欄位，
-            # 不要接回舊值，不然規則改了舊標籤還會留著
+            if job.get("_enriched") and key in page_keys:
+                continue
             if key == "university" and old.get(key) == old.get("source_name"):
                 continue  # 舊版把來源名稱當學校存進去過，那不是真的雇主
             if not job.get(key) and old.get(key):
@@ -896,6 +901,9 @@ def main() -> int:
             old["status"] = "closed"
             merged[jid] = old
             disappeared += 1
+
+    for job in merged.values():
+        job.pop("_enriched", None)
 
     jobs = sorted(
         merged.values(),
