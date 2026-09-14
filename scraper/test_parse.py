@@ -29,6 +29,11 @@ TITLES = [
     ("Assistant Professor of Physics", False),
     ("Lab Technician", False),
     ("Tenure Track position", False),
+    ("PhD Studentship: Understanding how GLP-1 medications shape social life", True),
+    ("Fully funded studentship in Human Factors", True),
+    ("EPSRC Centre for Doctoral Training (CDT) studentship", True),
+    ("Doctoral Training Partnership studentship in Informatics", True),
+    ("Postdoctoral studentship coordinator", False),
 ]
 
 DATES = [

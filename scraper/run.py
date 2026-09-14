@@ -41,7 +41,10 @@ PHD_STRONG = re.compile(
     r"(\bph\.?\s?d\b|\bphd|promovend|doktorand|doctorant|dottorand|"
     r"(?<!post)(?<!post-)(?<!post )doctoral\s+"
     r"(student|candidate|researcher|position|fellow|program|school)|"
-    r"early\s+stage\s+researcher|\besr\b)",
+    r"early\s+stage\s+researcher|\besr\b|"
+    # 英國的講法：studentship、DTP（Doctoral Training Partnership）、
+    # CDT（Centre for Doctoral Training）
+    r"studentship|doctoral\s+training|\bdtp\b|\bcdt\b)",
     re.I,
 )
 PHD_WEAK = re.compile(r"(\bdoctoral\b|\bdoctorate\b|research\s+student)", re.I)
@@ -103,12 +106,17 @@ def parse_date(value) -> str:
     return dt.date().isoformat()
 
 
+PHD_LITERAL = re.compile(r"\bph\.?\s?d\b|\bphd|promovend|doktorand|doctorant", re.I)
+
+
 def is_phd(title: str, extra: str = "") -> bool:
     blob = f"{title} {extra}"
+    if POSTDOC.search(blob):
+        # 標題同時提到 postdoc 時，要有明確的 PhD 字樣才算；
+        # studentship、doctoral training 這類英國用字不夠（"postdoctoral ... CDT"）
+        return bool(PHD_LITERAL.search(blob))
     if PHD_STRONG.search(blob):
         return True
-    if POSTDOC.search(blob):
-        return False
     return bool(PHD_WEAK.search(blob))
 
 

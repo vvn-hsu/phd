@@ -104,6 +104,30 @@ sources:
     delay: 2
     enrich: jsonld
 
+  # 英國（以及其他英語系）的學術職缺主要走 Times Higher Education 的 Unijobs。
+  # 它的列表是伺服器渲染的，抓得到；jobs.ac.uk 和 FindAPhD 都要 JS。
+  # 注意英國的博士缺多半是「studentship」：綁在某個計畫／DTP／CDT 上、
+  # 有自己的申請截止日，不一定會出現在職缺板上，所以這裡看到的只是一部分。
+  - id: the_unijobs
+    name: THE Unijobs（英國為主）
+    country: UK
+    homepage: https://www.timeshighereducation.com/unijobs/listings/computer-science/
+    type: links
+    enabled: true
+    mode: all
+    topic_boost: 3
+    delay: 1
+    urls:
+      - https://www.timeshighereducation.com/unijobs/listings/computer-science/
+      - https://www.timeshighereducation.com/unijobs/listings/engineering-and-technology/
+      - https://www.timeshighereducation.com/unijobs/listings/psychology/
+      - https://www.timeshighereducation.com/unijobs/searchjobs/?Keywords=human+computer+interaction
+      - https://www.timeshighereducation.com/unijobs/searchjobs/?Keywords=user+experience
+      - https://www.timeshighereducation.com/unijobs/searchjobs/?Keywords=virtual+reality
+      - https://www.timeshighereducation.com/unijobs/searchjobs/?Keywords=eye+tracking
+    link_pattern: '/unijobs/listing/\d+/'
+    enrich: jsonld
+
   - id: jobsacuk
     name: jobs.ac.uk（英國）
     country: UK

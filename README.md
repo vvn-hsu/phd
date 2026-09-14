@@ -33,6 +33,14 @@ VR XR AR、眼動追蹤、腦機介面、腦電、觸覺回饋、穿戴式、無
 關鍵字搜尋撈到的（`sources.yml` 裡那 14 組關鍵字），標成「（弱）」的是關鍵字
 沒有出現在職缺內文、只是被搜尋引擎鬆散比對到。
 
+**藍色＝工具與研究方法**（不算分）
+
+Unity、Unreal、Godot、Blender、Python、R、MATLAB、JavaScript、C++/C#、
+PyTorch/TensorFlow、Arduino、3D 列印、SPSS/Stata、NVivo、問卷平台、Figma、
+訪談、焦點團體、工作坊、問卷調查、田野／民族誌、日誌研究、使用者測試、
+實驗室實驗、RCT、質性分析、混合方法、動作捕捉、生理量測、原型製作、
+參與式研究、文獻回顧、模擬建模
+
 **灰色＝領域標籤**（不算分，只為了掃視）
 
 醫療、神經科學、機器學習、機器人、能源、材料化學、量子、光電半導體、氣候環境、
@@ -75,7 +83,8 @@ AcademicTransfer 和 EURAXESS——因為 HCI 的缺常常排不進「最新職�
 | AcademicTransfer（荷蘭各大學，TU Delft 的職缺都在這） | 開 |
 | EURAXESS（全歐洲，翻 3 頁） | 開，但不穩：翻頁會被 429，回來的常常是非博士的公告 |
 | Academic Positions（彙整站） | 關：卡片文字會整團變成標題，多半是招生廣告 |
-| jobs.ac.uk（英國） | 關：搜尋結果要 JS 才渲染，HTML 裡只有贊助職缺 |
+| THE Unijobs（英國為主，3 個學科分類＋4 組 HCI 關鍵字） | 開 |
+| jobs.ac.uk、FindAPhD | 關：搜尋結果要 JS 才渲染，HTML 裡只有幾則贊助職缺 |
 | ETH Zürich | 開 |
 | KTH（kth.varbi.com） | 開 |
 | Uppsala、Stockholm、Lund、Umeå（都是 Varbi，跟 KTH 同一套版型） | 開 |
@@ -108,6 +117,30 @@ python scraper/run.py --probe      # 只測試各來源通不通，不寫檔
 python scraper/run.py --only tudelft,euraxess
 python scraper/test_parse.py       # 不連網的解析測試
 ```
+
+## 每日摘要信
+
+`scraper/mail.py` 會把當天的職缺整理成一封中文信：今天新增的 HCI 相關、
+7 天內截止的 HCI 相關、今天新增的其他領域、來源異常。
+同時會寫出 `data/summary.html`，不寄信也看得到。
+
+```bash
+python scraper/mail.py --dry-run   # 只產生 data/summary.html
+```
+
+**要真的收到信，得在 repo 設三個 secrets**（Settings → Secrets and variables →
+Actions → New repository secret）：
+
+| Secret | 內容 |
+| --- | --- |
+| `MAIL_TO` | 收件人信箱 |
+| `MAIL_USER` | 寄件帳號，例如你的 Gmail |
+| `MAIL_PASS` | 該帳號的**應用程式密碼**（Gmail 兩步驟驗證下產生的 16 碼），不是登入密碼 |
+
+另外可選 `MAIL_HOST`（預設 `smtp.gmail.com`）、`MAIL_PORT`（預設 465，用 587 會走 STARTTLS）、
+`MAIL_FROM`。三個必要的 secrets 沒設的話這一步會跳過，不會讓執行失敗。
+
+只有**排程**和手動勾 `send_mail` 才會真的寄——不然每次 push 都會收到一封。
 
 ## 每日排程
 
