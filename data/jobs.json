@@ -1,14 +1,14 @@
 {
- "generated_at": "2026-09-14T07:42:53+00:00",
+ "generated_at": "2026-09-14T08:33:53+00:00",
  "date": "2026-09-14",
  "topic_thresholds": {
   "broad": 2,
   "strict": 6
  },
  "counts": {
-  "open": 110,
-  "new_today": 8,
-  "closed_kept": 83,
+  "open": 113,
+  "new_today": 13,
+  "closed_kept": 86,
   "hci_broad": 22
  },
  "sources": [
@@ -38,7 +38,7 @@
    "country": "EU",
    "homepage": "https://euraxess.ec.europa.eu/jobs/search",
    "status": "ok",
-   "count": 3,
+   "count": 4,
    "url_used": "https://euraxess.ec.europa.eu/jobs/search?sort%5Bname%5D=created&sort%5Bdirection%5D=DESC&f%5B0%5D=job_research_profile%3A447",
    "error": ""
   },
@@ -88,7 +88,7 @@
    "country": "SE",
    "homepage": "https://lu.varbi.com/en/",
    "status": "ok",
-   "count": 11,
+   "count": 12,
    "url_used": "https://lu.varbi.com/en/",
    "error": ""
   },
@@ -136,7 +136,7 @@
    "enrich_attempts": 3,
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": [],
    "fields": []
@@ -149,6 +149,7 @@
    "country": "NL",
    "title": "Promovendus Hersenstimulatie voor verbetering van revalidatie na beroerte",
    "url": "https://www.academictransfer.com/en/jobs/363919/promovendus-hersenstimulatie-voor-verbetering-van-revalidatie-na-beroerte/",
+   "city": "Utrecht",
    "location": "Utrecht, NL",
    "department": "",
    "posted": "2026-09-14",
@@ -159,9 +160,12 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
+   "page_tools": [
+    "生理量測"
+   ],
+   "score_version": 5,
    "employment": "TEMPORARY",
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "fields": [
     "神經科學"
    ],
@@ -169,7 +173,10 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "生理量測"
+   ]
   },
   {
    "id": "b2e9d7de4d93baa8",
@@ -179,6 +186,7 @@
    "country": "NL",
    "title": "PhD position on local food web dynamics within offshore wind farms",
    "url": "https://www.academictransfer.com/en/jobs/363916/phd-position-on-local-food-web-dynamics-within-offshore-wind-farms/",
+   "city": "IJmuiden",
    "location": "IJmuiden, NL",
    "department": "",
    "posted": "2026-09-14",
@@ -191,9 +199,13 @@
    "page_topics": [
     "包容性設計"
    ],
-   "score_version": 4,
+   "page_tools": [
+    "田野／民族誌",
+    "實驗室實驗"
+   ],
+   "score_version": 5,
    "employment": "TEMPORARY",
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "fields": [
     "能源",
     "氣候環境"
@@ -204,6 +216,10 @@
    "topic_score": 2,
    "topics": [
     "包容性設計"
+   ],
+   "tools": [
+    "田野／民族誌",
+    "實驗室實驗"
    ]
   },
   {
@@ -214,6 +230,7 @@
    "country": "NL",
    "title": "PhD in Spatiotemporal Integrated Metamaterials",
    "url": "https://www.academictransfer.com/en/jobs/363913/phd-in-spatiotemporal-integrated-metamaterials/",
+   "city": "Eindhoven",
    "location": "Eindhoven, NL",
    "department": "",
    "posted": "2026-09-14",
@@ -224,9 +241,10 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
+   "page_tools": [],
+   "score_version": 5,
    "employment": "TEMPORARY",
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "fields": [
     "材料化學",
     "光電半導體"
@@ -235,7 +253,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "55ebf30570ec0cd8",
@@ -245,6 +264,7 @@
    "country": "NL",
    "title": "PhD in Dynamic Metasurfaces for Spacetime-Engineered Light",
    "url": "https://www.academictransfer.com/en/jobs/363912/phd-in-dynamic-metasurfaces-for-spacetime-engineered-light/",
+   "city": "Eindhoven",
    "location": "Eindhoven, NL",
    "department": "",
    "posted": "2026-09-14",
@@ -255,9 +275,10 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
+   "page_tools": [],
+   "score_version": 5,
    "employment": "TEMPORARY",
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "fields": [
     "光電半導體"
    ],
@@ -265,7 +286,147 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
+  },
+  {
+   "id": "138a425a8a7b912d",
+   "source": "euraxess",
+   "source_name": "EURAXESS（全歐洲）",
+   "university": "Universitat Jaume I",
+   "country": "EU",
+   "title": "PhD candidate (4 yr. contract). Thermal Engineering Group",
+   "url": "https://euraxess.ec.europa.eu/jobs/465604",
+   "city": "Castellón",
+   "location": "",
+   "department": "",
+   "posted": "2026-09-14",
+   "deadline": "2026-10-23",
+   "summary": "RESEARCH PROJECT Natural Refrigerant technologies for Ultra-Low Temperature Cooling (NAR-ULT) PRINCIPAL INVESTIGATORS",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [
+    "MATLAB",
+    "原型製作"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-14",
+   "last_seen": "2026-09-14",
+   "status": "open",
+   "topic_score": 0,
+   "topics": [],
+   "fields": [],
+   "tools": [
+    "MATLAB",
+    "原型製作"
+   ]
+  },
+  {
+   "id": "567e2c1f0f8a3ee2",
+   "source": "euraxess",
+   "source_name": "EURAXESS（全歐洲）",
+   "university": "",
+   "country": "EU",
+   "title": "PhD Research Fellow in remote sensing of the cryosphere (ref 308026)",
+   "url": "https://euraxess.ec.europa.eu/jobs/465613",
+   "city": "",
+   "location": "",
+   "department": "",
+   "posted": "2026-09-14",
+   "deadline": "2026-10-13",
+   "summary": "Advance your research career and opportunities with EURAXESS. Discover jobs, funding, and partnerships, and programmes for innovation and career growth.",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "JavaScript"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-14",
+   "last_seen": "2026-09-14",
+   "status": "open",
+   "topic_score": 0,
+   "topics": [],
+   "fields": [],
+   "tools": [
+    "JavaScript"
+   ]
+  },
+  {
+   "id": "f02c46dd518e3174",
+   "source": "euraxess",
+   "source_name": "EURAXESS（全歐洲）",
+   "university": "University of Oslo",
+   "country": "EU",
+   "title": "PhD Candidate in advanced immune competent liver models (ref 307570)",
+   "url": "https://euraxess.ec.europa.eu/jobs/465610",
+   "city": "Oslo Website",
+   "location": "",
+   "department": "",
+   "posted": "2026-09-14",
+   "deadline": "2026-09-28",
+   "summary": "The Hybrid Technology Hub CoE (https://www.med.uio.no/hth/english/) is inviting applications for a three‑year PhD position.",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-14",
+   "last_seen": "2026-09-14",
+   "status": "open",
+   "topic_score": 0,
+   "topics": [],
+   "fields": [],
+   "tools": []
+  },
+  {
+   "id": "6465f9aae91d2bce",
+   "source": "euraxess",
+   "source_name": "EURAXESS（全歐洲）",
+   "university": "University of Oslo",
+   "country": "EU",
+   "title": "3-years PhD position in probabilistic machine learning and statistics (ref 307053)",
+   "url": "https://euraxess.ec.europa.eu/jobs/465611",
+   "city": "Oslo Website",
+   "location": "",
+   "department": "",
+   "posted": "2026-09-14",
+   "deadline": "2026-10-04",
+   "summary": "We invite applications for a three-year PhD Research Fellowship in probabilistic machine learning and statistics at the Oslo Centre for Biostatistics and Epidemiology (OCBE), Department of Biostatistic",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-14",
+   "last_seen": "2026-09-14",
+   "status": "open",
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "機器學習",
+    "數學最佳化"
+   ],
+   "tools": []
   },
   {
    "id": "aba597fd8fb93156",
@@ -275,6 +436,7 @@
    "country": "NL",
    "title": "PhD: Freeze-Fight-Flight Dynamics in Mental Health Care",
    "url": "https://www.academictransfer.com/en/jobs/363856/phd-freeze-fight-flight-dynamics-in-mental-health-care/",
+   "city": "Utrecht",
    "location": "Utrecht, NL",
    "department": "",
    "posted": "2026-09-10",
@@ -285,10 +447,14 @@
    "topic_boost": 3,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
+   "page_tools": [
+    "JavaScript",
+    "焦點團體"
+   ],
+   "score_version": 5,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "fields": [
     "醫療"
    ],
@@ -298,6 +464,10 @@
    "topic_score": 1,
    "topics": [
     "HCI 關鍵字搜尋（弱）"
+   ],
+   "tools": [
+    "JavaScript",
+    "焦點團體"
    ]
   },
   {
@@ -308,6 +478,7 @@
    "country": "NL",
    "title": "PhD candidate (Anthropological Linguistics, Descriptive Linguistics)",
    "url": "https://www.academictransfer.com/en/jobs/362289/phd-candidate-anthropological-linguistics-descriptive-linguistics/",
+   "city": "Leiden",
    "location": "Leiden, NL",
    "department": "",
    "posted": "2026-07-02",
@@ -318,10 +489,14 @@
    "topic_boost": 3,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
+   "page_tools": [
+    "工作坊",
+    "田野／民族誌"
+   ],
+   "score_version": 5,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "fields": [
     "語言",
     "社會心理"
@@ -332,6 +507,10 @@
    "topic_score": 1,
    "topics": [
     "HCI 關鍵字搜尋（弱）"
+   ],
+   "tools": [
+    "工作坊",
+    "田野／民族誌"
    ]
   },
   {
@@ -342,6 +521,7 @@
    "country": "SE",
    "title": "PhD student in Chromatin & Genome Integrity",
    "url": "https://lu.varbi.com/en/what:job/jobID:965334/",
+   "city": "Lund County",
    "location": "",
    "department": "",
    "posted": "",
@@ -354,8 +534,9 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 2,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 3,
    "fields": [
     "醫療",
     "生命科學"
@@ -364,7 +545,73 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
+  },
+  {
+   "id": "f131c1420b824935",
+   "source": "lu",
+   "source_name": "Lunds universitet",
+   "university": "",
+   "country": "SE",
+   "title": "Doktorand",
+   "url": "https://lu.varbi.com/en/what:job/jobID:969074/",
+   "city": "Lund County",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-09-18",
+   "summary": "Eligibility Students with basic eligibility for third-cycle studies are those who- have completed a second-cycle degree- have completed courses of at least 240 credits, of which at least 60 credits ar",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-14",
+   "last_seen": "2026-09-14",
+   "status": "open",
+   "topic_score": 0,
+   "topics": [],
+   "fields": [],
+   "tools": []
+  },
+  {
+   "id": "d86a7ded72bea732",
+   "source": "lu",
+   "source_name": "Lunds universitet",
+   "university": "",
+   "country": "SE",
+   "title": "Doctoral student in Physics: Topoelectronic Quantum Devices in 2D Materials",
+   "url": "https://lu.varbi.com/en/what:job/jobID:953827/",
+   "city": "Lund County",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-10-09",
+   "summary": "Description of the workplace The position is placed at the Division of Solid-State Physics at the Department of Physics, a division with around 100 employees where extensive research is carried out",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-14",
+   "last_seen": "2026-09-14",
+   "status": "open",
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "材料化學",
+    "量子"
+   ],
+   "tools": []
   },
   {
    "id": "23fd0b3fc2a4eb21",
@@ -392,7 +639,7 @@
    ],
    "first_seen": "2026-09-13",
    "last_seen": "2026-09-14",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": []
   },
@@ -422,7 +669,7 @@
    ],
    "first_seen": "2026-09-13",
    "last_seen": "2026-09-14",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": [],
    "also_at": [
@@ -440,6 +687,7 @@
    "country": "NL",
    "title": "Promovendus diagnostische kwaliteit in de bloedstolling",
    "url": "https://www.academictransfer.com/en/jobs/363904/promovendus-diagnostische-kwaliteit-in-de-bloedstolling/",
+   "city": "Nijmegen",
    "location": "Nijmegen, NL",
    "department": "",
    "posted": "2026-09-12",
@@ -452,10 +700,11 @@
    "page_topics": [
     "VR XR AR"
    ],
-   "score_version": 4,
+   "page_tools": [],
+   "score_version": 5,
    "query_ok": true,
    "employment": "TEMPORARY",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "fields": [
     "機器學習"
    ],
@@ -466,7 +715,8 @@
    "topics": [
     "VR XR AR",
     "HCI 關鍵字搜尋"
-   ]
+   ],
+   "tools": []
   },
   {
    "id": "a9db0c3bd954c17c",
@@ -476,6 +726,7 @@
    "country": "NL",
    "title": "Promovendus Dementiepreventie & risicopredictie",
    "url": "https://www.academictransfer.com/en/jobs/363909/promovendus-dementiepreventie-risicopredictie/",
+   "city": "Rotterdam",
    "location": "Rotterdam, NL",
    "department": "",
    "posted": "2026-09-12",
@@ -486,15 +737,17 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
+   "page_tools": [],
+   "score_version": 5,
    "employment": "TEMPORARY",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-12",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
    "topics": [],
-   "fields": []
+   "fields": [],
+   "tools": []
   },
   {
    "id": "fec8c13fb88500a7",
@@ -1410,6 +1663,7 @@
    "country": "NL",
    "title": "Two PhD candidates, Descriptive/Documentary Linguistics in Indonesia",
    "url": "https://www.academictransfer.com/en/jobs/363844/two-phd-candidates-descriptivedocumentary-linguistics-in-indonesia/",
+   "city": "Leiden",
    "location": "Leiden, NL",
    "department": "",
    "posted": "2026-09-10",
@@ -1420,10 +1674,14 @@
    "topic_boost": 3,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
+   "page_tools": [
+    "工作坊",
+    "田野／民族誌"
+   ],
+   "score_version": 5,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "fields": [
     "語言"
    ],
@@ -1433,6 +1691,10 @@
    "topic_score": 1,
    "topics": [
     "HCI 關鍵字搜尋（弱）"
+   ],
+   "tools": [
+    "工作坊",
+    "田野／民族誌"
    ]
   },
   {
@@ -1443,6 +1705,7 @@
    "country": "NL",
    "title": "PhD in Dynamic Space–Time Interfaces for High-Speed THz Beam Control",
    "url": "https://www.academictransfer.com/en/jobs/363851/phd-in-dynamic-spacetime-interfaces-for-high-speed-thz-beam-control/",
+   "city": "Eindhoven",
    "location": "Eindhoven, NL",
    "department": "",
    "posted": "2026-09-10",
@@ -1453,10 +1716,15 @@
    "topic_boost": 3,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
+   "page_tools": [
+    "Python",
+    "MATLAB",
+    "工作坊"
+   ],
+   "score_version": 5,
    "query_ok": true,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -1464,7 +1732,12 @@
    "topics": [
     "HCI 關鍵字搜尋"
    ],
-   "fields": []
+   "fields": [],
+   "tools": [
+    "Python",
+    "MATLAB",
+    "工作坊"
+   ]
   },
   {
    "id": "ad533efa9eeb8325",
@@ -1555,6 +1828,7 @@
    "country": "NL",
    "title": "PhD Position: ‘Beyond the Odds’ – Unravelling Pathways to Gambling-related Harm",
    "url": "https://www.academictransfer.com/en/jobs/363826/phd-position-beyond-the-odds-unravelling-pathways-to-gambling-related-harm/",
+   "city": "Nijmegen",
    "location": "Nijmegen, NL",
    "department": "",
    "posted": "2026-09-09",
@@ -1565,10 +1839,14 @@
    "topic_boost": 3,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
+   "page_tools": [
+    "R",
+    "工作坊"
+   ],
+   "score_version": 5,
    "query_ok": true,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "fields": [
     "經濟商管",
     "社會心理"
@@ -1579,6 +1857,10 @@
    "topic_score": 3,
    "topics": [
     "HCI 關鍵字搜尋"
+   ],
+   "tools": [
+    "R",
+    "工作坊"
    ]
   },
   {
@@ -1589,6 +1871,7 @@
    "country": "NL",
    "title": "PhD position Landscape Governance",
    "url": "https://www.academictransfer.com/en/jobs/363800/phd-position-landscape-governance/",
+   "city": "Wageningen",
    "location": "Wageningen, NL",
    "department": "",
    "posted": "2026-09-08",
@@ -1601,10 +1884,15 @@
    "page_topics": [
     "stakeholder"
    ],
-   "score_version": 4,
+   "page_tools": [
+    "訪談",
+    "工作坊",
+    "混合方法"
+   ],
+   "score_version": 5,
    "query_ok": true,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "fields": [
     "氣候環境",
     "法律政策",
@@ -1616,6 +1904,11 @@
    "topic_score": 3,
    "topics": [
     "HCI 關鍵字搜尋"
+   ],
+   "tools": [
+    "訪談",
+    "工作坊",
+    "混合方法"
    ]
   },
   {
@@ -1626,6 +1919,7 @@
    "country": "NL",
    "title": "PhD Position Future Energy Infrastructure Planning Under Uncertainty in collaboration with Stedin",
    "url": "https://www.academictransfer.com/en/jobs/363810/phd-position-future-energy-infrastructure-planning-under-uncertainty-in-collaboration-with-stedin/",
+   "city": "Delft",
    "location": "Delft, NL",
    "department": "",
    "posted": "2026-09-08",
@@ -1638,10 +1932,13 @@
    "page_topics": [
     "socio technical"
    ],
-   "score_version": 4,
+   "page_tools": [
+    "Python"
+   ],
+   "score_version": 5,
    "query_ok": true,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "fields": [
     "能源"
    ],
@@ -1651,6 +1948,9 @@
    "topic_score": 3,
    "topics": [
     "HCI 關鍵字搜尋"
+   ],
+   "tools": [
+    "Python"
    ]
   },
   {
@@ -1661,6 +1961,7 @@
    "country": "NL",
    "title": "PhD student North Sea Power (Marine foodwebs)",
    "url": "https://www.academictransfer.com/en/jobs/363747/phd-student-north-sea-power-marine-foodwebs/",
+   "city": "Leiden",
    "location": "Leiden, NL",
    "department": "",
    "posted": "2026-09-07",
@@ -1673,10 +1974,13 @@
    "page_topics": [
     "stakeholder"
    ],
-   "score_version": 4,
+   "page_tools": [
+    "田野／民族誌"
+   ],
+   "score_version": 5,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "fields": [
     "氣候環境"
    ],
@@ -1686,6 +1990,9 @@
    "topic_score": 1,
    "topics": [
     "HCI 關鍵字搜尋（弱）"
+   ],
+   "tools": [
+    "田野／民族誌"
    ]
   },
   {
@@ -1696,6 +2003,7 @@
    "country": "NL",
    "title": "PhD researcher on AI-assisted reverse engineering of integrated circuits (1 FTE)",
    "url": "https://www.academictransfer.com/en/jobs/363728/phd-researcher-on-ai-assisted-reverse-engineering-of-integrated-circuits-1-fte/",
+   "city": "Tilburg",
    "location": "Tilburg, NL",
    "department": "",
    "posted": "2026-09-04",
@@ -1709,10 +2017,14 @@
     "cognitive load",
     "stakeholder"
    ],
-   "score_version": 4,
+   "page_tools": [
+    "Python",
+    "PyTorch/TensorFlow"
+   ],
+   "score_version": 5,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "fields": [
     "機器學習"
    ],
@@ -1722,6 +2034,10 @@
    "topic_score": 1,
    "topics": [
     "HCI 關鍵字搜尋（弱）"
+   ],
+   "tools": [
+    "Python",
+    "PyTorch/TensorFlow"
    ]
   },
   {
@@ -1732,6 +2048,7 @@
    "country": "NL",
    "title": "PhD Position Transition Pathways and Innovation for Circular Consumption of E-bikes and Electronics",
    "url": "https://www.academictransfer.com/en/jobs/363721/phd-position-transition-pathways-and-innovation-for-circular-consumption-of-e-bikes-and-electronics/",
+   "city": "Delft",
    "location": "Delft, NL",
    "department": "",
    "posted": "2026-09-04",
@@ -1744,10 +2061,14 @@
    "page_topics": [
     "設計研究"
    ],
-   "score_version": 4,
+   "page_tools": [
+    "工作坊",
+    "模擬建模"
+   ],
+   "score_version": 5,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -1756,7 +2077,11 @@
     "設計研究",
     "HCI 關鍵字搜尋（弱）"
    ],
-   "fields": []
+   "fields": [],
+   "tools": [
+    "工作坊",
+    "模擬建模"
+   ]
   },
   {
    "id": "7be57e4793a5d192",
@@ -1766,6 +2091,7 @@
    "country": "NL",
    "title": "MSCA-DN PhD position in liquid biomarkers for leukodystrophies (Tübingen, GE)",
    "url": "https://www.academictransfer.com/en/jobs/363694/msca-dn-phd-position-in-liquid-biomarkers-for-leukodystrophies-tubingen-ge/",
+   "city": "Amsterdam",
    "location": "Amsterdam, NL",
    "department": "",
    "posted": "2026-09-03",
@@ -1776,10 +2102,13 @@
    "topic_boost": 3,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
+   "page_tools": [
+    "Python"
+   ],
+   "score_version": 5,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "fields": [
     "醫療",
     "神經科學",
@@ -1791,6 +2120,9 @@
    "topic_score": 1,
    "topics": [
     "HCI 關鍵字搜尋（弱）"
+   ],
+   "tools": [
+    "Python"
    ]
   },
   {
@@ -1801,6 +2133,7 @@
    "country": "NL",
    "title": "MSCA-DN PhD in regulatory & access pathways for leukodystrophy (Utrecht, NL)",
    "url": "https://www.academictransfer.com/en/jobs/363695/msca-dn-phd-in-regulatory-access-pathways-for-leukodystrophy-utrecht-nl/",
+   "city": "Amsterdam",
    "location": "Amsterdam, NL",
    "department": "",
    "posted": "2026-09-03",
@@ -1813,10 +2146,11 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
+   "page_tools": [],
+   "score_version": 5,
    "query_ok": true,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "fields": [
     "醫療",
     "神經科學",
@@ -1829,7 +2163,8 @@
    "topics": [
     "無障礙",
     "HCI 關鍵字搜尋"
-   ]
+   ],
+   "tools": []
   },
   {
    "id": "f7b5769f9280dd7f",
@@ -1893,6 +2228,7 @@
    "country": "NL",
    "title": "PhD in photonic integration and qubit hardware development for quantum computing",
    "url": "https://www.academictransfer.com/en/jobs/363608/phd-in-photonic-integration-and-qubit-hardware-development-for-quantum-computing/",
+   "city": "Eindhoven",
    "location": "Eindhoven, NL",
    "department": "",
    "posted": "2026-09-01",
@@ -1906,10 +2242,11 @@
     "user behaviour",
     "end user"
    ],
-   "score_version": 4,
+   "page_tools": [],
+   "score_version": 5,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "fields": [
     "量子",
     "光電半導體"
@@ -1920,7 +2257,8 @@
    "topic_score": 1,
    "topics": [
     "HCI 關鍵字搜尋（弱）"
-   ]
+   ],
+   "tools": []
   },
   {
    "id": "fdd52609370d07f3",
@@ -1930,6 +2268,7 @@
    "country": "NL",
    "title": "PhD Candidate in Supramolecular Hydrogels for Biomaterials and Tissue Engineering",
    "url": "https://www.academictransfer.com/en/jobs/363636/phd-candidate-in-supramolecular-hydrogels-for-biomaterials-and-tissue-engineering/",
+   "city": "Maastricht",
    "location": "Maastricht, NL",
    "department": "",
    "posted": "2026-09-01",
@@ -1940,10 +2279,14 @@
    "topic_boost": 3,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
+   "page_tools": [
+    "JavaScript",
+    "3D 列印"
+   ],
+   "score_version": 5,
    "query_ok": false,
    "employment": "FULL_TIME",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "fields": [
     "材料化學",
     "生命科學",
@@ -1955,6 +2298,10 @@
    "topic_score": 1,
    "topics": [
     "HCI 關鍵字搜尋（弱）"
+   ],
+   "tools": [
+    "JavaScript",
+    "3D 列印"
    ]
   },
   {
@@ -1965,6 +2312,7 @@
    "country": "NL",
    "title": "PhD Candidate in NeuroAI for Auditory Neuroscience",
    "url": "https://www.academictransfer.com/en/jobs/363629/phd-candidate-in-neuroai-for-auditory-neuroscience/",
+   "city": "Maastricht",
    "location": "Maastricht, NL",
    "department": "",
    "posted": "2026-09-01",
@@ -1975,10 +2323,15 @@
    "topic_boost": 3,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
+   "page_tools": [
+    "Python",
+    "PyTorch/TensorFlow",
+    "生理量測"
+   ],
+   "score_version": 5,
    "query_ok": false,
    "employment": "FULL_TIME",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "fields": [
     "神經科學",
     "機器學習",
@@ -1990,6 +2343,11 @@
    "topic_score": 1,
    "topics": [
     "HCI 關鍵字搜尋（弱）"
+   ],
+   "tools": [
+    "Python",
+    "PyTorch/TensorFlow",
+    "生理量測"
    ]
   },
   {
@@ -2000,6 +2358,7 @@
    "country": "NL",
    "title": "PhD candidate - Medical image analysis and AI in hemostasis reseach",
    "url": "https://www.academictransfer.com/en/jobs/363584/phd-candidate-medical-image-analysis-and-ai-in-hemostasis-reseach/",
+   "city": "Maastricht",
    "location": "Maastricht, NL",
    "department": "",
    "posted": "2026-08-31",
@@ -2010,10 +2369,14 @@
    "topic_boost": 3,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
+   "page_tools": [
+    "Python",
+    "PyTorch/TensorFlow"
+   ],
+   "score_version": 5,
    "query_ok": true,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "fields": [
     "醫療",
     "機器學習",
@@ -2025,6 +2388,10 @@
    "topic_score": 3,
    "topics": [
     "HCI 關鍵字搜尋"
+   ],
+   "tools": [
+    "Python",
+    "PyTorch/TensorFlow"
    ]
   },
   {
@@ -2035,6 +2402,7 @@
    "country": "NL",
    "title": "PhD position: Exposing the contribution of epialleles to heritable variation in plants",
    "url": "https://www.academictransfer.com/en/jobs/363554/phd-position-exposing-the-contribution-of-epialleles-to-heritable-variation-in-plants/",
+   "city": "Wageningen",
    "location": "Wageningen, NL",
    "department": "",
    "posted": "2026-08-28",
@@ -2045,10 +2413,11 @@
    "topic_boost": 3,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
+   "page_tools": [],
+   "score_version": 5,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "fields": [
     "氣候環境",
     "生命科學",
@@ -2060,7 +2429,8 @@
    "topic_score": 1,
    "topics": [
     "HCI 關鍵字搜尋（弱）"
-   ]
+   ],
+   "tools": []
   },
   {
    "id": "dab08e841e85277e",
@@ -2101,6 +2471,7 @@
    "country": "NL",
    "title": "PhD in Modelling Offshore Windfarm Impacts on Marine Bird Populations",
    "url": "https://www.academictransfer.com/en/jobs/363488/phd-in-modelling-offshore-windfarm-impacts-on-marine-bird-populations/",
+   "city": "Amsterdam",
    "location": "Amsterdam, NL",
    "department": "",
    "posted": "2026-08-26",
@@ -2113,10 +2484,11 @@
    "page_topics": [
     "stakeholder"
    ],
-   "score_version": 4,
+   "page_tools": [],
+   "score_version": 5,
    "query_ok": true,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "fields": [
     "能源",
     "氣候環境",
@@ -2128,7 +2500,8 @@
    "topic_score": 3,
    "topics": [
     "HCI 關鍵字搜尋"
-   ]
+   ],
+   "tools": []
   },
   {
    "id": "4faa009a5026f939",
@@ -2279,6 +2652,7 @@
    "country": "NL",
    "title": "PhD position (4 years) on the Role of Foveal Processing in Spatial Attention",
    "url": "https://www.academictransfer.com/en/jobs/363344/phd-position-4-years-on-the-role-of-foveal-processing-in-spatial-attention/",
+   "city": "Amsterdam",
    "location": "Amsterdam, NL",
    "department": "",
    "posted": "2026-08-17",
@@ -2292,10 +2666,16 @@
     "眼動追蹤",
     "腦電"
    ],
-   "score_version": 4,
+   "page_tools": [
+    "Python",
+    "MATLAB",
+    "實驗室實驗",
+    "生理量測"
+   ],
+   "score_version": 5,
    "query_ok": true,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "fields": [
     "神經科學"
    ],
@@ -2307,6 +2687,12 @@
     "眼動追蹤",
     "腦電",
     "HCI 關鍵字搜尋"
+   ],
+   "tools": [
+    "Python",
+    "MATLAB",
+    "實驗室實驗",
+    "生理量測"
    ]
   },
   {
@@ -2317,6 +2703,7 @@
    "country": "NL",
    "title": "PhD in Spatial System Mapping and Decision-Support Design for Nature-Inclusive Agrifood Transitions",
    "url": "https://www.academictransfer.com/en/jobs/363340/phd-in-spatial-system-mapping-and-decision-support-design-for-nature-inclusive-agrifood-transitions/",
+   "city": "Eindhoven",
    "location": "Eindhoven, NL",
    "department": "",
    "posted": "2026-08-17",
@@ -2329,10 +2716,18 @@
    "page_topics": [
     "stakeholder"
    ],
-   "score_version": 4,
+   "page_tools": [
+    "Python",
+    "JavaScript",
+    "訪談",
+    "工作坊",
+    "田野／民族誌",
+    "混合方法"
+   ],
+   "score_version": 5,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "fields": [
     "氣候環境",
     "農業食品"
@@ -2343,6 +2738,14 @@
    "topic_score": 1,
    "topics": [
     "HCI 關鍵字搜尋（弱）"
+   ],
+   "tools": [
+    "Python",
+    "JavaScript",
+    "訪談",
+    "工作坊",
+    "田野／民族誌",
+    "混合方法"
    ]
   },
   {
@@ -2531,6 +2934,7 @@
    "country": "NL",
    "title": "PhD Position Cognitive Guidance in XR to Improve Independent Mobility for People with Disabilities",
    "url": "https://www.academictransfer.com/en/jobs/362999/phd-position-cognitive-guidance-in-xr-to-improve-independent-mobility-for-people-with-disabilities/",
+   "city": "Delft",
    "location": "Delft, NL",
    "department": "",
    "posted": "2026-07-28",
@@ -2547,10 +2951,14 @@
     "無障礙",
     "包容性設計"
    ],
-   "score_version": 4,
+   "page_tools": [
+    "Unity",
+    "Unreal"
+   ],
+   "score_version": 5,
    "query_ok": true,
    "employment": "FULL_TIME",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "fields": [
     "交通移動"
    ],
@@ -2565,6 +2973,10 @@
     "無障礙",
     "包容性設計",
     "HCI 關鍵字搜尋"
+   ],
+   "tools": [
+    "Unity",
+    "Unreal"
    ]
   },
   {
@@ -2634,6 +3046,7 @@
    "country": "NL",
    "title": "Three PhD positions in Homogeneous Catalysis and Photochemical conversions",
    "url": "https://www.academictransfer.com/en/jobs/362755/three-phd-positions-in-homogeneous-catalysis-and-photochemical-conversions/",
+   "city": "Amsterdam",
    "location": "Amsterdam, NL",
    "department": "",
    "posted": "2026-07-17",
@@ -2644,10 +3057,13 @@
    "topic_boost": 3,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
+   "page_tools": [
+    "JavaScript"
+   ],
+   "score_version": 5,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "fields": [
     "材料化學",
     "氣候環境",
@@ -2659,6 +3075,9 @@
    "topic_score": 1,
    "topics": [
     "HCI 關鍵字搜尋（弱）"
+   ],
+   "tools": [
+    "JavaScript"
    ]
   },
   {
@@ -2729,6 +3148,7 @@
    "country": "NL",
    "title": "Three fully funded PhD positions in Competition Law and AI",
    "url": "https://www.academictransfer.com/en/jobs/361774/three-fully-funded-phd-positions-in-competition-law-and-ai/",
+   "city": "Amsterdam",
    "location": "Amsterdam, NL",
    "department": "",
    "posted": "2026-06-12",
@@ -2741,10 +3161,14 @@
    "page_topics": [
     "可解釋 AI"
    ],
-   "score_version": 4,
+   "page_tools": [
+    "工作坊",
+    "原型製作"
+   ],
+   "score_version": 5,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "fields": [
     "法律政策"
    ],
@@ -2755,6 +3179,10 @@
    "topics": [
     "可解釋 AI",
     "HCI 關鍵字搜尋（弱）"
+   ],
+   "tools": [
+    "工作坊",
+    "原型製作"
    ]
   },
   {
@@ -3248,6 +3676,7 @@
    "country": "SE",
    "title": "PhD-student in Evolutionary and Ecological Genetics",
    "url": "https://uu.varbi.com/en/what:job/jobID:967249/",
+   "city": "Uppsala County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3260,8 +3689,9 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "氣候環境",
     "生命科學"
@@ -3270,7 +3700,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "046206074190610c",
@@ -3280,6 +3711,7 @@
    "country": "SE",
    "title": "PhD students in Statistics",
    "url": "https://umu.varbi.com/en/what:job/jobID:965375/",
+   "city": "Umeå County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3292,8 +3724,9 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "經濟商管",
     "數學最佳化"
@@ -3302,7 +3735,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "6cf932fb1495ecd9",
@@ -3312,6 +3746,7 @@
    "country": "SE",
    "title": "PhD students in Computer Vision to estimate breathing and pulse from video",
    "url": "https://kth.varbi.com/en/what:job/jobID:960673/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3324,8 +3759,9 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "fields": [
     "影像視覺"
    ],
@@ -3333,7 +3769,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "0f1bf1c50a059169",
@@ -3343,6 +3780,7 @@
    "country": "SE",
    "title": "PhD student in nuclear fuel performance modelling using machine learning",
    "url": "https://uu.varbi.com/en/what:job/jobID:959437/",
+   "city": "Uppsala County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3353,8 +3791,13 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [
+    "Python",
+    "JavaScript",
+    "C++/C#"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "機器學習",
     "能源",
@@ -3364,7 +3807,12 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "Python",
+    "JavaScript",
+    "C++/C#"
+   ]
   },
   {
    "id": "75dface829d533a1",
@@ -3374,6 +3822,7 @@
    "country": "SE",
    "title": "PhD student in nature-inspired biocarbon–enzyme composites for PFAS remediation",
    "url": "https://uu.varbi.com/en/what:job/jobID:960041/",
+   "city": "Uppsala County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3386,8 +3835,11 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [
+    "實驗室實驗"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "教育"
    ],
@@ -3395,7 +3847,10 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "實驗室實驗"
+   ]
   },
   {
    "id": "76c381e61c0eaf86",
@@ -3405,6 +3860,7 @@
    "country": "SE",
    "title": "PhD student in core optimisation using machine learning",
    "url": "https://uu.varbi.com/en/what:job/jobID:947191/",
+   "city": "Uppsala County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3415,8 +3871,13 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [
+    "Python",
+    "JavaScript",
+    "C++/C#"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "機器學習",
     "數學最佳化"
@@ -3425,7 +3886,12 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "JavaScript",
+    "Python",
+    "C++/C#"
+   ]
   },
   {
    "id": "d489f680a51c112e",
@@ -3435,6 +3901,7 @@
    "country": "SE",
    "title": "PhD student in advanced data analysis for data integration, image analysis, and precision oncology",
    "url": "https://lu.varbi.com/en/what:job/jobID:963180/",
+   "city": "Lund County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3445,8 +3912,9 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "醫療",
     "影像視覺"
@@ -3455,7 +3923,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "0cd2d39db32603d6",
@@ -3465,6 +3934,7 @@
    "country": "SE",
    "title": "PhD student in Theoretical Philosophy",
    "url": "https://su.varbi.com/en/what:job/jobID:947072/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3477,14 +3947,16 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
    "topics": [],
    "fields": [],
+   "tools": [],
    "also_at": [
     {
      "source": "Stockholms universitet",
@@ -3500,6 +3972,7 @@
    "country": "SE",
    "title": "PhD student in Sociological Demography",
    "url": "https://su.varbi.com/en/what:job/jobID:948160/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3512,8 +3985,9 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "社會心理"
    ],
@@ -3521,7 +3995,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "d5ceb815aa65813d",
@@ -3531,6 +4006,7 @@
    "country": "SE",
    "title": "PhD student in Practical Philosophy",
    "url": "https://su.varbi.com/en/what:job/jobID:959485/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3543,14 +4019,16 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
    "topics": [],
-   "fields": []
+   "fields": [],
+   "tools": []
   },
   {
    "id": "6faa3a5e66f8c15c",
@@ -3560,6 +4038,7 @@
    "country": "SE",
    "title": "PhD student in Plant Physiology",
    "url": "https://su.varbi.com/en/what:job/jobID:949863/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3572,8 +4051,9 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "氣候環境",
     "教育"
@@ -3582,7 +4062,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "2f1f09aca8dbc5c9",
@@ -3592,6 +4073,7 @@
    "country": "SE",
    "title": "PhD student in Physics: open quantum system simulations with trapped ions",
    "url": "https://su.varbi.com/en/what:job/jobID:963109/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3604,8 +4086,9 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "量子"
    ],
@@ -3613,7 +4096,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "b19c0c68e3f8ac9b",
@@ -3623,6 +4107,7 @@
    "country": "SE",
    "title": "PhD student in Physics: 2D quantum simulations with trapped Rydberg ions",
    "url": "https://su.varbi.com/en/what:job/jobID:963101/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3635,8 +4120,9 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "量子"
    ],
@@ -3644,7 +4130,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "ca9fe033cdef6ca1",
@@ -3654,6 +4141,7 @@
    "country": "SE",
    "title": "PhD student in Physical Geography focusing on Glacial Biogeochemistry",
    "url": "https://su.varbi.com/en/what:job/jobID:966321/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3666,8 +4154,12 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [
+    "JavaScript",
+    "工作坊"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "材料化學"
    ],
@@ -3675,7 +4167,11 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "JavaScript",
+    "工作坊"
+   ]
   },
   {
    "id": "c0360adb4f88d640",
@@ -3714,6 +4210,7 @@
    "country": "SE",
    "title": "PhD student in Medical Science, Gerontology, in Medical and Health Sciences",
    "url": "https://lu.varbi.com/en/what:job/jobID:964381/",
+   "city": "Lund County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3726,8 +4223,9 @@
    "page_topics": [
     "聊天機器人"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "醫療"
    ],
@@ -3737,7 +4235,8 @@
    "topic_score": 2,
    "topics": [
     "聊天機器人"
-   ]
+   ],
+   "tools": []
   },
   {
    "id": "7de29f7e0a1c5705",
@@ -3747,6 +4246,7 @@
    "country": "SE",
    "title": "PhD student in Medical Science – Oral Microbiome Eco-Mechanics",
    "url": "https://umu.varbi.com/en/what:job/jobID:961714/",
+   "city": "Umeå County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3757,8 +4257,9 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "醫療",
     "教育"
@@ -3767,7 +4268,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "a2ee737948470364",
@@ -3777,6 +4279,7 @@
    "country": "SE",
    "title": "PhD student in Medical Science with a focus on extracellular vesicles and haemostasis in assisted reproduction",
    "url": "https://uu.varbi.com/en/what:job/jobID:961661/",
+   "city": "Uppsala County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3789,8 +4292,9 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "醫療",
     "氣候環境"
@@ -3799,7 +4303,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "e3911bbc7c4fad6c",
@@ -3809,6 +4314,7 @@
    "country": "SE",
    "title": "PhD student in Medical Radiation Physics: AI-Driven Precision Radiotherapy for Spinal Metastases",
    "url": "https://su.varbi.com/en/what:job/jobID:963124/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3821,8 +4327,9 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "醫療"
    ],
@@ -3830,7 +4337,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "c390901e1f422c3c",
@@ -3840,6 +4348,7 @@
    "country": "SE",
    "title": "PhD student in Medical Radiation Physics oriented towards Radiobiology",
    "url": "https://su.varbi.com/en/what:job/jobID:963077/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3852,8 +4361,9 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "醫療",
     "生命科學"
@@ -3862,7 +4372,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "80163c18b73c5769",
@@ -3872,6 +4383,7 @@
    "country": "SE",
    "title": "PhD student in Medical Imaging of Childbirth-Related Pelvic Floor Injuries",
    "url": "https://kth.varbi.com/en/what:job/jobID:962597/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3884,8 +4396,11 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [
+    "模擬建模"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "fields": [
     "醫療",
     "影像視覺"
@@ -3894,7 +4409,10 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "模擬建模"
+   ]
   },
   {
    "id": "703777115ea254fb",
@@ -3904,6 +4422,7 @@
    "country": "SE",
    "title": "PhD student in Materials Chemistry with a specialization in poly(ionic liquid) composites for Na-CO2 batteries",
    "url": "https://su.varbi.com/en/what:job/jobID:947087/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3916,8 +4435,11 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [
+    "JavaScript"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "材料化學"
    ],
@@ -3925,7 +4447,10 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "JavaScript"
+   ]
   },
   {
    "id": "5f9c4596e7abd2a8",
@@ -3935,6 +4460,7 @@
    "country": "SE",
    "title": "PhD student in Materials Chemistry with a specialization in ion-conductive polymers for rechargeable aqueous zinc ion batteries",
    "url": "https://su.varbi.com/en/what:job/jobID:947052/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3947,8 +4473,11 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [
+    "JavaScript"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "材料化學"
    ],
@@ -3956,7 +4485,10 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "JavaScript"
+   ]
   },
   {
    "id": "7b60eb0c6fb2eaab",
@@ -3966,6 +4498,7 @@
    "country": "SE",
    "title": "PhD student in Information Society, with focus on Agent-Based Social Simulation for Crises Preparedness",
    "url": "https://su.varbi.com/en/what:job/jobID:966353/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -3976,8 +4509,11 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [
+    "模擬建模"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "教育"
    ],
@@ -3985,7 +4521,10 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "模擬建模"
+   ]
   },
   {
    "id": "2929558e08bcccf9",
@@ -3995,6 +4534,7 @@
    "country": "SE",
    "title": "PhD student in Information Society, with focus on Agent-Based Simulation of Social Behaviour",
    "url": "https://su.varbi.com/en/what:job/jobID:966253/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4005,8 +4545,11 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [
+    "模擬建模"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "教育"
    ],
@@ -4014,7 +4557,10 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "模擬建模"
+   ]
   },
   {
    "id": "6172f5ff6abee793",
@@ -4024,6 +4570,7 @@
    "country": "SE",
    "title": "PhD student in Hydrology with a focus on Flow and Transport in Fractured Rocks",
    "url": "https://uu.varbi.com/en/what:job/jobID:960428/",
+   "city": "Uppsala County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4036,8 +4583,11 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [
+    "實驗室實驗"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "交通移動"
    ],
@@ -4045,7 +4595,10 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "實驗室實驗"
+   ]
   },
   {
    "id": "b9d1069d333239b7",
@@ -4055,6 +4608,7 @@
    "country": "SE",
    "title": "PhD student in Computer and Systems Sciences, with focus on Machine Learning",
    "url": "https://su.varbi.com/en/what:job/jobID:965823/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4067,8 +4621,9 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "機器學習",
     "教育"
@@ -4077,7 +4632,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "2ee0b6f56e06ac78",
@@ -4087,6 +4643,7 @@
    "country": "SE",
    "title": "PhD student in Computer and Systems Sciences, with focus on Internet of Things and Machine Learning",
    "url": "https://su.varbi.com/en/what:job/jobID:965933/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4100,8 +4657,9 @@
     "穿戴式",
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "機器學習",
     "教育"
@@ -4112,7 +4670,8 @@
    "topic_score": 2,
    "topics": [
     "穿戴式"
-   ]
+   ],
+   "tools": []
   },
   {
    "id": "900f55a2638cccb5",
@@ -4122,6 +4681,7 @@
    "country": "SE",
    "title": "PhD student in Computer and Systems Sciences, with focus on Human–Computer Interaction and Design of AI User Interfaces",
    "url": "https://su.varbi.com/en/what:job/jobID:966176/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4136,8 +4696,11 @@
     "聊天機器人",
     "使用者介面"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [
+    "原型製作"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "教育"
    ],
@@ -4148,6 +4711,9 @@
    "topics": [
     "聊天機器人",
     "使用者介面"
+   ],
+   "tools": [
+    "原型製作"
    ]
   },
   {
@@ -4158,6 +4724,7 @@
    "country": "SE",
    "title": "PhD student in Computer and Systems Sciences, with focus on Cybersecurity",
    "url": "https://su.varbi.com/en/what:job/jobID:965877/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4170,8 +4737,11 @@
    "page_topics": [
     "可解釋 AI"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [
+    "原型製作"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "教育",
     "資安隱私"
@@ -4182,6 +4752,9 @@
    "topic_score": 2,
    "topics": [
     "可解釋 AI"
+   ],
+   "tools": [
+    "原型製作"
    ]
   },
   {
@@ -4192,6 +4765,7 @@
    "country": "SE",
    "title": "PhD student in Computer and Systems Sciences, with focus on Adaptive Immersive Experiences",
    "url": "https://su.varbi.com/en/what:job/jobID:966188/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4205,8 +4779,11 @@
     "VR XR AR",
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [
+    "原型製作"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "教育"
    ],
@@ -4216,6 +4793,9 @@
    "topic_score": 2,
    "topics": [
     "VR XR AR"
+   ],
+   "tools": [
+    "原型製作"
    ]
   },
   {
@@ -4226,6 +4806,7 @@
    "country": "SE",
    "title": "PhD student in Computer and Systems Sciences, with focus on AI-enabled Digital Transformation in the Public Sector",
    "url": "https://su.varbi.com/en/what:job/jobID:965776/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4238,8 +4819,9 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "教育"
    ],
@@ -4247,7 +4829,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "61d1be98b1edaf21",
@@ -4257,6 +4840,7 @@
    "country": "SE",
    "title": "PhD student in Computational Materials Chemistry",
    "url": "https://uu.varbi.com/en/what:job/jobID:960660/",
+   "city": "Uppsala County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4270,8 +4854,9 @@
     "無障礙",
     "VR XR AR"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "材料化學",
     "教育"
@@ -4282,7 +4867,8 @@
    "topic_score": 2,
    "topics": [
     "VR XR AR"
-   ]
+   ],
+   "tools": []
   },
   {
    "id": "8377dd07df1697eb",
@@ -4321,6 +4907,7 @@
    "country": "SE",
    "title": "PhD student in Assessing Marine Sediments as Georeactors for Modifying Bottom-Ocean Chemistry: Natural Analogues and Human Interventions",
    "url": "https://su.varbi.com/en/what:job/jobID:957757/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4333,8 +4920,12 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [
+    "JavaScript",
+    "實驗室實驗"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "材料化學"
    ],
@@ -4342,7 +4933,11 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "JavaScript",
+    "實驗室實驗"
+   ]
   },
   {
    "id": "705f9f0dcf374ef1",
@@ -4352,6 +4947,7 @@
    "country": "SE",
    "title": "PhD student in Algorithmic foundations of AI-assisted consensus and ranking",
    "url": "https://kth.varbi.com/en/what:job/jobID:968044/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4364,14 +4960,16 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
    "topics": [],
-   "fields": []
+   "fields": [],
+   "tools": []
   },
   {
    "id": "725c72eaa3e3e732",
@@ -4381,6 +4979,7 @@
    "country": "DE",
    "title": "PhD student for a project within TransforM",
    "url": "https://portal.mytum.de/jobs/wissenschaftler/NewsArticle_20260814_130836",
+   "city": "München",
    "location": "",
    "department": "",
    "posted": "",
@@ -4391,8 +4990,11 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [
+    "Python"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "fields": [
     "經濟商管"
    ],
@@ -4400,7 +5002,10 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "Python"
+   ]
   },
   {
    "id": "424a7d14fcd02b07",
@@ -4410,6 +5015,7 @@
    "country": "SE",
    "title": "PhD student focusing on Scalable Quantum Program Verification",
    "url": "https://uu.varbi.com/en/what:job/jobID:961891/",
+   "city": "Uppsala County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4422,8 +5028,9 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "量子"
    ],
@@ -4431,7 +5038,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "67960fcb220ef1fe",
@@ -4441,6 +5049,7 @@
    "country": "SE",
    "title": "PhD position in Neuroscience",
    "url": "https://lu.varbi.com/en/what:job/jobID:966346/",
+   "city": "Lund County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4451,8 +5060,9 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "醫療",
     "神經科學"
@@ -4461,7 +5071,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "c7849a35c367859f",
@@ -4471,6 +5082,7 @@
    "country": "SE",
    "title": "PhD position in Microbiology",
    "url": "https://uu.varbi.com/en/what:job/jobID:959399/",
+   "city": "Uppsala County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4483,8 +5095,9 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "醫療",
     "材料化學",
@@ -4494,7 +5107,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "a94840cca7b3b7e4",
@@ -4504,6 +5118,7 @@
    "country": "SE",
    "title": "PhD position in Materials Physics",
    "url": "https://uu.varbi.com/en/what:job/jobID:961716/",
+   "city": "Uppsala County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4514,8 +5129,11 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [
+    "Python"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "材料化學"
    ],
@@ -4523,7 +5141,10 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "Python"
+   ]
   },
   {
    "id": "bcac10c01dda8782",
@@ -4533,6 +5154,7 @@
    "country": "SE",
    "title": "PhD position in Chemistry, with a specialization in Biophysical Chemistry",
    "url": "https://umu.varbi.com/en/what:job/jobID:965355/",
+   "city": "Umeå County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4543,8 +5165,12 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [
+    "Python",
+    "JavaScript"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "材料化學",
     "生命科學"
@@ -4553,7 +5179,11 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "JavaScript",
+    "Python"
+   ]
   },
   {
    "id": "e2fb338187d6e856",
@@ -4563,6 +5193,7 @@
    "country": "SE",
    "title": "PhD Student in Physics: Background and Calibration Studies for Neutron-Oscillation Searches",
    "url": "https://su.varbi.com/en/what:job/jobID:963115/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4575,14 +5206,20 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [
+    "原型製作"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
    "topics": [],
-   "fields": []
+   "fields": [],
+   "tools": [
+    "原型製作"
+   ]
   },
   {
    "id": "1ac77025ea351172",
@@ -4592,6 +5229,7 @@
    "country": "CH",
    "title": "PhD Position Movement Biomarkers in Stroke Recovery 100%, Zurich, fixed-term 24.08.2026",
    "url": "https://jobs.ethz.ch/job/view/12048",
+   "city": "Zürich",
    "location": "",
    "department": "",
    "posted": "",
@@ -4602,14 +5240,24 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [
+    "Python",
+    "C++/C#",
+    "動作捕捉"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
    "topics": [],
-   "fields": []
+   "fields": [],
+   "tools": [
+    "Python",
+    "C++/C#",
+    "動作捕捉"
+   ]
   },
   {
    "id": "53f9be75bdd7468d",
@@ -4645,6 +5293,7 @@
    "country": "DE",
    "title": "Doktorand*in oder Post-Doktorand*in PISA (m/w/d)",
    "url": "https://portal.mytum.de/jobs/wissenschaftler/NewsArticle_20260904_082250",
+   "city": "München",
    "location": "",
    "department": "",
    "posted": "",
@@ -4655,8 +5304,9 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "fields": [
     "教育",
     "社會心理"
@@ -4665,7 +5315,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "1f6fba8282f624fa",
@@ -4675,6 +5326,7 @@
    "country": "SE",
    "title": "Doktorand i kryptologi",
    "url": "https://kth.varbi.com/en/what:job/jobID:965397/",
+   "city": "Stockholm Län",
    "location": "",
    "department": "",
    "posted": "",
@@ -4685,14 +5337,16 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
    "topics": [],
-   "fields": []
+   "fields": [],
+   "tools": []
   },
   {
    "id": "7e2f9cb240273f6c",
@@ -4702,6 +5356,7 @@
    "country": "SE",
    "title": "Doktorand i Arbetsmiljöteknik, med inriktning mot människa-teknik-organisation och strålskydd inom kärnkraft",
    "url": "https://lu.varbi.com/en/what:job/jobID:962292/",
+   "city": "Lund Län",
    "location": "",
    "department": "",
    "posted": "",
@@ -4714,14 +5369,16 @@
    "page_topics": [
     "人因"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
    "topics": [],
-   "fields": []
+   "fields": [],
+   "tools": []
   },
   {
    "id": "1aa0f1198c9661e2",
@@ -4731,6 +5388,7 @@
    "country": "SE",
    "title": "Doctoral students in Networked Systems Security",
    "url": "https://kth.varbi.com/en/what:job/jobID:939588/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4743,14 +5401,16 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
    "topics": [],
-   "fields": []
+   "fields": [],
+   "tools": []
   },
   {
    "id": "3782322684a751a2",
@@ -4760,6 +5420,7 @@
    "country": "SE",
    "title": "Doctoral student on carbon cycling of primary forests",
    "url": "https://lu.varbi.com/en/what:job/jobID:904656/",
+   "city": "Lund County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4770,14 +5431,20 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [
+    "田野／民族誌"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
    "topics": [],
-   "fields": []
+   "fields": [],
+   "tools": [
+    "田野／民族誌"
+   ]
   },
   {
    "id": "ccbd32d96779eacb",
@@ -4787,6 +5454,7 @@
    "country": "SE",
    "title": "Doctoral student in quantum information theory",
    "url": "https://kth.varbi.com/en/what:job/jobID:962675/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4799,8 +5467,9 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "fields": [
     "量子"
    ],
@@ -4808,7 +5477,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "fdb3d69362d89cd4",
@@ -4818,6 +5488,7 @@
    "country": "SE",
    "title": "Doctoral student in mobile wireless sub-THz MIMO communication for 7G",
    "url": "https://kth.varbi.com/en/what:job/jobID:962649/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4830,14 +5501,16 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
    "topics": [],
-   "fields": []
+   "fields": [],
+   "tools": []
   },
   {
    "id": "8a36beebcfa52f33",
@@ -4847,6 +5520,7 @@
    "country": "SE",
    "title": "Doctoral student in information and coding theory for federated learning",
    "url": "https://kth.varbi.com/en/what:job/jobID:963264/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4859,14 +5533,16 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
    "topics": [],
-   "fields": []
+   "fields": [],
+   "tools": []
   },
   {
    "id": "d3c5c36635c3a957",
@@ -4876,6 +5552,7 @@
    "country": "SE",
    "title": "Doctoral student in experimental fluid mechanics and complex films",
    "url": "https://kth.varbi.com/en/what:job/jobID:962019/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4889,8 +5566,9 @@
     "無障礙",
     "VR XR AR"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4898,7 +5576,8 @@
    "topics": [
     "VR XR AR"
    ],
-   "fields": []
+   "fields": [],
+   "tools": []
   },
   {
    "id": "d8ad3f5d7a4cd126",
@@ -4908,6 +5587,7 @@
    "country": "SE",
    "title": "Doctoral student in condensed matter theory",
    "url": "https://kth.varbi.com/en/what:job/jobID:958703/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4920,8 +5600,9 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "fields": [
     "量子"
    ],
@@ -4929,7 +5610,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "f7b3251b8b1e8a48",
@@ -4939,6 +5621,7 @@
    "country": "SE",
    "title": "Doctoral student in acoustic source characterisation",
    "url": "https://kth.varbi.com/en/what:job/jobID:962556/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4951,8 +5634,13 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [
+    "Python",
+    "MATLAB",
+    "PyTorch/TensorFlow"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "fields": [
     "交通移動",
     "音訊語音"
@@ -4961,7 +5649,12 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "Python",
+    "MATLAB",
+    "PyTorch/TensorFlow"
+   ]
   },
   {
    "id": "79f3fc68850f83be",
@@ -4971,6 +5664,7 @@
    "country": "SE",
    "title": "Doctoral student in Theoretical Condensed Matter Physics",
    "url": "https://kth.varbi.com/en/what:job/jobID:958746/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -4983,14 +5677,16 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
    "topics": [],
-   "fields": []
+   "fields": [],
+   "tools": []
   },
   {
    "id": "dd5b6bf19e6cd2c7",
@@ -5000,6 +5696,7 @@
    "country": "SE",
    "title": "Doctoral student in Techno-economic Optimization of Thermal Energy Storage",
    "url": "https://kth.varbi.com/en/what:job/jobID:960474/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -5010,8 +5707,11 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [
+    "Python"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "fields": [
     "能源",
     "氣候環境",
@@ -5021,7 +5721,10 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "Python"
+   ]
   },
   {
    "id": "ff66c7a2dd62e6d1",
@@ -5031,6 +5734,7 @@
    "country": "SE",
    "title": "Doctoral student in Surface engineering of electrodes for flow batteries",
    "url": "https://kth.varbi.com/en/what:job/jobID:960761/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -5043,8 +5747,9 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "fields": [
     "能源"
    ],
@@ -5052,7 +5757,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "4cb60a0fae8b020d",
@@ -5062,6 +5768,7 @@
    "country": "SE",
    "title": "Doctoral student in Remote Fault Attacks on Cryptographic Algorithms",
    "url": "https://kth.varbi.com/en/what:job/jobID:963604/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -5074,8 +5781,12 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [
+    "PyTorch/TensorFlow",
+    "工作坊"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "fields": [
     "資安隱私"
    ],
@@ -5083,7 +5794,11 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "PyTorch/TensorFlow",
+    "工作坊"
+   ]
   },
   {
    "id": "010a3e1116ef57cd",
@@ -5093,6 +5808,7 @@
    "country": "SE",
    "title": "Doctoral student in Nuclear Power Safety",
    "url": "https://kth.varbi.com/en/what:job/jobID:960628/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -5105,8 +5821,11 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [
+    "JavaScript"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "fields": [
     "能源"
    ],
@@ -5114,7 +5833,10 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "JavaScript"
+   ]
   },
   {
    "id": "4e5adc2a4862d8b6",
@@ -5124,6 +5846,7 @@
    "country": "SE",
    "title": "Doctoral student in Neuronics",
    "url": "https://kth.varbi.com/en/what:job/jobID:962477/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -5136,8 +5859,12 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [
+    "Python",
+    "MATLAB"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "fields": [
     "交通移動"
    ],
@@ -5145,7 +5872,11 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "Python",
+    "MATLAB"
+   ]
   },
   {
    "id": "42db6ec81a498609",
@@ -5213,6 +5944,7 @@
    "country": "SE",
    "title": "Doctoral student in Feminist AI Addressing Gender-Based Violence",
    "url": "https://kth.varbi.com/en/what:job/jobID:963228/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -5225,14 +5957,16 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
    "topics": [],
-   "fields": []
+   "fields": [],
+   "tools": []
   },
   {
    "id": "4a10bb22a370a1f7",
@@ -5242,6 +5976,7 @@
    "country": "SE",
    "title": "Doctoral student in Environmental Law specialising in nuclear power",
    "url": "https://uu.varbi.com/en/what:job/jobID:953285/",
+   "city": "Uppsala County",
    "location": "",
    "department": "",
    "posted": "",
@@ -5252,8 +5987,9 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "能源",
     "氣候環境",
@@ -5263,7 +5999,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "0add7e760cd1c16e",
@@ -5273,6 +6010,7 @@
    "country": "SE",
    "title": "Doctoral student in Electrical Engineering with focus on electrical motor reliability",
    "url": "https://kth.varbi.com/en/what:job/jobID:960882/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -5285,14 +6023,22 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [
+    "Python",
+    "MATLAB"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
    "topics": [],
-   "fields": []
+   "fields": [],
+   "tools": [
+    "Python",
+    "MATLAB"
+   ]
   },
   {
    "id": "37d3fbb9cc4f4347",
@@ -5302,6 +6048,7 @@
    "country": "SE",
    "title": "Doctoral student in Computer Science with focus on Human-Computer Interaction and Visualization",
    "url": "https://lu.varbi.com/en/what:job/jobID:954763/",
+   "city": "Lund County",
    "location": "",
    "department": "",
    "posted": "",
@@ -5316,8 +6063,9 @@
     "資料視覺化",
     "視覺分析"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5327,7 +6075,8 @@
     "資料視覺化",
     "視覺分析"
    ],
-   "fields": []
+   "fields": [],
+   "tools": []
   },
   {
    "id": "1c8731ce4071262a",
@@ -5337,6 +6086,7 @@
    "country": "SE",
    "title": "Doctoral student in Characterization of electrochemical interfaces",
    "url": "https://kth.varbi.com/en/what:job/jobID:960993/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -5349,8 +6099,9 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "fields": [
     "材料化學"
    ],
@@ -5358,7 +6109,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "77f9e75bed2f4b06",
@@ -5368,6 +6120,7 @@
    "country": "SE",
    "title": "Doctoral student in Cell and Molecular Biology Research",
    "url": "https://kth.varbi.com/en/what:job/jobID:952584/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -5380,8 +6133,11 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [
+    "Python"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "fields": [
     "生命科學"
    ],
@@ -5389,7 +6145,10 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "Python"
+   ]
   },
   {
    "id": "fc83a1ae0ca916a1",
@@ -5399,6 +6158,7 @@
    "country": "SE",
    "title": "Doctoral student in Biomedical microsystems",
    "url": "https://kth.varbi.com/en/what:job/jobID:964164/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -5411,8 +6171,9 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "fields": [
     "醫療"
    ],
@@ -5420,7 +6181,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "976ffe3fab47bc16",
@@ -5430,6 +6192,7 @@
    "country": "SE",
    "title": "Doctoral student in Biology with a specialisation in Microbial Ecology",
    "url": "https://lu.varbi.com/en/what:job/jobID:953578/",
+   "city": "Lund County",
    "location": "",
    "department": "",
    "posted": "",
@@ -5440,8 +6203,12 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [
+    "田野／民族誌",
+    "實驗室實驗"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "材料化學",
     "氣候環境",
@@ -5451,7 +6218,11 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "田野／民族誌",
+    "實驗室實驗"
+   ]
   },
   {
    "id": "f99c49d6fec001ae",
@@ -5461,6 +6232,7 @@
    "country": "SE",
    "title": "Doctoral student in Astrophysics",
    "url": "https://kth.varbi.com/en/what:job/jobID:960180/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -5473,14 +6245,16 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
    "topics": [],
-   "fields": []
+   "fields": [],
+   "tools": []
   },
   {
    "id": "2a3b7e96c4c7897d",
@@ -5490,6 +6264,7 @@
    "country": "SE",
    "title": "Doctoral student in AI and Robotics for Production",
    "url": "https://kth.varbi.com/en/what:job/jobID:949190/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -5502,8 +6277,9 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "fields": [
     "機器人"
    ],
@@ -5511,7 +6287,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "abf6a6f881237c37",
@@ -5521,6 +6298,7 @@
    "country": "SE",
    "title": "Doctoral student fiscal, private int., constitutional, procedural law",
    "url": "https://lu.varbi.com/en/what:job/jobID:948666/",
+   "city": "Lund County",
    "location": "",
    "department": "",
    "posted": "",
@@ -5533,8 +6311,9 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "教育",
     "法律政策"
@@ -5543,7 +6322,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   },
   {
    "id": "1ceae0ccac5de45e",
@@ -5553,6 +6333,7 @@
    "country": "SE",
    "title": "Doctoral Student in Urban Heat Prediction Using AI and Earth Observation",
    "url": "https://kth.varbi.com/en/what:job/jobID:964277/",
+   "city": "Stockholm County",
    "location": "",
    "department": "",
    "posted": "",
@@ -5565,8 +6346,11 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [
+    "PyTorch/TensorFlow"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "fields": [
     "機器人",
     "建築城市"
@@ -5575,7 +6359,10 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "PyTorch/TensorFlow"
+   ]
   },
   {
    "id": "babc9869a3640d69",
@@ -5638,6 +6425,7 @@
    "country": "SE",
    "title": "Doctoral Student in Automatic Control with focus on Datacenter Control",
    "url": "https://lu.varbi.com/en/what:job/jobID:961545/",
+   "city": "Lund County",
    "location": "",
    "department": "",
    "posted": "",
@@ -5648,14 +6436,16 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
    "topics": [],
-   "fields": []
+   "fields": [],
+   "tools": []
   },
   {
    "id": "d6b8bdb2eb92b6a8",
@@ -5665,6 +6455,7 @@
    "country": "CH",
    "title": "Doctoral Position at the Professorship of Marketing & Technology (TUM) 70%-80%, Zurich, fixed-term 06.08.2026",
    "url": "https://jobs.ethz.ch/job/view/11996",
+   "city": "Zürich",
    "location": "",
    "department": "",
    "posted": "",
@@ -5678,8 +6469,12 @@
     "VR XR AR",
     "眼動追蹤"
    ],
-   "score_version": 4,
-   "enrich_attempts": 6,
+   "page_tools": [
+    "Python",
+    "SPSS/Stata"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 7,
    "fields": [
     "經濟商管"
    ],
@@ -5690,6 +6485,10 @@
    "topics": [
     "VR XR AR",
     "眼動追蹤"
+   ],
+   "tools": [
+    "Python",
+    "SPSS/Stata"
    ]
   },
   {
@@ -5700,6 +6499,7 @@
    "country": "SE",
    "title": "Doctoral (Phd) position in the photophysics in 2D quantum materials",
    "url": "https://uu.varbi.com/en/what:job/jobID:964762/",
+   "city": "Uppsala County",
    "location": "",
    "department": "",
    "posted": "",
@@ -5710,8 +6510,12 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [
+    "Python",
+    "MATLAB"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "材料化學",
     "量子"
@@ -5720,7 +6524,11 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "Python",
+    "MATLAB"
+   ]
   },
   {
    "id": "6f37ca3e860d996d",
@@ -5730,6 +6538,7 @@
    "country": "SE",
    "title": "Doctoral (Phd) position in Real Time simulation for electrified flexible industry",
    "url": "https://uu.varbi.com/en/what:job/jobID:962041/",
+   "city": "Uppsala",
    "location": "",
    "department": "",
    "posted": "",
@@ -5742,8 +6551,12 @@
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [
+    "MATLAB",
+    "模擬建模"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "氣候環境",
     "教育"
@@ -5752,7 +6565,11 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "MATLAB",
+    "模擬建模"
+   ]
   },
   {
    "id": "2a1d2a31b9c690b7",
@@ -5762,6 +6579,7 @@
    "country": "SE",
    "title": "Doctoral (PhD) Position in Solar Cell Technology with focus on Nano-Optics for Agrivoltaics",
    "url": "https://uu.varbi.com/en/what:job/jobID:959448/",
+   "city": "Uppsala County",
    "location": "",
    "department": "",
    "posted": "",
@@ -5772,8 +6590,12 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [
+    "Python",
+    "MATLAB"
+   ],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "能源",
     "材料化學",
@@ -5783,7 +6605,11 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": [
+    "Python",
+    "MATLAB"
+   ]
   },
   {
    "id": "2d2ff355a5e7e984",
@@ -5793,6 +6619,7 @@
    "country": "SE",
    "title": "1-2 PhD students in Computing Science with focus on Cryptography and Cybersecurity",
    "url": "https://umu.varbi.com/en/what:job/jobID:959742/",
+   "city": "Umeå County",
    "location": "",
    "department": "",
    "posted": "",
@@ -5803,8 +6630,9 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 4,
-   "enrich_attempts": 5,
+   "page_tools": [],
+   "score_version": 5,
+   "enrich_attempts": 6,
    "fields": [
     "教育",
     "資安隱私"
@@ -5813,7 +6641,8 @@
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "tools": []
   }
  ]
 }
