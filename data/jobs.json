@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-09-13T10:00:43+00:00",
- "date": "2026-09-13",
+ "generated_at": "2026-09-14T07:00:33+00:00",
+ "date": "2026-09-14",
  "topic_thresholds": {
   "broad": 3,
   "strict": 6
  },
  "counts": {
   "open": 108,
-  "new_today": 2,
-  "closed_kept": 77,
-  "hci_broad": 21
+  "new_today": 6,
+  "closed_kept": 83,
+  "hci_broad": 18
  },
  "sources": [
   {
@@ -18,7 +18,7 @@
    "country": "NL",
    "homepage": "https://www.academictransfer.com/en/jobs?q=human-computer+interaction",
    "status": "ok",
-   "count": 26,
+   "count": 24,
    "url_used": "14 個搜尋網址",
    "error": ""
   },
@@ -28,7 +28,7 @@
    "country": "NL",
    "homepage": "https://www.academictransfer.com/en/jobs/",
    "status": "ok",
-   "count": 3,
+   "count": 4,
    "url_used": "https://www.academictransfer.com/en/jobs/?category=phd&sort=date",
    "error": ""
   },
@@ -38,7 +38,7 @@
    "country": "EU",
    "homepage": "https://euraxess.ec.europa.eu/jobs/search",
    "status": "ok",
-   "count": 2,
+   "count": 3,
    "url_used": "https://euraxess.ec.europa.eu/jobs/search?sort%5Bname%5D=created&sort%5Bdirection%5D=DESC&f%5B0%5D=job_research_profile%3A447",
    "error": ""
   },
@@ -88,7 +88,7 @@
    "country": "SE",
    "homepage": "https://lu.varbi.com/en/",
    "status": "ok",
-   "count": 11,
+   "count": 10,
    "url_used": "https://lu.varbi.com/en/",
    "error": ""
   },
@@ -115,6 +115,196 @@
  ],
  "jobs": [
   {
+   "id": "7400af50ebea1a78",
+   "source": "euraxess",
+   "source_name": "EURAXESS（全歐洲）",
+   "university": "",
+   "country": "EU",
+   "title": "University Assistant without Doctorate (m/f/d)",
+   "url": "https://euraxess.ec.europa.eu/jobs/465595",
+   "location": "",
+   "department": "",
+   "posted": "2026-09-14",
+   "deadline": "2026-10-26",
+   "summary": "Advance your research career and opportunities with EURAXESS. Discover jobs, funding, and partnerships, and programmes for innovation and career growth.",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-14",
+   "last_seen": "2026-09-14",
+   "status": "open",
+   "topic_score": 0,
+   "topics": [],
+   "fields": []
+  },
+  {
+   "id": "b2e9d7de4d93baa8",
+   "source": "academictransfer",
+   "source_name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
+   "university": "Wageningen University & Research",
+   "country": "NL",
+   "title": "PhD position on local food web dynamics within offshore wind farms",
+   "url": "https://www.academictransfer.com/en/jobs/363916/phd-position-on-local-food-web-dynamics-within-offshore-wind-farms/",
+   "location": "IJmuiden, NL",
+   "department": "",
+   "posted": "2026-09-14",
+   "deadline": "2026-10-20",
+   "summary": "PhD position on local food web dynamics within offshore wind farms in the North Sea POWER (Progress in Offshore Wind Ecological Research) consortium. As offshore wind farms rapidly expand in the North Sea, mitigating their ecological impact on marine ecosystems is critical. The North Sea POWER project addresses this challenge by filling vital knowledge gaps regarding underwater noise, biomass and ",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "包容性設計"
+   ],
+   "score_version": 3,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-14",
+   "last_seen": "2026-09-14",
+   "status": "open",
+   "topic_score": 2,
+   "topics": [
+    "包容性設計"
+   ],
+   "fields": [
+    "能源",
+    "氣候環境"
+   ]
+  },
+  {
+   "id": "7011755046a763df",
+   "source": "academictransfer",
+   "source_name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
+   "university": "Eindhoven University of Technology (TU/e)",
+   "country": "NL",
+   "title": "PhD in Spatiotemporal Integrated Metamaterials",
+   "url": "https://www.academictransfer.com/en/jobs/363913/phd-in-spatiotemporal-integrated-metamaterials/",
+   "location": "Eindhoven, NL",
+   "department": "",
+   "posted": "2026-09-14",
+   "deadline": "2026-10-18",
+   "summary": "Are you fascinated by nonreciprocal photonics? Design dynamically modulated, on-chip metamaterials for nonreciprocal light control, with secondments at INESC MN and PICadvanced, Portugal. Information We are looking for a highly motivated PhD candidate with a background in photonics, optics, or nanofabrication to contribute to SPARK Marie Skłodowska-Curie Doctoral network. The candidate will develo",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-14",
+   "last_seen": "2026-09-14",
+   "status": "open",
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "材料化學",
+    "光電半導體"
+   ]
+  },
+  {
+   "id": "55ebf30570ec0cd8",
+   "source": "academictransfer",
+   "source_name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
+   "university": "Eindhoven University of Technology (TU/e)",
+   "country": "NL",
+   "title": "PhD in Dynamic Metasurfaces for Spacetime-Engineered Light",
+   "url": "https://www.academictransfer.com/en/jobs/363912/phd-in-dynamic-metasurfaces-for-spacetime-engineered-light/",
+   "location": "Eindhoven, NL",
+   "department": "",
+   "posted": "2026-09-14",
+   "deadline": "2026-10-18",
+   "summary": "Are you fascinated by the idea of steering light through time as well as space? Develop metasurfaces for synthetic crystal rotation and nonreciprocal light-matter interactions, with secondments at UPNA, Spain and UltraFast Innovations GmbH, Germany. Information We are looking for a highly motivated PhD candidate with a background in photonics, optics, or applied physics to contribute to SPARK Mari",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-14",
+   "last_seen": "2026-09-14",
+   "status": "open",
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "光電半導體"
+   ]
+  },
+  {
+   "id": "aba597fd8fb93156",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Utrecht University",
+   "country": "NL",
+   "title": "PhD: Freeze-Fight-Flight Dynamics in Mental Health Care",
+   "url": "https://www.academictransfer.com/en/jobs/363856/phd-freeze-fight-flight-dynamics-in-mental-health-care/",
+   "location": "Utrecht, NL",
+   "department": "",
+   "posted": "2026-09-10",
+   "deadline": "2026-09-27",
+   "summary": "When people feel threatened, they react by fight, flight, or freeze. Strikingly, freeze is often overlooked in therapy, although it is strongly linked to poor recovery from mental health conditions. Moreover, little is known about how fight–flight–freeze reactions unfold over time. This project maps how patients with personality disorders move between defensive reactions in daily life and treatmen",
+   "title_guessed": false,
+   "found_via": "human-centered design",
+   "topic_boost": 3,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-14",
+   "last_seen": "2026-09-14",
+   "status": "open",
+   "topic_score": 1,
+   "topics": [
+    "搜尋：以人為中心（內文未出現）"
+   ],
+   "fields": [
+    "醫療"
+   ]
+  },
+  {
+   "id": "6cff7e6b67a9b995",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Leiden University",
+   "country": "NL",
+   "title": "PhD candidate (Anthropological Linguistics, Descriptive Linguistics)",
+   "url": "https://www.academictransfer.com/en/jobs/362289/phd-candidate-anthropological-linguistics-descriptive-linguistics/",
+   "location": "Leiden, NL",
+   "department": "",
+   "posted": "2026-07-02",
+   "deadline": "2026-09-15",
+   "summary": "Faculty of Humanities, Leiden University Centre for Linguistics has a vacancy for a PhD candidate (Anthropological Linguistics, Descriptive Linguistics) Vacancy number: 16732 Deadline: September 15th , 2026 Description: Leiden University Centre for Linguistics (LUCL) invites applications for a fully funded PhD position within the NWO Vidi project “Grammars of Space and Time: Language, Culture and ",
+   "title_guessed": false,
+   "found_via": "data visualization",
+   "topic_boost": 3,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-14",
+   "last_seen": "2026-09-14",
+   "status": "open",
+   "topic_score": 1,
+   "topics": [
+    "搜尋：資料視覺化（內文未出現）"
+   ],
+   "fields": [
+    "語言",
+    "社會心理"
+   ]
+  },
+  {
    "id": "23fd0b3fc2a4eb21",
    "source": "euraxess",
    "source_name": "EURAXESS（全歐洲）",
@@ -124,21 +314,25 @@
    "url": "https://euraxess.ec.europa.eu/jobs/465587",
    "location": "",
    "department": "",
-   "posted": "2026-09-13",
-   "deadline": "2026-10-11",
+   "posted": "2026-09-14",
+   "deadline": "2026-10-26",
    "summary": "Advance your research career and opportunities with EURAXESS. Discover jobs, funding, and partnerships, and programmes for innovation and career growth.",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 2,
-   "enrich_attempts": 1,
+   "score_version": 3,
+   "enrich_attempts": 2,
    "first_seen": "2026-09-13",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "影像視覺",
+    "音訊語音"
+   ]
   },
   {
    "id": "f0ffc42ce007ec4f",
@@ -158,13 +352,17 @@
    "topic_boost": 0,
    "page_score": 0,
    "page_topics": [],
-   "score_version": 2,
-   "enrich_attempts": 1,
+   "score_version": 3,
+   "enrich_attempts": 2,
    "first_seen": "2026-09-13",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
    "topics": [],
+   "fields": [
+    "材料化學",
+    "量子"
+   ],
    "also_at": [
     {
      "source": "Lunds universitet",
@@ -188,20 +386,24 @@
    "title_guessed": false,
    "found_via": "virtual reality",
    "topic_boost": 3,
-   "enrich_attempts": 1,
    "page_score": 2,
    "page_topics": [
-    "virtual reality"
+    "虛擬實境"
    ],
+   "score_version": 3,
    "query_ok": true,
-   "score_version": 2,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-12",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 5,
    "topics": [
-    "搜尋：virtual reality",
-    "virtual reality"
+    "搜尋：虛擬實境",
+    "虛擬實境"
+   ],
+   "fields": [
+    "機器學習"
    ]
   },
   {
@@ -220,13 +422,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-12",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": []
   },
   {
    "id": "fec8c13fb88500a7",
@@ -248,7 +454,7 @@
    "score_version": 2,
    "first_seen": "2026-09-12",
    "last_seen": "2026-09-13",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": []
   },
@@ -1150,14 +1356,21 @@
    "title_guessed": false,
    "found_via": "data visualization",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 1,
    "topics": [
-    "搜尋：data visualization（內文未出現）"
+    "搜尋：資料視覺化（內文未出現）"
+   ],
+   "fields": [
+    "語言"
    ]
   },
   {
@@ -1176,16 +1389,20 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 3,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
    "query_ok": true,
-   "score_version": 2,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 3,
    "topics": [
-    "搜尋：interaction design"
-   ]
+    "搜尋：互動設計"
+   ],
+   "fields": []
   },
   {
    "id": "ad533efa9eeb8325",
@@ -1284,15 +1501,22 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "enrich_attempts": 3,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
    "query_ok": true,
-   "score_version": 2,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 3,
    "topics": [
-    "搜尋：human factors"
+    "搜尋：人因"
+   ],
+   "fields": [
+    "經濟商管",
+    "社會心理"
    ]
   },
   {
@@ -1311,19 +1535,25 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 3,
    "page_score": 1,
    "page_topics": [
     "stakeholder"
    ],
+   "score_version": 3,
    "query_ok": true,
-   "score_version": 2,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 3,
    "topics": [
-    "搜尋：interaction design"
+    "搜尋：互動設計"
+   ],
+   "fields": [
+    "氣候環境",
+    "法律政策",
+    "農業食品"
    ]
   },
   {
@@ -1342,20 +1572,23 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 3,
    "page_score": 1,
    "page_topics": [
     "socio technical"
    ],
+   "score_version": 3,
    "query_ok": true,
-   "score_version": 2,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
-   "topic_score": 4,
+   "topic_score": 3,
    "topics": [
-    "搜尋：interaction design",
-    "socio technical"
+    "搜尋：互動設計"
+   ],
+   "fields": [
+    "能源"
    ]
   },
   {
@@ -1374,18 +1607,23 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 3,
    "page_score": 1,
    "page_topics": [
     "stakeholder"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 1,
    "topics": [
-    "搜尋：accessibility（內文未出現）"
+    "搜尋：無障礙（內文未出現）"
+   ],
+   "fields": [
+    "氣候環境"
    ]
   },
   {
@@ -1404,20 +1642,25 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "cognitive load",
     "stakeholder"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 2,
    "topics": [
-    "cognitive load",
-    "搜尋：human-centered design（內文未出現）"
+    "認知",
+    "搜尋：以人為中心（內文未出現）"
+   ],
+   "fields": [
+    "機器學習"
    ]
   },
   {
@@ -1436,20 +1679,23 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
-    "design research"
+    "設計研究"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 3,
    "topics": [
-    "design research",
-    "搜尋：human-centered design（內文未出現）"
-   ]
+    "設計研究",
+    "搜尋：以人為中心（內文未出現）"
+   ],
+   "fields": []
   },
   {
    "id": "7be57e4793a5d192",
@@ -1467,14 +1713,23 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 1,
    "topics": [
-    "搜尋：human-computer interaction（內文未出現）"
+    "搜尋：人機互動（內文未出現）"
+   ],
+   "fields": [
+    "醫療",
+    "神經科學",
+    "生命科學"
    ]
   },
   {
@@ -1493,20 +1748,26 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
-    "accessibility"
+    "無障礙"
    ],
+   "score_version": 3,
    "query_ok": true,
-   "score_version": 2,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 5,
    "topics": [
-    "搜尋：accessibility",
-    "accessibility"
+    "搜尋：無障礙",
+    "無障礙"
+   ],
+   "fields": [
+    "醫療",
+    "神經科學",
+    "生命科學"
    ]
   },
   {
@@ -1579,21 +1840,25 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "user behaviour",
     "end user"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
-   "topic_score": 3,
+   "topic_score": 1,
    "topics": [
-    "user behaviour",
-    "end user",
-    "搜尋：accessibility（內文未出現）"
+    "搜尋：無障礙（內文未出現）"
+   ],
+   "fields": [
+    "量子",
+    "光電半導體"
    ]
   },
   {
@@ -1612,14 +1877,23 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "query_ok": false,
+   "employment": "FULL_TIME",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 1,
    "topics": [
-    "搜尋：interaction design（內文未出現）"
+    "搜尋：互動設計（內文未出現）"
+   ],
+   "fields": [
+    "材料化學",
+    "生命科學",
+    "製造工程"
    ]
   },
   {
@@ -1638,14 +1912,23 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "query_ok": false,
+   "employment": "FULL_TIME",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 1,
    "topics": [
-    "搜尋：human-computer interaction（內文未出現）"
+    "搜尋：人機互動（內文未出現）"
+   ],
+   "fields": [
+    "神經科學",
+    "機器學習",
+    "影像視覺"
    ]
   },
   {
@@ -1664,15 +1947,23 @@
    "title_guessed": false,
    "found_via": "data visualization",
    "topic_boost": 3,
-   "enrich_attempts": 3,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
    "query_ok": true,
-   "score_version": 2,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 3,
    "topics": [
-    "搜尋：data visualization"
+    "搜尋：資料視覺化"
+   ],
+   "fields": [
+    "醫療",
+    "機器學習",
+    "光電半導體"
    ]
   },
   {
@@ -1691,14 +1982,23 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 1,
    "topics": [
-    "搜尋：accessibility（內文未出現）"
+    "搜尋：無障礙（內文未出現）"
+   ],
+   "fields": [
+    "氣候環境",
+    "生命科學",
+    "農業食品"
    ]
   },
   {
@@ -1748,19 +2048,25 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "enrich_attempts": 3,
    "page_score": 1,
    "page_topics": [
     "stakeholder"
    ],
+   "score_version": 3,
    "query_ok": true,
-   "score_version": 2,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 3,
    "topics": [
-    "搜尋：human factors"
+    "搜尋：人因"
+   ],
+   "fields": [
+    "能源",
+    "氣候環境",
+    "數學最佳化"
    ]
   },
   {
@@ -1784,7 +2090,7 @@
    "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-13",
-   "status": "open",
+   "status": "closed",
    "topic_score": 3,
    "topics": [
     "搜尋：human factors"
@@ -1920,22 +2226,26 @@
    "title_guessed": false,
    "found_via": "eye tracking",
    "topic_boost": 3,
-   "enrich_attempts": 3,
    "page_score": 4,
    "page_topics": [
-    "eye tracking",
-    "EEG"
+    "眼動追蹤",
+    "腦電"
    ],
+   "score_version": 3,
    "query_ok": true,
-   "score_version": 2,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 7,
    "topics": [
-    "搜尋：eye tracking",
-    "eye tracking",
-    "EEG"
+    "搜尋：眼動追蹤",
+    "眼動追蹤",
+    "腦電"
+   ],
+   "fields": [
+    "神經科學"
    ]
   },
   {
@@ -1954,18 +2264,24 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 3,
    "page_score": 1,
    "page_topics": [
     "stakeholder"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 1,
    "topics": [
-    "搜尋：interaction design（內文未出現）"
+    "搜尋：互動設計（內文未出現）"
+   ],
+   "fields": [
+    "氣候環境",
+    "農業食品"
    ]
   },
   {
@@ -2048,7 +2364,7 @@
    "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-13",
-   "status": "open",
+   "status": "closed",
    "topic_score": 1,
    "topics": [
     "搜尋：accessibility（內文未出現）"
@@ -2106,7 +2422,7 @@
    "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-13",
-   "status": "open",
+   "status": "closed",
    "topic_score": 17,
    "topics": [
     "搜尋：human-computer interaction",
@@ -2162,33 +2478,35 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "enrich_attempts": 3,
    "page_score": 30,
    "page_topics": [
-    "human computer interaction",
-    "user experience",
-    "human factors",
-    "user study",
-    "mixed reality",
-    "extended reality",
-    "haptic",
-    "wearable"
+    "人機互動",
+    "使用者體驗",
+    "人因",
+    "使用者研究",
+    "混合實境",
+    "延展實境",
+    "觸覺回饋",
+    "穿戴式"
    ],
+   "score_version": 3,
    "query_ok": true,
-   "score_version": 2,
+   "employment": "FULL_TIME",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 23,
    "topics": [
-    "搜尋：human-computer interaction",
-    "human computer interaction",
-    "user experience",
-    "human factors",
-    "user study",
-    "mixed reality",
-    "extended reality",
-    "haptic"
+    "搜尋：人機互動",
+    "人機互動",
+    "使用者體驗",
+    "人因",
+    "使用者研究",
+    "混合實境"
+   ],
+   "fields": [
+    "交通移動"
    ]
   },
   {
@@ -2215,7 +2533,7 @@
    "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-13",
-   "status": "open",
+   "status": "closed",
    "topic_score": 1,
    "topics": [
     "搜尋：conversational agent（內文未出現）"
@@ -2266,14 +2584,23 @@
    "title_guessed": false,
    "found_via": "conversational agent",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 1,
    "topics": [
-    "搜尋：conversational agent（內文未出現）"
+    "搜尋：對話式代理（內文未出現）"
+   ],
+   "fields": [
+    "材料化學",
+    "氣候環境",
+    "生命科學"
    ]
   },
   {
@@ -2352,19 +2679,24 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
-    "explainable ai"
+    "可解釋 AI"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 3,
    "topics": [
-    "explainable ai",
-    "搜尋：accessibility（內文未出現）"
+    "可解釋 AI",
+    "搜尋：無障礙（內文未出現）"
+   ],
+   "fields": [
+    "法律政策"
    ]
   },
   {
@@ -2866,17 +3198,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
-    "accessibility"
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "氣候環境",
+    "生命科學"
+   ]
   },
   {
    "id": "046206074190610c",
@@ -2894,18 +3230,22 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "經濟商管",
+    "數學最佳化"
+   ]
   },
   {
    "id": "6cf932fb1495ecd9",
@@ -2918,23 +3258,26 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-09-27",
    "summary": "Project description Third-cycle subject: Computer Science The goal of this project is to develop video-based methods to monitor a human’s physiological parameters such as heart rate, breathing pat",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "影像視覺"
+   ]
   },
   {
    "id": "0f1bf1c50a059169",
@@ -2952,13 +3295,20 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "機器學習",
+    "能源",
+    "數學最佳化"
+   ]
   },
   {
    "id": "75dface829d533a1",
@@ -2976,17 +3326,20 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
-    "accessibility"
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "教育"
+   ]
   },
   {
    "id": "76c381e61c0eaf86",
@@ -3004,13 +3357,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "機器學習",
+    "數學最佳化"
+   ]
   },
   {
    "id": "d489f680a51c112e",
@@ -3028,13 +3387,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "醫療",
+    "影像視覺"
+   ]
   },
   {
    "id": "0cd2d39db32603d6",
@@ -3052,18 +3417,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
    "topics": [],
+   "fields": [],
    "also_at": [
     {
      "source": "Stockholms universitet",
@@ -3087,18 +3453,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "社會心理"
+   ]
   },
   {
    "id": "d5ceb815aa65813d",
@@ -3116,18 +3485,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": []
   },
   {
    "id": "6faa3a5e66f8c15c",
@@ -3145,18 +3515,22 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "氣候環境",
+    "教育"
+   ]
   },
   {
    "id": "2f1f09aca8dbc5c9",
@@ -3174,18 +3548,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "量子"
+   ]
   },
   {
    "id": "b19c0c68e3f8ac9b",
@@ -3203,18 +3580,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "量子"
+   ]
   },
   {
    "id": "ca9fe033cdef6ca1",
@@ -3232,18 +3612,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "材料化學"
+   ]
   },
   {
    "id": "c0360adb4f88d640",
@@ -3290,18 +3673,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
-    "chatbot"
+    "聊天機器人"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 2,
    "topics": [
-    "chatbot"
+    "聊天機器人"
+   ],
+   "fields": [
+    "醫療"
    ]
   },
   {
@@ -3320,13 +3706,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "醫療",
+    "教育"
+   ]
   },
   {
    "id": "a2ee737948470364",
@@ -3344,18 +3736,22 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "醫療",
+    "氣候環境"
+   ]
   },
   {
    "id": "e3911bbc7c4fad6c",
@@ -3373,18 +3769,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "醫療"
+   ]
   },
   {
    "id": "c390901e1f422c3c",
@@ -3402,18 +3801,22 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "醫療",
+    "生命科學"
+   ]
   },
   {
    "id": "80163c18b73c5769",
@@ -3426,23 +3829,27 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-09-24",
    "summary": "Project description Third-cycle subject: Technology and Health We are looking for a highly motivated individual with a strong interest in medical technology development and research who would like to",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "醫療",
+    "影像視覺"
+   ]
   },
   {
    "id": "703777115ea254fb",
@@ -3460,18 +3867,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "材料化學"
+   ]
   },
   {
    "id": "5f9c4596e7abd2a8",
@@ -3489,18 +3899,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "材料化學"
+   ]
   },
   {
    "id": "7b60eb0c6fb2eaab",
@@ -3518,13 +3931,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "教育"
+   ]
   },
   {
    "id": "2929558e08bcccf9",
@@ -3542,13 +3960,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "教育"
+   ]
   },
   {
    "id": "6172f5ff6abee793",
@@ -3566,18 +3989,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "交通移動"
+   ]
   },
   {
    "id": "b9d1069d333239b7",
@@ -3595,18 +4021,22 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "機器學習",
+    "教育"
+   ]
   },
   {
    "id": "2ee0b6f56e06ac78",
@@ -3624,20 +4054,24 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 7,
    "page_topics": [
-    "user experience",
-    "wearable",
-    "accessibility"
+    "使用者體驗",
+    "穿戴式",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 2,
    "topics": [
-    "wearable"
+    "穿戴式"
+   ],
+   "fields": [
+    "機器學習",
+    "教育"
    ]
   },
   {
@@ -3656,26 +4090,29 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 15,
    "page_topics": [
-    "human centred computing",
-    "user experience",
-    "co design",
-    "user interface",
-    "accessibility",
-    "chatbot"
+    "以人為中心",
+    "使用者體驗",
+    "共同設計",
+    "使用者介面",
+    "無障礙",
+    "聊天機器人"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 10,
    "topics": [
-    "human centred computing",
-    "co design",
-    "user interface",
-    "chatbot"
+    "以人為中心",
+    "共同設計",
+    "使用者介面",
+    "聊天機器人"
+   ],
+   "fields": [
+    "教育"
    ]
   },
   {
@@ -3694,18 +4131,22 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
-    "explainable ai"
+    "可解釋 AI"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 2,
    "topics": [
-    "explainable ai"
+    "可解釋 AI"
+   ],
+   "fields": [
+    "教育",
+    "資安隱私"
    ]
   },
   {
@@ -3724,26 +4165,29 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 14,
    "page_topics": [
-    "user experience",
-    "HCI",
-    "mixed reality",
-    "tangible interaction",
-    "accessibility",
-    "XR"
+    "使用者體驗",
+    "人機互動",
+    "混合實境",
+    "實體互動",
+    "無障礙",
+    "延展實境"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 9,
    "topics": [
-    "HCI",
-    "mixed reality",
-    "tangible interaction",
-    "XR"
+    "人機互動",
+    "混合實境",
+    "實體互動",
+    "延展實境"
+   ],
+   "fields": [
+    "教育"
    ]
   },
   {
@@ -3762,18 +4206,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "教育"
+   ]
   },
   {
    "id": "61d1be98b1edaf21",
@@ -3791,20 +4238,24 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 7,
    "page_topics": [
-    "user experience",
-    "accessibility",
-    "VR"
+    "使用者體驗",
+    "無障礙",
+    "虛擬實境"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 2,
    "topics": [
-    "VR"
+    "虛擬實境"
+   ],
+   "fields": [
+    "材料化學",
+    "教育"
    ]
   },
   {
@@ -3852,18 +4303,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "材料化學"
+   ]
   },
   {
    "id": "705f9f0dcf374ef1",
@@ -3876,26 +4330,27 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-09-29",
    "summary": "Project description Third-cycle subject: Computer Science Social-network platforms moderate content using classifiers trained on contested value judgments. In this project we aim to develop algorithms",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 8,
    "page_topics": [
-    "user experience",
-    "human ai interaction",
-    "accessibility"
+    "使用者體驗",
+    "人與 AI 協作",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 3,
    "topics": [
-    "human ai interaction"
-   ]
+    "人與 AI 協作"
+   ],
+   "fields": []
   },
   {
    "id": "725c72eaa3e3e732",
@@ -3913,13 +4368,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "經濟商管"
+   ]
   },
   {
    "id": "424a7d14fcd02b07",
@@ -3937,18 +4397,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "量子"
+   ]
   },
   {
    "id": "67960fcb220ef1fe",
@@ -3966,13 +4429,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "醫療",
+    "神經科學"
+   ]
   },
   {
    "id": "c7849a35c367859f",
@@ -3990,18 +4459,23 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "醫療",
+    "材料化學",
+    "生命科學"
+   ]
   },
   {
    "id": "a94840cca7b3b7e4",
@@ -4019,13 +4493,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "材料化學"
+   ]
   },
   {
    "id": "bcac10c01dda8782",
@@ -4043,13 +4522,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "材料化學",
+    "生命科學"
+   ]
   },
   {
    "id": "e2fb338187d6e856",
@@ -4067,18 +4552,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": []
   },
   {
    "id": "1ac77025ea351172",
@@ -4096,13 +4582,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": []
   },
   {
    "id": "53f9be75bdd7468d",
@@ -4146,13 +4635,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "教育",
+    "社會心理"
+   ]
   },
   {
    "id": "1f6fba8282f624fa",
@@ -4165,18 +4660,21 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-09-16",
    "summary": "Projektbeskrivning Forskarutbildningsämne: Datalogi Vid Center för cyberförsvar och informationssäkerhet (CDIS) samarbetar KTH, Försvarsmakten och andra myndigheter i syfte att stärka och bredda",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": []
   },
   {
    "id": "7e2f9cb240273f6c",
@@ -4194,19 +4692,20 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 3,
    "page_topics": [
-    "human factors"
+    "人因"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 3,
    "topics": [
-    "human factors"
-   ]
+    "人因"
+   ],
+   "fields": []
   },
   {
    "id": "1aa0f1198c9661e2",
@@ -4219,23 +4718,24 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-09-23",
    "summary": "Project description Third-cycle subject: Information and Communication Technologies We invite applications for doctoral student positions with the Networked Systems Security (NSS) lab at EECS/CLS. We",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": []
   },
   {
    "id": "3782322684a751a2",
@@ -4253,13 +4753,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": []
   },
   {
    "id": "ccbd32d96779eacb",
@@ -4272,23 +4775,26 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-09-24",
    "summary": "Project description Third-cycle subject: Electrical Engineering The project is funded by the Swedish Research Council and the Wallenberg Centre for Quantum Technology (WACQT) and addresses fundamental",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "量子"
+   ]
   },
   {
    "id": "fdb3d69362d89cd4",
@@ -4301,23 +4807,24 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-10-01",
    "summary": "Project description Third-cycle subject: Information and Communication Technology In this doctoral project, you will contribute to the theory formation for mobile sub-terahertz (sub-THz) and terahertz",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": []
   },
   {
    "id": "8a36beebcfa52f33",
@@ -4330,23 +4837,24 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-09-24",
    "summary": "Project description Third-cycle subject: Electrical Engineering The project concerns information- and coding-theoretic methods for analysing and improving the resilience and efficiency of federated ma",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": []
   },
   {
    "id": "d3c5c36635c3a957",
@@ -4359,26 +4867,27 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-10-12",
    "summary": "Project description Third-cycle subject: Engineering Mechanics FLOW is a strong community of researchers engaged in fundamental and applied research in fluid mechanics within the department of Enginee",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 7,
    "page_topics": [
-    "user experience",
-    "accessibility",
-    "VR"
+    "使用者體驗",
+    "無障礙",
+    "虛擬實境"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 2,
    "topics": [
-    "VR"
-   ]
+    "虛擬實境"
+   ],
+   "fields": []
   },
   {
    "id": "d8ad3f5d7a4cd126",
@@ -4391,23 +4900,26 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-10-14",
    "summary": "Project description Third-cycle subject: physics The project will focus on theoretical condensed matter physics, with particular emphasis on quantum many-body physics. The research will mainly employ",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "量子"
+   ]
   },
   {
    "id": "f7b3251b8b1e8a48",
@@ -4420,23 +4932,27 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-09-24",
    "summary": "Project description Third-cycle subject: Vehicle, Maritime and Aerospace Engineering The position is part of a project within the FFI Zero Emissions programme on acoustic source characterisation of el",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "交通移動",
+    "音訊語音"
+   ]
   },
   {
    "id": "79f3fc68850f83be",
@@ -4449,23 +4965,24 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-10-07",
    "summary": "Project description Third-cycle subject: Theoretical Condensed Matter Physics The group of Egor Babaev at the Department of Physics of KTH Royal Institute of Technology has an opening for one Doctoral",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": []
   },
   {
    "id": "dd5b6bf19e6cd2c7",
@@ -4478,18 +4995,25 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-09-25",
    "summary": "Project description Third-cycle subject: Energy Technology Industrial process heat represents a major challenge in the transition towards a climate-neutral energy system, as a large share of industria",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "能源",
+    "氣候環境",
+    "經濟商管"
+   ]
   },
   {
    "id": "ff66c7a2dd62e6d1",
@@ -4502,23 +5026,26 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-09-30",
    "summary": "Project description Third-cycle subject: Chemical Science and Engineering Flow batteries are an excellent technology for stationary and long-duration (8+ hours) energy storage. In terms of cost and",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "能源"
+   ]
   },
   {
    "id": "4cb60a0fae8b020d",
@@ -4531,23 +5058,26 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-10-10",
    "summary": "Project description Third-cycle subject: Information and Communication Technology Currently, there are no effective methods for protecting implementations of cryptographic algorithms from fault attack",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "資安隱私"
+   ]
   },
   {
    "id": "010a3e1116ef57cd",
@@ -4560,23 +5090,26 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-10-09",
    "summary": "Project description Third-cycle subject: Physics, specialization in Nuclear Engineering The group of Nuclear Power Safety in Division of Nuclear Science and Engineering (NSE) conducts research on acci",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "能源"
+   ]
   },
   {
    "id": "4e5adc2a4862d8b6",
@@ -4589,23 +5122,26 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-10-01",
    "summary": "Project description Third-cycle subject: Technology and health AI-Driven Finite Element Human Body Modelling and Injury Biomechanics for Improved Traffic Safety This project develops an AI-driven plat",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "交通移動"
+   ]
   },
   {
    "id": "42db6ec81a498609",
@@ -4676,23 +5212,24 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-09-24",
    "summary": "Project description Third-cycle subject: Information and Communication Technology We at the Department of Computing and Learning Systems (CLS) are seeking a PhD student to join a fully funded resear",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": []
   },
   {
    "id": "4a10bb22a370a1f7",
@@ -4710,13 +5247,20 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "能源",
+    "氣候環境",
+    "法律政策"
+   ]
   },
   {
    "id": "0add7e760cd1c16e",
@@ -4729,23 +5273,24 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-09-17",
    "summary": "Project description Third-cycle subject: Electrical Engineering Funded by FFI, the TERMINATOR project investigates how fast-switching silicon carbide (SiC) and gallium nitride (GaN) power electronics",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": []
   },
   {
    "id": "37d3fbb9cc4f4347",
@@ -4763,29 +5308,30 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 14,
    "page_topics": [
-    "human computer interaction",
-    "human ai interaction",
-    "eye tracking",
-    "gaze",
-    "information visualisation",
-    "visual analytics"
+    "人機互動",
+    "人與 AI 協作",
+    "眼動追蹤",
+    "視線",
+    "資料視覺化",
+    "視覺分析"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 14,
    "topics": [
-    "human computer interaction",
-    "human ai interaction",
-    "eye tracking",
-    "gaze",
-    "information visualisation",
-    "visual analytics"
-   ]
+    "人機互動",
+    "人與 AI 協作",
+    "眼動追蹤",
+    "視線",
+    "資料視覺化",
+    "視覺分析"
+   ],
+   "fields": []
   },
   {
    "id": "1c8731ce4071262a",
@@ -4798,23 +5344,26 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-10-01",
    "summary": "Project description Third-cycle subject: Chemistry This PhD project explores the behavior of electrolytes within nanoporous electrodes, with particular emphasis on how pore size, morphology, and surfa",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "材料化學"
+   ]
   },
   {
    "id": "77f9e75bed2f4b06",
@@ -4827,23 +5376,26 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-10-15",
    "summary": "Project description Third-cycle subject: Biological Physics The AICell Lab ( https://aicell.io ) in the department of Applied Physics at KTH and Science for Life Laboratory pursues interdisciplinary r",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "生命科學"
+   ]
   },
   {
    "id": "fc83a1ae0ca916a1",
@@ -4856,23 +5408,26 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-09-30",
    "summary": "Project description Third-cycle subject: Micro and Nano Systems The Micro and Nanosystems Lab invites applications for a Ph.D. student position. We are seeking applicants who have a desire to conduct",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "醫療"
+   ]
   },
   {
    "id": "976ffe3fab47bc16",
@@ -4890,13 +5445,20 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "材料化學",
+    "氣候環境",
+    "生命科學"
+   ]
   },
   {
    "id": "f99c49d6fec001ae",
@@ -4909,23 +5471,24 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-10-06",
    "summary": "Project description Third-cycle subject: Physics The PhD student will conduct research in the field of X-ray astronomy, with an emphasis on emission associated with supernovae and their remnants. The",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": []
   },
   {
    "id": "2a3b7e96c4c7897d",
@@ -4938,23 +5501,26 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-10-01",
    "summary": "Project description Third-cycle subject: Production engineering We are seeking a motivated PhD student in intelligent robotics for production, with a focus on robot learning and AI-enabled automation.",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "機器人"
+   ]
   },
   {
    "id": "abf6a6f881237c37",
@@ -4972,17 +5538,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
-    "accessibility"
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "教育",
+    "法律政策"
+   ]
   },
   {
    "id": "1ceae0ccac5de45e",
@@ -4995,23 +5565,27 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "",
+   "deadline": "2026-09-24",
    "summary": "Project description Third-cycle subject: Computer Science The Division of Robotics, Perception and Learning has an open position for a doctoral student with a background and strong interest in deep",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "機器人",
+    "建築城市"
+   ]
   },
   {
    "id": "babc9869a3640d69",
@@ -5033,7 +5607,7 @@
    "score_version": 2,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-13",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": []
   },
@@ -5082,13 +5656,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": []
   },
   {
    "id": "d6b8bdb2eb92b6a8",
@@ -5106,22 +5683,23 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 6,
    "page_topics": [
-    "virtual reality",
-    "eye tracking",
-    "VR"
+    "虛擬實境",
+    "眼動追蹤"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
-   "topic_score": 6,
+   "topic_score": 4,
    "topics": [
-    "virtual reality",
-    "eye tracking",
-    "VR"
+    "虛擬實境",
+    "眼動追蹤"
+   ],
+   "fields": [
+    "經濟商管"
    ]
   },
   {
@@ -5140,13 +5718,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "材料化學",
+    "量子"
+   ]
   },
   {
    "id": "6f37ca3e860d996d",
@@ -5164,18 +5748,22 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 5,
    "page_topics": [
-    "user experience",
-    "accessibility"
+    "使用者體驗",
+    "無障礙"
    ],
-   "score_version": 2,
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "氣候環境",
+    "教育"
+   ]
   },
   {
    "id": "2a1d2a31b9c690b7",
@@ -5193,13 +5781,20 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "能源",
+    "材料化學",
+    "農業食品"
+   ]
   },
   {
    "id": "2d2ff355a5e7e984",
@@ -5217,13 +5812,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 2,
+   "page_score": 0,
+   "page_topics": [],
+   "score_version": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-09-13",
+   "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
-   "topics": []
+   "topics": [],
+   "fields": [
+    "教育",
+    "資安隱私"
+   ]
   }
  ]
 }
