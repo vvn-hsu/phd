@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-14T08:36:48+00:00",
+ "generated_at": "2026-09-14T08:48:41+00:00",
  "date": "2026-09-14",
  "topic_thresholds": {
   "broad": 2,
@@ -168,13 +168,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 5,
-   "fields": [
-    "神經科學"
-   ],
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "生理量測"
+   ],
+   "score_version": 6,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
+   "fields": [
+    "神經科學"
    ],
    "tools": [
     "生理量測"
@@ -202,19 +205,20 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "包容性設計"
    ],
-   "score_version": 5,
-   "fields": [
-    "能源",
-    "氣候環境"
-   ],
    "page_tools": [
     "田野／民族誌",
     "實驗室實驗"
+   ],
+   "score_version": 6,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
+   "fields": [
+    "能源",
+    "氣候環境"
    ],
    "tools": [
     "田野／民族誌",
@@ -245,8 +249,12 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 6,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "fields": [
     "材料化學",
     "光電半導體"
@@ -275,8 +283,12 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 6,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "fields": [
     "光電半導體"
    ],
@@ -304,16 +316,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
    "page_tools": [
     "MATLAB",
     "原型製作"
    ],
+   "score_version": 6,
+   "enrich_attempts": 2,
    "tools": [
     "MATLAB",
     "原型製作"
@@ -347,8 +359,8 @@
    "page_tools": [
     "JavaScript"
    ],
-   "score_version": 5,
-   "enrich_attempts": 2,
+   "score_version": 6,
+   "enrich_attempts": 3,
    "tools": [
     "JavaScript"
    ],
@@ -376,12 +388,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 2,
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -407,12 +420,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 2,
    "fields": [
     "機器學習",
     "數學最佳化"
@@ -441,17 +455,19 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "焦點團體"
+   ],
+   "score_version": 6,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "fields": [
     "醫療"
    ],
-   "page_tools": [
-    "JavaScript",
-    "焦點團體"
-   ],
    "tools": [
-    "JavaScript",
     "焦點團體"
    ],
    "first_seen": "2026-09-14",
@@ -467,10 +483,10 @@
    "source": "the_unijobs",
    "source_name": "THE Unijobs（英國為主）",
    "university": "UNIVERSITY OF VIENNA",
-   "country": "UK",
+   "country": "AT",
    "title": "PhD Position in Responsible AI",
    "url": "https://www.timeshighereducation.com/unijobs/listing/415210/phd-position-in-responsible-ai/?LinkSource=PremiumListing",
-   "city": "AT",
+   "city": "",
    "location": "AT",
    "department": "",
    "posted": "2026-09-04",
@@ -488,17 +504,9 @@
     "PyTorch/TensorFlow",
     "工作坊"
    ],
-   "score_version": 5,
+   "score_version": 6,
    "employment": "[\"PART_TIME\"]",
-   "enrich_attempts": 1,
-   "first_seen": "2026-09-14",
-   "last_seen": "2026-09-14",
-   "status": "open",
-   "topic_score": 3,
-   "topics": [
-    "可解釋 AI",
-    "HCI 關鍵字搜尋（弱）"
-   ],
+   "enrich_attempts": 2,
    "fields": [
     "教育"
    ],
@@ -506,6 +514,14 @@
     "Python",
     "PyTorch/TensorFlow",
     "工作坊"
+   ],
+   "first_seen": "2026-09-14",
+   "last_seen": "2026-09-14",
+   "status": "open",
+   "topic_score": 3,
+   "topics": [
+    "可解釋 AI",
+    "HCI 關鍵字搜尋（弱）"
    ]
   },
   {
@@ -525,15 +541,19 @@
    "title_guessed": false,
    "found_via": "data visualization",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 5,
-   "fields": [
-    "語言",
-    "社會心理"
-   ],
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "工作坊",
     "田野／民族誌"
+   ],
+   "score_version": 6,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
+   "fields": [
+    "語言",
+    "社會心理"
    ],
    "tools": [
     "工作坊",
@@ -555,7 +575,7 @@
    "country": "SE",
    "title": "PhD student in Chromatin & Genome Integrity",
    "url": "https://lu.varbi.com/en/what:job/jobID:965334/",
-   "city": "Lund County",
+   "city": "Lund",
    "location": "",
    "department": "",
    "posted": "",
@@ -564,12 +584,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 4,
    "fields": [
     "醫療",
     "生命科學"
@@ -589,7 +610,7 @@
    "country": "SE",
    "title": "Doktorand",
    "url": "https://lu.varbi.com/en/what:job/jobID:969074/",
-   "city": "Lund County",
+   "city": "Lund",
    "location": "",
    "department": "",
    "posted": "",
@@ -603,8 +624,8 @@
     "無障礙"
    ],
    "page_tools": [],
-   "score_version": 5,
-   "enrich_attempts": 2,
+   "score_version": 6,
+   "enrich_attempts": 3,
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -621,7 +642,7 @@
    "country": "SE",
    "title": "Doctoral student in Physics: Topoelectronic Quantum Devices in 2D Materials",
    "url": "https://lu.varbi.com/en/what:job/jobID:953827/",
-   "city": "Lund County",
+   "city": "Lund",
    "location": "",
    "department": "",
    "posted": "",
@@ -633,8 +654,8 @@
    "page_score": 0,
    "page_topics": [],
    "page_tools": [],
-   "score_version": 5,
-   "enrich_attempts": 2,
+   "score_version": 6,
+   "enrich_attempts": 3,
    "fields": [
     "材料化學",
     "量子"
@@ -729,13 +750,15 @@
    "title_guessed": false,
    "found_via": "virtual reality",
    "topic_boost": 3,
-   "enrich_attempts": 4,
    "page_score": 2,
    "page_topics": [
     "VR XR AR"
    ],
+   "page_tools": [],
+   "score_version": 6,
    "query_ok": true,
-   "score_version": 5,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 5,
    "fields": [
     "機器學習"
    ],
@@ -766,8 +789,12 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 6,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 5,
    "first_seen": "2026-09-12",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -1699,14 +1726,18 @@
    "title_guessed": false,
    "found_via": "data visualization",
    "topic_boost": 3,
-   "enrich_attempts": 6,
-   "score_version": 5,
-   "fields": [
-    "語言"
-   ],
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "工作坊",
     "田野／民族誌"
+   ],
+   "score_version": 6,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 7,
+   "fields": [
+    "語言"
    ],
    "tools": [
     "工作坊",
@@ -1737,14 +1768,17 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 6,
-   "query_ok": true,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "MATLAB",
     "工作坊"
    ],
+   "score_version": 6,
+   "query_ok": true,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 7,
    "tools": [
     "Python",
     "MATLAB",
@@ -1857,16 +1891,19 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "enrich_attempts": 6,
-   "query_ok": true,
-   "score_version": 5,
-   "fields": [
-    "經濟商管",
-    "社會心理"
-   ],
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "R",
     "工作坊"
+   ],
+   "score_version": 6,
+   "query_ok": true,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 7,
+   "fields": [
+    "經濟商管",
+    "社會心理"
    ],
    "tools": [
     "R",
@@ -1897,22 +1934,23 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 6,
    "page_score": 1,
    "page_topics": [
     "stakeholder"
-   ],
-   "query_ok": true,
-   "score_version": 5,
-   "fields": [
-    "氣候環境",
-    "法律政策",
-    "農業食品"
    ],
    "page_tools": [
     "訪談",
     "工作坊",
     "混合方法"
+   ],
+   "score_version": 6,
+   "query_ok": true,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 7,
+   "fields": [
+    "氣候環境",
+    "法律政策",
+    "農業食品"
    ],
    "tools": [
     "訪談",
@@ -1944,18 +1982,19 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 6,
    "page_score": 1,
    "page_topics": [
     "socio technical"
    ],
-   "query_ok": true,
-   "score_version": 5,
-   "fields": [
-    "能源"
-   ],
    "page_tools": [
     "Python"
+   ],
+   "score_version": 6,
+   "query_ok": true,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 7,
+   "fields": [
+    "能源"
    ],
    "tools": [
     "Python"
@@ -1985,17 +2024,19 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 6,
    "page_score": 1,
    "page_topics": [
     "stakeholder"
    ],
-   "score_version": 5,
-   "fields": [
-    "氣候環境"
-   ],
    "page_tools": [
     "田野／民族誌"
+   ],
+   "score_version": 6,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 7,
+   "fields": [
+    "氣候環境"
    ],
    "tools": [
     "田野／民族誌"
@@ -2025,19 +2066,21 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "cognitive load",
     "stakeholder"
    ],
-   "score_version": 5,
-   "fields": [
-    "機器學習"
-   ],
    "page_tools": [
     "Python",
     "PyTorch/TensorFlow"
+   ],
+   "score_version": 6,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 7,
+   "fields": [
+    "機器學習"
    ],
    "tools": [
     "Python",
@@ -2068,16 +2111,18 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "設計研究"
    ],
-   "score_version": 5,
    "page_tools": [
     "工作坊",
     "模擬建模"
    ],
+   "score_version": 6,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 7,
    "tools": [
     "工作坊",
     "模擬建模"
@@ -2109,15 +2154,19 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "enrich_attempts": 6,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "Python"
+   ],
+   "score_version": 6,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 7,
    "fields": [
     "醫療",
     "神經科學",
     "生命科學"
-   ],
-   "page_tools": [
-    "Python"
    ],
    "tools": [
     "Python"
@@ -2147,13 +2196,15 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
+   "page_tools": [],
+   "score_version": 6,
    "query_ok": true,
-   "score_version": 5,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 7,
    "fields": [
     "醫療",
     "神經科學",
@@ -2240,13 +2291,16 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "user behaviour",
     "end user"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 7,
    "fields": [
     "量子",
     "光電半導體"
@@ -2277,19 +2331,21 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 6,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "3D 列印"
+   ],
+   "score_version": 6,
+   "query_ok": false,
+   "employment": "FULL_TIME",
+   "enrich_attempts": 7,
    "fields": [
     "材料化學",
     "生命科學",
     "製造工程"
    ],
-   "page_tools": [
-    "JavaScript",
-    "3D 列印"
-   ],
    "tools": [
-    "JavaScript",
     "3D 列印"
    ],
    "first_seen": "2026-09-11",
@@ -2317,17 +2373,21 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "enrich_attempts": 6,
-   "score_version": 5,
-   "fields": [
-    "神經科學",
-    "機器學習",
-    "影像視覺"
-   ],
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "PyTorch/TensorFlow",
     "生理量測"
+   ],
+   "score_version": 6,
+   "query_ok": false,
+   "employment": "FULL_TIME",
+   "enrich_attempts": 7,
+   "fields": [
+    "神經科學",
+    "機器學習",
+    "影像視覺"
    ],
    "tools": [
     "Python",
@@ -2359,17 +2419,20 @@
    "title_guessed": false,
    "found_via": "data visualization",
    "topic_boost": 3,
-   "enrich_attempts": 6,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "Python",
+    "PyTorch/TensorFlow"
+   ],
+   "score_version": 6,
    "query_ok": true,
-   "score_version": 5,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 7,
    "fields": [
     "醫療",
     "機器學習",
     "光電半導體"
-   ],
-   "page_tools": [
-    "Python",
-    "PyTorch/TensorFlow"
    ],
    "tools": [
     "Python",
@@ -2400,8 +2463,13 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 6,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 6,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 7,
    "fields": [
     "氣候環境",
     "生命科學",
@@ -2464,13 +2532,15 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "enrich_attempts": 6,
    "page_score": 1,
    "page_topics": [
     "stakeholder"
    ],
+   "page_tools": [],
+   "score_version": 6,
    "query_ok": true,
-   "score_version": 5,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 7,
    "fields": [
     "能源",
     "氣候環境",
@@ -2643,22 +2713,23 @@
    "title_guessed": false,
    "found_via": "eye tracking",
    "topic_boost": 3,
-   "enrich_attempts": 6,
    "page_score": 4,
    "page_topics": [
     "眼動追蹤",
     "腦電"
-   ],
-   "query_ok": true,
-   "score_version": 5,
-   "fields": [
-    "神經科學"
    ],
    "page_tools": [
     "Python",
     "MATLAB",
     "實驗室實驗",
     "生理量測"
+   ],
+   "score_version": 6,
+   "query_ok": true,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 7,
+   "fields": [
+    "神經科學"
    ],
    "tools": [
     "Python",
@@ -2693,27 +2764,29 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 6,
    "page_score": 1,
    "page_topics": [
     "stakeholder"
    ],
-   "score_version": 5,
-   "fields": [
-    "氣候環境",
-    "農業食品"
-   ],
    "page_tools": [
     "Python",
-    "JavaScript",
+    "前端開發",
     "訪談",
     "工作坊",
     "田野／民族誌",
     "混合方法"
    ],
+   "score_version": 6,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 7,
+   "fields": [
+    "氣候環境",
+    "農業食品"
+   ],
    "tools": [
     "Python",
-    "JavaScript",
+    "前端開發",
     "訪談",
     "工作坊",
     "田野／民族誌",
@@ -2922,7 +2995,6 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "enrich_attempts": 6,
    "page_score": 10,
    "page_topics": [
     "VR XR AR",
@@ -2931,14 +3003,16 @@
     "無障礙",
     "包容性設計"
    ],
-   "query_ok": true,
-   "score_version": 5,
-   "fields": [
-    "交通移動"
-   ],
    "page_tools": [
     "Unity",
     "Unreal"
+   ],
+   "score_version": 6,
+   "query_ok": true,
+   "employment": "FULL_TIME",
+   "enrich_attempts": 7,
+   "fields": [
+    "交通移動"
    ],
    "tools": [
     "Unity",
@@ -3033,15 +3107,19 @@
    "title_guessed": false,
    "found_via": "conversational agent",
    "topic_boost": 3,
-   "enrich_attempts": 6,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "JavaScript"
+   ],
+   "score_version": 6,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 7,
    "fields": [
     "材料化學",
     "氣候環境",
     "生命科學"
-   ],
-   "page_tools": [
-    "JavaScript"
    ],
    "tools": [
     "JavaScript"
@@ -3131,18 +3209,20 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "可解釋 AI"
    ],
-   "score_version": 5,
-   "fields": [
-    "法律政策"
-   ],
    "page_tools": [
     "工作坊",
     "原型製作"
+   ],
+   "score_version": 6,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 7,
+   "fields": [
+    "法律政策"
    ],
    "tools": [
     "工作坊",
@@ -3648,7 +3728,7 @@
    "country": "SE",
    "title": "PhD-student in Evolutionary and Ecological Genetics",
    "url": "https://uu.varbi.com/en/what:job/jobID:967249/",
-   "city": "Uppsala County",
+   "city": "Uppsala",
    "location": "",
    "department": "",
    "posted": "",
@@ -3657,12 +3737,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "氣候環境",
     "生命科學"
@@ -3682,7 +3763,7 @@
    "country": "SE",
    "title": "PhD students in Statistics",
    "url": "https://umu.varbi.com/en/what:job/jobID:965375/",
-   "city": "Umeå County",
+   "city": "Umeå",
    "location": "",
    "department": "",
    "posted": "",
@@ -3691,12 +3772,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "經濟商管",
     "數學最佳化"
@@ -3716,7 +3798,7 @@
    "country": "SE",
    "title": "PhD students in Computer Vision to estimate breathing and pulse from video",
    "url": "https://kth.varbi.com/en/what:job/jobID:960673/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -3725,12 +3807,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 8,
    "fields": [
     "影像視覺"
    ],
@@ -3749,7 +3832,7 @@
    "country": "SE",
    "title": "PhD student in nuclear fuel performance modelling using machine learning",
    "url": "https://uu.varbi.com/en/what:job/jobID:959437/",
-   "city": "Uppsala County",
+   "city": "Uppsala",
    "location": "",
    "department": "",
    "posted": "",
@@ -3758,21 +3841,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "Python",
+    "C++/C#"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "機器學習",
     "能源",
     "數學最佳化"
    ],
-   "page_tools": [
-    "Python",
-    "JavaScript",
-    "C++/C#"
-   ],
    "tools": [
     "Python",
-    "JavaScript",
     "C++/C#"
    ],
    "first_seen": "2026-09-11",
@@ -3789,7 +3872,7 @@
    "country": "SE",
    "title": "PhD student in nature-inspired biocarbon–enzyme composites for PFAS remediation",
    "url": "https://uu.varbi.com/en/what:job/jobID:960041/",
-   "city": "Uppsala County",
+   "city": "Uppsala",
    "location": "",
    "department": "",
    "posted": "",
@@ -3798,17 +3881,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
-   "fields": [
-    "教育"
-   ],
    "page_tools": [
     "實驗室實驗"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 7,
+   "fields": [
+    "教育"
    ],
    "tools": [
     "實驗室實驗"
@@ -3827,7 +3910,7 @@
    "country": "SE",
    "title": "PhD student in core optimisation using machine learning",
    "url": "https://uu.varbi.com/en/what:job/jobID:947191/",
-   "city": "Uppsala County",
+   "city": "Uppsala",
    "location": "",
    "department": "",
    "posted": "",
@@ -3836,19 +3919,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "Python",
+    "C++/C#"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "機器學習",
     "數學最佳化"
    ],
-   "page_tools": [
-    "Python",
-    "JavaScript",
-    "C++/C#"
-   ],
    "tools": [
-    "JavaScript",
     "Python",
     "C++/C#"
    ],
@@ -3866,7 +3949,7 @@
    "country": "SE",
    "title": "PhD student in advanced data analysis for data integration, image analysis, and precision oncology",
    "url": "https://lu.varbi.com/en/what:job/jobID:963180/",
-   "city": "Lund County",
+   "city": "Lund",
    "location": "",
    "department": "",
    "posted": "",
@@ -3875,8 +3958,11 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "醫療",
     "影像視覺"
@@ -3896,7 +3982,7 @@
    "country": "SE",
    "title": "PhD student in Theoretical Philosophy",
    "url": "https://su.varbi.com/en/what:job/jobID:947072/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -3905,12 +3991,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -3933,7 +4020,7 @@
    "country": "SE",
    "title": "PhD student in Sociological Demography",
    "url": "https://su.varbi.com/en/what:job/jobID:948160/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -3942,12 +4029,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "社會心理"
    ],
@@ -3966,7 +4054,7 @@
    "country": "SE",
    "title": "PhD student in Practical Philosophy",
    "url": "https://su.varbi.com/en/what:job/jobID:959485/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -3975,12 +4063,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -3997,7 +4086,7 @@
    "country": "SE",
    "title": "PhD student in Plant Physiology",
    "url": "https://su.varbi.com/en/what:job/jobID:949863/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -4006,12 +4095,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "氣候環境",
     "教育"
@@ -4031,7 +4121,7 @@
    "country": "SE",
    "title": "PhD student in Physics: open quantum system simulations with trapped ions",
    "url": "https://su.varbi.com/en/what:job/jobID:963109/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -4040,12 +4130,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "量子"
    ],
@@ -4064,7 +4155,7 @@
    "country": "SE",
    "title": "PhD student in Physics: 2D quantum simulations with trapped Rydberg ions",
    "url": "https://su.varbi.com/en/what:job/jobID:963101/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -4073,12 +4164,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "量子"
    ],
@@ -4097,7 +4189,7 @@
    "country": "SE",
    "title": "PhD student in Physical Geography focusing on Glacial Biogeochemistry",
    "url": "https://su.varbi.com/en/what:job/jobID:966321/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -4106,21 +4198,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [
+    "工作坊"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "材料化學"
    ],
-   "page_tools": [
-    "JavaScript",
-    "工作坊"
-   ],
    "tools": [
-    "JavaScript",
     "工作坊"
    ],
    "first_seen": "2026-09-11",
@@ -4166,7 +4256,7 @@
    "country": "SE",
    "title": "PhD student in Medical Science, Gerontology, in Medical and Health Sciences",
    "url": "https://lu.varbi.com/en/what:job/jobID:964381/",
-   "city": "Lund County",
+   "city": "Lund",
    "location": "",
    "department": "",
    "posted": "",
@@ -4175,12 +4265,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "聊天機器人"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "醫療"
    ],
@@ -4201,7 +4292,7 @@
    "country": "SE",
    "title": "PhD student in Medical Science – Oral Microbiome Eco-Mechanics",
    "url": "https://umu.varbi.com/en/what:job/jobID:961714/",
-   "city": "Umeå County",
+   "city": "Umeå",
    "location": "",
    "department": "",
    "posted": "",
@@ -4210,8 +4301,11 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "醫療",
     "教育"
@@ -4231,7 +4325,7 @@
    "country": "SE",
    "title": "PhD student in Medical Science with a focus on extracellular vesicles and haemostasis in assisted reproduction",
    "url": "https://uu.varbi.com/en/what:job/jobID:961661/",
-   "city": "Uppsala County",
+   "city": "Uppsala",
    "location": "",
    "department": "",
    "posted": "",
@@ -4240,12 +4334,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "醫療",
     "氣候環境"
@@ -4265,7 +4360,7 @@
    "country": "SE",
    "title": "PhD student in Medical Radiation Physics: AI-Driven Precision Radiotherapy for Spinal Metastases",
    "url": "https://su.varbi.com/en/what:job/jobID:963124/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -4274,12 +4369,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "醫療"
    ],
@@ -4298,7 +4394,7 @@
    "country": "SE",
    "title": "PhD student in Medical Radiation Physics oriented towards Radiobiology",
    "url": "https://su.varbi.com/en/what:job/jobID:963077/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -4307,12 +4403,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "醫療",
     "生命科學"
@@ -4332,7 +4429,7 @@
    "country": "SE",
    "title": "PhD student in Medical Imaging of Childbirth-Related Pelvic Floor Injuries",
    "url": "https://kth.varbi.com/en/what:job/jobID:962597/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -4341,18 +4438,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [
+    "模擬建模"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 8,
    "fields": [
     "醫療",
     "影像視覺"
-   ],
-   "page_tools": [
-    "模擬建模"
    ],
    "tools": [
     "模擬建模"
@@ -4371,7 +4468,7 @@
    "country": "SE",
    "title": "PhD student in Materials Chemistry with a specialization in poly(ionic liquid) composites for Na-CO2 batteries",
    "url": "https://su.varbi.com/en/what:job/jobID:947087/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -4380,17 +4477,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
-   "fields": [
-    "材料化學"
-   ],
    "page_tools": [
     "JavaScript"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 7,
+   "fields": [
+    "材料化學"
    ],
    "tools": [
     "JavaScript"
@@ -4409,7 +4506,7 @@
    "country": "SE",
    "title": "PhD student in Materials Chemistry with a specialization in ion-conductive polymers for rechargeable aqueous zinc ion batteries",
    "url": "https://su.varbi.com/en/what:job/jobID:947052/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -4418,17 +4515,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
-   "fields": [
-    "材料化學"
-   ],
    "page_tools": [
     "JavaScript"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 7,
+   "fields": [
+    "材料化學"
    ],
    "tools": [
     "JavaScript"
@@ -4447,7 +4544,7 @@
    "country": "SE",
    "title": "PhD student in Information Society, with focus on Agent-Based Social Simulation for Crises Preparedness",
    "url": "https://su.varbi.com/en/what:job/jobID:966353/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -4456,13 +4553,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
-   "score_version": 5,
-   "fields": [
-    "教育"
-   ],
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "模擬建模"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 7,
+   "fields": [
+    "教育"
    ],
    "tools": [
     "模擬建模"
@@ -4481,7 +4580,7 @@
    "country": "SE",
    "title": "PhD student in Information Society, with focus on Agent-Based Simulation of Social Behaviour",
    "url": "https://su.varbi.com/en/what:job/jobID:966253/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -4490,13 +4589,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
-   "score_version": 5,
-   "fields": [
-    "教育"
-   ],
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "模擬建模"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 7,
+   "fields": [
+    "教育"
    ],
    "tools": [
     "模擬建模"
@@ -4515,7 +4616,7 @@
    "country": "SE",
    "title": "PhD student in Hydrology with a focus on Flow and Transport in Fractured Rocks",
    "url": "https://uu.varbi.com/en/what:job/jobID:960428/",
-   "city": "Uppsala County",
+   "city": "Uppsala",
    "location": "",
    "department": "",
    "posted": "",
@@ -4524,17 +4625,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
-   "fields": [
-    "交通移動"
-   ],
    "page_tools": [
     "實驗室實驗"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 7,
+   "fields": [
+    "交通移動"
    ],
    "tools": [
     "實驗室實驗"
@@ -4553,7 +4654,7 @@
    "country": "SE",
    "title": "PhD student in Computer and Systems Sciences, with focus on Machine Learning",
    "url": "https://su.varbi.com/en/what:job/jobID:965823/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -4562,12 +4663,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "機器學習",
     "教育"
@@ -4587,7 +4689,7 @@
    "country": "SE",
    "title": "PhD student in Computer and Systems Sciences, with focus on Internet of Things and Machine Learning",
    "url": "https://su.varbi.com/en/what:job/jobID:965933/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -4596,13 +4698,14 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 4,
    "page_topics": [
     "穿戴式",
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "機器學習",
     "教育"
@@ -4624,7 +4727,7 @@
    "country": "SE",
    "title": "PhD student in Computer and Systems Sciences, with focus on Human–Computer Interaction and Design of AI User Interfaces",
    "url": "https://su.varbi.com/en/what:job/jobID:966176/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -4633,19 +4736,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 6,
    "page_topics": [
     "無障礙",
     "聊天機器人",
     "使用者介面"
    ],
-   "score_version": 5,
-   "fields": [
-    "教育"
-   ],
    "page_tools": [
     "原型製作"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 7,
+   "fields": [
+    "教育"
    ],
    "tools": [
     "原型製作"
@@ -4667,7 +4770,7 @@
    "country": "SE",
    "title": "PhD student in Computer and Systems Sciences, with focus on Cybersecurity",
    "url": "https://su.varbi.com/en/what:job/jobID:965877/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -4676,18 +4779,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "可解釋 AI"
    ],
-   "score_version": 5,
+   "page_tools": [
+    "原型製作"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "教育",
     "資安隱私"
-   ],
-   "page_tools": [
-    "原型製作"
    ],
    "tools": [
     "原型製作"
@@ -4708,7 +4811,7 @@
    "country": "SE",
    "title": "PhD student in Computer and Systems Sciences, with focus on Adaptive Immersive Experiences",
    "url": "https://su.varbi.com/en/what:job/jobID:966188/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -4717,18 +4820,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 4,
    "page_topics": [
     "VR XR AR",
     "無障礙"
    ],
-   "score_version": 5,
-   "fields": [
-    "教育"
-   ],
    "page_tools": [
     "原型製作"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 7,
+   "fields": [
+    "教育"
    ],
    "tools": [
     "原型製作"
@@ -4749,7 +4852,7 @@
    "country": "SE",
    "title": "PhD student in Computer and Systems Sciences, with focus on AI-enabled Digital Transformation in the Public Sector",
    "url": "https://su.varbi.com/en/what:job/jobID:965776/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -4758,12 +4861,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "教育"
    ],
@@ -4782,7 +4886,7 @@
    "country": "SE",
    "title": "PhD student in Computational Materials Chemistry",
    "url": "https://uu.varbi.com/en/what:job/jobID:960660/",
-   "city": "Uppsala County",
+   "city": "Uppsala",
    "location": "",
    "department": "",
    "posted": "",
@@ -4791,13 +4895,14 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 4,
    "page_topics": [
     "無障礙",
     "VR XR AR"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "材料化學",
     "教育"
@@ -4848,7 +4953,7 @@
    "country": "SE",
    "title": "PhD student in Assessing Marine Sediments as Georeactors for Modifying Bottom-Ocean Chemistry: Natural Analogues and Human Interventions",
    "url": "https://su.varbi.com/en/what:job/jobID:957757/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -4857,21 +4962,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [
+    "實驗室實驗"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "材料化學"
    ],
-   "page_tools": [
-    "JavaScript",
-    "實驗室實驗"
-   ],
    "tools": [
-    "JavaScript",
     "實驗室實驗"
    ],
    "first_seen": "2026-09-11",
@@ -4888,7 +4991,7 @@
    "country": "SE",
    "title": "PhD student in Algorithmic foundations of AI-assisted consensus and ranking",
    "url": "https://kth.varbi.com/en/what:job/jobID:968044/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -4897,12 +5000,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4928,13 +5032,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
-   "score_version": 5,
-   "fields": [
-    "經濟商管"
-   ],
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 8,
+   "fields": [
+    "經濟商管"
    ],
    "tools": [
     "Python"
@@ -4953,7 +5059,7 @@
    "country": "SE",
    "title": "PhD student focusing on Scalable Quantum Program Verification",
    "url": "https://uu.varbi.com/en/what:job/jobID:961891/",
-   "city": "Uppsala County",
+   "city": "Uppsala",
    "location": "",
    "department": "",
    "posted": "",
@@ -4962,12 +5068,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "量子"
    ],
@@ -4986,7 +5093,7 @@
    "country": "SE",
    "title": "PhD position in Neuroscience",
    "url": "https://lu.varbi.com/en/what:job/jobID:966346/",
-   "city": "Lund County",
+   "city": "Lund",
    "location": "",
    "department": "",
    "posted": "",
@@ -4995,8 +5102,11 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "醫療",
     "神經科學"
@@ -5016,7 +5126,7 @@
    "country": "SE",
    "title": "PhD position in Microbiology",
    "url": "https://uu.varbi.com/en/what:job/jobID:959399/",
-   "city": "Uppsala County",
+   "city": "Uppsala",
    "location": "",
    "department": "",
    "posted": "",
@@ -5025,12 +5135,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "醫療",
     "材料化學",
@@ -5051,7 +5162,7 @@
    "country": "SE",
    "title": "PhD position in Materials Physics",
    "url": "https://uu.varbi.com/en/what:job/jobID:961716/",
-   "city": "Uppsala County",
+   "city": "Uppsala",
    "location": "",
    "department": "",
    "posted": "",
@@ -5060,13 +5171,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
-   "score_version": 5,
-   "fields": [
-    "材料化學"
-   ],
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 7,
+   "fields": [
+    "材料化學"
    ],
    "tools": [
     "Python"
@@ -5085,7 +5198,7 @@
    "country": "SE",
    "title": "PhD position in Chemistry, with a specialization in Biophysical Chemistry",
    "url": "https://umu.varbi.com/en/what:job/jobID:965355/",
-   "city": "Umeå County",
+   "city": "Umeå",
    "location": "",
    "department": "",
    "posted": "",
@@ -5094,18 +5207,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "Python"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "材料化學",
     "生命科學"
    ],
-   "page_tools": [
-    "Python",
-    "JavaScript"
-   ],
    "tools": [
-    "JavaScript",
     "Python"
    ],
    "first_seen": "2026-09-11",
@@ -5122,7 +5235,7 @@
    "country": "SE",
    "title": "PhD Student in Physics: Background and Calibration Studies for Neutron-Oscillation Searches",
    "url": "https://su.varbi.com/en/what:job/jobID:963115/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -5131,15 +5244,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
    "page_tools": [
     "原型製作"
    ],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "tools": [
     "原型製作"
    ],
@@ -5167,13 +5280,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "C++/C#",
     "動作捕捉"
    ],
+   "score_version": 6,
+   "enrich_attempts": 8,
    "tools": [
     "Python",
     "C++/C#",
@@ -5229,8 +5344,11 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 8,
    "fields": [
     "教育",
     "社會心理"
@@ -5250,7 +5368,7 @@
    "country": "SE",
    "title": "Doktorand i kryptologi",
    "url": "https://kth.varbi.com/en/what:job/jobID:965397/",
-   "city": "Stockholm Län",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -5259,8 +5377,11 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5277,7 +5398,7 @@
    "country": "SE",
    "title": "Doktorand i Arbetsmiljöteknik, med inriktning mot människa-teknik-organisation och strålskydd inom kärnkraft",
    "url": "https://lu.varbi.com/en/what:job/jobID:962292/",
-   "city": "Lund Län",
+   "city": "Lund",
    "location": "",
    "department": "",
    "posted": "",
@@ -5286,12 +5407,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 3,
    "page_topics": [
     "人因"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5308,7 +5430,7 @@
    "country": "SE",
    "title": "Doctoral students in Networked Systems Security",
    "url": "https://kth.varbi.com/en/what:job/jobID:939588/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -5317,12 +5439,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5339,7 +5462,7 @@
    "country": "SE",
    "title": "Doctoral student on carbon cycling of primary forests",
    "url": "https://lu.varbi.com/en/what:job/jobID:904656/",
-   "city": "Lund County",
+   "city": "Lund",
    "location": "",
    "department": "",
    "posted": "",
@@ -5348,11 +5471,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "田野／民族誌"
    ],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "tools": [
     "田野／民族誌"
    ],
@@ -5371,7 +5496,7 @@
    "country": "SE",
    "title": "Doctoral student in quantum information theory",
    "url": "https://kth.varbi.com/en/what:job/jobID:962675/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -5380,12 +5505,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 8,
    "fields": [
     "量子"
    ],
@@ -5404,7 +5530,7 @@
    "country": "SE",
    "title": "Doctoral student in mobile wireless sub-THz MIMO communication for 7G",
    "url": "https://kth.varbi.com/en/what:job/jobID:962649/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -5413,12 +5539,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5435,7 +5562,7 @@
    "country": "SE",
    "title": "Doctoral student in information and coding theory for federated learning",
    "url": "https://kth.varbi.com/en/what:job/jobID:963264/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -5444,12 +5571,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5466,7 +5594,7 @@
    "country": "SE",
    "title": "Doctoral student in experimental fluid mechanics and complex films",
    "url": "https://kth.varbi.com/en/what:job/jobID:962019/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -5475,13 +5603,14 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 4,
    "page_topics": [
     "無障礙",
     "VR XR AR"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5500,7 +5629,7 @@
    "country": "SE",
    "title": "Doctoral student in condensed matter theory",
    "url": "https://kth.varbi.com/en/what:job/jobID:958703/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -5509,12 +5638,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 8,
    "fields": [
     "量子"
    ],
@@ -5533,7 +5663,7 @@
    "country": "SE",
    "title": "Doctoral student in acoustic source characterisation",
    "url": "https://kth.varbi.com/en/what:job/jobID:962556/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -5542,20 +5672,20 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
-   ],
-   "score_version": 5,
-   "fields": [
-    "交通移動",
-    "音訊語音"
    ],
    "page_tools": [
     "Python",
     "MATLAB",
     "PyTorch/TensorFlow"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 8,
+   "fields": [
+    "交通移動",
+    "音訊語音"
    ],
    "tools": [
     "Python",
@@ -5576,7 +5706,7 @@
    "country": "SE",
    "title": "Doctoral student in Theoretical Condensed Matter Physics",
    "url": "https://kth.varbi.com/en/what:job/jobID:958746/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -5585,12 +5715,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5607,7 +5738,7 @@
    "country": "SE",
    "title": "Doctoral student in Techno-economic Optimization of Thermal Energy Storage",
    "url": "https://kth.varbi.com/en/what:job/jobID:960474/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -5616,15 +5747,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "Python"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 8,
    "fields": [
     "能源",
     "氣候環境",
     "經濟商管"
-   ],
-   "page_tools": [
-    "Python"
    ],
    "tools": [
     "Python"
@@ -5643,7 +5776,7 @@
    "country": "SE",
    "title": "Doctoral student in Surface engineering of electrodes for flow batteries",
    "url": "https://kth.varbi.com/en/what:job/jobID:960761/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -5652,12 +5785,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 8,
    "fields": [
     "能源"
    ],
@@ -5676,7 +5810,7 @@
    "country": "SE",
    "title": "Doctoral student in Remote Fault Attacks on Cryptographic Algorithms",
    "url": "https://kth.varbi.com/en/what:job/jobID:963604/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -5685,18 +5819,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
-   "fields": [
-    "資安隱私"
-   ],
    "page_tools": [
     "PyTorch/TensorFlow",
     "工作坊"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 8,
+   "fields": [
+    "資安隱私"
    ],
    "tools": [
     "PyTorch/TensorFlow",
@@ -5716,7 +5850,7 @@
    "country": "SE",
    "title": "Doctoral student in Nuclear Power Safety",
    "url": "https://kth.varbi.com/en/what:job/jobID:960628/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -5725,17 +5859,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
-   "fields": [
-    "能源"
-   ],
    "page_tools": [
     "JavaScript"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 8,
+   "fields": [
+    "能源"
    ],
    "tools": [
     "JavaScript"
@@ -5754,7 +5888,7 @@
    "country": "SE",
    "title": "Doctoral student in Neuronics",
    "url": "https://kth.varbi.com/en/what:job/jobID:962477/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -5763,18 +5897,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
-   "fields": [
-    "交通移動"
-   ],
    "page_tools": [
     "Python",
     "MATLAB"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 8,
+   "fields": [
+    "交通移動"
    ],
    "tools": [
     "Python",
@@ -5852,7 +5986,7 @@
    "country": "SE",
    "title": "Doctoral student in Feminist AI Addressing Gender-Based Violence",
    "url": "https://kth.varbi.com/en/what:job/jobID:963228/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -5861,12 +5995,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5883,7 +6018,7 @@
    "country": "SE",
    "title": "Doctoral student in Environmental Law specialising in nuclear power",
    "url": "https://uu.varbi.com/en/what:job/jobID:953285/",
-   "city": "Uppsala County",
+   "city": "Uppsala",
    "location": "",
    "department": "",
    "posted": "",
@@ -5892,8 +6027,11 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "能源",
     "氣候環境",
@@ -5914,7 +6052,7 @@
    "country": "SE",
    "title": "Doctoral student in Electrical Engineering with focus on electrical motor reliability",
    "url": "https://kth.varbi.com/en/what:job/jobID:960882/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -5923,16 +6061,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
    "page_tools": [
     "Python",
     "MATLAB"
    ],
+   "score_version": 6,
+   "enrich_attempts": 8,
    "tools": [
     "Python",
     "MATLAB"
@@ -5952,7 +6090,7 @@
    "country": "SE",
    "title": "Doctoral student in Computer Science with focus on Human-Computer Interaction and Visualization",
    "url": "https://lu.varbi.com/en/what:job/jobID:954763/",
-   "city": "Lund County",
+   "city": "Lund",
    "location": "",
    "department": "",
    "posted": "",
@@ -5961,14 +6099,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 6,
    "page_topics": [
     "眼動追蹤",
     "資料視覺化",
     "視覺分析"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5989,7 +6128,7 @@
    "country": "SE",
    "title": "Doctoral student in Characterization of electrochemical interfaces",
    "url": "https://kth.varbi.com/en/what:job/jobID:960993/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -5998,12 +6137,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 8,
    "fields": [
     "材料化學"
    ],
@@ -6022,7 +6162,7 @@
    "country": "SE",
    "title": "Doctoral student in Cell and Molecular Biology Research",
    "url": "https://kth.varbi.com/en/what:job/jobID:952584/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -6031,17 +6171,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
-   "fields": [
-    "生命科學"
-   ],
    "page_tools": [
     "Python"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 8,
+   "fields": [
+    "生命科學"
    ],
    "tools": [
     "Python"
@@ -6060,7 +6200,7 @@
    "country": "SE",
    "title": "Doctoral student in Biomedical microsystems",
    "url": "https://kth.varbi.com/en/what:job/jobID:964164/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -6069,12 +6209,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 8,
    "fields": [
     "醫療"
    ],
@@ -6093,7 +6234,7 @@
    "country": "SE",
    "title": "Doctoral student in Biology with a specialisation in Microbial Ecology",
    "url": "https://lu.varbi.com/en/what:job/jobID:953578/",
-   "city": "Lund County",
+   "city": "Lund",
    "location": "",
    "department": "",
    "posted": "",
@@ -6102,16 +6243,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "田野／民族誌",
+    "實驗室實驗"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "材料化學",
     "氣候環境",
     "生命科學"
-   ],
-   "page_tools": [
-    "田野／民族誌",
-    "實驗室實驗"
    ],
    "tools": [
     "田野／民族誌",
@@ -6131,7 +6274,7 @@
    "country": "SE",
    "title": "Doctoral student in Astrophysics",
    "url": "https://kth.varbi.com/en/what:job/jobID:960180/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -6140,12 +6283,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -6162,7 +6306,7 @@
    "country": "SE",
    "title": "Doctoral student in AI and Robotics for Production",
    "url": "https://kth.varbi.com/en/what:job/jobID:949190/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -6171,12 +6315,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 8,
    "fields": [
     "機器人"
    ],
@@ -6195,7 +6340,7 @@
    "country": "SE",
    "title": "Doctoral student fiscal, private int., constitutional, procedural law",
    "url": "https://lu.varbi.com/en/what:job/jobID:948666/",
-   "city": "Lund County",
+   "city": "Lund",
    "location": "",
    "department": "",
    "posted": "",
@@ -6204,12 +6349,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "教育",
     "法律政策"
@@ -6229,7 +6375,7 @@
    "country": "SE",
    "title": "Doctoral Student in Urban Heat Prediction Using AI and Earth Observation",
    "url": "https://kth.varbi.com/en/what:job/jobID:964277/",
-   "city": "Stockholm County",
+   "city": "Stockholm",
    "location": "",
    "department": "",
    "posted": "",
@@ -6238,18 +6384,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
+   "page_tools": [
+    "PyTorch/TensorFlow"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 8,
    "fields": [
     "機器人",
     "建築城市"
-   ],
-   "page_tools": [
-    "PyTorch/TensorFlow"
    ],
    "tools": [
     "PyTorch/TensorFlow"
@@ -6321,7 +6467,7 @@
    "country": "SE",
    "title": "Doctoral Student in Automatic Control with focus on Datacenter Control",
    "url": "https://lu.varbi.com/en/what:job/jobID:961545/",
-   "city": "Lund County",
+   "city": "Lund",
    "location": "",
    "department": "",
    "posted": "",
@@ -6330,8 +6476,11 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -6357,19 +6506,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 4,
    "page_topics": [
     "VR XR AR",
     "眼動追蹤"
    ],
-   "score_version": 5,
-   "fields": [
-    "經濟商管"
-   ],
    "page_tools": [
     "Python",
     "SPSS/Stata"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 8,
+   "fields": [
+    "經濟商管"
    ],
    "tools": [
     "Python",
@@ -6392,7 +6541,7 @@
    "country": "SE",
    "title": "Doctoral (Phd) position in the photophysics in 2D quantum materials",
    "url": "https://uu.varbi.com/en/what:job/jobID:964762/",
-   "city": "Uppsala County",
+   "city": "Uppsala",
    "location": "",
    "department": "",
    "posted": "",
@@ -6401,15 +6550,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
-   "score_version": 5,
-   "fields": [
-    "材料化學",
-    "量子"
-   ],
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "MATLAB"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 7,
+   "fields": [
+    "材料化學",
+    "量子"
    ],
    "tools": [
     "Python",
@@ -6438,19 +6589,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 5,
-   "fields": [
-    "氣候環境",
-    "教育"
-   ],
    "page_tools": [
     "MATLAB",
     "模擬建模"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 7,
+   "fields": [
+    "氣候環境",
+    "教育"
    ],
    "tools": [
     "MATLAB",
@@ -6470,7 +6621,7 @@
    "country": "SE",
    "title": "Doctoral (PhD) Position in Solar Cell Technology with focus on Nano-Optics for Agrivoltaics",
    "url": "https://uu.varbi.com/en/what:job/jobID:959448/",
-   "city": "Uppsala County",
+   "city": "Uppsala",
    "location": "",
    "department": "",
    "posted": "",
@@ -6479,16 +6630,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "Python",
+    "MATLAB"
+   ],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "能源",
     "材料化學",
     "農業食品"
-   ],
-   "page_tools": [
-    "Python",
-    "MATLAB"
    ],
    "tools": [
     "Python",
@@ -6508,7 +6661,7 @@
    "country": "SE",
    "title": "1-2 PhD students in Computing Science with focus on Cryptography and Cybersecurity",
    "url": "https://umu.varbi.com/en/what:job/jobID:959742/",
-   "city": "Umeå County",
+   "city": "Umeå",
    "location": "",
    "department": "",
    "posted": "",
@@ -6517,8 +6670,11 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 6,
-   "score_version": 5,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 6,
+   "enrich_attempts": 7,
    "fields": [
     "教育",
     "資安隱私"
