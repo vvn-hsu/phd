@@ -88,3 +88,41 @@ fields:
   "(manufactur|production system|industrial engineering|mechanical)": 製造工程
   "(statistic|mathematic|optimi[sz]ation|numerical)": 數學最佳化
   "(social science|sociolog|psycholog|anthropolog)": 社會心理
+
+# 工具與研究方法，也不算分，只是貼標籤。想知道「這個缺會用到什麼」就看這排。
+tools:
+  # 軟體與程式
+  "\\bunity\\b": Unity
+  "unreal engine": Unreal
+  "\\bgodot\\b": Godot
+  "\\bblender\\b": Blender
+  "(python|numpy|pandas|scikit)": Python
+  "(\\bin r\\b|\\br studio\\b|rstudio|\\bggplot)": R
+  "\\bmatlab\\b": MATLAB
+  "(javascript|typescript|react|web front)": JavaScript
+  "(c\\+\\+|\\bc# )": C++/C#
+  "(pytorch|tensorflow|keras|hugging ?face)": PyTorch/TensorFlow
+  "(arduino|raspberry pi|microcontroller|esp32)": Arduino
+  "(3d print|additive manufactur|laser cut)": 3D 列印
+  "(spss|\\bstata\\b|\\bjamovi\\b)": SPSS/Stata
+  "(nvivo|atlas\\.ti|maxqda)": NVivo
+  "(qualtrics|limesurvey|prolific|mturk|amazon mechanical turk)": 問卷平台
+  "(figma|sketch app|adobe xd)": Figma
+  # 研究方法
+  "(semi-structured interview|interview stud|interviews with|conduct interviews)": 訪談
+  "focus group": 焦點團體
+  "(co-design workshop|design workshop|\\bworkshops?\\b)": 工作坊
+  "(questionnaire|survey stud|online survey|large-scale survey)": 問卷調查
+  "(ethnograph|field ?work|in[- ]the[- ]wild|field stud)": 田野／民族誌
+  "(diary stud|experience sampling)": 日誌研究
+  "(think[- ]aloud|usability test|user test|heuristic evaluation)": 使用者測試
+  "(controlled experiment|lab(oratory)? experiment|within-subject|between-subject|psychophysic)": 實驗室實驗
+  "(randomi[sz]ed controlled trial|\\brct\\b|clinical trial)": RCT
+  "(thematic analysis|grounded theory|qualitative coding|content analysis)": 質性分析
+  "(mixed[- ]method)": 混合方法
+  "(motion capture|mocap|optitrack|vicon)": 動作捕捉
+  "(fnirs|\\bfmri\\b|electromyograph|\\bemg\\b|\\bgsr\\b|electrodermal)": 生理量測
+  "(prototyp)": 原型製作
+  "(participatory workshop|living lab|probe stud)": 參與式研究
+  "(systematic (literature )?review|scoping review|meta[- ]analys)": 文獻回顧
+  "(simulation model|agent-based model|digital twin)": 模擬建模

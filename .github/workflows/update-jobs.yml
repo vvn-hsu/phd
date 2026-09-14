@@ -17,6 +17,10 @@ on:
         description: "偵查時一併印出頁面文字"
         type: boolean
         default: false
+      send_mail:
+        description: "這次也寄出摘要信（排程本來就會寄）"
+        type: boolean
+        default: false
   push:
     paths:
       - "scraper/**"
@@ -62,6 +66,28 @@ jobs:
           else
             python scraper/run.py
           fi
+
+      - name: 產生每日摘要
+        if: ${{ inputs.probe != true && inputs.sniff == '' }}
+        env:
+          SITE_URL: https://vvn-hsu.github.io/phd/
+        run: python scraper/mail.py --dry-run
+
+      # 只有排程和手動勾 send_mail 才會真的寄，不然每次 push 都會收到信。
+      # 需要的 secrets：MAIL_TO、MAIL_USER、MAIL_PASS（Gmail 用應用程式密碼），
+      # 另外可選 MAIL_HOST／MAIL_PORT／MAIL_FROM。沒設的話這步會跳過。
+      - name: 寄出摘要信
+        if: ${{ (github.event_name == 'schedule' || inputs.send_mail == true)
+                && inputs.probe != true && inputs.sniff == '' }}
+        env:
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          MAIL_USER: ${{ secrets.MAIL_USER }}
+          MAIL_PASS: ${{ secrets.MAIL_PASS }}
+          MAIL_HOST: ${{ secrets.MAIL_HOST }}
+          MAIL_PORT: ${{ secrets.MAIL_PORT }}
+          MAIL_FROM: ${{ secrets.MAIL_FROM }}
+          SITE_URL: https://vvn-hsu.github.io/phd/
+        run: python scraper/mail.py
 
       - name: 提交更新後的資料
         if: ${{ inputs.probe != true && inputs.sniff == '' }}

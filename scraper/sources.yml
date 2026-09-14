@@ -10,6 +10,7 @@
 #   mode        - first（預設）／all：all 會把每個網址都抓一遍再合併，關鍵字搜尋用這個
 #   topic_boost - 這個來源本身就是 HCI 導向時，給每筆職缺加的相關度分數
 #   delay       - 每次請求之間等幾秒（預設 0.5），對方會 429 的話調大
+#   city        - 單一校區的學校可以寫死城市，詳細頁抓不到時用它補
 #   enrich      - jsonld：對新職缺再抓一次詳細頁，補發布日／截止日／系所
 #   filter      - phd（預設，只留博士職缺）／none（全留）
 #   max_enrich  - 每次執行最多補抓幾個詳細頁
@@ -120,6 +121,7 @@ sources:
 
   - id: ethz
     name: ETH Zürich
+    city: Zürich
     country: CH
     homepage: https://jobs.ethz.ch/
     type: links
@@ -132,6 +134,7 @@ sources:
 
   - id: kth
     name: KTH Royal Institute of Technology
+    city: Stockholm
     country: SE
     homepage: https://kth.varbi.com/en/
     type: links
@@ -148,6 +151,7 @@ sources:
   # 其中某個 subdomain 不存在的話，那個來源會顯示 error，不影響其他來源。
   - id: uu
     name: Uppsala universitet
+    city: Uppsala
     country: SE
     homepage: https://uu.varbi.com/en/
     type: links
@@ -158,6 +162,7 @@ sources:
 
   - id: su
     name: Stockholms universitet
+    city: Stockholm
     country: SE
     homepage: https://su.varbi.com/en/
     type: links
@@ -168,6 +173,7 @@ sources:
 
   - id: lu
     name: Lunds universitet
+    city: Lund
     country: SE
     homepage: https://lu.varbi.com/en/
     type: links
@@ -179,6 +185,7 @@ sources:
   # liu.varbi.com 不存在（404），Linköping 用的不是 Varbi。
   - id: liu
     name: Linköpings universitet
+    city: Linköping
     country: SE
     homepage: https://liu.varbi.com/en/
     type: links
@@ -189,6 +196,7 @@ sources:
 
   - id: umu
     name: Umeå universitet
+    city: Umeå
     country: SE
     homepage: https://umu.varbi.com/en/
     type: links
@@ -199,6 +207,7 @@ sources:
 
   - id: dtu
     name: DTU（丹麥技術大學）
+    city: Kongens Lyngby
     country: DK
     homepage: https://www.dtu.dk/english/about/job-and-career/vacant-positions
     type: links
@@ -211,6 +220,7 @@ sources:
   # KU Leuven 的職缺清單同樣是 JS 渲染，先關掉。
   - id: kuleuven
     name: KU Leuven
+    city: Leuven
     country: BE
     homepage: https://www.kuleuven.be/personeel/jobsite/en/vacancies
     type: links
@@ -223,6 +233,7 @@ sources:
 
   - id: tum
     name: TU München
+    city: München
     country: DE
     homepage: https://portal.mytum.de/jobs/
     type: links
@@ -236,6 +247,7 @@ sources:
   # Chalmers 的清單是 JS 渲染，chalmers.varbi.com 也不存在，先關掉。
   - id: chalmers
     name: Chalmers
+    city: Göteborg
     country: SE
     homepage: https://www.chalmers.se/en/about-chalmers/work-with-us/vacancies/
     type: links

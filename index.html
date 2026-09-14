@@ -9,13 +9,13 @@
   :root{
     --bg:#f7f7f5; --panel:#fff; --ink:#1b1b1a; --muted:#6b6a66; --line:#e3e2dd;
     --accent:#1f5fb4; --new:#0f7a4d; --new-bg:#e3f4ea; --warn:#9a3412; --warn-bg:#fdeee4;
-    --star:#c58a00; --closed:#8a8a86;
+    --star:#c58a00; --closed:#8a8a86; --tool:#1f5fb4; --tool-bg:#e7eefa;
   }
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]){
       --bg:#16161a; --panel:#1e1e23; --ink:#e9e8e4; --muted:#a09f9a; --line:#32323a;
       --accent:#7aa9ee; --new:#5ed49b; --new-bg:#12312333; --warn:#f0a882; --warn-bg:#3a241a;
-      --star:#e3b23c; --closed:#76757f;
+      --star:#e3b23c; --closed:#76757f; --tool:#9ec1f0; --tool-bg:#1c2a3f;
     }
   }
   *{box-sizing:border-box}
@@ -53,6 +53,7 @@
   .topics em{font-style:normal;font-size:11px;padding:1px 7px;margin-right:4px;border-radius:999px;
     background:var(--new-bg);color:var(--new);white-space:nowrap}
   .topics.fields em{background:transparent;color:var(--muted);border:1px solid var(--line)}
+  .topics.tools em{background:var(--tool-bg);color:var(--tool)}
   .side{grid-column:2;grid-row:1/span 3;display:flex;flex-direction:column;align-items:flex-end;gap:6px}
   .tag{font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
   .tag.new{color:var(--new);background:var(--new-bg);border-color:transparent;font-weight:600}
@@ -92,8 +93,10 @@
 
   <div class="controls">
     <div class="row">
-      <input type="search" id="q" placeholder="搜尋標題、學校、系所、中文標籤（例：人機互動、眼動追蹤、醫療）">
+      <input type="search" id="q" placeholder="搜尋標題、學校、城市、標籤（例：眼動追蹤、Unity、訪談、Delft）">
       <select id="school"><option value="">所有學校／來源</option></select>
+      <select id="city"><option value="">所有城市</option></select>
+      <select id="tool"><option value="">所有工具／方法</option></select>
       <select id="field"><option value="">所有領域標籤</option></select>
       <select id="country"><option value="">所有國家</option></select>
       <select id="topic">
@@ -159,7 +162,7 @@ try {
   }
 } catch {}
 
-const state = { data:null, q:'', school:'', country:'', field:'', sort:'relevance', topic:'broad',
+const state = { data:null, q:'', school:'', country:'', field:'', city:'', tool:'', sort:'relevance', topic:'broad',
   since:false, today:false, unseen:false, star:false, soon:false, closed:false };
 
 const $ = (id) => document.getElementById(id);
@@ -191,6 +194,15 @@ async function boot(){
   $('school').append(...schools.map(s => new Option(s, s)));
   const countries = [...new Set(d.jobs.map(j => j.country).filter(Boolean))].sort();
   $('country').append(...countries.map(c => new Option(c, c)));
+  const cities = [...new Set(d.jobs.map(j => j.city).filter(Boolean))]
+    .sort((a,b) => a.localeCompare(b,'en'));
+  $('city').append(...cities.map(c => new Option(c, c)));
+  const toolCounts = new Map();
+  for (const job of d.jobs) for (const t of job.tools || [])
+    toolCounts.set(t, (toolCounts.get(t) || 0) + 1);
+  $('tool').append(...[...toolCounts.entries()]
+    .sort((a,b) => b[1]-a[1] || a[0].localeCompare(b[0],'zh-Hant'))
+    .map(([t,n]) => new Option(`${t}（${n}）`, t)));
   const fieldCounts = new Map();
   for (const job of d.jobs) for (const f of job.fields || [])
     fieldCounts.set(f, (fieldCounts.get(f) || 0) + 1);
@@ -227,9 +239,12 @@ function matches(job){
   if (state.school && (job.university || job.source_name) !== state.school) return false;
   if (state.country && job.country !== state.country) return false;
   if (state.field && !(job.fields || []).includes(state.field)) return false;
+  if (state.tool && !(job.tools || []).includes(state.tool)) return false;
+  if (state.city && job.city !== state.city) return false;
   if (state.q){
     const blob = [job.title, job.university, job.source_name, job.department, job.location,
-      job.summary, ...(job.topics || []), ...(job.fields || [])].join(' ').toLowerCase();
+      job.summary, job.city, ...(job.topics || []), ...(job.tools || []),
+      ...(job.fields || [])].join(' ').toLowerCase();
     if (!state.q.toLowerCase().split(/\s+/).every(t => blob.includes(t))) return false;
   }
   return true;
@@ -267,11 +282,13 @@ function render(){
       `<strong>${esc(uni)}</strong>`,
       uni !== job.source_name && `來源 ${esc(job.source_name)}`,
       job.department && esc(job.department),
-      job.location && esc(job.location),
+      job.city ? esc(job.city) : (job.location && esc(job.location)),
       job.posted && '發布 ' + job.posted,
       job.deadline && '截止 ' + job.deadline,
       '發現於 ' + fmt(job.first_seen),
       (job.topics || []).length && `<span class="topics">${job.topics.slice(0,4)
+        .map(t => `<em>${esc(t)}</em>`).join('')}</span>`,
+      (job.tools || []).length && `<span class="topics tools">${job.tools
         .map(t => `<em>${esc(t)}</em>`).join('')}</span>`,
       (job.fields || []).length && `<span class="topics fields">${job.fields
         .map(t => `<em>${esc(t)}</em>`).join('')}</span>`,
@@ -317,7 +334,7 @@ function renderSources(sources){
 
 function bind(){
   $('q').addEventListener('input', e => { state.q = e.target.value.trim(); render(); });
-  for (const id of ['school','country','field','sort'])
+  for (const id of ['school','country','field','city','tool','sort'])
     $(id).addEventListener('change', e => { state[id] = e.target.value; render(); });
   $('topic').addEventListener('change', e => { state.topic = e.target.value; renderStats(); render(); });
   for (const [id, key] of [['f-since','since'],['f-today','today'],['f-unseen','unseen'],
@@ -329,8 +346,9 @@ function bind(){
     });
   }
   $('reset').addEventListener('click', () => {
-    Object.assign(state, {q:'',school:'',country:'',field:'',since:false,today:false,unseen:false,star:false,soon:false,closed:false});
+    Object.assign(state, {q:'',school:'',country:'',field:'',city:'',tool:'',since:false,today:false,unseen:false,star:false,soon:false,closed:false});
     $('q').value=''; $('school').value=''; $('country').value=''; $('field').value='';
+    $('city').value=''; $('tool').value='';
     document.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed','false'));
     render();
   });

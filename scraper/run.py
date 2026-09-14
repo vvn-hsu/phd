@@ -48,7 +48,7 @@ PHD_WEAK = re.compile(r"(\bdoctoral\b|\bdoctorate\b|research\s+student)", re.I)
 POSTDOC = re.compile(r"(post[\s\-]?doc|postdoctoral|post[\s\-]?doctoral)", re.I)
 
 KEEP_CLOSED_DAYS = 45   # 職缺從列表消失後，還在資料裡保留幾天
-SCORE_VERSION = 4       # 計分規則改過就 +1，舊資料會自動重抓重算
+SCORE_VERSION = 5       # 計分規則改過就 +1，舊資料會自動重抓重算
 
 
 # --------------------------------------------------------------------------- 工具
@@ -152,6 +152,7 @@ def term_label(term: str) -> str:
 
 _TOPIC_RULES: list[tuple[re.Pattern, int, str]] = []
 _FIELD_RULES: list[tuple[re.Pattern, str]] = []
+_TOOL_RULES: list[tuple[re.Pattern, str]] = []
 _TOPIC_THRESHOLDS = {"broad": 2, "strict": 5}
 
 
@@ -177,6 +178,9 @@ def load_topics(path: str = TOPICS) -> None:
     global _FIELD_RULES
     _FIELD_RULES = [(re.compile(pattern, re.I), label)
                     for pattern, label in as_pairs(config.get("fields"))]
+    global _TOOL_RULES
+    _TOOL_RULES = [(re.compile(pattern, re.I), label)
+                   for pattern, label in as_pairs(config.get("tools"))]
 
 
 def as_pairs(block) -> list[tuple[str, str]]:
@@ -207,6 +211,19 @@ def dedupe_keep_order(items) -> list[str]:
         if item not in out:
             out.append(item)
     return out
+
+
+def tool_tags(*parts: str, limit: int = 6) -> list[str]:
+    """會用到的工具和研究方法（Unity、Python、R、訪談、工作坊⋯），不影響 HCI 分數。"""
+    load_topics()
+    blob = " ".join(p for p in parts if p)
+    tags: list[str] = []
+    for pattern, label in _TOOL_RULES:
+        if label not in tags and pattern.search(blob):
+            tags.append(label)
+        if len(tags) >= limit:
+            break
+    return tags
 
 
 def topic_weights() -> dict[str, int]:
@@ -302,6 +319,7 @@ def jsonld_to_fields(node: dict) -> dict:
     return {
         "title": clean(node.get("title")),
         "university": clean(org.get("name") if isinstance(org, dict) else ""),
+        "city": city,
         "location": ", ".join(p for p in (city, country) if p),
         "department": clean(node.get("employmentUnit", {}).get("name")
                             if isinstance(node.get("employmentUnit"), dict) else ""),
@@ -350,6 +368,16 @@ def page_fallback_fields(html: str) -> dict:
     )
     if m:
         deadline = parse_date(m.group(1))
+    city = ""
+    cm = re.search(
+        r"(?:Work ?location|Location|Duty station|Placering|Ort|Stadt|Standort|Plaats|City)"
+        r"\s*[:：]?\s*([A-Z\u00c0-\u017e][\w\u00c0-\u017e'\u2019\-]{2,24}"
+        r"(?:\s[A-Z\u00c0-\u017e][\w\u00c0-\u017e'\u2019\-]{2,24})?)",
+        text,
+    )
+    if cm:
+        city = cm.group(1).strip()
+
     posted = ""
     pm = re.search(r"Posted on:?\s*(\d{1,2}\s+\w{3,12}\s+\d{4}|\d{4}-\d{2}-\d{2})", text, re.I)
     if pm:
@@ -358,6 +386,7 @@ def page_fallback_fields(html: str) -> dict:
     return {
         "title": title,
         "university": org,
+        "city": city,
         "posted": posted,
         "summary": clean(desc.get("content"))[:400] if desc else "",
         "deadline": deadline,
@@ -574,6 +603,7 @@ def enrich_job(job: dict, timeout: int) -> None:
     page_score, page_hits = score_topics(page_text, min_weight=2)
     job["page_score"] = page_score
     job["page_topics"] = page_hits
+    job["page_tools"] = tool_tags(page_text)
     job["score_version"] = SCORE_VERSION
     if job.get("found_via"):
         job["query_ok"] = query_matches(job["found_via"], page_text)
@@ -626,6 +656,7 @@ def collect(source: dict, cfg: dict) -> list[dict]:
             "country": source.get("country", ""),
             "title": title,
             "url": item["url"],
+            "city": item.get("city", ""),
             "location": item.get("location", ""),
             "department": item.get("department", ""),
             "posted": item.get("posted", ""),
@@ -728,7 +759,7 @@ def main() -> int:
         old = known.get(job["id"], {})
         for key in ("posted", "deadline", "location", "department", "summary", "university",
                     "enrich_attempts", "page_score", "page_topics", "query_ok",
-                    "score_version", "fields"):
+                    "score_version", "fields", "page_tools", "tools", "city"):
             if key == "university" and old.get(key) == old.get("source_name"):
                 continue  # 舊版把來源名稱當學校存進去過，那不是真的雇主
             if not job.get(key) and old.get(key):
@@ -748,7 +779,7 @@ def main() -> int:
             continue
         domain = site_of(job["url"])
         domain_pages[domain] = domain_pages.get(domain, 0) + 1
-        for term in set(job.get("page_topics") or []):
+        for term in set((job.get("page_topics") or []) + (job.get("page_tools") or [])):
             key = (domain, term)
             page_term_count[key] = page_term_count.get(key, 0) + 1
     boilerplate = {key for key, count in page_term_count.items()
@@ -785,6 +816,19 @@ def main() -> int:
         job["topic_score"], job["topics"] = score, dedupe_keep_order(hits)[:6]
         job["fields"] = field_tags(job.get("title", ""), job.get("summary", ""),
                                    job.get("department", ""))
+        own = tool_tags(job.get("title", ""), job.get("summary", ""), job.get("department", ""))
+        tools = [t for t in dedupe_keep_order(own + (job.get("page_tools") or []))
+                 if (site_of(job["url"]), t) not in boilerplate]
+        job["tools"] = tools[:6]
+
+    # 城市：詳細頁沒寫的話，從 location（"Delft, NL"）截前半段，
+    # 再不然用來源設定裡的 city（單一校區的學校才設）
+    default_city = {src["id"]: src.get("city", "") for src in config["sources"]}
+    for job in fresh.values():
+        if not job.get("city") and job.get("location"):
+            job["city"] = job["location"].split(",")[0].strip()
+        if not job.get("city"):
+            job["city"] = default_city.get(job["source"], "")
 
     # 查不到雇主就讓 university 留空，網頁顯示時自己退回來源名稱。
     # 寫進資料的話，下一輪會被當成「已經知道學校了」而不再補抓。

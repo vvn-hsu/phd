@@ -115,6 +115,7 @@ def main():
     ld = by_title.get("PhD Candidate Structural Health", {})
     check("JSON-LD 學校", ld.get("university"), "Delft University of Technology")
     check("JSON-LD 地點", ld.get("location"), "Delft, NL")
+    check("JSON-LD 城市", ld.get("city"), "Delft")
     check("JSON-LD 截止日", ld.get("deadline"), "2026-10-15")
     check("沒有 JSON-LD 時學校先留空（補抓詳細頁後才退回來源名）",
           by_title.get("PhD Position on Floating Wind Turbines", {}).get("university"), "")
@@ -154,6 +155,14 @@ def main():
           run.score_topics("augmented reality and mixed reality study")[1], ["VR XR AR"])
     check("同一個標籤只算一次",
           run.score_topics("augmented reality and mixed reality study")[0], 2)
+    check("工具／方法標籤",
+          run.tool_tags("We use Unity and Python, run semi-structured interviews "
+                        "and co-design workshops"),
+          ["Unity", "Python", "訪談", "工作坊"])
+    check("詳細頁抓得到城市",
+          run.page_fallback_fields(
+              "<html><body><h1>PhD</h1><p>Work location Uppsala</p></body></html>")["city"],
+          "Uppsala")
     check("領域標籤是中文",
           run.field_tags("PhD on clinical imaging for patients"), ["醫療", "影像視覺"])
     check("整頁計分忽略弱詞（現在沒有弱詞了，泛用字不該命中）",
