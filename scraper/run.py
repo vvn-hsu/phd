@@ -789,11 +789,13 @@ def main() -> int:
             query_zh = zh_of(query) or query
             if verified:
                 score += boost
-                hits = [f"搜尋：{query_zh}"] + hits
+                # 同一個詞已經在命中清單裡就不要再貼一個「搜尋：」標籤，掃起來多餘
+                if query_zh not in hits:
+                    hits = [query_zh] + hits
             else:
                 score += 1
-                if query:
-                    hits = hits + [f"搜尋：{query_zh}（內文未出現）"]
+                if query and query_zh not in hits:
+                    hits = hits + [f"{query_zh}（弱）"]
         job["topic_score"], job["topics"] = score, dedupe_keep_order(hits)[:6]
         job["fields"] = field_tags(job.get("title", ""), job.get("summary", ""),
                                    job.get("department", ""))
