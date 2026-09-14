@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-09-14T09:04:56+00:00",
+ "generated_at": "2026-09-14T09:17:02+00:00",
  "date": "2026-09-14",
  "topic_thresholds": {
   "broad": 2,
   "strict": 6
  },
  "counts": {
-  "open": 114,
-  "new_today": 14,
+  "open": 115,
+  "new_today": 15,
   "closed_kept": 86,
-  "hci_broad": 26
+  "hci_broad": 17
  },
  "sources": [
   {
@@ -28,7 +28,7 @@
    "country": "NL",
    "homepage": "https://www.academictransfer.com/en/jobs/",
    "status": "ok",
-   "count": 5,
+   "count": 6,
    "url_used": "https://www.academictransfer.com/en/jobs/?category=phd&sort=date",
    "error": ""
   },
@@ -168,11 +168,14 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "生理量測"
    ],
+   "score_version": 7,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 5,
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -183,6 +186,41 @@
    ],
    "tools": [
     "生理量測"
+   ]
+  },
+  {
+   "id": "8b5a8de4b2b838d9",
+   "source": "academictransfer",
+   "source_name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
+   "university": "Universiteit Maastricht (UM)",
+   "country": "NL",
+   "title": "Promovendus - De vape-epidemie onder jongeren: van gezondheid tot stoppen-met-vapenhulp",
+   "url": "https://www.academictransfer.com/en/jobs/363920/promovendus-de-vape-epidemie-onder-jongeren-van-gezondheid-tot-stoppen-met-vapenhulp/",
+   "city": "Maastricht",
+   "location": "Maastricht, NL",
+   "department": "",
+   "posted": "2026-09-14",
+   "deadline": "2026-09-30",
+   "summary": "Welkom bij de Universiteit Maastricht! Wil jij bijdragen aan een nicotinevrije generatie? Krijg je energie van maatschappelijk relevant onderzoek? Maak jij je ook zorgen over de huidige vape-epidemie? In dit onderzoeksproject ontwikkelen we samen met jongeren en zorgprofessionals een effectieve stoppen-met-vapen interventie én onderzoeken we de gezondheidseffecten van vapen bij jongeren. Promovend",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "SPSS/Stata"
+   ],
+   "score_version": 7,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-09-14",
+   "last_seen": "2026-09-14",
+   "status": "open",
+   "topic_score": 0,
+   "topics": [],
+   "fields": [],
+   "tools": [
+    "SPSS/Stata"
    ]
   },
   {
@@ -202,16 +240,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 2,
    "page_topics": [
     "包容性設計"
    ],
-   "score_version": 6,
    "page_tools": [
     "田野／民族誌",
     "實驗室實驗"
    ],
+   "score_version": 7,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 5,
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -245,8 +284,12 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 7,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 5,
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -275,8 +318,12 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 7,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 5,
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -304,23 +351,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 2,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
    "page_tools": [
     "MATLAB",
     "原型製作"
    ],
+   "score_version": 7,
+   "enrich_attempts": 3,
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
    "status": "open",
-   "topic_score": 2,
-   "topics": [
-    "無障礙"
-   ],
+   "topic_score": 0,
+   "topics": [],
    "fields": [],
    "tools": [
     "MATLAB",
@@ -344,20 +389,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 6,
-   "page_tools": [
-    "JavaScript"
-   ],
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
    "status": "open",
    "topic_score": 0,
    "topics": [],
    "fields": [],
-   "tools": [
-    "JavaScript"
-   ]
+   "tools": []
   },
   {
    "id": "f02c46dd518e3174",
@@ -376,19 +419,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 2,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 3,
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
    "status": "open",
-   "topic_score": 2,
-   "topics": [
-    "無障礙"
-   ],
+   "topic_score": 0,
+   "topics": [],
    "fields": [],
    "tools": []
   },
@@ -409,19 +451,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 2,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 3,
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
    "status": "open",
-   "topic_score": 2,
-   "topics": [
-    "無障礙"
-   ],
+   "topic_score": 0,
+   "topics": [],
    "fields": [
     "機器學習",
     "數學最佳化"
@@ -445,11 +486,15 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
-   "enrich_attempts": 4,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "焦點團體"
    ],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 5,
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -481,17 +526,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 3,
-   "enrich_attempts": 2,
    "page_score": 2,
    "page_topics": [
     "可解釋 AI"
    ],
-   "score_version": 6,
    "page_tools": [
     "Python",
     "PyTorch/TensorFlow",
     "工作坊"
    ],
+   "score_version": 7,
+   "employment": "[\"PART_TIME\"]",
+   "enrich_attempts": 3,
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -526,12 +572,16 @@
    "title_guessed": false,
    "found_via": "data visualization",
    "topic_boost": 3,
-   "enrich_attempts": 4,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "工作坊",
     "田野／民族誌"
    ],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 5,
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -565,12 +615,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 5,
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -599,12 +650,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -630,8 +682,11 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-14",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -726,13 +781,15 @@
    "title_guessed": false,
    "found_via": "virtual reality",
    "topic_boost": 3,
-   "enrich_attempts": 5,
    "page_score": 2,
    "page_topics": [
     "VR XR AR"
    ],
+   "page_tools": [],
+   "score_version": 7,
    "query_ok": true,
-   "score_version": 6,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 6,
    "first_seen": "2026-09-12",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -763,8 +820,12 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 5,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 7,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 6,
    "first_seen": "2026-09-12",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -1696,12 +1757,16 @@
    "title_guessed": false,
    "found_via": "data visualization",
    "topic_boost": 3,
-   "enrich_attempts": 7,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "工作坊",
     "田野／民族誌"
    ],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -1734,20 +1799,23 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 7,
-   "query_ok": true,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "MATLAB",
     "工作坊"
    ],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
-   "topic_score": 3,
+   "topic_score": 1,
    "topics": [
-    "HCI 關鍵字搜尋"
+    "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [],
    "tools": [
@@ -1854,19 +1922,22 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "enrich_attempts": 7,
-   "query_ok": true,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "R",
     "工作坊"
    ],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
-   "topic_score": 3,
+   "topic_score": 1,
    "topics": [
-    "HCI 關鍵字搜尋"
+    "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
     "經濟商管",
@@ -1894,24 +1965,23 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 7,
-   "page_score": 1,
-   "page_topics": [
-    "stakeholder"
-   ],
-   "query_ok": true,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "訪談",
     "工作坊",
     "混合方法"
    ],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
-   "topic_score": 3,
+   "topic_score": 1,
    "topics": [
-    "HCI 關鍵字搜尋"
+    "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
     "氣候環境",
@@ -1941,22 +2011,21 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 7,
-   "page_score": 1,
-   "page_topics": [
-    "socio technical"
-   ],
-   "query_ok": true,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python"
    ],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
-   "topic_score": 3,
+   "topic_score": 1,
    "topics": [
-    "HCI 關鍵字搜尋"
+    "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
     "能源"
@@ -1982,15 +2051,15 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 7,
-   "page_score": 1,
-   "page_topics": [
-    "stakeholder"
-   ],
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "田野／民族誌"
    ],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -2022,17 +2091,16 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
-   "enrich_attempts": 7,
-   "page_score": 2,
-   "page_topics": [
-    "cognitive load",
-    "stakeholder"
-   ],
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "PyTorch/TensorFlow"
    ],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -2065,16 +2133,18 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "設計研究"
    ],
-   "score_version": 6,
    "page_tools": [
     "工作坊",
     "模擬建模"
    ],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -2106,11 +2176,15 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "enrich_attempts": 7,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python"
    ],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -2144,13 +2218,15 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
+   "page_tools": [],
+   "score_version": 7,
    "query_ok": true,
-   "score_version": 6,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -2237,13 +2313,13 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 7,
-   "page_score": 2,
-   "page_topics": [
-    "user behaviour",
-    "end user"
-   ],
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -2274,11 +2350,15 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 7,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "3D 列印"
    ],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "FULL_TIME",
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -2312,13 +2392,17 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "enrich_attempts": 7,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "PyTorch/TensorFlow",
     "生理量測"
    ],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "FULL_TIME",
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -2354,19 +2438,22 @@
    "title_guessed": false,
    "found_via": "data visualization",
    "topic_boost": 3,
-   "enrich_attempts": 7,
-   "query_ok": true,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "PyTorch/TensorFlow"
    ],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
-   "topic_score": 3,
+   "topic_score": 1,
    "topics": [
-    "HCI 關鍵字搜尋"
+    "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
     "醫療",
@@ -2395,8 +2482,13 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 7,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -2459,19 +2551,19 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "enrich_attempts": 7,
-   "page_score": 1,
-   "page_topics": [
-    "stakeholder"
-   ],
-   "query_ok": true,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
-   "topic_score": 3,
+   "topic_score": 1,
    "topics": [
-    "HCI 關鍵字搜尋"
+    "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
     "能源",
@@ -2638,20 +2730,21 @@
    "title_guessed": false,
    "found_via": "eye tracking",
    "topic_boost": 3,
-   "enrich_attempts": 7,
    "page_score": 4,
    "page_topics": [
     "眼動追蹤",
     "腦電"
    ],
-   "query_ok": true,
-   "score_version": 6,
    "page_tools": [
     "Python",
     "MATLAB",
     "實驗室實驗",
     "生理量測"
    ],
+   "score_version": 7,
+   "query_ok": true,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -2688,12 +2781,8 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 7,
-   "page_score": 1,
-   "page_topics": [
-    "stakeholder"
-   ],
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "前端開發",
@@ -2702,6 +2791,10 @@
     "田野／民族誌",
     "混合方法"
    ],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -2917,7 +3010,6 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "enrich_attempts": 7,
    "page_score": 10,
    "page_topics": [
     "VR XR AR",
@@ -2926,12 +3018,14 @@
     "無障礙",
     "包容性設計"
    ],
-   "query_ok": true,
-   "score_version": 6,
    "page_tools": [
     "Unity",
     "Unreal"
    ],
+   "score_version": 7,
+   "query_ok": true,
+   "employment": "FULL_TIME",
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -3028,11 +3122,13 @@
    "title_guessed": false,
    "found_via": "conversational agent",
    "topic_boost": 3,
-   "enrich_attempts": 7,
-   "score_version": 6,
-   "page_tools": [
-    "JavaScript"
-   ],
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -3045,9 +3141,7 @@
     "氣候環境",
     "生命科學"
    ],
-   "tools": [
-    "JavaScript"
-   ]
+   "tools": []
   },
   {
    "id": "eaaf6d1a0ac459c9",
@@ -3126,16 +3220,18 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "可解釋 AI"
    ],
-   "score_version": 6,
    "page_tools": [
     "工作坊",
     "原型製作"
    ],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -3652,12 +3748,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -3686,12 +3783,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -3720,12 +3818,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -3753,12 +3852,14 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "C++/C#"
    ],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -3791,15 +3892,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
    "page_tools": [
     "實驗室實驗"
    ],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -3829,12 +3930,14 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "C++/C#"
    ],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -3866,8 +3969,11 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -3896,12 +4002,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -3933,12 +4040,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -3966,12 +4074,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -3997,12 +4106,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4031,12 +4141,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4064,12 +4175,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4097,15 +4209,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
    "page_tools": [
     "工作坊"
    ],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4164,12 +4276,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "聊天機器人"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4199,8 +4312,11 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4229,12 +4345,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4263,12 +4380,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4296,12 +4414,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4330,15 +4449,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
    "page_tools": [
     "模擬建模"
    ],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4369,15 +4488,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
-   "page_tools": [
-    "JavaScript"
-   ],
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4386,9 +4503,7 @@
    "fields": [
     "材料化學"
    ],
-   "tools": [
-    "JavaScript"
-   ]
+   "tools": []
   },
   {
    "id": "5f9c4596e7abd2a8",
@@ -4407,15 +4522,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
-   "page_tools": [
-    "JavaScript"
-   ],
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4424,9 +4537,7 @@
    "fields": [
     "材料化學"
    ],
-   "tools": [
-    "JavaScript"
-   ]
+   "tools": []
   },
   {
    "id": "7b60eb0c6fb2eaab",
@@ -4445,11 +4556,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "模擬建模"
    ],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4479,11 +4592,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "模擬建模"
    ],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4513,15 +4628,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
    "page_tools": [
     "實驗室實驗"
    ],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4551,12 +4666,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4585,13 +4701,14 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 4,
    "page_topics": [
     "穿戴式",
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4622,17 +4739,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 6,
    "page_topics": [
     "無障礙",
     "聊天機器人",
     "使用者介面"
    ],
-   "score_version": 6,
    "page_tools": [
     "原型製作"
    ],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4665,15 +4782,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "可解釋 AI"
    ],
-   "score_version": 6,
    "page_tools": [
     "原型製作"
    ],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4706,16 +4823,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 4,
    "page_topics": [
     "VR XR AR",
     "無障礙"
    ],
-   "score_version": 6,
    "page_tools": [
     "原型製作"
    ],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4747,12 +4864,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4780,13 +4898,14 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 4,
    "page_topics": [
     "無障礙",
     "VR XR AR"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4846,15 +4965,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
    "page_tools": [
     "實驗室實驗"
    ],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4884,12 +5003,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4915,11 +5035,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python"
    ],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4949,12 +5071,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -4982,8 +5105,11 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5012,12 +5138,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5047,11 +5174,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python"
    ],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5081,11 +5210,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python"
    ],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5116,15 +5247,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
    "page_tools": [
     "原型製作"
    ],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5152,13 +5283,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "C++/C#",
     "動作捕捉"
    ],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5214,8 +5347,11 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5244,8 +5380,11 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5271,12 +5410,11 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
-   "page_score": 3,
-   "page_topics": [
-    "人因"
-   ],
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5302,12 +5440,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5333,11 +5472,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "田野／民族誌"
    ],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5365,12 +5506,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5398,12 +5540,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5429,12 +5572,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5460,13 +5604,14 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 4,
    "page_topics": [
     "無障礙",
     "VR XR AR"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5494,12 +5639,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5527,17 +5673,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
    "page_tools": [
     "Python",
     "MATLAB",
     "PyTorch/TensorFlow"
    ],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5570,12 +5716,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5601,11 +5748,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python"
    ],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5637,12 +5786,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5670,16 +5820,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
    "page_tools": [
     "PyTorch/TensorFlow",
     "工作坊"
    ],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5710,15 +5860,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
-   "page_tools": [
-    "JavaScript"
-   ],
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5727,9 +5875,7 @@
    "fields": [
     "能源"
    ],
-   "tools": [
-    "JavaScript"
-   ]
+   "tools": []
   },
   {
    "id": "4e5adc2a4862d8b6",
@@ -5748,16 +5894,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
    "page_tools": [
     "Python",
     "MATLAB"
    ],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5846,12 +5992,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5877,8 +6024,11 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5908,16 +6058,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
    "page_tools": [
     "Python",
     "MATLAB"
    ],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5946,14 +6096,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 6,
    "page_topics": [
     "眼動追蹤",
     "資料視覺化",
     "視覺分析"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -5983,12 +6134,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -6016,15 +6168,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
    "page_tools": [
     "Python"
    ],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -6054,12 +6206,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -6087,12 +6240,14 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "田野／民族誌",
     "實驗室實驗"
    ],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -6125,12 +6280,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -6156,12 +6312,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -6189,12 +6346,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -6223,15 +6381,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
    "page_tools": [
     "PyTorch/TensorFlow"
    ],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -6315,8 +6473,11 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -6342,17 +6503,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 4,
    "page_topics": [
     "VR XR AR",
     "眼動追蹤"
    ],
-   "score_version": 6,
    "page_tools": [
     "Python",
     "SPSS/Stata"
    ],
+   "score_version": 7,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -6386,12 +6547,14 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "MATLAB"
    ],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -6423,16 +6586,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 6,
    "page_tools": [
     "MATLAB",
     "模擬建模"
    ],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -6464,12 +6627,14 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "MATLAB"
    ],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
@@ -6502,8 +6667,11 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 7,
-   "score_version": 6,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 8,
    "first_seen": "2026-09-11",
    "last_seen": "2026-09-14",
    "status": "open",
