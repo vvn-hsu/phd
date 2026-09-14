@@ -783,7 +783,9 @@ def main() -> int:
         old = known.get(job["id"], {})
         for key in ("posted", "deadline", "location", "department", "summary", "university",
                     "enrich_attempts", "page_score", "page_topics", "query_ok",
-                    "score_version", "fields", "page_tools", "tools", "city", "country"):
+                    "score_version", "page_tools", "city", "country"):
+            # 注意：tools / fields / topics 都是每次從 page_* 重算的衍生欄位，
+            # 不要接回舊值，不然規則改了舊標籤還會留著
             if key == "university" and old.get(key) == old.get("source_name"):
                 continue  # 舊版把來源名稱當學校存進去過，那不是真的雇主
             if not job.get(key) and old.get(key):
