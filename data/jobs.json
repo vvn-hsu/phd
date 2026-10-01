@@ -1,10 +1,19 @@
 {
- "generated_at": "2026-10-01T19:08:13+00:00",
+ "generated_at": "2026-10-01T19:14:15+00:00",
  "date": "2026-10-01",
  "topic_thresholds": {
   "broad": 2,
   "strict": 6
  },
+ "rank_source": "QS World University Rankings（世界綜合排名，區間為人工歸類）",
+ "rank_bands": [
+  "1-10",
+  "11-50",
+  "51-100",
+  "101-200",
+  "201-500",
+  "未列入"
+ ],
  "counts": {
   "open": 129,
   "new_today": 22,
@@ -141,13 +150,8 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
-   "score_version": 7,
-   "query_ok": false,
-   "employment": "TEMPORARY",
    "enrich_attempts": 2,
+   "score_version": 7,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -157,6 +161,8 @@
    ],
    "fields": [],
    "tools": [],
+   "rank_band": "未列入",
+   "rank_order": 5,
    "also_at": [
     {
      "source": "AcademicTransfer（HCI 關鍵字搜尋）",
@@ -197,7 +203,9 @@
    "fields": [
     "材料化學"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "",
+   "rank_order": 99
   },
   {
    "id": "f9fe9bdfe56aee25",
@@ -216,8 +224,12 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
    "score_version": 7,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -227,7 +239,9 @@
     "材料化學",
     "氣候環境"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "5feb7c4b6f7444df",
@@ -246,8 +260,12 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
    "score_version": 7,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -257,7 +275,9 @@
     "材料化學",
     "氣候環境"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "11a350417840d413",
@@ -324,7 +344,9 @@
    "fields": [
     "醫療"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "未列入",
+   "rank_order": 5
   },
   {
    "id": "fe1dde072fb80cf2",
@@ -382,15 +404,11 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
+   "enrich_attempts": 2,
+   "score_version": 7,
    "page_tools": [
     "R"
    ],
-   "score_version": 7,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 2,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -401,7 +419,9 @@
    "fields": [],
    "tools": [
     "R"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "aac04bdfaa300999",
@@ -478,7 +498,9 @@
    "tools": [
     "Arduino",
     "原型製作"
-   ]
+   ],
+   "rank_band": "11-50",
+   "rank_order": 1
   },
   {
    "id": "8aa9f7178724207f",
@@ -497,12 +519,14 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Blender",
     "Python"
    ],
+   "score_version": 7,
+   "enrich_attempts": 2,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -516,7 +540,9 @@
    "tools": [
     "Blender",
     "Python"
-   ]
+   ],
+   "rank_band": "",
+   "rank_order": 99
   },
   {
    "id": "2228732641c9f865",
@@ -643,16 +669,12 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
+   "enrich_attempts": 2,
+   "score_version": 7,
    "page_tools": [
     "工作坊",
     "田野／民族誌"
    ],
-   "score_version": 7,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 2,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -666,7 +688,9 @@
    "tools": [
     "工作坊",
     "田野／民族誌"
-   ]
+   ],
+   "rank_band": "11-50",
+   "rank_order": 1
   },
   {
    "id": "a4437531ef22b97a",
@@ -685,18 +709,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
-   "score_version": 7,
    "enrich_attempts": 3,
+   "score_version": 7,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
    "topic_score": 0,
    "topics": [],
    "fields": [],
-   "tools": []
+   "tools": [],
+   "rank_band": "11-50",
+   "rank_order": 1
   },
   {
    "id": "a7db448a21a807b5",
@@ -715,15 +738,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "聊天機器人"
    ],
+   "score_version": 7,
    "page_tools": [
     "工作坊"
    ],
-   "score_version": 7,
-   "enrich_attempts": 3,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -734,7 +757,9 @@
    "fields": [],
    "tools": [
     "工作坊"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "1ed574603026a886",
@@ -753,13 +778,12 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "page_tools": [],
    "score_version": 7,
-   "enrich_attempts": 3,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -768,7 +792,9 @@
    "fields": [
     "社會心理"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "85011fcf1003de8e",
@@ -791,14 +817,16 @@
    "page_topics": [],
    "page_tools": [],
    "score_version": 7,
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
    "topic_score": 0,
    "topics": [],
    "fields": [],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "7fa791f2dfeb8ea0",
@@ -817,16 +845,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
+   "score_version": 7,
    "page_tools": [
     "Python",
     "C++/C#"
    ],
-   "score_version": 7,
-   "enrich_attempts": 3,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -840,7 +868,9 @@
    "tools": [
     "Python",
     "C++/C#"
-   ]
+   ],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "3ec2836b97a21f6f",
@@ -859,16 +889,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
+   "score_version": 7,
    "page_tools": [
     "Python",
     "C++/C#"
    ],
-   "score_version": 7,
-   "enrich_attempts": 3,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -880,7 +910,9 @@
    "tools": [
     "Python",
     "C++/C#"
-   ]
+   ],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "fd243d216de324fa",
@@ -899,13 +931,12 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "page_tools": [],
    "score_version": 7,
-   "enrich_attempts": 3,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -916,7 +947,9 @@
     "量子",
     "光電半導體"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "5cba8d685dd35a9e",
@@ -935,15 +968,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
+   "score_version": 7,
    "page_tools": [
     "模擬建模"
    ],
-   "score_version": 7,
-   "enrich_attempts": 3,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -954,7 +987,9 @@
    ],
    "tools": [
     "模擬建模"
-   ]
+   ],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "fffa5f4e9c5f0025",
@@ -973,13 +1008,12 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "page_tools": [],
    "score_version": 7,
-   "enrich_attempts": 3,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -988,7 +1022,9 @@
    "fields": [
     "生命科學"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "f8cc1c28482aba74",
@@ -1007,13 +1043,12 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "page_tools": [],
    "score_version": 7,
-   "enrich_attempts": 3,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -1023,7 +1058,9 @@
     "機器學習",
     "數學最佳化"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "ea2309af5cfb89b6",
@@ -1042,13 +1079,12 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "page_tools": [],
    "score_version": 7,
-   "enrich_attempts": 3,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -1059,7 +1095,9 @@
     "能源",
     "氣候環境"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "992f071c480fc6a2",
@@ -1078,13 +1116,12 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "page_tools": [],
    "score_version": 7,
-   "enrich_attempts": 3,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -1093,7 +1130,9 @@
    "fields": [
     "機器人"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "e5c68365daa89f07",
@@ -1112,13 +1151,12 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "page_tools": [],
    "score_version": 7,
-   "enrich_attempts": 3,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -1127,7 +1165,9 @@
    "fields": [
     "生命科學"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "9b098791df6689e1",
@@ -1267,11 +1307,15 @@
    "title_guessed": false,
    "found_via": "usability",
    "topic_boost": 3,
-   "enrich_attempts": 2,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python"
    ],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 3,
    "first_seen": "2026-09-30",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -1286,7 +1330,9 @@
    ],
    "tools": [
     "Python"
-   ]
+   ],
+   "rank_band": "未列入",
+   "rank_order": 5
   },
   {
    "id": "e368d60f1c928e23",
@@ -1387,11 +1433,15 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 2,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "工作坊"
    ],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 3,
    "first_seen": "2026-09-30",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -1405,7 +1455,9 @@
    ],
    "tools": [
     "工作坊"
-   ]
+   ],
+   "rank_band": "11-50",
+   "rank_order": 1
   },
   {
    "id": "a5bff0b094f19b67",
@@ -1446,7 +1498,9 @@
    ],
    "tools": [
     "工作坊"
-   ]
+   ],
+   "rank_band": "11-50",
+   "rank_order": 1
   },
   {
    "id": "ea1312a0aa6584e4",
@@ -1532,12 +1586,16 @@
    "title_guessed": false,
    "found_via": "usability",
    "topic_boost": 3,
-   "enrich_attempts": 2,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "參與式研究"
    ],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "FULL_TIME",
+   "enrich_attempts": 3,
    "first_seen": "2026-09-30",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -1553,7 +1611,9 @@
    "tools": [
     "Python",
     "參與式研究"
-   ]
+   ],
+   "rank_band": "11-50",
+   "rank_order": 1
   },
   {
    "id": "9c514b4056928f1d",
@@ -1587,7 +1647,9 @@
     "材料化學",
     "教育"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "ba5a76bfbe4218c2",
@@ -1627,7 +1689,9 @@
    ],
    "tools": [
     "Python"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "dd50f2a27a3a63c1",
@@ -1671,7 +1735,9 @@
    ],
    "tools": [
     "實驗室實驗"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "8545fa2d65a0d165",
@@ -1703,7 +1769,9 @@
    "fields": [],
    "tools": [
     "Python"
-   ]
+   ],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "13e5413f11653a5f",
@@ -1959,7 +2027,9 @@
     "能源",
     "氣候環境"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "11-50",
+   "rank_order": 1
   },
   {
    "id": "2b4bbbd48662f64b",
@@ -1998,7 +2068,9 @@
    ],
    "tools": [
     "R"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "b2090d1f1945c0d8",
@@ -2036,7 +2108,9 @@
    "tools": [
     "MATLAB",
     "模擬建模"
-   ]
+   ],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "7d7781c5b8850025",
@@ -2219,7 +2293,9 @@
    "topic_score": 0,
    "topics": [],
    "fields": [],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "8d19a146408e1800",
@@ -2257,7 +2333,9 @@
    "tools": [
     "Python",
     "實驗室實驗"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "c7f15259f3ce4309",
@@ -2284,7 +2362,9 @@
    "topic_score": 0,
    "topics": [],
    "fields": [],
-   "tools": []
+   "tools": [],
+   "rank_band": "11-50",
+   "rank_order": 1
   },
   {
    "id": "3043e144503a0b37",
@@ -2555,7 +2635,9 @@
    ],
    "tools": [
     "Python"
-   ]
+   ],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "c962ef48c888004b",
@@ -2584,7 +2666,9 @@
    "fields": [
     "生命科學"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "cb2c1139e6ff6635",
@@ -2734,7 +2818,9 @@
    "tools": [
     "Python",
     "MATLAB"
-   ]
+   ],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "2887bbb16852e9ba",
@@ -2769,7 +2855,9 @@
    ],
    "tools": [
     "工作坊"
-   ]
+   ],
+   "rank_band": "11-50",
+   "rank_order": 1
   },
   {
    "id": "0813ab3b7e6a8ce7",
@@ -2805,7 +2893,9 @@
    "tools": [
     "工作坊",
     "田野／民族誌"
-   ]
+   ],
+   "rank_band": "11-50",
+   "rank_order": 1
   },
   {
    "id": "6d69ff195e11a035",
@@ -2842,7 +2932,9 @@
    "tools": [
     "工作坊",
     "混合方法"
-   ]
+   ],
+   "rank_band": "11-50",
+   "rank_order": 1
   },
   {
    "id": "4df42a667ef83a94",
@@ -3019,7 +3111,9 @@
    "fields": [
     "神經科學"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "未列入",
+   "rank_order": 5
   },
   {
    "id": "96a932821fb63d91",
@@ -3083,7 +3177,9 @@
    "fields": [
     "光電半導體"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "05dae75de1f4eb0e",
@@ -3114,7 +3210,9 @@
     "機器學習",
     "數學最佳化"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "b76bd342f2a1c033",
@@ -3151,7 +3249,9 @@
     "可解釋 AI"
    ],
    "fields": [],
-   "tools": []
+   "tools": [],
+   "rank_band": "1-10",
+   "rank_order": 0
   },
   {
    "id": "607b810b191fbfb1",
@@ -3218,7 +3318,9 @@
    "tools": [
     "Python",
     "PyTorch/TensorFlow"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "b96401cf55263fe9",
@@ -3324,7 +3426,9 @@
     "能源",
     "交通移動"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "11-50",
+   "rank_order": 1
   },
   {
    "id": "61ab93b013b9e2fe",
@@ -3467,7 +3571,9 @@
    ],
    "tools": [
     "Python"
-   ]
+   ],
+   "rank_band": "201-500",
+   "rank_order": 4
   },
   {
    "id": "8e51c93d59d8fedd",
@@ -3505,7 +3611,9 @@
    "tools": [
     "Python",
     "C++/C#"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "38e8ca056e8d10e0",
@@ -3532,7 +3640,9 @@
    "topic_score": 0,
    "topics": [],
    "fields": [],
-   "tools": []
+   "tools": [],
+   "rank_band": "1-10",
+   "rank_order": 0
   },
   {
    "id": "76c19ad131c51fe6",
@@ -3561,7 +3671,9 @@
     "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [],
-   "tools": []
+   "tools": [],
+   "rank_band": "",
+   "rank_order": 99
   },
   {
    "id": "af1bc63556fc526d",
@@ -3758,7 +3870,9 @@
    "fields": [
     "氣候環境"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "11-50",
+   "rank_order": 1
   },
   {
    "id": "25fa9c5f7f3b720e",
@@ -3790,7 +3904,9 @@
    "fields": [
     "醫療"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "11-50",
+   "rank_order": 1
   },
   {
    "id": "27970af26e4a0a11",
@@ -3826,7 +3942,9 @@
    "tools": [
     "Python",
     "C++/C#"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "61af012e767ad883",
@@ -3860,7 +3978,9 @@
     "氣候環境",
     "教育"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "5331d863964e6617",
@@ -3894,7 +4014,9 @@
     "氣候環境",
     "教育"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "ec30afb02bfbf37a",
@@ -3928,7 +4050,9 @@
     "氣候環境",
     "教育"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "96f62922c863d2b0",
@@ -3965,7 +4089,9 @@
    "tools": [
     "Python",
     "R"
-   ]
+   ],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "9bff8fc818496027",
@@ -4110,7 +4236,9 @@
    "fields": [
     "生命科學"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "5085290d1337bb5f",
@@ -4137,7 +4265,9 @@
    "topic_score": 0,
    "topics": [],
    "fields": [],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "643210a6d9e7156e",
@@ -4396,7 +4526,9 @@
    ],
    "tools": [
     "Python"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "9fd217db4c577cae",
@@ -4430,7 +4562,9 @@
     "材料化學",
     "教育"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "e5440a21b23d9ab6",
@@ -4840,7 +4974,9 @@
    "fields": [
     "教育"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "9c0d34e9676d4f20",
@@ -4874,7 +5010,9 @@
    ],
    "tools": [
     "工作坊"
-   ]
+   ],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "23e33721e8f79db6",
@@ -4908,7 +5046,9 @@
    ],
    "tools": [
     "工作坊"
-   ]
+   ],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "5f47dee572f742d5",
@@ -4935,7 +5075,9 @@
    "topic_score": 0,
    "topics": [],
    "fields": [],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "f70ea59df58f094a",
@@ -5410,7 +5552,9 @@
    ],
    "tools": [
     "實驗室實驗"
-   ]
+   ],
+   "rank_band": "11-50",
+   "rank_order": 1
   },
   {
    "id": "dbcacbbb259f9b82",
@@ -5450,7 +5594,9 @@
     "Python",
     "MATLAB",
     "C++/C#"
-   ]
+   ],
+   "rank_band": "11-50",
+   "rank_order": 1
   },
   {
    "id": "b5e1f9b7a0cdf68d",
@@ -5489,7 +5635,9 @@
    "tools": [
     "Python",
     "實驗室實驗"
-   ]
+   ],
+   "rank_band": "11-50",
+   "rank_order": 1
   },
   {
    "id": "1248a2d92d4b8122",
@@ -5560,7 +5708,9 @@
     "材料化學",
     "教育"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "7359e44324497f3d",
@@ -5641,7 +5791,9 @@
    ],
    "tools": [
     "Python"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "55de530d5a08da56",
@@ -6009,7 +6161,9 @@
    "fields": [],
    "tools": [
     "工作坊"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "f6ab24de9011acc2",
@@ -6086,7 +6240,9 @@
     "教育",
     "語言"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "d96a84e01e81d640",
@@ -6120,7 +6276,9 @@
     "教育",
     "語言"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "c0903e3dc4a58d1f",
@@ -6193,7 +6351,9 @@
    ],
    "tools": [
     "實驗室實驗"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "a39a3d5b9ac5a518",
@@ -6230,7 +6390,9 @@
    ],
    "tools": [
     "Python"
-   ]
+   ],
+   "rank_band": "11-50",
+   "rank_order": 1
   },
   {
    "id": "c1831a4a307b7981",
@@ -6267,7 +6429,9 @@
    ],
    "tools": [
     "訪談"
-   ]
+   ],
+   "rank_band": "201-500",
+   "rank_order": 4
   },
   {
    "id": "17568ee1e33392d8",
@@ -6301,7 +6465,9 @@
     "教育",
     "數學最佳化"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "2bff3216dd852922",
@@ -6335,7 +6501,9 @@
    ],
    "tools": [
     "問卷調查"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "9bbbea3cc3586945",
@@ -6369,6 +6537,8 @@
     "社會心理"
    ],
    "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3,
    "also_at": [
     {
      "source": "Stockholms universitet",
@@ -6409,7 +6579,9 @@
    ],
    "tools": [
     "工作坊"
-   ]
+   ],
+   "rank_band": "201-500",
+   "rank_order": 4
   },
   {
    "id": "07d82b8bf9ae6608",
@@ -6444,7 +6616,9 @@
    ],
    "tools": [
     "工作坊"
-   ]
+   ],
+   "rank_band": "201-500",
+   "rank_order": 4
   },
   {
    "id": "c16b507750db94e9",
@@ -7221,7 +7395,9 @@
     "醫療",
     "生命科學"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "f131c1420b824935",
@@ -7282,7 +7458,9 @@
     "材料化學",
     "量子"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "23fd0b3fc2a4eb21",
@@ -7385,7 +7563,9 @@
    "fields": [
     "機器學習"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "",
+   "rank_order": 99
   },
   {
    "id": "a9db0c3bd954c17c",
@@ -8360,7 +8540,9 @@
    "tools": [
     "工作坊",
     "田野／民族誌"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "ee791506b7ded80f",
@@ -8560,7 +8742,9 @@
     "訪談",
     "工作坊",
     "混合方法"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "707ce4a8fe401109",
@@ -8596,7 +8780,9 @@
    ],
    "tools": [
     "Python"
-   ]
+   ],
+   "rank_band": "11-50",
+   "rank_order": 1
   },
   {
    "id": "0c93ffc67a06e952",
@@ -8749,7 +8935,9 @@
    ],
    "tools": [
     "Python"
-   ]
+   ],
+   "rank_band": "未列入",
+   "rank_order": 5
   },
   {
    "id": "1effabfc93e195e4",
@@ -8788,7 +8976,9 @@
     "神經科學",
     "生命科學"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "未列入",
+   "rank_order": 5
   },
   {
    "id": "f7b5769f9280dd7f",
@@ -9027,7 +9217,9 @@
     "生命科學",
     "農業食品"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "",
+   "rank_order": 99
   },
   {
    "id": "dab08e841e85277e",
@@ -10271,7 +10463,9 @@
     "氣候環境",
     "生命科學"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "046206074190610c",
@@ -10305,7 +10499,9 @@
     "經濟商管",
     "數學最佳化"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "201-500",
+   "rank_order": 4
   },
   {
    "id": "6cf932fb1495ecd9",
@@ -10513,6 +10709,8 @@
    "topics": [],
    "fields": [],
    "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3,
    "also_at": [
     {
      "source": "Stockholms universitet",
@@ -10551,7 +10749,9 @@
    "fields": [
     "社會心理"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "d5ceb815aa65813d",
@@ -10582,7 +10782,9 @@
    "topic_score": 0,
    "topics": [],
    "fields": [],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "6faa3a5e66f8c15c",
@@ -10720,7 +10922,9 @@
    ],
    "tools": [
     "工作坊"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "c0360adb4f88d640",
@@ -10814,7 +11018,9 @@
     "醫療",
     "教育"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "201-500",
+   "rank_order": 4
   },
   {
    "id": "a2ee737948470364",
@@ -11054,7 +11260,9 @@
    ],
    "tools": [
     "模擬建模"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "2929558e08bcccf9",
@@ -11088,7 +11296,9 @@
    ],
    "tools": [
     "模擬建模"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "6172f5ff6abee793",
@@ -11126,7 +11336,9 @@
    ],
    "tools": [
     "實驗室實驗"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "b9d1069d333239b7",
@@ -11160,7 +11372,9 @@
     "機器學習",
     "教育"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "2ee0b6f56e06ac78",
@@ -11197,7 +11411,9 @@
     "機器學習",
     "教育"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "900f55a2638cccb5",
@@ -11240,7 +11456,9 @@
    ],
    "tools": [
     "原型製作"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "dda429d648ca75c2",
@@ -11281,7 +11499,9 @@
    ],
    "tools": [
     "原型製作"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "f8d53890372011f1",
@@ -11322,7 +11542,9 @@
    ],
    "tools": [
     "原型製作"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "18756f777ef8d544",
@@ -11355,7 +11577,9 @@
    "fields": [
     "教育"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "61d1be98b1edaf21",
@@ -11557,7 +11781,9 @@
    "fields": [
     "量子"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "67960fcb220ef1fe",
@@ -11691,7 +11917,9 @@
    ],
    "tools": [
     "Python"
-   ]
+   ],
+   "rank_band": "201-500",
+   "rank_order": 4
   },
   {
    "id": "e2fb338187d6e856",
@@ -11873,7 +12101,9 @@
    "topic_score": 0,
    "topics": [],
    "fields": [],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "1aa0f1198c9661e2",
@@ -11904,7 +12134,9 @@
    "topic_score": 0,
    "topics": [],
    "fields": [],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "3782322684a751a2",
@@ -12000,7 +12232,9 @@
    "topic_score": 0,
    "topics": [],
    "fields": [],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "8a36beebcfa52f33",
@@ -12031,7 +12265,9 @@
    "topic_score": 0,
    "topics": [],
    "fields": [],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "d3c5c36635c3a957",
@@ -12065,7 +12301,9 @@
     "VR XR AR"
    ],
    "fields": [],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "d8ad3f5d7a4cd126",
@@ -12098,7 +12336,9 @@
    "fields": [
     "量子"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "f7b3251b8b1e8a48",
@@ -12172,7 +12412,9 @@
    "topic_score": 0,
    "topics": [],
    "fields": [],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "dd5b6bf19e6cd2c7",
@@ -12281,7 +12523,9 @@
    "tools": [
     "PyTorch/TensorFlow",
     "工作坊"
-   ]
+   ],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "010a3e1116ef57cd",
@@ -12314,7 +12558,9 @@
    "fields": [
     "能源"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "4e5adc2a4862d8b6",
@@ -12354,7 +12600,9 @@
    "tools": [
     "Python",
     "MATLAB"
-   ]
+   ],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "42db6ec81a498609",
@@ -12474,7 +12722,9 @@
     "氣候環境",
     "法律政策"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "0add7e760cd1c16e",
@@ -12582,7 +12832,9 @@
    "fields": [
     "材料化學"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "77f9e75bed2f4b06",
@@ -12620,7 +12872,9 @@
    ],
    "tools": [
     "Python"
-   ]
+   ],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "fc83a1ae0ca916a1",
@@ -12722,7 +12976,9 @@
    "topic_score": 0,
    "topics": [],
    "fields": [],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "2a3b7e96c4c7897d",
@@ -12755,7 +13011,9 @@
    "fields": [
     "機器人"
    ],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "abf6a6f881237c37",
@@ -12908,7 +13166,9 @@
    "topic_score": 0,
    "topics": [],
    "fields": [],
-   "tools": []
+   "tools": [],
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "d6b8bdb2eb92b6a8",
@@ -12952,7 +13212,9 @@
    "tools": [
     "Python",
     "SPSS/Stata"
-   ]
+   ],
+   "rank_band": "1-10",
+   "rank_order": 0
   },
   {
    "id": "637b20a9a02625ad",
@@ -12989,7 +13251,9 @@
    "tools": [
     "Python",
     "MATLAB"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "6f37ca3e860d996d",
@@ -13030,7 +13294,9 @@
    "tools": [
     "MATLAB",
     "模擬建模"
-   ]
+   ],
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "2a1d2a31b9c690b7",
