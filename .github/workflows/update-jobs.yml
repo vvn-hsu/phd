@@ -21,6 +21,10 @@ on:
         description: "這次也寄出摘要信（排程本來就會寄）"
         type: boolean
         default: false
+      probe_rankings:
+        description: "只測試排名來源解析得出來嗎"
+        type: boolean
+        default: false
   push:
     paths:
       - "scraper/**"
@@ -58,8 +62,12 @@ jobs:
           SNIFF_TEXT: ${{ inputs.sniff_text && '1' || '' }}
         run: python scraper/sniff.py $SNIFF_URLS
 
+      - name: 測試排名來源
+        if: ${{ inputs.probe_rankings == true }}
+        run: python scraper/rankings.py --probe
+
       - name: 抓取職缺
-        if: ${{ inputs.sniff == '' }}
+        if: ${{ inputs.sniff == '' && inputs.probe_rankings != true }}
         run: |
           if [ "${{ inputs.probe }}" = "true" ]; then
             python scraper/run.py --probe
@@ -68,7 +76,7 @@ jobs:
           fi
 
       - name: 產生每日摘要
-        if: ${{ inputs.probe != true && inputs.sniff == '' }}
+        if: ${{ inputs.probe != true && inputs.sniff == '' && inputs.probe_rankings != true }}
         env:
           SITE_URL: https://vvn-hsu.github.io/phd/
         run: python scraper/mail.py --dry-run
@@ -90,7 +98,7 @@ jobs:
         run: python scraper/mail.py
 
       - name: 提交更新後的資料
-        if: ${{ inputs.probe != true && inputs.sniff == '' }}
+        if: ${{ inputs.probe != true && inputs.sniff == '' && inputs.probe_rankings != true }}
         run: |
           if [ -z "$(git status --porcelain data)" ]; then
             echo "資料沒有變化，不提交。"
