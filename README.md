@@ -84,7 +84,10 @@ AcademicTransfer 和 EURAXESS——因為 HCI 的缺常常排不進「最新職�
 | EURAXESS（全歐洲，翻 3 頁） | 開，但不穩：翻頁會被 429，回來的常常是非博士的公告 |
 | Academic Positions（彙整站） | 關：卡片文字會整團變成標題，多半是招生廣告 |
 | THE Unijobs（英國為主，3 個學科分類＋4 組 HCI 關鍵字） | 開 |
-| jobs.ac.uk、FindAPhD | 關：搜尋結果要 JS 才渲染，HTML 裡只有幾則贊助職缺 |
+| University of Glasgow（jobs.gla.ac.uk） | 開，但板上多半是教職；studentship 不在上面 |
+| University of Edinburgh | 沒加：職缺清單在 Oracle Recruiting 上，要 JS |
+| UCL、FindAPhD | 沒加：從 GitHub Actions 連過去直接 403（機房 IP 被擋，換 UA 無效） |
+| jobs.ac.uk | 關：搜尋結果要 JS 才渲染，HTML 裡只有幾則贊助職缺 |
 | ETH Zürich | 開 |
 | KTH（kth.varbi.com） | 開 |
 | Uppsala、Stockholm、Lund、Umeå（都是 Varbi，跟 KTH 同一套版型） | 開 |
