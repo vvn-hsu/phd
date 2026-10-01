@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-01T19:14:15+00:00",
+ "generated_at": "2026-10-01T19:15:26+00:00",
  "date": "2026-10-01",
  "topic_thresholds": {
   "broad": 2,
@@ -49,6 +49,16 @@
    "status": "ok",
    "count": 2,
    "url_used": "https://euraxess.ec.europa.eu/jobs/search?sort%5Bname%5D=created&sort%5Bdirection%5D=DESC&f%5B0%5D=job_research_profile%3A447",
+   "error": ""
+  },
+  {
+   "id": "glasgow",
+   "name": "University of Glasgow",
+   "country": "UK",
+   "homepage": "https://www.jobs.gla.ac.uk/jobs",
+   "status": "empty",
+   "count": 0,
+   "url_used": "2 個搜尋網址",
    "error": ""
   },
   {
