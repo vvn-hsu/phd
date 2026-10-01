@@ -30,6 +30,9 @@ def shape(path: str) -> str:
 def sniff(url: str) -> None:
     print("=" * 78)
     print("URL:", url)
+    if os.environ.get("SNIFF_UA"):
+        run.SESSION.headers["User-Agent"] = os.environ["SNIFF_UA"]
+        print("  （改用 UA：", os.environ["SNIFF_UA"][:60], "）")
     try:
         html = run.fetch(url, 30)
     except Exception as exc:  # noqa: BLE001
