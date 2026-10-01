@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-10-01T11:25:01+00:00",
+ "generated_at": "2026-10-01T19:03:11+00:00",
  "date": "2026-10-01",
  "topic_thresholds": {
   "broad": 2,
   "strict": 6
  },
  "counts": {
-  "open": 131,
+  "open": 129,
   "new_today": 22,
-  "closed_kept": 247,
-  "hci_broad": 17
+  "closed_kept": 255,
+  "hci_broad": 18
  },
  "sources": [
   {
@@ -18,7 +18,7 @@
    "country": "NL",
    "homepage": "https://www.academictransfer.com/en/jobs?q=human-computer+interaction",
    "status": "ok",
-   "count": 33,
+   "count": 32,
    "url_used": "14 個搜尋網址",
    "error": ""
   },
@@ -28,7 +28,7 @@
    "country": "NL",
    "homepage": "https://www.academictransfer.com/en/jobs/",
    "status": "ok",
-   "count": 4,
+   "count": 2,
    "url_used": "https://www.academictransfer.com/en/jobs/?category=phd&sort=date",
    "error": ""
   },
@@ -38,7 +38,7 @@
    "country": "EU",
    "homepage": "https://euraxess.ec.europa.eu/jobs/search",
    "status": "ok",
-   "count": 3,
+   "count": 2,
    "url_used": "https://euraxess.ec.europa.eu/jobs/search?sort%5Bname%5D=created&sort%5Bdirection%5D=DESC&f%5B0%5D=job_research_profile%3A447",
    "error": ""
   },
@@ -78,7 +78,7 @@
    "country": "SE",
    "homepage": "https://uu.varbi.com/en/",
    "status": "ok",
-   "count": 21,
+   "count": 22,
    "url_used": "https://uu.varbi.com/en/",
    "error": ""
   },
@@ -141,13 +141,8 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
-   "score_version": 7,
-   "query_ok": false,
-   "employment": "TEMPORARY",
    "enrich_attempts": 1,
+   "score_version": 7,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -163,6 +158,110 @@
      "url": "https://www.academictransfer.com/en/jobs/364318/promovendus-voor-het-project-magic-more-than-a-tool-the-relational-meaning-of-embodied-agents-in-long-term-care/"
     }
    ]
+  },
+  {
+   "id": "6232775a9e774347",
+   "source": "euraxess",
+   "source_name": "EURAXESS（全歐洲）",
+   "university": "Swansea University",
+   "country": "EU",
+   "title": "Physics & Chemistry: PhD Studentship in Physical Chemistry",
+   "url": "https://euraxess.ec.europa.eu/jobs/469828",
+   "city": "Swansea Website",
+   "location": "",
+   "department": "",
+   "posted": "2026-10-01",
+   "deadline": "2026-10-13",
+   "summary": "Key Information Open to: UK fee eligible applicants only Funding Providers: Leverhulme Trust Research Leadership Award Subject Area: Physics & Chemistry",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-01",
+   "last_seen": "2026-10-01",
+   "status": "open",
+   "topic_score": 2,
+   "topics": [
+    "無障礙"
+   ],
+   "fields": [
+    "材料化學"
+   ],
+   "tools": []
+  },
+  {
+   "id": "f9fe9bdfe56aee25",
+   "source": "academictransfer",
+   "source_name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
+   "university": "University of Groningen",
+   "country": "NL",
+   "title": "PhD position on materials development for electrically-driven water treatment processes",
+   "url": "https://www.academictransfer.com/en/jobs/364404/phd-position-on-materials-development-for-electrically-driven-water-treatment-processes/",
+   "city": "Groningen",
+   "location": "Groningen, NL",
+   "department": "",
+   "posted": "2026-10-01",
+   "deadline": "2026-10-30",
+   "summary": "In the Engineering and Technology Institute Groningen (ENTEG), we are looking for a talented and motivated PhD student for the development and evaluation of advanced electrode materials and cell component development for sustainable electrochemical water purification technologies. What are you going to do? In many industrial processes, chemicals are added to treat water, clean installations or sep",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 7,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-01",
+   "last_seen": "2026-10-01",
+   "status": "open",
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "材料化學",
+    "氣候環境"
+   ],
+   "tools": []
+  },
+  {
+   "id": "5feb7c4b6f7444df",
+   "source": "academictransfer",
+   "source_name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
+   "university": "University of Groningen",
+   "country": "NL",
+   "title": "PhD position on electrochemical synthesis of ammonia in ceramic membrane reactors",
+   "url": "https://www.academictransfer.com/en/jobs/364403/phd-position-on-electrochemical-synthesis-of-ammonia-in-ceramic-membrane-reactors/",
+   "city": "Groningen",
+   "location": "Groningen, NL",
+   "department": "",
+   "posted": "2026-10-01",
+   "deadline": "2026-10-30",
+   "summary": "In the Engineering and Technology Institute Groningen (ENTEG), we are looking for a talented and motivated PhD student for the development and evaluation of (electro)catalysts for electrochemical ammonia synthesis from sustainable sources in ceramic electrochemical reactors. What are you going to do? Ammonia is not only a key-chemical for sustaining global population, but also an intriguing carbon",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 7,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-01",
+   "last_seen": "2026-10-01",
+   "status": "open",
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "材料化學",
+    "氣候環境"
+   ],
+   "tools": []
   },
   {
    "id": "11a350417840d413",
@@ -189,7 +288,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": [],
    "fields": [],
@@ -212,15 +311,12 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
+   "enrich_attempts": 1,
    "page_score": 2,
    "page_topics": [
     "VR XR AR"
    ],
-   "page_tools": [],
    "score_version": 7,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 1,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -261,7 +357,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": [],
    "fields": [
@@ -290,15 +386,11 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
+   "enrich_attempts": 1,
+   "score_version": 7,
    "page_tools": [
     "R"
    ],
-   "score_version": 7,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 1,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -336,13 +428,98 @@
    "enrich_attempts": 1,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": [],
    "fields": [
     "生命科學"
    ],
    "tools": []
+  },
+  {
+   "id": "26b58f00e9a645b7",
+   "source": "academictransfer_hci",
+   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
+   "university": "Delft University of Technology (TU Delft)",
+   "country": "NL",
+   "title": "PhD Position in Decoding Environmental History from Microorganisms for Living Sensors and Memory",
+   "url": "https://www.academictransfer.com/en/jobs/364394/phd-position-in-decoding-environmental-history-from-microorganisms-for-living-sensors-and-memory/",
+   "city": "Delft",
+   "location": "Delft, NL",
+   "department": "",
+   "posted": "2026-10-01",
+   "deadline": "2026-11-15",
+   "summary": "Help pave the future for living sensing systems by decoding microorganisms' encoding of environmental history. Job description Background: Living microorganisms could transform how we sense and store information, replacing single-use electronics with inherently biodegradable systems that track environmental conditions over time. Even basic electronic sensing systems today require sensors, microcon",
+   "title_guessed": false,
+   "found_via": "interaction design",
+   "topic_boost": 3,
+   "page_score": 2,
+   "page_topics": [
+    "設計研究"
+   ],
+   "page_tools": [
+    "Arduino",
+    "原型製作"
+   ],
+   "score_version": 7,
+   "query_ok": true,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-01",
+   "last_seen": "2026-10-01",
+   "status": "open",
+   "topic_score": 5,
+   "topics": [
+    "設計研究",
+    "HCI 關鍵字搜尋"
+   ],
+   "fields": [
+    "氣候環境"
+   ],
+   "tools": [
+    "Arduino",
+    "原型製作"
+   ]
+  },
+  {
+   "id": "8aa9f7178724207f",
+   "source": "euraxess",
+   "source_name": "EURAXESS（全歐洲）",
+   "university": "NTNU Norwegian University of Science and Technology",
+   "country": "EU",
+   "title": "PhD Candidate in Neuroscience: Brain Architecture and Sensory Processing in the Zebrafish Forebrain",
+   "url": "https://euraxess.ec.europa.eu/jobs/469840",
+   "city": "Trondheim Postal",
+   "location": "",
+   "department": "",
+   "posted": "2026-10-01",
+   "deadline": "2026-10-30",
+   "summary": "This is NTNU NTNU is a broad-based university with a technical-scientific profile and a focus in professional education. The university is located in three cities with headquarters in Trondheim.",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "Blender",
+    "Python"
+   ],
+   "score_version": 7,
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-01",
+   "last_seen": "2026-10-01",
+   "status": "open",
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "神經科學",
+    "教育",
+    "建築城市"
+   ],
+   "tools": [
+    "Blender",
+    "Python"
+   ]
   },
   {
    "id": "2228732641c9f865",
@@ -370,7 +547,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
-   "status": "open",
+   "status": "closed",
    "topic_score": 2,
    "topics": [
     "無障礙"
@@ -406,7 +583,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": [],
    "fields": [
@@ -442,7 +619,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": [],
    "fields": [
@@ -469,16 +646,12 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
+   "enrich_attempts": 1,
+   "score_version": 7,
    "page_tools": [
     "工作坊",
     "田野／民族誌"
    ],
-   "score_version": 7,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 1,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -515,7 +688,7 @@
    "page_topics": [],
    "page_tools": [],
    "score_version": 7,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -549,7 +722,7 @@
     "工作坊"
    ],
    "score_version": 7,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -585,7 +758,7 @@
    ],
    "page_tools": [],
    "score_version": 7,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -594,6 +767,36 @@
    "fields": [
     "社會心理"
    ],
+   "tools": []
+  },
+  {
+   "id": "85011fcf1003de8e",
+   "source": "uu",
+   "source_name": "Uppsala universitet",
+   "university": "",
+   "country": "SE",
+   "title": "Doktorand i resilienta elkraftsystem",
+   "url": "https://uu.varbi.com/en/what:job/jobID:974190/",
+   "city": "Uppsala",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-11-12",
+   "summary": "Elektrifiering och digitalisering tillhör framtidens största områden för omställning till hållbara samhällen. Institutionen för elektroteknik bedriver framgångsrik forskning och utbildning in",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 7,
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-01",
+   "last_seen": "2026-10-01",
+   "status": "open",
+   "topic_score": 0,
+   "topics": [],
+   "fields": [],
    "tools": []
   },
   {
@@ -622,7 +825,7 @@
     "C++/C#"
    ],
    "score_version": 7,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -664,7 +867,7 @@
     "C++/C#"
    ],
    "score_version": 7,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -701,7 +904,7 @@
    ],
    "page_tools": [],
    "score_version": 7,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -739,7 +942,7 @@
     "模擬建模"
    ],
    "score_version": 7,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -775,7 +978,7 @@
    ],
    "page_tools": [],
    "score_version": 7,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -809,7 +1012,7 @@
    ],
    "page_tools": [],
    "score_version": 7,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -844,7 +1047,7 @@
    ],
    "page_tools": [],
    "score_version": 7,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -880,7 +1083,7 @@
    ],
    "page_tools": [],
    "score_version": 7,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -914,7 +1117,7 @@
    ],
    "page_tools": [],
    "score_version": 7,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -1063,11 +1266,15 @@
    "title_guessed": false,
    "found_via": "usability",
    "topic_boost": 3,
-   "enrich_attempts": 1,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python"
    ],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-30",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -1183,11 +1390,15 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 1,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "工作坊"
    ],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-30",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -1328,12 +1539,16 @@
    "title_guessed": false,
    "found_via": "usability",
    "topic_boost": 3,
-   "enrich_attempts": 1,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "參與式研究"
    ],
+   "score_version": 7,
+   "query_ok": false,
+   "employment": "FULL_TIME",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-30",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -1374,7 +1589,7 @@
    ],
    "page_tools": [],
    "score_version": 7,
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "first_seen": "2026-09-30",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -1411,7 +1626,7 @@
     "Python"
    ],
    "score_version": 7,
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "first_seen": "2026-09-30",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -1453,7 +1668,7 @@
     "實驗室實驗"
    ],
    "score_version": 7,
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "first_seen": "2026-09-30",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -1493,7 +1708,7 @@
     "Python"
    ],
    "score_version": 7,
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "first_seen": "2026-09-30",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -1746,11 +1961,8 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
-   "score_version": 7,
    "enrich_attempts": 3,
+   "score_version": 7,
    "first_seen": "2026-09-29",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -1780,15 +1992,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
+   "score_version": 7,
    "page_tools": [
     "R"
    ],
-   "score_version": 7,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-29",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -1819,14 +2031,12 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
+   "enrich_attempts": 3,
+   "score_version": 7,
    "page_tools": [
     "MATLAB",
     "模擬建模"
    ],
-   "score_version": 7,
-   "enrich_attempts": 3,
    "first_seen": "2026-09-29",
    "last_seen": "2026-10-01",
    "status": "open",
@@ -8192,7 +8402,7 @@
    ],
    "first_seen": "2026-09-11",
    "last_seen": "2026-10-01",
-   "status": "open",
+   "status": "closed",
    "topic_score": 1,
    "topics": [
     "HCI 關鍵字搜尋（弱）"
@@ -9445,7 +9655,7 @@
    "score_version": 7,
    "first_seen": "2026-09-11",
    "last_seen": "2026-10-01",
-   "status": "open",
+   "status": "closed",
    "topic_score": 1,
    "topics": [
     "HCI 關鍵字搜尋（弱）"
