@@ -82,12 +82,33 @@ def fresh_enough(existing: dict) -> bool:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--probe", action="store_true")
+    ap.add_argument("--dump", action="store_true", help="印出 wikitext 的表格片段，用來看格式")
     ap.add_argument("--force", action="store_true")
     args = ap.parse_args()
 
     existing = load_existing()
     if not args.probe and not args.force and fresh_enough(existing):
         print(f"排名資料還很新（{existing.get('fetched_at')}），跳過。")
+        return 0
+
+    if args.dump:
+        for label, page in SOURCES:
+            try:
+                text = fetch_wikitext(page)
+            except Exception as exc:  # noqa: BLE001
+                print(f"[FAIL] {label}: {exc}")
+                continue
+            print("=" * 70)
+            print(f"{label}（{page}）長度 {len(text)}，表格數 {text.count('{|')}")
+            idx = text.find("{|")
+            while idx != -1:
+                chunk = text[idx:idx + 900]
+                if re.search(r"rank|Rank", chunk):
+                    print(chunk.replace("\n", "\n  ")[:900])
+                    break
+                idx = text.find("{|", idx + 2)
+            else:
+                print(text[:600])
         return 0
 
     tables: dict[str, dict[str, int]] = {}

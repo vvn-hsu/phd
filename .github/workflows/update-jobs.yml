@@ -69,7 +69,7 @@ jobs:
 
       - name: 測試排名來源
         if: ${{ inputs.probe_rankings == true }}
-        run: python scraper/rankings.py --probe
+        run: python scraper/rankings.py --dump && python scraper/rankings.py --probe
 
       - name: 抓取職缺
         if: ${{ inputs.sniff == '' && inputs.probe_rankings != true }}
