@@ -463,13 +463,22 @@ def page_fallback_fields(html: str) -> dict:
 
 # --------------------------------------------------------------------------- adapters
 
+SALARY_NOISE = re.compile(
+    r"\s+(Grade\s*\d|\u00a3[\d,]|\u20ac[\d,]|per annum|Applications for this post"
+    r"|Job Purpose|The University of)", re.I)
+
+
 def tidy_title(text: str) -> str:
-    """列表頁的錨點文字常常把地點、工時、日期一起塞進來，切掉後面那些。"""
+    """列表頁的錨點文字常常把地點、工時、薪資一起塞進來，切掉後面那些。"""
     text = clean(text)
     first = text.split("|")[0].strip(" ,;·-")
     if len(first) >= 12:
         text = first
-    return text[:160]
+    # 英國的職缺板習慣把薪級和職務說明接在標題後面
+    cut = SALARY_NOISE.search(text)
+    if cut and cut.start() >= 12:
+        text = text[: cut.start()]
+    return text.strip(" ,;·-")[:160]
 
 
 def title_from_slug(url: str) -> str:

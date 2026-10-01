@@ -125,6 +125,9 @@ def main():
     check("沒有 JSON-LD 時學校先留空（補抓詳細頁後才退回來源名）",
           by_title.get("PhD Position on Floating Wind Turbines", {}).get("university"), "")
 
+    check("標題切掉英國職缺板的薪級",
+          run.tidy_title("Research Assistant/Associate Grade 6 £33,951 per annum"),
+          "Research Assistant/Associate")
     check("標題切掉尾巴的雜訊",
           run.tidy_title("PhD Position Movement Biomarkers 100%, Zurich, fixed-term | ETH"),
           "PhD Position Movement Biomarkers 100%, Zurich, fixed-term")

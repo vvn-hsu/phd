@@ -108,6 +108,23 @@ sources:
   # 它的列表是伺服器渲染的，抓得到；jobs.ac.uk 和 FindAPhD 都要 JS。
   # 注意英國的博士缺多半是「studentship」：綁在某個計畫／DTP／CDT 上、
   # 有自己的申請截止日，不一定會出現在職缺板上，所以這裡看到的只是一部分。
+  # Glasgow 的職缺板是伺服器渲染的，抓得到。注意它放的主要是教職和研究員，
+  # 博士 studentship 多半在 FindAPhD（403 擋爬蟲），所以這裡命中的會很少。
+  - id: glasgow
+    name: University of Glasgow
+    country: UK
+    city: Glasgow
+    homepage: https://www.jobs.gla.ac.uk/jobs
+    type: links
+    enabled: true
+    mode: all
+    delay: 1
+    urls:
+      - https://www.jobs.gla.ac.uk/jobs
+      - https://jobs.gla.ac.uk/
+    link_pattern: 'jobs\.gla\.ac\.uk/job/'
+    enrich: jsonld
+
   - id: the_unijobs
     name: THE Unijobs（英國為主）
     country: UK
