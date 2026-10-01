@@ -160,6 +160,12 @@ def main():
           run.score_topics("augmented reality and mixed reality study")[1], ["VR XR AR"])
     check("同一個標籤只算一次",
           run.score_topics("augmented reality and mixed reality study")[0], 2)
+    check("排名區間：TU Delft", run.rank_of("Delft University of Technology (TU Delft)")[0], "11-50")
+    check("排名區間：瑞典文校名也對得上", run.rank_of("Lunds universitet")[0], "51-100")
+    check("排名區間：對不上就留空", run.rank_of("某個沒聽過的學校")[0], "")
+    check("排名排序：名次好的序號小",
+          run.rank_of("ETH Zürich")[1] < run.rank_of("Umeå universitet")[1], True)
+
     check("工具／方法標籤",
           run.tool_tags("We use Unity and Python, run semi-structured interviews "
                         "and co-design workshops"),

@@ -1,0 +1,69 @@
+# 學校排名（手動維護）
+#
+# 為什麼是手動維護：QS／THE 官網要 JS 才渲染、也不給免費 API；維基百科的
+# 排名條目只有前 25 名的表格（已經實測過），對 TU Delft、KTH、Lund 這種
+# 名次完全不夠用。所以這裡用「區間」而不是精確名次——區間我敢寫，
+# 精確到個位數的名次每年都在動，寫下去只會是假精確。
+#
+# 想要精確名次的話：在任何一條加 `qs: 49` 這樣的欄位，網頁會優先顯示它。
+#
+# key 是比對學校名稱用的正則（不分大小寫，部分比對）。
+# band 只能用下面這幾個值，網頁依這個順序排序。
+
+source: QS World University Rankings（世界綜合排名，區間為人工歸類）
+bands: ["1-10", "11-50", "51-100", "101-200", "201-500", "未列入"]
+
+universities:
+  # 1-10
+  "ETH Z[uü]rich|Swiss Federal Institute of Technology": "1-10"
+  "University College London|\\bUCL\\b": "1-10"
+
+  # 11-50
+  "Technical University of Munich|TU M[uü]nchen|Technische Universit[aä]t M[uü]nchen": "11-50"
+  "University of Edinburgh": "11-50"
+  "Delft University of Technology|TU Delft": "11-50"
+  "University of Amsterdam|UvA": "11-50"
+
+  # 51-100
+  "KU Leuven|Katholieke Universiteit Leuven": "51-100"
+  "KTH Royal Institute|Kungliga Tekniska": "51-100"
+  "University of Glasgow": "51-100"
+  "Lunds universitet|Lund University": "51-100"
+  "University of Manchester": "51-100"
+
+  # 101-200
+  "Utrecht University|Universiteit Utrecht": "101-200"
+  "Uppsala universitet|Uppsala University": "101-200"
+  "Leiden University|Universiteit Leiden": "101-200"
+  "Wageningen University": "101-200"
+  "Eindhoven University of Technology|TU/e": "101-200"
+  "University of Groningen|Rijksuniversiteit Groningen": "101-200"
+  "Chalmers": "101-200"
+  "Stockholms universitet|Stockholm University": "101-200"
+  "University of Copenhagen|K[oø]benhavns Universitet": "101-200"
+  "Technical University of Denmark|\\bDTU\\b": "101-200"
+  "Aalto": "101-200"
+  "University of Helsinki": "101-200"
+
+  # 201-500
+  "Vrije Universiteit Amsterdam|\\bVU\\b": "201-500"
+  "Maastricht University": "201-500"
+  "Radboud Universit": "201-500"
+  "University of Twente": "201-500"
+  "Tilburg University": "201-500"
+  "Erasmus (MC|University)": "201-500"
+  "Link[oö]pings universitet|Link[oö]ping University": "201-500"
+  "Ume[aå] universitet|Ume[aå] University": "201-500"
+  "University of Luxembourg": "201-500"
+  "University of Vienna|Universit[aä]t Wien": "201-500"
+  "University of Basel": "201-500"
+  "University of Gothenburg|G[oö]teborgs universitet": "201-500"
+
+  # 未列入（綜合排名裡沒有，或本來就不是綜合大學）
+  "Open Universiteit": "未列入"
+  "Amsterdam UMC": "未列入"
+  "Naturalis": "未列入"
+  "AMOLF": "未列入"
+  "Max Planck|IMPRS": "未列入"
+  "Vlerick": "未列入"
+  "Hochschule Luzern": "未列入"

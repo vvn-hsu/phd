@@ -28,6 +28,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data", "jobs.json")
 CONFIG = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sources.yml")
 TOPICS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "topics.yml")
+RANKINGS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "rankings.yml")
 
 UA = (
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -219,6 +220,49 @@ def dedupe_keep_order(items) -> list[str]:
         if item not in out:
             out.append(item)
     return out
+
+
+_RANK_RULES: list[tuple[re.Pattern, str, int | None]] = []
+_RANK_BANDS: list[str] = []
+_RANK_SOURCE = ""
+
+
+def load_rankings(path: str = RANKINGS) -> None:
+    """讀 rankings.yml，編成（正則, 區間, 精確名次）。"""
+    global _RANK_RULES, _RANK_BANDS, _RANK_SOURCE
+    if _RANK_RULES:
+        return
+    try:
+        with open(path, encoding="utf-8") as fh:
+            config = yaml.safe_load(fh) or {}
+    except OSError:
+        return
+    _RANK_BANDS = list(config.get("bands") or [])
+    _RANK_SOURCE = str(config.get("source") or "")
+    rules = []
+    for pattern, value in (config.get("universities") or {}).items():
+        if isinstance(value, dict):
+            band, exact = str(value.get("band", "")), value.get("qs")
+        else:
+            band, exact = str(value), None
+        try:
+            rules.append((re.compile(pattern, re.I), band,
+                          int(exact) if exact is not None else None))
+        except (re.error, ValueError):
+            continue
+    _RANK_RULES = rules
+
+
+def rank_of(university: str) -> tuple[str, int, int | None]:
+    """回傳（排名區間, 排序用的序號, 精確名次或 None）。對不上就是空的。"""
+    load_rankings()
+    if not university:
+        return "", 99, None
+    for pattern, band, exact in _RANK_RULES:
+        if pattern.search(university):
+            order = _RANK_BANDS.index(band) if band in _RANK_BANDS else 98
+            return band, order, exact
+    return "", 99, None
 
 
 def tool_tags(*parts: str, limit: int = 6) -> list[str]:
@@ -870,6 +914,13 @@ def main() -> int:
     # 查不到雇主就讓 university 留空，網頁顯示時自己退回來源名稱。
     # 寫進資料的話，下一輪會被當成「已經知道學校了」而不再補抓。
 
+    # 學校排名（人工維護的區間，見 scraper/rankings.yml）
+    for job in fresh.values():
+        band, order, exact = rank_of(job.get("university") or job.get("source_name", ""))
+        job["rank_band"], job["rank_order"] = band, order
+        if exact:
+            job["rank_qs"] = exact
+
     # 跨來源去重：標題和學校都一樣就當同一個職缺，留先出現的來源
     merged: dict[str, dict] = {}
     duplicates = 0
@@ -916,6 +967,8 @@ def main() -> int:
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "date": stamp,
         "topic_thresholds": _TOPIC_THRESHOLDS,
+        "rank_source": _RANK_SOURCE,
+        "rank_bands": _RANK_BANDS,
         "counts": {
             "open": sum(1 for j in jobs if j.get("status") == "open"),
             "new_today": new_today,
