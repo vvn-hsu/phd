@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-03T10:13:55+00:00",
- "date": "2026-10-03",
+ "generated_at": "2026-10-04T10:55:45+00:00",
+ "date": "2026-10-04",
  "topic_thresholds": {
   "broad": 2,
   "strict": 6
@@ -15,10 +15,10 @@
   "未列入"
  ],
  "counts": {
-  "open": 126,
-  "new_today": 8,
-  "closed_kept": 272,
-  "hci_broad": 21
+  "open": 123,
+  "new_today": 0,
+  "closed_kept": 275,
+  "hci_broad": 19
  },
  "sources": [
   {
@@ -46,8 +46,8 @@
    "name": "EURAXESS（全歐洲）",
    "country": "EU",
    "homepage": "https://euraxess.ec.europa.eu/jobs/search",
-   "status": "ok",
-   "count": 3,
+   "status": "empty",
+   "count": 0,
    "url_used": "https://euraxess.ec.europa.eu/jobs/search?sort%5Bname%5D=created&sort%5Bdirection%5D=DESC&f%5B0%5D=job_research_profile%3A447",
    "error": ""
   },
@@ -169,7 +169,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
-   "status": "open",
+   "status": "closed",
    "topic_score": 2,
    "topics": [
     "無障礙"
@@ -198,20 +198,16 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
+   "enrich_attempts": 1,
+   "score_version": 7,
    "page_tools": [
     "R",
     "實驗室實驗",
     "質性分析",
     "混合方法"
    ],
-   "score_version": 7,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 1,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -246,20 +242,18 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
+   "enrich_attempts": 1,
    "page_score": 2,
    "page_topics": [
     "VR XR AR"
    ],
+   "score_version": 7,
    "page_tools": [
     "田野／民族誌",
     "參與式研究"
    ],
-   "score_version": 7,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 1,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -293,16 +287,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
+   "enrich_attempts": 1,
+   "score_version": 7,
    "page_tools": [
     "原型製作"
    ],
-   "score_version": 7,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 1,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -341,7 +332,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
-   "status": "open",
+   "status": "closed",
    "topic_score": 2,
    "topics": [
     "無障礙"
@@ -375,7 +366,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-03",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": [],
    "fields": [],
@@ -407,9 +398,9 @@
     "模擬建模"
    ],
    "score_version": 7,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -451,9 +442,9 @@
     "R"
    ],
    "score_version": 7,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -682,7 +673,7 @@
     "PyTorch/TensorFlow"
    ],
    "first_seen": "2026-10-02",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -720,7 +711,7 @@
    "enrich_attempts": 3,
    "score_version": 7,
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -901,7 +892,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -977,7 +968,7 @@
     "R"
    ],
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -1052,7 +1043,7 @@
     "原型製作"
    ],
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 5,
    "topics": [
@@ -1283,7 +1274,7 @@
    "enrich_attempts": 3,
    "score_version": 7,
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -1319,7 +1310,7 @@
     "工作坊"
    ],
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 2,
    "topics": [
@@ -1356,7 +1347,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -1387,7 +1378,7 @@
    "enrich_attempts": 3,
    "score_version": 7,
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -1424,7 +1415,7 @@
     "C++/C#"
    ],
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -1468,7 +1459,7 @@
     "C++/C#"
    ],
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -1506,7 +1497,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -1546,7 +1537,7 @@
     "模擬建模"
    ],
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -1583,7 +1574,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -1618,7 +1609,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -1654,7 +1645,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -1691,7 +1682,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -1726,7 +1717,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -1881,7 +1872,7 @@
     "Python"
    ],
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -2003,7 +1994,7 @@
     "工作坊"
    ],
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -2046,7 +2037,7 @@
     "工作坊"
    ],
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -2153,7 +2144,7 @@
     "參與式研究"
    ],
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -2195,7 +2186,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -2234,7 +2225,7 @@
     "Python"
    ],
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -2278,7 +2269,7 @@
     "實驗室實驗"
    ],
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 4,
    "topics": [
@@ -2318,7 +2309,7 @@
     "Python"
    ],
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -2574,7 +2565,7 @@
    "enrich_attempts": 3,
    "score_version": 7,
    "first_seen": "2026-09-29",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -2614,7 +2605,7 @@
     "R"
    ],
    "first_seen": "2026-09-29",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -2652,7 +2643,7 @@
     "模擬建模"
    ],
    "first_seen": "2026-09-29",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -2844,7 +2835,7 @@
    "enrich_attempts": 3,
    "score_version": 7,
    "first_seen": "2026-09-28",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -2881,7 +2872,7 @@
     "實驗室實驗"
    ],
    "first_seen": "2026-09-28",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -2913,7 +2904,7 @@
    "enrich_attempts": 3,
    "score_version": 7,
    "first_seen": "2026-09-28",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -3182,7 +3173,7 @@
     "Python"
    ],
    "first_seen": "2026-09-26",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -3215,7 +3206,7 @@
    "enrich_attempts": 3,
    "score_version": 7,
    "first_seen": "2026-09-26",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -3361,7 +3352,7 @@
     "MATLAB"
    ],
    "first_seen": "2026-09-25",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 4,
    "topics": [
@@ -3401,7 +3392,7 @@
     "工作坊"
    ],
    "first_seen": "2026-09-25",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -3439,7 +3430,7 @@
     "田野／民族誌"
    ],
    "first_seen": "2026-09-25",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -3477,7 +3468,7 @@
     "混合方法"
    ],
    "first_seen": "2026-09-25",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -3658,7 +3649,7 @@
    "enrich_attempts": 3,
    "score_version": 7,
    "first_seen": "2026-09-24",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -3726,7 +3717,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-24",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -3757,7 +3748,7 @@
    "enrich_attempts": 3,
    "score_version": 7,
    "first_seen": "2026-09-24",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -3796,7 +3787,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-24",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 6,
    "topics": [
@@ -3864,7 +3855,7 @@
     "PyTorch/TensorFlow"
    ],
    "first_seen": "2026-09-23",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -3972,7 +3963,7 @@
    "enrich_attempts": 3,
    "score_version": 7,
    "first_seen": "2026-09-23",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -4114,7 +4105,7 @@
     "Python"
    ],
    "first_seen": "2026-09-23",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -4155,7 +4146,7 @@
     "C++/C#"
    ],
    "first_seen": "2026-09-23",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -4191,7 +4182,7 @@
    "enrich_attempts": 3,
    "score_version": 7,
    "first_seen": "2026-09-23",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -4220,7 +4211,7 @@
    "enrich_attempts": 3,
    "score_version": 7,
    "first_seen": "2026-09-22",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -4417,7 +4408,7 @@
    "enrich_attempts": 3,
    "score_version": 7,
    "first_seen": "2026-09-22",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -4451,7 +4442,7 @@
    "query_ok": true,
    "score_version": 7,
    "first_seen": "2026-09-22",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -4488,7 +4479,7 @@
     "C++/C#"
    ],
    "first_seen": "2026-09-22",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -4526,7 +4517,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-22",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -4562,7 +4553,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-22",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -4598,7 +4589,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-22",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -4634,7 +4625,7 @@
     "R"
    ],
    "first_seen": "2026-09-22",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -4785,7 +4776,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-21",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -4816,7 +4807,7 @@
    "enrich_attempts": 3,
    "score_version": 7,
    "first_seen": "2026-09-21",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -5071,7 +5062,7 @@
     "Python"
    ],
    "first_seen": "2026-09-20",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -5110,7 +5101,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-20",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -5523,7 +5514,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-18",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -5557,7 +5548,7 @@
     "工作坊"
    ],
    "first_seen": "2026-09-18",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -5593,7 +5584,7 @@
     "工作坊"
    ],
    "first_seen": "2026-09-18",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -5626,7 +5617,7 @@
    "enrich_attempts": 3,
    "score_version": 7,
    "first_seen": "2026-09-18",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -6096,7 +6087,7 @@
     "實驗室實驗"
    ],
    "first_seen": "2026-09-17",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -6137,7 +6128,7 @@
     "C++/C#"
    ],
    "first_seen": "2026-09-17",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -6178,7 +6169,7 @@
     "實驗室實驗"
    ],
    "first_seen": "2026-09-17",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -6256,7 +6247,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-17",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -6336,7 +6327,7 @@
     "Python"
    ],
    "first_seen": "2026-09-16",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -6788,7 +6779,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-16",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -6824,7 +6815,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-16",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -6895,7 +6886,7 @@
     "實驗室實驗"
    ],
    "first_seen": "2026-09-15",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -6934,7 +6925,7 @@
     "Python"
    ],
    "first_seen": "2026-09-15",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -6973,7 +6964,7 @@
     "訪談"
    ],
    "first_seen": "2026-09-15",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -7013,7 +7004,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-15",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -7048,7 +7039,7 @@
     "問卷調查"
    ],
    "first_seen": "2026-09-15",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -7085,7 +7076,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-15",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -7125,7 +7116,7 @@
     "工作坊"
    ],
    "first_seen": "2026-09-15",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -7162,7 +7153,7 @@
     "工作坊"
    ],
    "first_seen": "2026-09-15",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -7943,7 +7934,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-14",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -8006,7 +7997,7 @@
    "enrich_attempts": 4,
    "score_version": 7,
    "first_seen": "2026-09-14",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -8109,7 +8100,7 @@
    "query_ok": true,
    "score_version": 7,
    "first_seen": "2026-09-12",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 5,
    "topics": [
@@ -9084,7 +9075,7 @@
     "田野／民族誌"
    ],
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -9125,7 +9116,7 @@
     "工作坊"
    ],
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -9285,7 +9276,7 @@
     "混合方法"
    ],
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -9327,7 +9318,7 @@
     "Python"
    ],
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -9402,7 +9393,7 @@
     "PyTorch/TensorFlow"
    ],
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -9482,7 +9473,7 @@
     "Python"
    ],
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -9524,7 +9515,7 @@
    "query_ok": true,
    "score_version": 7,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 5,
    "topics": [
@@ -11015,7 +11006,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -11051,7 +11042,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -11263,7 +11254,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -11337,7 +11328,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -11473,7 +11464,7 @@
     "工作坊"
    ],
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -11570,7 +11561,7 @@
    "enrich_attempts": 8,
    "score_version": 7,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -11811,7 +11802,7 @@
     "模擬建模"
    ],
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -11847,7 +11838,7 @@
     "模擬建模"
    ],
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -11924,7 +11915,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -11961,7 +11952,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 2,
    "topics": [
@@ -12004,7 +11995,7 @@
     "原型製作"
    ],
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 4,
    "topics": [
@@ -12047,7 +12038,7 @@
     "原型製作"
    ],
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 2,
    "topics": [
@@ -12091,7 +12082,7 @@
     "原型製作"
    ],
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 2,
    "topics": [
@@ -12130,7 +12121,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -12334,7 +12325,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -12467,7 +12458,7 @@
     "Python"
    ],
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -12656,7 +12647,7 @@
    "enrich_attempts": 8,
    "score_version": 7,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -12689,7 +12680,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -12787,7 +12778,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -12854,7 +12845,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 2,
    "topics": [
@@ -12889,7 +12880,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -12967,7 +12958,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -13073,7 +13064,7 @@
     "工作坊"
    ],
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -13111,7 +13102,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -13150,7 +13141,7 @@
     "MATLAB"
    ],
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -13423,7 +13414,7 @@
     "Python"
    ],
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -13531,7 +13522,7 @@
    ],
    "score_version": 7,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -13721,7 +13712,7 @@
    "enrich_attempts": 8,
    "score_version": 7,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -13759,7 +13750,7 @@
     "SPSS/Stata"
    ],
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 4,
    "topics": [
@@ -13800,7 +13791,7 @@
     "MATLAB"
    ],
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-03",
+   "last_seen": "2026-10-04",
    "status": "open",
    "topic_score": 0,
    "topics": [],
