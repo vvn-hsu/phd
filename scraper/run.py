@@ -569,12 +569,14 @@ def adapter_links(source: dict, cfg: dict) -> tuple[list[dict], str]:
     errors = []
     pooled: dict[str, dict] = {}
     used: list[str] = []
+    fetched_any = False      # 有抓到頁面但沒有職缺 ≠ 抓不到頁面
     for url in source["urls"]:
         try:
             html = fetch(url, timeout)
         except Exception as exc:  # noqa: BLE001 - 換下一個候選網址
             errors.append(f"{url} -> {exc}")
             continue
+        fetched_any = True
         soup = BeautifulSoup(html, "lxml")
         seen: dict[str, dict] = {}
         harvest_links(soup, url, pattern, seen)
@@ -623,6 +625,9 @@ def adapter_links(source: dict, cfg: dict) -> tuple[list[dict], str]:
             log(f"         {sample}")
     if pooled:
         return list(pooled.values()), f"{len(used)} 個搜尋網址"
+    if fetched_any:
+        # 頁面抓得到、只是現在沒有符合的職缺（對方沒開缺，或改版了）
+        return [], source["urls"][0]
     raise RuntimeError("; ".join(errors) or "no urls configured")
 
 

@@ -144,6 +144,13 @@ def main():
     check("mode all 合併後仍然去重", len(items_all), 4)
     check("mode all 回報用了幾個網址", used, "2 個搜尋網址")
 
+    # 抓得到頁面但沒有符合的連結 → 回空清單（empty），不是 error
+    plain = "<html><body><a href='/about'>About us</a></body></html>"
+    run.fetch = lambda url, timeout=30: plain
+    items_none, _ = run.adapter_links(dict(source), {"timeout": 10})
+    check("頁面抓得到但沒職缺時回空清單", items_none, [])
+    run.fetch = lambda url, timeout=30: LISTING
+
     check("HCI 分數：命中兩個關鍵字是 4 分",
           run.score_topics("PhD on gaze and haptics in VR")[0], 4)
     check("HCI 分數：不相關的是 0",
