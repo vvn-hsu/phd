@@ -93,7 +93,8 @@ AcademicTransfer 和 EURAXESS——因為 HCI 的缺常常排不進「最新職�
 | jobs.ac.uk | 關：搜尋結果要 JS 才渲染，HTML 裡只有幾則贊助職缺 |
 | ETH Zürich | 開 |
 | KTH（kth.varbi.com） | 開 |
-| Uppsala、Stockholm、Lund、Umeå（都是 Varbi，跟 KTH 同一套版型） | 開 |
+| Uppsala、Stockholm、Lund、Umeå、Karolinska、Mid Sweden、Luleå（都是 Varbi，跟 KTH 同一套版型） | 開 |
+| Københavns Universitet（employment.ku.dk） | 開，連結形狀待驗證 |
 | Linköping | 關：`liu.varbi.com` 不存在，它用的不是 Varbi |
 | TU München | 開 |
 | DTU、KU Leuven、Chalmers | 關：清單要 JS 才渲染，HTML 裡只有導覽列 |

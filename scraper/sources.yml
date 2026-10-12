@@ -272,6 +272,56 @@ sources:
     link_pattern: '/jobsite/(en/)?\d+'
     enrich: jsonld
 
+  - id: ki
+    name: Karolinska Institutet
+    city: Stockholm
+    country: SE
+    homepage: https://ki.varbi.com/en/
+    type: links
+    enabled: true
+    urls: [https://ki.varbi.com/en/]
+    link_pattern: 'what:job/jobID:\\d+'
+    enrich: jsonld
+
+  - id: miun
+    name: Mittuniversitetet
+    city: Sundsvall
+    country: SE
+    homepage: https://miun.varbi.com/en/
+    type: links
+    enabled: true
+    urls: [https://miun.varbi.com/en/]
+    link_pattern: 'what:job/jobID:\\d+'
+    enrich: jsonld
+
+  - id: ltu
+    name: Luleå tekniska universitet
+    city: Luleå
+    country: SE
+    homepage: https://ltu.varbi.com/en/
+    type: links
+    enabled: true
+    urls: [https://ltu.varbi.com/en/]
+    link_pattern: 'what:job/jobID:\\d+'
+    enrich: jsonld
+
+  # 哥本哈根大學：首頁只是介紹，職缺在 /all-vacancies/ 和 /phd/ 底下。
+  # 連結形狀還沒驗證過，抓不到的話「來源狀態」會顯示 empty。
+  - id: ku
+    name: Københavns Universitet
+    city: København
+    country: DK
+    homepage: https://employment.ku.dk/all-vacancies/
+    type: links
+    enabled: true
+    mode: all
+    delay: 1
+    urls:
+      - https://employment.ku.dk/all-vacancies/
+      - https://employment.ku.dk/phd/
+    link_pattern: 'jobportal\\.ku\\.dk/|hr-manager\\.net/|employment\\.ku\\.dk/vacancies'
+    enrich: jsonld
+
   - id: tum
     name: TU München
     city: München

@@ -11,7 +11,7 @@
 # band 只能用下面這幾個值，網頁依這個順序排序。
 
 source: QS World University Rankings（世界綜合排名，區間為人工歸類）
-bands: ["1-10", "11-50", "51-100", "101-200", "201-500", "未列入"]
+bands: ["1-10", "11-50", "51-100", "101-200", "201-500", "501+", "未列入"]
 
 universities:
   # 1-10
@@ -58,6 +58,11 @@ universities:
   "University of Vienna|Universit[aä]t Wien": "201-500"
   "University of Basel": "201-500"
   "University of Gothenburg|G[oö]teborgs universitet": "201-500"
+  "Karolinska": "101-200"
+
+  # 501+（綜合排名榜上有，但在 500 名之後）
+  "Lule[aå] tekniska|Lule[aå] University": "501+"
+  "Mittuniversitetet|Mid Sweden University": "501+"
 
   # 未列入（綜合排名裡沒有，或本來就不是綜合大學）
   "Open Universiteit": "未列入"
