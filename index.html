@@ -9,13 +9,15 @@
   :root{
     --bg:#f7f7f5; --panel:#fff; --ink:#1b1b1a; --muted:#6b6a66; --line:#e3e2dd;
     --accent:#1f5fb4; --new:#0f7a4d; --new-bg:#e3f4ea; --warn:#9a3412; --warn-bg:#fdeee4;
-    --star:#c58a00; --closed:#8a8a86; --tool:#1f5fb4; --tool-bg:#e7eefa; --rank:#8a5a00; --rank-bg:#f6edda;
+    --star:#c58a00; --star-bg:#f8efd6; --closed:#8a8a86; --tool:#1f5fb4; --tool-bg:#e7eefa;
+    --rank:#8a5a00; --rank-bg:#f6edda; --apply:#a3344c; --apply-bg:#fbe8ec;
   }
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]){
       --bg:#16161a; --panel:#1e1e23; --ink:#e9e8e4; --muted:#a09f9a; --line:#32323a;
       --accent:#7aa9ee; --new:#5ed49b; --new-bg:#12312333; --warn:#f0a882; --warn-bg:#3a241a;
-      --star:#e3b23c; --closed:#76757f; --tool:#9ec1f0; --tool-bg:#1c2a3f; --rank:#e0bd76; --rank-bg:#332a19;
+      --star:#e3b23c; --star-bg:#352b14; --closed:#76757f; --tool:#9ec1f0; --tool-bg:#1c2a3f;
+      --rank:#e0bd76; --rank-bg:#332a19; --apply:#f08ca6; --apply-bg:#3a1c25;
     }
   }
   *{box-sizing:border-box}
@@ -61,11 +63,20 @@
   .tag.new{color:var(--new);background:var(--new-bg);border-color:transparent;font-weight:600}
   .tag.soon{color:var(--warn);background:var(--warn-bg);border-color:transparent}
   .tag.closed{color:var(--closed)}
-  .star{background:none;border:none;cursor:pointer;font-size:17px;line-height:1;padding:0;
-    color:var(--muted);opacity:.45;transition:opacity .15s}
-  .star:hover{opacity:1}
-  .star[aria-pressed="true"]{opacity:1}
-  .star[aria-pressed="true"]{color:var(--star)}
+  .marks{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
+  .mk{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:999px;
+    padding:2px 9px;font-size:11.5px;line-height:1.6;cursor:pointer;white-space:nowrap;font-family:inherit}
+  .mk:hover{border-color:var(--muted);color:var(--ink)}
+  .mk[aria-pressed="true"]{border-color:transparent;font-weight:600}
+  .mk[data-mark="apply"][aria-pressed="true"]{background:var(--apply-bg);color:var(--apply)}
+  .mk[data-mark="interest"][aria-pressed="true"]{background:var(--star-bg);color:var(--star)}
+  .mk[data-mark="no"][aria-pressed="true"]{background:var(--bg);color:var(--closed);
+    border-color:var(--line);text-decoration:line-through}
+  .job.m-apply{border-left:3px solid var(--apply)}
+  .job.m-interest{border-left:3px solid var(--star)}
+  .job.m-no{opacity:.5}
+  .stat.pick{cursor:pointer}
+  .stat.pick:hover{border-color:var(--muted)}
   .summary{grid-column:1;color:var(--muted);font-size:13px;margin:0;
     display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
   details.sources{margin-top:22px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px}
@@ -110,6 +121,15 @@
       <select id="tool"><option value="">所有工具／方法</option></select>
       <select id="field"><option value="">所有領域標籤</option></select>
       <select id="country"><option value="">所有地區</option></select>
+      <select id="mark">
+        <option value="">分類：預設（收起沒興趣）</option>
+        <option value="apply">只看 準備要投</option>
+        <option value="interest">只看 有興趣</option>
+        <option value="no">只看 沒興趣（別頁）</option>
+        <option value="none">只看 未分類</option>
+        <option value="any">只看 已分類</option>
+        <option value="all">全部（含沒興趣）</option>
+      </select>
       <select id="topic">
         <option value="broad">HCI 相關（廣泛）</option>
         <option value="strict">HCI 相關（嚴格）</option>
@@ -117,6 +137,7 @@
       </select>
       <select id="sort">
         <option value="relevance">HCI 相關度優先</option>
+        <option value="mark">我的分類優先</option>
         <option value="rank">學校排名優先</option>
         <option value="new">最新發現優先</option>
         <option value="deadline">截止日近的優先</option>
@@ -128,7 +149,6 @@
       <button class="chip" id="f-since" aria-pressed="false">自上次造訪新增</button>
       <button class="chip" id="f-today" aria-pressed="false">今天新增</button>
       <button class="chip" id="f-unseen" aria-pressed="false">未讀</button>
-      <button class="chip" id="f-star" aria-pressed="false">已收藏</button>
       <button class="chip" id="f-soon" aria-pressed="false">14 天內截止</button>
       <button class="chip" id="f-closed" aria-pressed="false">含已下架</button>
       <button class="btn" id="mark-all">全部標為已讀</button>
@@ -146,21 +166,43 @@
 
   <footer>
     資料由 <code>scraper/run.py</code> 每天自動抓取並寫進 <code>data/jobs.json</code>。
-    已讀、收藏、上次造訪時間只存在這台裝置的瀏覽器裡。
+    已讀、分類（準備要投／有興趣／沒興趣）、上次造訪時間只存在這台裝置的瀏覽器裡，不會上傳。
   </footer>
 </div>
 
 <script>
 const LS = {
-  seen: 'phdtrack.seen', star: 'phdtrack.star', visit: 'phdtrack.lastVisit', prevVisit: 'phdtrack.prevVisit'
+  seen: 'phdtrack.seen', star: 'phdtrack.star', mark: 'phdtrack.mark',
+  migrated: 'phdtrack.markMigrated', visit: 'phdtrack.lastVisit', prevVisit: 'phdtrack.prevVisit'
 };
+const MARKS = { apply: '準備要投', interest: '有興趣', no: '沒興趣' };
+const MARK_ORDER = { apply: 0, interest: 1, '': 2, no: 3 };
 function loadSet(key){
   try { return new Set(JSON.parse(localStorage.getItem(key) || '[]')); } catch { return new Set(); }
 }
 function saveSet(key, set){
   try { localStorage.setItem(key, JSON.stringify([...set])); } catch {}
 }
-const seen = loadSet(LS.seen), starred = loadSet(LS.star);
+function loadMap(key){
+  try {
+    const o = JSON.parse(localStorage.getItem(key) || '{}');
+    return (o && typeof o === 'object' && !Array.isArray(o)) ? new Map(Object.entries(o)) : new Map();
+  } catch { return new Map(); }
+}
+function saveMap(key, map){
+  try { localStorage.setItem(key, JSON.stringify(Object.fromEntries(map))); } catch {}
+}
+const seen = loadSet(LS.seen);
+const marks = loadMap(LS.mark);
+// 舊版的 ★ 收藏一次性併進「有興趣」，原本的 key 留著不動
+try {
+  if (!localStorage.getItem(LS.migrated)){
+    for (const id of loadSet(LS.star)) if (!marks.has(id)) marks.set(id, 'interest');
+    saveMap(LS.mark, marks);
+    localStorage.setItem(LS.migrated, '1');
+  }
+} catch {}
+const markOf = (job) => marks.get(job.id) || '';
 
 // 上次造訪：同一天內重開好幾次，基準日都維持在「上一個有來的日子」
 let prevVisit = '';
@@ -175,8 +217,9 @@ try {
   }
 } catch {}
 
-const state = { data:null, q:'', school:'', country:'', field:'', city:'', tool:'', rank:'', sort:'relevance', topic:'broad',
-  since:false, today:false, unseen:false, star:false, soon:false, closed:false };
+const state = { data:null, q:'', school:'', country:'', field:'', city:'', tool:'', rank:'',
+  sort:'relevance', topic:'broad', mark:'',
+  since:false, today:false, unseen:false, soon:false, closed:false };
 
 const $ = (id) => document.getElementById(id);
 const fmt = (d) => d || '—';
@@ -247,12 +290,19 @@ function isNew(job){
 }
 
 function matches(job){
-  if (!inTopic(job)) return false;
-  if (job.status === 'closed' && !state.closed) return false;
+  const mk = markOf(job);
+  // 指名看某一類時，不再被 HCI 門檻和「已下架」擋住——自己分過類的東西永遠找得回來
+  const picked = state.mark && state.mark !== 'none' && state.mark !== 'all';
+  if (state.mark === 'all'){ /* 不過濾分類 */ }
+  else if (state.mark === 'none'){ if (mk) return false; }
+  else if (state.mark === 'any'){ if (!mk) return false; }
+  else if (state.mark){ if (mk !== state.mark) return false; }
+  else if (mk === 'no') return false;              // 預設把沒興趣收到別頁
+  if (!picked && !inTopic(job)) return false;
+  if (job.status === 'closed' && !state.closed && !picked) return false;
   if (state.since && !isNew(job)) return false;
   if (state.today && job.first_seen !== state.data.date) return false;
   if (state.unseen && seen.has(job.id)) return false;
-  if (state.star && !starred.has(job.id)) return false;
   if (state.soon){ const dd = daysTo(job.deadline); if (dd === null || dd < 0 || dd > 14) return false; }
   if (state.school && (job.university || job.source_name) !== state.school) return false;
   if (state.country && job.country !== state.country) return false;
@@ -273,6 +323,8 @@ function sortJobs(jobs){
   const by = {
     relevance: (a,b) => (b.topic_score||0) - (a.topic_score||0)
       || (b.first_seen||'').localeCompare(a.first_seen||''),
+    mark: (a,b) => (MARK_ORDER[markOf(a)] ?? 2) - (MARK_ORDER[markOf(b)] ?? 2)
+      || (b.topic_score||0) - (a.topic_score||0),
     rank: (a,b) => (a.rank_order ?? 99) - (b.rank_order ?? 99)
       || (b.topic_score||0) - (a.topic_score||0),
     new: (a,b) => (b.first_seen||'').localeCompare(a.first_seen||'') || (b.posted||'').localeCompare(a.posted||''),
@@ -288,11 +340,16 @@ function render(){
   const list = $('list');
   if (!jobs.length){
     list.innerHTML = '<div class="empty-state">這組條件下沒有職缺。' +
-      (state.topic === 'all' ? '' : '（目前只顯示 HCI 相關，上面可以切成「全部領域」）') + '</div>';
+      (state.mark === 'no' ? '（還沒有標成「沒興趣」的職缺）'
+        : state.mark === 'any' ? '（還沒有分過類的職缺）'
+        : state.topic === 'all' ? '' : '（目前只顯示 HCI 相關，上面可以切成「全部領域」）') + '</div>';
     return;
   }
   list.innerHTML = jobs.map(job => {
     const dd = daysTo(job.deadline);
+    const mk = markOf(job);
+    const markBtns = Object.entries(MARKS).map(([k, label]) =>
+      `<button class="mk" data-mark="${k}" data-id="${job.id}" aria-pressed="${mk === k}">${label}</button>`).join('');
     const tags = [];
     if (isNew(job)) tags.push('<span class="tag new">NEW</span>');
     if (job.status === 'closed') tags.push('<span class="tag closed">已下架</span>');
@@ -318,12 +375,12 @@ function render(){
       (job.also_at || []).length && `另見 ${job.also_at.map(a =>
         `<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.source)}</a>`).join('、')}`,
     ].filter(Boolean).map(x => `<span>${x}</span>`).join('');
-    return `<article class="job ${seen.has(job.id) ? '' : 'unseen'} ${job.status === 'closed' ? 'closed' : ''}" data-id="${job.id}">
+    return `<article class="job ${seen.has(job.id) ? '' : 'unseen'} ${job.status === 'closed' ? 'closed' : ''} ${mk ? 'm-' + mk : ''}" data-id="${job.id}">
       <h2><a href="${esc(job.url)}" target="_blank" rel="noopener">${esc(job.title)}</a></h2>
       <div class="meta">${meta}</div>
       ${job.summary ? `<p class="summary">${esc(job.summary)}</p>` : ''}
       <div class="side">
-        <button class="star" data-star="${job.id}" aria-pressed="${starred.has(job.id)}" title="收藏">★</button>
+        <div class="marks">${markBtns}</div>
         ${tags.join(' ')}
       </div>
     </article>`;
@@ -336,13 +393,18 @@ function esc(s){ return String(s ?? '').replace(/[&<>"']/g, c => (
 function renderStats(){
   const scope = state.data.jobs.filter(j => inTopic(j) && j.status !== 'closed');
   const label = state.topic === 'all' ? '開放中' : 'HCI 相關';
+  const marked = (k) => state.data.jobs.filter(j => markOf(j) === k).length;
   $('stats').innerHTML = [
     [label, scope.length],
     ['今天新增', scope.filter(j => j.first_seen === state.data.date).length],
     ['自上次造訪', scope.filter(j => isNew(j)).length],
-    ['已收藏', state.data.jobs.filter(j => starred.has(j.id)).length],
+    ['準備要投', marked('apply'), 'apply'],
+    ['有興趣', marked('interest'), 'interest'],
+    ['沒興趣', marked('no'), 'no'],
     ['所有領域合計', state.data.jobs.filter(j => j.status !== 'closed').length],
-  ].map(([l, val]) => `<div class="stat"><b>${val}</b><span>${l}</span></div>`).join('');
+  ].map(([l, val, pick]) =>
+    `<div class="stat ${pick ? 'pick' : ''}" ${pick ? `data-pick="${pick}" title="只看${l}"` : ''}>` +
+    `<b>${val}</b><span>${l}</span></div>`).join('');
 }
 
 function renderRecheck(recheck){
@@ -373,9 +435,17 @@ function bind(){
   $('q').addEventListener('input', e => { state.q = e.target.value.trim(); render(); });
   for (const id of ['school','country','field','city','tool','rank','sort'])
     $(id).addEventListener('change', e => { state[id] = e.target.value; render(); });
+  $('mark').addEventListener('change', e => { state.mark = e.target.value; render(); });
+  $('stats').addEventListener('click', e => {
+    const tile = e.target.closest('[data-pick]');
+    if (!tile) return;
+    state.mark = state.mark === tile.dataset.pick ? '' : tile.dataset.pick;
+    $('mark').value = state.mark;
+    render();
+  });
   $('topic').addEventListener('change', e => { state.topic = e.target.value; renderStats(); render(); });
   for (const [id, key] of [['f-since','since'],['f-today','today'],['f-unseen','unseen'],
-                           ['f-star','star'],['f-soon','soon'],['f-closed','closed']]){
+                           ['f-soon','soon'],['f-closed','closed']]){
     $(id).addEventListener('click', e => {
       state[key] = !state[key];
       e.currentTarget.setAttribute('aria-pressed', String(state[key]));
@@ -383,9 +453,10 @@ function bind(){
     });
   }
   $('reset').addEventListener('click', () => {
-    Object.assign(state, {q:'',school:'',country:'',field:'',city:'',tool:'',rank:'',since:false,today:false,unseen:false,star:false,soon:false,closed:false});
+    Object.assign(state, {q:'',school:'',country:'',field:'',city:'',tool:'',rank:'',mark:'',
+      since:false,today:false,unseen:false,soon:false,closed:false});
     $('q').value=''; $('school').value=''; $('country').value=''; $('field').value='';
-    $('city').value=''; $('tool').value=''; $('rank').value='';
+    $('city').value=''; $('tool').value=''; $('rank').value=''; $('mark').value='';
     document.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed','false'));
     render();
   });
@@ -394,13 +465,13 @@ function bind(){
     saveSet(LS.seen, seen); renderStats(); render();
   });
   $('list').addEventListener('click', e => {
-    const starBtn = e.target.closest('[data-star]');
-    if (starBtn){
-      const id = starBtn.dataset.star;
-      starred.has(id) ? starred.delete(id) : starred.add(id);
-      saveSet(LS.star, starred);
-      starBtn.setAttribute('aria-pressed', String(starred.has(id)));
+    const markBtn = e.target.closest('[data-mark]');
+    if (markBtn){
+      const { id, mark } = markBtn.dataset;
+      marks.get(id) === mark ? marks.delete(id) : marks.set(id, mark);
+      saveMap(LS.mark, marks);
       renderStats();
+      render();                        // 標成沒興趣的會從預設清單收走
       e.preventDefault();
       return;
     }
