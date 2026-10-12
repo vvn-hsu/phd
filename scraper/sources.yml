@@ -55,9 +55,9 @@ sources:
     country: EU
     homepage: https://euraxess.ec.europa.eu/jobs/search?keywords=human-computer%20interaction
     type: links
-    # EURAXESS 的 ?keywords= 沒有作用：10 組不同關鍵字回來的是完全同一批職缺
-    # （log 裡的樣本標題一模一樣），而且多打幾次就被 429。先關掉。
-    enabled: false
+    # 2026-09 關掉過：當時 ?keywords= 沒有作用、10 組關鍵字回同一批職缺。
+    # 2026-10-12 每週複檢時發現又抓得到了（5 筆真的博士缺），重新啟用。
+    enabled: true
     mode: all
     topic_boost: 3
     urls:
@@ -150,8 +150,9 @@ sources:
     country: UK
     homepage: https://www.jobs.ac.uk/search/?keywords=PhD
     type: links
-    # 搜尋結果是 JS 渲染的，HTML 裡只有幾則贊助職缺（而且都不是博士），先關掉
-    enabled: false
+    # 2026-09 關掉過：當時搜尋結果要 JS、HTML 裡只有贊助職缺。
+    # 2026-10-12 每週複檢時發現抓得到了（4 筆 PhD Studentship），重新啟用。
+    enabled: true
     urls:
       # /search/phd 是導覽頁，列的職缺跟 PhD 無關；keywords 搜尋才是真的結果
       - https://www.jobs.ac.uk/search/?keywords=PhD&sortOrder=1

@@ -82,7 +82,7 @@ AcademicTransfer 和 EURAXESS——因為 HCI 的缺常常排不進「最新職�
 | 來源 | 狀態 |
 | --- | --- |
 | AcademicTransfer（HCI 關鍵字搜尋，14 組關鍵字） | 開 |
-| EURAXESS（HCI 關鍵字搜尋） | 關：`?keywords=` 沒有作用，10 組關鍵字回來的是同一批職缺 |
+| EURAXESS（HCI 關鍵字搜尋） | 開（2026-10-12 複檢時恢復，之前 `?keywords=` 沒作用） |
 | AcademicTransfer（荷蘭各大學，TU Delft 的職缺都在這） | 開 |
 | EURAXESS（全歐洲，翻 3 頁） | 開，但不穩：翻頁會被 429，回來的常常是非博士的公告 |
 | Academic Positions（彙整站） | 關：卡片文字會整團變成標題，多半是招生廣告 |
@@ -90,7 +90,7 @@ AcademicTransfer 和 EURAXESS——因為 HCI 的缺常常排不進「最新職�
 | University of Glasgow（jobs.gla.ac.uk） | 開，但板上多半是教職；studentship 不在上面 |
 | University of Edinburgh | 沒加：職缺清單在 Oracle Recruiting 上，要 JS |
 | UCL、FindAPhD | 沒加：從 GitHub Actions 連過去直接 403（機房 IP 被擋，換 UA 無效） |
-| jobs.ac.uk | 關：搜尋結果要 JS 才渲染，HTML 裡只有幾則贊助職缺 |
+| jobs.ac.uk | 開（2026-10-12 複檢時恢復，之前是 JS 渲染抓不到） |
 | ETH Zürich | 開 |
 | KTH（kth.varbi.com） | 開 |
 | Uppsala、Stockholm、Lund、Umeå、Karolinska、Mid Sweden、Luleå（都是 Varbi，跟 KTH 同一套版型） | 開 |
@@ -173,7 +173,11 @@ Actions → New repository secret）：
 python scraper/run.py --recheck-disabled
 ```
 
-複檢只記錄結果，不會把那些來源的職缺收進來。
+複檢只記錄結果，不會把那些來源的職缺收進來——要不要重新啟用是人看了再決定。
+摘要信裡也會列出「停用中的來源又抓得到了」。
+
+第一次跑複檢（2026-10-12）就撈回兩個：jobs.ac.uk（4 筆 PhD Studentship）
+和 EURAXESS 關鍵字搜尋（5 筆），兩個都已經重新啟用。
 
 ## 每日排程
 

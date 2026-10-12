@@ -98,6 +98,8 @@ def build(data: dict, site_url: str) -> tuple[str, str, str]:
                    and 0 <= days_to(j.get("deadline", "")) <= SOON_DAYS],
                   key=lambda j: j.get("deadline", ""))
     broken = [s for s in data.get("sources", []) if s.get("status") != "ok"]
+    recheck = data.get("recheck") or {}
+    came_back = [s for s in recheck.get("sources", []) if s.get("status") == "ok"]
 
     month_day = f"{int(stamp[5:7])}/{int(stamp[8:10])}" if len(stamp) == 10 else stamp
     subject = (f"[博士職缺] {month_day} 新增 {len(new_jobs)} 筆"
@@ -134,6 +136,13 @@ def build(data: dict, site_url: str) -> tuple[str, str, str]:
         parts.append('</ul>')
     if not new_jobs:
         parts.append('<p style="color:#6b6a66">今天沒有新增的職缺。</p>')
+    if came_back:
+        parts.append('<h3 style="font-size:15px;margin:18px 0 8px">停用中的來源又抓得到了</h3>'
+                     '<ul style="padding-left:18px;margin:0;color:#0f7a4d;font-size:13px">')
+        for src in came_back:
+            parts.append(f'<li>{esc(src.get("name"))}（{src.get("count")} 筆）：'
+                         f'{esc((src.get("detail") or "")[:100])}</li>')
+        parts.append('</ul>')
     if broken:
         parts.append('<h3 style="font-size:15px;margin:18px 0 8px">來源異常</h3>'
                      '<ul style="padding-left:18px;margin:0;color:#9a3412;font-size:13px">')
