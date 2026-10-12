@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-11T11:14:57+00:00",
- "date": "2026-10-11",
+ "generated_at": "2026-10-12T05:37:59+00:00",
+ "date": "2026-10-12",
  "topic_thresholds": {
   "broad": 2,
   "strict": 6
@@ -15,9 +15,9 @@
   "未列入"
  ],
  "counts": {
-  "open": 115,
-  "new_today": 4,
-  "closed_kept": 341,
+  "open": 116,
+  "new_today": 3,
+  "closed_kept": 343,
   "hci_broad": 18
  },
  "sources": [
@@ -25,9 +25,10 @@
    "id": "academictransfer_hci",
    "name": "AcademicTransfer（HCI 關鍵字搜尋）",
    "country": "NL",
+   "country_zh": "荷蘭",
    "homepage": "https://www.academictransfer.com/en/jobs?q=human-computer+interaction",
    "status": "ok",
-   "count": 33,
+   "count": 32,
    "url_used": "14 個搜尋網址",
    "error": ""
   },
@@ -35,9 +36,10 @@
    "id": "academictransfer",
    "name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
    "country": "NL",
+   "country_zh": "荷蘭",
    "homepage": "https://www.academictransfer.com/en/jobs/",
    "status": "ok",
-   "count": 4,
+   "count": 5,
    "url_used": "https://www.academictransfer.com/en/jobs/?category=phd&sort=date",
    "error": ""
   },
@@ -45,6 +47,7 @@
    "id": "euraxess",
    "name": "EURAXESS（全歐洲）",
    "country": "EU",
+   "country_zh": "跨國／歐洲",
    "homepage": "https://euraxess.ec.europa.eu/jobs/search",
    "status": "ok",
    "count": 3,
@@ -55,6 +58,7 @@
    "id": "glasgow",
    "name": "University of Glasgow",
    "country": "UK",
+   "country_zh": "英國",
    "homepage": "https://www.jobs.gla.ac.uk/jobs",
    "status": "empty",
    "count": 0,
@@ -65,9 +69,10 @@
    "id": "the_unijobs",
    "name": "THE Unijobs（英國為主）",
    "country": "UK",
+   "country_zh": "英國",
    "homepage": "https://www.timeshighereducation.com/unijobs/listings/computer-science/",
    "status": "ok",
-   "count": 3,
+   "count": 4,
    "url_used": "7 個搜尋網址",
    "error": ""
   },
@@ -75,6 +80,7 @@
    "id": "ethz",
    "name": "ETH Zürich",
    "country": "CH",
+   "country_zh": "瑞士",
    "homepage": "https://jobs.ethz.ch/",
    "status": "ok",
    "count": 2,
@@ -85,6 +91,7 @@
    "id": "kth",
    "name": "KTH Royal Institute of Technology",
    "country": "SE",
+   "country_zh": "瑞典",
    "homepage": "https://kth.varbi.com/en/",
    "status": "ok",
    "count": 11,
@@ -95,6 +102,7 @@
    "id": "uu",
    "name": "Uppsala universitet",
    "country": "SE",
+   "country_zh": "瑞典",
    "homepage": "https://uu.varbi.com/en/",
    "status": "ok",
    "count": 22,
@@ -105,6 +113,7 @@
    "id": "su",
    "name": "Stockholms universitet",
    "country": "SE",
+   "country_zh": "瑞典",
    "homepage": "https://su.varbi.com/en/",
    "status": "ok",
    "count": 21,
@@ -115,6 +124,7 @@
    "id": "lu",
    "name": "Lunds universitet",
    "country": "SE",
+   "country_zh": "瑞典",
    "homepage": "https://lu.varbi.com/en/",
    "status": "ok",
    "count": 11,
@@ -125,6 +135,7 @@
    "id": "umu",
    "name": "Umeå universitet",
    "country": "SE",
+   "country_zh": "瑞典",
    "homepage": "https://umu.varbi.com/en/",
    "status": "ok",
    "count": 6,
@@ -135,6 +146,7 @@
    "id": "tum",
    "name": "TU München",
    "country": "DE",
+   "country_zh": "德國",
    "homepage": "https://portal.mytum.de/jobs/",
    "status": "ok",
    "count": 3,
@@ -142,7 +154,199 @@
    "error": ""
   }
  ],
+ "recheck": {
+  "at": "2026-10-12",
+  "sources": [
+   {
+    "id": "euraxess_hci",
+    "name": "EURAXESS（HCI 關鍵字搜尋）",
+    "status": "ok",
+    "count": 3,
+    "detail": "PhD position in health effects from the exposure to pesticid；PhD Candidate in AI and Hardware Security"
+   },
+   {
+    "id": "jobsacuk",
+    "name": "jobs.ac.uk（英國）",
+    "status": "ok",
+    "count": 4,
+    "detail": "PhD Studentship: Marie Sklodowska-Curie Actions Doctoral Net；PhD programme in Machine Learning Systems"
+   },
+   {
+    "id": "liu",
+    "name": "Linköpings universitet",
+    "status": "error",
+    "count": 0,
+    "detail": "https://liu.varbi.com/en/ -> HTTP 404"
+   },
+   {
+    "id": "dtu",
+    "name": "DTU（丹麥技術大學）",
+    "status": "error",
+    "count": 0,
+    "detail": "https://www.dtu.dk/english/about/job-and-career/vacant-positions -> 0 links matched"
+   },
+   {
+    "id": "kuleuven",
+    "name": "KU Leuven",
+    "status": "error",
+    "count": 0,
+    "detail": "https://www.kuleuven.be/personeel/jobsite/en/vacancies?category=phd -> 0 links matched; https://www.kuleuven.be/personeel/jobsite/en/vacancies -> 0 links matched"
+   },
+   {
+    "id": "chalmers",
+    "name": "Chalmers",
+    "status": "error",
+    "count": 0,
+    "detail": "https://www.chalmers.se/en/about-chalmers/work-with-us/vacancies/ -> 0 links matched"
+   },
+   {
+    "id": "academicpositions",
+    "name": "Academic Positions（歐洲彙整站）",
+    "status": "error",
+    "count": 0,
+    "detail": "https://academicpositions.com/find-jobs/position/phd -> HTTP 403; https://academicpositions.com/jobs/position/phd -> HTTP 403"
+   },
+   {
+    "id": "ethz_extra",
+    "name": "ETH Zürich（第二頁以後）",
+    "status": "ok",
+    "count": 2,
+    "detail": "ETH AI Center Doctoral Fellowship 2027 100%, Zurich, fixed-t；PhD Positions - Max Planck ETH Center for Learning Systems ("
+   }
+  ]
+ },
  "jobs": [
+  {
+   "id": "0f77c59fd030957f",
+   "source": "academictransfer",
+   "source_name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
+   "university": "Wageningen University & Research",
+   "country": "NL",
+   "title": "PhD: Economics of native species production and rural development in the Cerrado",
+   "url": "https://www.academictransfer.com/en/jobs/364658/phd-economics-of-native-species-production-and-rural-development-in-the-cerrado/",
+   "city": "Wageningen",
+   "location": "Wageningen, NL",
+   "department": "",
+   "posted": "2026-10-12",
+   "deadline": "2026-10-28",
+   "summary": "Have you ever asked yourself if it is possible to harness the economic potential of biodiversity without degrading the environment? Would you like to understand how we can develop markets for native plant species that benefit rural communities while conserving biodiversity? Are you proficient in Portuguese? Then this PhD might be your next step! The Cerrado is one of the world's biodiversity hotsp",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "Python",
+    "SPSS/Stata",
+    "焦點團體",
+    "工作坊",
+    "田野／民族誌"
+   ],
+   "score_version": 8,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-12",
+   "last_seen": "2026-10-12",
+   "status": "open",
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "氣候環境",
+    "經濟商管"
+   ],
+   "tools": [
+    "Python",
+    "SPSS/Stata",
+    "焦點團體",
+    "工作坊",
+    "田野／民族誌"
+   ],
+   "country_zh": "荷蘭",
+   "rank_band": "101-200",
+   "rank_order": 3
+  },
+  {
+   "id": "a05b8809f8a5f192",
+   "source": "academictransfer",
+   "source_name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
+   "university": "Wageningen University & Research",
+   "country": "NL",
+   "title": "PhD Developing green façades for building insolation & enhancing urban diversity",
+   "url": "https://www.academictransfer.com/en/jobs/364660/phd-developing-green-facades-for-building-insolation-enhancing-urban-diversity/",
+   "city": "Wageningen",
+   "location": "Wageningen, NL",
+   "department": "",
+   "posted": "2026-10-12",
+   "deadline": "2026-11-02",
+   "summary": "Are you a highly motivated and curious, and can you translate ecological expertise into successful designs of biodiverse, climate-resilient, aesthetically attractive and multifunctional green facades? Do you enjoy bridging fundamental ecological knowledge with practical applications? Then Wageningen University & Research offers an exciting opportunity for you. BIO-SKIN (Bio-Inspired Outer Surfaces",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "田野／民族誌"
+   ],
+   "score_version": 8,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-12",
+   "last_seen": "2026-10-12",
+   "status": "open",
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "氣候環境",
+    "建築城市"
+   ],
+   "tools": [
+    "田野／民族誌"
+   ],
+   "country_zh": "荷蘭",
+   "rank_band": "101-200",
+   "rank_order": 3
+  },
+  {
+   "id": "143f4fd73589c3c7",
+   "source": "academictransfer",
+   "source_name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
+   "university": "Vrije Universiteit Amsterdam (VU)",
+   "country": "NL",
+   "title": "PhD Position in Formal Methods for Concurrent Cryptographic Protocols",
+   "url": "https://www.academictransfer.com/en/jobs/364655/phd-position-in-formal-methods-for-concurrent-cryptographic-protocols/",
+   "city": "Amsterdam",
+   "location": "Amsterdam, NL",
+   "department": "",
+   "posted": "2026-10-11",
+   "deadline": "2026-10-30",
+   "summary": "You will carry out research towards developing formal reasoning principles for concurrent cryptographic protocols and participate in the dissemination of results (conferences, research visits, etc.). In addition, you will perform light supervision duties for bachelor and/or master students and support our courses as teaching assistants (maximum two periods a year).",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "score_version": 8,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-12",
+   "last_seen": "2026-10-12",
+   "status": "open",
+   "topic_score": 2,
+   "topics": [
+    "無障礙"
+   ],
+   "fields": [
+    "教育",
+    "資安隱私"
+   ],
+   "tools": [],
+   "country_zh": "荷蘭",
+   "rank_band": "201-500",
+   "rank_order": 4
+  },
   {
    "id": "fd7a1e61700c0f6e",
    "source": "euraxess",
@@ -163,15 +367,16 @@
    "page_score": 0,
    "page_topics": [],
    "page_tools": [],
-   "score_version": 7,
-   "enrich_attempts": 1,
+   "score_version": 8,
+   "enrich_attempts": 2,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
    "fields": [],
    "tools": [],
+   "country_zh": "跨國／歐洲",
    "rank_band": "",
    "rank_order": 99
   },
@@ -195,15 +400,16 @@
    "page_score": 0,
    "page_topics": [],
    "page_tools": [],
-   "score_version": 7,
-   "enrich_attempts": 1,
+   "score_version": 8,
+   "enrich_attempts": 2,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
    "fields": [],
    "tools": [],
+   "country_zh": "跨國／歐洲",
    "rank_band": "",
    "rank_order": 99
   },
@@ -227,11 +433,11 @@
    "page_score": 0,
    "page_topics": [],
    "page_tools": [],
-   "score_version": 7,
+   "score_version": 8,
    "employment": "TEMPORARY",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -241,6 +447,7 @@
     "光電半導體"
    ],
    "tools": [],
+   "country_zh": "荷蘭",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -264,15 +471,16 @@
    "page_score": 0,
    "page_topics": [],
    "page_tools": [],
-   "score_version": 7,
-   "enrich_attempts": 1,
+   "score_version": 8,
+   "enrich_attempts": 2,
    "first_seen": "2026-10-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
    "fields": [],
    "tools": [],
+   "country_zh": "跨國／歐洲",
    "rank_band": "",
    "rank_order": 99
   },
@@ -437,13 +645,17 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "enrich_attempts": 1,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "R"
    ],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-10-10",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -456,6 +668,7 @@
    "tools": [
     "R"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -555,7 +768,7 @@
    "score_version": 7,
    "first_seen": "2026-10-10",
    "last_seen": "2026-10-11",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": [],
    "fields": [
@@ -586,7 +799,7 @@
    "score_version": 7,
    "first_seen": "2026-10-10",
    "last_seen": "2026-10-11",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": [],
    "fields": [
@@ -767,12 +980,12 @@
     "工作坊",
     "田野／民族誌"
    ],
-   "score_version": 7,
+   "score_version": 8,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "first_seen": "2026-10-09",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -785,6 +998,7 @@
     "田野／民族誌",
     "工作坊"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -810,12 +1024,12 @@
    "page_tools": [
     "田野／民族誌"
    ],
-   "score_version": 7,
+   "score_version": 8,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "first_seen": "2026-10-09",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -827,6 +1041,7 @@
    "tools": [
     "田野／民族誌"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "11-50",
    "rank_order": 1
   },
@@ -850,15 +1065,16 @@
    "page_score": 0,
    "page_topics": [],
    "page_tools": [],
-   "score_version": 7,
-   "enrich_attempts": 3,
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-10-09",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
    "fields": [],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -882,10 +1098,10 @@
    "page_score": 0,
    "page_topics": [],
    "page_tools": [],
-   "score_version": 7,
-   "enrich_attempts": 3,
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-10-09",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -893,6 +1109,7 @@
     "法律政策"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "51-100",
    "rank_order": 2
   },
@@ -918,10 +1135,10 @@
    "page_tools": [
     "工作坊"
    ],
-   "score_version": 7,
-   "enrich_attempts": 3,
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-10-09",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -929,6 +1146,7 @@
    "tools": [
     "工作坊"
    ],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -1107,14 +1325,18 @@
    "title_guessed": false,
    "found_via": "data visualization",
    "topic_boost": 3,
-   "enrich_attempts": 2,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "工作坊",
     "田野／民族誌"
    ],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 3,
    "first_seen": "2026-10-08",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -1127,6 +1349,7 @@
     "工作坊",
     "田野／民族誌"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -1218,7 +1441,6 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 3,
-   "enrich_attempts": 1,
    "page_score": 8,
    "page_topics": [
     "VR XR AR",
@@ -1226,9 +1448,12 @@
     "穿戴式",
     "腦電"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "employment": "[\"FULL_TIME\"]",
+   "enrich_attempts": 2,
    "first_seen": "2026-10-08",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 9,
    "topics": [
@@ -1240,6 +1465,7 @@
    ],
    "fields": [],
    "tools": [],
+   "country_zh": "英國",
    "rank_band": "",
    "rank_order": 99
   },
@@ -1304,12 +1530,12 @@
    "page_tools": [
     "工作坊"
    ],
-   "score_version": 7,
+   "score_version": 8,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "first_seen": "2026-10-07",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -1321,6 +1547,7 @@
    "tools": [
     "工作坊"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "未列入",
    "rank_order": 5
   },
@@ -1445,18 +1672,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 3,
-   "enrich_attempts": 1,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
    "page_tools": [
     "Python",
     "PyTorch/TensorFlow"
    ],
+   "score_version": 8,
+   "employment": "[\"FULL_TIME\"]",
+   "enrich_attempts": 2,
    "first_seen": "2026-10-07",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -1468,9 +1696,9 @@
     "經濟商管"
    ],
    "tools": [
-    "Python",
     "PyTorch/TensorFlow"
    ],
+   "country_zh": "芬蘭",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -1491,19 +1719,20 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 3,
-   "enrich_attempts": 1,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
    "page_tools": [
     "Python",
     "MATLAB",
     "模擬建模"
    ],
+   "score_version": 8,
+   "employment": "[\"FULL_TIME\"]",
+   "enrich_attempts": 2,
    "first_seen": "2026-10-07",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -1515,10 +1744,10 @@
     "經濟商管"
    ],
    "tools": [
-    "Python",
     "MATLAB",
     "模擬建模"
    ],
+   "country_zh": "芬蘭",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -1607,17 +1836,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
    "page_tools": [
     "工作坊"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-10-07",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -1629,6 +1858,7 @@
    "tools": [
     "工作坊"
    ],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -1649,14 +1879,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "工作坊",
     "混合方法"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-10-07",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -1665,6 +1897,7 @@
     "工作坊",
     "混合方法"
    ],
+   "country_zh": "德國",
    "rank_band": "11-50",
    "rank_order": 1
   },
@@ -1685,14 +1918,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "工作坊",
     "混合方法"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-10-07",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -1701,6 +1936,7 @@
     "工作坊",
     "混合方法"
    ],
+   "country_zh": "德國",
    "rank_band": "11-50",
    "rank_order": 1
   },
@@ -1721,14 +1957,17 @@
    "title_guessed": false,
    "found_via": "virtual reality",
    "topic_boost": 3,
-   "enrich_attempts": 1,
    "page_score": 2,
    "page_topics": [
     "VR XR AR"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-10-06",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -1737,6 +1976,7 @@
    ],
    "fields": [],
    "tools": [],
+   "country_zh": "荷蘭",
    "rank_band": "未列入",
    "rank_order": 5
   },
@@ -1757,13 +1997,17 @@
    "title_guessed": false,
    "found_via": "user experience",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "原型製作"
    ],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-10-06",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -1776,6 +2020,7 @@
    "tools": [
     "原型製作"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "11-50",
    "rank_order": 1
   },
@@ -1831,15 +2076,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-10-06",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
    "fields": [],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "51-100",
    "rank_order": 2
   },
@@ -1860,10 +2109,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-10-06",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -1872,6 +2124,7 @@
     "語言"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "201-500",
    "rank_order": 4
   },
@@ -2328,16 +2581,20 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "R",
     "實驗室實驗",
     "質性分析",
     "混合方法"
    ],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -2352,6 +2609,7 @@
     "質性分析",
     "混合方法"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "201-500",
    "rank_order": 4
   },
@@ -2372,18 +2630,20 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "enrich_attempts": 1,
    "page_score": 2,
    "page_topics": [
     "VR XR AR"
    ],
-   "score_version": 7,
    "page_tools": [
     "田野／民族誌",
     "參與式研究"
    ],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -2397,6 +2657,7 @@
     "田野／民族誌",
     "參與式研究"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -2521,14 +2782,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "MATLAB",
     "模擬建模"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -2541,6 +2804,7 @@
     "MATLAB",
     "模擬建模"
    ],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -2561,18 +2825,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
    "page_tools": [
     "Python",
     "R"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-10-03",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -2584,6 +2848,7 @@
     "Python",
     "R"
    ],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -2834,10 +3099,15 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -2845,6 +3115,7 @@
    ],
    "fields": [],
    "tools": [],
+   "country_zh": "荷蘭",
    "rank_band": "未列入",
    "rank_order": 5,
    "also_at": [
@@ -3088,13 +3359,17 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "R"
    ],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -3104,6 +3379,7 @@
    "tools": [
     "R"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -3157,19 +3433,20 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 1,
    "page_score": 2,
    "page_topics": [
     "設計研究"
    ],
-   "query_ok": true,
-   "score_version": 7,
    "page_tools": [
     "Arduino",
     "原型製作"
    ],
+   "score_version": 8,
+   "query_ok": true,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 5,
    "topics": [
@@ -3183,6 +3460,7 @@
     "Arduino",
     "原型製作"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "11-50",
    "rank_order": 1
   },
@@ -3393,15 +3671,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
    "fields": [],
    "tools": [],
+   "country_zh": "德國",
    "rank_band": "11-50",
    "rank_order": 1
   },
@@ -3422,17 +3704,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "聊天機器人"
    ],
-   "score_version": 7,
    "page_tools": [
     "工作坊"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 2,
    "topics": [
@@ -3442,6 +3724,7 @@
    "tools": [
     "工作坊"
    ],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -3462,14 +3745,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -3477,6 +3761,7 @@
     "社會心理"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -3497,15 +3782,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
    "fields": [],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -3570,18 +3859,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
    "page_tools": [
     "Python",
     "C++/C#"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -3592,6 +3881,7 @@
     "Python",
     "C++/C#"
    ],
+   "country_zh": "瑞典",
    "rank_band": "51-100",
    "rank_order": 2
   },
@@ -3649,17 +3939,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
    "page_tools": [
     "模擬建模"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -3669,6 +3959,7 @@
    "tools": [
     "模擬建模"
    ],
+   "country_zh": "瑞典",
    "rank_band": "51-100",
    "rank_order": 2
   },
@@ -3724,14 +4015,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -3740,6 +4032,7 @@
     "數學最佳化"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "51-100",
    "rank_order": 2
   },
@@ -3797,14 +4090,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-10-01",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -3812,6 +4106,7 @@
     "機器人"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "51-100",
    "rank_order": 2
   },
@@ -3988,13 +4283,17 @@
    "title_guessed": false,
    "found_via": "usability",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python"
    ],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -4008,6 +4307,7 @@
    "tools": [
     "Python"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "未列入",
    "rank_order": 5
   },
@@ -4110,13 +4410,17 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "工作坊"
    ],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -4129,6 +4433,7 @@
    "tools": [
     "工作坊"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "11-50",
    "rank_order": 1
   },
@@ -4149,17 +4454,19 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 1,
    "page_score": 2,
    "page_topics": [
     "參與式設計"
    ],
-   "score_version": 7,
    "page_tools": [
     "工作坊"
    ],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -4172,6 +4479,7 @@
    "tools": [
     "工作坊"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "11-50",
    "rank_order": 1
   },
@@ -4259,14 +4567,18 @@
    "title_guessed": false,
    "found_via": "usability",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "參與式研究"
    ],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "FULL_TIME",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -4281,6 +4593,7 @@
     "Python",
     "參與式研究"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "11-50",
    "rank_order": 1
   },
@@ -4301,14 +4614,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -4317,6 +4631,7 @@
     "教育"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -4337,17 +4652,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
    "page_tools": [
     "Python"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -4359,6 +4674,7 @@
    "tools": [
     "Python"
    ],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -4379,19 +4695,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 6,
    "page_topics": [
     "穿戴式",
     "無障礙",
     "腦電"
    ],
-   "score_version": 7,
    "page_tools": [
     "實驗室實驗"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 4,
    "topics": [
@@ -4405,6 +4721,7 @@
    "tools": [
     "實驗室實驗"
    ],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -4425,13 +4742,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-30",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -4439,6 +4758,7 @@
    "tools": [
     "Python"
    ],
+   "country_zh": "瑞典",
    "rank_band": "51-100",
    "rank_order": 2
   },
@@ -4717,17 +5037,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
    "page_tools": [
     "R"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-29",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -4738,6 +5058,7 @@
    "tools": [
     "R"
    ],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -4758,14 +5079,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "MATLAB",
     "模擬建模"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-29",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -4778,6 +5101,7 @@
     "MATLAB",
     "模擬建模"
    ],
+   "country_zh": "瑞典",
    "rank_band": "51-100",
    "rank_order": 2
   },
@@ -4954,15 +5278,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-28",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
    "fields": [],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "51-100",
    "rank_order": 2
   },
@@ -4983,18 +5311,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
    "page_tools": [
     "Python",
     "實驗室實驗"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-28",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -5003,6 +5331,7 @@
     "Python",
     "實驗室實驗"
    ],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -5129,10 +5458,15 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 2,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "FULL_TIME",
+   "enrich_attempts": 3,
    "first_seen": "2026-09-26",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -5143,6 +5477,7 @@
     "氣候環境"
    ],
    "tools": [],
+   "country_zh": "荷蘭",
    "rank_band": "11-50",
    "rank_order": 1
   },
@@ -5283,17 +5618,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
    "page_tools": [
     "Python"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-26",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -5303,6 +5638,7 @@
    "tools": [
     "Python"
    ],
+   "country_zh": "瑞典",
    "rank_band": "51-100",
    "rank_order": 2
   },
@@ -5323,10 +5659,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-26",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -5334,6 +5673,7 @@
     "生命科學"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -5460,19 +5800,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 4,
    "page_topics": [
     "可解釋 AI",
     "駕駛模擬"
    ],
-   "score_version": 7,
    "page_tools": [
     "Python",
     "MATLAB"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-25",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 4,
    "topics": [
@@ -5486,6 +5826,7 @@
     "Python",
     "MATLAB"
    ],
+   "country_zh": "瑞典",
    "rank_band": "51-100",
    "rank_order": 2
   },
@@ -5830,14 +6171,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-24",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -5845,6 +6187,7 @@
     "光電半導體"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -5865,10 +6208,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-24",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -5878,6 +6224,7 @@
     "數學最佳化"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -5898,16 +6245,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 6,
    "page_topics": [
     "觸覺回饋",
     "視覺分析",
     "可解釋 AI"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-24",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 6,
    "topics": [
@@ -5917,6 +6265,7 @@
    ],
    "fields": [],
    "tools": [],
+   "country_zh": "瑞士",
    "rank_band": "1-10",
    "rank_order": 0
   },
@@ -5968,14 +6317,18 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "PyTorch/TensorFlow"
    ],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-23",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -5986,6 +6339,7 @@
     "Python",
     "PyTorch/TensorFlow"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -6080,10 +6434,15 @@
    "title_guessed": false,
    "found_via": "data visualization",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-23",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -6094,6 +6453,7 @@
     "交通移動"
    ],
    "tools": [],
+   "country_zh": "荷蘭",
    "rank_band": "11-50",
    "rank_order": 1
   },
@@ -6219,13 +6579,17 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python"
    ],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-23",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -6239,6 +6603,7 @@
    "tools": [
     "Python"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "201-500",
    "rank_order": 4
   },
@@ -6254,20 +6619,23 @@
    "location": "FI",
    "department": "",
    "posted": "2026-09-07",
-   "deadline": "2026-10-10",
+   "deadline": "2026-10-15",
    "summary": "Aalto University is a community of bold thinkers where science and art meet technology and business. We are committed to identifying and solving grand societal challenges and building an innovative future. Aalto has six schools with 14 000 students and a staff of 5000, of which more than 400 are professors. Our main campus is located in Espoo, Finland. Diversity is part of who we are, and we activ",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "C++/C#"
    ],
+   "score_version": 8,
+   "employment": "[\"FULL_TIME\"]",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-23",
-   "last_seen": "2026-10-10",
-   "status": "closed",
+   "last_seen": "2026-10-12",
+   "status": "open",
    "topic_score": 1,
    "topics": [
     "HCI 關鍵字搜尋（弱）"
@@ -6276,9 +6644,9 @@
     "經濟商管"
    ],
    "tools": [
-    "Python",
     "C++/C#"
    ],
+   "country_zh": "芬蘭",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -6299,15 +6667,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-23",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
    "fields": [],
    "tools": [],
+   "country_zh": "瑞士",
    "rank_band": "1-10",
    "rank_order": 0
   },
@@ -6328,10 +6700,15 @@
    "title_guessed": false,
    "found_via": "human-AI interaction",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-22",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -6339,6 +6716,7 @@
    ],
    "fields": [],
    "tools": [],
+   "country_zh": "荷蘭",
    "rank_band": "",
    "rank_order": 99
   },
@@ -6525,10 +6903,15 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-22",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -6538,6 +6921,7 @@
     "氣候環境"
    ],
    "tools": [],
+   "country_zh": "荷蘭",
    "rank_band": "11-50",
    "rank_order": 1
   },
@@ -6558,11 +6942,15 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "enrich_attempts": 3,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 8,
    "query_ok": true,
-   "score_version": 7,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-22",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 3,
    "topics": [
@@ -6572,6 +6960,7 @@
     "醫療"
    ],
    "tools": [],
+   "country_zh": "荷蘭",
    "rank_band": "11-50",
    "rank_order": 1
   },
@@ -6592,14 +6981,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "C++/C#"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-22",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -6610,6 +7001,7 @@
     "Python",
     "C++/C#"
    ],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -6630,14 +7022,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-22",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -6646,6 +7039,7 @@
     "教育"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -6666,14 +7060,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-22",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -6682,6 +7077,7 @@
     "教育"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -6702,14 +7098,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-22",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -6718,6 +7115,7 @@
     "教育"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -6738,14 +7136,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "R"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-22",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -6757,6 +7157,7 @@
     "Python",
     "R"
    ],
+   "country_zh": "瑞典",
    "rank_band": "51-100",
    "rank_order": 2
   },
@@ -7172,17 +7573,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
    "page_tools": [
     "Python"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-20",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -7194,6 +7595,7 @@
    "tools": [
     "Python"
    ],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -7214,14 +7616,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-20",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -7230,6 +7633,7 @@
     "教育"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -7627,14 +8031,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-18",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -7642,6 +8047,7 @@
     "教育"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -7662,13 +8068,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "工作坊"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-18",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -7678,6 +8086,7 @@
    "tools": [
     "工作坊"
    ],
+   "country_zh": "瑞典",
    "rank_band": "51-100",
    "rank_order": 2
   },
@@ -7698,13 +8107,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "工作坊"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-18",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -7714,6 +8125,7 @@
    "tools": [
     "工作坊"
    ],
+   "country_zh": "瑞典",
    "rank_band": "51-100",
    "rank_order": 2
   },
@@ -8203,13 +8615,17 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "實驗室實驗"
    ],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-17",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -8222,6 +8638,7 @@
    "tools": [
     "實驗室實驗"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "11-50",
    "rank_order": 1
   },
@@ -8242,15 +8659,19 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "MATLAB",
     "C++/C#"
    ],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-17",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -8264,6 +8685,7 @@
     "MATLAB",
     "C++/C#"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "11-50",
    "rank_order": 1
   },
@@ -8284,14 +8706,18 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "實驗室實驗"
    ],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-17",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -8305,6 +8731,7 @@
     "Python",
     "實驗室實驗"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "11-50",
    "rank_order": 1
   },
@@ -8894,14 +9321,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-16",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -8910,6 +9338,7 @@
     "語言"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -8930,14 +9359,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-16",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -8946,6 +9376,7 @@
     "語言"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -9002,13 +9433,17 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "實驗室實驗"
    ],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-15",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -9021,6 +9456,7 @@
    "tools": [
     "實驗室實驗"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -9080,13 +9516,17 @@
    "title_guessed": false,
    "found_via": "eye tracking",
    "topic_boost": 3,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "訪談"
    ],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 4,
    "first_seen": "2026-09-15",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -9099,6 +9539,7 @@
    "tools": [
     "訪談"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "201-500",
    "rank_order": 4
   },
@@ -9119,14 +9560,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-15",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -9135,6 +9577,7 @@
     "數學最佳化"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -9155,13 +9598,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "問卷調查"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-15",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -9171,6 +9616,7 @@
    "tools": [
     "問卷調查"
    ],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -9191,14 +9637,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-15",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -9206,6 +9653,7 @@
     "社會心理"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3,
    "also_at": [
@@ -9232,13 +9680,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "工作坊"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-15",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -9249,6 +9699,7 @@
    "tools": [
     "工作坊"
    ],
+   "country_zh": "瑞典",
    "rank_band": "201-500",
    "rank_order": 4
   },
@@ -9269,13 +9720,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "工作坊"
    ],
+   "score_version": 8,
+   "enrich_attempts": 4,
    "first_seen": "2026-09-15",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -9286,6 +9739,7 @@
    "tools": [
     "工作坊"
    ],
+   "country_zh": "瑞典",
    "rank_band": "201-500",
    "rank_order": 4
   },
@@ -10223,7 +10677,7 @@
    "score_version": 7,
    "first_seen": "2026-09-12",
    "last_seen": "2026-10-11",
-   "status": "open",
+   "status": "closed",
    "topic_score": 5,
    "topics": [
     "VR XR AR",
@@ -11190,14 +11644,18 @@
    "title_guessed": false,
    "found_via": "data visualization",
    "topic_boost": 3,
-   "enrich_attempts": 8,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "工作坊",
     "田野／民族誌"
    ],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -11210,6 +11668,7 @@
     "工作坊",
     "田野／民族誌"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -11230,15 +11689,19 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 8,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "MATLAB",
     "工作坊"
    ],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -11250,6 +11713,7 @@
     "MATLAB",
     "工作坊"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -11508,14 +11972,18 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
-   "enrich_attempts": 8,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "PyTorch/TensorFlow"
    ],
+   "score_version": 8,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 1,
    "topics": [
@@ -11528,6 +11996,7 @@
     "Python",
     "PyTorch/TensorFlow"
    ],
+   "country_zh": "荷蘭",
    "rank_band": "201-500",
    "rank_order": 4
   },
@@ -13121,14 +13590,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -13137,6 +13607,7 @@
     "生命科學"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -13157,14 +13628,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -13173,6 +13645,7 @@
     "數學最佳化"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "201-500",
    "rank_order": 4
   },
@@ -13369,19 +13842,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
    "fields": [],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3,
    "also_at": [
@@ -13443,19 +13918,21 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
    "fields": [],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -13680,10 +14157,13 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -13692,6 +14172,7 @@
     "教育"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "201-500",
    "rank_order": 4
   },
@@ -13918,13 +14399,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "模擬建模"
    ],
+   "score_version": 8,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -13934,6 +14417,7 @@
    "tools": [
     "模擬建模"
    ],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -13954,13 +14438,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "模擬建模"
    ],
+   "score_version": 8,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -13970,6 +14456,7 @@
    "tools": [
     "模擬建模"
    ],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -14030,14 +14517,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -14046,6 +14534,7 @@
     "教育"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -14066,15 +14555,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 4,
    "page_topics": [
     "穿戴式",
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 2,
    "topics": [
@@ -14085,6 +14575,7 @@
     "教育"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -14105,19 +14596,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 6,
    "page_topics": [
     "無障礙",
     "聊天機器人",
     "使用者介面"
    ],
-   "score_version": 7,
    "page_tools": [
     "原型製作"
    ],
+   "score_version": 8,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 4,
    "topics": [
@@ -14130,6 +14621,7 @@
    "tools": [
     "原型製作"
    ],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -14150,17 +14642,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "可解釋 AI"
    ],
-   "score_version": 7,
    "page_tools": [
     "原型製作"
    ],
+   "score_version": 8,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 2,
    "topics": [
@@ -14173,6 +14665,7 @@
    "tools": [
     "原型製作"
    ],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -14193,18 +14686,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 4,
    "page_topics": [
     "VR XR AR",
     "無障礙"
    ],
-   "score_version": 7,
    "page_tools": [
     "原型製作"
    ],
+   "score_version": 8,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 2,
    "topics": [
@@ -14216,6 +14709,7 @@
    "tools": [
     "原型製作"
    ],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -14236,14 +14730,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -14251,6 +14746,7 @@
     "教育"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -14440,14 +14936,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -14455,6 +14952,7 @@
     "量子"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
@@ -14574,13 +15072,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python"
    ],
+   "score_version": 8,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -14591,6 +15091,7 @@
    "tools": [
     "Python"
    ],
+   "country_zh": "瑞典",
    "rank_band": "201-500",
    "rank_order": 4
   },
@@ -14790,24 +15291,26 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "2026-09-23",
+   "deadline": "2026-10-31",
    "summary": "Project description Third-cycle subject: Information and Communication Technologies We invite applications for doctoral student positions with the Networked Systems Security (NSS) lab at EECS/CLS. We",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 9,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 10,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
    "fields": [],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "51-100",
    "rank_order": 2
   },
@@ -14954,20 +15457,21 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "2026-10-12",
+   "deadline": "2026-10-26",
    "summary": "Project description Third-cycle subject: Engineering Mechanics FLOW is a strong community of researchers engaged in fundamental and applied research in fluid mechanics within the department of Enginee",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 9,
    "page_score": 4,
    "page_topics": [
     "無障礙",
     "VR XR AR"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 10,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 2,
    "topics": [
@@ -14975,6 +15479,7 @@
    ],
    "fields": [],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "51-100",
    "rank_order": 2
   },
@@ -14995,14 +15500,15 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 9,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 10,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -15010,6 +15516,7 @@
     "量子"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "51-100",
    "rank_order": 2
   },
@@ -15170,23 +15677,23 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "2026-10-10",
+   "deadline": "2026-10-17",
    "summary": "Project description Third-cycle subject: Information and Communication Technology Currently, there are no effective methods for protecting implementations of cryptographic algorithms from fault attack",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 9,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
    "page_tools": [
     "PyTorch/TensorFlow",
     "工作坊"
    ],
+   "score_version": 8,
+   "enrich_attempts": 10,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -15197,6 +15704,7 @@
     "PyTorch/TensorFlow",
     "工作坊"
    ],
+   "country_zh": "瑞典",
    "rank_band": "51-100",
    "rank_order": 2
   },
@@ -15212,19 +15720,20 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "2026-10-09",
+   "deadline": "2026-10-23",
    "summary": "Project description Third-cycle subject: Physics, specialization in Nuclear Engineering The group of Nuclear Power Safety in Division of Nuclear Science and Engineering (NSE) conducts research on acci",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 9,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 10,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -15232,6 +15741,7 @@
     "能源"
    ],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "51-100",
    "rank_order": 2
   },
@@ -15247,23 +15757,23 @@
    "location": "",
    "department": "",
    "posted": "",
-   "deadline": "2026-10-01",
+   "deadline": "2026-10-15",
    "summary": "Project description Third-cycle subject: Technology and health AI-Driven Finite Element Human Body Modelling and Injury Biomechanics for Improved Traffic Safety This project develops an AI-driven plat",
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 9,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
    "page_tools": [
     "Python",
     "MATLAB"
    ],
+   "score_version": 8,
+   "enrich_attempts": 10,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -15274,6 +15784,7 @@
     "Python",
     "MATLAB"
    ],
+   "country_zh": "瑞典",
    "rank_band": "51-100",
    "rank_order": 2
   },
@@ -15526,17 +16037,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 9,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 7,
    "page_tools": [
     "Python"
    ],
+   "score_version": 8,
+   "enrich_attempts": 10,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -15546,6 +16057,7 @@
    "tools": [
     "Python"
    ],
+   "country_zh": "瑞典",
    "rank_band": "51-100",
    "rank_order": 2
   },
@@ -15831,15 +16343,19 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 8,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
    "fields": [],
    "tools": [],
+   "country_zh": "瑞典",
    "rank_band": "51-100",
    "rank_order": 2
   },
@@ -15906,14 +16422,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 8,
-   "score_version": 7,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "MATLAB"
    ],
+   "score_version": 8,
+   "enrich_attempts": 9,
    "first_seen": "2026-09-11",
-   "last_seen": "2026-10-11",
+   "last_seen": "2026-10-12",
    "status": "open",
    "topic_score": 0,
    "topics": [],
@@ -15925,6 +16443,7 @@
     "Python",
     "MATLAB"
    ],
+   "country_zh": "瑞典",
    "rank_band": "101-200",
    "rank_order": 3
   },
