@@ -96,6 +96,8 @@ def check_sources():
                     re.compile(pattern)
                 except re.error as exc:
                     FAILS.append(f"{label} 的 link_pattern 不是合法正則：{exc}")
+                if "\\\\d" in pattern or "\\\\." in pattern:
+                    FAILS.append(f"{label} 的 link_pattern 多跳脫了一層反斜線：{pattern}")
 
 
 def main():
