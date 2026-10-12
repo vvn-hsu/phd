@@ -47,7 +47,16 @@ medium:
     "situation awareness": 情境覺察
     "behaviou?r change": 行為改變
     "automated driving": 自動駕駛
+    "(automated|autonomous|self[- ]driving) (vehicle|car)s?\\b": 自動駕駛
     "driving simulator": 駕駛模擬
+    # 車輛 eHMI 這一塊
+    "e-?hmi|external (hmi|human[- ]machine interface)": eHMI
+    "human[- ]vehicle interaction|automotive (hci|user interface|interface)": 車輛人機介面
+    "in[- ]vehicle (interface|hmi|information system)": 車輛人機介面
+    "pedestrian (interaction|behaviou?r|crossing|communication)": 行人互動
+    "vulnerable road user": 行人互動
+    "take[- ]?over request|transition of control|mode awareness": 接手控制
+    "driver (monitoring|state estimation|distraction)": 駕駛狀態
     "social computing": 社會運算
     "crowdsourcing": 群眾外包
     "ubiquitous computing": 普適運算

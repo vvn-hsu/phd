@@ -108,7 +108,7 @@
       <select id="city"><option value="">所有城市</option></select>
       <select id="tool"><option value="">所有工具／方法</option></select>
       <select id="field"><option value="">所有領域標籤</option></select>
-      <select id="country"><option value="">所有國家</option></select>
+      <select id="country"><option value="">所有地區</option></select>
       <select id="topic">
         <option value="broad">HCI 相關（廣泛）</option>
         <option value="strict">HCI 相關（嚴格）</option>
@@ -139,7 +139,8 @@
 
   <details class="sources">
     <summary>來源狀態（哪些網站抓成功）</summary>
-    <table id="src-table"><thead><tr><th>來源</th><th>國家</th><th>筆數</th><th>說明</th></tr></thead><tbody></tbody></table>
+    <table id="src-table"><thead><tr><th>來源</th><th>地區</th><th>筆數</th><th>說明</th></tr></thead><tbody></tbody></table>
+    <div id="recheck"></div>
   </details>
 
   <footer>
@@ -203,8 +204,12 @@ async function boot(){
 
   const schools = [...new Set(d.jobs.map(j => j.university || j.source_name).filter(Boolean))].sort();
   $('school').append(...schools.map(s => new Option(s, s)));
-  const countries = [...new Set(d.jobs.map(j => j.country).filter(Boolean))].sort();
-  $('country').append(...countries.map(c => new Option(c, c)));
+  const countryNames = new Map();
+  for (const job of d.jobs) if (job.country)
+    countryNames.set(job.country, job.country_zh || job.country);
+  $('country').append(...[...countryNames.entries()]
+    .sort((a,b) => a[1].localeCompare(b[1],'zh-Hant'))
+    .map(([code, name]) => new Option(name, code)));
   const cities = [...new Set(d.jobs.map(j => j.city).filter(Boolean))]
     .sort((a,b) => a.localeCompare(b,'en'));
   $('city').append(...cities.map(c => new Option(c, c)));
@@ -221,6 +226,7 @@ async function boot(){
   $('field').append(...fields.map(([f,n]) => new Option(`${f}（${n}）`, f)));
 
   renderSources(d.sources || []);
+  renderRecheck(d.recheck);
   bind();
   render();
 }
@@ -255,7 +261,7 @@ function matches(job){
   if (state.rank !== '' && (job.rank_order ?? 99) > Number(state.rank)) return false;
   if (state.q){
     const blob = [job.title, job.university, job.source_name, job.department, job.location,
-      job.summary, job.city, ...(job.topics || []), ...(job.tools || []),
+      job.summary, job.city, job.country_zh, ...(job.topics || []), ...(job.tools || []),
       ...(job.fields || [])].join(' ').toLowerCase();
     if (!state.q.toLowerCase().split(/\s+/).every(t => blob.includes(t))) return false;
   }
@@ -290,7 +296,7 @@ function render(){
     if (isNew(job)) tags.push('<span class="tag new">NEW</span>');
     if (job.status === 'closed') tags.push('<span class="tag closed">已下架</span>');
     if (dd !== null && dd >= 0 && dd <= 14) tags.push(`<span class="tag soon">剩 ${dd} 天</span>`);
-    if (job.country) tags.push(`<span class="tag">${esc(job.country)}</span>`);
+    if (job.country) tags.push(`<span class="tag">${esc(job.country_zh || job.country)}</span>`);
     const uni = job.university || job.source_name;
     const meta = [
       `<strong>${esc(uni)}</strong>`,
@@ -338,11 +344,25 @@ function renderStats(){
   ].map(([l, val]) => `<div class="stat"><b>${val}</b><span>${l}</span></div>`).join('');
 }
 
+function renderRecheck(recheck){
+  const box = $('recheck');
+  if (!recheck || !(recheck.sources || []).length) { box.innerHTML = ''; return; }
+  const back = recheck.sources.filter(s => s.status === 'ok');
+  box.innerHTML =
+    `<p style="margin:14px 0 4px;font-size:13px;color:var(--muted)">` +
+    `停用中的來源，每週一自動回去試一次（上次：${esc(recheck.at || '—')}）` +
+    (back.length ? `　·　<strong style="color:var(--new)">${back.length} 個又抓得到了</strong>` : '') +
+    `</p><table><tbody>` +
+    recheck.sources.map(s => `<tr><td><span class="dot ${s.status}"></span>${esc(s.name)}</td>` +
+      `<td>${s.count}</td><td class="err">${esc((s.detail || '').slice(0,120))}</td></tr>`).join('') +
+    `</tbody></table>`;
+}
+
 function renderSources(sources){
   $('src-table').querySelector('tbody').innerHTML = sources.map(s => `
     <tr>
       <td><span class="dot ${s.status}"></span>${s.homepage ? `<a href="${esc(s.homepage)}" target="_blank" rel="noopener">${esc(s.name)}</a>` : esc(s.name)}</td>
-      <td>${esc(s.country)}</td>
+      <td>${esc(s.country_zh || s.country)}</td>
       <td>${s.count}</td>
       <td class="err">${esc(s.error || (s.status === 'ok' ? s.url_used : '抓到頁面但沒有符合的職缺'))}</td>
     </tr>`).join('');

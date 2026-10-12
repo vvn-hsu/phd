@@ -29,6 +29,7 @@ DATA = os.path.join(ROOT, "data", "jobs.json")
 CONFIG = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sources.yml")
 TOPICS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "topics.yml")
 RANKINGS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "rankings.yml")
+COUNTRIES = os.path.join(os.path.dirname(os.path.abspath(__file__)), "countries.yml")
 
 UA = (
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -52,7 +53,7 @@ PHD_WEAK = re.compile(r"(\bdoctoral\b|\bdoctorate\b|research\s+student)", re.I)
 POSTDOC = re.compile(r"(post[\s\-]?doc|postdoctoral|post[\s\-]?doctoral)", re.I)
 
 KEEP_CLOSED_DAYS = 45   # 職缺從列表消失後，還在資料裡保留幾天
-SCORE_VERSION = 7       # 計分規則改過就 +1，舊資料會自動重抓重算
+SCORE_VERSION = 8       # 計分規則改過就 +1，舊資料會自動重抓重算
 
 
 # --------------------------------------------------------------------------- 工具
@@ -225,6 +226,22 @@ def dedupe_keep_order(items) -> list[str]:
 _RANK_RULES: list[tuple[re.Pattern, str, int | None]] = []
 _RANK_BANDS: list[str] = []
 _RANK_SOURCE = ""
+
+
+_COUNTRY_ZH: dict[str, str] = {}
+
+
+def country_zh(code: str) -> str:
+    """國家代碼或英文名換成中文；對不上就原樣回傳。"""
+    global _COUNTRY_ZH
+    if not _COUNTRY_ZH:
+        try:
+            with open(COUNTRIES, encoding="utf-8") as fh:
+                _COUNTRY_ZH = {str(k).strip().lower(): str(v)
+                               for k, v in (yaml.safe_load(fh) or {}).items()}
+        except OSError:
+            _COUNTRY_ZH = {"_": "_"}
+    return _COUNTRY_ZH.get((code or "").strip().lower(), code or "")
 
 
 def load_rankings(path: str = RANKINGS) -> None:
@@ -756,6 +773,8 @@ def main() -> int:
     ap.add_argument("--probe", action="store_true", help="只測試來源，不寫檔")
     ap.add_argument("--only", default="", help="只跑這些來源，逗號分隔")
     ap.add_argument("--no-enrich", action="store_true")
+    ap.add_argument("--recheck-disabled", action="store_true",
+                    help="順便回去試停用中的來源，看它們是不是修好了（不收錄職缺）")
     args = ap.parse_args()
 
     with open(CONFIG, encoding="utf-8") as fh:
@@ -783,6 +802,7 @@ def main() -> int:
                 fresh.setdefault(job["id"], job)
             reports.append({
                 "id": source["id"], "name": source["name"], "country": source.get("country", ""),
+                "country_zh": country_zh(source.get("country", "")),
                 "homepage": source.get("homepage", ""), "status": "ok" if found else "empty",
                 "count": len(found), "url_used": source.get("_used_url", ""), "error": "",
             })
@@ -792,12 +812,37 @@ def main() -> int:
         except Exception as exc:  # noqa: BLE001 - 單一來源掛掉不影響其他來源
             reports.append({
                 "id": source["id"], "name": source["name"], "country": source.get("country", ""),
+                "country_zh": country_zh(source.get("country", "")),
                 "homepage": source.get("homepage", ""), "status": "error", "count": 0,
                 "url_used": "", "error": str(exc)[:400],
             })
             log(f"[FAIL] {source['id']:<18} {exc}")
             if os.environ.get("DEBUG"):
                 traceback.print_exc()
+
+    # 定期回去試停用中的來源：對方改版或解除封鎖的話才會知道。
+    # 只記錄結果，不把職缺收進來（那些來源當初是因為抓不到才停用的）。
+    recheck = previous.get("recheck") or {}
+    if args.recheck_disabled:
+        results = []
+        for source in config["sources"]:
+            if source.get("enabled", True) or (wanted and source["id"] not in wanted):
+                continue
+            try:
+                found = collect(dict(source), cfg)
+                status = "ok" if found else "empty"
+                detail = "；".join(j["title"][:60] for j in found[:2])
+            except Exception as exc:  # noqa: BLE001
+                status, found, detail = "error", [], str(exc)[:200]
+            results.append({"id": source["id"], "name": source["name"],
+                            "status": status, "count": len(found), "detail": detail})
+            mark = "可以了" if status == "ok" else status
+            log(f"[複檢] {source['id']:<18} {mark}（{len(found)} 筆）{detail[:80]}")
+            time.sleep(1)
+        recheck = {"at": today(), "sources": results}
+        back = [r["id"] for r in results if r["status"] == "ok"]
+        if back:
+            log("停用中的來源又有東西了：" + "、".join(back))
 
     if args.probe:
         log("\n--- probe 摘要 ---")
@@ -841,7 +886,7 @@ def main() -> int:
         page_keys = {"page_score", "page_topics", "page_tools", "query_ok", "score_version"}
         for key in ("posted", "deadline", "location", "department", "summary", "university",
                     "enrich_attempts", "page_score", "page_topics", "query_ok",
-                    "score_version", "page_tools", "city", "country"):
+                    "score_version", "page_tools", "city", "country", "country_zh"):
             if job.get("_enriched") and key in page_keys:
                 continue
             if key == "university" and old.get(key) == old.get("source_name"):
@@ -919,6 +964,7 @@ def main() -> int:
         # 詳細頁有寫才算，沒寫就退回來源設定
         if not job.get("country"):
             job["country"] = default_country.get(job["source"], "")
+        job["country_zh"] = country_zh(job["country"])
 
     # 查不到雇主就讓 university 留空，網頁顯示時自己退回來源名稱。
     # 寫進資料的話，下一輪會被當成「已經知道學校了」而不再補抓。
@@ -986,6 +1032,7 @@ def main() -> int:
                              and j.get("topic_score", 0) >= _TOPIC_THRESHOLDS.get("broad", 2)),
         },
         "sources": reports,
+        "recheck": recheck,
         "jobs": jobs,
     }
     os.makedirs(os.path.dirname(DATA), exist_ok=True)

@@ -21,6 +21,10 @@ on:
         description: "偵查時改用這個 User-Agent（測對方是不是擋 UA）"
         type: string
         default: ""
+      recheck:
+        description: "這次也回去複檢停用中的來源（每週一本來就會做）"
+        type: boolean
+        default: false
       send_mail:
         description: "這次也寄出摘要信（排程本來就會寄）"
         type: boolean
@@ -68,6 +72,11 @@ jobs:
         run: |
           if [ "${{ inputs.probe }}" = "true" ]; then
             python scraper/run.py --probe
+            exit 0
+          fi
+          # 每週一順便回去試停用中的來源（對方修好了才會知道）
+          if [ "$(date -u +%u)" = "1" ] || [ "${{ inputs.recheck }}" = "true" ]; then
+            python scraper/run.py --recheck-disabled
           else
             python scraper/run.py
           fi

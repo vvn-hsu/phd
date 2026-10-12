@@ -59,7 +59,8 @@ def chips(job: dict) -> str:
 
 def job_block(job: dict, show_tags: bool = True) -> str:
     where = " · ".join(x for x in [job.get("university") or job.get("source_name"),
-                                   job.get("city")] if x)
+                                   job.get("city"),
+                                   job.get("country_zh") or job.get("country")] if x)
     dd = days_to(job.get("deadline", ""))
     when = ""
     if job.get("deadline"):
