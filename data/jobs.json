@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-12T06:09:11+00:00",
+ "generated_at": "2026-10-12T06:20:18+00:00",
  "date": "2026-10-12",
  "topic_thresholds": {
   "broad": 2,
@@ -16,10 +16,10 @@
   "未列入"
  ],
  "counts": {
-  "open": 129,
-  "new_today": 16,
-  "closed_kept": 343,
-  "hci_broad": 25
+  "open": 122,
+  "new_today": 12,
+  "closed_kept": 353,
+  "hci_broad": 20
  },
  "sources": [
   {
@@ -31,6 +31,17 @@
    "status": "ok",
    "count": 32,
    "url_used": "14 個搜尋網址",
+   "error": ""
+  },
+  {
+   "id": "euraxess_hci",
+   "name": "EURAXESS（HCI 關鍵字搜尋）",
+   "country": "EU",
+   "country_zh": "跨國／歐洲",
+   "homepage": "https://euraxess.ec.europa.eu/jobs/search?keywords=human-computer%20interaction",
+   "status": "ok",
+   "count": 4,
+   "url_used": "10 個搜尋網址",
    "error": ""
   },
   {
@@ -51,8 +62,8 @@
    "country_zh": "跨國／歐洲",
    "homepage": "https://euraxess.ec.europa.eu/jobs/search",
    "status": "ok",
-   "count": 14,
-   "url_used": "https://euraxess.ec.europa.eu/jobs/search?sort%5Bname%5D=created&sort%5Bdirection%5D=DESC&f%5B0%5D=job_research_profile%3A447",
+   "count": 4,
+   "url_used": "https://euraxess.ec.europa.eu/jobs/search?sort%5Bname%5D=created&sort%5Bdirection%5D=DESC",
    "error": ""
   },
   {
@@ -75,6 +86,17 @@
    "status": "ok",
    "count": 4,
    "url_used": "7 個搜尋網址",
+   "error": ""
+  },
+  {
+   "id": "jobsacuk",
+   "name": "jobs.ac.uk（英國）",
+   "country": "UK",
+   "country_zh": "英國",
+   "homepage": "https://www.jobs.ac.uk/search/?keywords=PhD",
+   "status": "ok",
+   "count": 4,
+   "url_used": "https://www.jobs.ac.uk/search/?keywords=PhD&sortOrder=1",
    "error": ""
   },
   {
@@ -203,20 +225,6 @@
   "at": "2026-10-12",
   "sources": [
    {
-    "id": "euraxess_hci",
-    "name": "EURAXESS（HCI 關鍵字搜尋）",
-    "status": "ok",
-    "count": 5,
-    "detail": "2 PhD candidates within Peace and Conflict Research (DIViNE)；PhD Position in Formal Methods for Concurrent Cryptographic "
-   },
-   {
-    "id": "jobsacuk",
-    "name": "jobs.ac.uk（英國）",
-    "status": "ok",
-    "count": 4,
-    "detail": "PhD Studentship: Marie Sklodowska-Curie Actions Doctoral Net；PhD programme in Machine Learning Systems"
-   },
-   {
     "id": "liu",
     "name": "Linköpings universitet",
     "status": "error",
@@ -278,8 +286,8 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 2,
-   "score_version": 8,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "SPSS/Stata",
@@ -287,6 +295,9 @@
     "工作坊",
     "田野／民族誌"
    ],
+   "score_version": 8,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 3,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-12",
@@ -309,8 +320,8 @@
   },
   {
    "id": "4266a105d6709a14",
-   "source": "euraxess",
-   "source_name": "EURAXESS（全歐洲）",
+   "source": "euraxess_hci",
+   "source_name": "EURAXESS（HCI 關鍵字搜尋）",
    "university": "",
    "country": "EU",
    "title": "PhD in Advanced Epitaxial Growth for InP-Based Photonic Integrated Circuits",
@@ -322,19 +333,22 @@
    "deadline": "2026-11-02",
    "summary": "Advance your research career and opportunities with EURAXESS. Discover jobs, funding, and partnerships, and programmes for innovation and career growth.",
    "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
+   "found_via": "human-computer interaction",
+   "topic_boost": 3,
    "page_score": 0,
    "page_topics": [],
    "page_tools": [],
    "score_version": 8,
-   "enrich_attempts": 2,
+   "query_ok": false,
+   "enrich_attempts": 3,
    "country_zh": "跨國／歐洲",
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-12",
    "status": "open",
-   "topic_score": 0,
-   "topics": [],
+   "topic_score": 1,
+   "topics": [
+    "HCI 關鍵字搜尋（弱）"
+   ],
    "fields": [
     "光電半導體"
    ],
@@ -368,7 +382,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-12",
-   "status": "open",
+   "status": "closed",
    "topic_score": 2,
    "topics": [
     "無障礙"
@@ -385,8 +399,8 @@
   },
   {
    "id": "afdf1a68967648d7",
-   "source": "euraxess",
-   "source_name": "EURAXESS（全歐洲）",
+   "source": "euraxess_hci",
+   "source_name": "EURAXESS（HCI 關鍵字搜尋）",
    "university": "",
    "country": "EU",
    "title": "PhD Position in Formal Methods for Concurrent Cryptographic Protocols",
@@ -398,19 +412,22 @@
    "deadline": "2026-11-02",
    "summary": "Advance your research career and opportunities with EURAXESS. Discover jobs, funding, and partnerships, and programmes for innovation and career growth.",
    "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
+   "found_via": "human-computer interaction",
+   "topic_boost": 3,
    "page_score": 0,
    "page_topics": [],
    "page_tools": [],
    "score_version": 8,
-   "enrich_attempts": 2,
+   "query_ok": false,
+   "enrich_attempts": 3,
    "country_zh": "跨國／歐洲",
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-12",
    "status": "open",
-   "topic_score": 0,
-   "topics": [],
+   "topic_score": 1,
+   "topics": [
+    "HCI 關鍵字搜尋（弱）"
+   ],
    "fields": [
     "資安隱私"
    ],
@@ -435,11 +452,14 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 2,
-   "score_version": 8,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "田野／民族誌"
    ],
+   "score_version": 8,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 3,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-12",
@@ -458,8 +478,8 @@
   },
   {
    "id": "5f9a7bdbc3f18420",
-   "source": "euraxess",
-   "source_name": "EURAXESS（全歐洲）",
+   "source": "euraxess_hci",
+   "source_name": "EURAXESS（HCI 關鍵字搜尋）",
    "university": "",
    "country": "EU",
    "title": "Doctoral student in Technology and Society on regulatory learning and supervisory competence",
@@ -471,19 +491,22 @@
    "deadline": "2026-11-02",
    "summary": "Advance your research career and opportunities with EURAXESS. Discover jobs, funding, and partnerships, and programmes for innovation and career growth.",
    "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
+   "found_via": "human-computer interaction",
+   "topic_boost": 3,
    "page_score": 0,
    "page_topics": [],
    "page_tools": [],
    "score_version": 8,
-   "enrich_attempts": 2,
+   "query_ok": false,
+   "enrich_attempts": 3,
    "country_zh": "跨國／歐洲",
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-12",
    "status": "open",
-   "topic_score": 0,
-   "topics": [],
+   "topic_score": 1,
+   "topics": [
+    "HCI 關鍵字搜尋（弱）"
+   ],
    "fields": [
     "法律政策"
    ],
@@ -493,8 +516,8 @@
   },
   {
    "id": "4e337cf297f226b4",
-   "source": "euraxess",
-   "source_name": "EURAXESS（全歐洲）",
+   "source": "euraxess_hci",
+   "source_name": "EURAXESS（HCI 關鍵字搜尋）",
    "university": "",
    "country": "EU",
    "title": "2 PhD candidates within Peace and Conflict Research (DIViNE)",
@@ -506,19 +529,22 @@
    "deadline": "2026-11-02",
    "summary": "Advance your research career and opportunities with EURAXESS. Discover jobs, funding, and partnerships, and programmes for innovation and career growth.",
    "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
+   "found_via": "human-computer interaction",
+   "topic_boost": 3,
    "page_score": 0,
    "page_topics": [],
    "page_tools": [],
    "score_version": 8,
-   "enrich_attempts": 2,
+   "query_ok": false,
+   "enrich_attempts": 3,
    "country_zh": "跨國／歐洲",
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-12",
    "status": "open",
-   "topic_score": 0,
-   "topics": [],
+   "topic_score": 1,
+   "topics": [
+    "HCI 關鍵字搜尋（弱）"
+   ],
    "fields": [],
    "tools": [],
    "rank_band": "",
@@ -550,7 +576,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-12",
-   "status": "open",
+   "status": "closed",
    "topic_score": 2,
    "topics": [
     "無障礙"
@@ -628,7 +654,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-12",
-   "status": "open",
+   "status": "closed",
    "topic_score": 2,
    "topics": [
     "無障礙"
@@ -668,7 +694,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-12",
-   "status": "open",
+   "status": "closed",
    "topic_score": 2,
    "topics": [
     "無障礙"
@@ -710,7 +736,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-12",
-   "status": "open",
+   "status": "closed",
    "topic_score": 2,
    "topics": [
     "無障礙"
@@ -748,7 +774,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-12",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": [],
    "fields": [
@@ -787,7 +813,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-12",
-   "status": "open",
+   "status": "closed",
    "topic_score": 2,
    "topics": [
     "無障礙"
@@ -800,6 +826,133 @@
    "country_zh": "跨國／歐洲",
    "rank_band": "",
    "rank_order": 99
+  },
+  {
+   "id": "f4ed8d8ab2623731",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "The University of Edinburgh",
+   "country": "United Kingdom",
+   "title": "PhD programme in Machine Learning Systems",
+   "url": "https://www.jobs.ac.uk/job/DTD988/phd-programme-in-machine-learning-systems",
+   "city": "Edinburgh",
+   "location": "Edinburgh, United Kingdom",
+   "department": "",
+   "posted": "2026-10-09",
+   "deadline": "2026-12-14",
+   "summary": "About the CDT Machine Learning has a dramatic impact on our daily lives built on the back of improved computer systems. Systems research and ML research are symbiotic. Modern systems research targets the ubiquitous need for efficient ML. ML research, conversely, is directly affected by how methods will be deployed. Furthermore, systems research increasingly explores ML methods to improve systems, ",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [
+    "PyTorch/TensorFlow"
+   ],
+   "score_version": 8,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-12",
+   "last_seen": "2026-10-12",
+   "status": "open",
+   "topic_score": 2,
+   "topics": [
+    "無障礙"
+   ],
+   "fields": [
+    "機器學習"
+   ],
+   "tools": [
+    "PyTorch/TensorFlow"
+   ],
+   "country_zh": "英國",
+   "rank_band": "11-50",
+   "rank_order": 1
+  },
+  {
+   "id": "1198f97c2a907691",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Southampton",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Marie Sklodowska-Curie Actions Doctoral Network BlueOcean",
+   "url": "https://www.jobs.ac.uk/job/DTE958/phd-studentship-marie-sklodowska-curie-actions-doctoral-network-blueocean",
+   "city": "Southampton",
+   "location": "Southampton, United Kingdom",
+   "department": "",
+   "posted": "2026-10-09",
+   "deadline": "2026-11-04",
+   "summary": "Full-Time Fixed-Term for 36 months This PhD aims to develop novel robotic monitoring and data processing methods to document changes in dynamic seafloor environments over large spatial scales. Motivation: Understanding how the seafloor evolves is critical for environmental monitoring and subsea infrastructure inspection. Natural processes and human activities drive changes over time, yet detecting",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "實驗室實驗"
+   ],
+   "score_version": 8,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-12",
+   "last_seen": "2026-10-12",
+   "status": "open",
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "機器人",
+    "氣候環境"
+   ],
+   "tools": [
+    "實驗室實驗"
+   ],
+   "country_zh": "英國",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "73d15d2213010a6e",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Birmingham",
+   "country": "United Kingdom",
+   "title": "Marie Curie Research Fellow (PhD Funded)",
+   "url": "https://www.jobs.ac.uk/job/DTF485/marie-curie-research-fellow-phd-funded",
+   "city": "Birmingham",
+   "location": "Birmingham, United Kingdom",
+   "department": "",
+   "posted": "2026-10-09",
+   "deadline": "2027-01-31",
+   "summary": "Job Summary This post forms part of an international multi-site research programme with the title: A Sociology of Post-Imperial Islamic Legal Cultures: Insights from Central Asia, the Middle East, North Africa, and Southeast Asia (MINARET) , which is based at the University of Lund. It is funded under the auspices of the Horizon Europe Marie Skłodowska‑Curie Doctoral Networks. The Principal Invest",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "score_version": 8,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-12",
+   "last_seen": "2026-10-12",
+   "status": "open",
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "社會心理"
+   ],
+   "tools": [],
+   "country_zh": "英國",
+   "rank_band": "",
+   "rank_order": 99,
+   "also_at": [
+    {
+     "source": "jobs.ac.uk（英國）",
+     "url": "https://www.jobs.ac.uk/job/DTF482/marie-curie-research-fellow-phd-funded"
+    }
+   ]
   },
   {
    "id": "719e62a36b2af860",
@@ -818,17 +971,17 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 4,
    "page_topics": [
     "無障礙",
     "腦電"
    ],
+   "score_version": 8,
    "page_tools": [
     "Python",
     "MATLAB"
    ],
-   "score_version": 8,
-   "enrich_attempts": 3,
    "country_zh": "瑞典",
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-12",
@@ -865,16 +1018,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
+   "score_version": 8,
    "page_tools": [
     "Python",
     "Arduino"
    ],
-   "score_version": 8,
-   "enrich_attempts": 3,
    "country_zh": "瑞典",
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-12",
@@ -913,7 +1066,7 @@
    "country_zh": "跨國／歐洲",
    "first_seen": "2026-10-11",
    "last_seen": "2026-10-12",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": [],
    "fields": [],
@@ -943,7 +1096,7 @@
    "country_zh": "跨國／歐洲",
    "first_seen": "2026-10-11",
    "last_seen": "2026-10-12",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": [],
    "fields": [],
@@ -1007,7 +1160,7 @@
    "country_zh": "跨國／歐洲",
    "first_seen": "2026-10-11",
    "last_seen": "2026-10-12",
-   "status": "open",
+   "status": "closed",
    "topic_score": 0,
    "topics": [],
    "fields": [],
