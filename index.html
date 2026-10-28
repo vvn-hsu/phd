@@ -473,7 +473,10 @@ function sortJobs(jobs){
   };
   const fitRank = (j) => FIT_RANK[j.fit_band] ?? 3;
   const by = {
-    urgent: (a,b) => urgency(a) - urgency(b) || fitRank(a) - fitRank(b)
+    // 急件優先，但「弱相關」不管截止日多近都沉到最後——
+    // 不然清單最上面都是快截止、可是跟你的線沒關係的缺
+    urgent: (a,b) => (fitRank(a) >= 3) - (fitRank(b) >= 3)
+      || urgency(a) - urgency(b) || fitRank(a) - fitRank(b)
       || (b.fit_score||0) - (a.fit_score||0),
     fit: (a,b) => fitRank(a) - fitRank(b) || (b.fit_score||0) - (a.fit_score||0)
       || urgency(a) - urgency(b),

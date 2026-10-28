@@ -54,7 +54,7 @@ PHD_WEAK = re.compile(r"(\bdoctoral\b|\bdoctorate\b|research\s+student)", re.I)
 POSTDOC = re.compile(r"(post[\s\-]?doc|postdoctoral|post[\s\-]?doctoral)", re.I)
 
 KEEP_CLOSED_DAYS = 45   # 職缺從列表消失後，還在資料裡保留幾天
-SCORE_VERSION = 14     # 計分規則改過就 +1，舊資料會自動重抓重算
+SCORE_VERSION = 15     # 計分規則改過就 +1，舊資料會自動重抓重算
 
 
 # --------------------------------------------------------------------------- 工具
@@ -489,6 +489,13 @@ LANG_SKILL_BEFORE = re.compile(
 LANG_SKILL_AFTER = re.compile(
     r"^[^.;\n]{0,60}?(language|proficien\w*|fluen\w*|skills?|speaking|speakers?"
     r"|is required|are required|is a merit|is an advantage|is desirable|is expected)", re.I)
+# 「申請文件請用英文或瑞典文撰寫」是投遞須知，不是語言門檻。
+# 瑞典的職缺頁幾乎每一筆都有這句，不擋掉的話半個瑞典都會被排除。
+LANG_DOC = re.compile(
+    r"(application|applications|thesis|dissertation|\bcv\b|cover letter|documents?|manuscript"
+    r"|advertisement|job posting)[^.;\n]{0,80}\b(written|submitted|drafted|be in)\b"
+    r"|\b(written|submitted|drafted|write it) in (english|swedish|danish|norwegian|dutch"
+    r"|german|french|finnish)\b", re.I)
 LANG_NEGATED = re.compile(
     r"(not required|not necessary|not a requirement|no need|is not expected"
     r"|do(es)? not (have to|need to) speak)", re.I)
@@ -564,6 +571,8 @@ def detect_languages(body: str) -> list[str]:
             window = before + m.group(0) + after
             if LANG_NEGATED.search(window):
                 continue          # 「不需要會荷蘭文」不該標成語言門檻
+            if LANG_DOC.search(window):
+                continue          # 「申請文件用英文或瑞典文寫」不是語言門檻
             if not LANG_REQUIRED.search(window) and not LANG_MERIT.search(window):
                 continue
             tag = f"{label}（加分）" if LANG_MERIT.search(window) else f"{label}（必要）"

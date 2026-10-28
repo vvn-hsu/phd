@@ -255,6 +255,13 @@ def main():
     check("頁首的語言切換器不算語言門檻",
           run.detect_languages("Home Vacancies Dutch English Login Apply now. "
                                "A PhD position is required to be filled soon."), [])
+    check("「申請文件用英文或瑞典文撰寫」不是語言門檻",
+          run.detect_languages("The application must be written in English or Swedish."), [])
+    check("「論文以瑞典文撰寫」也不算語言能力要求",
+          run.detect_languages("The thesis may be written in Swedish."), [])
+    check("真的要求口說書寫還是要標",
+          run.detect_languages("Good command of written and spoken Swedish is required."),
+          ["瑞典文（必要）"])
     check("明說不需要荷蘭文的不標",
           run.detect_languages("Knowledge of Dutch is not required for this position."), [])
 
