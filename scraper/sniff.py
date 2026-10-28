@@ -74,6 +74,19 @@ def sniff(url: str) -> None:
         print("  " + run.clean(soup.get_text(" "))[:2000])
         print("  --- 文字結束 ---")
 
+    if os.environ.get("SNIFF_LANG"):
+        # 專門看語言門檻為什麼會誤判：把每個語言名前後的字印出來
+        run.load_topics()
+        text = run.clean(soup.get_text(" "))[:8000]
+        print("  --- 語言名出現的位置 ---")
+        for word, label in run._LANGUAGES:
+            for m in re.finditer(rf"\b{re.escape(word)}\b", text, re.I):
+                before = text[max(0, m.start() - 110): m.start()]
+                after = text[m.end(): m.end() + 110]
+                print(f"    [{label}] …{before[-100:]} «{m.group(0)}» {after[:100]}…")
+        print("    偵測結果：", run.detect_languages(text))
+        print("  --- 結束 ---")
+
     ld = run.extract_jsonld(html)
     print(f"  JSON-LD JobPosting：{len(ld)} 個")
     for node in ld[:3]:

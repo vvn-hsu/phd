@@ -17,6 +17,10 @@ on:
         description: "偵查時一併印出頁面文字"
         type: boolean
         default: false
+      sniff_lang:
+        description: "偵查時印出語言門檻是在哪一句被判定的"
+        type: boolean
+        default: false
       sniff_ua:
         description: "偵查時改用這個 User-Agent（測對方是不是擋 UA）"
         type: string
@@ -64,6 +68,7 @@ jobs:
         env:
           SNIFF_URLS: ${{ inputs.sniff }}
           SNIFF_TEXT: ${{ inputs.sniff_text && '1' || '' }}
+          SNIFF_LANG: ${{ inputs.sniff_lang && '1' || '' }}
           SNIFF_UA: ${{ inputs.sniff_ua }}
         run: python scraper/sniff.py $SNIFF_URLS
 
