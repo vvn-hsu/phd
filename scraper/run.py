@@ -54,7 +54,7 @@ PHD_WEAK = re.compile(r"(\bdoctoral\b|\bdoctorate\b|research\s+student)", re.I)
 POSTDOC = re.compile(r"(post[\s\-]?doc|postdoctoral|post[\s\-]?doctoral)", re.I)
 
 KEEP_CLOSED_DAYS = 45   # 職缺從列表消失後，還在資料裡保留幾天
-SCORE_VERSION = 12     # 計分規則改過就 +1，舊資料會自動重抓重算
+SCORE_VERSION = 13     # 計分規則改過就 +1，舊資料會自動重抓重算
 
 
 # --------------------------------------------------------------------------- 工具
@@ -111,9 +111,17 @@ def parse_date(value) -> str:
 
 PHD_LITERAL = re.compile(r"\bph\.?\s?d\b|\bphd|promovend|doktorand|doctorant", re.I)
 
+# 英國的 CDT 會請行政人員，標題裡有 "Doctoral Training" 但那不是博士缺
+STAFF_ROLE = re.compile(
+    r"\b(manager|officer|administrator|co[- ]?ordinator|coordinator|secretary|technician"
+    r"|lecturer|professor|director|dean|librarian|accountant|recruiter|advis[eo]r"
+    r"|receptionist|caretaker|apprentice)\b", re.I)
+
 
 def is_phd(title: str, extra: str = "") -> bool:
     blob = f"{title} {extra}"
+    if STAFF_ROLE.search(title) and not PHD_LITERAL.search(title):
+        return False
     if POSTDOC.search(blob):
         # 標題同時提到 postdoc 時，要有明確的 PhD 字樣才算；
         # studentship、doctoral training 這類英國用字不夠（"postdoctoral ... CDT"）
@@ -276,6 +284,8 @@ def fit_of(job: dict, hits: dict) -> None:
     anchored = bool(hits.get("core") or hits.get("target"))
     if not anchored:
         score = min(score, int(th.get("good", 4)) - 1)
+        if not hits.get("near"):
+            score = min(score, 1)   # 只有「會訪談、會 Python」不算適配
     if job.get("penalties") and not anchored:
         score = 0
 

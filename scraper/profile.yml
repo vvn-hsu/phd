@@ -23,11 +23,12 @@ weights:
 
 # 你發表過、做得出來的題目。命中這些＝審查委員看得到你的作品。
 core:
+  "human[- ]computer interaction|\\bhci\\b|human[- ]centred computing": 人機互動
   "notification|notifications|notifying": 通知系統
   "interruption|interruptib|attention management|attentive (user )?interface": 打斷與注意力
   "(smartphone|mobile phone|phone) (use|usage|overuse|behaviou?r)": 手機使用行為
   "mobile hci|mobile interaction|smartphone interaction": 行動裝置互動
-  "experience sampling|\\besm\\b|diary stud|in[- ]situ stud|momentary assessment": 情境取樣
+  "experience sampling|\\besm\\b|diary stud|momentary assessment": 情境取樣
   "digital (wellbeing|well-being)|screen time|technology overuse|self[- ]regulation": 數位身心健康
   "human[- ]ai interaction|human[- ]ai (collaboration|teaming)|human[- ]centred ai": 人與 AI 互動
   "conversational agent|intelligent assistant|voice assistant|llm[- ]based (agent|assistant)": 對話式助理
@@ -42,11 +43,14 @@ near:
   "user[- ]centred design|user[- ]centered design|interaction design": 互動設計
   "(wearable|mobile) sensing|activity recognition|physiological sensing": 穿戴感測
   "behaviou?r change|mhealth|health intervention|wellbeing intervention": 行為改變
-  "participatory design|co[- ]design|codesign": 參與式設計
+  # co-design 要是「跟使用者一起設計」，不是硬體/軟體 co-design
+  "participatory design|co[- ]?design (workshop|session|process|with)": 參與式設計
   "social (media|computing)|online platform|recommender|crowdsourc": 社會運算
   "learning (technolog|analytics)|educational technolog|classroom": 學習科技
   # 同理，頁尾的 "Accessibility statement" 不算
   "accessibility (research|of|for|guideline|barrier)|assistive technolog|inclusive design": 無障礙
+  "(mental|psychological) (health|well-?being)|wellbeing|well-being": 身心健康
+  "user stud(y|ies)|user research|user testing|participants were recruited": 使用者研究
   "trust in (ai|automation|technology)|trustworthy ai|explainable ai": 對 AI 的信任
   "interface design|user interface": 介面設計
 

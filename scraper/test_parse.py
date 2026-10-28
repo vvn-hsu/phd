@@ -285,6 +285,11 @@ def main():
     check("HCI 職缺不該被扣分",
           run.penalty_tags("eye-tracking study of pedestrian crossing behaviour"), [])
 
+    check("CDT 的行政職不是博士缺",
+          run.is_phd("Communications Manager - Centre for Doctoral Training in AI"), False)
+    check("標題有 PhD 的行政字眼不誤殺",
+          run.is_phd("PhD Studentship: Advisor-free optimisation"), True)
+
     # --- 適配度（profile.yml）
     hits = run.fit_hits("PhD on smartphone notifications and interruptibility, "
                         "using experience sampling and interviews")
