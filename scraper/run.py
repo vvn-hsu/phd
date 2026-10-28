@@ -54,7 +54,7 @@ PHD_WEAK = re.compile(r"(\bdoctoral\b|\bdoctorate\b|research\s+student)", re.I)
 POSTDOC = re.compile(r"(post[\s\-]?doc|postdoctoral|post[\s\-]?doctoral)", re.I)
 
 KEEP_CLOSED_DAYS = 45   # 職缺從列表消失後，還在資料裡保留幾天
-SCORE_VERSION = 13     # 計分規則改過就 +1，舊資料會自動重抓重算
+SCORE_VERSION = 14     # 計分規則改過就 +1，舊資料會自動重抓重算
 
 
 # --------------------------------------------------------------------------- 工具
@@ -1280,9 +1280,10 @@ def main() -> int:
         site = site_of(job["url"])
         page_fit = {group: [l for l in labels if (site, l) not in boilerplate]
                     for group, labels in (job.get("page_fit") or {}).items()}
+        # 不要把 topics / tools 的中文標籤丟進來：裡面的「HCI 關鍵字搜尋」
+        # 會被 \bhci\b 命中，結果每一筆關鍵字搜尋撈到的缺都變成「人機互動」
         own_fit = fit_hits(job.get("title", ""), job.get("summary", ""),
-                           job.get("department", ""),
-                           " ".join((job.get("topics") or []) + (job.get("tools") or [])))
+                           job.get("department", ""))
         merged_fit = {group: [l for l in labels if (site, l) not in boilerplate]
                       for group, labels in merge_fit(page_fit, own_fit).items()}
         fit_of(job, {k: v for k, v in merged_fit.items() if v})

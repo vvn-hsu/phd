@@ -316,6 +316,10 @@ def main():
                                   "We use cookies to improve your user experience."))
     check("只靠頁尾的泛用詞堆不出「符合」", weak["fit_band"] in ("stretch", "弱相關"), True)
 
+    check("荷蘭職缺的福利文案不算身心健康",
+          run.fit_hits("We offer attention to your well-being and a pension scheme."
+                       ).get("near"), None)
+
     far = {"url": "https://x/5"}
     run.fit_of(far, run.fit_hits("PhD in perovskite solar cells with finite element simulation"))
     check("完全不同行＝弱相關", far["fit_band"], "弱相關")

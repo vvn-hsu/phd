@@ -45,11 +45,15 @@ near:
   "behaviou?r change|mhealth|health intervention|wellbeing intervention": 行為改變
   # co-design 要是「跟使用者一起設計」，不是硬體/軟體 co-design
   "participatory design|co[- ]?design (workshop|session|process|with)": 參與式設計
-  "social (media|computing)|online platform|recommender|crowdsourc": 社會運算
+  # "follow us on social media" 是每個荷蘭職缺頁都有的招募文案，不算
+  "social computing|social media (use|usage|research|analysis|data|platform|behaviou?r)": 社會運算
+  "recommender system|crowdsourc|online communit": 社會運算
   "learning (technolog|analytics)|educational technolog|classroom": 學習科技
   # 同理，頁尾的 "Accessibility statement" 不算
   "accessibility (research|of|for|guideline|barrier)|assistive technolog|inclusive design": 無障礙
-  "(mental|psychological) (health|well-?being)|wellbeing|well-being": 身心健康
+  # 荷蘭職缺的福利段落幾乎都有 "attention to your well-being"，所以不收單字
+  "(mental|psychological|emotional) (health|well-?being)": 身心健康
+  "well-?being (intervention|technolog|app|research|stud)|digital well-?being": 身心健康
   "user stud(y|ies)|user research|user testing|participants were recruited": 使用者研究
   "trust in (ai|automation|technology)|trustworthy ai|explainable ai": 對 AI 的信任
   "interface design|user interface": 介面設計
