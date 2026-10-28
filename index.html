@@ -437,7 +437,8 @@ function matches(job){
   if (state.fit === 'good' && band !== '主推' && band !== '符合') return false;
   if (state.fit === 'blocked' && band !== '排除') return false;
   if (!state.fit && !picked && isBlocked(job)) return false;
-  if (!picked && !inTopic(job) && band !== '主推' && band !== '符合') return false;
+  // 自己指名了適配度（例如「只看被排除的」）就不要再被 HCI 門檻二次過濾
+  if (!picked && !state.fit && !inTopic(job) && band !== '主推' && band !== '符合') return false;
   if (job.status === 'closed' && !state.closed && !picked) return false;
   if (job.expired && !state.expired && !picked) return false;
   if (state.kind && job.kind !== state.kind) return false;
