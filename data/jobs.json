@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T07:12:27+00:00",
+ "generated_at": "2026-10-28T11:03:15+00:00",
  "date": "2026-10-28",
  "topic_thresholds": {
   "broad": 2,
@@ -16,10 +16,10 @@
   "未列入"
  ],
  "counts": {
-  "open": 166,
-  "new_today": 64,
-  "closed_kept": 506,
-  "hci_broad": 13,
+  "open": 170,
+  "new_today": 69,
+  "closed_kept": 522,
+  "hci_broad": 18,
   "expired": 0,
   "postdoc_suspect": 2,
   "fit_strong": 1,
@@ -99,7 +99,7 @@
    "country_zh": "英國",
    "homepage": "https://www.jobs.ac.uk/search/?keywords=PhD",
    "status": "ok",
-   "count": 22,
+   "count": 19,
    "url_used": "https://www.jobs.ac.uk/search/?keywords=PhD&sortOrder=1",
    "error": ""
   },
@@ -121,7 +121,7 @@
    "country_zh": "英國",
    "homepage": "https://www.jobs.ac.uk/search/?keywords=human-computer+interaction",
    "status": "ok",
-   "count": 15,
+   "count": 23,
    "url_used": "9 個搜尋網址",
    "error": ""
   },
@@ -187,7 +187,7 @@
    "country_zh": "瑞典",
    "homepage": "https://umu.varbi.com/en/",
    "status": "ok",
-   "count": 7,
+   "count": 8,
    "url_used": "https://umu.varbi.com/en/",
    "error": ""
   },
@@ -343,6 +343,68 @@
    "rank_order": 99
   },
   {
+   "id": "d68e042889d1a74c",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Exeter",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Virtual brain networks to guide deep brain stimulation in childhood epilepsy",
+   "url": "https://www.jobs.ac.uk/job/DTL125/phd-studentship-virtual-brain-networks-to-guide-deep-brain-stimulation-in-childhood-epilepsy",
+   "city": "Exeter",
+   "location": "Exeter, United Kingdom",
+   "department": "",
+   "posted": "2026-10-28",
+   "deadline": "2026-12-08",
+   "summary": "Around a third of children with epilepsy continue to have seizures despite medication. For those who cannot be helped by conventional surgery, electrical stimulation delivered by an implanted device is one of the few remaining options. Its use is expanding quickly, yet responses vary widely between children, and there is still no principled way to decide where to stimulate, or with what settings, ",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "stipend of £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 2,
+   "topics": [
+    "無障礙"
+   ],
+   "fields": [
+    "神經科學"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "stipend of £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
    "id": "f680a3f14ae64054",
    "source": "jobsacuk",
    "source_name": "jobs.ac.uk（英國）",
@@ -372,7 +434,7 @@
    "page_kind": "studentship",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
-   "status": "open",
+   "status": "closed",
    "penalties": [],
    "topic_score": 0,
    "topics": [],
@@ -396,9 +458,208 @@
    "rank_order": 99
   },
   {
-   "id": "361a62812ef3b5af",
+   "id": "923220e8ea1f4563",
    "source": "jobsacuk",
    "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Exeter",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Understanding osteogenic potential using musculoskeletal and finite element modelling",
+   "url": "https://www.jobs.ac.uk/job/DTL122/phd-studentship-understanding-osteogenic-potential-using-musculoskeletal-and-finite-element-modelling",
+   "city": "Exeter",
+   "location": "Exeter, United Kingdom",
+   "department": "",
+   "posted": "2026-10-28",
+   "deadline": "2026-12-08",
+   "summary": "Osteoporosis is a bone-wasting disease that makes bones thin, weak and more likely to break. Breaking bones in the hip and spine is painful and life-changing. It affects more women (1 in 2) than men (1 in 5) because women have smaller bones, lose bone-protecting hormones after the menopause and typically experience less impact activity earlier in life. Osteoporosis can be prevented or delayed by s",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {
+    "mismatch": [
+     "需要實驗室生醫",
+     "需要工程模擬"
+    ]
+   },
+   "page_funding": {
+    "pay": "stipend of £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 2,
+   "topics": [
+    "無障礙"
+   ],
+   "fields": [],
+   "tools": [],
+   "funding": {
+    "pay": "stipend of £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [
+    "需要實驗室生醫",
+    "需要工程模擬"
+   ],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "0ba54e65585dc7ed",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Exeter",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Uncovering the mechanism of minor spliceosome autoimmune diabetes",
+   "url": "https://www.jobs.ac.uk/job/DTL149/phd-studentship-uncovering-the-mechanism-of-minor-spliceosome-autoimmune-diabetes",
+   "city": "Exeter",
+   "location": "Exeter, United Kingdom",
+   "department": "",
+   "posted": "2026-10-28",
+   "deadline": "2027-01-05",
+   "summary": "Context/background Before the instructions in a gene can be used, non-coding parts called introns must be cut out in a process called splicing. Most introns are spliced out by the major spliceosome. However, around 700 human genes contain a rare type of intron (U12 introns) that can only be removed by a separate minor spliceosome. We recently discovered that inherited changes in two core minor spl",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "Python"
+   ],
+   "page_penalties": [
+    "基因體學",
+    "藥學腫瘤"
+   ],
+   "page_fit": {
+    "methods": [
+     "程式與統計"
+    ],
+    "mismatch": [
+     "需要實驗室生醫"
+    ]
+   },
+   "page_funding": {},
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "status": "open",
+   "penalties": [
+    "基因體學",
+    "藥學腫瘤"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [],
+   "tools": [
+    "Python"
+   ],
+   "funding": {},
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [
+    "需要實驗室生醫"
+   ],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "4bcfd1ff3ac4a425",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Exeter",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: The emotional basis of behaviour",
+   "url": "https://www.jobs.ac.uk/job/DTL085/phd-studentship-the-emotional-basis-of-behaviour",
+   "city": "Exeter",
+   "location": "Exeter, United Kingdom",
+   "department": "",
+   "posted": "2026-10-28",
+   "deadline": "2026-12-08",
+   "summary": "Emotions and mood states are notoriously difficult to study in non-human animals, but recent years have seen important progress in inferring these states and their links to behaviour and welfare. For example, the use of judgment-bias tasks has shown that differences in housing conditions for captive animals can generate ‘optimistic’ or ‘pessimistic’ attitudes towards ambiguous stimuli. The fundame",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "stipend of £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 2,
+   "topics": [
+    "無障礙"
+   ],
+   "fields": [],
+   "tools": [],
+   "funding": {
+    "pay": "stipend of £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "361a62812ef3b5af",
+   "source": "jobsacuk_hci",
+   "source_name": "jobs.ac.uk（HCI 關鍵字搜尋）",
    "university": "University of Exeter",
    "country": "United Kingdom",
    "title": "PhD Studentship: The call of the wild: innovative technology to record and understand wild animal behaviour",
@@ -410,8 +671,8 @@
    "deadline": "2026-12-08",
    "summary": "Emerging infectious diseases pose substantial threats to the health of wildlife, livestock, humans and ecosystems. Wildlife serve as important reservoirs and vectors for a diverse range of microorganisms, including viruses, bacteria, fungi, and parasites. However, pathogen transmission dynamics within wildlife populations and between wildlife and their environments remain poorly understood because",
    "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
+   "found_via": "human factors",
+   "topic_boost": 3,
    "enrich_attempts": 9,
    "score_version": 17,
    "country_zh": "英國",
@@ -431,7 +692,9 @@
     "農業生態"
    ],
    "topic_score": 0,
-   "topics": [],
+   "topics": [
+    "HCI 關鍵字搜尋（弱）"
+   ],
    "fields": [],
    "tools": [],
    "funding": {
@@ -445,6 +708,67 @@
    "fit_gap": [],
    "fit_block": [],
    "fit_band": "弱相關",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "9fb0a39aac1d7be8",
+   "source": "jobsacuk_hci",
+   "source_name": "jobs.ac.uk（HCI 關鍵字搜尋）",
+   "university": "University of Exeter",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Sensing the Ocean Through Surfing: A New Wave in Ocean Observation",
+   "url": "https://www.jobs.ac.uk/job/DTL081/phd-studentship-sensing-the-ocean-through-surfing-a-new-wave-in-ocean-observation",
+   "city": "Exeter",
+   "location": "Exeter, United Kingdom",
+   "department": "",
+   "posted": "2026-10-28",
+   "deadline": "2026-12-08",
+   "summary": "Understanding how the ocean is changing requires observations that are increasingly extensive in both space and time. However, conventional oceanographic observations rely on relatively expensive and specialised instruments deployed from research vessels, autonomous platforms or fixed observing stations. These approaches provide high quality measurements, but their cost and logistical requirements",
+   "title_guessed": false,
+   "found_via": "interaction design",
+   "topic_boost": 3,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "stipend of £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "query_ok": false,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 1,
+   "topics": [
+    "HCI 關鍵字搜尋（弱）"
+   ],
+   "fields": [
+    "交通移動"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "stipend of £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -479,7 +803,7 @@
    "page_kind": "studentship",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
-   "status": "open",
+   "status": "closed",
    "penalties": [],
    "topic_score": 0,
    "topics": [],
@@ -539,7 +863,7 @@
    },
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "基礎物理"
    ],
@@ -597,7 +921,7 @@
    "page_kind": "studentship",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
-   "status": "open",
+   "status": "closed",
    "penalties": [],
    "topic_score": 0,
    "topics": [],
@@ -619,6 +943,145 @@
    "fit_gap": [],
    "fit_block": [],
    "fit_band": "弱相關",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "346ca593e0f7713f",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Exeter",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Living materials in nature: active matter, behaviour and bee nests",
+   "url": "https://www.jobs.ac.uk/job/DTL090/phd-studentship-living-materials-in-nature-active-matter-behaviour-and-bee-nests",
+   "city": "Exeter",
+   "location": "Exeter, United Kingdom",
+   "department": "",
+   "posted": "2026-10-28",
+   "deadline": "2026-12-08",
+   "summary": "Self-organised systems in animals, such as the nests of social insects, have evolved to offer advantages that support survival across diverse habitats and climates. These nests represent ideal systems to study materials and their role in dynamic physical and biological processes. This PhD project explores how active bumblebee nests maintain efficient thermoregulation, combining perspectives from m",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {
+    "core": [
+     "數位身心健康"
+    ]
+   },
+   "page_funding": {
+    "pay": "stipend of £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "Professor Natalie Hempel",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "材料化學",
+    "氣候環境",
+    "生命科學"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "stipend of £21,805"
+   },
+   "languages": [],
+   "supervisor": "Professor Natalie Hempel",
+   "expired": false,
+   "fit_score": 3,
+   "fit_why": [
+    "數位身心健康"
+   ],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "stretch",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "0a4af59bb27d17f1",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Exeter",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Integrative Analysis of ADHD Using Graph Kernels on UK Biobank Multimodal Data",
+   "url": "https://www.jobs.ac.uk/job/DTL092/phd-studentship-integrative-analysis-of-adhd-using-graph-kernels-on-uk-biobank-multimodal-data",
+   "city": "Exeter",
+   "location": "Exeter, United Kingdom",
+   "department": "",
+   "posted": "2026-10-28",
+   "deadline": "2026-12-08",
+   "summary": "Introduction Attention Deficit Hyperactivity Disorder (ADHD) is a common neurodevelopmental disorder marked by inattention, hyperactivity, and impulsivity. Globally, it affects about 5% of children, with 30–50% continuing to experience symptoms into adulthood, leading to challenges in education, employment, and relationships. In the UK, the National Institute for Health and Care Excellence (NICE) ",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [
+    "基因體學"
+   ],
+   "page_fit": {
+    "near": [
+     "身心健康"
+    ],
+    "mismatch": [
+     "需要神經生理量測"
+    ]
+   },
+   "page_funding": {
+    "pay": "Salary: £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "status": "open",
+   "penalties": [
+    "基因體學"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "教育"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "Salary: £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [
+    "身心健康"
+   ],
+   "fit_gap": [
+    "需要神經生理量測"
+   ],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -664,7 +1127,7 @@
    },
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "農業生態"
    ],
@@ -723,7 +1186,7 @@
    "page_kind": "studentship",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "農業生態"
    ],
@@ -787,7 +1250,7 @@
    },
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
-   "status": "open",
+   "status": "closed",
    "penalties": [],
    "topic_score": 0,
    "topics": [],
@@ -811,6 +1274,66 @@
    ],
    "fit_block": [],
    "fit_band": "弱相關",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "e502e2117c2c90ec",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Exeter",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Functional genomic approaches to convergent mechanisms in chromatinopathies",
+   "url": "https://www.jobs.ac.uk/job/DTL133/phd-studentship-functional-genomic-approaches-to-convergent-mechanisms-in-chromatinopathies",
+   "city": "Exeter",
+   "location": "Exeter, United Kingdom",
+   "department": "",
+   "posted": "2026-10-28",
+   "deadline": "2027-01-05",
+   "summary": "Background Chromatinopathies is a group of more than 180 rare genetic disorders caused by variants in genes encoding chromatin remodelling factors . Collectively, these disorders are amongst the most prevalent genetic conditions and are often characterised by neurodevelopmental features including developmental delay, intellectual disability and autism. Currently, no treatments exist for most chrom",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [
+    "基因體學",
+    "生醫材料"
+   ],
+   "page_fit": {},
+   "page_funding": {},
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "status": "open",
+   "penalties": [
+    "基因體學",
+    "生醫材料"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "生命科學"
+   ],
+   "tools": [],
+   "funding": {},
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -852,7 +1375,7 @@
    },
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "生醫材料"
    ],
@@ -923,7 +1446,7 @@
    "page_kind": "studentship",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "材料合成",
     "能源工程",
@@ -957,9 +1480,777 @@
    "rank_order": 99
   },
   {
-   "id": "80c385d83dcaefb2",
+   "id": "b45ef81fb9152997",
    "source": "jobsacuk",
    "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Exeter",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Editing the Alzheimer’s Epigenome: From Human Brain Variation to Functional Mechanisms",
+   "url": "https://www.jobs.ac.uk/job/DTL144/phd-studentship-editing-the-alzheimers-epigenome-from-human-brain-variation-to-functional-mechanisms",
+   "city": "Exeter",
+   "location": "Exeter, United Kingdom",
+   "department": "",
+   "posted": "2026-10-28",
+   "deadline": "2027-01-05",
+   "summary": "Alzheimer’s disease (AD) is characterised by distinctive molecular changes across multiple cell types in the human brain. Epigenome-wide association studies (EWAS) have identified widespread alterations in epigenetic modifications associated with AD pathology, but a major challenge remains: which of these changes have functional consequences for gene regulation and disease biology. This question i",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [
+    "基因體學",
+    "生醫材料"
+   ],
+   "page_fit": {
+    "mismatch": [
+     "需要實驗室生醫"
+    ]
+   },
+   "page_funding": {},
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "status": "open",
+   "penalties": [
+    "基因體學",
+    "生醫材料"
+   ],
+   "topic_score": 0,
+   "topics": [
+    "無障礙"
+   ],
+   "fields": [
+    "神經科學",
+    "生命科學",
+    "法律政策"
+   ],
+   "tools": [],
+   "funding": {},
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [
+    "需要實驗室生醫"
+   ],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "5a9286aa4d8afa67",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Exeter",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Dissecting Metabolic Heterogeneity in Severe Mental Illness Through Genetic Clustering and Single-Cell Functional Genomics",
+   "url": "https://www.jobs.ac.uk/job/DTL151/phd-studentship-dissecting-metabolic-heterogeneity-in-severe-mental-illness-through-genetic-clustering-and-single-cell-functional-genomics",
+   "city": "Exeter",
+   "location": "Exeter, United Kingdom",
+   "department": "",
+   "posted": "2026-10-28",
+   "deadline": "2026-12-08",
+   "summary": "This PhD aims to understand why genetic liability to severe mental illness (SMI), particularly schizophrenia and bipolar disorder, is associated with different patterns of adiposity and metabolic health. Although obesity and type 2 diabetes (T2D) are more common in people with SMI, substantial heterogeneity exists, with many individuals remaining metabolically healthy despite a high burden of SMI ",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [
+    "Python",
+    "R"
+   ],
+   "page_penalties": [
+    "基因體學"
+   ],
+   "page_fit": {
+    "methods": [
+     "程式與統計"
+    ]
+   },
+   "page_funding": {
+    "pay": "stipend of £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "status": "open",
+   "penalties": [
+    "基因體學"
+   ],
+   "topic_score": 0,
+   "topics": [
+    "無障礙"
+   ],
+   "fields": [
+    "生命科學"
+   ],
+   "tools": [
+    "Python",
+    "R"
+   ],
+   "funding": {
+    "pay": "stipend of £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "f7be3a718d94627d",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Exeter",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Digital Movement Biomarkers of Mood and Fatigue in Older Adults: Using Computer Vision, Artificial Intelligence and Functional Movement Analysis to Detect Anxiety, Depression and Fatigue in People With and Without Multiple longterm conditions",
+   "url": "https://www.jobs.ac.uk/job/DTL118/phd-studentship-digital-movement-biomarkers-of-mood-and-fatigue-in-older-adults-using-computer-vision-artificial-intelligence-and-functional-movement-analysis-to-detect-anxiety-depression-and-fatigue-in-people-with-and-without-multiple-longterm-conditions",
+   "city": "Exeter",
+   "location": "Exeter, United Kingdom",
+   "department": "",
+   "posted": "2026-10-28",
+   "deadline": "2026-12-08",
+   "summary": "Digital Movement Biomarkers of Mood and Fatigue in Older Adults: Using Computer Vision, Artificial Intelligence and Functional Movement Analysis to Detect Anxiety, Depression and Fatigue in People with and without Multiple Long-Term Conditions (MLTCs) Depression, anxiety and fatigue are among the most common and disabling symptoms experienced by older adults living with multiple long-term conditio",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 4,
+   "page_topics": [
+    "穿戴式",
+    "可解釋 AI"
+   ],
+   "page_tools": [
+    "問卷調查"
+   ],
+   "page_penalties": [],
+   "page_fit": {
+    "near": [
+     "身心健康"
+    ],
+    "methods": [
+     "訪談",
+     "問卷"
+    ]
+   },
+   "page_funding": {
+    "pay": "stipend of £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 4,
+   "topics": [
+    "穿戴式",
+    "可解釋 AI"
+   ],
+   "fields": [
+    "機器學習",
+    "影像視覺"
+   ],
+   "tools": [
+    "問卷調查"
+   ],
+   "funding": {
+    "pay": "stipend of £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 3,
+   "fit_why": [
+    "身心健康"
+   ],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "stretch",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "afc3d56b55f7c132",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "The University of Manchester",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Development of New Generation Corrosion-resistant Aluminium Alloys",
+   "url": "https://www.jobs.ac.uk/job/DTL117/phd-studentship-development-of-new-generation-corrosion-resistant-aluminium-alloys",
+   "city": "Manchester",
+   "location": "Manchester, United Kingdom",
+   "department": "",
+   "posted": "2026-10-28",
+   "deadline": "2026-12-15",
+   "summary": "This 3.5-year PhD studentship is open to both Home (UK) and international applicants. The successful candidate will receive a tax-free annual stipend at the UKRI rate (£21,805 for 2026/27, subject to annual uplift), with tuition fees fully covered. The stipend is expected to increase each year. The start date is October 2027. We strongly encourage early applications, as the advert may close before",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [
+    "材料合成",
+    "化學分析"
+   ],
+   "page_fit": {},
+   "page_funding": {
+    "fee": "international",
+    "pay": "stipend at the UKRI rate (£21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "status": "open",
+   "penalties": [
+    "材料合成",
+    "化學分析"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "材料化學"
+   ],
+   "tools": [],
+   "funding": {
+    "fee": "international",
+    "pay": "stipend at the UKRI rate (£21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "51-100",
+   "rank_order": 2
+  },
+  {
+   "id": "01062c32b00b58fa",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Exeter",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Developing a variant effect predictor for multiple missense variants in the same protein molecule to aid clinical interpretation",
+   "url": "https://www.jobs.ac.uk/job/DTL148/phd-studentship-developing-a-variant-effect-predictor-for-multiple-missense-variants-in-the-same-protein-molecule-to-aid-clinical-interpretation",
+   "city": "Exeter",
+   "location": "Exeter, United Kingdom",
+   "department": "",
+   "posted": "2026-10-28",
+   "deadline": "2026-12-08",
+   "summary": "Context : Genome sequencing is becoming increasingly widespread in both research and diagnostics, and over a million people have already had their genomes sequenced. However, interpreting the effect of genetic variants is challenging and frequently delays diagnosis in patients with rare genetic diseases. The number of variants of uncertain significance (VUS) in clinical databases is growing expone",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [
+    "基因體學"
+   ],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "stipend of £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "status": "open",
+   "penalties": [
+    "基因體學"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "醫療",
+    "生命科學"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "stipend of £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "699bcb695a008d9a",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Exeter",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Decoding the rules of human gene interaction networks using combinatorial functional genomics",
+   "url": "https://www.jobs.ac.uk/job/DTL145/phd-studentship-decoding-the-rules-of-human-gene-interaction-networks-using-combinatorial-functional-genomics",
+   "city": "Exeter",
+   "location": "Exeter, United Kingdom",
+   "department": "",
+   "posted": "2026-10-28",
+   "deadline": "2026-12-08",
+   "summary": "Large-scale sequencing initiatives have identified thousands of genetic variants associated with human traits and disease. However, understanding how these variants influence biology remains a major challenge because genes do not act independently but within interconnected networks. Existing approaches, including CRISPR screens, have transformed gene discovery but remain poorly suited to measuring",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [
+    "基因體學",
+    "藥學腫瘤"
+   ],
+   "page_fit": {
+    "methods": [
+     "程式與統計"
+    ]
+   },
+   "page_funding": {
+    "pay": "stipend of £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "status": "open",
+   "penalties": [
+    "基因體學",
+    "藥學腫瘤"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "生命科學"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "stipend of £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "62134478683bdebb",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Exeter",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Decoding cellular diversity in the brain: functional annotation of neuronal subtypes across development and disease",
+   "url": "https://www.jobs.ac.uk/job/DTL136/phd-studentship-decoding-cellular-diversity-in-the-brain-functional-annotation-of-neuronal-subtypes-across-development-and-disease",
+   "city": "Exeter",
+   "location": "Exeter, United Kingdom",
+   "department": "",
+   "posted": "2026-10-28",
+   "deadline": "2026-12-08",
+   "summary": "The human brain contains an extraordinary diversity of cell types, each with distinct functions, molecular programmes and roles in disease. Even within neurons, numerous excitatory and inhibitory subtypes differ across brain regions and change across development and ageing. Understanding this diversity is essential for determining how the brain functions and why particular neuronal populations are",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [
+    "基因體學"
+   ],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "stipend of £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "status": "open",
+   "penalties": [
+    "基因體學"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "神經科學",
+    "生命科學"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "stipend of £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "6bc16f227bf816c1",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Exeter",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Cut and project schemes in hyperbolic space with applications to acoustic metamaterials",
+   "url": "https://www.jobs.ac.uk/job/DTL130/phd-studentship-cut-and-project-schemes-in-hyperbolic-space-with-applications-to-acoustic-metamaterials",
+   "city": "Exeter",
+   "location": "Exeter, United Kingdom",
+   "department": "",
+   "posted": "2026-10-28",
+   "deadline": "2026-12-08",
+   "summary": "Alternative splicing enables a single gene to produce multiple mRNA isoforms, and potentially proteins with distinct functions. It is especially important in the brain, where transcript diversity supports development and ageing. Studies have implicated disrupted RNA splicing in neurodevelopmental, neuropsychiatric and neurodegenerative disorders. Yet detecting a novel mRNA isoform does not prove t",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [
+    "基因體學",
+    "化學分析"
+   ],
+   "page_fit": {
+    "mismatch": [
+     "需要實驗室生醫"
+    ]
+   },
+   "page_funding": {
+    "pay": "stipend of £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "status": "open",
+   "penalties": [
+    "基因體學",
+    "化學分析"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "神經科學",
+    "材料化學",
+    "生命科學"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "stipend of £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [
+    "需要實驗室生醫"
+   ],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99,
+   "also_at": [
+    {
+     "source": "jobs.ac.uk（英國）",
+     "url": "https://www.jobs.ac.uk/job/DTL128/phd-studentship-cut-and-project-schemes-in-hyperbolic-space-with-applications-to-acoustic-metamaterials"
+    }
+   ]
+  },
+  {
+   "id": "2ed856d8961954e8",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Exeter",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Computer vision to predict falls from everyday movement in older adults",
+   "url": "https://www.jobs.ac.uk/job/DTL112/phd-studentship-computer-vision-to-predict-falls-from-everyday-movement-in-older-adults",
+   "city": "Exeter",
+   "location": "Exeter, United Kingdom",
+   "department": "",
+   "posted": "2026-10-28",
+   "deadline": "2026-12-08",
+   "summary": "Falls are the most common cause of injury-related hospital admission and death among older adults, yet fall prevention has made little measurable progress for two decades. Around a third of people aged 65 and over fall each year, and falls result in around 210,000 emergency hospital admissions a year in England. Current risk assessment relies on brief clinical tests, carried out once, in a clinic.",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "穿戴式"
+   ],
+   "page_tools": [
+    "動作捕捉",
+    "原型製作"
+   ],
+   "page_penalties": [],
+   "page_fit": {
+    "methods": [
+     "原型與工作坊"
+    ],
+    "mismatch": [
+     "需要工程模擬"
+    ]
+   },
+   "page_funding": {
+    "pay": "stipend of £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 2,
+   "topics": [
+    "穿戴式"
+   ],
+   "fields": [
+    "醫療",
+    "影像視覺"
+   ],
+   "tools": [
+    "動作捕捉",
+    "原型製作"
+   ],
+   "funding": {
+    "pay": "stipend of £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [
+    "需要工程模擬"
+   ],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "ee84e331738608d1",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Exeter",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Arithmetic Moments and Random Matrix Statistics over Function Fields",
+   "url": "https://www.jobs.ac.uk/job/DTL119/phd-studentship-arithmetic-moments-and-random-matrix-statistics-over-function-fields",
+   "city": "Exeter",
+   "location": "Exeter, United Kingdom",
+   "department": "",
+   "posted": "2026-10-28",
+   "deadline": "2026-12-08",
+   "summary": "The study of L-functions — their moments, zero statistics, and connections to random matrix theory — sits at the heart of modern analytic number theory. Function fields over finite fields 𝔽_q provide a setting where deep conjectures first posed for classical L-functions become rigorously provable, thanks to tools unavailable over the integers, including the Riemann Hypothesis for curves over finit",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "stipend of £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "數學最佳化"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "stipend of £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "25565a83e04c8078",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Exeter",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Allele-resolved genetics and epigenetics in type 2 diabetes",
+   "url": "https://www.jobs.ac.uk/job/DTL132/phd-studentship-allele-resolved-genetics-and-epigenetics-in-type-2-diabetes",
+   "city": "Exeter",
+   "location": "Exeter, United Kingdom",
+   "department": "",
+   "posted": "2026-10-28",
+   "deadline": "2026-12-08",
+   "summary": "Type 2 diabetes (T2D) affects over 800 million people worldwide. It is a complex disorder and an individual’s genetics influences disease risk. Understanding how DNA differences drive this risk can enable disease prediction and personalised approaches to diagnosis and treatment, addressing the shortfall between genetic discovery and patient benefit. Large scale genetic studies have identified hund",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [
+    "基因體學"
+   ],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "stipend of £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "status": "open",
+   "penalties": [
+    "基因體學"
+   ],
+   "topic_score": 0,
+   "topics": [
+    "無障礙"
+   ],
+   "fields": [
+    "醫療",
+    "生命科學"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "stipend of £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "80c385d83dcaefb2",
+   "source": "jobsacuk_hci",
+   "source_name": "jobs.ac.uk（HCI 關鍵字搜尋）",
    "university": "University of Exeter",
    "country": "United Kingdom",
    "title": "PhD Studentship: AI and Image Processing for Diabetic Retinopathy (DR) Smart Cameras",
@@ -971,8 +2262,8 @@
    "deadline": "2026-12-08",
    "summary": "Background: Diabetic Retinopathy (DR) is the leading cause of blindness in working aged people. All people with diabetes aged over 12 need annual retina screening by attending ophthalmology clinic. This produces over a billion retina images every year. However, about 50% of diabetic adults do not receive this recommended annual screening, and lower middle income countries, have below 10% screening",
    "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
+   "found_via": "human factors",
+   "topic_boost": 3,
    "enrich_attempts": 9,
    "score_version": 17,
    "country_zh": "英國",
@@ -984,8 +2275,10 @@
    "last_seen": "2026-10-28",
    "status": "open",
    "penalties": [],
-   "topic_score": 0,
-   "topics": [],
+   "topic_score": 1,
+   "topics": [
+    "HCI 關鍵字搜尋（弱）"
+   ],
    "fields": [
     "影像視覺"
    ],
@@ -1240,7 +2533,7 @@
    "page_kind": "studentship",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "基因體學",
     "農業生態"
@@ -1294,7 +2587,7 @@
    "page_kind": "studentship",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
-   "status": "open",
+   "status": "closed",
    "penalties": [],
    "topic_score": 0,
    "topics": [],
@@ -1391,8 +2684,8 @@
   },
   {
    "id": "33e94e654b5579f6",
-   "source": "jobsacuk",
-   "source_name": "jobs.ac.uk（英國）",
+   "source": "jobsacuk_hci",
+   "source_name": "jobs.ac.uk（HCI 關鍵字搜尋）",
    "university": "University of Exeter",
    "country": "United Kingdom",
    "title": "PhD Studentship: SCALE-Decode: Unlocking Growth Workflows in UK SMEs",
@@ -1404,8 +2697,8 @@
    "deadline": "2026-12-08",
    "summary": "Small and medium-sized enterprises (SMEs) underpin UK employment and innovation, yet many struggle to turn early success into sustainable growth. Rising demand can expose informal routines, disconnected systems, founder dependence and employee overload. Managers may see delayed delivery or lost sales without understanding how constraints travel across the firm. Research and policy treat issues sep",
    "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
+   "found_via": "digital wellbeing",
+   "topic_boost": 3,
    "enrich_attempts": 9,
    "score_version": 17,
    "page_tools": [
@@ -1431,8 +2724,10 @@
    "last_seen": "2026-10-28",
    "status": "open",
    "penalties": [],
-   "topic_score": 0,
-   "topics": [],
+   "topic_score": 1,
+   "topics": [
+    "HCI 關鍵字搜尋（弱）"
+   ],
    "fields": [
     "氣候環境",
     "法律政策"
@@ -1494,7 +2789,7 @@
    },
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "能源工程"
    ],
@@ -1560,7 +2855,7 @@
    },
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "化學分析"
    ],
@@ -1589,8 +2884,8 @@
   },
   {
    "id": "8a28ebb9ae55315a",
-   "source": "jobsacuk",
-   "source_name": "jobs.ac.uk（英國）",
+   "source": "jobsacuk_hci",
+   "source_name": "jobs.ac.uk（HCI 關鍵字搜尋）",
    "university": "University of Exeter",
    "country": "United Kingdom",
    "title": "PhD Studentship: Quantum Information with Mechanical Systems (QuIMS): Modelling Nonlinear Quantum Optomechanical Devices",
@@ -1602,8 +2897,8 @@
    "deadline": "2026-12-08",
    "summary": "Quantum technologies require new approaches to overcoming limited coherence, control errors and connectivity between qubits. This 3.5-year PhD will investigate whether nanomechanical systems can provide an alternative platform for quantum information processing and quantum-enhanced sensing. The project focuses on suspended graphene resonators integrated with superconducting microwave cavities. Bec",
    "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
+   "found_via": "interaction design",
+   "topic_boost": 3,
    "enrich_attempts": 9,
    "score_version": 17,
    "country_zh": "英國",
@@ -1623,7 +2918,9 @@
     "量子元件"
    ],
    "topic_score": 0,
-   "topics": [],
+   "topics": [
+    "HCI 關鍵字搜尋（弱）"
+   ],
    "fields": [
     "量子",
     "製造工程"
@@ -1674,7 +2971,7 @@
    "page_kind": "studentship",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
-   "status": "open",
+   "status": "closed",
    "penalties": [],
    "topic_score": 0,
    "topics": [],
@@ -1700,8 +2997,8 @@
   },
   {
    "id": "ae29949736c98ed9",
-   "source": "jobsacuk",
-   "source_name": "jobs.ac.uk（英國）",
+   "source": "jobsacuk_hci",
+   "source_name": "jobs.ac.uk（HCI 關鍵字搜尋）",
    "university": "University of Exeter",
    "country": "United Kingdom",
    "title": "PhD Studentship: Deterministic Recording via All-optical Magnetic Switching",
@@ -1713,8 +3010,8 @@
    "deadline": "2026-12-08",
    "summary": "Our aim is to control the magnetic state of a material using only pulses of light. “Switching” the magnetization of a magnet means that its north and south poles are interchanged without mechanically inverting the magnet. Magnets are normally opaque so that incident light only affects ten to one hundred layers of atoms closest to the surface. Therefore, the magnet must be sufficiently thin if ligh",
    "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
+   "found_via": "interaction design",
+   "topic_boost": 3,
    "enrich_attempts": 9,
    "score_version": 17,
    "country_zh": "英國",
@@ -1732,7 +3029,9 @@
     "材料合成"
    ],
    "topic_score": 0,
-   "topics": [],
+   "topics": [
+    "HCI 關鍵字搜尋（弱）"
+   ],
    "fields": [
     "光電半導體",
     "製造工程"
@@ -1795,7 +3094,7 @@
    },
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "材料合成",
     "化學分析"
@@ -1826,8 +3125,8 @@
   },
   {
    "id": "83c1c075538e70ff",
-   "source": "jobsacuk",
-   "source_name": "jobs.ac.uk（英國）",
+   "source": "jobsacuk_hci",
+   "source_name": "jobs.ac.uk（HCI 關鍵字搜尋）",
    "university": "University of Exeter",
    "country": "United Kingdom",
    "title": "PhD Studentship: Bioinspired fluidic metamaterials for passive directional water transport",
@@ -1839,8 +3138,8 @@
    "deadline": "2026-12-08",
    "summary": "Metamaterials use engineered structures to achieve functionality that the constituent materials alone cannot provide. This project explores novel bioinspired fluidic metamaterials which use hierarchical surface patterns inspired by carnivorous plants to control the speed and direction of water transport. Precision control of wetting and liquid flow on surfaces has the potential to transform medica",
    "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
+   "found_via": "interaction design",
+   "topic_boost": 3,
    "enrich_attempts": 9,
    "score_version": 17,
    "country_zh": "英國",
@@ -1862,7 +3161,9 @@
     "藥學腫瘤"
    ],
    "topic_score": 0,
-   "topics": [],
+   "topics": [
+    "HCI 關鍵字搜尋（弱）"
+   ],
    "fields": [
     "材料化學",
     "交通移動"
@@ -1885,8 +3186,8 @@
   },
   {
    "id": "f197abcfde99353f",
-   "source": "jobsacuk",
-   "source_name": "jobs.ac.uk（英國）",
+   "source": "jobsacuk_hci",
+   "source_name": "jobs.ac.uk（HCI 關鍵字搜尋）",
    "university": "University of Exeter",
    "country": "United Kingdom",
    "title": "PhD Studentship: Beyond Pilots: De-Risking the Scale-Up of Artificial Intelligence in Digitally Enabled Circular Supply Chains",
@@ -1898,8 +3199,8 @@
    "deadline": "2026-12-08",
    "summary": "Most organisations can demonstrate that AI works in a pilot; far fewer can sustain its value when it is embedded in complex, high-throughput operations. In supply chains, this matters not only commercially but environmentally. When AI-enabled forecasting, inventory and decision-support systems lose reliability or user trust, organisations may revert to inefficient practices, contributing to over-o",
    "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
+   "found_via": "user experience",
+   "topic_boost": 3,
    "enrich_attempts": 9,
    "page_score": 2,
    "page_topics": [
@@ -1929,9 +3230,10 @@
    "last_seen": "2026-10-28",
    "status": "open",
    "penalties": [],
-   "topic_score": 2,
+   "topic_score": 3,
    "topics": [
-    "對 AI 的信任"
+    "對 AI 的信任",
+    "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
     "機器學習",
@@ -2174,6 +3476,7 @@
    ],
    "topic_score": 0,
    "topics": [
+    "無障礙",
     "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
@@ -2309,6 +3612,73 @@
    "fit_gap": [],
    "fit_block": [],
    "fit_band": "弱相關",
+   "kind": "job",
+   "rank_band": "201-500",
+   "rank_order": 4
+  },
+  {
+   "id": "a41341c875974e97",
+   "source": "umu",
+   "source_name": "Umeå universitet",
+   "university": "",
+   "country": "SE",
+   "title": "PhD position in Molecular Biology in Data driven epidemiology and biology of infection",
+   "url": "https://umu.varbi.com/en/what:job/jobID:979252/",
+   "city": "Umeå",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-11-19",
+   "summary": "Department of Molecular Biology at Umeå University is seeking a PhD student in Molecular Biology, attached to national DDLS Research school in Data driven epidemiology and biology of infection. The f",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "Python",
+    "R"
+   ],
+   "page_penalties": [
+    "基因體學"
+   ],
+   "page_fit": {
+    "methods": [
+     "程式與統計"
+    ]
+   },
+   "page_funding": {},
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "status": "open",
+   "penalties": [
+    "基因體學"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "生命科學"
+   ],
+   "tools": [
+    "Python",
+    "R"
+   ],
+   "funding": {},
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "瑞典",
    "kind": "job",
    "rank_band": "201-500",
    "rank_order": 4
@@ -5009,7 +6379,7 @@
    },
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-28",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "農業生態",
     "化學分析"
