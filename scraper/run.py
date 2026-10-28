@@ -54,7 +54,7 @@ PHD_WEAK = re.compile(r"(\bdoctoral\b|\bdoctorate\b|research\s+student)", re.I)
 POSTDOC = re.compile(r"(post[\s\-]?doc|postdoctoral|post[\s\-]?doctoral)", re.I)
 
 KEEP_CLOSED_DAYS = 45   # 職缺從列表消失後，還在資料裡保留幾天
-SCORE_VERSION = 16     # 計分規則改過就 +1，舊資料會自動重抓重算
+SCORE_VERSION = 17     # 計分規則改過就 +1，舊資料會自動重抓重算
 
 
 # --------------------------------------------------------------------------- 工具
@@ -502,6 +502,13 @@ LANG_NAMES = re.compile(
     r"|portuguese|polish|czech|romanian|hungarian|greek|turkish|russian|chinese|japanese"
     r"|deutsch|nederlands|svenska|norsk|dansk|suomi|fran\u00e7ais|espa\u00f1ol|italiano"
     r"|portugu\u00eas|polski|rom\u00e2n\u0103|magyar|nynorsk)\b", re.I)
+# "the Swedish Higher Education Ordinance"、"the Swedish Research Council"：
+# 這裡的 Swedish 是形容機構不是語言，但瑞典的職缺公告每一篇都有。
+LANG_NOT_LANGUAGE = re.compile(
+    r"^\W{0,3}(higher education|research council|council|ordinance|\bact\b|law|legislation"
+    r"|government|authorit|universit|institute|agency|national|secrecy|migration|tax"
+    r"|work environment|citizen|krona|kronor|labour|union|society|public|welfare|model"
+    r"|school system|market|industry|companies|company|armed forces|museum)", re.I)
 LANG_NEGATED = re.compile(
     r"(not required|not necessary|not a requirement|no need|is not expected"
     r"|do(es)? not (have to|need to) speak)", re.I)
@@ -577,6 +584,8 @@ def detect_languages(body: str) -> list[str]:
             window = before + m.group(0) + after
             if LANG_NEGATED.search(window):
                 continue          # 「不需要會荷蘭文」不該標成語言門檻
+            if LANG_NOT_LANGUAGE.search(after):
+                continue          # Swedish Higher Education Ordinance 之類的機構名
             if LANG_DOC.search(window):
                 continue          # 「申請文件用英文或瑞典文寫」不是語言門檻
             # Varbi 每頁都有語言切換器（French / Romanian / Norwegian…），

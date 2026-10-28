@@ -262,6 +262,12 @@ def main():
     check("語言切換器（一串語言名）不算語言門檻",
           run.detect_languages("Deutsch Français Svenska Norsk Dansk Nederlands "
                                "skills required for this position"), [])
+    check("Swedish Higher Education Ordinance 不是語言門檻",
+          run.detect_languages("The qualification requirements are stated in the Swedish "
+                               "Higher Education Ordinance."), [])
+    check("Swedish Research Council 也不是",
+          run.detect_languages("Funding knowledge: the grant is from the Swedish Research "
+                               "Council and is required for the project."), [])
     check("真的要求口說書寫還是要標",
           run.detect_languages("Good command of written and spoken Swedish is required."),
           ["瑞典文（必要）"])
