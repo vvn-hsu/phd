@@ -54,7 +54,7 @@ PHD_WEAK = re.compile(r"(\bdoctoral\b|\bdoctorate\b|research\s+student)", re.I)
 POSTDOC = re.compile(r"(post[\s\-]?doc|postdoctoral|post[\s\-]?doctoral)", re.I)
 
 KEEP_CLOSED_DAYS = 45   # 職缺從列表消失後，還在資料裡保留幾天
-SCORE_VERSION = 11     # 計分規則改過就 +1，舊資料會自動重抓重算
+SCORE_VERSION = 12     # 計分規則改過就 +1，舊資料會自動重抓重算
 
 
 # --------------------------------------------------------------------------- 工具
@@ -270,15 +270,24 @@ def fit_of(job: dict, hits: dict) -> None:
         if "必要" in tag and name in blocked_langs:
             blocks.append(f"要會{name}")
 
+    # 沒有命中任何 core / target 的，不管 near 和 methods 堆出多少分都只能到
+    # stretch。不然「PhD in Biochemistry」會因為頁尾有 accessibility 和
+    # user experience 就變成「符合」。
+    anchored = bool(hits.get("core") or hits.get("target"))
+    if not anchored:
+        score = min(score, int(th.get("good", 4)) - 1)
+    if job.get("penalties") and not anchored:
+        score = 0
+
     job["fit_score"] = score
     job["fit_why"] = (hits.get("core", []) + hits.get("target", []) + hits.get("near", []))[:4]
     job["fit_gap"] = hits.get("mismatch", [])[:2]
     job["fit_block"] = blocks
     if blocks:
         job["fit_band"] = "排除"
-    elif score >= int(th.get("strong", 8)):
+    elif score >= int(th.get("strong", 7)):
         job["fit_band"] = "主推"
-    elif score >= int(th.get("good", 5)):
+    elif score >= int(th.get("good", 4)):
         job["fit_band"] = "符合"
     elif score >= int(th.get("stretch", 2)):
         job["fit_band"] = "stretch"
@@ -1264,7 +1273,9 @@ def main() -> int:
         own_fit = fit_hits(job.get("title", ""), job.get("summary", ""),
                            job.get("department", ""),
                            " ".join((job.get("topics") or []) + (job.get("tools") or [])))
-        fit_of(job, merge_fit(page_fit, own_fit))
+        merged_fit = {group: [l for l in labels if (site, l) not in boilerplate]
+                      for group, labels in merge_fit(page_fit, own_fit).items()}
+        fit_of(job, {k: v for k, v in merged_fit.items() if v})
 
     # 城市：詳細頁沒寫的話，從 location（"Delft, NL"）截前半段，
     # 再不然用來源設定裡的 city（單一校區的學校才設）

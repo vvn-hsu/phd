@@ -306,6 +306,11 @@ def main():
     run.fit_of(merit, run.fit_hits("PhD in interaction design with co-design workshops"))
     check("瑞典文只是加分就不排除", merit["fit_band"] != "排除", True)
 
+    weak = {"url": "https://x/6"}
+    run.fit_of(weak, run.fit_hits("PhD student in Biochemistry. Accessibility statement. "
+                                  "We use cookies to improve your user experience."))
+    check("只靠頁尾的泛用詞堆不出「符合」", weak["fit_band"] in ("stretch", "弱相關"), True)
+
     far = {"url": "https://x/5"}
     run.fit_of(far, run.fit_hits("PhD in perovskite solar cells with finite element simulation"))
     check("完全不同行＝弱相關", far["fit_band"], "弱相關")

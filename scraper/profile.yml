@@ -4,12 +4,14 @@
 # （這個 repo 是公開的），這裡也只放研究關鍵字，不放學歷細節。
 #
 # 算法：core×3 ＋ near×2 ＋ target×2 ＋ methods×1 − mismatch×2
-#   主推 ≥8　符合 5–7　stretch 2–4　弱相關 <2
+#   主推 ≥7　符合 4–6　stretch 2–3　弱相關 <2
 #   blockers 命中就直接「排除」，分數不算。
+#   另外：沒有命中任何 core 或 target 的，最高只能到 stretch——
+#   光靠 near 和 methods 這種泛用詞堆出來的分數不算「符合」。
 
 thresholds:
-  strong: 8
-  good: 5
+  strong: 7
+  good: 4
   stretch: 2
 
 weights:
@@ -34,14 +36,17 @@ core:
 
 # 你的興趣圈，或作品可以遷移過去的題目。
 near:
-  "user experience|\\bux\\b research|usability": 使用者體驗
+  # 不要只比對 "user experience"：那四個字在 cookie 說明和頁尾到處都是
+  "\\bux research\\b|usability (test|evaluation|stud|inspection|issue)": 使用者體驗
+  "user experience (research|design|evaluation|stud)": 使用者體驗
   "user[- ]centred design|user[- ]centered design|interaction design": 互動設計
   "(wearable|mobile) sensing|activity recognition|physiological sensing": 穿戴感測
   "behaviou?r change|mhealth|health intervention|wellbeing intervention": 行為改變
   "participatory design|co[- ]design|codesign": 參與式設計
   "social (media|computing)|online platform|recommender|crowdsourc": 社會運算
   "learning (technolog|analytics)|educational technolog|classroom": 學習科技
-  "accessibility|inclusive design|assistive": 無障礙
+  # 同理，頁尾的 "Accessibility statement" 不算
+  "accessibility (research|of|for|guideline|barrier)|assistive technolog|inclusive design": 無障礙
   "trust in (ai|automation|technology)|trustworthy ai|explainable ai": 對 AI 的信任
   "interface design|user interface": 介面設計
 
