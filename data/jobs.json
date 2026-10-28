@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T05:31:34+00:00",
+ "generated_at": "2026-10-28T05:40:37+00:00",
  "date": "2026-10-28",
  "topic_thresholds": {
   "broad": 2,
@@ -323,9 +323,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -344,7 +345,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -380,9 +380,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -400,7 +401,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -435,9 +435,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -456,7 +457,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -491,9 +491,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -514,7 +515,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -549,9 +549,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -571,7 +572,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -611,9 +611,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -637,7 +638,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -672,9 +672,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -694,7 +695,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -731,9 +731,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -755,7 +756,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -792,9 +792,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -817,7 +818,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -859,9 +859,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -889,7 +890,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -922,9 +922,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -941,7 +942,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -978,9 +978,10 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "TEMPORARY",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -999,7 +1000,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "未列入",
    "rank_order": 6
@@ -1034,9 +1034,10 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "TEMPORARY",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -1053,7 +1054,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "未列入",
    "rank_order": 6
@@ -1088,9 +1088,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "TEMPORARY",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -1110,7 +1111,6 @@
    ],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "101-200",
    "rank_order": 3
@@ -1146,9 +1146,10 @@
    "page_supervisor": "Dr Mike Deeks",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -1170,7 +1171,6 @@
    "languages": [],
    "supervisor": "Dr Mike Deeks",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -1203,9 +1203,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -1224,7 +1225,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -1262,10 +1262,11 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -1289,7 +1290,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -1326,9 +1326,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -1350,7 +1351,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -1387,9 +1387,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -1412,7 +1413,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -1447,9 +1447,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -1468,7 +1469,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -1505,9 +1505,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -1529,7 +1530,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -1558,15 +1558,17 @@
    "page_tools": [],
    "page_penalties": [],
    "page_funding": {
+    "fee": "funded",
     "pay": "stipend of £21,805"
    },
    "page_languages": [],
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -1581,12 +1583,12 @@
    ],
    "tools": [],
    "funding": {
+    "fee": "funded",
     "pay": "stipend of £21,805"
    },
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -1612,8 +1614,7 @@
    "page_topics": [],
    "page_tools": [],
    "page_penalties": [
-    "材料合成",
-    "化學分析"
+    "材料合成"
    ],
    "page_funding": {
     "pay": "stipend of £21,805"
@@ -1622,15 +1623,15 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
    "penalties": [
-    "材料合成",
-    "化學分析"
+    "材料合成"
    ],
    "topic_score": 0,
    "topics": [],
@@ -1645,7 +1646,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -1685,9 +1685,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -1712,7 +1713,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -1749,9 +1749,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -1773,7 +1774,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -1811,9 +1811,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -1836,7 +1837,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -1865,16 +1865,14 @@
    ],
    "page_penalties": [],
    "page_funding": {},
-   "page_languages": [
-    "瑞典文（加分）",
-    "芬蘭文（加分）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "[\"TEMPORARY\",\"FULL_TIME\"]",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "芬蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -1888,13 +1886,9 @@
     "田野／民族誌"
    ],
    "funding": {},
-   "languages": [
-    "瑞典文（加分）",
-    "芬蘭文（加分）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "芬蘭",
    "kind": "studentship",
    "rank_band": "101-200",
    "rank_order": 3
@@ -1930,10 +1924,11 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -1957,7 +1952,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -1993,10 +1987,11 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -2016,7 +2011,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -2056,10 +2050,11 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -2084,7 +2079,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -2119,10 +2113,11 @@
    "page_supervisor": "Dr Amir Atapour-Abarghouei",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -2142,7 +2137,6 @@
    "languages": [],
    "supervisor": "Dr Amir Atapour-Abarghouei",
    "expired": false,
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -2164,21 +2158,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 1,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "page_tools": [],
+   "score_version": 9,
+   "country_zh": "瑞典",
    "page_penalties": [
     "基因體學"
    ],
-   "page_funding": {},
-   "page_languages": [],
-   "page_supervisor": "",
-   "page_kind": "",
-   "postdoc_suspect": false,
-   "score_version": 9,
-   "enrich_attempts": 1,
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -2193,7 +2182,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "瑞典",
    "kind": "job",
    "rank_band": "201-500",
    "rank_order": 4
@@ -2222,15 +2210,14 @@
    "page_funding": {
     "pay": "€3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -2242,12 +2229,9 @@
    "funding": {
     "pay": "€3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -2276,15 +2260,14 @@
    "page_funding": {
     "pay": "€3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -2298,12 +2281,9 @@
    "funding": {
     "pay": "€3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -2332,15 +2312,14 @@
    "page_funding": {
     "pay": "€3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -2352,12 +2331,9 @@
    "funding": {
     "pay": "€3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -2386,15 +2362,14 @@
    "page_funding": {
     "pay": "€3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -2406,12 +2381,9 @@
    "funding": {
     "pay": "€3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -2444,15 +2416,14 @@
    "page_funding": {
     "pay": "Salary range: €3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -2470,12 +2441,9 @@
    "funding": {
     "pay": "Salary range: €3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -2507,15 +2475,14 @@
    "page_funding": {
     "pay": "€3059"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "Prof. Robert Babuška",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -2532,12 +2499,9 @@
    "funding": {
     "pay": "€3059"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "Prof. Robert Babuška",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -2570,9 +2534,10 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -2589,7 +2554,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -2629,9 +2593,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -2653,7 +2618,6 @@
    ],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -2690,9 +2654,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -2711,7 +2676,6 @@
    ],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -2744,15 +2708,14 @@
    "page_funding": {
     "pay": "Salary range: €3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -2770,12 +2733,9 @@
    "funding": {
     "pay": "Salary range: €3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -2809,15 +2769,14 @@
    "page_funding": {
     "pay": "€3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -2834,12 +2793,9 @@
    "funding": {
     "pay": "€3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -2869,15 +2825,14 @@
     "fee": "funded",
     "pay": "€3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -2890,12 +2845,9 @@
     "fee": "funded",
     "pay": "€3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -2927,15 +2879,14 @@
    "page_funding": {
     "pay": "€3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -2953,12 +2904,9 @@
    "funding": {
     "pay": "€3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -2990,15 +2938,14 @@
    "page_funding": {
     "pay": "€3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -3013,12 +2960,9 @@
    "funding": {
     "pay": "€3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -3055,15 +2999,14 @@
     "fee": "funded",
     "pay": "€3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -3083,12 +3026,9 @@
     "fee": "funded",
     "pay": "€3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -3122,15 +3062,14 @@
    "page_funding": {
     "pay": "€3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -3147,12 +3086,9 @@
    "funding": {
     "pay": "€3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -3186,15 +3122,14 @@
     "藥學腫瘤"
    ],
    "page_funding": {},
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -3213,12 +3148,9 @@
     "原型製作"
    ],
    "funding": {},
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -3251,9 +3183,10 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -3270,7 +3203,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -3301,15 +3233,14 @@
    "page_funding": {
     "pay": "€3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "Dr. Benedikt Ahrens",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -3323,12 +3254,9 @@
    "funding": {
     "pay": "€3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "Dr. Benedikt Ahrens",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -3357,15 +3285,14 @@
    "page_funding": {
     "pay": "€3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "Dr. Aaron Ding",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -3379,12 +3306,9 @@
    "funding": {
     "pay": "€3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "Dr. Aaron Ding",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -3417,15 +3341,14 @@
    "page_funding": {
     "pay": "€3059"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -3441,12 +3364,9 @@
    "funding": {
     "pay": "€3059"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -3477,15 +3397,14 @@
    "page_funding": {
     "pay": "€3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -3501,12 +3420,9 @@
    "funding": {
     "pay": "€3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -3540,9 +3456,10 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -3560,7 +3477,6 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -3592,15 +3508,14 @@
    "page_funding": {
     "pay": "€3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -3617,12 +3532,9 @@
    "funding": {
     "pay": "€3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -3655,9 +3567,10 @@
    "page_supervisor": "Marc Ottelé",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -3672,7 +3585,6 @@
    "languages": [],
    "supervisor": "Marc Ottelé",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -3701,15 +3613,14 @@
    "page_funding": {
     "pay": "€3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "AnneMarie Eijkelenboom",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -3721,12 +3632,9 @@
    "funding": {
     "pay": "€3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "AnneMarie Eijkelenboom",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -3755,15 +3663,14 @@
    "page_funding": {
     "pay": "€3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -3777,12 +3684,9 @@
    "funding": {
     "pay": "€3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -3817,15 +3721,14 @@
    "page_funding": {
     "pay": "€3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -3845,12 +3748,9 @@
    "funding": {
     "pay": "€3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -3879,15 +3779,14 @@
    "page_funding": {
     "pay": "€3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -3901,12 +3800,9 @@
    "funding": {
     "pay": "€3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -3939,15 +3835,14 @@
    "page_funding": {
     "pay": "€3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
-   "page_supervisor": "Dr. Milos Cvetkovic. You",
+   "page_languages": [],
+   "page_supervisor": "Dr. Milos Cvetkovic",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -3966,12 +3861,9 @@
    "funding": {
     "pay": "€3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
-   "supervisor": "Dr. Milos Cvetkovic. You",
+   "languages": [],
+   "supervisor": "Dr. Milos Cvetkovic",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -4002,15 +3894,14 @@
    "page_funding": {
     "pay": "€3204"
    },
-   "page_languages": [
-    "荷蘭文（加分）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -4026,12 +3917,9 @@
    "funding": {
     "pay": "€3204"
    },
-   "languages": [
-    "荷蘭文（加分）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -4065,15 +3953,14 @@
    "page_funding": {
     "pay": "€3204"
    },
-   "page_languages": [
-    "荷蘭文（加分）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -4090,12 +3977,9 @@
    "funding": {
     "pay": "€3204"
    },
-   "languages": [
-    "荷蘭文（加分）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -4128,15 +4012,14 @@
    "page_funding": {
     "pay": "€3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -4154,12 +4037,9 @@
    "funding": {
     "pay": "€3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -4192,15 +4072,14 @@
    "page_funding": {
     "pay": "Salary range: €3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
@@ -4219,12 +4098,9 @@
    "funding": {
     "pay": "Salary range: €3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -4261,10 +4137,10 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
    "employment": "TEMPORARY",
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "country_zh": "比利時",
    "first_seen": "2026-10-27",
    "last_seen": "2026-10-28",
@@ -4414,9 +4290,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": true,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "[\"TEMPORARY\",\"FULL_TIME\"]",
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "country_zh": "芬蘭",
    "first_seen": "2026-10-27",
    "last_seen": "2026-10-28",
@@ -4512,10 +4388,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "country_zh": "英國",
    "first_seen": "2026-10-27",
    "last_seen": "2026-10-28",
@@ -4648,16 +4524,14 @@
    "page_funding": {
     "pay": "Salary indication €3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-27",
    "last_seen": "2026-10-28",
@@ -4678,9 +4552,7 @@
    "funding": {
     "pay": "Salary indication €3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
    "kind": "job",
@@ -4715,10 +4587,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-27",
    "last_seen": "2026-10-28",
@@ -4813,10 +4685,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "country_zh": "英國",
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-28",
@@ -4959,10 +4831,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-28",
@@ -5217,16 +5089,14 @@
    "page_funding": {
     "pay": "Salary indication €3059"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "Prof. Robert Babuška",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "FULL_TIME",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-24",
    "last_seen": "2026-10-28",
@@ -5246,9 +5116,7 @@
    "funding": {
     "pay": "Salary indication €3059"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "Prof. Robert Babuška",
    "expired": false,
    "kind": "job",
@@ -5690,10 +5558,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-23",
    "last_seen": "2026-10-28",
@@ -5751,10 +5619,10 @@
    "page_supervisor": "Frederik Van Loock",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-23",
    "last_seen": "2026-10-28",
@@ -6318,10 +6186,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-23",
    "last_seen": "2026-10-28",
@@ -6380,10 +6248,10 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-23",
    "last_seen": "2026-10-28",
@@ -6829,10 +6697,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "country_zh": "英國",
    "first_seen": "2026-10-22",
    "last_seen": "2026-10-28",
@@ -7169,10 +7037,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-22",
    "last_seen": "2026-10-28",
@@ -7235,8 +7103,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
-   "enrich_attempts": 4,
+   "score_version": 10,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-22",
    "last_seen": "2026-10-28",
@@ -8164,10 +8032,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "country_zh": "英國",
    "first_seen": "2026-10-21",
    "last_seen": "2026-10-28",
@@ -8225,8 +8093,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
-   "enrich_attempts": 4,
+   "score_version": 10,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-21",
    "last_seen": "2026-10-28",
@@ -8478,10 +8346,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-20",
    "last_seen": "2026-10-28",
@@ -8574,16 +8442,14 @@
    "page_funding": {
     "pay": "Salary indication €4427"
    },
-   "page_languages": [
-    "荷蘭文（加分）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-20",
    "last_seen": "2026-10-28",
@@ -8602,9 +8468,7 @@
    "funding": {
     "pay": "Salary indication €4427"
    },
-   "languages": [
-    "荷蘭文（加分）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
    "kind": "job",
@@ -8834,10 +8698,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-20",
    "last_seen": "2026-10-28",
@@ -9363,10 +9227,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-28",
@@ -9423,8 +9287,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
-   "enrich_attempts": 4,
+   "score_version": 10,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-28",
@@ -9766,16 +9630,14 @@
    "page_funding": {
     "pay": "Salary indication €3706"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-17",
    "last_seen": "2026-10-28",
@@ -9794,9 +9656,7 @@
    "funding": {
     "pay": "Salary indication €3706"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
    "kind": "job",
@@ -10217,10 +10077,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-16",
    "last_seen": "2026-10-28",
@@ -10969,13 +10829,13 @@
     "pay": "Salary indication €3204"
    },
    "page_languages": [],
-   "page_supervisor": "PIs Diletta Giuntini",
+   "page_supervisor": "Diletta Giuntini",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-15",
    "last_seen": "2026-10-28",
@@ -10993,7 +10853,7 @@
     "pay": "Salary indication €3204"
    },
    "languages": [],
-   "supervisor": "PIs Diletta Giuntini",
+   "supervisor": "Diletta Giuntini",
    "expired": false,
    "kind": "job",
    "rank_band": "101-200",
@@ -11090,8 +10950,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
-   "enrich_attempts": 4,
+   "score_version": 10,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-15",
    "last_seen": "2026-10-28",
@@ -12146,8 +12006,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
-   "enrich_attempts": 4,
+   "score_version": 10,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-13",
    "last_seen": "2026-10-28",
@@ -13540,8 +13400,8 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
-   "enrich_attempts": 4,
+   "score_version": 10,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-28",
@@ -14146,10 +14006,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-09",
    "last_seen": "2026-10-28",
@@ -14318,10 +14178,10 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-09",
    "last_seen": "2026-10-28",
@@ -14377,13 +14237,13 @@
     "pay": "Salary indication €3204"
    },
    "page_languages": [],
-   "page_supervisor": "Dr. Ir. Jasper M",
+   "page_supervisor": "Dr. Ir. Jasper",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-09",
    "last_seen": "2026-10-28",
@@ -14405,7 +14265,7 @@
     "pay": "Salary indication €3204"
    },
    "languages": [],
-   "supervisor": "Dr. Ir. Jasper M",
+   "supervisor": "Dr. Ir. Jasper",
    "expired": false,
    "kind": "job",
    "rank_band": "11-50",
@@ -14509,8 +14369,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
-   "enrich_attempts": 5,
+   "score_version": 10,
+   "enrich_attempts": 6,
    "country_zh": "瑞典",
    "first_seen": "2026-10-09",
    "last_seen": "2026-10-28",
@@ -14721,10 +14581,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-08",
    "last_seen": "2026-10-28",
@@ -14853,12 +14713,12 @@
     "pay": "Salary £5,000"
    },
    "page_languages": [],
-   "page_supervisor": "Dr Ira Marriott Haresign. The",
+   "page_supervisor": "Dr Ira Marriott Haresign",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "[\"FULL_TIME\"]",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-08",
    "last_seen": "2026-10-28",
@@ -14879,7 +14739,7 @@
     "pay": "Salary £5,000"
    },
    "languages": [],
-   "supervisor": "Dr Ira Marriott Haresign. The",
+   "supervisor": "Dr Ira Marriott Haresign",
    "expired": false,
    "kind": "studentship",
    "rank_band": "",
@@ -15098,12 +14958,12 @@
     "fee": "funded"
    },
    "page_languages": [],
-   "page_supervisor": "Sebastian Szyller. Trustworthy",
+   "page_supervisor": "Sebastian Szyller",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "employment": "[\"TEMPORARY\",\"FULL_TIME\"]",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "芬蘭",
    "first_seen": "2026-10-07",
    "last_seen": "2026-10-28",
@@ -15127,7 +14987,7 @@
     "fee": "funded"
    },
    "languages": [],
-   "supervisor": "Sebastian Szyller. Trustworthy",
+   "supervisor": "Sebastian Szyller",
    "expired": false,
    "kind": "job",
    "rank_band": "101-200",
@@ -15434,10 +15294,10 @@
    "page_supervisor": "Marc Ottelé",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-06",
    "last_seen": "2026-10-28",
@@ -16082,10 +15942,10 @@
    "page_supervisor": "Dr. Kynthia Chamilothori",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-28",
@@ -16242,14 +16102,12 @@
    ],
    "page_penalties": [],
    "page_funding": {},
-   "page_languages": [
-    "瑞典文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
-   "enrich_attempts": 5,
+   "score_version": 10,
+   "enrich_attempts": 6,
    "country_zh": "瑞典",
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-28",
@@ -16267,9 +16125,7 @@
     "模擬建模"
    ],
    "funding": {},
-   "languages": [
-    "瑞典文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
    "kind": "job",
@@ -16307,8 +16163,8 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
-   "enrich_attempts": 5,
+   "score_version": 10,
+   "enrich_attempts": 6,
    "country_zh": "瑞典",
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-28",
@@ -16850,10 +16706,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-28",
@@ -16942,16 +16798,14 @@
     "藥學腫瘤"
    ],
    "page_funding": {},
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": true,
    "employment": "TEMPORARY",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-28",
@@ -16972,9 +16826,7 @@
     "原型製作"
    ],
    "funding": {},
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
    "kind": "job",
@@ -17162,10 +17014,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-28",
@@ -17256,8 +17108,8 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
-   "enrich_attempts": 5,
+   "score_version": 10,
+   "enrich_attempts": 6,
    "country_zh": "瑞典",
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-28",
@@ -17315,8 +17167,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
-   "enrich_attempts": 5,
+   "score_version": 10,
+   "enrich_attempts": 6,
    "country_zh": "瑞典",
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-28",
@@ -17366,8 +17218,8 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
-   "enrich_attempts": 5,
+   "score_version": 10,
+   "enrich_attempts": 6,
    "country_zh": "瑞典",
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-28",
@@ -17462,8 +17314,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
-   "enrich_attempts": 5,
+   "score_version": 10,
+   "enrich_attempts": 6,
    "country_zh": "瑞典",
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-28",
@@ -17557,8 +17409,8 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
-   "enrich_attempts": 5,
+   "score_version": 10,
+   "enrich_attempts": 6,
    "country_zh": "瑞典",
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-28",
@@ -17721,8 +17573,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
-   "enrich_attempts": 5,
+   "score_version": 10,
+   "enrich_attempts": 6,
    "country_zh": "瑞典",
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-28",
@@ -17932,10 +17784,10 @@
    "page_supervisor": "Dr. Mina Alishahi",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "country_zh": "荷蘭",
    "first_seen": "2026-09-30",
    "last_seen": "2026-10-28",
@@ -18127,10 +17979,10 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-09-30",
    "last_seen": "2026-10-28",
@@ -18255,16 +18107,14 @@
    "page_funding": {
     "pay": "Salary indication €3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "FULL_TIME",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "country_zh": "荷蘭",
    "first_seen": "2026-09-30",
    "last_seen": "2026-10-28",
@@ -18288,9 +18138,7 @@
    "funding": {
     "pay": "Salary indication €3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
    "kind": "job",
@@ -18328,8 +18176,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
-   "enrich_attempts": 5,
+   "score_version": 10,
+   "enrich_attempts": 6,
    "country_zh": "瑞典",
    "first_seen": "2026-09-30",
    "last_seen": "2026-10-28",
@@ -18387,8 +18235,8 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 9,
-   "enrich_attempts": 5,
+   "score_version": 10,
+   "enrich_attempts": 6,
    "country_zh": "瑞典",
    "first_seen": "2026-09-30",
    "last_seen": "2026-10-28",
@@ -19068,21 +18916,31 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 4,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "score_version": 8,
    "page_tools": [
     "Python",
     "實驗室實驗"
    ],
+   "page_penalties": [
+    "農業生態"
+   ],
+   "page_funding": {},
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 10,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-09-28",
    "last_seen": "2026-10-28",
    "status": "open",
-   "penalties": [],
+   "penalties": [
+    "農業生態"
+   ],
    "topic_score": 0,
    "topics": [],
    "fields": [],
@@ -19235,10 +19093,10 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "FULL_TIME",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "荷蘭",
    "first_seen": "2026-09-26",
    "last_seen": "2026-10-28",
@@ -20046,8 +19904,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
-   "enrich_attempts": 5,
+   "score_version": 10,
+   "enrich_attempts": 6,
    "country_zh": "瑞士",
    "first_seen": "2026-09-24",
    "last_seen": "2026-10-28",
@@ -20387,10 +20245,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "country_zh": "荷蘭",
    "first_seen": "2026-09-23",
    "last_seen": "2026-10-28",
@@ -20714,16 +20572,14 @@
     "fee": "funded",
     "pay": "Salary indication €3204"
    },
-   "page_languages": [
-    "荷蘭文（必要）"
-   ],
+   "page_languages": [],
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "country_zh": "荷蘭",
    "first_seen": "2026-09-22",
    "last_seen": "2026-10-28",
@@ -20741,9 +20597,7 @@
     "fee": "funded",
     "pay": "Salary indication €3204"
    },
-   "languages": [
-    "荷蘭文（必要）"
-   ],
+   "languages": [],
    "supervisor": "",
    "expired": false,
    "kind": "job",
@@ -23112,10 +22966,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "country_zh": "荷蘭",
    "first_seen": "2026-09-16",
    "last_seen": "2026-10-28",
@@ -24660,13 +24514,13 @@
     "pay": "Salary indication €3204"
    },
    "page_languages": [],
-   "page_supervisor": "Dr. Ahmed H. Dorrah",
+   "page_supervisor": "Dr. Ahmed",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 9,
+   "score_version": 10,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 10,
+   "enrich_attempts": 11,
    "country_zh": "荷蘭",
    "first_seen": "2026-09-11",
    "last_seen": "2026-10-28",
@@ -24686,7 +24540,7 @@
     "pay": "Salary indication €3204"
    },
    "languages": [],
-   "supervisor": "Dr. Ahmed H. Dorrah",
+   "supervisor": "Dr. Ahmed",
    "expired": false,
    "kind": "job",
    "rank_band": "101-200",
@@ -27237,8 +27091,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 9,
-   "enrich_attempts": 11,
+   "score_version": 10,
+   "enrich_attempts": 12,
    "country_zh": "瑞典",
    "first_seen": "2026-09-11",
    "last_seen": "2026-10-28",
