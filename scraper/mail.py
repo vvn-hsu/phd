@@ -67,7 +67,25 @@ def job_block(job: dict, show_tags: bool = True) -> str:
         when = f"截止 {job['deadline']}"
         if dd is not None and 0 <= dd <= SOON_DAYS:
             when += f"（剩 {dd} 天）"
+    facts = []
+    kind = {"job": "支薪職缺", "studentship": "studentship（自付／獎助）",
+            "apply": "需先聯絡教授"}.get(job.get("kind", ""), "")
+    if kind:
+        facts.append(kind)
+    fee = {"home": "⚠ 只收 home 學費身分", "international": "國際生可申請",
+           "funded": "全額補助"}.get((job.get("funding") or {}).get("fee", ""), "")
+    if fee:
+        facts.append(fee)
+    if (job.get("funding") or {}).get("pay"):
+        facts.append(job["funding"]["pay"])
+    facts += [lang for lang in (job.get("languages") or []) if "必要" in lang]
+    if job.get("supervisor"):
+        facts.append("導師 " + job["supervisor"])
+    if job.get("postdoc_suspect"):
+        facts.append("⚠ 內文像博後")
     meta = " · ".join(x for x in [where, when] if x)
+    extra = (f'<div style="color:#6b6a66;font-size:12px;margin:0 0 5px">{esc(" ｜ ".join(facts))}</div>'
+             if facts else "")
     score = job.get("topic_score", 0)
     badge = (f'<span style="background:#0f7a4d;color:#fff;border-radius:9px;padding:1px 7px;'
              f'font-size:11px;margin-left:6px">HCI {score}</span>') if score else ""
@@ -77,6 +95,7 @@ def job_block(job: dict, show_tags: bool = True) -> str:
         f'<a href="{esc(job.get("url"))}" style="color:#1b1b1a;text-decoration:none">'
         f'{esc(job.get("title"))}</a>{badge}</div>'
         f'<div style="color:#6b6a66;font-size:13px;margin:3px 0 5px">{esc(meta)}</div>'
+        f'{extra}'
         f'{chips(job) if show_tags else ""}'
         f'</div>'
     )

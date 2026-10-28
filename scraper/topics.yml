@@ -11,6 +11,7 @@ weights:
   strong: 3
   medium: 2
   weak: 1
+  penalty: 2   # penalties 每命中一個扣幾分
 
 thresholds:
   broad: 2     # 網頁預設：HCI 相關（廣泛）＝命中一個關鍵字就算
@@ -57,6 +58,13 @@ medium:
     "vulnerable road user": 行人互動
     "take[- ]?over request|transition of control|mode awareness": 接手控制
     "driver (monitoring|state estimation|distraction)": 駕駛狀態
+    # 數位健康、人與 AI 的關係
+    "digital (wellbeing|well-being)|screen time|technology overuse": 數位身心健康
+    "human[- ](ai|machine) (teaming|collaboration|partnership)": 人與 AI 協作
+    "human[- ]centred ai|human[- ]centered ai": 人與 AI 協作
+    "trust in (ai|automation|technology|machines?|robots?)": 對 AI 的信任
+    "trustworthy (ai|machine learning|autonomy|automation)": 對 AI 的信任
+    "(over|under)[- ]?reliance on (ai|automation)": 對 AI 的信任
     "social computing": 社會運算
     "crowdsourcing": 群眾外包
     "ubiquitous computing": 普適運算
@@ -71,6 +79,37 @@ medium:
     BCI: 腦機介面
     EEG: 腦電
     XAI: 可解釋 AI
+
+# 扣分詞：一看就不是這條研究線的題目。每命中一個扣 weights.penalty 分，
+# 分數最低扣到 0。用途是擋掉「整頁只因為提過一次 user interface 或
+# accessibility 就擠進 HCI 清單」的生醫、材料、量子、能源職缺。
+# 真的有兩個以上 HCI 關鍵字的職缺扣完還是會留著，所以不會誤殺跨領域的缺。
+penalties:
+  "(genomic|genome|sequencing|proteomic|transcriptom|crispr|molecular biolog|microbiolog)": 基因體學
+  "(perovskite|catalysis|catalyst|polymer synthesis|crystallograph|alloy|corrosion|thin film)": 材料合成
+  "(cryptograph|side[- ]channel|formal verification|intrusion detection|malware)": 資安底層
+  "(qubit|quantum (comput|optic|material|dot)|superconduct)": 量子元件
+  "(photovoltaic|fuel cell|hydrogen|battery (chemistry|material)|power grid|wind turbine)": 能源工程
+  "(plant (science|biolog|breeding)|crop|soil|agronom|microbial ecolog|livestock)": 農業生態
+  "(astrophys|particle physics|cosmolog|fluid dynamics|combustion|aerodynamic)": 基礎物理
+  "(drug (discovery|delivery)|pharmacolog|vaccine|immunolog|oncolog|tumou?r)": 藥學腫瘤
+  "(organic chemistry|electrochemi|spectroscop|mass spectrometry|nmr)": 化學分析
+  "(tissue engineering|stem cell|biomaterial|regenerative medicine)": 生醫材料
+
+# 語言門檻：要求當地語言的職缺要一眼看得出來。
+# 必要（required）和加分（merit）分開，瑞典很多缺是「會瑞典文算加分」，那不該標紅。
+languages:
+  Dutch: 荷蘭文
+  German: 德文
+  Deutsch: 德文
+  Swedish: 瑞典文
+  Svenska: 瑞典文
+  Danish: 丹麥文
+  Norwegian: 挪威文
+  Finnish: 芬蘭文
+  French: 法文
+  Italian: 義大利文
+  Spanish: 西班牙文
 
 # 只用來貼標籤、不算 HCI 分數。純粹為了能一眼掃出這個職缺在做什麼。
 fields:

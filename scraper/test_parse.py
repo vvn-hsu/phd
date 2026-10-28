@@ -218,6 +218,59 @@ def main():
           run.page_fallback_fields(DETAIL)["posted"], "2026-09-11")
     check("詳細頁 fallback 標題", run.page_fallback_fields(DETAIL)["title"], "PhD position: Offshore Wind")
 
+    # --- 決策欄位：博後誤判、經費、語言門檻、導師、類型
+    check("標題寫 doctoral researcher 但內文是博後 → 標記出來",
+          run.postdoc_suspect(
+              "Doctoral Researcher in Computational Genomics",
+              "The Barrett lab is recruiting a post-doctoral researcher in genomics."), True)
+    check("標題明寫 PhD 的不會被當成博後",
+          run.postdoc_suspect(
+              "PhD position in HCI",
+              "The group currently has three postdoctoral researchers and five PhD students."),
+          False)
+    check("順便提到實驗室有博後不算",
+          run.postdoc_suspect(
+              "Doctoral student in traffic safety",
+              "You will work alongside postdocs and senior researchers."), False)
+
+    check("英國 home fee only 抓得到",
+          run.detect_funding("This studentship covers home fees only and a stipend.")["fee"],
+          "home")
+    check("國際生可申請抓得到",
+          run.detect_funding(
+              "International students are eligible to apply; the fee difference is covered."
+          )["fee"], "international")
+    check("月薪抓得到",
+          "2,872" in run.detect_funding(
+              "The gross monthly salary is \u20ac2,872 in the first year.").get("pay", ""), True)
+
+    check("荷蘭文必要 → 標必要",
+          run.detect_languages("Fluency in Dutch is required for teaching duties."),
+          ["荷蘭文（必要）"])
+    check("瑞典文加分 → 標加分",
+          run.detect_languages("Good knowledge of Swedish is considered a merit."),
+          ["瑞典文（加分）"])
+    check("只是提到語言、沒有要求的不標",
+          run.detect_languages("The thesis may be written in English or Swedish."), [])
+
+    check("導師抓得到",
+          run.detect_supervisor("The supervisors will be Prof. Dr. Marieke van Dijk and others."),
+          "Prof. Dr. Marieke van Dijk")
+    check("抓到的是單位名稱就不要",
+          run.detect_supervisor("Supervised by the Department of Industrial Design"), "")
+
+    check("英國 studentship 認得出來",
+          run.detect_kind("PhD Studentship in HRI", "A UKRI studentship covering tuition fees.",
+                          "UK"), "studentship")
+    check("歐陸支薪職缺認得出來",
+          run.detect_kind("PhD position", "You will be employed under the CAO; gross monthly salary.",
+                          "NL"), "job")
+
+    check("扣分詞：整頁在講基因體",
+          run.penalty_tags("genomic sequencing of tumour samples"), ["基因體學", "藥學腫瘤"])
+    check("HCI 職缺不該被扣分",
+          run.penalty_tags("eye-tracking study of pedestrian crossing behaviour"), [])
+
     if FAILS:
         print("測試失敗：")
         for f in FAILS:

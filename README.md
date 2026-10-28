@@ -16,6 +16,18 @@
   - 上方「準備要投 / 有興趣 / 沒興趣」三塊數字可以點，等同切換該分類
   - 排序多一個「我的分類優先」：準備要投 → 有興趣 → 未分類 → 沒興趣
   - 舊版的 ★ 收藏會自動併進「有興趣」（只做一次，原本的資料不動）
+- **滑卡片快速分類**：上方「🃏 滑卡片快速分類」會進全螢幕卡片模式，左滑沒興趣、
+  右滑有興趣、上滑準備要投，可以復原、可以跳過；桌機用鍵盤 ← → ↑ 空白 Z 也可以。
+  只滑「現在這組篩選下還沒分類、還開著也還沒過期」的職缺
+- 每張卡片會標 **適配度**（主推 / 符合 / stretch / 弱相關）。那是 HCI 關鍵字分數換算的，
+  不是對你個人的判斷——個人判斷是那三顆分類按鈕
+- 每張卡片會標這四件決定要不要投的事（抓得到才標）：
+  **申請類型**（支薪職缺 / studentship / 需先聯絡教授）、
+  **經費**（只收 home 學費身分會標紅、國際生可申請、月薪或 stipend）、
+  **語言門檻**（當地語言「必要」標紅，「加分」不標紅）、**導師名字**
+- 標題寫 doctoral researcher、內文卻在徵博後的，會標「疑似博後」
+- 截止日過了的自動收起來（跟「已下架」一樣，用「含已過期」才看得到），預設排序是「快截止的優先」
+- 依申請類型、經費、語言門檻篩選
 - 自上次造訪新增 / 今天新增 / 未讀 / 14 天內截止 的篩選
 - 依學校、國家、關鍵字搜尋
 - 已讀、分類、上次造訪時間存在瀏覽器的 localStorage，不會上傳
@@ -61,6 +73,13 @@ PyTorch/TensorFlow、Arduino、3D 列印、SPSS/Stata、NVivo、問卷平台、F
 多個正則（VR XR AR 就是這樣合起來的），計分時只算一次。
 搜尋框也吃中文標籤（打「眼動追蹤」就會篩出來），上面還有一個「領域標籤」下拉。
 
+## 扣分詞
+
+`topics.yml` 的 `penalties` 是明顯不是這條研究線的題目（基因體學、材料合成、量子元件、
+能源工程、藥學腫瘤⋯），每命中一個扣 2 分、最低扣到 0。用途是擋掉「整頁都在講鈣鈦礦，
+只因為頁尾出現一次 accessibility 就擠進 HCI 清單」的職缺。真的有兩個以上 HCI 關鍵字的
+跨領域職缺扣完還是過得了門檻，所以不會誤殺。
+
 ## HCI 相關度
 
 抓進來的職缺都會用 `scraper/topics.yml` 的關鍵字表算一個 `topic_score`，
@@ -88,6 +107,7 @@ AcademicTransfer 和 EURAXESS——因為 HCI 的缺常常排不進「最新職�
 
 | 來源 | 狀態 |
 | --- | --- |
+| TU Delft 官方職缺網（careers.tudelft.nl） | 開（2026-10-28 加入，`/search/?q=` 是伺服器端渲染的） |
 | AcademicTransfer（HCI 關鍵字搜尋，14 組關鍵字） | 開 |
 | EURAXESS（HCI 關鍵字搜尋） | 開（2026-10-12 複檢時恢復，之前 `?keywords=` 沒作用） |
 | AcademicTransfer（荷蘭各大學，TU Delft 的職缺都在這） | 開 |
@@ -98,6 +118,7 @@ AcademicTransfer 和 EURAXESS——因為 HCI 的缺常常排不進「最新職�
 | University of Edinburgh | 沒加：職缺清單在 Oracle Recruiting 上，要 JS |
 | UCL、FindAPhD | 沒加：從 GitHub Actions 連過去直接 403（機房 IP 被擋，換 UA 無效） |
 | jobs.ac.uk | 開（2026-10-12 複檢時恢復，之前是 JS 渲染抓不到） |
+| jobs.ac.uk（HCI 關鍵字搜尋，10 組關鍵字） | 開（2026-10-28 加入，`?keywords=` 確認真的會換結果） |
 | ETH Zürich | 開 |
 | KTH（kth.varbi.com） | 開 |
 | Uppsala、Stockholm、Lund、Umeå、Karolinska、Mid Sweden、Luleå（都是 Varbi，跟 KTH 同一套版型） | 開 |
@@ -105,6 +126,12 @@ AcademicTransfer 和 EURAXESS——因為 HCI 的缺常常排不進「最新職�
 | Linköping | 關：`liu.varbi.com` 不存在，它用的不是 Varbi |
 | TU München | 開 |
 | DTU、KU Leuven、Chalmers | 關：清單要 JS 才渲染，HTML 裡只有導覽列 |
+| ACM SIGCHI job board | 沒加：從 Actions 連過去 connect timeout，兩次都一樣 |
+| JREC-IN（日本） | 沒加：搜尋結果不是 GET 網址，HTML 裡只有導覽列 |
+| LinkedIn | 不做：robots.txt 明寫未經同意禁止自動抓取 |
+
+來源是一個一個用 `scraper/sniff.py` 偵查過才加的，上面「沒加」的那幾個不是忘了，
+是真的抓不到。每週一會自動回去複檢停用中的來源。
 
 網頁最下面的「來源狀態」看的是每天實際跑出來的結果，以那邊為準。
 

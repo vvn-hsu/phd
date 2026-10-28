@@ -77,6 +77,56 @@
   .job.m-no{opacity:.5}
   .stat.pick{cursor:pointer}
   .stat.pick:hover{border-color:var(--muted)}
+  .fit{font-size:11px;padding:1px 8px;border-radius:999px;font-weight:600;white-space:nowrap}
+  .fit-a{background:var(--apply-bg);color:var(--apply)}
+  .fit-b{background:var(--new-bg);color:var(--new)}
+  .fit-c{background:var(--star-bg);color:var(--star)}
+  .fit-d{background:transparent;color:var(--muted);border:1px solid var(--line);font-weight:400}
+  .facts{grid-column:1;display:flex;flex-wrap:wrap;gap:4px 8px;font-size:12px}
+  .facts em{font-style:normal;padding:1px 8px;border-radius:6px;background:var(--bg);
+    border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+  .facts em.money{color:var(--new);border-color:var(--new-bg)}
+  .facts em.risk{color:var(--warn);background:var(--warn-bg);border-color:transparent;font-weight:600}
+  .facts em.sup{color:var(--ink)}
+  .tag.expired{color:var(--warn);background:var(--warn-bg);border-color:transparent}
+  .tag.doubt{color:var(--warn);border-color:var(--warn)}
+  .job.expired h2 a{text-decoration:line-through;text-decoration-color:var(--muted)}
+  /* ---- 滑卡片 ---- */
+  .deck{position:fixed;inset:0;z-index:50;background:var(--bg);display:none;flex-direction:column}
+  .deck.open{display:flex}
+  .deck-top{display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line)}
+  .deck-top b{font-size:14px}
+  .deck-top .btn{margin-left:auto}
+  .deck-stage{position:relative;flex:1;overflow:hidden}
+  .card{position:absolute;inset:12px;background:var(--panel);border:1px solid var(--line);
+    border-radius:18px;padding:18px;overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.10);touch-action:none;cursor:grab;user-select:none;
+    display:flex;flex-direction:column;gap:9px}
+  .card.back{transform:scale(.95) translateY(12px);opacity:.55;pointer-events:none;box-shadow:none}
+  .card.glide{transition:transform .3s cubic-bezier(.2,.7,.3,1),opacity .3s ease}
+  .card h3{margin:0;font-size:19px;line-height:1.35}
+  .card h3 a{color:var(--ink);text-decoration:none}
+  .card .uni{font-size:14px;font-weight:600}
+  .card .where{color:var(--muted);font-size:13px}
+  .card .blurb{color:var(--muted);font-size:13.5px;line-height:1.6;
+    display:-webkit-box;-webkit-line-clamp:7;-webkit-box-orient:vertical;overflow:hidden}
+  .card .row2{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+  .verdict{position:absolute;top:20px;font-size:21px;font-weight:800;padding:5px 14px;
+    border-radius:10px;border:3px solid currentColor;opacity:0;pointer-events:none;
+    transition:opacity .1s linear}
+  .verdict.yes{left:20px;color:var(--new);transform:rotate(-10deg)}
+  .verdict.no{right:20px;color:#d14343;transform:rotate(10deg)}
+  .verdict.up{left:50%;transform:translateX(-50%);top:auto;bottom:20px;color:var(--apply)}
+  .deck-actions{display:flex;justify-content:center;align-items:center;gap:14px;padding:12px 14px calc(16px + env(safe-area-inset-bottom))}
+  .big{width:56px;height:56px;border-radius:50%;border:1px solid var(--line);background:var(--panel);
+    color:var(--ink);font-size:19px;line-height:1;cursor:pointer;display:grid;place-items:center}
+  .big small{display:block;font-size:9px;color:var(--muted);margin-top:2px}
+  .big.no{color:#d14343} .big.yes{color:var(--new)} .big.apply{color:var(--apply)}
+  .big:disabled{opacity:.35;cursor:default}
+  .deck-done{position:absolute;inset:12px;display:grid;place-items:center;text-align:center;
+    color:var(--muted);font-size:15px;padding:24px}
+  .deck-hint{text-align:center;color:var(--muted);font-size:11.5px;padding-bottom:4px}
+  @media (min-width:700px){ .card{inset:12px;max-width:520px;margin:0 auto} }
   .summary{grid-column:1;color:var(--muted);font-size:13px;margin:0;
     display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
   details.sources{margin-top:22px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px}
@@ -103,6 +153,10 @@
   <div class="sub" id="updated">載入中…</div>
 
   <div class="stats" id="stats"></div>
+  <div class="row" style="margin-bottom:12px">
+    <button class="btn" id="open-deck">🃏 滑卡片快速分類</button>
+    <span class="sub" style="margin:0">左滑沒興趣、右滑有興趣、上滑準備要投</span>
+  </div>
 
   <div class="controls">
     <div class="row">
@@ -130,12 +184,29 @@
         <option value="any">只看 已分類</option>
         <option value="all">全部（含沒興趣）</option>
       </select>
+      <select id="kind">
+        <option value="">所有申請類型</option>
+        <option value="job">支薪職缺（歐陸）</option>
+        <option value="studentship">studentship（英國）</option>
+        <option value="apply">需先聯絡教授</option>
+      </select>
+      <select id="fee">
+        <option value="">經費不限</option>
+        <option value="intl">國際生可申請</option>
+        <option value="pay">有寫薪水／補助</option>
+        <option value="nohome">避開只收 home 學費的</option>
+      </select>
+      <select id="lang">
+        <option value="">語言不限</option>
+        <option value="none">只看沒有當地語言門檻</option>
+      </select>
       <select id="topic">
         <option value="broad">HCI 相關（廣泛）</option>
         <option value="strict">HCI 相關（嚴格）</option>
         <option value="all">全部領域</option>
       </select>
       <select id="sort">
+        <option value="urgent">快截止的優先</option>
         <option value="relevance">HCI 相關度優先</option>
         <option value="mark">我的分類優先</option>
         <option value="rank">學校排名優先</option>
@@ -151,12 +222,30 @@
       <button class="chip" id="f-unseen" aria-pressed="false">未讀</button>
       <button class="chip" id="f-soon" aria-pressed="false">14 天內截止</button>
       <button class="chip" id="f-closed" aria-pressed="false">含已下架</button>
+      <button class="chip" id="f-expired" aria-pressed="false">含已過期</button>
       <button class="btn" id="mark-all">全部標為已讀</button>
       <button class="btn" id="reset">清除篩選</button>
     </div>
   </div>
 
   <div class="list" id="list"></div>
+
+  <div class="deck" id="deck" hidden>
+    <div class="deck-top">
+      <b id="deck-count">0 / 0</b>
+      <span class="sub" style="margin:0" id="deck-scope"></span>
+      <button class="btn" id="deck-close">關閉</button>
+    </div>
+    <div class="deck-stage" id="deck-stage"></div>
+    <div class="deck-hint">也可以用鍵盤：← 沒興趣　→ 有興趣　↑ 準備要投　空白鍵 跳過　Z 復原</div>
+    <div class="deck-actions">
+      <button class="big" id="d-undo" title="復原">↩<small>復原</small></button>
+      <button class="big no" id="d-no" title="沒興趣">✕<small>沒興趣</small></button>
+      <button class="big apply" id="d-apply" title="準備要投">▲<small>要投</small></button>
+      <button class="big yes" id="d-yes" title="有興趣">♥<small>有興趣</small></button>
+      <button class="big" id="d-skip" title="先跳過">»<small>跳過</small></button>
+    </div>
+  </div>
 
   <details class="sources">
     <summary>來源狀態（哪些網站抓成功）</summary>
@@ -176,6 +265,8 @@ const LS = {
   migrated: 'phdtrack.markMigrated', visit: 'phdtrack.lastVisit', prevVisit: 'phdtrack.prevVisit'
 };
 const MARKS = { apply: '準備要投', interest: '有興趣', no: '沒興趣' };
+const KIND = { job: '支薪職缺', studentship: 'studentship（自付／獎助）', apply: '需先聯絡教授' };
+const FEE  = { home: '只收 home 學費身分', international: '國際生可申請', funded: '全額補助' };
 const MARK_ORDER = { apply: 0, interest: 1, '': 2, no: 3 };
 function loadSet(key){
   try { return new Set(JSON.parse(localStorage.getItem(key) || '[]')); } catch { return new Set(); }
@@ -218,8 +309,8 @@ try {
 } catch {}
 
 const state = { data:null, q:'', school:'', country:'', field:'', city:'', tool:'', rank:'',
-  sort:'relevance', topic:'broad', mark:'',
-  since:false, today:false, unseen:false, soon:false, closed:false };
+  kind:'', fee:'', lang:'', sort:'urgent', topic:'broad', mark:'',
+  since:false, today:false, unseen:false, soon:false, closed:false, expired:false };
 
 const $ = (id) => document.getElementById(id);
 const fmt = (d) => d || '—';
@@ -272,7 +363,31 @@ async function boot(){
   renderSources(d.sources || []);
   renderRecheck(d.recheck);
   bind();
+  bindDeck();
   render();
+}
+
+// 適配度：直接從 HCI 關鍵字分數換算，不是對你的個人判斷——
+// 真正的個人判斷是下面那三顆分類按鈕
+function fitBand(job){
+  const t = state.data?.topic_thresholds || {};
+  const strict = t.strict ?? 6, broad = t.broad ?? 2, s = job.topic_score || 0;
+  if (s >= strict) return ['主推', 'fit-a'];
+  if (s >= broad + 1) return ['符合', 'fit-b'];
+  if (s >= broad) return ['stretch', 'fit-c'];
+  return ['弱相關', 'fit-d'];
+}
+const needsLang = (job) => (job.languages || []).some(l => l.includes('必要'));
+function factBits(job){
+  const bits = [];
+  if (job.kind && KIND[job.kind]) bits.push([KIND[job.kind], '']);
+  if (job.funding?.fee) bits.push([FEE[job.funding.fee] || job.funding.fee,
+    job.funding.fee === 'home' ? 'risk' : 'money']);
+  if (job.funding?.pay) bits.push([job.funding.pay, 'money']);
+  for (const l of job.languages || []) bits.push([l, l.includes('必要') ? 'risk' : '']);
+  if (job.supervisor) bits.push(['導師 ' + job.supervisor, 'sup']);
+  if (job.postdoc_suspect) bits.push(['內文像博後，不一定是博士', 'risk']);
+  return bits;
 }
 
 function topicMin(){
@@ -300,6 +415,12 @@ function matches(job){
   else if (mk === 'no') return false;              // 預設把沒興趣收到別頁
   if (!picked && !inTopic(job)) return false;
   if (job.status === 'closed' && !state.closed && !picked) return false;
+  if (job.expired && !state.expired && !picked) return false;
+  if (state.kind && job.kind !== state.kind) return false;
+  if (state.fee === 'intl' && job.funding?.fee !== 'international') return false;
+  if (state.fee === 'pay' && !job.funding?.pay) return false;
+  if (state.fee === 'nohome' && job.funding?.fee === 'home') return false;
+  if (state.lang === 'none' && needsLang(job)) return false;
   if (state.since && !isNew(job)) return false;
   if (state.today && job.first_seen !== state.data.date) return false;
   if (state.unseen && seen.has(job.id)) return false;
@@ -320,7 +441,14 @@ function matches(job){
 }
 
 function sortJobs(jobs){
+  // 快截止：21 天內的照截止日由近到遠排前面，過期的一律沉到最後
+  const urgency = (j) => {
+    if (j.expired || j.status === 'closed') return 9999;
+    const d = daysTo(j.deadline);
+    return (d === null || d < 0 || d > 21) ? 999 : d;
+  };
   const by = {
+    urgent: (a,b) => urgency(a) - urgency(b) || (b.topic_score||0) - (a.topic_score||0),
     relevance: (a,b) => (b.topic_score||0) - (a.topic_score||0)
       || (b.first_seen||'').localeCompare(a.first_seen||''),
     mark: (a,b) => (MARK_ORDER[markOf(a)] ?? 2) - (MARK_ORDER[markOf(b)] ?? 2)
@@ -353,11 +481,16 @@ function render(){
     const tags = [];
     if (isNew(job)) tags.push('<span class="tag new">NEW</span>');
     if (job.status === 'closed') tags.push('<span class="tag closed">已下架</span>');
+    if (job.expired) tags.push('<span class="tag expired">已過期</span>');
+    if (job.postdoc_suspect) tags.push('<span class="tag doubt">疑似博後</span>');
     if (dd !== null && dd >= 0 && dd <= 14) tags.push(`<span class="tag soon">剩 ${dd} 天</span>`);
     if (job.country) tags.push(`<span class="tag">${esc(job.country_zh || job.country)}</span>`);
     const uni = job.university || job.source_name;
+    const [fitLabel, fitClass] = fitBand(job);
+    const facts = factBits(job);
     const meta = [
       `<strong>${esc(uni)}</strong>`,
+      `<span class="fit ${fitClass}">${fitLabel}</span>`,
       job.rank_band && job.rank_band !== '未列入' &&
         `<span class="rank">QS ${esc(job.rank_qs ? '#' + job.rank_qs : job.rank_band)}</span>`,
       uni !== job.source_name && `來源 ${esc(job.source_name)}`,
@@ -375,9 +508,11 @@ function render(){
       (job.also_at || []).length && `另見 ${job.also_at.map(a =>
         `<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.source)}</a>`).join('、')}`,
     ].filter(Boolean).map(x => `<span>${x}</span>`).join('');
-    return `<article class="job ${seen.has(job.id) ? '' : 'unseen'} ${job.status === 'closed' ? 'closed' : ''} ${mk ? 'm-' + mk : ''}" data-id="${job.id}">
+    return `<article class="job ${seen.has(job.id) ? '' : 'unseen'} ${job.status === 'closed' ? 'closed' : ''} ${job.expired ? 'expired' : ''} ${mk ? 'm-' + mk : ''}" data-id="${job.id}">
       <h2><a href="${esc(job.url)}" target="_blank" rel="noopener">${esc(job.title)}</a></h2>
       <div class="meta">${meta}</div>
+      ${facts.length ? `<div class="facts">${facts.map(([t, c]) =>
+        `<em class="${c}">${esc(t)}</em>`).join('')}</div>` : ''}
       ${job.summary ? `<p class="summary">${esc(job.summary)}</p>` : ''}
       <div class="side">
         <div class="marks">${markBtns}</div>
@@ -398,6 +533,7 @@ function renderStats(){
     [label, scope.length],
     ['今天新增', scope.filter(j => j.first_seen === state.data.date).length],
     ['自上次造訪', scope.filter(j => isNew(j)).length],
+    ['14 天內截止', scope.filter(j => { const d = daysTo(j.deadline); return d !== null && d >= 0 && d <= 14; }).length],
     ['準備要投', marked('apply'), 'apply'],
     ['有興趣', marked('interest'), 'interest'],
     ['沒興趣', marked('no'), 'no'],
@@ -433,7 +569,7 @@ function renderSources(sources){
 
 function bind(){
   $('q').addEventListener('input', e => { state.q = e.target.value.trim(); render(); });
-  for (const id of ['school','country','field','city','tool','rank','sort'])
+  for (const id of ['school','country','field','city','tool','rank','sort','kind','fee','lang'])
     $(id).addEventListener('change', e => { state[id] = e.target.value; render(); });
   $('mark').addEventListener('change', e => { state.mark = e.target.value; render(); });
   $('stats').addEventListener('click', e => {
@@ -445,7 +581,7 @@ function bind(){
   });
   $('topic').addEventListener('change', e => { state.topic = e.target.value; renderStats(); render(); });
   for (const [id, key] of [['f-since','since'],['f-today','today'],['f-unseen','unseen'],
-                           ['f-soon','soon'],['f-closed','closed']]){
+                           ['f-soon','soon'],['f-closed','closed'],['f-expired','expired']]){
     $(id).addEventListener('click', e => {
       state[key] = !state[key];
       e.currentTarget.setAttribute('aria-pressed', String(state[key]));
@@ -454,9 +590,10 @@ function bind(){
   }
   $('reset').addEventListener('click', () => {
     Object.assign(state, {q:'',school:'',country:'',field:'',city:'',tool:'',rank:'',mark:'',
-      since:false,today:false,unseen:false,soon:false,closed:false});
+      kind:'',fee:'',lang:'',since:false,today:false,unseen:false,soon:false,closed:false,expired:false});
     $('q').value=''; $('school').value=''; $('country').value=''; $('field').value='';
     $('city').value=''; $('tool').value=''; $('rank').value=''; $('mark').value='';
+    $('kind').value=''; $('fee').value=''; $('lang').value='';
     document.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed','false'));
     render();
   });
@@ -478,6 +615,176 @@ function bind(){
     const link = e.target.closest('a[href]');
     const card = e.target.closest('.job');
     if (link && card){ seen.add(card.dataset.id); saveSet(LS.seen, seen); card.classList.remove('unseen'); }
+  });
+}
+
+// --------------------------------------------------------------- 滑卡片快速分類
+const deck = { list: [], i: 0, hist: [], busy: false };
+
+function deckQueue(){
+  // 只滑「現在這組篩選條件下、還沒分過類、還開著也還沒過期」的職缺
+  return sortJobs(state.data.jobs.filter(j =>
+    !markOf(j) && j.status !== 'closed' && !j.expired && matches(j)));
+}
+
+function deckCardHTML(job){
+  const [fitLabel, fitClass] = fitBand(job);
+  const dd = daysTo(job.deadline);
+  const facts = factBits(job);
+  const where = [job.city, job.country_zh || job.country].filter(Boolean).join('・');
+  const deadline = job.deadline
+    ? (dd !== null && dd >= 0 ? `截止 ${job.deadline}（剩 ${dd} 天）` : `截止 ${job.deadline}`)
+    : '沒寫截止日';
+  return `<article class="card" data-id="${job.id}">
+    <span class="verdict yes">有興趣</span>
+    <span class="verdict no">沒興趣</span>
+    <span class="verdict up">準備要投</span>
+    <div class="row2">
+      <span class="fit ${fitClass}">${fitLabel}</span>
+      ${job.rank_band && job.rank_band !== '未列入'
+        ? `<span class="rank">QS ${esc(job.rank_qs ? '#' + job.rank_qs : job.rank_band)}</span>` : ''}
+      ${isNew(job) ? '<span class="tag new">NEW</span>' : ''}
+      ${dd !== null && dd >= 0 && dd <= 14 ? `<span class="tag soon">剩 ${dd} 天</span>` : ''}
+    </div>
+    <h3><a href="${esc(job.url)}" target="_blank" rel="noopener">${esc(job.title)}</a></h3>
+    <div class="uni">${esc(job.university || job.source_name)}</div>
+    <div class="where">${esc(where)}　·　${esc(deadline)}</div>
+    ${(job.topics || []).length ? `<div class="topics">${job.topics.slice(0,5)
+      .map(t => `<em>${esc(t)}</em>`).join('')}</div>` : ''}
+    ${(job.tools || []).length ? `<div class="topics tools">${job.tools.slice(0,5)
+      .map(t => `<em>${esc(t)}</em>`).join('')}</div>` : ''}
+    ${facts.length ? `<div class="facts">${facts.map(([t, c]) =>
+      `<em class="${c}">${esc(t)}</em>`).join('')}</div>` : ''}
+    ${job.summary ? `<p class="blurb">${esc(job.summary)}</p>` : ''}
+    <div class="where" style="margin-top:auto">${esc(job.source_name)}　·　發現於 ${fmt(job.first_seen)}</div>
+  </article>`;
+}
+
+function renderDeck(){
+  const stage = $('deck-stage');
+  const left = deck.list.length - deck.i;
+  $('deck-count').textContent = `${Math.min(deck.i + 1, deck.list.length)} / ${deck.list.length}`;
+  $('d-undo').disabled = !deck.hist.length;
+  if (deck.i >= deck.list.length){
+    $('deck-count').textContent = `${deck.list.length} / ${deck.list.length}`;
+    stage.innerHTML = `<div class="deck-done">${deck.list.length
+      ? '這一輪都分完了。<br>關掉之後清單上就只剩你還有興趣的。'
+      : '這組條件下沒有還沒分類的職缺。<br>把上面的篩選放寬一點再開。'}</div>`;
+    for (const id of ['d-no','d-yes','d-apply','d-skip']) $(id).disabled = true;
+    return;
+  }
+  for (const id of ['d-no','d-yes','d-apply','d-skip']) $(id).disabled = false;
+  const next = deck.list[deck.i + 1];
+  stage.innerHTML = (next ? deckCardHTML(next).replace('class="card"', 'class="card back"') : '')
+    + deckCardHTML(deck.list[deck.i]);
+  attachDrag(stage.querySelector('.card:not(.back)'));
+}
+
+function showVerdict(el, dx, dy){
+  const t = threshold(el);
+  const up = dy < 0 && Math.abs(dy) > Math.abs(dx);
+  el.querySelector('.verdict.up').style.opacity = up ? Math.min(1, -dy / t) : 0;
+  el.querySelector('.verdict.yes').style.opacity = up ? 0 : Math.max(0, Math.min(1, dx / t));
+  el.querySelector('.verdict.no').style.opacity = up ? 0 : Math.max(0, Math.min(1, -dx / t));
+}
+const threshold = (el) => Math.max(60, Math.min(110, el.offsetWidth * 0.28));
+
+function attachDrag(el){
+  if (!el) return;
+  let sx = 0, sy = 0, dx = 0, dy = 0, on = false;
+  el.addEventListener('pointerdown', e => {
+    if (e.target.closest('a')) return;
+    on = true; sx = e.clientX; sy = e.clientY; dx = dy = 0;
+    el.classList.remove('glide');
+    try { el.setPointerCapture(e.pointerId); } catch {}
+  });
+  el.addEventListener('pointermove', e => {
+    if (!on) return;
+    // 滑鼠放開的事件偶爾會漏掉（截圖、切視窗、瀏覽器搶走手勢），
+    // 沒漏接的話卡片會一直黏在游標上，這裡補一道保險
+    if (e.pointerType === 'mouse' && e.buttons === 0) return release();
+    dx = e.clientX - sx; dy = e.clientY - sy;
+    el.style.transform = `translate(${dx}px, ${Math.min(dy, 60)}px) rotate(${dx / 22}deg)`;
+    showVerdict(el, dx, dy);
+  });
+  function release(){
+    if (!on) return;
+    on = false;
+    const t = threshold(el);
+    if (dy < -t && Math.abs(dy) > Math.abs(dx)) return decide('apply');
+    if (dx > t) return decide('interest');
+    if (dx < -t) return decide('no');
+    el.classList.add('glide');
+    el.style.transform = '';
+    showVerdict(el, 0, 0);
+  }
+  el.addEventListener('pointerup', release);
+  el.addEventListener('pointercancel', release);
+  el.addEventListener('lostpointercapture', release);
+}
+
+function flyOut(mark){
+  const el = $('deck-stage').querySelector('.card:not(.back)');
+  if (!el) return;
+  const go = { no: 'translate(-130vw,0) rotate(-24deg)', interest: 'translate(130vw,0) rotate(24deg)',
+               apply: 'translate(0,-120vh)', skip: 'scale(.9)' }[mark] || 'scale(.9)';
+  el.classList.add('glide');
+  el.style.transform = go;
+  el.style.opacity = '0';
+}
+
+function decide(mark){
+  if (deck.busy || deck.i >= deck.list.length) return;
+  const job = deck.list[deck.i];
+  deck.hist.push({ id: job.id, prev: marks.get(job.id) });
+  if (mark !== 'skip'){
+    marks.set(job.id, mark);
+    saveMap(LS.mark, marks);
+  }
+  seen.add(job.id); saveSet(LS.seen, seen);
+  deck.busy = true;
+  flyOut(mark);
+  setTimeout(() => { deck.i += 1; deck.busy = false; renderDeck(); }, 260);
+}
+
+function undo(){
+  if (!deck.hist.length) return;
+  const last = deck.hist.pop();
+  if (last.prev) marks.set(last.id, last.prev); else marks.delete(last.id);
+  saveMap(LS.mark, marks);
+  deck.i = Math.max(0, deck.i - 1);
+  renderDeck();
+}
+
+function openDeck(){
+  deck.list = deckQueue(); deck.i = 0; deck.hist = []; deck.busy = false;
+  $('deck-scope').textContent = state.topic === 'all' ? '全部領域' : 'HCI 相關';
+  $('deck').hidden = false;
+  $('deck').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  renderDeck();
+}
+function closeDeck(){
+  $('deck').classList.remove('open');
+  $('deck').hidden = true;
+  document.body.style.overflow = '';
+  renderStats(); render();
+}
+
+function bindDeck(){
+  $('open-deck').addEventListener('click', openDeck);
+  $('deck-close').addEventListener('click', closeDeck);
+  $('d-no').addEventListener('click', () => decide('no'));
+  $('d-yes').addEventListener('click', () => decide('interest'));
+  $('d-apply').addEventListener('click', () => decide('apply'));
+  $('d-skip').addEventListener('click', () => decide('skip'));
+  $('d-undo').addEventListener('click', undo);
+  document.addEventListener('keydown', e => {
+    if (!$('deck').classList.contains('open')) return;
+    const key = { ArrowLeft: () => decide('no'), ArrowRight: () => decide('interest'),
+                  ArrowUp: () => decide('apply'), ' ': () => decide('skip'),
+                  z: undo, Z: undo, Escape: closeDeck }[e.key];
+    if (key){ e.preventDefault(); key(); }
   });
 }
 

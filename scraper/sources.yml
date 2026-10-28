@@ -161,6 +161,52 @@ sources:
     pages: 5
     enrich: jsonld
 
+  - id: tudelft
+    name: TU Delft（官方職缺網）
+    city: Delft
+    country: NL
+    homepage: https://careers.tudelft.nl/search/?q=PhD
+    type: links
+    # 2026-10-28 偵查：careers.tudelft.nl 的 /search/?q= 是伺服器端算好的 HTML，
+    # 抓得到 /job/Delft-PhD-Position-... 這種連結。首頁 vacatures 那頁是空殼，
+    # 要用 /search/ 才有東西。startrow 是 SuccessFactors 的分頁參數。
+    enabled: true
+    mode: all
+    delay: 1
+    urls:
+      - https://careers.tudelft.nl/search/?q=PhD
+      - https://careers.tudelft.nl/search/?q=PhD&startrow=25
+      - https://careers.tudelft.nl/search/?q=PhD&startrow=50
+      - https://careers.tudelft.nl/search/?q=promovendus
+    link_pattern: 'careers\.tudelft\.nl/job/'
+    enrich: jsonld
+
+  - id: jobsacuk_hci
+    name: jobs.ac.uk（HCI 關鍵字搜尋）
+    country: UK
+    homepage: https://www.jobs.ac.uk/search/?keywords=human-computer+interaction
+    type: links
+    # 2026-10-28 偵查確認 ?keywords= 真的會換結果（搜 eye tracking 會出現
+    # 眼動的缺）。列表頁同時會夾帶幾筆不相關的推薦職缺，靠 PhD 過濾和
+    # 關鍵字驗證（query_ok）擋掉，沒驗證到的只拿 1 分、自己過不了門檻。
+    enabled: true
+    mode: all
+    topic_boost: 3
+    delay: 1
+    urls:
+      - https://www.jobs.ac.uk/search/?keywords=human-computer+interaction&sortOrder=1
+      - https://www.jobs.ac.uk/search/?keywords=interaction+design&sortOrder=1
+      - https://www.jobs.ac.uk/search/?keywords=user+experience&sortOrder=1
+      - https://www.jobs.ac.uk/search/?keywords=eye+tracking&sortOrder=1
+      - https://www.jobs.ac.uk/search/?keywords=virtual+reality&sortOrder=1
+      - https://www.jobs.ac.uk/search/?keywords=human-robot+interaction&sortOrder=1
+      - https://www.jobs.ac.uk/search/?keywords=automated+vehicle&sortOrder=1
+      - https://www.jobs.ac.uk/search/?keywords=human+factors&sortOrder=1
+      - https://www.jobs.ac.uk/search/?keywords=digital+wellbeing&sortOrder=1
+      - https://www.jobs.ac.uk/search/?keywords=trust+in+AI&sortOrder=1
+    link_pattern: '/job/[A-Z]{2,4}\d{2,}'
+    enrich: jsonld
+
   - id: ethz
     name: ETH Zürich
     city: Zürich

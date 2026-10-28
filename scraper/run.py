@@ -53,7 +53,7 @@ PHD_WEAK = re.compile(r"(\bdoctoral\b|\bdoctorate\b|research\s+student)", re.I)
 POSTDOC = re.compile(r"(post[\s\-]?doc|postdoctoral|post[\s\-]?doctoral)", re.I)
 
 KEEP_CLOSED_DAYS = 45   # 職缺從列表消失後，還在資料裡保留幾天
-SCORE_VERSION = 8       # 計分規則改過就 +1，舊資料會自動重抓重算
+SCORE_VERSION = 9       # 計分規則改過就 +1，舊資料會自動重抓重算
 
 
 # --------------------------------------------------------------------------- 工具
@@ -163,6 +163,9 @@ def term_label(term: str) -> str:
 _TOPIC_RULES: list[tuple[re.Pattern, int, str]] = []
 _FIELD_RULES: list[tuple[re.Pattern, str]] = []
 _TOOL_RULES: list[tuple[re.Pattern, str]] = []
+_PENALTY_RULES: list[tuple[re.Pattern, str]] = []
+_PENALTY_WEIGHT = 2
+_LANGUAGES: list[tuple[str, str]] = []
 _TOPIC_THRESHOLDS = {"broad": 2, "strict": 5}
 
 
@@ -191,6 +194,12 @@ def load_topics(path: str = TOPICS) -> None:
     global _TOOL_RULES
     _TOOL_RULES = [(re.compile(pattern, re.I), label)
                    for pattern, label in as_pairs(config.get("tools"))]
+    global _PENALTY_RULES, _PENALTY_WEIGHT
+    _PENALTY_RULES = [(re.compile(pattern, re.I), label)
+                      for pattern, label in as_pairs(config.get("penalties"))]
+    _PENALTY_WEIGHT = int(weights.get("penalty", 2))
+    global _LANGUAGES
+    _LANGUAGES = as_pairs(config.get("languages"))
 
 
 def as_pairs(block) -> list[tuple[str, str]]:
@@ -320,6 +329,140 @@ def score_topics(*parts: str, min_weight: int = 1) -> tuple[int, list[str]]:
             score += weight
             hits.append(label)
     return score, hits[:8]
+
+
+def penalty_tags(*parts: str, limit: int = 3) -> list[str]:
+    """明顯不是這條研究線的主題，用來把誤闖的生醫／材料／量子職缺壓下去。"""
+    load_topics()
+    blob = " ".join(p for p in parts if p)
+    tags: list[str] = []
+    for pattern, label in _PENALTY_RULES:
+        if label not in tags and pattern.search(blob):
+            tags.append(label)
+        if len(tags) >= limit:
+            break
+    return tags
+
+
+# --------------------------------------------------------------------------- 決策欄位
+
+POSTDOC_BODY = re.compile(
+    r"(recruiting|seeking|looking for|hiring|搜尋)?\s*(a|an|one)?\s*"
+    r"post[- ]?doctoral (researcher|fellow|scientist|position|associate)"
+    r"|postdoc(toral)? (position|vacancy|appointment)"
+    r"|the (position|post) is (a|an) post[- ]?doc", re.I)
+
+FEE_HOME = re.compile(
+    r"(home|uk)\s*(fee|fees|rate|students?|applicants?)[^.]{0,60}(only|rate)"
+    r"|only\s*(available|open)\s*to\s*(home|uk)\s*(students?|applicants?)"
+    r"|home fee status", re.I)
+FEE_INTL = re.compile(
+    r"(international|overseas)\s*(students?|applicants?|candidates?|fee)"
+    r"[^.]{0,80}(eligible|welcome|may apply|can apply|are invited|covered|included)"
+    r"|open to (international|overseas|students of any nationality)"
+    r"|fees? (at|for) the (international|overseas) rate (is|are) covered", re.I)
+FULLY_FUNDED = re.compile(r"fully[- ]funded|full (tuition|fee) (waiver|coverage)", re.I)
+STIPEND = re.compile(
+    r"(stipend|salary|bruto|gross|l\u00f6n|monthly (salary|pay))[^.\n]{0,80}?"
+    r"((?:\u00a3|\u20ac|\$|SEK|DKK|NOK|CHF|kr)\s?[\d][\d ,.]{2,12}"
+    r"|[\d][\d ,.]{3,12}\s?(?:\u00a3|\u20ac|SEK|DKK|NOK|CHF|kr))", re.I)
+MONEY = re.compile(
+    r"((?:\u00a3|\u20ac|CHF|\$)\s?[\d][\d ,.]{2,12}|[\d][\d ,.]{3,12}\s?(?:SEK|DKK|NOK|kr))"
+    r"\s*(?:per|/|a |pro |per\s)?\s*(month|year|annum|m\u00e5nad|monat|maand|p\.a\.)?", re.I)
+
+STUDENTSHIP = re.compile(
+    r"studentship|tuition fee|\bukri\b|\bcdt\b|\bdtp\b|home fee|bench fees"
+    r"|doctoral training (programme|partnership|centre)|research council", re.I)
+SALARIED = re.compile(
+    r"(collective (labour )?agreement|\bcao\b|salary scale|anst\u00e4lln|employment contract"
+    r"|tv-l|tv\u00f6d|employee of the university|social security|pension|holiday allowance"
+    r"|vacation allowance|gross monthly salary)", re.I)
+
+LANG_REQUIRED = re.compile(
+    r"(required|requirement|must|fluent|fluency|proficien|command of|native|mastery"
+    r"|is expected|teaching (is|will be) in|good knowledge)", re.I)
+LANG_MERIT = re.compile(
+    r"(merit|advantage|desirable|plus|beneficial|an asset|welcome|not required|no need)", re.I)
+
+SUPERVISOR = re.compile(
+    # 關鍵字不分大小寫，但人名一定要是大寫開頭——整個 re.I 下去的話，
+    # "supervised by the department" 的 "the" 也會被當成名字
+    r"(?i:supervisors?|promotor(?:en)?|main supervisor|daily supervisor|supervised by"
+    r"|under the supervision of|handledare|betreuer)"
+    r"(?i:\s*(?:will be|are|is))?\s*[:：]?\s+"
+    r"((?:(?:Prof|Dr|Professor|Ir|Mr|Ms|Mrs)\.?\s*)*"
+    r"[A-Z][\w'\u2019\-]+(?:\s+(?:van|von|de|der|den|di|el))?"
+    r"(?:\s+[A-Z][\w'\u2019\-\.]+){1,3})")
+
+
+def postdoc_suspect(title: str, body: str) -> bool:
+    """標題寫 doctoral researcher、內文卻寫 post-doctoral researcher 的職缺。
+    芬蘭和北歐常常這樣用字，是這個追蹤頁最容易漏掉的誤判。"""
+    if PHD_LITERAL.search(title) and not POSTDOC.search(title):
+        return False
+    return bool(POSTDOC_BODY.search(body))
+
+
+def detect_funding(body: str, country: str = "") -> dict:
+    """英國 studentship 最大的地雷是學費身分（home / international），
+    歐陸支薪職缺則是看月薪。抓得到什麼就標什麼。"""
+    out: dict[str, str] = {}
+    if FEE_INTL.search(body):
+        out["fee"] = "international"
+    elif FEE_HOME.search(body):
+        out["fee"] = "home"
+    if FULLY_FUNDED.search(body) and "fee" not in out:
+        out["fee"] = "funded"
+    m = STIPEND.search(body) or MONEY.search(body)
+    if m:
+        pay = clean(m.group(0))[:48]
+        if re.search(r"\d", pay):
+            out["pay"] = pay
+    return out
+
+
+def detect_kind(title: str, body: str, country: str = "") -> str:
+    """三種申請邏輯完全不同：英國 studentship 要自己處理學費身分，
+    歐陸的博士是有薪僱員，日本多半要先聯絡教授再走招生。"""
+    blob = f"{title} {body}"
+    if SALARIED.search(blob):
+        return "job"
+    if STUDENTSHIP.search(blob):
+        return "studentship"
+    if (country or "").upper() in {"UK", "GB", "IE"}:
+        return "studentship"
+    if (country or "").upper() in {"JP", "KR", "TW", "CN"}:
+        return "apply"
+    return "job" if country else ""
+
+
+def detect_languages(body: str) -> list[str]:
+    """只在語言出現在「要求」的句子裡才標，而且必要和加分分開。"""
+    load_topics()
+    out: list[str] = []
+    for word, label in _LANGUAGES:
+        for m in re.finditer(rf"\b{re.escape(word)}\b", body, re.I):
+            window = body[max(0, m.start() - 140): m.end() + 140]
+            if not LANG_REQUIRED.search(window):
+                continue
+            tag = f"{label}（加分）" if LANG_MERIT.search(window) else f"{label}（必要）"
+            if tag not in out and f"{label}（必要）" not in out:
+                out = [t for t in out if not t.startswith(label)] + [tag]
+            break
+    return out[:3]
+
+
+def detect_supervisor(body: str) -> str:
+    m = SUPERVISOR.search(body)
+    if not m:
+        return ""
+    name = clean(m.group(1)).strip(" .,;:")
+    # 抓到的是整句話或一串頭銜就不要
+    if len(name) > 48 or len(name.split()) > 5:
+        return ""
+    if re.search(r"(university|department|faculty|institute|group|project|team|programme)", name, re.I):
+        return ""
+    return name
 
 
 def fetch(url: str, timeout: int = 30) -> str:
@@ -703,6 +846,12 @@ def enrich_job(job: dict, timeout: int) -> None:
     job["page_score"] = page_score
     job["page_topics"] = page_hits
     job["page_tools"] = tool_tags(page_text)
+    job["page_penalties"] = penalty_tags(page_text)
+    job["page_funding"] = detect_funding(page_text, job.get("country", ""))
+    job["page_languages"] = detect_languages(page_text)
+    job["page_supervisor"] = detect_supervisor(page_text)
+    job["page_kind"] = detect_kind(job.get("title", ""), page_text, job.get("country", ""))
+    job["postdoc_suspect"] = postdoc_suspect(job.get("title", ""), page_text)
     job["score_version"] = SCORE_VERSION
     if job.get("found_via"):
         job["query_ok"] = query_matches(job["found_via"], page_text)
@@ -888,10 +1037,14 @@ def main() -> int:
         # 這次剛重抓過的職缺，page_* 就以這次算出來的為準（可能是空的），
         # 不然規則改掉之後舊標籤會一直被補回來。tools / fields / topics
         # 都是從 page_* 重算的衍生欄位，本來就不接回舊值。
-        page_keys = {"page_score", "page_topics", "page_tools", "query_ok", "score_version"}
+        page_keys = {"page_score", "page_topics", "page_tools", "query_ok", "score_version",
+                     "page_penalties", "page_funding", "page_languages", "page_supervisor",
+                     "page_kind", "postdoc_suspect"}
         for key in ("posted", "deadline", "location", "department", "summary", "university",
                     "enrich_attempts", "page_score", "page_topics", "query_ok",
-                    "score_version", "page_tools", "city", "country", "country_zh"):
+                    "score_version", "page_tools", "city", "country", "country_zh",
+                    "page_penalties", "page_funding", "page_languages", "page_supervisor",
+                    "page_kind", "postdoc_suspect"):
             if job.get("_enriched") and key in page_keys:
                 continue
             if key == "university" and old.get(key) == old.get("source_name"):
@@ -947,6 +1100,14 @@ def main() -> int:
             else:
                 score += 1
                 hits = hits + ["HCI 關鍵字搜尋（弱）"]
+        # 扣分詞：整頁都在講基因體或鈣鈦礦，卻只因為提過一次 user interface
+        # 就擠進 HCI 清單的，把分數壓回去。真的有兩個以上關鍵字的不會被殺光。
+        penalties = dedupe_keep_order(
+            (job.get("page_penalties") or [])
+            + penalty_tags(job.get("title", ""), job.get("summary", "")))[:3]
+        if penalties:
+            score = max(0, score - _PENALTY_WEIGHT * len(penalties))
+        job["penalties"] = penalties
         job["topic_score"], job["topics"] = score, dedupe_keep_order(hits)[:6]
         job["fields"] = field_tags(job.get("title", ""), job.get("summary", ""),
                                    job.get("department", ""))
@@ -954,6 +1115,14 @@ def main() -> int:
         tools = [t for t in dedupe_keep_order(own + (job.get("page_tools") or []))
                  if (site_of(job["url"]), t) not in boilerplate]
         job["tools"] = tools[:6]
+
+    # 決策用的欄位：經費、語言門檻、導師、職缺類型、是不是已經過期
+    for job in fresh.values():
+        job["funding"] = job.get("page_funding") or {}
+        job["languages"] = job.get("page_languages") or []
+        job["supervisor"] = job.get("page_supervisor") or ""
+        deadline = job.get("deadline") or ""
+        job["expired"] = bool(deadline and deadline < stamp)
 
     # 城市：詳細頁沒寫的話，從 location（"Delft, NL"）截前半段，
     # 再不然用來源設定裡的 city（單一校區的學校才設）
@@ -970,6 +1139,9 @@ def main() -> int:
         if not job.get("country"):
             job["country"] = default_country.get(job["source"], "")
         job["country_zh"] = country_zh(job["country"])
+        # 類型要等國家確定才算得準（英國＝studentship，歐陸＝支薪職缺）
+        job["kind"] = job.get("page_kind") or detect_kind(
+            job.get("title", ""), job.get("summary", ""), job.get("country", ""))
 
     # 查不到雇主就讓 university 留空，網頁顯示時自己退回來源名稱。
     # 寫進資料的話，下一輪會被當成「已經知道學校了」而不再補抓。
@@ -1035,6 +1207,8 @@ def main() -> int:
             "closed_kept": disappeared,
             "hci_broad": sum(1 for j in jobs if j.get("status") == "open"
                              and j.get("topic_score", 0) >= _TOPIC_THRESHOLDS.get("broad", 2)),
+            "expired": sum(1 for j in jobs if j.get("status") == "open" and j.get("expired")),
+            "postdoc_suspect": sum(1 for j in jobs if j.get("postdoc_suspect")),
         },
         "sources": reports,
         "recheck": recheck,
