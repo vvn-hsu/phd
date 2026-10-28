@@ -86,9 +86,12 @@ def job_block(job: dict, show_tags: bool = True) -> str:
     meta = " · ".join(x for x in [where, when] if x)
     extra = (f'<div style="color:#6b6a66;font-size:12px;margin:0 0 5px">{esc(" ｜ ".join(facts))}</div>'
              if facts else "")
-    score = job.get("topic_score", 0)
-    badge = (f'<span style="background:#0f7a4d;color:#fff;border-radius:9px;padding:1px 7px;'
-             f'font-size:11px;margin-left:6px">HCI {score}</span>') if score else ""
+    band = job.get("fit_band") or ""
+    colour = {"主推": "#a3344c", "符合": "#0f7a4d", "stretch": "#c58a00"}.get(band, "#8a8a86")
+    badge = (f'<span style="background:{colour};color:#fff;border-radius:9px;padding:1px 7px;'
+             f'font-size:11px;margin-left:6px">{esc(band)}</span>') if band else ""
+    if job.get("fit_why"):
+        facts.insert(0, "合 " + "、".join(job["fit_why"][:3]))
     return (
         f'<div style="margin:0 0 14px;padding:0 0 12px;border-bottom:1px solid #eee">'
         f'<div style="font-size:15px;font-weight:600;line-height:1.4">'
@@ -108,11 +111,20 @@ def build(data: dict, site_url: str) -> tuple[str, str, str]:
     broad = thresholds.get("broad", 2)
 
     new_jobs = [j for j in jobs if j.get("first_seen") == stamp]
-    new_hci = sorted([j for j in new_jobs if j.get("topic_score", 0) >= broad],
-                     key=lambda j: -j.get("topic_score", 0))
-    new_other = [j for j in new_jobs if j.get("topic_score", 0) < broad]
+    # 適配度算得出來就用適配度分組，算不出來（舊資料）才退回 HCI 分數
+    fit_rank = {"主推": 0, "符合": 1, "stretch": 2, "弱相關": 3, "排除": 4}
+    def worth(job: dict) -> bool:
+        band = job.get("fit_band")
+        if band:
+            return band in ("主推", "符合", "stretch")
+        return job.get("topic_score", 0) >= broad
+
+    new_hci = sorted([j for j in new_jobs if worth(j)],
+                     key=lambda j: (fit_rank.get(j.get("fit_band"), 3),
+                                    -j.get("fit_score", 0), -j.get("topic_score", 0)))
+    new_other = [j for j in new_jobs if not worth(j)]
     soon = sorted([j for j in jobs
-                   if j.get("topic_score", 0) >= broad
+                   if worth(j)
                    and days_to(j.get("deadline", "")) is not None
                    and 0 <= days_to(j.get("deadline", "")) <= SOON_DAYS],
                   key=lambda j: j.get("deadline", ""))
@@ -122,27 +134,29 @@ def build(data: dict, site_url: str) -> tuple[str, str, str]:
 
     month_day = f"{int(stamp[5:7])}/{int(stamp[8:10])}" if len(stamp) == 10 else stamp
     subject = (f"[博士職缺] {month_day} 新增 {len(new_jobs)} 筆"
-               f"（HCI 相關 {len(new_hci)} 筆）")
+               f"（值得看 {len(new_hci)} 筆"
+               + (f"，主推 {sum(1 for j in new_hci if j.get('fit_band') == '主推')} 筆）"
+                  if any(j.get("fit_band") for j in new_jobs) else "）"))
 
     parts = [
         '<div style="font-family:-apple-system,\'Noto Sans TC\',sans-serif;max-width:680px;'
         'margin:0 auto;padding:18px;color:#1b1b1a">',
         f'<h2 style="font-size:18px;margin:0 0 4px">博士職缺摘要 · {esc(stamp)}</h2>',
         f'<div style="color:#6b6a66;font-size:13px;margin-bottom:18px">'
-        f'目前開放 {len(jobs)} 筆，其中 HCI 相關 {sum(1 for j in jobs if j.get("topic_score",0)>=broad)} 筆'
+        f'目前開放 {len(jobs)} 筆，其中值得看 {sum(1 for j in jobs if worth(j))} 筆'
         f'　·　<a href="{esc(site_url)}">打開完整清單</a></div>',
     ]
 
     if new_hci:
-        parts.append('<h3 style="font-size:15px;margin:18px 0 10px">今天新增的 HCI 相關</h3>')
+        parts.append('<h3 style="font-size:15px;margin:18px 0 10px">今天新增、適配度排序</h3>')
         parts += [job_block(j) for j in new_hci]
     if soon:
         parts.append(f'<h3 style="font-size:15px;margin:18px 0 10px">'
-                     f'{SOON_DAYS} 天內截止的 HCI 相關</h3>')
+                     f'{SOON_DAYS} 天內截止</h3>')
         parts += [job_block(j) for j in soon]
     if new_other:
         parts.append('<h3 style="font-size:15px;margin:18px 0 10px">'
-                     '今天新增的其他領域</h3>')
+                     '今天新增、但跟你的線對不上的</h3>')
         parts.append('<ul style="padding-left:18px;margin:0;color:#3a3a38;font-size:13px">')
         for job in new_other[:25]:
             where = " · ".join(x for x in [job.get("university") or job.get("source_name"),
@@ -173,8 +187,8 @@ def build(data: dict, site_url: str) -> tuple[str, str, str]:
     body_html = "\n".join(parts)
 
     lines = [f"博士職缺摘要 {stamp}", ""]
-    for title, group in (("今天新增的 HCI 相關", new_hci),
-                         (f"{SOON_DAYS} 天內截止的 HCI 相關", soon)):
+    for title, group in (("今天新增、適配度排序", new_hci),
+                         (f"{SOON_DAYS} 天內截止", soon)):
         if not group:
             continue
         lines.append(f"== {title}")

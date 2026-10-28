@@ -285,6 +285,31 @@ def main():
     check("HCI 職缺不該被扣分",
           run.penalty_tags("eye-tracking study of pedestrian crossing behaviour"), [])
 
+    # --- 適配度（profile.yml）
+    hits = run.fit_hits("PhD on smartphone notifications and interruptibility, "
+                        "using experience sampling and interviews")
+    check("本行的題目會命中 core", "通知系統" in hits.get("core", []), True)
+    strong = {"url": "https://x/1"}
+    run.fit_of(strong, hits)
+    check("本行的題目＝主推", strong["fit_band"], "主推")
+
+    home = {"url": "https://x/2", "funding": {"fee": "home"}}
+    run.fit_of(home, run.fit_hits("PhD studentship in eHMI for automated vehicles"))
+    check("只收 home 學費＝排除", (home["fit_band"], home["fit_block"]),
+          ("排除", ["只收 home 學費身分"]))
+
+    dutch = {"url": "https://x/3", "languages": ["荷蘭文（必要）"]}
+    run.fit_of(dutch, run.fit_hits("PhD in interaction design with co-design workshops"))
+    check("要會荷蘭文＝排除", dutch["fit_band"], "排除")
+
+    merit = {"url": "https://x/4", "languages": ["瑞典文（加分）"]}
+    run.fit_of(merit, run.fit_hits("PhD in interaction design with co-design workshops"))
+    check("瑞典文只是加分就不排除", merit["fit_band"] != "排除", True)
+
+    far = {"url": "https://x/5"}
+    run.fit_of(far, run.fit_hits("PhD in perovskite solar cells with finite element simulation"))
+    check("完全不同行＝弱相關", far["fit_band"], "弱相關")
+
     if FAILS:
         print("測試失敗：")
         for f in FAILS:

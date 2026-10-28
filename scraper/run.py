@@ -28,6 +28,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data", "jobs.json")
 CONFIG = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sources.yml")
 TOPICS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "topics.yml")
+PROFILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "profile.yml")
 RANKINGS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "rankings.yml")
 COUNTRIES = os.path.join(os.path.dirname(os.path.abspath(__file__)), "countries.yml")
 
@@ -53,7 +54,7 @@ PHD_WEAK = re.compile(r"(\bdoctoral\b|\bdoctorate\b|research\s+student)", re.I)
 POSTDOC = re.compile(r"(post[\s\-]?doc|postdoctoral|post[\s\-]?doctoral)", re.I)
 
 KEEP_CLOSED_DAYS = 45   # 職缺從列表消失後，還在資料裡保留幾天
-SCORE_VERSION = 10     # 計分規則改過就 +1，舊資料會自動重抓重算
+SCORE_VERSION = 11     # 計分規則改過就 +1，舊資料會自動重抓重算
 
 
 # --------------------------------------------------------------------------- 工具
@@ -200,6 +201,89 @@ def load_topics(path: str = TOPICS) -> None:
     _PENALTY_WEIGHT = int(weights.get("penalty", 2))
     global _LANGUAGES
     _LANGUAGES = as_pairs(config.get("languages"))
+
+
+_PROFILE: dict = {}
+_PROFILE_RULES: list[tuple[re.Pattern, str, str]] = []
+_FIT_GROUPS = ("core", "near", "target", "methods", "mismatch")
+
+
+def load_profile(path: str = PROFILE) -> None:
+    """適配度的關鍵字表（profile.yml）：這個缺跟「你」有多合。"""
+    global _PROFILE, _PROFILE_RULES
+    if _PROFILE_RULES:
+        return
+    with open(path, encoding="utf-8") as fh:
+        _PROFILE = yaml.safe_load(fh) or {}
+    rules = []
+    for group in _FIT_GROUPS:
+        for term, label in as_pairs(_PROFILE.get(group)):
+            rules.append((re.compile(term, re.I), group, label or term_label(term)))
+    _PROFILE_RULES = rules
+
+
+def fit_hits(*parts: str, limit: int = 5) -> dict[str, list[str]]:
+    """回傳 {core: [...], near: [...], ...}，同一個標籤只算一次。"""
+    load_profile()
+    blob = " ".join(p for p in parts if p)
+    out: dict[str, list[str]] = {}
+    for pattern, group, label in _PROFILE_RULES:
+        bucket = out.setdefault(group, [])
+        if label in bucket or len(bucket) >= limit:
+            continue
+        if pattern.search(blob):
+            bucket.append(label)
+    return {k: v for k, v in out.items() if v}
+
+
+def merge_fit(*hit_sets: dict) -> dict[str, list[str]]:
+    out: dict[str, list[str]] = {}
+    for hits in hit_sets:
+        for group, labels in (hits or {}).items():
+            bucket = out.setdefault(group, [])
+            for label in labels:
+                if label not in bucket:
+                    bucket.append(label)
+    return {k: v[:5] for k, v in out.items() if v}
+
+
+def fit_of(job: dict, hits: dict) -> None:
+    """算適配度，並把「為什麼」和「為什麼不能投」一起寫進去。"""
+    load_profile()
+    weights = _PROFILE.get("weights", {})
+    th = _PROFILE.get("thresholds", {})
+    blockers = _PROFILE.get("blockers", {})
+
+    score = sum(int(weights.get(group, 0)) * len(labels) for group, labels in hits.items())
+    score = max(0, score)
+
+    blocks: list[str] = []
+    if blockers.get("postdoc") and job.get("postdoc_suspect"):
+        blocks.append("內文其實在徵博後")
+    if blockers.get("expired") and job.get("expired"):
+        blocks.append("已經過了截止日")
+    if blockers.get("fee_home") and (job.get("funding") or {}).get("fee") == "home":
+        blocks.append("只收 home 學費身分")
+    blocked_langs = set(blockers.get("languages") or [])
+    for tag in job.get("languages") or []:
+        name = tag.split("（")[0]
+        if "必要" in tag and name in blocked_langs:
+            blocks.append(f"要會{name}")
+
+    job["fit_score"] = score
+    job["fit_why"] = (hits.get("core", []) + hits.get("target", []) + hits.get("near", []))[:4]
+    job["fit_gap"] = hits.get("mismatch", [])[:2]
+    job["fit_block"] = blocks
+    if blocks:
+        job["fit_band"] = "排除"
+    elif score >= int(th.get("strong", 8)):
+        job["fit_band"] = "主推"
+    elif score >= int(th.get("good", 5)):
+        job["fit_band"] = "符合"
+    elif score >= int(th.get("stretch", 2)):
+        job["fit_band"] = "stretch"
+    else:
+        job["fit_band"] = "弱相關"
 
 
 def as_pairs(block) -> list[tuple[str, str]]:
@@ -892,6 +976,7 @@ def enrich_job(job: dict, timeout: int) -> None:
     job["page_topics"] = page_hits
     job["page_tools"] = tool_tags(page_text)
     job["page_penalties"] = penalty_tags(page_text)
+    job["page_fit"] = fit_hits(page_text)
     job["page_funding"] = detect_funding(page_text, job.get("country", ""))
     job["page_languages"] = detect_languages(page_text)
     job["page_supervisor"] = detect_supervisor(page_text)
@@ -1084,12 +1169,12 @@ def main() -> int:
         # 都是從 page_* 重算的衍生欄位，本來就不接回舊值。
         page_keys = {"page_score", "page_topics", "page_tools", "query_ok", "score_version",
                      "page_penalties", "page_funding", "page_languages", "page_supervisor",
-                     "page_kind", "postdoc_suspect"}
+                     "page_kind", "postdoc_suspect", "page_fit"}
         for key in ("posted", "deadline", "location", "department", "summary", "university",
                     "enrich_attempts", "page_score", "page_topics", "query_ok",
                     "score_version", "page_tools", "city", "country", "country_zh",
                     "page_penalties", "page_funding", "page_languages", "page_supervisor",
-                    "page_kind", "postdoc_suspect"):
+                    "page_kind", "postdoc_suspect", "page_fit"):
             if job.get("_enriched") and key in page_keys:
                 continue
             if key == "university" and old.get(key) == old.get("source_name"):
@@ -1111,8 +1196,9 @@ def main() -> int:
             continue
         domain = site_of(job["url"])
         domain_pages[domain] = domain_pages.get(domain, 0) + 1
+        page_fit_labels = [l for labels in (job.get("page_fit") or {}).values() for l in labels]
         for term in set((job.get("page_topics") or []) + (job.get("page_tools") or [])
-                        + (job.get("page_languages") or [])):
+                        + (job.get("page_languages") or []) + page_fit_labels):
             key = (domain, term)
             page_term_count[key] = page_term_count.get(key, 0) + 1
     boilerplate = {key for key, count in page_term_count.items()
@@ -1171,6 +1257,14 @@ def main() -> int:
         job["supervisor"] = job.get("page_supervisor") or ""
         deadline = job.get("deadline") or ""
         job["expired"] = bool(deadline and deadline < stamp)
+        # 適配度：整頁文字算出來的，加上標題／摘要／既有標籤再算一次
+        site = site_of(job["url"])
+        page_fit = {group: [l for l in labels if (site, l) not in boilerplate]
+                    for group, labels in (job.get("page_fit") or {}).items()}
+        own_fit = fit_hits(job.get("title", ""), job.get("summary", ""),
+                           job.get("department", ""),
+                           " ".join((job.get("topics") or []) + (job.get("tools") or [])))
+        fit_of(job, merge_fit(page_fit, own_fit))
 
     # 城市：詳細頁沒寫的話，從 location（"Delft, NL"）截前半段，
     # 再不然用來源設定裡的 city（單一校區的學校才設）
@@ -1257,6 +1351,10 @@ def main() -> int:
                              and j.get("topic_score", 0) >= _TOPIC_THRESHOLDS.get("broad", 2)),
             "expired": sum(1 for j in jobs if j.get("status") == "open" and j.get("expired")),
             "postdoc_suspect": sum(1 for j in jobs if j.get("postdoc_suspect")),
+            "fit_strong": sum(1 for j in jobs if j.get("status") == "open"
+                              and j.get("fit_band") == "主推"),
+            "fit_good": sum(1 for j in jobs if j.get("status") == "open"
+                            and j.get("fit_band") == "符合"),
         },
         "sources": reports,
         "recheck": recheck,

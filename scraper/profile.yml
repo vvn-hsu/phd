@@ -1,0 +1,93 @@
+# 適配度：這個缺跟「你」有多合，跟 topics.yml（這個缺是不是 HCI）不是同一件事。
+#
+# 關鍵字是從 CV 抽出來的研究線、方法和硬條件。CV 本身沒有放進 repo
+# （這個 repo 是公開的），這裡也只放研究關鍵字，不放學歷細節。
+#
+# 算法：core×3 ＋ near×2 ＋ target×2 ＋ methods×1 − mismatch×2
+#   主推 ≥8　符合 5–7　stretch 2–4　弱相關 <2
+#   blockers 命中就直接「排除」，分數不算。
+
+thresholds:
+  strong: 8
+  good: 5
+  stretch: 2
+
+weights:
+  core: 3
+  near: 2
+  target: 2
+  methods: 1
+  mismatch: -2
+
+# 你發表過、做得出來的題目。命中這些＝審查委員看得到你的作品。
+core:
+  "notification|notifications|notifying": 通知系統
+  "interruption|interruptib|attention management|attentive (user )?interface": 打斷與注意力
+  "(smartphone|mobile phone|phone) (use|usage|overuse|behaviou?r)": 手機使用行為
+  "mobile hci|mobile interaction|smartphone interaction": 行動裝置互動
+  "experience sampling|\\besm\\b|diary stud|in[- ]situ stud|momentary assessment": 情境取樣
+  "digital (wellbeing|well-being)|screen time|technology overuse|self[- ]regulation": 數位身心健康
+  "human[- ]ai interaction|human[- ]ai (collaboration|teaming)|human[- ]centred ai": 人與 AI 互動
+  "conversational agent|intelligent assistant|voice assistant|llm[- ]based (agent|assistant)": 對話式助理
+  "ubiquitous computing|pervasive computing|context[- ]aware|context awareness": 普適運算
+  "multitasking|task switching|engagement (with|in) (learning|technology)": 多工與投入
+
+# 你的興趣圈，或作品可以遷移過去的題目。
+near:
+  "user experience|\\bux\\b research|usability": 使用者體驗
+  "user[- ]centred design|user[- ]centered design|interaction design": 互動設計
+  "(wearable|mobile) sensing|activity recognition|physiological sensing": 穿戴感測
+  "behaviou?r change|mhealth|health intervention|wellbeing intervention": 行為改變
+  "participatory design|co[- ]design|codesign": 參與式設計
+  "social (media|computing)|online platform|recommender|crowdsourc": 社會運算
+  "learning (technolog|analytics)|educational technolog|classroom": 學習科技
+  "accessibility|inclusive design|assistive": 無障礙
+  "trust in (ai|automation|technology)|trustworthy ai|explainable ai": 對 AI 的信任
+  "interface design|user interface": 介面設計
+
+# 你說要轉的方向：車輛 eHMI。目前沒有這條線的作品，所以算「可以投但要說故事」。
+target:
+  "e-?hmi|external (hmi|human[- ]machine interface)": eHMI
+  "(automated|autonomous|self[- ]driving) (vehicle|car|driving)": 自動駕駛
+  "pedestrian (interaction|behaviou?r|crossing)|vulnerable road user": 行人互動
+  "human[- ]vehicle interaction|automotive (hci|interface)|in[- ]vehicle": 車輛人機介面
+  "take[- ]?over request|transition of control|driver (monitoring|distraction)": 接手控制
+  "driving simulator|driving stud": 駕駛模擬
+
+# 方法對得上＝你明天就能上手。
+methods:
+  "(semi-structured )?interview|focus group": 訪談
+  "survey|questionnaire|large[- ]scale study": 問卷
+  "field (stud|work|deployment)|ethnograph|in the wild": 田野研究
+  "thematic analysis|qualitative (coding|analysis)|grounded theory": 質性分析
+  "mixed[- ]method": 混合方法
+  "(controlled|lab(oratory)?) experiment|within[- ]subject|between[- ]subject": 實驗設計
+  "prototyp|figma|design workshop": 原型與工作坊
+  "\\bpython\\b|\\br\\b programming|statistical (analysis|modelling|modeling)": 程式與統計
+
+# 這個缺要的主力能力你沒有，投了也會被刷。
+mismatch:
+  "(model (architecture|training)|deep learning (model|architecture)|reinforcement learning|neural architecture)": 需要 ML 模型開發
+  "(formal (methods|verification)|theorem prov|type theory|compiler)": 需要形式化方法
+  "(control theory|robot (manipulat|kinematic|locomotion)|embedded hardware|circuit design)": 需要控制／硬體
+  "(wet lab|cell culture|in vivo|clinical trial protocol|animal model)": 需要實驗室生醫
+  "(computer vision (model|algorithm)|image segmentation|3d reconstruction)": 需要電腦視覺開發
+  "(fluid dynamic|finite element|thermodynamic|structural (analysis|engineering))": 需要工程模擬
+  "(eeg|fnirs|\\bfmri\\b|electromyograph|neuroimaging)": 需要神經生理量測
+  "(eye[- ]track|gaze estimation)": 需要眼動實驗
+
+# 硬條件：命中就是排除，不用再看分數。
+blockers:
+  fee_home: true          # 只收 home 學費身分的英國 studentship（你是國際生）
+  postdoc: true           # 內文其實在徵博後
+  expired: true           # 截止日過了
+  languages:              # 這些語言「必要」的缺不能投（你只有英文和中文）
+    - 荷蘭文
+    - 德文
+    - 瑞典文
+    - 丹麥文
+    - 挪威文
+    - 芬蘭文
+    - 法文
+    - 義大利文
+    - 西班牙文
