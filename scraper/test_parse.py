@@ -259,6 +259,9 @@ def main():
           run.detect_languages("The application must be written in English or Swedish."), [])
     check("「論文以瑞典文撰寫」也不算語言能力要求",
           run.detect_languages("The thesis may be written in Swedish."), [])
+    check("語言切換器（一串語言名）不算語言門檻",
+          run.detect_languages("Deutsch Français Svenska Norsk Dansk Nederlands "
+                               "skills required for this position"), [])
     check("真的要求口說書寫還是要標",
           run.detect_languages("Good command of written and spoken Swedish is required."),
           ["瑞典文（必要）"])

@@ -54,7 +54,7 @@ PHD_WEAK = re.compile(r"(\bdoctoral\b|\bdoctorate\b|research\s+student)", re.I)
 POSTDOC = re.compile(r"(post[\s\-]?doc|postdoctoral|post[\s\-]?doctoral)", re.I)
 
 KEEP_CLOSED_DAYS = 45   # 職缺從列表消失後，還在資料裡保留幾天
-SCORE_VERSION = 15     # 計分規則改過就 +1，舊資料會自動重抓重算
+SCORE_VERSION = 16     # 計分規則改過就 +1，舊資料會自動重抓重算
 
 
 # --------------------------------------------------------------------------- 工具
@@ -573,6 +573,12 @@ def detect_languages(body: str) -> list[str]:
                 continue          # 「不需要會荷蘭文」不該標成語言門檻
             if LANG_DOC.search(window):
                 continue          # 「申請文件用英文或瑞典文寫」不是語言門檻
+            # Varbi 每頁都有語言切換器（French / Romanian / Norwegian…），
+            # 附近只要湊到三種以上語言名，那就是選單不是要求
+            nearby = sum(1 for w, _ in _LANGUAGES
+                         if re.search(rf"\b{re.escape(w)}\b", window, re.I))
+            if nearby >= 3:
+                continue
             if not LANG_REQUIRED.search(window) and not LANG_MERIT.search(window):
                 continue
             tag = f"{label}（加分）" if LANG_MERIT.search(window) else f"{label}（必要）"
