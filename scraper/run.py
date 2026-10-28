@@ -496,6 +496,12 @@ LANG_DOC = re.compile(
     r"|advertisement|job posting)[^.;\n]{0,80}\b(written|submitted|drafted|be in)\b"
     r"|\b(written|submitted|drafted|write it) in (english|swedish|danish|norwegian|dutch"
     r"|german|french|finnish)\b", re.I)
+# 語言選單用：英文名和各語言自己的寫法都算
+LANG_NAMES = re.compile(
+    r"\b(english|dutch|german|swedish|danish|norwegian|finnish|french|italian|spanish"
+    r"|portuguese|polish|czech|romanian|hungarian|greek|turkish|russian|chinese|japanese"
+    r"|deutsch|nederlands|svenska|norsk|dansk|suomi|fran\u00e7ais|espa\u00f1ol|italiano"
+    r"|portugu\u00eas|polski|rom\u00e2n\u0103|magyar|nynorsk)\b", re.I)
 LANG_NEGATED = re.compile(
     r"(not required|not necessary|not a requirement|no need|is not expected"
     r"|do(es)? not (have to|need to) speak)", re.I)
@@ -575,9 +581,7 @@ def detect_languages(body: str) -> list[str]:
                 continue          # 「申請文件用英文或瑞典文寫」不是語言門檻
             # Varbi 每頁都有語言切換器（French / Romanian / Norwegian…），
             # 附近只要湊到三種以上語言名，那就是選單不是要求
-            nearby = sum(1 for w, _ in _LANGUAGES
-                         if re.search(rf"\b{re.escape(w)}\b", window, re.I))
-            if nearby >= 3:
+            if len(set(LANG_NAMES.findall(window.lower()))) >= 3:
                 continue
             if not LANG_REQUIRED.search(window) and not LANG_MERIT.search(window):
                 continue
