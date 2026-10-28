@@ -252,6 +252,20 @@ def main():
           ["瑞典文（加分）"])
     check("只是提到語言、沒有要求的不標",
           run.detect_languages("The thesis may be written in English or Swedish."), [])
+    check("頁首的語言切換器不算語言門檻",
+          run.detect_languages("Home Vacancies Dutch English Login Apply now. "
+                               "A PhD position is required to be filled soon."), [])
+    check("明說不需要荷蘭文的不標",
+          run.detect_languages("Knowledge of Dutch is not required for this position."), [])
+
+    check("導師名字後面黏到下一句就切掉",
+          run.detect_supervisor("Supervisor: Dr. Milos Cvetkovic. You will work in a team."),
+          "Dr. Milos Cvetkovic")
+    check("導師名字前面的 PIs 去掉",
+          run.detect_supervisor("Supervisors: PIs Diletta Giuntini and others"),
+          "Diletta Giuntini")
+    check("只抓到一個字的不算導師",
+          run.detect_supervisor("Supervised by Delft"), "")
 
     check("導師抓得到",
           run.detect_supervisor("The supervisors will be Prof. Dr. Marieke van Dijk and others."),

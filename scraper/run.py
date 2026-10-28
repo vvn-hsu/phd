@@ -53,7 +53,7 @@ PHD_WEAK = re.compile(r"(\bdoctoral\b|\bdoctorate\b|research\s+student)", re.I)
 POSTDOC = re.compile(r"(post[\s\-]?doc|postdoctoral|post[\s\-]?doctoral)", re.I)
 
 KEEP_CLOSED_DAYS = 45   # 職缺從列表消失後，還在資料裡保留幾天
-SCORE_VERSION = 9       # 計分規則改過就 +1，舊資料會自動重抓重算
+SCORE_VERSION = 10     # 計分規則改過就 +1，舊資料會自動重抓重算
 
 
 # --------------------------------------------------------------------------- 工具
@@ -378,11 +378,22 @@ SALARIED = re.compile(
     r"|tv-l|tv\u00f6d|employee of the university|social security|pension|holiday allowance"
     r"|vacation allowance|gross monthly salary)", re.I)
 
+# 語言只有出現在「語言能力」的句子裡才算，不然像 careers.tudelft.nl 那種
+# 頁面上有 Dutch / English 語言切換器的網站，每一筆都會被標成要會荷蘭文。
+LANG_SKILL_BEFORE = re.compile(
+    r"(fluen\w*|proficien\w*|command|knowledge|skills?|speak\w*|written|oral|mastery"
+    r"|understanding|level)\b[^.;\n]{0,40}$", re.I)
+LANG_SKILL_AFTER = re.compile(
+    r"^[^.;\n]{0,60}?(language|proficien\w*|fluen\w*|skills?|speaking|speakers?"
+    r"|is required|are required|is a merit|is an advantage|is desirable|is expected)", re.I)
+LANG_NEGATED = re.compile(
+    r"(not required|not necessary|not a requirement|no need|is not expected"
+    r"|do(es)? not (have to|need to) speak)", re.I)
 LANG_REQUIRED = re.compile(
     r"(required|requirement|must|fluent|fluency|proficien|command of|native|mastery"
     r"|is expected|teaching (is|will be) in|good knowledge)", re.I)
 LANG_MERIT = re.compile(
-    r"(merit|advantage|desirable|plus|beneficial|an asset|welcome|not required|no need)", re.I)
+    r"(merit|advantage|desirable|plus|beneficial|an asset|welcome)", re.I)
 
 SUPERVISOR = re.compile(
     # 關鍵字不分大小寫，但人名一定要是大寫開頭——整個 re.I 下去的話，
@@ -437,26 +448,60 @@ def detect_kind(title: str, body: str, country: str = "") -> str:
 
 
 def detect_languages(body: str) -> list[str]:
-    """只在語言出現在「要求」的句子裡才標，而且必要和加分分開。"""
+    """只在語言出現在「語言能力要求」的句子裡才標，必要和加分分開。"""
     load_topics()
     out: list[str] = []
     for word, label in _LANGUAGES:
         for m in re.finditer(rf"\b{re.escape(word)}\b", body, re.I):
-            window = body[max(0, m.start() - 140): m.end() + 140]
-            if not LANG_REQUIRED.search(window):
+            before = body[max(0, m.start() - 120): m.start()]
+            after = body[m.end(): m.end() + 120]
+            # 要跟「會不會講」有關才算，光是出現這個字不算
+            if not (LANG_SKILL_BEFORE.search(before) or LANG_SKILL_AFTER.search(after)):
+                continue
+            window = before + m.group(0) + after
+            if LANG_NEGATED.search(window):
+                continue          # 「不需要會荷蘭文」不該標成語言門檻
+            if not LANG_REQUIRED.search(window) and not LANG_MERIT.search(window):
                 continue
             tag = f"{label}（加分）" if LANG_MERIT.search(window) else f"{label}（必要）"
-            if tag not in out and f"{label}（必要）" not in out:
-                out = [t for t in out if not t.startswith(label)] + [tag]
+            if f"{label}（必要）" in out:
+                break
+            out = [t for t in out if not t.startswith(label)] + [tag]
             break
     return out[:3]
+
+
+NAME_TITLES = {"Prof", "Dr", "Professor", "Ir", "Mr", "Ms", "Mrs", "Dr.ir", "Drs"}
+NAME_STOP = {"You", "The", "This", "We", "Our", "For", "More", "Please", "If", "It",
+             "As", "In", "At", "Her", "His", "Their", "They", "Trustworthy"}
+NAME_LEAD = {"PIs", "PI", "Supervisors", "Supervisor", "Promotor", "Promotoren"}
+
+
+def tidy_name(name: str) -> str:
+    """把抓到的那串字切成人名：遇到句號就停（頭銜的句號不算），
+    丟掉 "PIs"、"You"、"The" 這種黏在前後的字。"""
+    out: list[str] = []
+    for token in name.split():
+        bare = token.strip(".,;:")
+        if bare in NAME_STOP:
+            break
+        out.append(token)
+        if token.endswith(".") and bare not in NAME_TITLES:
+            break               # 句號代表名字講完了
+    while out and out[0].strip(".") in NAME_LEAD:
+        out.pop(0)
+    while out and len(out[-1].strip(".")) <= 1:
+        out.pop()               # 結尾只剩一個字母的縮寫就不要
+    return " ".join(out).strip(" .,;:")
 
 
 def detect_supervisor(body: str) -> str:
     m = SUPERVISOR.search(body)
     if not m:
         return ""
-    name = clean(m.group(1)).strip(" .,;:")
+    name = tidy_name(clean(m.group(1)))
+    if len(name.split()) < 2:
+        return ""
     # 抓到的是整句話或一串頭銜就不要
     if len(name) > 48 or len(name.split()) > 5:
         return ""
@@ -1066,7 +1111,8 @@ def main() -> int:
             continue
         domain = site_of(job["url"])
         domain_pages[domain] = domain_pages.get(domain, 0) + 1
-        for term in set((job.get("page_topics") or []) + (job.get("page_tools") or [])):
+        for term in set((job.get("page_topics") or []) + (job.get("page_tools") or [])
+                        + (job.get("page_languages") or [])):
             key = (domain, term)
             page_term_count[key] = page_term_count.get(key, 0) + 1
     boilerplate = {key for key, count in page_term_count.items()
@@ -1119,7 +1165,9 @@ def main() -> int:
     # 決策用的欄位：經費、語言門檻、導師、職缺類型、是不是已經過期
     for job in fresh.values():
         job["funding"] = job.get("page_funding") or {}
-        job["languages"] = job.get("page_languages") or []
+        # 整個網站每頁都標同一種語言的話那是版型文字（例如頁首的語言切換器）
+        job["languages"] = [l for l in (job.get("page_languages") or [])
+                            if (site_of(job["url"]), l) not in boilerplate]
         job["supervisor"] = job.get("page_supervisor") or ""
         deadline = job.get("deadline") or ""
         job["expired"] = bool(deadline and deadline < stamp)
