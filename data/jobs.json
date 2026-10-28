@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T06:10:43+00:00",
+ "generated_at": "2026-10-28T06:20:04+00:00",
  "date": "2026-10-28",
  "topic_thresholds": {
   "broad": 2,
@@ -21,9 +21,9 @@
   "closed_kept": 502,
   "hci_broad": 31,
   "expired": 0,
-  "postdoc_suspect": 1,
+  "postdoc_suspect": 2,
   "fit_strong": 0,
-  "fit_good": 14
+  "fit_good": 2
  },
  "sources": [
   {
@@ -320,9 +320,7 @@
    "page_penalties": [],
    "page_fit": {
     "near": [
-     "使用者體驗",
-     "社會運算",
-     "無障礙"
+     "社會運算"
     ]
    },
    "page_funding": {
@@ -332,9 +330,9 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -354,14 +352,11 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 4,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "弱相關",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -402,9 +397,9 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -457,9 +452,7 @@
    "page_penalties": [],
    "page_fit": {
     "near": [
-     "使用者體驗",
-     "社會運算",
-     "無障礙"
+     "社會運算"
     ]
    },
    "page_funding": {
@@ -469,9 +462,9 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -491,14 +484,11 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 4,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "弱相關",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -544,9 +534,9 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -614,9 +604,9 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -690,9 +680,9 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -717,11 +707,11 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 2,
+   "fit_score": 0,
    "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "弱相關",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -762,9 +752,9 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -785,13 +775,13 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 2,
+   "fit_score": 0,
    "fit_why": [
     "參與式設計"
    ],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "弱相關",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -823,9 +813,7 @@
    "page_penalties": [],
    "page_fit": {
     "near": [
-     "使用者體驗",
-     "社會運算",
-     "無障礙"
+     "社會運算"
     ],
     "mismatch": [
      "需要 ML 模型開發"
@@ -838,9 +826,9 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -863,16 +851,13 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 2,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [
     "需要 ML 模型開發"
    ],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "弱相關",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -917,9 +902,9 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -971,8 +956,10 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
    "page_tools": [
     "3D 列印",
     "模擬建模"
@@ -988,15 +975,16 @@
     ]
    },
    "page_funding": {
+    "fee": "funded",
     "pay": "stipend of £21,805"
    },
    "page_languages": [],
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -1007,7 +995,9 @@
     "化學分析"
    ],
    "topic_score": 0,
-   "topics": [],
+   "topics": [
+    "無障礙"
+   ],
    "fields": [
     "能源",
     "材料化學",
@@ -1018,6 +1008,7 @@
     "模擬建模"
    ],
    "funding": {
+    "fee": "funded",
     "pay": "stipend of £21,805"
    },
    "languages": [],
@@ -1065,9 +1056,9 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -1134,9 +1125,9 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "TEMPORARY",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -1198,9 +1189,9 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "TEMPORARY",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -1258,9 +1249,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "TEMPORARY",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -1328,9 +1319,9 @@
    "page_supervisor": "Dr Mike Deeks",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -1395,9 +1386,9 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -1467,10 +1458,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -1533,7 +1524,6 @@
    "page_penalties": [],
    "page_fit": {
     "near": [
-     "使用者體驗",
      "社會運算"
     ],
     "methods": [
@@ -1551,9 +1541,9 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -1576,13 +1566,11 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 7,
-   "fit_why": [
-    "使用者體驗"
-   ],
+   "fit_score": 3,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "符合",
+   "fit_band": "stretch",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -1627,9 +1615,9 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -1653,7 +1641,7 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 1,
+   "fit_score": 0,
    "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
@@ -1703,9 +1691,9 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -1773,9 +1761,9 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -1832,9 +1820,7 @@
    "page_penalties": [],
    "page_fit": {
     "near": [
-     "使用者體驗",
-     "社會運算",
-     "無障礙"
+     "社會運算"
     ]
    },
    "page_funding": {
@@ -1845,9 +1831,9 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -1869,14 +1855,11 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 4,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "弱相關",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -1916,9 +1899,9 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -1977,9 +1960,7 @@
    ],
    "page_fit": {
     "near": [
-     "使用者體驗",
-     "社會運算",
-     "無障礙"
+     "社會運算"
     ],
     "methods": [
      "程式與統計"
@@ -1992,9 +1973,9 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -2019,14 +2000,11 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 5,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "符合",
+   "fit_band": "弱相關",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -2068,9 +2046,9 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -2146,9 +2124,9 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -2172,13 +2150,13 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 5,
+   "fit_score": 3,
    "fit_why": [
     "對 AI 的信任"
    ],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "符合",
+   "fit_band": "stretch",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -2212,9 +2190,9 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "[\"TEMPORARY\",\"FULL_TIME\"]",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "芬蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -2277,10 +2255,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -2334,34 +2312,54 @@
    "page_score": 0,
    "page_topics": [],
    "page_tools": [],
-   "page_penalties": [],
-   "page_fit": {},
-   "page_funding": {},
+   "page_penalties": [
+    "基因體學",
+    "農業生態"
+   ],
+   "page_fit": {
+    "near": [
+     "社會運算"
+    ],
+    "mismatch": [
+     "需要實驗室生醫"
+    ]
+   },
+   "page_funding": {
+    "pay": "stipend to cover living expenses (2026/27 stipen"
+   },
    "page_languages": [],
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
-   "enrich_attempts": 3,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
    "status": "open",
-   "penalties": [],
-   "topic_score": 1,
+   "penalties": [
+    "基因體學",
+    "農業生態"
+   ],
+   "topic_score": 0,
    "topics": [
     "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [],
    "tools": [],
-   "funding": {},
+   "funding": {
+    "pay": "stipend to cover living expenses (2026/27 stipen"
+   },
    "languages": [],
    "supervisor": "",
    "expired": false,
    "fit_score": 0,
    "fit_why": [],
-   "fit_gap": [],
+   "fit_gap": [
+    "需要實驗室生醫"
+   ],
    "fit_block": [],
    "fit_band": "弱相關",
    "kind": "studentship",
@@ -2397,9 +2395,7 @@
    ],
    "page_fit": {
     "near": [
-     "使用者體驗",
-     "社會運算",
-     "無障礙"
+     "社會運算"
     ]
    },
    "page_funding": {
@@ -2410,10 +2406,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -2439,14 +2435,11 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 4,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "弱相關",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -2472,9 +2465,7 @@
    "page_topics": [
     "腦電"
    ],
-   "page_tools": [
-    "模擬建模"
-   ],
+   "page_tools": [],
    "page_penalties": [],
    "page_fit": {
     "near": [
@@ -2493,10 +2484,10 @@
    "page_supervisor": "Dr Amir Atapour-Abarghouei",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "英國",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -2510,9 +2501,7 @@
    "fields": [
     "機器人"
    ],
-   "tools": [
-    "模擬建模"
-   ],
+   "tools": [],
    "funding": {
     "fee": "funded"
    },
@@ -2556,19 +2545,14 @@
    "page_penalties": [
     "基因體學"
    ],
-   "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ]
-   },
+   "page_fit": {},
    "page_funding": {},
    "page_languages": [],
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 2,
+   "score_version": 12,
+   "enrich_attempts": 3,
    "country_zh": "瑞典",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -2586,14 +2570,11 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 4,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "201-500",
    "rank_order": 4
@@ -2631,9 +2612,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -2691,9 +2672,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -2753,9 +2734,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -2813,9 +2794,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -2877,9 +2858,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -2901,7 +2882,7 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 1,
+   "fit_score": 0,
    "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
@@ -2949,9 +2930,9 @@
    "page_supervisor": "Prof. Robert Babuška",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -3012,9 +2993,9 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -3082,9 +3063,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -3153,9 +3134,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -3221,9 +3202,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -3245,7 +3226,7 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 1,
+   "fit_score": 0,
    "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
@@ -3292,9 +3273,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -3315,7 +3296,7 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 1,
+   "fit_score": 0,
    "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
@@ -3358,9 +3339,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -3425,9 +3406,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -3455,7 +3436,7 @@
    ],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "符合",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -3497,9 +3478,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -3569,9 +3550,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -3595,11 +3576,11 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 2,
+   "fit_score": 0,
    "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -3642,9 +3623,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -3718,9 +3699,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -3743,7 +3724,7 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 1,
+   "fit_score": 0,
    "fit_why": [
     "互動設計"
    ],
@@ -3785,9 +3766,9 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -3849,9 +3830,9 @@
    "page_supervisor": "Dr. Benedikt Ahrens",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -3913,9 +3894,9 @@
    "page_supervisor": "Dr. Aaron Ding",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -3979,9 +3960,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -4001,7 +3982,7 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 1,
+   "fit_score": 0,
    "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
@@ -4045,9 +4026,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -4108,9 +4089,9 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -4174,9 +4155,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -4242,9 +4223,9 @@
    "page_supervisor": "Marc Ottelé",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -4300,9 +4281,9 @@
    "page_supervisor": "AnneMarie Eijkelenboom",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -4360,9 +4341,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -4434,9 +4415,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -4504,9 +4485,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -4568,9 +4549,9 @@
    "page_supervisor": "Dr. Milos Cvetkovic",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -4638,9 +4619,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -4707,9 +4688,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -4778,9 +4759,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -4802,7 +4783,7 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 1,
+   "fit_score": 0,
    "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
@@ -4848,9 +4829,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
-   "enrich_attempts": 3,
+   "enrich_attempts": 4,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
@@ -4873,7 +4854,7 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 1,
+   "fit_score": 0,
    "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
@@ -4913,9 +4894,6 @@
     "core": [
      "情境取樣"
     ],
-    "near": [
-     "無障礙"
-    ],
     "methods": [
      "訪談",
      "程式與統計"
@@ -4926,10 +4904,10 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
    "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "比利時",
    "first_seen": "2026-10-27",
    "last_seen": "2026-10-28",
@@ -4954,10 +4932,9 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 7,
+   "fit_score": 5,
    "fit_why": [
-    "情境取樣",
-    "無障礙"
+    "情境取樣"
    ],
    "fit_gap": [],
    "fit_block": [],
@@ -5083,9 +5060,6 @@
     "基因體學"
    ],
    "page_fit": {
-    "near": [
-     "無障礙"
-    ],
     "methods": [
      "程式與統計"
     ]
@@ -5095,9 +5069,9 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": true,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "[\"TEMPORARY\",\"FULL_TIME\"]",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "芬蘭",
    "first_seen": "2026-10-27",
    "last_seen": "2026-10-28",
@@ -5121,10 +5095,8 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 3,
-   "fit_why": [
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [
     "內文其實在徵博後"
@@ -5213,10 +5185,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "英國",
    "first_seen": "2026-10-27",
    "last_seen": "2026-10-28",
@@ -5365,10 +5337,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-27",
    "last_seen": "2026-10-28",
@@ -5392,7 +5364,7 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 1,
+   "fit_score": 0,
    "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
@@ -5437,10 +5409,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-27",
    "last_seen": "2026-10-28",
@@ -5551,10 +5523,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "英國",
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-28",
@@ -5709,10 +5681,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-28",
@@ -5780,8 +5752,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 3,
+   "score_version": 12,
+   "enrich_attempts": 4,
    "country_zh": "瑞典",
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-28",
@@ -6008,10 +5980,10 @@
    "page_supervisor": "Prof. Robert Babuška",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "FULL_TIME",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-24",
    "last_seen": "2026-10-28",
@@ -6110,10 +6082,6 @@
     "生醫材料"
    ],
    "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ],
     "methods": [
      "訪談"
     ],
@@ -6128,8 +6096,8 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-24",
    "last_seen": "2026-10-28",
@@ -6153,16 +6121,13 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 3,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [
     "需要實驗室生醫"
    ],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "51-100",
    "rank_order": 2
@@ -6522,10 +6487,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 6,
+   "enrich_attempts": 7,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-23",
    "last_seen": "2026-10-28",
@@ -6593,10 +6558,10 @@
    "page_supervisor": "Frederik Van Loock",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 6,
+   "enrich_attempts": 7,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-23",
    "last_seen": "2026-10-28",
@@ -7168,10 +7133,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 6,
+   "enrich_attempts": 7,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-23",
    "last_seen": "2026-10-28",
@@ -7243,10 +7208,10 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-23",
    "last_seen": "2026-10-28",
@@ -7347,8 +7312,8 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-23",
    "last_seen": "2026-10-28",
@@ -7722,10 +7687,10 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "英國",
    "first_seen": "2026-10-22",
    "last_seen": "2026-10-28",
@@ -7754,13 +7719,13 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 2,
+   "fit_score": 0,
    "fit_why": [
     "對 AI 的信任"
    ],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "弱相關",
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
@@ -8077,10 +8042,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 6,
+   "enrich_attempts": 7,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-22",
    "last_seen": "2026-10-28",
@@ -8157,8 +8122,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 6,
+   "score_version": 12,
+   "enrich_attempts": 7,
    "country_zh": "瑞典",
    "first_seen": "2026-10-22",
    "last_seen": "2026-10-28",
@@ -8180,7 +8145,7 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 1,
+   "fit_score": 0,
    "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
@@ -8218,8 +8183,8 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-22",
    "last_seen": "2026-10-28",
@@ -9097,8 +9062,9 @@
    "title_guessed": false,
    "found_via": "trust in AI",
    "topic_boost": 3,
-   "page_score": 2,
+   "page_score": 4,
    "page_topics": [
+    "無障礙",
     "對 AI 的信任"
    ],
    "page_tools": [],
@@ -9119,17 +9085,18 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "英國",
    "first_seen": "2026-10-21",
    "last_seen": "2026-10-28",
    "status": "open",
    "penalties": [],
-   "topic_score": 3,
+   "topic_score": 5,
    "topics": [
+    "無障礙",
     "對 AI 的信任",
     "HCI 關鍵字搜尋（弱）"
    ],
@@ -9181,10 +9148,6 @@
    ],
    "page_penalties": [],
    "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ],
     "methods": [
      "程式與統計"
     ]
@@ -9196,8 +9159,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 6,
+   "score_version": 12,
+   "enrich_attempts": 7,
    "country_zh": "瑞典",
    "first_seen": "2026-10-21",
    "last_seen": "2026-10-28",
@@ -9222,11 +9185,8 @@
    ],
    "supervisor": "",
    "expired": false,
-   "fit_score": 5,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 1,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [
     "要會瑞典文"
@@ -9469,10 +9429,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 6,
+   "enrich_attempts": 7,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-20",
    "last_seen": "2026-10-28",
@@ -9582,10 +9542,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 6,
+   "enrich_attempts": 7,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-20",
    "last_seen": "2026-10-28",
@@ -9844,10 +9804,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 6,
+   "enrich_attempts": 7,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-20",
    "last_seen": "2026-10-28",
@@ -10383,10 +10343,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 6,
+   "enrich_attempts": 7,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-28",
@@ -10444,10 +10404,6 @@
    ],
    "page_penalties": [],
    "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ],
     "methods": [
      "實驗設計"
     ]
@@ -10457,8 +10413,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 6,
+   "score_version": 12,
+   "enrich_attempts": 7,
    "country_zh": "瑞典",
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-28",
@@ -10479,14 +10435,11 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 5,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 1,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "符合",
+   "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "101-200",
    "rank_order": 3
@@ -10552,8 +10505,8 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-19",
    "last_seen": "2026-10-28",
@@ -10830,10 +10783,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 4,
+   "enrich_attempts": 5,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-17",
    "last_seen": "2026-10-28",
@@ -11025,8 +10978,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-17",
    "last_seen": "2026-10-28",
@@ -11094,8 +11047,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-17",
    "last_seen": "2026-10-28",
@@ -11162,8 +11115,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-17",
    "last_seen": "2026-10-28",
@@ -11356,10 +11309,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 6,
+   "enrich_attempts": 7,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-16",
    "last_seen": "2026-10-28",
@@ -11662,8 +11615,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-16",
    "last_seen": "2026-10-28",
@@ -11727,8 +11680,8 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-16",
    "last_seen": "2026-10-28",
@@ -12161,10 +12114,10 @@
    "page_supervisor": "Diletta Giuntini",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 6,
+   "enrich_attempts": 7,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-15",
    "last_seen": "2026-10-28",
@@ -12285,8 +12238,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 6,
+   "score_version": 12,
+   "enrich_attempts": 7,
    "country_zh": "瑞典",
    "first_seen": "2026-10-15",
    "last_seen": "2026-10-28",
@@ -12354,8 +12307,8 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-15",
    "last_seen": "2026-10-28",
@@ -12379,7 +12332,7 @@
    ],
    "supervisor": "",
    "expired": false,
-   "fit_score": 2,
+   "fit_score": 0,
    "fit_why": [],
    "fit_gap": [],
    "fit_block": [
@@ -12734,19 +12687,14 @@
    ],
    "page_tools": [],
    "page_penalties": [],
-   "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ]
-   },
+   "page_fit": {},
    "page_funding": {},
    "page_languages": [],
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-14",
    "last_seen": "2026-10-28",
@@ -12764,14 +12712,11 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 4,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "501+",
    "rank_order": 5
@@ -12807,8 +12752,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-14",
    "last_seen": "2026-10-28",
@@ -13240,12 +13185,7 @@
    ],
    "page_tools": [],
    "page_penalties": [],
-   "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ]
-   },
+   "page_fit": {},
    "page_funding": {
     "pay": "0770457900, sek"
    },
@@ -13255,8 +13195,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-13",
    "last_seen": "2026-10-28",
@@ -13278,11 +13218,8 @@
    ],
    "supervisor": "",
    "expired": false,
-   "fit_score": 4,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [
     "要會瑞典文"
@@ -13323,8 +13260,8 @@
    "page_supervisor": "Professor Crona",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-13",
    "last_seen": "2026-10-28",
@@ -13374,12 +13311,7 @@
    "page_penalties": [
     "化學分析"
    ],
-   "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ]
-   },
+   "page_fit": {},
    "page_funding": {
     "pay": "0770457900, sek"
    },
@@ -13389,8 +13321,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-13",
    "last_seen": "2026-10-28",
@@ -13414,11 +13346,8 @@
    ],
    "supervisor": "",
    "expired": false,
-   "fit_score": 4,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [
     "要會瑞典文"
@@ -13452,10 +13381,6 @@
    "page_tools": [],
    "page_penalties": [],
    "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ],
     "methods": [
      "訪談"
     ]
@@ -13467,8 +13392,8 @@
    "page_supervisor": "Dr. Henrietta Nielsen",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-13",
    "last_seen": "2026-10-28",
@@ -13489,14 +13414,11 @@
    "languages": [],
    "supervisor": "Dr. Henrietta Nielsen",
    "expired": false,
-   "fit_score": 5,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 1,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "符合",
+   "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "101-200",
    "rank_order": 3,
@@ -13544,8 +13466,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 6,
+   "score_version": 12,
+   "enrich_attempts": 7,
    "country_zh": "瑞典",
    "first_seen": "2026-10-13",
    "last_seen": "2026-10-28",
@@ -13600,12 +13522,7 @@
    "page_penalties": [
     "化學分析"
    ],
-   "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ]
-   },
+   "page_fit": {},
    "page_funding": {
     "pay": "0770457900, sek"
    },
@@ -13615,8 +13532,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-13",
    "last_seen": "2026-10-28",
@@ -13640,11 +13557,8 @@
    ],
    "supervisor": "",
    "expired": false,
-   "fit_score": 4,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [
     "要會瑞典文"
@@ -13680,10 +13594,6 @@
     "化學分析"
    ],
    "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ],
     "methods": [
      "訪談"
     ]
@@ -13695,8 +13605,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-13",
    "last_seen": "2026-10-28",
@@ -13718,14 +13628,11 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 5,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "符合",
+   "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "101-200",
    "rank_order": 3
@@ -13764,8 +13671,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-13",
    "last_seen": "2026-10-28",
@@ -13784,7 +13691,7 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 1,
+   "fit_score": 0,
    "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
@@ -13826,10 +13733,6 @@
     "材料合成"
    ],
    "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ],
     "methods": [
      "訪談"
     ]
@@ -13841,8 +13744,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-13",
    "last_seen": "2026-10-28",
@@ -13865,14 +13768,11 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 5,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "符合",
+   "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "101-200",
    "rank_order": 3,
@@ -13921,8 +13821,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-13",
    "last_seen": "2026-10-28",
@@ -13979,10 +13879,6 @@
     "農業生態"
    ],
    "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ],
     "methods": [
      "訪談"
     ]
@@ -13996,8 +13892,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-13",
    "last_seen": "2026-10-28",
@@ -14022,14 +13918,11 @@
    ],
    "supervisor": "",
    "expired": false,
-   "fit_score": 5,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "符合",
+   "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "101-200",
    "rank_order": 3
@@ -14067,8 +13960,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-13",
    "last_seen": "2026-10-28",
@@ -14129,8 +14022,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-13",
    "last_seen": "2026-10-28",
@@ -14187,10 +14080,6 @@
    "page_tools": [],
    "page_penalties": [],
    "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ],
     "methods": [
      "訪談"
     ]
@@ -14204,8 +14093,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-13",
    "last_seen": "2026-10-28",
@@ -14228,14 +14117,11 @@
    ],
    "supervisor": "",
    "expired": false,
-   "fit_score": 5,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 1,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "符合",
+   "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "101-200",
    "rank_order": 3
@@ -15232,8 +15118,8 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 6,
+   "score_version": 12,
+   "enrich_attempts": 7,
    "country_zh": "瑞典",
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-28",
@@ -15293,9 +15179,6 @@
    ],
    "page_penalties": [],
    "page_fit": {
-    "near": [
-     "無障礙"
-    ],
     "methods": [
      "程式與統計"
     ],
@@ -15310,8 +15193,8 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-28",
@@ -15336,10 +15219,8 @@
    ],
    "supervisor": "",
    "expired": false,
-   "fit_score": 1,
-   "fit_why": [
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [
     "需要神經生理量測"
    ],
@@ -15376,10 +15257,6 @@
    ],
    "page_penalties": [],
    "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ],
     "methods": [
      "程式與統計"
     ]
@@ -15389,8 +15266,8 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 4,
+   "score_version": 12,
+   "enrich_attempts": 5,
    "country_zh": "瑞典",
    "first_seen": "2026-10-12",
    "last_seen": "2026-10-28",
@@ -15411,14 +15288,11 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 5,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 1,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "符合",
+   "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "501+",
    "rank_order": 5
@@ -15907,10 +15781,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-09",
    "last_seen": "2026-10-28",
@@ -16092,10 +15966,10 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 6,
+   "enrich_attempts": 7,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-09",
    "last_seen": "2026-10-28",
@@ -16160,10 +16034,10 @@
    "page_supervisor": "Dr. Ir. Jasper",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 6,
+   "enrich_attempts": 7,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-09",
    "last_seen": "2026-10-28",
@@ -16257,8 +16131,8 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 5,
+   "score_version": 12,
+   "enrich_attempts": 6,
    "country_zh": "瑞典",
    "first_seen": "2026-10-09",
    "last_seen": "2026-10-28",
@@ -16318,8 +16192,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 7,
+   "score_version": 12,
+   "enrich_attempts": 8,
    "country_zh": "瑞典",
    "first_seen": "2026-10-09",
    "last_seen": "2026-10-28",
@@ -16337,7 +16211,7 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 1,
+   "fit_score": 0,
    "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
@@ -16541,10 +16415,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 6,
+   "enrich_attempts": 7,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-08",
    "last_seen": "2026-10-28",
@@ -16690,9 +16564,9 @@
    "page_supervisor": "Dr Ira Marriott Haresign",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "employment": "[\"FULL_TIME\"]",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "country_zh": "英國",
    "first_seen": "2026-10-08",
    "last_seen": "2026-10-28",
@@ -16937,9 +16811,6 @@
    ],
    "page_penalties": [],
    "page_fit": {
-    "near": [
-     "無障礙"
-    ],
     "methods": [
      "問卷",
      "程式與統計"
@@ -16951,10 +16822,10 @@
    "page_languages": [],
    "page_supervisor": "Sebastian Szyller",
    "page_kind": "job",
-   "postdoc_suspect": false,
-   "score_version": 11,
+   "postdoc_suspect": true,
+   "score_version": 12,
    "employment": "[\"TEMPORARY\",\"FULL_TIME\"]",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "country_zh": "芬蘭",
    "first_seen": "2026-10-07",
    "last_seen": "2026-10-28",
@@ -16980,13 +16851,13 @@
    "languages": [],
    "supervisor": "Sebastian Szyller",
    "expired": false,
-   "fit_score": 4,
-   "fit_why": [
-    "無障礙"
-   ],
+   "fit_score": 2,
+   "fit_why": [],
    "fit_gap": [],
-   "fit_block": [],
-   "fit_band": "stretch",
+   "fit_block": [
+    "內文其實在徵博後"
+   ],
+   "fit_band": "排除",
    "kind": "job",
    "rank_band": "101-200",
    "rank_order": 3
@@ -17300,10 +17171,10 @@
    "page_supervisor": "Marc Ottelé",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 7,
+   "enrich_attempts": 8,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-06",
    "last_seen": "2026-10-28",
@@ -17431,8 +17302,8 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 5,
+   "score_version": 12,
+   "enrich_attempts": 6,
    "country_zh": "瑞典",
    "first_seen": "2026-10-06",
    "last_seen": "2026-10-28",
@@ -17979,10 +17850,10 @@
    "page_supervisor": "Dr. Kynthia Chamilothori",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-28",
@@ -18153,8 +18024,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 7,
+   "score_version": 12,
+   "enrich_attempts": 8,
    "country_zh": "瑞典",
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-28",
@@ -18213,10 +18084,6 @@
    ],
    "page_penalties": [],
    "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ],
     "methods": [
      "程式與統計"
     ]
@@ -18226,8 +18093,8 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 7,
+   "score_version": 12,
+   "enrich_attempts": 8,
    "country_zh": "瑞典",
    "first_seen": "2026-10-03",
    "last_seen": "2026-10-28",
@@ -18249,14 +18116,11 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 5,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 1,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "符合",
+   "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "101-200",
    "rank_order": 3
@@ -18784,10 +18648,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 7,
+   "enrich_attempts": 8,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-28",
@@ -18898,10 +18762,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": true,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-28",
@@ -18925,7 +18789,7 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 1,
+   "fit_score": 0,
    "fit_why": [
     "互動設計"
    ],
@@ -19120,10 +18984,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 7,
+   "enrich_attempts": 8,
    "country_zh": "荷蘭",
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-28",
@@ -19228,8 +19092,8 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 7,
+   "score_version": 12,
+   "enrich_attempts": 8,
    "country_zh": "瑞典",
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-28",
@@ -19251,7 +19115,7 @@
    ],
    "supervisor": "",
    "expired": false,
-   "fit_score": 4,
+   "fit_score": 3,
    "fit_why": [
     "互動設計"
    ],
@@ -19287,12 +19151,7 @@
    ],
    "page_tools": [],
    "page_penalties": [],
-   "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ]
-   },
+   "page_fit": {},
    "page_funding": {
     "fee": "funded"
    },
@@ -19302,8 +19161,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 7,
+   "score_version": 12,
+   "enrich_attempts": 8,
    "country_zh": "瑞典",
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-28",
@@ -19325,11 +19184,8 @@
    ],
    "supervisor": "",
    "expired": false,
-   "fit_score": 4,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [
     "要會瑞典文"
@@ -19366,8 +19222,8 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 7,
+   "score_version": 12,
+   "enrich_attempts": 8,
    "country_zh": "瑞典",
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-28",
@@ -19461,10 +19317,6 @@
    ],
    "page_penalties": [],
    "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ],
     "methods": [
      "程式與統計"
     ]
@@ -19476,8 +19328,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 7,
+   "score_version": 12,
+   "enrich_attempts": 8,
    "country_zh": "瑞典",
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-28",
@@ -19500,11 +19352,8 @@
    ],
    "supervisor": "",
    "expired": false,
-   "fit_score": 5,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 1,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [
     "要會瑞典文"
@@ -19576,12 +19425,7 @@
     "模擬建模"
    ],
    "page_penalties": [],
-   "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ]
-   },
+   "page_fit": {},
    "page_funding": {},
    "page_languages": [
     "瑞典文（必要）"
@@ -19589,8 +19433,8 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 7,
+   "score_version": 12,
+   "enrich_attempts": 8,
    "country_zh": "瑞典",
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-28",
@@ -19612,11 +19456,8 @@
    ],
    "supervisor": "",
    "expired": false,
-   "fit_score": 4,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [
     "要會瑞典文"
@@ -19759,10 +19600,6 @@
    "page_tools": [],
    "page_penalties": [],
    "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ],
     "mismatch": [
      "需要形式化方法"
     ]
@@ -19774,8 +19611,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 7,
+   "score_version": 12,
+   "enrich_attempts": 8,
    "country_zh": "瑞典",
    "first_seen": "2026-10-01",
    "last_seen": "2026-10-28",
@@ -19795,11 +19632,8 @@
    ],
    "supervisor": "",
    "expired": false,
-   "fit_score": 2,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [
     "需要形式化方法"
    ],
@@ -20004,10 +19838,10 @@
    "page_supervisor": "Dr. Mina Alishahi",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 7,
+   "enrich_attempts": 8,
    "country_zh": "荷蘭",
    "first_seen": "2026-09-30",
    "last_seen": "2026-10-28",
@@ -20033,7 +19867,7 @@
    "languages": [],
    "supervisor": "Dr. Mina Alishahi",
    "expired": false,
-   "fit_score": 1,
+   "fit_score": 0,
    "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
@@ -20212,10 +20046,10 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 5,
+   "enrich_attempts": 6,
    "country_zh": "荷蘭",
    "first_seen": "2026-09-30",
    "last_seen": "2026-10-28",
@@ -20240,13 +20074,13 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 3,
+   "fit_score": 0,
    "fit_why": [
     "參與式設計"
    ],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -20356,10 +20190,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "FULL_TIME",
-   "enrich_attempts": 7,
+   "enrich_attempts": 8,
    "country_zh": "荷蘭",
    "first_seen": "2026-09-30",
    "last_seen": "2026-10-28",
@@ -20386,7 +20220,7 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 1,
+   "fit_score": 0,
    "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
@@ -20421,19 +20255,14 @@
     "材料合成",
     "化學分析"
    ],
-   "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ]
-   },
+   "page_fit": {},
    "page_funding": {},
    "page_languages": [],
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 7,
+   "score_version": 12,
+   "enrich_attempts": 8,
    "country_zh": "瑞典",
    "first_seen": "2026-09-30",
    "last_seen": "2026-10-28",
@@ -20455,14 +20284,11 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 4,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "101-200",
    "rank_order": 3
@@ -20497,10 +20323,6 @@
     "藥學腫瘤"
    ],
    "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ],
     "methods": [
      "程式與統計"
     ]
@@ -20510,8 +20332,8 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 7,
+   "score_version": 12,
+   "enrich_attempts": 8,
    "country_zh": "瑞典",
    "first_seen": "2026-09-30",
    "last_seen": "2026-10-28",
@@ -20537,14 +20359,11 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 5,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "符合",
+   "fit_band": "弱相關",
    "kind": "studentship",
    "rank_band": "101-200",
    "rank_order": 3
@@ -20580,10 +20399,6 @@
     "core": [
      "情境取樣"
     ],
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ],
     "mismatch": [
      "需要神經生理量測"
     ]
@@ -20597,8 +20412,8 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 5,
+   "score_version": 12,
+   "enrich_attempts": 6,
    "country_zh": "瑞典",
    "first_seen": "2026-09-30",
    "last_seen": "2026-10-28",
@@ -20625,11 +20440,9 @@
    ],
    "supervisor": "",
    "expired": false,
-   "fit_score": 5,
+   "fit_score": 1,
    "fit_why": [
-    "情境取樣",
-    "使用者體驗",
-    "無障礙"
+    "情境取樣"
    ],
    "fit_gap": [
     "需要神經生理量測"
@@ -20679,8 +20492,8 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 5,
+   "score_version": 12,
+   "enrich_attempts": 6,
    "country_zh": "瑞典",
    "first_seen": "2026-09-30",
    "last_seen": "2026-10-28",
@@ -20699,11 +20512,11 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 2,
+   "fit_score": 0,
    "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "51-100",
    "rank_order": 2
@@ -21042,8 +20855,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 5,
+   "score_version": 12,
+   "enrich_attempts": 6,
    "country_zh": "瑞典",
    "first_seen": "2026-09-29",
    "last_seen": "2026-10-28",
@@ -21296,9 +21109,6 @@
     "農業生態"
    ],
    "page_fit": {
-    "near": [
-     "無障礙"
-    ],
     "methods": [
      "實驗設計",
      "程式與統計"
@@ -21309,8 +21119,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 6,
+   "score_version": 12,
+   "enrich_attempts": 7,
    "country_zh": "瑞典",
    "first_seen": "2026-09-28",
    "last_seen": "2026-10-28",
@@ -21331,13 +21141,11 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 4,
-   "fit_why": [
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "101-200",
    "rank_order": 3
@@ -21480,10 +21288,10 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "FULL_TIME",
-   "enrich_attempts": 6,
+   "enrich_attempts": 7,
    "country_zh": "荷蘭",
    "first_seen": "2026-09-26",
    "last_seen": "2026-10-28",
@@ -22212,19 +22020,14 @@
     "材料合成",
     "化學分析"
    ],
-   "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ]
-   },
+   "page_fit": {},
    "page_funding": {},
    "page_languages": [],
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 5,
+   "score_version": 12,
+   "enrich_attempts": 6,
    "country_zh": "瑞典",
    "first_seen": "2026-09-24",
    "last_seen": "2026-10-28",
@@ -22245,14 +22048,11 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 4,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "101-200",
    "rank_order": 3
@@ -22332,8 +22132,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 7,
+   "score_version": 12,
+   "enrich_attempts": 8,
    "country_zh": "瑞士",
    "first_seen": "2026-09-24",
    "last_seen": "2026-10-28",
@@ -22692,10 +22492,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 7,
+   "enrich_attempts": 8,
    "country_zh": "荷蘭",
    "first_seen": "2026-09-23",
    "last_seen": "2026-10-28",
@@ -22721,13 +22521,13 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 4,
+   "fit_score": 0,
    "fit_why": [
     "學習科技"
    ],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "201-500",
    "rank_order": 4
@@ -23035,10 +22835,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 7,
+   "enrich_attempts": 8,
    "country_zh": "荷蘭",
    "first_seen": "2026-09-22",
    "last_seen": "2026-10-28",
@@ -23137,8 +22937,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 5,
+   "score_version": 12,
+   "enrich_attempts": 6,
    "country_zh": "瑞典",
    "first_seen": "2026-09-22",
    "last_seen": "2026-10-28",
@@ -23189,12 +22989,7 @@
    ],
    "page_tools": [],
    "page_penalties": [],
-   "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ]
-   },
+   "page_fit": {},
    "page_funding": {},
    "page_languages": [
     "瑞典文（加分）"
@@ -23202,8 +22997,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 5,
+   "score_version": 12,
+   "enrich_attempts": 6,
    "country_zh": "瑞典",
    "first_seen": "2026-09-22",
    "last_seen": "2026-10-28",
@@ -23224,14 +23019,11 @@
    ],
    "supervisor": "",
    "expired": false,
-   "fit_score": 4,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "101-200",
    "rank_order": 3
@@ -23261,12 +23053,7 @@
    "page_penalties": [
     "農業生態"
    ],
-   "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ]
-   },
+   "page_fit": {},
    "page_funding": {
     "pay": "0770457900, sek"
    },
@@ -23274,8 +23061,8 @@
    "page_supervisor": "",
    "page_kind": "studentship",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 5,
+   "score_version": 12,
+   "enrich_attempts": 6,
    "country_zh": "瑞典",
    "first_seen": "2026-09-22",
    "last_seen": "2026-10-28",
@@ -23298,14 +23085,11 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 4,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "弱相關",
    "kind": "studentship",
    "rank_band": "101-200",
    "rank_order": 3
@@ -25513,10 +25297,10 @@
    "page_supervisor": "",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 7,
+   "enrich_attempts": 8,
    "country_zh": "荷蘭",
    "first_seen": "2026-09-16",
    "last_seen": "2026-10-28",
@@ -25542,7 +25326,7 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 4,
+   "fit_score": 3,
    "fit_why": [
     "參與式設計"
    ],
@@ -25933,8 +25717,8 @@
    "page_supervisor": "Associate Professor Nicolò Maccaferri",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 5,
+   "score_version": 12,
+   "enrich_attempts": 6,
    "country_zh": "瑞典",
    "first_seen": "2026-09-15",
    "last_seen": "2026-10-28",
@@ -26005,8 +25789,8 @@
    "page_supervisor": "Associate Professor Nicolò Maccaferri",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 5,
+   "score_version": 12,
+   "enrich_attempts": 6,
    "country_zh": "瑞典",
    "first_seen": "2026-09-15",
    "last_seen": "2026-10-28",
@@ -27128,10 +26912,10 @@
    "page_supervisor": "Dr. Ahmed",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
+   "score_version": 12,
    "query_ok": false,
    "employment": "TEMPORARY",
-   "enrich_attempts": 12,
+   "enrich_attempts": 13,
    "country_zh": "荷蘭",
    "first_seen": "2026-09-11",
    "last_seen": "2026-10-28",
@@ -28075,18 +27859,14 @@
    "page_penalties": [
     "基因體學"
    ],
-   "page_fit": {
-    "near": [
-     "無障礙"
-    ]
-   },
+   "page_fit": {},
    "page_funding": {},
    "page_languages": [],
    "page_supervisor": "David Berger",
    "page_kind": "job",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 10,
+   "score_version": 12,
+   "enrich_attempts": 11,
    "country_zh": "瑞典",
    "first_seen": "2026-09-11",
    "last_seen": "2026-10-28",
@@ -28107,13 +27887,11 @@
    "languages": [],
    "supervisor": "David Berger",
    "expired": false,
-   "fit_score": 2,
-   "fit_why": [
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "101-200",
    "rank_order": 3
@@ -28144,10 +27922,6 @@
     "基因體學"
    ],
    "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ],
     "methods": [
      "程式與統計"
     ]
@@ -28160,8 +27934,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 10,
+   "score_version": 12,
+   "enrich_attempts": 11,
    "country_zh": "瑞典",
    "first_seen": "2026-09-11",
    "last_seen": "2026-10-28",
@@ -28185,14 +27959,11 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 5,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [],
-   "fit_band": "符合",
+   "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "201-500",
    "rank_order": 4
@@ -29424,10 +29195,6 @@
     "量子元件"
    ],
    "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ],
     "methods": [
      "訪談"
     ],
@@ -29440,8 +29207,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 10,
+   "score_version": 12,
+   "enrich_attempts": 11,
    "country_zh": "瑞典",
    "first_seen": "2026-09-11",
    "last_seen": "2026-10-28",
@@ -29462,16 +29229,13 @@
    "languages": [],
    "supervisor": "",
    "expired": false,
-   "fit_score": 3,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [
     "需要形式化方法"
    ],
    "fit_block": [],
-   "fit_band": "stretch",
+   "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "101-200",
    "rank_order": 3
@@ -29796,12 +29560,7 @@
    "page_penalties": [
     "資安底層"
    ],
-   "page_fit": {
-    "near": [
-     "使用者體驗",
-     "無障礙"
-    ]
-   },
+   "page_fit": {},
    "page_funding": {},
    "page_languages": [
     "瑞典文（必要）"
@@ -29809,8 +29568,8 @@
    "page_supervisor": "",
    "page_kind": "",
    "postdoc_suspect": false,
-   "score_version": 11,
-   "enrich_attempts": 13,
+   "score_version": 12,
+   "enrich_attempts": 14,
    "country_zh": "瑞典",
    "first_seen": "2026-09-11",
    "last_seen": "2026-10-28",
@@ -29830,11 +29589,8 @@
    ],
    "supervisor": "",
    "expired": false,
-   "fit_score": 4,
-   "fit_why": [
-    "使用者體驗",
-    "無障礙"
-   ],
+   "fit_score": 0,
+   "fit_why": [],
    "fit_gap": [],
    "fit_block": [
     "要會瑞典文"
