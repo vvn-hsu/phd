@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02T20:59:52+00:00",
+ "generated_at": "2026-11-02T21:20:35+00:00",
  "date": "2026-11-02",
  "topic_thresholds": {
   "broad": 2,
@@ -19,7 +19,7 @@
   "open": 154,
   "new_today": 31,
   "closed_kept": 573,
-  "hci_broad": 12,
+  "hci_broad": 14,
   "expired": 1,
   "postdoc_suspect": 4,
   "fit_strong": 1,
@@ -301,7 +301,7 @@
    "source_name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
    "university": "University of Amsterdam (UvA)",
    "country": "NL",
-   "title": "Two PhD Positions in AI for Science at",
+   "title": "Two PhD Positions in AI for Science at the University of Amsterdam",
    "url": "https://www.academictransfer.com/en/jobs/365229/two-phd-positions-in-ai-for-science-at-the-university-of-amsterdam/",
    "city": "Amsterdam",
    "location": "Amsterdam, NL",
@@ -312,19 +312,14 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
-   "score_version": 17,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python"
    ],
-   "country_zh": "荷蘭",
    "page_penalties": [
     "農業生態"
    ],
-   "page_funding": {
-    "pay": "Salary indication €3204"
-   },
-   "page_kind": "job",
    "page_fit": {
     "near": [
      "社會運算"
@@ -336,6 +331,17 @@
      "需要 ML 模型開發"
     ]
    },
+   "page_funding": {
+    "pay": "Salary indication €3204"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "job",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -386,24 +392,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
+   "enrich_attempts": 2,
+   "score_version": 17,
+   "country_zh": "荷蘭",
    "page_penalties": [
     "生醫材料"
    ],
-   "page_fit": {},
    "page_funding": {
     "pay": "€3724 per maand"
    },
-   "page_languages": [],
-   "page_supervisor": "",
    "page_kind": "job",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 2,
-   "country_zh": "荷蘭",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -520,15 +518,20 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
+   "enrich_attempts": 2,
+   "score_version": 17,
    "page_tools": [
     "Python"
    ],
+   "country_zh": "荷蘭",
    "page_penalties": [
     "基因體學",
     "藥學腫瘤"
    ],
+   "page_funding": {
+    "pay": "Salary indication €3217"
+   },
+   "page_kind": "job",
    "page_fit": {
     "methods": [
      "訪談",
@@ -538,18 +541,6 @@
      "需要實驗室生醫"
     ]
    },
-   "page_funding": {
-    "pay": "Salary indication €3217"
-   },
-   "page_languages": [],
-   "page_supervisor": "",
-   "page_kind": "job",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 2,
-   "country_zh": "荷蘭",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -617,7 +608,7 @@
    "postdoc_suspect": false,
    "score_version": 17,
    "query_ok": false,
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "country_zh": "跨國／歐洲",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
@@ -796,21 +787,16 @@
    "title_guessed": false,
    "found_via": "digital wellbeing",
    "topic_boost": 3,
-   "enrich_attempts": 1,
-   "score_version": 17,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "工作坊",
     "田野／民族誌",
     "原型製作"
    ],
-   "country_zh": "英國",
    "page_penalties": [
     "基因體學"
    ],
-   "page_funding": {
-    "pay": "stipend of £21,805"
-   },
-   "page_kind": "studentship",
    "page_fit": {
     "methods": [
      "訪談",
@@ -820,6 +806,18 @@
      "原型與工作坊"
     ]
    },
+   "page_funding": {
+    "pay": "stipend of £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "query_ok": false,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -902,8 +900,9 @@
    "penalties": [
     "材料合成"
    ],
-   "topic_score": 0,
+   "topic_score": 1,
    "topics": [
+    "無障礙",
     "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
@@ -970,8 +969,9 @@
    "penalties": [
     "材料合成"
    ],
-   "topic_score": 0,
+   "topic_score": 1,
    "topics": [
+    "無障礙",
     "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
@@ -1038,7 +1038,9 @@
     "藥學腫瘤"
    ],
    "topic_score": 0,
-   "topics": [],
+   "topics": [
+    "無障礙"
+   ],
    "fields": [
     "能源",
     "生命科學"
@@ -1076,23 +1078,30 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
-   "score_version": 17,
-   "country_zh": "英國",
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
    "page_penalties": [
     "材料合成",
     "藥學腫瘤",
     "化學分析"
    ],
-   "page_funding": {
-    "pay": "stipend rate is £21,805"
-   },
-   "page_kind": "studentship",
    "page_fit": {
     "mismatch": [
      "需要實驗室生醫"
     ]
    },
+   "page_funding": {
+    "pay": "stipend rate is £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -1167,7 +1176,9 @@
     "藥學腫瘤"
    ],
    "topic_score": 0,
-   "topics": [],
+   "topics": [
+    "無障礙"
+   ],
    "fields": [
     "醫療",
     "機器學習",
@@ -1227,7 +1238,9 @@
     "材料合成"
    ],
    "topic_score": 0,
-   "topics": [],
+   "topics": [
+    "無障礙"
+   ],
    "fields": [
     "機器學習",
     "交通移動",
@@ -1289,7 +1302,9 @@
     "化學分析"
    ],
    "topic_score": 0,
-   "topics": [],
+   "topics": [
+    "無障礙"
+   ],
    "fields": [
     "機器學習",
     "生命科學",
@@ -1328,28 +1343,33 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
-   "score_version": 17,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python",
     "MATLAB"
    ],
-   "country_zh": "英國",
    "page_penalties": [
     "材料合成",
     "化學分析"
    ],
-   "page_funding": {
-    "fee": "funded",
-    "pay": "£21,805"
-   },
-   "page_supervisor": "Prof Dong",
-   "page_kind": "studentship",
    "page_fit": {
     "methods": [
      "程式與統計"
     ]
    },
+   "page_funding": {
+    "fee": "funded",
+    "pay": "£21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "Prof Dong",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -1416,8 +1436,10 @@
    "last_seen": "2026-11-02",
    "status": "open",
    "penalties": [],
-   "topic_score": 0,
-   "topics": [],
+   "topic_score": 2,
+   "topics": [
+    "無障礙"
+   ],
    "fields": [
     "機器學習"
    ],
@@ -1490,7 +1512,9 @@
     "化學分析"
    ],
    "topic_score": 0,
-   "topics": [],
+   "topics": [
+    "無障礙"
+   ],
    "fields": [
     "能源",
     "光電半導體"
@@ -1553,7 +1577,9 @@
     "化學分析"
    ],
    "topic_score": 0,
-   "topics": [],
+   "topics": [
+    "無障礙"
+   ],
    "fields": [
     "量子"
    ],
@@ -1699,7 +1725,9 @@
     "藥學腫瘤"
    ],
    "topic_score": 0,
-   "topics": [],
+   "topics": [
+    "無障礙"
+   ],
    "fields": [
     "生命科學",
     "法律政策"
@@ -1765,7 +1793,9 @@
     "材料合成"
    ],
    "topic_score": 0,
-   "topics": [],
+   "topics": [
+    "無障礙"
+   ],
    "fields": [],
    "tools": [],
    "funding": {
@@ -1887,7 +1917,7 @@
    "page_kind": "",
    "postdoc_suspect": false,
    "score_version": 17,
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "country_zh": "跨國／歐洲",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
@@ -1946,7 +1976,7 @@
    "page_kind": "",
    "postdoc_suspect": false,
    "score_version": 17,
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "country_zh": "跨國／歐洲",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
@@ -2058,21 +2088,28 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
-   "score_version": 17,
-   "country_zh": "荷蘭",
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
    "page_penalties": [
     "基礎物理"
    ],
-   "page_funding": {
-    "pay": "Salary indication €3204"
-   },
-   "page_kind": "job",
    "page_fit": {
     "mismatch": [
      "需要工程模擬"
     ]
    },
+   "page_funding": {
+    "pay": "Salary indication €3204"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "job",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -2120,19 +2157,27 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
-   "score_version": 17,
-   "country_zh": "英國",
-   "page_funding": {
-    "fee": "funded",
-    "pay": "stipend rate (2027/28 amount to be confirmed); •"
-   },
-   "page_kind": "studentship",
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [],
    "page_fit": {
     "methods": [
      "訪談"
     ]
    },
+   "page_funding": {
+    "fee": "funded",
+    "pay": "stipend rate (2027/28 amount to be confirmed); •"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -2269,7 +2314,7 @@
    "page_kind": "",
    "postdoc_suspect": false,
    "score_version": 17,
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "country_zh": "跨國／歐洲",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
@@ -2376,20 +2421,27 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
-   "score_version": 17,
-   "country_zh": "英國",
-   "page_funding": {
-    "fee": "funded",
-    "pay": "stipend £21,805"
-   },
-   "page_supervisor": "Find Operations",
-   "page_kind": "studentship",
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [],
    "page_fit": {
     "near": [
      "學習科技"
     ]
    },
+   "page_funding": {
+    "fee": "funded",
+    "pay": "stipend £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "Find Operations",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -2457,8 +2509,10 @@
    "last_seen": "2026-11-02",
    "status": "open",
    "penalties": [],
-   "topic_score": 0,
-   "topics": [],
+   "topic_score": 2,
+   "topics": [
+    "無障礙"
+   ],
    "fields": [
     "教育",
     "經濟商管"
@@ -2499,19 +2553,27 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "enrich_attempts": 1,
-   "score_version": 17,
-   "country_zh": "英國",
-   "page_funding": {
-    "fee": "funded",
-    "pay": "stipend £21,805"
-   },
-   "page_kind": "studentship",
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [],
    "page_fit": {
     "near": [
      "學習科技"
     ]
    },
+   "page_funding": {
+    "fee": "funded",
+    "pay": "stipend £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -2573,7 +2635,7 @@
    "page_kind": "",
    "postdoc_suspect": false,
    "score_version": 17,
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "country_zh": "跨國／歐洲",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
@@ -2632,7 +2694,7 @@
    "page_kind": "",
    "postdoc_suspect": false,
    "score_version": 17,
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "country_zh": "跨國／歐洲",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
@@ -2692,7 +2754,7 @@
    "postdoc_suspect": false,
    "score_version": 17,
    "query_ok": false,
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "country_zh": "跨國／歐洲",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
@@ -2985,28 +3047,22 @@
    "title_guessed": false,
    "found_via": "PhD",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
+   "enrich_attempts": 3,
+   "query_ok": true,
+   "score_version": 17,
+   "country_zh": "荷蘭",
    "page_penalties": [
     "基礎物理"
    ],
+   "page_funding": {
+    "pay": "€3204"
+   },
+   "page_kind": "job",
    "page_fit": {
     "mismatch": [
      "需要工程模擬"
     ]
    },
-   "page_funding": {
-    "pay": "€3204"
-   },
-   "page_languages": [],
-   "page_supervisor": "",
-   "page_kind": "job",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "query_ok": true,
-   "enrich_attempts": 3,
-   "country_zh": "荷蘭",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -3053,27 +3109,20 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
+   "enrich_attempts": 3,
+   "score_version": 17,
    "page_tools": [
     "Python",
     "MATLAB"
    ],
-   "page_penalties": [],
+   "country_zh": "瑞典",
+   "page_kind": "job",
    "page_fit": {
     "methods": [
      "訪談",
      "程式與統計"
     ]
    },
-   "page_funding": {},
-   "page_languages": [],
-   "page_supervisor": "",
-   "page_kind": "job",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "enrich_attempts": 3,
-   "country_zh": "瑞典",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -3537,31 +3586,23 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
+   "enrich_attempts": 3,
+   "score_version": 17,
+   "country_zh": "荷蘭",
    "page_penalties": [
     "基礎物理",
     "藥學腫瘤",
     "生醫材料"
    ],
+   "page_funding": {
+    "pay": "Salary indication €3204"
+   },
+   "page_kind": "job",
    "page_fit": {
     "mismatch": [
      "需要工程模擬"
     ]
    },
-   "page_funding": {
-    "pay": "Salary indication €3204"
-   },
-   "page_languages": [],
-   "page_supervisor": "",
-   "page_kind": "job",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 3,
-   "country_zh": "荷蘭",
    "first_seen": "2026-10-31",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -4045,6 +4086,7 @@
    ],
    "topic_score": 0,
    "topics": [
+    "無障礙",
     "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
@@ -4082,25 +4124,16 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
+   "enrich_attempts": 3,
+   "score_version": 17,
+   "country_zh": "英國",
    "page_penalties": [
     "基因體學",
     "材料合成",
     "農業生態"
    ],
-   "page_fit": {},
-   "page_funding": {},
-   "page_languages": [],
    "page_supervisor": "Dr Harry Child",
    "page_kind": "studentship",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "query_ok": false,
-   "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
-   "country_zh": "英國",
    "first_seen": "2026-10-31",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -4202,26 +4235,17 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
+   "enrich_attempts": 3,
+   "score_version": 17,
    "page_tools": [
     "模擬建模"
    ],
+   "country_zh": "英國",
    "page_penalties": [
     "基因體學",
     "材料合成"
    ],
-   "page_fit": {},
-   "page_funding": {},
-   "page_languages": [],
-   "page_supervisor": "",
    "page_kind": "studentship",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "query_ok": false,
-   "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
-   "country_zh": "英國",
    "first_seen": "2026-10-31",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -4471,6 +4495,7 @@
    ],
    "topic_score": 0,
    "topics": [
+    "無障礙",
     "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
@@ -4715,33 +4740,27 @@
    "title_guessed": false,
    "found_via": "human-AI interaction",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
+   "enrich_attempts": 3,
+   "score_version": 17,
    "page_tools": [
     "田野／民族誌"
    ],
+   "country_zh": "荷蘭",
    "page_penalties": [
     "農業生態"
    ],
-   "page_fit": {
-    "methods": [
-     "田野研究"
-    ]
-   },
    "page_funding": {
     "pay": "Salary indication €3204"
    },
    "page_languages": [
     "法文（加分）"
    ],
-   "page_supervisor": "",
    "page_kind": "job",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 3,
-   "country_zh": "荷蘭",
+   "page_fit": {
+    "methods": [
+     "田野研究"
+    ]
+   },
    "first_seen": "2026-10-31",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -6458,8 +6477,9 @@
    "penalties": [
     "基因體學"
    ],
-   "topic_score": 0,
+   "topic_score": 1,
    "topics": [
+    "無障礙",
     "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
@@ -10015,6 +10035,7 @@
    ],
    "topic_score": 0,
    "topics": [
+    "無障礙",
     "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
