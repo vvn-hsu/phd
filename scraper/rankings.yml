@@ -17,6 +17,7 @@ universities:
   # 1-10
   "ETH Z[uü]rich|Swiss Federal Institute of Technology": "1-10"
   "University College London|\\bUCL\\b": "1-10"
+  "University of Oxford": "1-10"
 
   # 11-50
   "Technical University of Munich|TU M[uü]nchen|Technische Universit[aä]t M[uü]nchen": "11-50"
@@ -49,6 +50,7 @@ universities:
   "University of Helsinki": "101-200"
   "University of Exeter": "101-200"               # QS 2026: 155（2027: 136）
   "University of Oslo|Universitetet i Oslo": "101-200"   # QS 2026: 119
+  "University of Liverpool": "101-200"
   # 大學附設醫院，跟著母校的名次走
   "Universitair Medisch Centrum Groningen|\\bUMCG\\b": "101-200"
 
@@ -68,6 +70,7 @@ universities:
   "University of East Anglia|\\bUEA\\b": "201-500"      # QS 2026: 381
   "Swansea University|Prifysgol Abertawe": "201-500"  # QS 2026: 292
   "Politecnico di Torino": "201-500"
+  "City St George|City, University of London": "201-500"
   "Karolinska": "101-200"
 
   # 501+（綜合排名榜上有，但在 500 名之後）
@@ -85,4 +88,5 @@ universities:
   "Vlerick": "未列入"
   "Hochschule Luzern": "未列入"
   "London Business School": "未列入"              # 商學院，綜合排名裡沒有
+  "Cranfield University": "未列入"                # 只收研究生，綜合排名裡沒有
   "Amsterdam University of Applied Sciences|\\bAUAS\\b|\\bHvA\\b": "未列入"
