@@ -39,6 +39,11 @@ def sniff(url: str) -> None:
         print("  抓取失敗：", exc)
         return
     print(f"  長度 {len(html)} bytes")
+    if os.environ.get("SNIFF_HEAD"):
+        soup_head = BeautifulSoup(html, "lxml")
+        title = soup_head.title.get_text(strip=True) if soup_head.title else ""
+        print(f"  OK  \u003ctitle\u003e: {title[:90]}")
+        return
     head = html[:200].lstrip().lower()
     if head.startswith("<?xml") or "<rss" in head or "<feed" in head:
         print("  看起來是 XML/RSS feed")

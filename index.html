@@ -279,7 +279,8 @@ const LS = {
 };
 const MARKS = { apply: '準備要投', interest: '有興趣', no: '沒興趣' };
 const KIND = { job: '支薪職缺', studentship: 'studentship（自付／獎助）', apply: '需先聯絡教授' };
-const FEE  = { home: '只收 home 學費身分', international: '國際生可申請', funded: '全額補助' };
+const FEE  = { home: '只收 home 學費身分', international: '國際生可申請', funded: '全額補助',
+               mext: 'MEXT 獎學金', self: '自費、沒有獎助' };
 const MARK_ORDER = { apply: 0, interest: 1, '': 2, no: 3 };
 function loadSet(key){
   try { return new Set(JSON.parse(localStorage.getItem(key) || '[]')); } catch { return new Set(); }
@@ -400,7 +401,7 @@ function factBits(job){
   for (const reason of job.fit_block || []) bits.push(['✕ ' + reason, 'risk']);
   if (job.kind && KIND[job.kind]) bits.push([KIND[job.kind], '']);
   if (job.funding?.fee) bits.push([FEE[job.funding.fee] || job.funding.fee,
-    job.funding.fee === 'home' ? 'risk' : 'money']);
+    ['home', 'self'].includes(job.funding.fee) ? 'risk' : 'money']);
   if (job.funding?.pay) bits.push([job.funding.pay, 'money']);
   for (const l of job.languages || []) bits.push([l, l.includes('必要') ? 'risk' : '']);
   if (job.supervisor) bits.push(['導師 ' + job.supervisor, 'sup']);

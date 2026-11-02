@@ -272,6 +272,8 @@ def fit_of(job: dict, hits: dict) -> None:
         blocks.append("已經過了截止日")
     if blockers.get("fee_home") and (job.get("funding") or {}).get("fee") == "home":
         blocks.append("只收 home 學費身分")
+    if blockers.get("fee_self") and (job.get("funding") or {}).get("fee") == "self":
+        blocks.append("自費、沒有獎助")
     blocked_langs = set(blockers.get("languages") or [])
     for tag in job.get("languages") or []:
         name = tag.split("（")[0]
@@ -465,6 +467,13 @@ FEE_INTL = re.compile(
     r"|open to (international|overseas|students of any nationality)"
     r"|fees? (at|for) the (international|overseas) rate (is|are) covered", re.I)
 FULLY_FUNDED = re.compile(r"fully[- ]funded|full (tuition|fee) (waiver|coverage)", re.I)
+# 日本：MEXT（文部科學省）獎學金 vs 自費，是兩種完全不同的錢
+MEXT = re.compile(r"\bmext\b|monbukagakusho|monbusho"
+                  r"|japanese government \(?mext\)? ?scholarship", re.I)
+SELF_FUNDED = re.compile(
+    r"self[- ]fund|self[- ]financ|own (funding|scholarship|sponsorship)"
+    r"|students? (are expected|will need|must) to (fund|cover|secure)"
+    r"|no (funding|stipend) (is )?(available|provided|attached)", re.I)
 STIPEND = re.compile(
     r"(stipend|salary|bruto|gross|l\u00f6n|monthly (salary|pay))[^.\n]{0,80}?"
     r"((?:\u00a3|\u20ac|\$|SEK|DKK|NOK|CHF|kr)\s?[\d][\d ,.]{2,12}"
@@ -545,8 +554,12 @@ def detect_funding(body: str, country: str = "") -> dict:
         out["fee"] = "international"
     elif FEE_HOME.search(body):
         out["fee"] = "home"
+    if MEXT.search(body) and "fee" not in out:
+        out["fee"] = "mext"
     if FULLY_FUNDED.search(body) and "fee" not in out:
         out["fee"] = "funded"
+    if SELF_FUNDED.search(body) and "fee" not in out:
+        out["fee"] = "self"
     m = STIPEND.search(body) or MONEY.search(body)
     if m:
         pay = clean(m.group(0))[:48]
@@ -565,6 +578,8 @@ def detect_kind(title: str, body: str, country: str = "") -> str:
         return "studentship"
     if (country or "").upper() in {"UK", "GB", "IE"}:
         return "studentship"
+    if (country or "").upper() in {"SG", "HK"}:
+        return "studentship"     # 新加坡／香港是獎助金制，不是僱員
     if (country or "").upper() in {"JP", "KR", "TW", "CN"}:
         return "apply"
     return "job" if country else ""

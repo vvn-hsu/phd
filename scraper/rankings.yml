@@ -18,10 +18,14 @@ universities:
   "ETH Z[uü]rich|Swiss Federal Institute of Technology": "1-10"
   "University College London|\\bUCL\\b": "1-10"
   "University of Oxford": "1-10"
+  "National University of Singapore|\\bNUS\\b": "1-10"        # QS 2026: 8
+  "Nanyang Technological University|\\bNTU\\b": "11-50"       # QS 2026: 12
 
   # 11-50
   "Technical University of Munich|TU M[uü]nchen|Technische Universit[aä]t M[uü]nchen": "11-50"
   "University of Edinburgh": "11-50"
+  "University of Tokyo|東京大学": "11-50"                 # QS 2026: 36
+  "Kyoto University|京都大学": "11-50"                    # QS 2026: 48
   "Delft University of Technology|TU Delft": "11-50"
   "University of Amsterdam|UvA": "11-50"
 
@@ -31,6 +35,8 @@ universities:
   "University of Glasgow": "51-100"
   "Lunds universitet|Lund University": "51-100"
   "University of Manchester": "51-100"
+  "Osaka University|大阪大学": "51-100"                   # QS 2026: 68
+  "Institute of Science Tokyo|Tokyo Institute of Technology|東京工業大学": "51-100"
   "University of Birmingham": "51-100"            # QS 2026: 76
   "Durham University|University of Durham": "51-100"   # QS 2026: 94（=94）
   "London School of Economics|\\bLSE\\b": "51-100"      # QS 2026: 56
@@ -51,6 +57,13 @@ universities:
   "University of Exeter": "101-200"               # QS 2026: 155（2027: 136）
   "University of Oslo|Universitetet i Oslo": "101-200"   # QS 2026: 119
   "University of Liverpool": "101-200"
+  "Tohoku University|東北大学": "101-200"
+  "Kyushu University|九州大学": "101-200"
+  "Nagoya University|名古屋大学": "101-200"
+  "Hokkaido University|北海道大学": "101-200"
+  "University of Hong Kong|\\bHKU\\b": "11-50"
+  "Chinese University of Hong Kong|\\bCUHK\\b": "51-100"
+  "Hong Kong University of Science|\\bHKUST\\b": "51-100"
   # 大學附設醫院，跟著母校的名次走
   "Universitair Medisch Centrum Groningen|\\bUMCG\\b": "101-200"
 
@@ -70,6 +83,10 @@ universities:
   "University of East Anglia|\\bUEA\\b": "201-500"      # QS 2026: 381
   "Swansea University|Prifysgol Abertawe": "201-500"  # QS 2026: 292
   "Politecnico di Torino": "201-500"
+  "Waseda|早稲田": "201-500"
+  "Keio|慶應": "201-500"
+  "Singapore Management University|\\bSMU\\b": "201-500"
+  "Singapore University of Technology and Design|\\bSUTD\\b": "201-500"
   "City St George|City, University of London": "201-500"
   "Karolinska": "101-200"
 
@@ -89,4 +106,6 @@ universities:
   "Hochschule Luzern": "未列入"
   "London Business School": "未列入"              # 商學院，綜合排名裡沒有
   "Cranfield University": "未列入"                # 只收研究生，綜合排名裡沒有
+  "Okinawa Institute of Science|\\bOIST\\b": "未列入"      # 只有研究所，不進綜合排名
+  "A\\*STAR|Agency for Science, Technology and Research": "未列入"
   "Amsterdam University of Applied Sciences|\\bAUAS\\b|\\bHvA\\b": "未列入"

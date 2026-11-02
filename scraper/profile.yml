@@ -92,6 +92,7 @@ mismatch:
 # 硬條件：命中就是排除，不用再看分數。
 blockers:
   fee_home: true          # 只收 home 學費身分的英國 studentship（你是國際生）
+  fee_self: true          # 明寫自費、沒有獎助的
   postdoc: true           # 內文其實在徵博後
   expired: true           # 截止日過了
   languages:              # 這些語言「必要」的缺不能投（你只有英文和中文）
@@ -104,3 +105,4 @@ blockers:
     - 法文
     - 義大利文
     - 西班牙文
+    - 日文          # CV 上是 beginner，要求日文的缺投不了

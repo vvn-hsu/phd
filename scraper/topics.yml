@@ -110,6 +110,8 @@ languages:
   French: 法文
   Italian: 義大利文
   Spanish: 西班牙文
+  Japanese: 日文
+  Mandarin: 中文
 
 # 只用來貼標籤、不算 HCI 分數。純粹為了能一眼掃出這個職缺在做什麼。
 fields:

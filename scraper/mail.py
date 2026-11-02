@@ -73,7 +73,8 @@ def job_block(job: dict, show_tags: bool = True) -> str:
     if kind:
         facts.append(kind)
     fee = {"home": "⚠ 只收 home 學費身分", "international": "國際生可申請",
-           "funded": "全額補助"}.get((job.get("funding") or {}).get("fee", ""), "")
+           "funded": "全額補助", "mext": "MEXT 獎學金",
+           "self": "⚠ 自費、沒有獎助"}.get((job.get("funding") or {}).get("fee", ""), "")
     if fee:
         facts.append(fee)
     if (job.get("funding") or {}).get("pay"):
