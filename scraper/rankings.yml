@@ -30,6 +30,9 @@ universities:
   "University of Glasgow": "51-100"
   "Lunds universitet|Lund University": "51-100"
   "University of Manchester": "51-100"
+  "University of Birmingham": "51-100"            # QS 2026: 76
+  "Durham University|University of Durham": "51-100"   # QS 2026: 94（=94）
+  "London School of Economics|\\bLSE\\b": "51-100"      # QS 2026: 56
 
   # 101-200
   "Utrecht University|Universiteit Utrecht": "101-200"
@@ -44,10 +47,14 @@ universities:
   "Technical University of Denmark|\\bDTU\\b": "101-200"
   "Aalto": "101-200"
   "University of Helsinki": "101-200"
+  "University of Exeter": "101-200"               # QS 2026: 155（2027: 136）
+  "University of Oslo|Universitetet i Oslo": "101-200"   # QS 2026: 119
+  # 大學附設醫院，跟著母校的名次走
+  "Universitair Medisch Centrum Groningen|\\bUMCG\\b": "101-200"
 
   # 201-500
   "Vrije Universiteit Amsterdam|\\bVU\\b": "201-500"
-  "Maastricht University": "201-500"
+  "Maastricht University|Universiteit Maastricht": "201-500"
   "Radboud Universit": "201-500"
   "University of Twente": "201-500"
   "Tilburg University": "201-500"
@@ -58,11 +65,16 @@ universities:
   "University of Vienna|Universit[aä]t Wien": "201-500"
   "University of Basel": "201-500"
   "University of Gothenburg|G[oö]teborgs universitet": "201-500"
+  "University of East Anglia|\\bUEA\\b": "201-500"      # QS 2026: 381
+  "Swansea University|Prifysgol Abertawe": "201-500"  # QS 2026: 292
+  "Politecnico di Torino": "201-500"
   "Karolinska": "101-200"
 
   # 501+（綜合排名榜上有，但在 500 名之後）
   "Lule[aå] tekniska|Lule[aå] University": "501+"
   "Mittuniversitetet|Mid Sweden University": "501+"
+  "University of Plymouth": "501+"
+  "University of East London": "501+"
 
   # 未列入（綜合排名裡沒有，或本來就不是綜合大學）
   "Open Universiteit": "未列入"
@@ -72,3 +84,5 @@ universities:
   "Max Planck|IMPRS": "未列入"
   "Vlerick": "未列入"
   "Hochschule Luzern": "未列入"
+  "London Business School": "未列入"              # 商學院，綜合排名裡沒有
+  "Amsterdam University of Applied Sciences|\\bAUAS\\b|\\bHvA\\b": "未列入"

@@ -734,6 +734,17 @@ def jsonld_to_fields(node: dict) -> dict:
     }
 
 
+def plausible_org(name: str) -> bool:
+    """雇主名稱的基本檢查。EURAXESS 有些頁面的「Organisation」欄位後面接的是
+    研究計畫的句子，抓回來會變成 "and function of genomes, cell division…"。"""
+    name = (name or "").strip()
+    if not (3 <= len(name) <= 70):
+        return False
+    if not name[:1].isupper():
+        return False
+    return not name.endswith(("...", "\u2026", ","))
+
+
 def page_fallback_fields(html: str) -> dict:
     soup = BeautifulSoup(html, "lxml")
     title = ""
@@ -759,7 +770,7 @@ def page_fallback_fields(html: str) -> dict:
     )
     if om:
         candidate = om.group(1).strip(" ·-–—:")
-        if 3 <= len(candidate) <= 70:
+        if plausible_org(candidate):
             org = candidate
 
     deadline = ""
@@ -1118,6 +1129,11 @@ def main() -> int:
     wanted = {s.strip() for s in args.only.split(",") if s.strip()}
     previous = load_previous()
     known = {job["id"]: job for job in previous.get("jobs", [])}
+    # 舊資料裡存過不像雇主名稱的東西就清掉，下一輪會重新補抓
+    for old in known.values():
+        if old.get("university") and not plausible_org(old["university"]):
+            log(f"清掉不像學校名稱的欄位：{old['university'][:60]}")
+            old.pop("university")
 
     fresh: dict[str, dict] = {}
     reports = []

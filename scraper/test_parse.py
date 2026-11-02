@@ -301,6 +301,11 @@ def main():
     check("HCI 職缺不該被扣分",
           run.penalty_tags("eye-tracking study of pedestrian crossing behaviour"), [])
 
+    check("EURAXESS 把研究計畫的句子當成雇主名稱時要擋掉",
+          run.plausible_org("and function of genomes, cell division and cell..."), False)
+    check("正常的學校名稱不會被擋",
+          run.plausible_org("Delft University of Technology"), True)
+
     check("CDT 的行政職不是博士缺",
           run.is_phd("Communications Manager - Centre for Doctoral Training in AI"), False)
     check("標題有 PhD 的行政字眼不誤殺",
