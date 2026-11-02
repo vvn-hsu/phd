@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02T13:11:48+00:00",
+ "generated_at": "2026-11-02T20:54:47+00:00",
  "date": "2026-11-02",
  "topic_thresholds": {
   "broad": 2,
@@ -16,10 +16,10 @@
   "未列入"
  ],
  "counts": {
-  "open": 144,
-  "new_today": 16,
-  "closed_kept": 557,
-  "hci_broad": 14,
+  "open": 154,
+  "new_today": 31,
+  "closed_kept": 573,
+  "hci_broad": 12,
   "expired": 1,
   "postdoc_suspect": 4,
   "fit_strong": 1,
@@ -33,7 +33,7 @@
    "country_zh": "荷蘭",
    "homepage": "https://www.academictransfer.com/en/jobs?q=human-computer+interaction",
    "status": "ok",
-   "count": 31,
+   "count": 28,
    "url_used": "12 個搜尋網址",
    "error": ""
   },
@@ -44,7 +44,7 @@
    "country_zh": "跨國／歐洲",
    "homepage": "https://euraxess.ec.europa.eu/jobs/search?keywords=human-computer%20interaction",
    "status": "ok",
-   "count": 1,
+   "count": 2,
    "url_used": "10 個搜尋網址",
    "error": ""
   },
@@ -66,8 +66,8 @@
    "country_zh": "跨國／歐洲",
    "homepage": "https://euraxess.ec.europa.eu/jobs/search",
    "status": "ok",
-   "count": 6,
-   "url_used": "https://euraxess.ec.europa.eu/jobs/search",
+   "count": 7,
+   "url_used": "https://euraxess.ec.europa.eu/jobs/search?sort%5Bname%5D=created&sort%5Bdirection%5D=DESC&f%5B0%5D=job_research_profile%3A447",
    "error": ""
   },
   {
@@ -99,7 +99,7 @@
    "country_zh": "英國",
    "homepage": "https://www.jobs.ac.uk/search/?keywords=PhD",
    "status": "ok",
-   "count": 5,
+   "count": 15,
    "url_used": "https://www.jobs.ac.uk/search/?keywords=PhD&sortOrder=1",
    "error": ""
   },
@@ -121,7 +121,7 @@
    "country_zh": "英國",
    "homepage": "https://www.jobs.ac.uk/search/?keywords=human-computer+interaction",
    "status": "ok",
-   "count": 21,
+   "count": 26,
    "url_used": "9 個搜尋網址",
    "error": ""
   },
@@ -296,6 +296,86 @@
  },
  "jobs": [
   {
+   "id": "92aee13ab29726e8",
+   "source": "academictransfer",
+   "source_name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
+   "university": "University of Amsterdam (UvA)",
+   "country": "NL",
+   "title": "Two PhD Positions in AI for Science at the University of Amsterdam",
+   "url": "https://www.academictransfer.com/en/jobs/365229/two-phd-positions-in-ai-for-science-at-the-university-of-amsterdam/",
+   "city": "Amsterdam",
+   "location": "Amsterdam, NL",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2027-01-15",
+   "summary": "Curious how foundation models can accelerate environmental science, and how they reach their answers? Join Us! Foundation models are changing how science is done. To truly help scientists, they must work with real scientific data, and we must understand how they reach their answers. That is the challenge you will take on. We are looking for two PhD candidates (four years each) to make AI both usef",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "Python"
+   ],
+   "page_penalties": [
+    "農業生態"
+   ],
+   "page_fit": {
+    "near": [
+     "社會運算"
+    ],
+    "methods": [
+     "程式與統計"
+    ],
+    "mismatch": [
+     "需要 ML 模型開發"
+    ]
+   },
+   "page_funding": {
+    "pay": "Salary indication €3204"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "job",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [
+    "農業生態"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "氣候環境"
+   ],
+   "tools": [
+    "Python"
+   ],
+   "funding": {
+    "pay": "Salary indication €3204"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [
+    "社會運算"
+   ],
+   "fit_gap": [
+    "需要 ML 模型開發"
+   ],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "荷蘭",
+   "kind": "job",
+   "rank_band": "11-50",
+   "rank_order": 1
+  },
+  {
    "id": "0e531ab3e5af7b7b",
    "source": "academictransfer",
    "source_name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
@@ -312,23 +392,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
+   "enrich_attempts": 1,
+   "score_version": 17,
+   "country_zh": "荷蘭",
    "page_penalties": [
     "生醫材料"
    ],
-   "page_fit": {},
    "page_funding": {
     "pay": "€3724 per maand"
    },
-   "page_languages": [],
-   "page_supervisor": "",
    "page_kind": "job",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 1,
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -350,10 +423,9 @@
    "fit_gap": [],
    "fit_block": [],
    "fit_band": "弱相關",
-   "country_zh": "荷蘭",
    "kind": "job",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "43dc756e51e9984b",
@@ -399,7 +471,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
-   "status": "open",
+   "status": "closed",
    "penalties": [],
    "topic_score": 2,
    "topics": [
@@ -446,15 +518,20 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
+   "enrich_attempts": 1,
+   "score_version": 17,
    "page_tools": [
     "Python"
    ],
+   "country_zh": "荷蘭",
    "page_penalties": [
     "基因體學",
     "藥學腫瘤"
    ],
+   "page_funding": {
+    "pay": "Salary indication €3217"
+   },
+   "page_kind": "job",
    "page_fit": {
     "methods": [
      "訪談",
@@ -464,17 +541,6 @@
      "需要實驗室生醫"
     ]
    },
-   "page_funding": {
-    "pay": "Salary indication €3217"
-   },
-   "page_languages": [],
-   "page_supervisor": "",
-   "page_kind": "job",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 1,
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -505,16 +571,76 @@
    ],
    "fit_block": [],
    "fit_band": "弱相關",
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "未列入",
    "rank_order": 6
   },
   {
+   "id": "bb6f3f60f38bae14",
+   "source": "euraxess_hci",
+   "source_name": "EURAXESS（HCI 關鍵字搜尋）",
+   "university": "",
+   "country": "EU",
+   "title": "PhD in prevention research (m/f/d/x)",
+   "url": "https://euraxess.ec.europa.eu/jobs/476908",
+   "city": "",
+   "location": "",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2026-11-16",
+   "summary": "Advance your research career and opportunities with EURAXESS. Discover jobs, funding, and partnerships, and programmes for innovation and career growth.",
+   "title_guessed": false,
+   "found_via": "human-computer interaction",
+   "topic_boost": 3,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [
+    "材料合成",
+    "農業生態",
+    "基礎物理"
+   ],
+   "page_fit": {},
+   "page_funding": {},
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "query_ok": false,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [
+    "材料合成",
+    "農業生態",
+    "基礎物理"
+   ],
+   "topic_score": 0,
+   "topics": [
+    "HCI 關鍵字搜尋（弱）"
+   ],
+   "fields": [],
+   "tools": [],
+   "funding": {},
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "跨國／歐洲",
+   "kind": "job",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
    "id": "b5337011a3430707",
    "source": "euraxess_hci",
    "source_name": "EURAXESS（HCI 關鍵字搜尋）",
-   "university": "and function of genomes, cell division and cell...",
    "country": "EU",
    "title": "PhD in biological sciences offer M/F",
    "url": "https://euraxess.ec.europa.eu/jobs/476801",
@@ -550,7 +676,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "材料合成",
     "農業生態",
@@ -617,7 +743,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "基因體學",
     "農業生態"
@@ -643,6 +769,870 @@
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
+  },
+  {
+   "id": "4117ed1d9afdace7",
+   "source": "jobsacuk_hci",
+   "source_name": "jobs.ac.uk（HCI 關鍵字搜尋）",
+   "university": "University of Exeter",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: SCALE-Decode: Unlocking Growth Workflows in UK SMEs",
+   "url": "https://www.jobs.ac.uk/job/DTL050/phd-studentship-scale-decode-unlocking-growth-workflows-in-uk-smes",
+   "city": "Exeter",
+   "location": "Exeter, United Kingdom",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2026-12-08",
+   "summary": "Small and medium-sized enterprises (SMEs) underpin UK employment and innovation, yet many struggle to turn early success into sustainable growth. Rising demand can expose informal routines, disconnected systems, founder dependence and employee overload. Managers may see delayed delivery or lost sales without understanding how constraints travel across the firm. Research and policy treat issues sep",
+   "title_guessed": false,
+   "found_via": "digital wellbeing",
+   "topic_boost": 3,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "工作坊",
+    "田野／民族誌",
+    "原型製作"
+   ],
+   "page_penalties": [
+    "基因體學"
+   ],
+   "page_fit": {
+    "methods": [
+     "訪談",
+     "問卷",
+     "田野研究",
+     "質性分析",
+     "原型與工作坊"
+    ]
+   },
+   "page_funding": {
+    "pay": "stipend of £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "query_ok": false,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [
+    "基因體學"
+   ],
+   "topic_score": 0,
+   "topics": [
+    "HCI 關鍵字搜尋（弱）"
+   ],
+   "fields": [
+    "氣候環境",
+    "法律政策"
+   ],
+   "tools": [
+    "工作坊",
+    "田野／民族誌",
+    "原型製作"
+   ],
+   "funding": {
+    "pay": "stipend of £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "101-200",
+   "rank_order": 3,
+   "also_at": [
+    {
+     "source": "jobs.ac.uk（HCI 關鍵字搜尋）",
+     "url": "https://www.jobs.ac.uk/job/DTK946/phd-studentship-scale-decode-unlocking-growth-workflows-in-uk-smes"
+    }
+   ]
+  },
+  {
+   "id": "02b19320bc72d294",
+   "source": "jobsacuk_hci",
+   "source_name": "jobs.ac.uk（HCI 關鍵字搜尋）",
+   "university": "University of East Anglia",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Reliable and Generalisable Knowledge Editing in Large Language Models",
+   "url": "https://www.jobs.ac.uk/job/DTM818/phd-studentship-reliable-and-generalisable-knowledge-editing-in-large-language-models",
+   "city": "Norwich",
+   "location": "Norwich, United Kingdom",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2027-02-24",
+   "summary": "About the Project Primary Supervisor - Dr Farhana Ferdousi Liza Emerging techniques in model editing , also discussed in the literature as knowledge editing and memory editing , offer promising approaches for correcting erroneous or harmful information, incorporating specialised knowledge, and improving the usability, security, and accountability of large language models (LLMs). The overall aim of",
+   "title_guessed": false,
+   "found_via": "human-computer interaction",
+   "topic_boost": 3,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [
+    "材料合成"
+   ],
+   "page_fit": {
+    "core": [
+     "人與 AI 互動"
+    ]
+   },
+   "page_funding": {
+    "pay": "stipend rate is £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "query_ok": false,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [
+    "材料合成"
+   ],
+   "topic_score": 0,
+   "topics": [
+    "HCI 關鍵字搜尋（弱）"
+   ],
+   "fields": [
+    "機器學習"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "stipend rate is £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 3,
+   "fit_why": [
+    "人與 AI 互動"
+   ],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "stretch",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "201-500",
+   "rank_order": 4
+  },
+  {
+   "id": "e9e69309facae2cc",
+   "source": "jobsacuk_hci",
+   "source_name": "jobs.ac.uk（HCI 關鍵字搜尋）",
+   "university": "University of East Anglia",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Next-Generation Brushless Doubly Fed Generators: Electromagnetic Design and Optimisation",
+   "url": "https://www.jobs.ac.uk/job/DTM762/phd-studentship-next-generation-brushless-doubly-fed-generators-electromagnetic-design-and-optimisation",
+   "city": "Norwich",
+   "location": "Norwich, United Kingdom",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2027-02-24",
+   "summary": "Primary Supervisor: Dr Malihe Heidary Brushless Doubly Fed Machines (BDFMs) offer a promising solution for offshore wind energy applications due to their brushless operation, reduced maintenance requirements, and ability to operate with partially rated power converters. However, their wider adoption is limited by challenges such as relatively low torque density, complex electromagnetic interaction",
+   "title_guessed": false,
+   "found_via": "interaction design",
+   "topic_boost": 3,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [
+    "材料合成"
+   ],
+   "page_fit": {
+    "mismatch": [
+     "需要工程模擬"
+    ]
+   },
+   "page_funding": {
+    "pay": "stipend rate is £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "Dr Malihe Heidary Brushless Doubly",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "query_ok": false,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [
+    "材料合成"
+   ],
+   "topic_score": 0,
+   "topics": [
+    "HCI 關鍵字搜尋（弱）"
+   ],
+   "fields": [
+    "能源",
+    "數學最佳化"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "stipend rate is £21,805"
+   },
+   "languages": [],
+   "supervisor": "Dr Malihe Heidary Brushless Doubly",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [
+    "需要工程模擬"
+   ],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "201-500",
+   "rank_order": 4
+  },
+  {
+   "id": "3d4206018c9baa1f",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of East Anglia",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: New Dimensions in Ultrafast Spectroscopy with Structured Light",
+   "url": "https://www.jobs.ac.uk/job/DTM865/phd-studentship-new-dimensions-in-ultrafast-spectroscopy-with-structured-light",
+   "city": "Norwich",
+   "location": "Norwich, United Kingdom",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2027-02-24",
+   "summary": "Primary Supervisor - Dr Kayn Forbes Ultrafast spectroscopy allows us to follow some of the fastest processes in nature, capturing the motion of energy, electrons and molecular excitations on femtosecond timescales. In this sense, it offers a route towards making “molecular movies”: watching how a system responds immediately after absorbing light and following its evolution in real time. Understand",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [
+    "材料合成",
+    "量子元件",
+    "藥學腫瘤"
+   ],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "stipend rate is £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [
+    "材料合成",
+    "量子元件",
+    "藥學腫瘤"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "能源",
+    "生命科學"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "stipend rate is £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "201-500",
+   "rank_order": 4
+  },
+  {
+   "id": "94fa4d0bf7eda535",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of East Anglia",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: N-Heterocyclic Carbene-Stabilised Gold Nanoclusters for Intracellular Catalysis",
+   "url": "https://www.jobs.ac.uk/job/DTM890/phd-studentship-n-heterocyclic-carbene-stabilised-gold-nanoclusters-for-intracellular-catalysis",
+   "city": "Norwich",
+   "location": "Norwich, United Kingdom",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2027-02-24",
+   "summary": "Primary Supervisor - Dr Sophie Thomas The ability to perform selective chemical reactions inside living cells offers exciting opportunities for chemical biology, biotechnology, and medicine. This PhD project will explore the design, synthesis, and biological application of atomically precise gold nanoclusters stabilised by N-heterocyclic carbene (NHC) ligands for use as intracellular catalysts. NH",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [
+    "材料合成",
+    "藥學腫瘤",
+    "化學分析"
+   ],
+   "page_fit": {
+    "mismatch": [
+     "需要實驗室生醫"
+    ]
+   },
+   "page_funding": {
+    "pay": "stipend rate is £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [
+    "材料合成",
+    "藥學腫瘤",
+    "化學分析"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "材料化學",
+    "生命科學"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "stipend rate is £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [
+    "需要實驗室生醫"
+   ],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "201-500",
+   "rank_order": 4
+  },
+  {
+   "id": "4af72243ada29d45",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of East Anglia",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Machine Learning-Guided Engineering of Next-Generation Cancer Therapeutics",
+   "url": "https://www.jobs.ac.uk/job/DTM835/phd-studentship-machine-learning-guided-engineering-of-next-generation-cancer-therapeutics",
+   "city": "Norwich",
+   "location": "Norwich, United Kingdom",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2027-02-24",
+   "summary": "Primary Supervisor - Dr Amit Sachdeva Monoclonal antibodies have transformed the treatment of cancer by selectively recognising tumour-associated receptors and triggering cellular responses that lead to cancer cell death. Despite their clinical success, conventional full-length antibodies often show limited effectiveness against solid tumours because their large molecular size restricts deep penet",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [
+    "基因體學",
+    "材料合成",
+    "藥學腫瘤"
+   ],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "stipend rate is £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [
+    "基因體學",
+    "材料合成",
+    "藥學腫瘤"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "醫療",
+    "機器學習",
+    "生命科學"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "stipend rate is £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "201-500",
+   "rank_order": 4
+  },
+  {
+   "id": "b4df61a28f3b003a",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of East Anglia",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Intelligent Coordination of Aerial and Ground Vehicles for Future Urban Mobility",
+   "url": "https://www.jobs.ac.uk/job/DTM894/phd-studentship-intelligent-coordination-of-aerial-and-ground-vehicles-for-future-urban-mobility",
+   "city": "Norwich",
+   "location": "Norwich, United Kingdom",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2027-02-24",
+   "summary": "Primary Supervisor - Dr Xu Zhang Urban mobility is undergoing rapid transformation through advances in autonomous aerial systems, electric vehicles (EVs), artificial intelligence, and connected transport technologies. While drones offer flexibility and rapid access to locations that may be difficult or inefficient to reach by road, ground vehicles provide greater carrying capacity, endurance, and ",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [
+    "材料合成"
+   ],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "stipend rate is £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [
+    "材料合成"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "機器學習",
+    "交通移動",
+    "建築城市"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "stipend rate is £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "201-500",
+   "rank_order": 4
+  },
+  {
+   "id": "5154dd7ca5d5906d",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of East Anglia",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Human Referenced Colour Processing",
+   "url": "https://www.jobs.ac.uk/job/DTM841/phd-studentship-human-referenced-colour-processing",
+   "city": "Norwich",
+   "location": "Norwich, United Kingdom",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2027-02-24",
+   "summary": "We live in an era where machine learning (ML) based systems can solve a wide variety of image-based problems. However, the architectures deployed are not biologically plausible and the training required to use them can be orders of magnitude more complex than that available to human vision. Further, there are still visual competences where we as human observers outperform even the most complex net",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [
+    "材料合成",
+    "化學分析"
+   ],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "£21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [
+    "材料合成",
+    "化學分析"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "機器學習",
+    "生命科學",
+    "建築城市"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "£21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "201-500",
+   "rank_order": 4
+  },
+  {
+   "id": "e7156d3f87d60dd8",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Oxford",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Fatigue Failure of Target Graphite",
+   "url": "https://www.jobs.ac.uk/job/DTM864/phd-studentship-fatigue-failure-of-target-graphite",
+   "city": "Oxford",
+   "location": "Oxford, United Kingdom",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2026-12-02",
+   "summary": "Research Studentship in Graphite Composite Materials for High-Power Neutrino Targets Project title: Fatigue Failure of Target Graphite 3.5-year DPhil studentship Project title: Fatigue Failure of Target Graphite Supervisors: Prof Dong (Lilly) Liu (Oxford), Dr Kavin Ammigan (Fermilab) The Department of Engineering Science at the University of Oxford invites applications for a fully funded D.Phil. p",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "Python",
+    "MATLAB"
+   ],
+   "page_penalties": [
+    "材料合成",
+    "化學分析"
+   ],
+   "page_fit": {
+    "methods": [
+     "程式與統計"
+    ]
+   },
+   "page_funding": {
+    "fee": "funded",
+    "pay": "£21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "Prof Dong",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [
+    "材料合成",
+    "化學分析"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "材料化學"
+   ],
+   "tools": [
+    "Python",
+    "MATLAB"
+   ],
+   "funding": {
+    "fee": "funded",
+    "pay": "£21,805"
+   },
+   "languages": [],
+   "supervisor": "Prof Dong",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "4705a7e508d8377e",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "Cranfield University",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Distributed Machine Learning over Mobile Networks",
+   "url": "https://www.jobs.ac.uk/job/DTL941/phd-studentship-distributed-machine-learning-over-mobile-networks",
+   "city": "Cranfield",
+   "location": "Cranfield, United Kingdom",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2027-02-03",
+   "summary": "This is a project focused on how AI will provide a seamless service to mobile users of tomorrow. It is expected the student will have a background in AI with a curiosity on wireless networking. Machine learning that occurs over a distributed network is attractive to reduce latency, ensure data and compute is sovereignly hosted, and utilise available edge computation resources. There are many chall",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {},
+   "page_funding": {
+    "fee": "home",
+    "pay": "£21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "Prof. Weisi Guo",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "機器學習"
+   ],
+   "tools": [],
+   "funding": {
+    "fee": "home",
+    "pay": "£21,805"
+   },
+   "languages": [],
+   "supervisor": "Prof. Weisi Guo",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [
+    "只收 home 學費身分"
+   ],
+   "fit_band": "排除",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "1777e26845676b11",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of East Anglia",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Development of Lossy Mode Resonance Optical Fibre Sensors for Energy Applications",
+   "url": "https://www.jobs.ac.uk/job/DTM857/phd-studentship-development-of-lossy-mode-resonance-optical-fibre-sensors-for-energy-applications",
+   "city": "Norwich",
+   "location": "Norwich, United Kingdom",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2027-02-24",
+   "summary": "Primary Supervisor - Dr Keith M. Alcock Through your insights and innovation, you will help shape the future of optical sensing for energy applications. The race is on to develop sensors that enable smarter, safer, and efficient energy systems. One technology to achieve this is Lossy Mode Resonance (LMR), which occurs when light guided in an optical fibre couples to a lossy mode in a suitably engi",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [
+    "原型製作"
+   ],
+   "page_penalties": [
+    "材料合成",
+    "量子元件",
+    "化學分析"
+   ],
+   "page_fit": {
+    "methods": [
+     "原型與工作坊"
+    ]
+   },
+   "page_funding": {
+    "pay": "stipend rate is £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [
+    "材料合成",
+    "量子元件",
+    "化學分析"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "能源",
+    "光電半導體"
+   ],
+   "tools": [
+    "原型製作"
+   ],
+   "funding": {
+    "pay": "stipend rate is £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "201-500",
+   "rank_order": 4
+  },
+  {
+   "id": "f500ef5507e950f2",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of East Anglia",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Curvature, Topology and Nonlinear Excitations in Quantum Fluids",
+   "url": "https://www.jobs.ac.uk/job/DTM874/phd-studentship-curvature-topology-and-nonlinear-excitations-in-quantum-fluids",
+   "city": "Norwich",
+   "location": "Norwich, United Kingdom",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2027-02-24",
+   "summary": "Primary Supervisor - Dr Davide Proment This PhD will explore an emerging frontier in quantum-fluid physics: the interplay between geometry, topology and nonlinear dynamics in superfluid helium films and ultracold Bose–Einstein condensates confined to curved two-dimensional surfaces. Recent advances are making it possible to create quantum fluids on spherical shells and other unusual geometries. Ou",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [
+    "材料合成",
+    "化學分析"
+   ],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "stipend rate is £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [
+    "材料合成",
+    "化學分析"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "量子"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "stipend rate is £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "201-500",
+   "rank_order": 4
   },
   {
    "id": "64d1fa3639449033",
@@ -690,7 +1680,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "基因體學",
     "材料合成",
@@ -722,6 +1712,149 @@
    "kind": "studentship",
    "rank_band": "",
    "rank_order": 99
+  },
+  {
+   "id": "d1adfd0fc3d6e563",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of East Anglia",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: Alternative splicing regulation by snRNA modifications",
+   "url": "https://www.jobs.ac.uk/job/DTM852/phd-studentship-alternative-splicing-regulation-by-snrna-modifications",
+   "city": "Norwich",
+   "location": "Norwich, United Kingdom",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2027-02-24",
+   "summary": "Primary Supervisor - Dr Alper Akay How do snRNA modifications regulate RNA splicing? Our RNA (epi)genetics laboratory addresses this broad question using the nematode Caenorhabditis elegans as an animal model. RNA is at the centre of many gene regulatory processes. There are currently more than 150 distinct chemical modifications on RNA, and a greater number of proteins are required for their synt",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [
+    "基因體學",
+    "材料合成",
+    "藥學腫瘤"
+   ],
+   "page_fit": {
+    "mismatch": [
+     "需要實驗室生醫"
+    ]
+   },
+   "page_funding": {
+    "pay": "stipend rate is £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [
+    "基因體學",
+    "材料合成",
+    "藥學腫瘤"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "生命科學",
+    "法律政策"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "stipend rate is £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [
+    "需要實驗室生醫"
+   ],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "201-500",
+   "rank_order": 4
+  },
+  {
+   "id": "e11310f21b0b556e",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of East Anglia",
+   "country": "United Kingdom",
+   "title": "PhD Studentship: AI-Driven Condition Monitoring System for Offshore Wind Generators",
+   "url": "https://www.jobs.ac.uk/job/DTM858/phd-studentship-ai-driven-condition-monitoring-system-for-offshore-wind-generators",
+   "city": "Norwich",
+   "location": "Norwich, United Kingdom",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2027-02-24",
+   "summary": "Primary Supervisor - Dr Salman Abdi Jalebi Reliability is essential to the continued expansion of wind power, particularly offshore, which contributes around 10–15% of UK electricity generation and plays a key role in achieving net-zero targets. Condition monitoring systems (CMSs) improve turbine reliability and availability by enabling preventive maintenance, reducing operational costs and the le",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [
+    "材料合成"
+   ],
+   "page_fit": {
+    "mismatch": [
+     "需要工程模擬"
+    ]
+   },
+   "page_funding": {
+    "pay": "stipend rate is £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [
+    "材料合成"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [],
+   "tools": [],
+   "funding": {
+    "pay": "stipend rate is £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [
+    "需要工程模擬"
+   ],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "201-500",
+   "rank_order": 4
   },
   {
    "id": "2af6c6d1624ae0cb",
@@ -763,7 +1896,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "基因體學",
     "材料合成",
@@ -790,6 +1923,126 @@
    "fit_band": "弱相關",
    "country_zh": "英國",
    "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "5d05b526d73fb437",
+   "source": "euraxess",
+   "source_name": "EURAXESS（全歐洲）",
+   "university": "",
+   "country": "EU",
+   "title": "PhD Student in Aqueous Dual-Ion Batteries",
+   "url": "https://euraxess.ec.europa.eu/jobs/476890",
+   "city": "",
+   "location": "",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2026-11-16",
+   "summary": "Advance your research career and opportunities with EURAXESS. Discover jobs, funding, and partnerships, and programmes for innovation and career growth.",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [
+    "材料合成",
+    "農業生態",
+    "基礎物理"
+   ],
+   "page_fit": {},
+   "page_funding": {},
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [
+    "材料合成",
+    "農業生態",
+    "基礎物理"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [],
+   "tools": [],
+   "funding": {},
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "跨國／歐洲",
+   "kind": "job",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "097fa5b8ea781e1c",
+   "source": "euraxess",
+   "source_name": "EURAXESS（全歐洲）",
+   "university": "",
+   "country": "EU",
+   "title": "PhD Research Fellow in Systems Engineering – Systems Engineering Learning Ecosystem: competencies for systems engineering, AI and business innovation",
+   "url": "https://euraxess.ec.europa.eu/jobs/476876",
+   "city": "",
+   "location": "",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2026-11-16",
+   "summary": "Advance your research career and opportunities with EURAXESS. Discover jobs, funding, and partnerships, and programmes for innovation and career growth.",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [
+    "材料合成",
+    "農業生態",
+    "基礎物理"
+   ],
+   "page_fit": {},
+   "page_funding": {},
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [
+    "材料合成",
+    "農業生態",
+    "基礎物理"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "經濟商管"
+   ],
+   "tools": [],
+   "funding": {},
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "跨國／歐洲",
+   "kind": "job",
    "rank_band": "",
    "rank_order": 99
   },
@@ -833,7 +2086,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
-   "status": "open",
+   "status": "closed",
    "penalties": [],
    "topic_score": 0,
    "topics": [],
@@ -858,6 +2111,139 @@
    "kind": "job",
    "rank_band": "201-500",
    "rank_order": 4
+  },
+  {
+   "id": "60e7545191350e4c",
+   "source": "academictransfer",
+   "source_name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
+   "university": "Delft University of Technology (TU Delft)",
+   "country": "NL",
+   "title": "PhD Position Sensing Viscosity with Ultrasound",
+   "url": "https://www.academictransfer.com/en/jobs/365235/phd-position-sensing-viscosity-with-ultrasound/",
+   "city": "Delft",
+   "location": "Delft, NL",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2026-11-29",
+   "summary": "Develop innovative ultrasound technology to measure the viscosity of flowing fluids in real time. Work closely with the University of Twente and leading industry partners to advance more efficient industrial processes, reduce waste and enable more precise medical applications. Job description Many industrial and medical processes rely on accurate, continuous measurements of fluid properties, such ",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [
+    "基礎物理"
+   ],
+   "page_fit": {
+    "mismatch": [
+     "需要工程模擬"
+    ]
+   },
+   "page_funding": {
+    "pay": "Salary indication €3204"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "job",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [
+    "基礎物理"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "醫療",
+    "音訊語音"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "Salary indication €3204"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [
+    "需要工程模擬"
+   ],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "荷蘭",
+   "kind": "job",
+   "rank_band": "11-50",
+   "rank_order": 1
+  },
+  {
+   "id": "4c2451cadcb35cfd",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "City St George’s, University of London",
+   "country": "United Kingdom",
+   "title": "PhD Law Scholarship for Black British Researchers – September 2027 Entry",
+   "url": "https://www.jobs.ac.uk/job/DTL189/phd-law-scholarship-for-black-british-researchers-september-2027-entry",
+   "city": "London",
+   "location": "London, United Kingdom",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2027-02-26",
+   "summary": "The City Law School, City St George’s, University of London, is offering a fully funded, three-year PhD scholarship for a Black British researcher commencing in September 2027. We welcome applications from talented and ambitious graduates who are interested in undertaking original research in any area of law. We particularly encourage applications from individuals who may not previously have consi",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {
+    "methods": [
+     "訪談"
+    ]
+   },
+   "page_funding": {
+    "fee": "funded",
+    "pay": "stipend rate (2027/28 amount to be confirmed); •"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "法律政策"
+   ],
+   "tools": [],
+   "funding": {
+    "fee": "funded",
+    "pay": "stipend rate (2027/28 amount to be confirmed); •"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 1,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
   },
   {
    "id": "c937b69c309180ad",
@@ -905,7 +2291,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
-   "status": "open",
+   "status": "closed",
    "penalties": [],
    "topic_score": 0,
    "topics": [],
@@ -936,6 +2322,68 @@
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
+  },
+  {
+   "id": "5c2b638c284be561",
+   "source": "euraxess",
+   "source_name": "EURAXESS（全歐洲）",
+   "university": "",
+   "country": "EU",
+   "title": "Linguistics and Bilingualism: Fully funded PhD Scholarship in the ESRC Welsh Graduate School for the Social Sciences (WGSSS) Linguistics and Bilingualism",
+   "url": "https://euraxess.ec.europa.eu/jobs/476903",
+   "city": "",
+   "location": "",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2026-11-16",
+   "summary": "Advance your research career and opportunities with EURAXESS. Discover jobs, funding, and partnerships, and programmes for innovation and career growth.",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [
+    "材料合成",
+    "農業生態",
+    "基礎物理"
+   ],
+   "page_fit": {},
+   "page_funding": {},
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [
+    "材料合成",
+    "農業生態",
+    "基礎物理"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "語言",
+    "社會心理"
+   ],
+   "tools": [],
+   "funding": {},
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "跨國／歐洲",
+   "kind": "job",
+   "rank_band": "",
+   "rank_order": 99
   },
   {
    "id": "b38d0dd753143943",
@@ -973,7 +2421,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
-   "status": "open",
+   "status": "closed",
    "penalties": [],
    "topic_score": 2,
    "topics": [
@@ -994,6 +2442,391 @@
    "fit_band": "弱相關",
    "country_zh": "英國",
    "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "2a7857985f5676ae",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Liverpool",
+   "country": "United Kingdom",
+   "title": "Four year fully funded Graduate Teaching Fellowships for Management PhD students",
+   "url": "https://www.jobs.ac.uk/job/DTJ720/four-year-fully-funded-graduate-teaching-fellowships-for-management-phd-students",
+   "city": "Liverpool",
+   "location": "Liverpool, United Kingdom",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2026-11-27",
+   "summary": "Are you planning to start a Management PhD in October 2027? Don’t miss the opportunity to apply for one of the University of Liverpool Management School’s 4-year Graduate Teaching Fellowships (GTF). Receiving one of our GTF gives you the funds to launch your academic career, while you gain valuable teaching training and experience to become a rounded scholar: £21,805 annual maintenance grant* (for",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {
+    "near": [
+     "學習科技"
+    ]
+   },
+   "page_funding": {
+    "fee": "funded",
+    "pay": "stipend £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "Find Operations",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "教育",
+    "經濟商管"
+   ],
+   "tools": [],
+   "funding": {
+    "fee": "funded",
+    "pay": "stipend £21,805"
+   },
+   "languages": [],
+   "supervisor": "Find Operations",
+   "expired": false,
+   "fit_score": 2,
+   "fit_why": [
+    "學習科技"
+   ],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "stretch",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "0a125965f0ac0dfe",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Liverpool",
+   "country": "United Kingdom",
+   "title": "Four year fully funded Graduate Teaching Fellowships for Economics PhD students",
+   "url": "https://www.jobs.ac.uk/job/DTJ719/four-year-fully-funded-graduate-teaching-fellowships-for-economics-phd-students",
+   "city": "Liverpool",
+   "location": "Liverpool, United Kingdom",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2026-11-27",
+   "summary": "Hours : full time Are you planning to start an Economics PhD in October 2027? Don’t miss the opportunity to apply for one of the University of Liverpool Management School’s 4-year GTFs. Receiving one of our GTF gives you the funds to launch your academic career, while you gain valuable teaching training and experience to become a rounded scholar: £21,805 annual maintenance grant* (for four years) ",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {
+    "near": [
+     "學習科技"
+    ]
+   },
+   "page_funding": {
+    "fee": "funded",
+    "pay": "stipend £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "教育",
+    "經濟商管"
+   ],
+   "tools": [],
+   "funding": {
+    "fee": "funded",
+    "pay": "stipend £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 2,
+   "fit_why": [
+    "學習科技"
+   ],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "stretch",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "54e913732c3bc5a7",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Liverpool",
+   "country": "United Kingdom",
+   "title": "Four year fully funded Graduate Teaching Fellowships for Accounting and Finance PhD students",
+   "url": "https://www.jobs.ac.uk/job/DTJ705/four-year-fully-funded-graduate-teaching-fellowships-for-accounting-and-finance-phd-students",
+   "city": "Liverpool",
+   "location": "Liverpool, United Kingdom",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2026-11-27",
+   "summary": "Hours : full time Closes: 27 November 2026 Are you planning to start an Accounting and Finance PhD in October 2027? Don’t miss the opportunity to apply for one of the University of Liverpool Management School’s 4-year Graduate Teaching Fellowships (GTF). Receiving one of our GTF gives you the funds to launch your academic career, while you gain valuable teaching training and experience to become a",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {
+    "near": [
+     "學習科技"
+    ]
+   },
+   "page_funding": {
+    "fee": "funded",
+    "pay": "stipend £21,805"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "教育",
+    "經濟商管"
+   ],
+   "tools": [],
+   "funding": {
+    "fee": "funded",
+    "pay": "stipend £21,805"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 2,
+   "fit_why": [
+    "學習科技"
+   ],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "stretch",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "5fb43f7f56f10d49",
+   "source": "euraxess",
+   "source_name": "EURAXESS（全歐洲）",
+   "university": "",
+   "country": "EU",
+   "title": "FEUP|1 AN ENTRY-LEVEL PhD RESEARCHER| INVTERM-FEUP-26-13_DoutNIvelInicial_ EcoSmarTech",
+   "url": "https://euraxess.ec.europa.eu/jobs/476899",
+   "city": "",
+   "location": "",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2026-11-16",
+   "summary": "Advance your research career and opportunities with EURAXESS. Discover jobs, funding, and partnerships, and programmes for innovation and career growth.",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [
+    "材料合成",
+    "農業生態",
+    "基礎物理"
+   ],
+   "page_fit": {},
+   "page_funding": {},
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [
+    "材料合成",
+    "農業生態",
+    "基礎物理"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [],
+   "tools": [],
+   "funding": {},
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "跨國／歐洲",
+   "kind": "job",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "61c849307820ff80",
+   "source": "euraxess",
+   "source_name": "EURAXESS（全歐洲）",
+   "university": "",
+   "country": "EU",
+   "title": "FCUP| CALL FOR RECRUITMENT OF ONE PHD RESEARCHER |ENFORCER – COMPETE2030-FEDER-03264900| Physics, Astronomy",
+   "url": "https://euraxess.ec.europa.eu/jobs/476884",
+   "city": "",
+   "location": "",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2026-11-16",
+   "summary": "Advance your research career and opportunities with EURAXESS. Discover jobs, funding, and partnerships, and programmes for innovation and career growth.",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [
+    "材料合成",
+    "農業生態",
+    "基礎物理"
+   ],
+   "page_fit": {},
+   "page_funding": {},
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [
+    "材料合成",
+    "農業生態",
+    "基礎物理"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [],
+   "tools": [],
+   "funding": {},
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "跨國／歐洲",
+   "kind": "job",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "a6b430585843dab8",
+   "source": "euraxess_hci",
+   "source_name": "EURAXESS（HCI 關鍵字搜尋）",
+   "university": "",
+   "country": "EU",
+   "title": "236/2026 - A pre-doctoral contract in procedural law.",
+   "url": "https://euraxess.ec.europa.eu/jobs/476910",
+   "city": "",
+   "location": "",
+   "department": "",
+   "posted": "2026-11-02",
+   "deadline": "2026-11-16",
+   "summary": "Advance your research career and opportunities with EURAXESS. Discover jobs, funding, and partnerships, and programmes for innovation and career growth.",
+   "title_guessed": false,
+   "found_via": "human-computer interaction",
+   "topic_boost": 3,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [
+    "材料合成",
+    "農業生態",
+    "基礎物理"
+   ],
+   "page_fit": {},
+   "page_funding": {},
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "query_ok": false,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "status": "open",
+   "penalties": [
+    "材料合成",
+    "農業生態",
+    "基礎物理"
+   ],
+   "topic_score": 0,
+   "topics": [
+    "HCI 關鍵字搜尋（弱）"
+   ],
+   "fields": [
+    "法律政策"
+   ],
+   "tools": [],
+   "funding": {},
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "跨國／歐洲",
+   "kind": "job",
    "rank_band": "",
    "rank_order": 99
   },
@@ -1041,7 +2874,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "化學分析"
    ],
@@ -1102,7 +2935,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
-   "status": "open",
+   "status": "closed",
    "penalties": [],
    "topic_score": 0,
    "topics": [],
@@ -1158,7 +2991,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
-   "status": "open",
+   "status": "closed",
    "penalties": [],
    "topic_score": 0,
    "topics": [],
@@ -1218,7 +3051,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
-   "status": "open",
+   "status": "closed",
    "penalties": [],
    "topic_score": 0,
    "topics": [],
@@ -1279,7 +3112,8 @@
    "postdoc_suspect": false,
    "score_version": 17,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -1305,7 +3139,6 @@
    ],
    "fit_block": [],
    "fit_band": "弱相關",
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -1346,7 +3179,8 @@
    "page_kind": "job",
    "postdoc_suspect": false,
    "score_version": 17,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "瑞典",
    "first_seen": "2026-11-02",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -1370,7 +3204,6 @@
    "fit_gap": [],
    "fit_block": [],
    "fit_band": "弱相關",
-   "country_zh": "瑞典",
    "kind": "job",
    "rank_band": "51-100",
    "rank_order": 2,
@@ -1385,7 +3218,6 @@
    "id": "19a70086b50d6044",
    "source": "euraxess",
    "source_name": "EURAXESS（全歐洲）",
-   "university": "and function of genomes, cell division and cell...",
    "country": "EU",
    "title": "PhD in Bioreactor-based preservation of human heart valves",
    "url": "https://euraxess.ec.europa.eu/jobs/476781",
@@ -1421,7 +3253,7 @@
    "country_zh": "跨國／歐洲",
    "first_seen": "2026-11-01",
    "last_seen": "2026-11-02",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "材料合成",
     "農業生態",
@@ -1694,7 +3526,7 @@
    },
    "first_seen": "2026-11-01",
    "last_seen": "2026-11-02",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "農業生態"
    ],
@@ -1812,31 +3644,23 @@
    "title_guessed": false,
    "found_via": "human-centered design",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
+   "enrich_attempts": 2,
+   "score_version": 17,
+   "country_zh": "荷蘭",
    "page_penalties": [
     "基礎物理",
     "藥學腫瘤",
     "生醫材料"
    ],
+   "page_funding": {
+    "pay": "Salary indication €3204"
+   },
+   "page_kind": "job",
    "page_fit": {
     "mismatch": [
      "需要工程模擬"
     ]
    },
-   "page_funding": {
-    "pay": "Salary indication €3204"
-   },
-   "page_languages": [],
-   "page_supervisor": "",
-   "page_kind": "job",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 2,
-   "country_zh": "荷蘭",
    "first_seen": "2026-10-31",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -2320,7 +4144,6 @@
    ],
    "topic_score": 0,
    "topics": [
-    "無障礙",
     "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
@@ -2338,8 +4161,8 @@
    "fit_block": [],
    "fit_band": "弱相關",
    "kind": "studentship",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "19d15cc80cf9e29d",
@@ -2358,24 +4181,15 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
+   "enrich_attempts": 2,
+   "score_version": 17,
+   "country_zh": "英國",
    "page_penalties": [
     "基因體學",
     "農業生態"
    ],
-   "page_fit": {},
-   "page_funding": {},
-   "page_languages": [],
    "page_supervisor": "Dr Harry Child",
    "page_kind": "studentship",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "query_ok": false,
-   "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 2,
-   "country_zh": "英國",
    "first_seen": "2026-10-31",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -2401,8 +4215,8 @@
    "fit_block": [],
    "fit_band": "弱相關",
    "kind": "studentship",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "501+",
+   "rank_order": 5
   },
   {
    "id": "9caa9844c9a0d2dd",
@@ -2476,26 +4290,17 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
+   "enrich_attempts": 2,
+   "score_version": 17,
    "page_tools": [
     "模擬建模"
    ],
+   "country_zh": "英國",
    "page_penalties": [
     "基因體學",
     "材料合成"
    ],
-   "page_fit": {},
-   "page_funding": {},
-   "page_languages": [],
-   "page_supervisor": "",
    "page_kind": "studentship",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "query_ok": false,
-   "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 2,
-   "country_zh": "英國",
    "first_seen": "2026-10-31",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -2524,8 +4329,8 @@
    "fit_block": [],
    "fit_band": "弱相關",
    "kind": "studentship",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "c36cc18682505915",
@@ -2745,7 +4550,6 @@
    ],
    "topic_score": 0,
    "topics": [
-    "無障礙",
     "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
@@ -2763,8 +4567,8 @@
    "fit_block": [],
    "fit_band": "弱相關",
    "kind": "studentship",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "2bc30c04f6a27f47",
@@ -2990,33 +4794,27 @@
    "title_guessed": false,
    "found_via": "human-AI interaction",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
+   "enrich_attempts": 2,
+   "score_version": 17,
    "page_tools": [
     "田野／民族誌"
    ],
+   "country_zh": "荷蘭",
    "page_penalties": [
     "農業生態"
    ],
-   "page_fit": {
-    "methods": [
-     "田野研究"
-    ]
-   },
    "page_funding": {
     "pay": "Salary indication €3204"
    },
    "page_languages": [
     "法文（加分）"
    ],
-   "page_supervisor": "",
    "page_kind": "job",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 2,
-   "country_zh": "荷蘭",
+   "page_fit": {
+    "methods": [
+     "田野研究"
+    ]
+   },
    "first_seen": "2026-10-31",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -4331,29 +6129,22 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
+   "enrich_attempts": 3,
+   "score_version": 17,
+   "country_zh": "芬蘭",
    "page_penalties": [
     "量子元件"
    ],
+   "page_funding": {
+    "fee": "funded",
+    "pay": "Salary 3142 €"
+   },
+   "postdoc_suspect": true,
    "page_fit": {
     "methods": [
      "訪談"
     ]
    },
-   "page_funding": {
-    "fee": "funded",
-    "pay": "Salary 3142 €"
-   },
-   "page_languages": [],
-   "page_supervisor": "",
-   "page_kind": "",
-   "postdoc_suspect": true,
-   "score_version": 17,
-   "employment": "[\"TEMPORARY\",\"FULL_TIME\"]",
-   "enrich_attempts": 3,
-   "country_zh": "芬蘭",
    "first_seen": "2026-10-29",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -4405,11 +6196,9 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
-   "page_penalties": [],
-   "page_fit": {},
+   "enrich_attempts": 3,
+   "score_version": 17,
+   "country_zh": "荷蘭",
    "page_funding": {
     "pay": "Salary indication €3204"
    },
@@ -4417,13 +6206,6 @@
     "荷蘭文（必要）"
    ],
    "page_supervisor": "Dr. Valérie Pattyn",
-   "page_kind": "",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 3,
-   "country_zh": "荷蘭",
    "first_seen": "2026-10-29",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -4472,30 +6254,21 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
+   "enrich_attempts": 3,
+   "score_version": 17,
+   "country_zh": "荷蘭",
    "page_penalties": [
     "量子元件",
     "化學分析"
    ],
+   "page_funding": {
+    "pay": "€3115 per month"
+   },
    "page_fit": {
     "methods": [
      "訪談"
     ]
    },
-   "page_funding": {
-    "pay": "€3115 per month"
-   },
-   "page_languages": [],
-   "page_supervisor": "",
-   "page_kind": "",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 3,
-   "country_zh": "荷蘭",
    "first_seen": "2026-10-29",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -4677,26 +6450,18 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
+   "enrich_attempts": 3,
+   "score_version": 17,
+   "country_zh": "英國",
    "page_penalties": [
     "基因體學",
     "量子元件"
    ],
-   "page_fit": {},
    "page_funding": {
     "pay": "stipend of £21,805"
    },
-   "page_languages": [],
    "page_supervisor": "Prof. Alex Jones",
    "page_kind": "studentship",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "query_ok": false,
-   "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
-   "country_zh": "英國",
    "first_seen": "2026-10-29",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -4726,8 +6491,8 @@
    "fit_block": [],
    "fit_band": "弱相關",
    "kind": "studentship",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "c30dc259beb60533",
@@ -4766,9 +6531,8 @@
    "penalties": [
     "基因體學"
    ],
-   "topic_score": 1,
+   "topic_score": 0,
    "topics": [
-    "無障礙",
     "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
@@ -4787,8 +6551,8 @@
    "fit_block": [],
    "fit_band": "弱相關",
    "kind": "studentship",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "23c804f2a3ab3661",
@@ -4882,27 +6646,18 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
+   "enrich_attempts": 3,
+   "score_version": 17,
+   "country_zh": "英國",
    "page_penalties": [
     "基因體學",
     "材料合成",
     "量子元件"
    ],
-   "page_fit": {},
    "page_funding": {
     "pay": "stipend of £21,805"
    },
-   "page_languages": [],
-   "page_supervisor": "",
    "page_kind": "studentship",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "query_ok": false,
-   "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 3,
-   "country_zh": "英國",
    "first_seen": "2026-10-29",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -4929,8 +6684,8 @@
    "fit_block": [],
    "fit_band": "弱相關",
    "kind": "studentship",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "eba034b1594a7e62",
@@ -5652,8 +7407,8 @@
    "fit_block": [],
    "fit_band": "弱相關",
    "kind": "studentship",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "9fb0a39aac1d7be8",
@@ -6285,8 +8040,8 @@
    "fit_block": [],
    "fit_band": "弱相關",
    "kind": "studentship",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "06d15249c5c1f252",
@@ -6649,8 +8404,8 @@
    "fit_block": [],
    "fit_band": "stretch",
    "kind": "studentship",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "afc3d56b55f7c132",
@@ -6775,8 +8530,8 @@
    "fit_block": [],
    "fit_band": "弱相關",
    "kind": "studentship",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "699bcb695a008d9a",
@@ -6838,8 +8593,8 @@
    "fit_block": [],
    "fit_band": "弱相關",
    "kind": "studentship",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "62134478683bdebb",
@@ -6968,8 +8723,8 @@
    "fit_block": [],
    "fit_band": "弱相關",
    "kind": "studentship",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "2ed856d8961954e8",
@@ -7222,8 +8977,8 @@
    "fit_block": [],
    "fit_band": "弱相關",
    "kind": "studentship",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "bb73a7b89ab97256",
@@ -7603,76 +9358,6 @@
    "fit_gap": [
     "需要工程模擬"
    ],
-   "fit_block": [],
-   "fit_band": "弱相關",
-   "kind": "studentship",
-   "rank_band": "",
-   "rank_order": 99
-  },
-  {
-   "id": "33e94e654b5579f6",
-   "source": "jobsacuk_hci",
-   "source_name": "jobs.ac.uk（HCI 關鍵字搜尋）",
-   "university": "University of Exeter",
-   "country": "United Kingdom",
-   "title": "PhD Studentship: SCALE-Decode: Unlocking Growth Workflows in UK SMEs",
-   "url": "https://www.jobs.ac.uk/job/DTK946/phd-studentship-scale-decode-unlocking-growth-workflows-in-uk-smes",
-   "city": "Exeter",
-   "location": "Exeter, United Kingdom",
-   "department": "",
-   "posted": "2026-10-27",
-   "deadline": "2026-12-08",
-   "summary": "Small and medium-sized enterprises (SMEs) underpin UK employment and innovation, yet many struggle to turn early success into sustainable growth. Rising demand can expose informal routines, disconnected systems, founder dependence and employee overload. Managers may see delayed delivery or lost sales without understanding how constraints travel across the firm. Research and policy treat issues sep",
-   "title_guessed": false,
-   "found_via": "digital wellbeing",
-   "topic_boost": 3,
-   "enrich_attempts": 9,
-   "score_version": 17,
-   "page_tools": [
-    "工作坊",
-    "田野／民族誌",
-    "原型製作"
-   ],
-   "country_zh": "英國",
-   "page_funding": {
-    "pay": "stipend of £21,805"
-   },
-   "page_kind": "studentship",
-   "page_fit": {
-    "methods": [
-     "訪談",
-     "問卷",
-     "田野研究",
-     "質性分析",
-     "原型與工作坊"
-    ]
-   },
-   "first_seen": "2026-10-28",
-   "last_seen": "2026-11-02",
-   "status": "open",
-   "penalties": [],
-   "topic_score": 1,
-   "topics": [
-    "HCI 關鍵字搜尋（弱）"
-   ],
-   "fields": [
-    "氣候環境",
-    "法律政策"
-   ],
-   "tools": [
-    "工作坊",
-    "田野／民族誌",
-    "原型製作"
-   ],
-   "funding": {
-    "pay": "stipend of £21,805"
-   },
-   "languages": [],
-   "supervisor": "",
-   "expired": false,
-   "fit_score": 1,
-   "fit_why": [],
-   "fit_gap": [],
    "fit_block": [],
    "fit_band": "弱相關",
    "kind": "studentship",
@@ -8126,7 +9811,7 @@
    "deadline": "2026-12-08",
    "summary": "Most organisations can demonstrate that AI works in a pilot; far fewer can sustain its value when it is embedded in complex, high-throughput operations. In supply chains, this matters not only commercially but environmentally. When AI-enabled forecasting, inventory and decision-support systems lose reliability or user trust, organisations may revert to inefficient practices, contributing to over-o",
    "title_guessed": false,
-   "found_via": "user experience",
+   "found_via": "trust in AI",
    "topic_boost": 3,
    "enrich_attempts": 9,
    "page_score": 2,
@@ -8184,8 +9869,8 @@
    "fit_block": [],
    "fit_band": "stretch",
    "kind": "studentship",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "101-200",
+   "rank_order": 3
   },
   {
    "id": "6c20c4dfa82fde6c",
@@ -8293,8 +9978,8 @@
    "fit_block": [],
    "fit_band": "弱相關",
    "kind": "studentship",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "201-500",
+   "rank_order": 4
   },
   {
    "id": "4c79e6bd2e2e7aef",
@@ -8356,8 +10041,8 @@
    "fit_block": [],
    "fit_band": "弱相關",
    "kind": "studentship",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "201-500",
+   "rank_order": 4
   },
   {
    "id": "a79aa3dcd24c634a",
@@ -8403,7 +10088,6 @@
    ],
    "topic_score": 0,
    "topics": [
-    "無障礙",
     "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
@@ -8423,8 +10107,8 @@
    "fit_block": [],
    "fit_band": "弱相關",
    "kind": "studentship",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "201-500",
+   "rank_order": 4
   },
   {
    "id": "3e6bb6cde0facd95",
@@ -8490,8 +10174,8 @@
    "fit_block": [],
    "fit_band": "弱相關",
    "kind": "studentship",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "51-100",
+   "rank_order": 2
   },
   {
    "id": "04544e19a93b5a31",
@@ -12927,7 +14611,7 @@
    },
    "first_seen": "2026-10-23",
    "last_seen": "2026-11-02",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "基因體學",
     "生醫材料"
@@ -13162,7 +14846,7 @@
    "country_zh": "荷蘭",
    "first_seen": "2026-10-22",
    "last_seen": "2026-11-02",
-   "status": "open",
+   "status": "closed",
    "penalties": [],
    "topic_score": 1,
    "topics": [
@@ -13457,8 +15141,8 @@
    "fit_block": [],
    "fit_band": "弱相關",
    "kind": "studentship",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "201-500",
+   "rank_order": 4
   },
   {
    "id": "0796904a30d906a1",
@@ -13810,8 +15494,8 @@
    ],
    "fit_band": "排除",
    "kind": "job",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "201-500",
+   "rank_order": 4
   },
   {
    "id": "ce1d088ab708b43c",
@@ -15261,8 +16945,8 @@
    "fit_block": [],
    "fit_band": "stretch",
    "kind": "job",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "未列入",
+   "rank_order": 6
   },
   {
    "id": "224acb42c3fd3f98",
@@ -17541,9 +19225,15 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "enrich_attempts": 2,
-   "score_version": 17,
-   "country_zh": "荷蘭",
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {
+    "methods": [
+     "訪談"
+    ]
+   },
    "page_funding": {
     "fee": "funded",
     "pay": "Salary indication €3204"
@@ -17553,11 +19243,12 @@
    ],
    "page_supervisor": "Associate Prof. Guido Camps",
    "page_kind": "job",
-   "page_fit": {
-    "methods": [
-     "訪談"
-    ]
-   },
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 3,
+   "country_zh": "荷蘭",
    "first_seen": "2026-10-15",
    "last_seen": "2026-11-02",
    "status": "open",
@@ -18334,7 +20025,6 @@
    "id": "bcb96d72690e955c",
    "source": "euraxess",
    "source_name": "EURAXESS（全歐洲）",
-   "university": "(Estão os... Work",
    "country": "EU",
    "title": "Pre-doctoral Researcher in Telecommunications",
    "url": "https://euraxess.ec.europa.eu/jobs/472341",
@@ -21935,8 +23625,8 @@
    "fit_block": [],
    "fit_band": "弱相關",
    "kind": "studentship",
-   "rank_band": "",
-   "rank_order": 99
+   "rank_band": "501+",
+   "rank_order": 5
   },
   {
    "id": "3e29bdd8802b89ae",
