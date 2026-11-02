@@ -29,6 +29,7 @@ DATA = os.path.join(ROOT, "data", "jobs.json")
 CONFIG = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sources.yml")
 TOPICS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "topics.yml")
 PROFILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "profile.yml")
+PROGRAMMES = os.path.join(os.path.dirname(os.path.abspath(__file__)), "programmes.yml")
 RANKINGS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "rankings.yml")
 COUNTRIES = os.path.join(os.path.dirname(os.path.abspath(__file__)), "countries.yml")
 
@@ -1076,6 +1077,26 @@ def dedupe_key(job: dict) -> str:
     return f"{norm(job.get('title'))}|{norm(job.get('university') or job.get('source_name'))}"
 
 
+def load_programmes(path: str = PROGRAMMES) -> list[dict]:
+    """「直接申請」的管道（日本、新加坡）。不是職缺，只是入口頁，
+    所以不進職缺清單，單獨放在網頁下面。"""
+    if not os.path.exists(path):
+        return []
+    try:
+        with open(path, encoding="utf-8") as fh:
+            items = (yaml.safe_load(fh) or {}).get("programmes") or []
+    except (yaml.YAMLError, OSError) as exc:
+        log(f"programmes.yml 讀不起來：{exc}")
+        return []
+    out = []
+    for item in items:
+        row = dict(item)
+        row["country_zh"] = country_zh(row.get("country", ""))
+        row["note"] = clean(row.get("note", ""))
+        out.append(row)
+    return out
+
+
 def load_previous() -> dict:
     if not os.path.exists(DATA):
         return {"jobs": []}
@@ -1438,6 +1459,7 @@ def main() -> int:
                             and j.get("fit_band") == "符合"),
         },
         "sources": reports,
+        "programmes": load_programmes(),
         "recheck": recheck,
         "jobs": jobs,
     }

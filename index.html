@@ -260,6 +260,15 @@
     </div>
   </div>
 
+  <details class="sources" id="prog-box" hidden>
+    <summary>直接申請的管道（日本、新加坡這些不用職缺制的地方）</summary>
+    <p style="margin:10px 0 0;font-size:13px;color:var(--muted)">
+      這兩個地方的博士基本上不是用職缺發布的：日本要先找教授、錢來自 MEXT／JSPS／教授的計畫或自費；
+      新加坡走研究生招生＋獎助金，學校 careers 網站上只有正職。所以沒辦法自動抓，這裡只列入口。
+    </p>
+    <table id="prog-table"><tbody></tbody></table>
+  </details>
+
   <details class="sources">
     <summary>來源狀態（哪些網站抓成功）</summary>
     <table id="src-table"><thead><tr><th>來源</th><th>地區</th><th>筆數</th><th>說明</th></tr></thead><tbody></tbody></table>
@@ -375,6 +384,7 @@ async function boot(){
   $('field').append(...fields.map(([f,n]) => new Option(`${f}（${n}）`, f)));
 
   renderSources(d.sources || []);
+  renderProgrammes(d.programmes || []);
   renderRecheck(d.recheck);
   bind();
   bindDeck();
@@ -592,6 +602,17 @@ function renderRecheck(recheck){
     recheck.sources.map(s => `<tr><td><span class="dot ${s.status}"></span>${esc(s.name)}</td>` +
       `<td>${s.count}</td><td class="err">${esc((s.detail || '').slice(0,120))}</td></tr>`).join('') +
     `</tbody></table>`;
+}
+
+function renderProgrammes(list){
+  if (!(list || []).length) return;
+  $('prog-box').hidden = false;
+  $('prog-table').querySelector('tbody').innerHTML = list.map(p => `
+    <tr>
+      <td style="white-space:nowrap"><span class="tag">${esc(p.country_zh || p.country)}</span></td>
+      <td><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name)}</a>
+        ${p.note ? `<div style="color:var(--muted);font-size:12.5px;margin-top:2px">${esc(p.note)}</div>` : ''}</td>
+    </tr>`).join('');
 }
 
 function renderSources(sources){

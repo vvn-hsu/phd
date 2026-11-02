@@ -1,0 +1,92 @@
+# 「直接申請」的管道（手動維護）。
+#
+# 為什麼要有這個檔：日本和新加坡的博士基本上不是用「職缺」發布的。
+#   · 日本：先找到教授聯絡、再考研究所，錢的來源是 MEXT 獎學金、JSPS、
+#     指導教授的計畫，或者自費。JREC-IN 上面的是教職和博後，不是博士。
+#   · 新加坡：NUS／NTU 的博士走研究生招生＋Research Scholarship，
+#     學校的 careers 網站上只有 Research Fellow／Assistant 這類正職。
+# 所以這兩個地方不可能用抓職缺的方式追蹤，只能列出招生入口自己去看。
+#
+# 這些是入口頁，不是單一職缺，所以不會進職缺清單，獨立顯示在網頁下方。
+# 申請時程每個系所都不一樣，這裡只寫大致的開窗季節，實際日期點進去看。
+
+programmes:
+  - id: nus_grad
+    name: NUS Graduate School（博士 ＋ Research Scholarship）
+    university: National University of Singapore
+    country: SG
+    url: https://gradapp.nus.edu.sg/
+    note: >-
+      各系所自己開申請窗：8 月入學大致 5–11 月開放，1 月入學大致 11–隔年 5 月。
+      NUS Research Scholarship 含學費減免和月津貼，國際生可以申請。
+      HCI 相關的系所在 Computing（CS）和 College of Design & Engineering（ID）。
+
+  - id: ntu_grad
+    name: NTU 研究生招生（博士 ＋ Research Scholarship）
+    university: Nanyang Technological University
+    country: SG
+    url: https://www.ntu.edu.sg/admissions/graduate
+    note: >-
+      一樣是獎助金制，8 月和 1 月兩次入學。HCI 相關看 SCSE（計算機）和
+      School of Art, Design and Media。
+
+  - id: singa
+    name: SINGA（A*STAR 新加坡國際研究生獎）
+    university: A*STAR
+    country: SG
+    url: https://www.a-star.edu.sg/singa
+    note: >-
+      專門給國際生的四年全額博士獎助（學費＋月津貼＋補助），學位掛在 NUS／NTU／SUTD，
+      研究在 A*STAR 的研究所做。每年通常開兩次申請。
+      （這個站有擋機器人，自動檢查連不進去，用瀏覽器開沒問題。）
+
+  - id: oist
+    name: OIST 博士班（有薪，全英語）
+    university: Okinawa Institute of Science and Technology
+    country: JP
+    url: https://admissions.oist.jp/
+    note: >-
+      日本少數「博士生領薪水」的地方（研究補助金，不是獎學金），全英語、
+      不需要日文。每年兩次招生。官網從 GitHub Actions 的機房 IP 連過去會 403，
+      所以沒辦法自動抓，要自己點進去看。
+
+  - id: mext
+    name: MEXT 文部科學省獎學金（大使館推薦 ／ 大學推薦）
+    university: 日本政府
+    country: JP
+    url: https://www.studyinjapan.go.jp/en/
+    note: >-
+      日本留學最大的一筆錢。大使館推薦這條每年大約 4–5 月在駐外館處開始收件，
+      大學推薦那條由學校自己辦、時間各校不同。兩條都要先跟教授談好研究計畫。
+
+  - id: jsps
+    name: JSPS 日本學術振興會
+    university: JSPS
+    country: JP
+    url: https://www.jsps.go.jp/english/
+    note: >-
+      DC1／DC2 是給已經入學的博士生的研究獎助（要有日本的指導教授掛名），
+      不是入學管道，但決定你在日本有沒有錢。
+
+  - id: utokyo
+    name: 東京大學 情報理工學系研究科
+    university: University of Tokyo
+    country: JP
+    url: https://www.i.u-tokyo.ac.jp/index_e.shtml
+    note: >-
+      連的是情報理工學系研究科（HCI 的主場之一，另一個是學際情報學府）。
+      一般要先當半年到一年的「研究生」（旁聽研究生）再考博士班。
+
+  - id: kyoto
+    name: 京都大學 情報學研究科
+    university: Kyoto University
+    country: JP
+    url: https://www.i.kyoto-u.ac.jp/en/
+    note: 連的是情報學研究科，裡面有 HCI／互動設計的實驗室，入學考一年通常兩次。
+
+  - id: isct
+    name: 東京科學大學（原東工大）研究生招生
+    university: Institute of Science Tokyo
+    country: JP
+    url: https://www.isct.ac.jp/en/admissions
+    note: 2024 年東工大和東京醫科齒科合併後的新校名。情報理工學院有 HCI 的實驗室。

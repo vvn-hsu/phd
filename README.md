@@ -158,7 +158,10 @@ AcademicTransfer 和 EURAXESS——因為 HCI 的缺常常排不進「最新職�
 | TU München | 開 |
 | DTU、KU Leuven、Chalmers | 關：清單要 JS 才渲染，HTML 裡只有導覽列 |
 | ACM SIGCHI job board | 沒加：從 Actions 連過去 connect timeout，兩次都一樣 |
-| JREC-IN（日本） | 沒加：搜尋結果不是 GET 網址，HTML 裡只有導覽列 |
+| JREC-IN（日本） | 沒加：搜尋結果不是 GET 網址，HTML 裡只有導覽列（2026-10、2026-11 各試一次） |
+| OIST 職缺頁 | 沒加：`www.oist.jp/careers` 回 403，換瀏覽器 UA 也一樣 |
+| NUS careers | 沒加：RSS feed 抓得到，但上面只有 Research Fellow／Assistant 這類正職，博士不走這裡 |
+| Nature Careers | 不抓：robots.txt 明寫 `Disallow: /naturecareers/jobs/search` 和 `/naturecareers/jobsrss/` |
 | LinkedIn | 不做：robots.txt 明寫未經同意禁止自動抓取 |
 
 來源是一個一個用 `scraper/sniff.py` 偵查過才加的，上面「沒加」的那幾個不是忘了，
@@ -189,6 +192,20 @@ python scraper/run.py --probe      # 只測試各來源通不通，不寫檔
 python scraper/run.py --only tudelft,euraxess
 python scraper/test_parse.py       # 不連網的解析測試
 ```
+
+## 直接申請的管道（日本、新加坡）
+
+`scraper/programmes.yml`，9 筆，顯示在網頁最下面的「直接申請的管道」。
+
+這兩個地方的博士不是用職缺發布的，所以抓不到，只能列入口：
+
+- 日本：先找教授談、再考研究所。錢的來源是 MEXT（大使館推薦大約每年 4–5 月）、
+  JSPS、教授的計畫，或自費。JREC-IN 上面是教職和博後，不是博士。
+  例外是 OIST：博士生領薪水、全英語、不需要日文。
+- 新加坡：NUS／NTU 走研究生招生＋Research Scholarship（含學費和月津貼，國際生可申請），
+  學校 careers 網站上只有正職。另外有 A*STAR 的 SINGA 專門給國際生。
+
+裡面每個網址都用 `sniff.py --head`（`sniff_head` 輸入）確認過還連得到。
 
 ## 學校排名
 
