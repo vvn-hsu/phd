@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-19T14:10:35+00:00",
- "date": "2026-11-19",
+ "generated_at": "2026-11-20T13:52:23+00:00",
+ "date": "2026-11-20",
  "topic_thresholds": {
   "broad": 2,
   "strict": 6
@@ -16,13 +16,13 @@
   "未列入"
  ],
  "counts": {
-  "open": 168,
-  "new_today": 18,
-  "closed_kept": 721,
-  "hci_broad": 21,
-  "expired": 3,
+  "open": 177,
+  "new_today": 24,
+  "closed_kept": 718,
+  "hci_broad": 27,
+  "expired": 4,
   "postdoc_suspect": 9,
-  "fit_strong": 4,
+  "fit_strong": 5,
   "fit_good": 3
  },
  "sources": [
@@ -55,7 +55,7 @@
    "country_zh": "荷蘭",
    "homepage": "https://www.academictransfer.com/en/jobs/",
    "status": "ok",
-   "count": 4,
+   "count": 1,
    "url_used": "https://www.academictransfer.com/en/jobs/?category=phd&sort=date",
    "error": ""
   },
@@ -88,7 +88,7 @@
    "country_zh": "英國",
    "homepage": "https://www.timeshighereducation.com/unijobs/listings/computer-science/",
    "status": "ok",
-   "count": 5,
+   "count": 4,
    "url_used": "7 個搜尋網址",
    "error": ""
   },
@@ -99,7 +99,7 @@
    "country_zh": "英國",
    "homepage": "https://www.jobs.ac.uk/search/?keywords=PhD",
    "status": "ok",
-   "count": 7,
+   "count": 1,
    "url_used": "https://www.jobs.ac.uk/search/?keywords=PhD&sortOrder=1",
    "error": ""
   },
@@ -121,7 +121,7 @@
    "country_zh": "英國",
    "homepage": "https://www.jobs.ac.uk/search/?keywords=human-computer+interaction",
    "status": "ok",
-   "count": 32,
+   "count": 31,
    "url_used": "10 個搜尋網址",
    "error": ""
   },
@@ -131,8 +131,8 @@
    "country": "CH",
    "country_zh": "瑞士",
    "homepage": "https://jobs.ethz.ch/",
-   "status": "empty",
-   "count": 0,
+   "status": "ok",
+   "count": 1,
    "url_used": "https://jobs.ethz.ch/",
    "error": ""
   },
@@ -143,7 +143,7 @@
    "country_zh": "瑞典",
    "homepage": "https://kth.varbi.com/en/",
    "status": "ok",
-   "count": 18,
+   "count": 19,
    "url_used": "https://kth.varbi.com/en/",
    "error": ""
   },
@@ -154,7 +154,7 @@
    "country_zh": "瑞典",
    "homepage": "https://uu.varbi.com/en/",
    "status": "ok",
-   "count": 16,
+   "count": 17,
    "url_used": "https://uu.varbi.com/en/",
    "error": ""
   },
@@ -176,7 +176,7 @@
    "country_zh": "瑞典",
    "homepage": "https://lu.varbi.com/en/",
    "status": "ok",
-   "count": 19,
+   "count": 35,
    "url_used": "https://lu.varbi.com/en/",
    "error": ""
   },
@@ -187,7 +187,7 @@
    "country_zh": "瑞典",
    "homepage": "https://umu.varbi.com/en/",
    "status": "ok",
-   "count": 7,
+   "count": 5,
    "url_used": "https://umu.varbi.com/en/",
    "error": ""
   },
@@ -379,6 +379,1519 @@
  },
  "jobs": [
   {
+   "id": "b2d6302f5a9c170b",
+   "source": "euraxess_hci",
+   "source_name": "EURAXESS（HCI 關鍵字搜尋）",
+   "university": "",
+   "country": "EU",
+   "title": "Research Studentships (for students of a course that does not award an academic degree) - (BL185/2026-IST-ID)",
+   "url": "https://euraxess.ec.europa.eu/jobs/481956",
+   "city": "Lisbon Website",
+   "location": "",
+   "department": "",
+   "posted": "2026-11-20",
+   "deadline": "2026-11-27",
+   "summary": "Applications are open for 1 Research Studentship, within the framework of project “PRISMAP+ - Furthering the European Medical Radionuclide Programme”/Centro de Ciências e Tecnologias Nucleares (C2TN) do Instituto Superior Técnico (PRISMAP + 101287718), financed by European fund",
+   "title_guessed": false,
+   "found_via": "human-computer interaction",
+   "topic_boost": 3,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {
+    "core": [
+     "通知系統",
+     "打斷與注意力"
+    ],
+    "methods": [
+     "訪談"
+    ]
+   },
+   "page_funding": {
+    "pay": "€ 1,359.64,"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "query_ok": false,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 3,
+   "topics": [
+    "無障礙",
+    "HCI 關鍵字搜尋（弱）"
+   ],
+   "fields": [
+    "醫療",
+    "能源",
+    "經濟商管"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "€ 1,359.64,"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 7,
+   "fit_why": [
+    "通知系統",
+    "打斷與注意力"
+   ],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "主推",
+   "country_zh": "跨國／歐洲",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "f4e9d0dce3e2ac67",
+   "source": "academictransfer",
+   "source_name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
+   "university": "Tilburg University",
+   "country": "NL",
+   "title": "Promovendus 'Effectiviteit van Triple C in langdurige zorg'",
+   "url": "https://www.academictransfer.com/en/jobs/365778/promovendus-effectiviteit-van-triple-c-in-langdurige-zorg/",
+   "city": "Tilburg",
+   "location": "Tilburg, NL",
+   "department": "",
+   "posted": "2026-11-20",
+   "deadline": "2026-12-06",
+   "summary": "Wil jij met wetenschappelijk onderzoek bijdragen aan een betere kwaliteit van leven voor mensen met een verstandelijke beperking? Ben je geïnteresseerd in de vraag wat werkt in de langdurige zorg en hoe wetenschappelijke kennis kan bijdragen aan betere ondersteuning? Dan biedt dit vierjarige promotieonderzoek naar Triple-C een mooie kans om wetenschap en praktijk met elkaar te verbinden. Wie zijn ",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "€3204"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "job",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [],
+   "tools": [],
+   "funding": {
+    "pay": "€3204"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "荷蘭",
+   "kind": "job",
+   "rank_band": "201-500",
+   "rank_order": 4
+  },
+  {
+   "id": "a0f88e550e3f177e",
+   "source": "jobsacuk",
+   "source_name": "jobs.ac.uk（英國）",
+   "university": "University of Roehampton",
+   "country": "United Kingdom",
+   "title": "PhD Studentship / Researcher: Nutrition, Mental Health and Stakeholder Perspectives (BEETHOVEN)",
+   "url": "https://www.jobs.ac.uk/job/DTM728/phd-studentship-researcher-nutrition-mental-health-and-stakeholder-perspectives-beethoven",
+   "city": "London",
+   "location": "London, United Kingdom",
+   "department": "",
+   "posted": "2026-11-20",
+   "deadline": "2027-01-08",
+   "summary": "Job Description and Person Specification Reports to: Dr Christle Coxon; Dr Christophe Clesse; Prof Adele Costabile Project: BEETHOVEN Horizon Europe project Location: University of Roehampton, London; international collaboration and travel may be required Study mode / duration: Full-time PhD; 3 years Start date: 1 st February 2027 Funding / eligibility: Fully Funded PhD, stipend funded at the UKRI",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "訪談",
+    "焦點團體",
+    "文獻回顧"
+   ],
+   "page_penalties": [],
+   "page_fit": {
+    "near": [
+     "身心健康"
+    ],
+    "methods": [
+     "訪談",
+     "問卷"
+    ]
+   },
+   "page_funding": {
+    "fee": "international",
+    "pay": "stipend funded at the UKRI level (currently £23,"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [],
+   "tools": [
+    "訪談",
+    "焦點團體",
+    "文獻回顧"
+   ],
+   "funding": {
+    "fee": "international",
+    "pay": "stipend funded at the UKRI level (currently £23,"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 3,
+   "fit_why": [
+    "身心健康"
+   ],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "stretch",
+   "country_zh": "英國",
+   "kind": "studentship",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "6569d5b6b1bd7003",
+   "source": "euraxess_hci",
+   "source_name": "EURAXESS（HCI 關鍵字搜尋）",
+   "university": "NOVA Information Management School (NOVA IMS)",
+   "country": "EU",
+   "title": "Call for Applications for the Award of a two Research Grant PhD Students. IMS_BOLSA_CHOICE_2026_02",
+   "url": "https://euraxess.ec.europa.eu/jobs/481963",
+   "city": "Lisbon Postal",
+   "location": "",
+   "department": "",
+   "posted": "2026-11-20",
+   "deadline": "2026-12-07",
+   "summary": "Call for Applications for the Award of a two Research Grant PhD Students. IMS_BOLSA_CHOICE_2026_02",
+   "title_guessed": false,
+   "found_via": "human-computer interaction",
+   "topic_boost": 3,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "訪談",
+    "焦點團體",
+    "工作坊"
+   ],
+   "page_penalties": [],
+   "page_fit": {
+    "methods": [
+     "訪談",
+     "問卷",
+     "質性分析"
+    ]
+   },
+   "page_funding": {},
+   "page_languages": [],
+   "page_supervisor": "Professor Dr. Diego Costa Pinto",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "query_ok": false,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 1,
+   "topics": [
+    "HCI 關鍵字搜尋（弱）"
+   ],
+   "fields": [],
+   "tools": [
+    "訪談",
+    "焦點團體",
+    "工作坊"
+   ],
+   "funding": {},
+   "languages": [],
+   "supervisor": "Professor Dr. Diego Costa Pinto",
+   "expired": false,
+   "fit_score": 1,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "跨國／歐洲",
+   "kind": "job",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "8cacadd3c7977867",
+   "source": "euraxess_hci",
+   "source_name": "EURAXESS（HCI 關鍵字搜尋）",
+   "university": "Faculty of Sciences of the University of Porto",
+   "country": "EU",
+   "title": "CALL FOR RECRUITMENT OF ONE PHD RESEARCHER",
+   "url": "https://euraxess.ec.europa.eu/jobs/481960",
+   "city": "Porto Website",
+   "location": "",
+   "department": "",
+   "posted": "2026-11-20",
+   "deadline": "2026-12-07",
+   "summary": "NOTICE OF THE OPENNING OF AN INTERNATIONAL CALL FOR RECRUITMENT OF ONE PHD RESEARCHER",
+   "title_guessed": false,
+   "found_via": "human-computer interaction",
+   "topic_boost": 3,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "田野／民族誌"
+   ],
+   "page_penalties": [],
+   "page_fit": {},
+   "page_funding": {},
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "job",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "query_ok": false,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 1,
+   "topics": [
+    "HCI 關鍵字搜尋（弱）"
+   ],
+   "fields": [],
+   "tools": [
+    "田野／民族誌"
+   ],
+   "funding": {},
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "跨國／歐洲",
+   "kind": "job",
+   "rank_band": "",
+   "rank_order": 99
+  },
+  {
+   "id": "b0710dd22cbbb464",
+   "source": "kth",
+   "source_name": "KTH Royal Institute of Technology",
+   "university": "",
+   "country": "SE",
+   "title": "Research student assistent",
+   "url": "https://kth.varbi.com/en/what:job/jobID:992882/",
+   "city": "Stockholm",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-12-11",
+   "summary": "Job description A real-time motion analysis and simulation framework based entirely on wearable smart sensors, such as inertial measurement units (IMUs), has considerable potential for applications be",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 4,
+   "page_topics": [
+    "穿戴式",
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {},
+   "page_funding": {},
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 2,
+   "topics": [
+    "穿戴式"
+   ],
+   "fields": [],
+   "tools": [],
+   "funding": {},
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "瑞典",
+   "kind": "job",
+   "rank_band": "51-100",
+   "rank_order": 2,
+   "also_at": [
+    {
+     "source": "KTH Royal Institute of Technology",
+     "url": "https://kth.varbi.com/en/what:job/jobID:987657/"
+    }
+   ]
+  },
+  {
+   "id": "394dc6b418647dba",
+   "source": "uu",
+   "source_name": "Uppsala universitet",
+   "university": "",
+   "country": "SE",
+   "title": "PhD student in Macromolecular Chemistry and Bioactive Hydrogels",
+   "url": "https://uu.varbi.com/en/what:job/jobID:992398/",
+   "city": "Uppsala",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-12-11",
+   "summary": "The Department of Chemistry - Ångström conducts research and education in the chemistry field. The department has more than 270 employees and has a turnover of 300 million SEK. At the department's s",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [
+    "3D 列印"
+   ],
+   "page_penalties": [
+    "材料合成"
+   ],
+   "page_fit": {
+    "mismatch": [
+     "需要實驗室生醫"
+    ]
+   },
+   "page_funding": {},
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [
+    "材料合成"
+   ],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "材料化學",
+    "生命科學",
+    "教育"
+   ],
+   "tools": [
+    "3D 列印"
+   ],
+   "funding": {},
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [
+    "需要實驗室生醫"
+   ],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "瑞典",
+   "kind": "job",
+   "rank_band": "101-200",
+   "rank_order": 3
+  },
+  {
+   "id": "9169589573e56d7e",
+   "source": "lu",
+   "source_name": "Lunds universitet",
+   "university": "",
+   "country": "SE",
+   "title": "Doctoral student in history",
+   "url": "https://lu.varbi.com/en/what:job/jobID:987627/",
+   "city": "Lund",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-12-20",
+   "summary": "About the subject In its widest sense, History is the study of man in society from the perspective of time. Therefore issues of change and continuity in the long term as well as the causes for change",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "2229366, sek"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [],
+   "tools": [],
+   "funding": {
+    "pay": "2229366, sek"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "瑞典",
+   "kind": "job",
+   "rank_band": "51-100",
+   "rank_order": 2
+  },
+  {
+   "id": "7c10d8cb6fd9c7a5",
+   "source": "lu",
+   "source_name": "Lunds universitet",
+   "university": "",
+   "country": "SE",
+   "title": "Doctoral student in Theoretical Philosophy",
+   "url": "https://lu.varbi.com/en/what:job/jobID:986205/",
+   "city": "Lund",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-12-20",
+   "summary": "About the subject Theoretical Philosophy is the study of what is and the scope of human knowledge. The core of the discipline is the analysis of ontological and epistemological positions and their fou",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "2229366, sek"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [],
+   "tools": [],
+   "funding": {
+    "pay": "2229366, sek"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "瑞典",
+   "kind": "job",
+   "rank_band": "51-100",
+   "rank_order": 2
+  },
+  {
+   "id": "eec1904165204a15",
+   "source": "lu",
+   "source_name": "Lunds universitet",
+   "university": "",
+   "country": "SE",
+   "title": "Doctoral student in Semitic Languages",
+   "url": "https://lu.varbi.com/en/what:job/jobID:986725/",
+   "city": "Lund",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-12-20",
+   "summary": "About the subject The discipline is concerned with the Semitic languages and literature written in these languages. The research conducted can be both synchronic and diachronic and specialise in langu",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "2229366, sek"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [],
+   "tools": [],
+   "funding": {
+    "pay": "2229366, sek"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "瑞典",
+   "kind": "job",
+   "rank_band": "51-100",
+   "rank_order": 2
+  },
+  {
+   "id": "be0a386dc5b3f65a",
+   "source": "lu",
+   "source_name": "Lunds universitet",
+   "university": "",
+   "country": "SE",
+   "title": "Doctoral student in Scandinavian Languages",
+   "url": "https://lu.varbi.com/en/what:job/jobID:986669/",
+   "city": "Lund",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-12-20",
+   "summary": "About the subject Scandinavian Languages comprises research in the Scandinavian languages and their different varieties, especially with regard to phonetics/phonology, morphology (declensions as well",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "2229366, sek"
+   },
+   "page_languages": [
+    "瑞典文（加分）"
+   ],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [],
+   "tools": [],
+   "funding": {
+    "pay": "2229366, sek"
+   },
+   "languages": [
+    "瑞典文（加分）"
+   ],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "瑞典",
+   "kind": "job",
+   "rank_band": "51-100",
+   "rank_order": 2
+  },
+  {
+   "id": "203e7316b0e6a655",
+   "source": "lu",
+   "source_name": "Lunds universitet",
+   "university": "",
+   "country": "SE",
+   "title": "Doctoral student in Information Studies",
+   "url": "https://lu.varbi.com/en/what:job/jobID:986951/",
+   "city": "Lund",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-12-20",
+   "summary": "About the subject Information Studies is concerned with the study of the production, organisation, storage, transmission and usage of information in its material manifestations, and of the instituti",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "2229366, sek"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [],
+   "tools": [],
+   "funding": {
+    "pay": "2229366, sek"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "瑞典",
+   "kind": "job",
+   "rank_band": "51-100",
+   "rank_order": 2
+  },
+  {
+   "id": "f9eda7e55eebb371",
+   "source": "lu",
+   "source_name": "Lunds universitet",
+   "university": "",
+   "country": "SE",
+   "title": "Doctoral student in Historical Archeology",
+   "url": "https://lu.varbi.com/en/what:job/jobID:987607/",
+   "city": "Lund",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-12-20",
+   "summary": "About the subject Historical Archaeology covers the period from the Late Iron Age through the Viking Age and Middle Ages to the present. The subject methodologically deals with the relationship betwee",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "2229366, sek"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [],
+   "tools": [],
+   "funding": {
+    "pay": "2229366, sek"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "瑞典",
+   "kind": "job",
+   "rank_band": "51-100",
+   "rank_order": 2
+  },
+  {
+   "id": "e50cdf6f15f6e148",
+   "source": "lu",
+   "source_name": "Lunds universitet",
+   "university": "",
+   "country": "SE",
+   "title": "Doctoral student in General Linguistics, Phonetics, Japanese, Cognitive Semiotics or Rhetoric",
+   "url": "https://lu.varbi.com/en/what:job/jobID:986731/",
+   "city": "Lund",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-12-20",
+   "summary": "About the education This doctoral position is announced in the following five subjects: General Linguistics Phonetics Japanese with Specialisation in Linguistics Cognitive Semiotics Rhetoric Informati",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "2229366, sek"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "教育",
+    "語言"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "2229366, sek"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "瑞典",
+   "kind": "job",
+   "rank_band": "51-100",
+   "rank_order": 2
+  },
+  {
+   "id": "2383c162bf07ff85",
+   "source": "lu",
+   "source_name": "Lunds universitet",
+   "university": "",
+   "country": "SE",
+   "title": "Doctoral student in French Studies with a specialisation in Language Didactics, in French Studies with a specialisation in Linguistics or in Italian Studies wit",
+   "url": "https://lu.varbi.com/en/what:job/jobID:986687/",
+   "city": "Lund",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-12-20",
+   "summary": "About the education The position is located within Section 3 of the Department of Languages and Literature (SOL), which encompasses the disciplines of French, Spanish, Italian, Romanian, Modern Greek,",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "2229366, sek"
+   },
+   "page_languages": [
+    "法文（必要）",
+    "義大利文（必要）"
+   ],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "教育",
+    "語言"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "2229366, sek"
+   },
+   "languages": [
+    "法文（必要）",
+    "義大利文（必要）"
+   ],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [
+    "要會法文",
+    "要會義大利文"
+   ],
+   "fit_band": "排除",
+   "country_zh": "瑞典",
+   "kind": "job",
+   "rank_band": "51-100",
+   "rank_order": 2
+  },
+  {
+   "id": "ad643f9fb0c5c920",
+   "source": "lu",
+   "source_name": "Lunds universitet",
+   "university": "",
+   "country": "SE",
+   "title": "Doctoral student in Film Studies",
+   "url": "https://lu.varbi.com/en/what:job/jobID:986577/",
+   "city": "Lund",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-12-20",
+   "summary": "About the subject Film Studies is concerned with moving images in the broadest possible sense: films (feature films, documentaries, educational films, industrial films, experimental films, video art),",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "2229366, sek"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "教育"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "2229366, sek"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "瑞典",
+   "kind": "job",
+   "rank_band": "51-100",
+   "rank_order": 2
+  },
+  {
+   "id": "9d55056484e9841c",
+   "source": "lu",
+   "source_name": "Lunds universitet",
+   "university": "",
+   "country": "SE",
+   "title": "Doctoral student in Ethnology",
+   "url": "https://lu.varbi.com/en/what:job/jobID:987600/",
+   "city": "Lund",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-12-20",
+   "summary": "About the subject Ethnology is concerned with the study of humankind as cultural beings. About the education Information about doctoral studies at the Joint Faculties of Humanities and Theology can be",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "2229366, sek"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "教育"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "2229366, sek"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "瑞典",
+   "kind": "job",
+   "rank_band": "51-100",
+   "rank_order": 2
+  },
+  {
+   "id": "ff20ed288702d817",
+   "source": "lu",
+   "source_name": "Lunds universitet",
+   "university": "",
+   "country": "SE",
+   "title": "Doctoral student in English Language and Linguistics",
+   "url": "https://lu.varbi.com/en/what:job/jobID:986697/",
+   "city": "Lund",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-12-20",
+   "summary": "About the subject English Language and Linguistics is concerned with research on the English language and its many varieties, primarily with regard to semantics, syntax, text and discourse analysis, l",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 4,
+   "page_topics": [
+    "無障礙",
+    "腦電"
+   ],
+   "page_tools": [
+    "混合方法"
+   ],
+   "page_penalties": [],
+   "page_fit": {
+    "methods": [
+     "混合方法"
+    ],
+    "mismatch": [
+     "需要神經生理量測"
+    ]
+   },
+   "page_funding": {
+    "pay": "2229366, sek"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 2,
+   "topics": [
+    "腦電"
+   ],
+   "fields": [
+    "語言"
+   ],
+   "tools": [
+    "混合方法"
+   ],
+   "funding": {
+    "pay": "2229366, sek"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [
+    "需要神經生理量測"
+   ],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "瑞典",
+   "kind": "job",
+   "rank_band": "51-100",
+   "rank_order": 2
+  },
+  {
+   "id": "e59ec61164816f64",
+   "source": "lu",
+   "source_name": "Lunds universitet",
+   "university": "",
+   "country": "SE",
+   "title": "Doctoral student in Cognitive Science within the project IRIS",
+   "url": "https://lu.varbi.com/en/what:job/jobID:987616/",
+   "city": "Lund",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-12-20",
+   "summary": "About the subject Cognitive Science is an interdisciplinary subject dealing with different aspects of cognition in biological and artificial systems. Among the phenomena studied are perception, memory",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 4,
+   "page_topics": [
+    "眼動追蹤",
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {
+    "mismatch": [
+     "需要眼動實驗"
+    ]
+   },
+   "page_funding": {
+    "pay": "2229366, sek"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 2,
+   "topics": [
+    "眼動追蹤"
+   ],
+   "fields": [
+    "生命科學"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "2229366, sek"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [
+    "需要眼動實驗"
+   ],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "瑞典",
+   "kind": "job",
+   "rank_band": "51-100",
+   "rank_order": 2
+  },
+  {
+   "id": "735c40cfdd1c8c19",
+   "source": "lu",
+   "source_name": "Lunds universitet",
+   "university": "",
+   "country": "SE",
+   "title": "Doctoral student in Church History",
+   "url": "https://lu.varbi.com/en/what:job/jobID:987629/",
+   "city": "Lund",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-12-20",
+   "summary": "About the subject Church History is concerned with the various ways in which individual Christians and churches have expressed their faith in words and action throughout the ages and contributed to sh",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "2229366, sek"
+   },
+   "page_languages": [
+    "瑞典文（必要）"
+   ],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [],
+   "tools": [],
+   "funding": {
+    "pay": "2229366, sek"
+   },
+   "languages": [
+    "瑞典文（必要）"
+   ],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [
+    "要會瑞典文"
+   ],
+   "fit_band": "排除",
+   "country_zh": "瑞典",
+   "kind": "job",
+   "rank_band": "51-100",
+   "rank_order": 2
+  },
+  {
+   "id": "a9e60d76667f7b31",
+   "source": "lu",
+   "source_name": "Lunds universitet",
+   "university": "",
+   "country": "SE",
+   "title": "Doctoral student in Book History",
+   "url": "https://lu.varbi.com/en/what:job/jobID:986960/",
+   "city": "Lund",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-12-20",
+   "summary": "About the subject Book History comprises graphic communication in history and modern times, as well as the interplay between document, technique, form, individual and community. Book History deals w",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "2229366, sek"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [],
+   "tools": [],
+   "funding": {
+    "pay": "2229366, sek"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "瑞典",
+   "kind": "job",
+   "rank_band": "51-100",
+   "rank_order": 2
+  },
+  {
+   "id": "425aa9aa0cf47dd6",
+   "source": "lu",
+   "source_name": "Lunds universitet",
+   "university": "",
+   "country": "SE",
+   "title": "Doctoral position in Systematic Theology or in Global Christianity and Interreligious Relations, with a thematic focus on Political Theology in Pluralist Societ",
+   "url": "https://lu.varbi.com/en/what:job/jobID:986946/",
+   "city": "Lund",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-12-20",
+   "summary": "About the education This doctoral position is open to applicants in Systematic Theology and to applicants in Global Christianity and Interreligious Relations. Information about doctoral studies at t",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {},
+   "page_funding": {
+    "pay": "2229366, sek"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "教育"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "2229366, sek"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 0,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "瑞典",
+   "kind": "job",
+   "rank_band": "51-100",
+   "rank_order": 2
+  },
+  {
+   "id": "f87fe56e39921a10",
+   "source": "lu",
+   "source_name": "Lunds universitet",
+   "university": "",
+   "country": "SE",
+   "title": "Doctoral Student in Educational Sciences specialization in Science Education",
+   "url": "https://lu.varbi.com/en/what:job/jobID:987634/",
+   "city": "Lund",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "2026-12-20",
+   "summary": "About the subject Educational Sciences is a multidisciplinary and interdisciplinary field of inquiry. The main objective of third-cycle studies in the subject is to contribute to the research-based kn",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 2,
+   "page_topics": [
+    "無障礙"
+   ],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {
+    "near": [
+     "學習科技"
+    ]
+   },
+   "page_funding": {
+    "pay": "2229366, sek"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "教育"
+   ],
+   "tools": [],
+   "funding": {
+    "pay": "2229366, sek"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 2,
+   "fit_why": [
+    "學習科技"
+   ],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "stretch",
+   "country_zh": "瑞典",
+   "kind": "job",
+   "rank_band": "51-100",
+   "rank_order": 2
+  },
+  {
+   "id": "a5c042c32d729e7b",
+   "source": "ethz",
+   "source_name": "ETH Zürich",
+   "university": "",
+   "country": "CH",
+   "title": "Doctoral Position in Social Networks in Education 100%, Zurich, fixed-term 20.11.2026",
+   "url": "https://jobs.ethz.ch/job/view/12394",
+   "city": "Zürich",
+   "location": "",
+   "department": "",
+   "posted": "",
+   "deadline": "",
+   "summary": "",
+   "title_guessed": false,
+   "found_via": "",
+   "topic_boost": 0,
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [
+    "Python"
+   ],
+   "page_penalties": [],
+   "page_fit": {
+    "methods": [
+     "問卷",
+     "程式與統計"
+    ]
+   },
+   "page_funding": {
+    "fee": "funded"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "enrich_attempts": 1,
+   "first_seen": "2026-11-20",
+   "last_seen": "2026-11-20",
+   "status": "open",
+   "penalties": [],
+   "topic_score": 0,
+   "topics": [],
+   "fields": [
+    "教育"
+   ],
+   "tools": [
+    "Python"
+   ],
+   "funding": {
+    "fee": "funded"
+   },
+   "languages": [],
+   "supervisor": "",
+   "expired": false,
+   "fit_score": 1,
+   "fit_why": [],
+   "fit_gap": [],
+   "fit_block": [],
+   "fit_band": "弱相關",
+   "country_zh": "瑞士",
+   "kind": "studentship",
+   "rank_band": "1-10",
+   "rank_order": 0
+  },
+  {
    "id": "a1125d1fec0694d9",
    "source": "academictransfer",
    "source_name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
@@ -412,7 +1925,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-19",
    "last_seen": "2026-11-19",
-   "status": "open",
+   "status": "closed",
    "penalties": [],
    "topic_score": 0,
    "topics": [],
@@ -466,7 +1979,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-19",
    "last_seen": "2026-11-19",
-   "status": "open",
+   "status": "closed",
    "penalties": [],
    "topic_score": 1,
    "topics": [
@@ -507,34 +2020,29 @@
    "title_guessed": false,
    "found_via": "data visualization",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
+   "enrich_attempts": 1,
+   "score_version": 17,
    "page_tools": [
     "Python"
    ],
+   "country_zh": "荷蘭",
    "page_penalties": [
     "基因體學",
     "農業生態"
    ],
+   "page_funding": {
+    "fee": "funded",
+    "pay": "Salary indication €3204"
+   },
+   "page_supervisor": "Dr Derek Bickhart",
+   "page_kind": "job",
    "page_fit": {
     "methods": [
      "程式與統計"
     ]
    },
-   "page_funding": {
-    "fee": "funded",
-    "pay": "Salary indication €3204"
-   },
-   "page_languages": [],
-   "page_supervisor": "Dr Derek Bickhart",
-   "page_kind": "job",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 1,
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基因體學",
@@ -564,7 +2072,6 @@
    "fit_gap": [],
    "fit_block": [],
    "fit_band": "弱相關",
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "101-200",
    "rank_order": 3
@@ -610,7 +2117,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-19",
    "last_seen": "2026-11-19",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "量子元件",
     "基礎物理",
@@ -682,7 +2189,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-19",
    "last_seen": "2026-11-19",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "量子元件"
    ],
@@ -711,8 +2218,8 @@
   },
   {
    "id": "c3ffdfc20fdc5c1f",
-   "source": "jobsacuk",
-   "source_name": "jobs.ac.uk（英國）",
+   "source": "jobsacuk_hci",
+   "source_name": "jobs.ac.uk（HCI 關鍵字搜尋）",
    "university": "University of Exeter",
    "country": "United Kingdom",
    "title": "PhD Studentship: Nanoquakes for Pressure Sensing",
@@ -724,33 +2231,30 @@
    "deadline": "2026-12-09",
    "summary": "The aim of this project is to investigate the feasibility of creating a new generation of pressure sensors based on one important kind of elastic wave, surface acoustic waves (SAWs), which propagate on the surface of a solid. Although SAWs occur over many length scales, for example as earthquakes, research into devices that utilise SAWs with micron scale wavelengths [1], and nanometre amplitudes, ",
    "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
+   "found_via": "interaction design",
+   "topic_boost": 3,
+   "enrich_attempts": 1,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "page_tools": [],
+   "score_version": 17,
+   "country_zh": "英國",
    "page_penalties": [
     "量子元件"
    ],
-   "page_fit": {},
-   "page_funding": {},
-   "page_languages": [],
-   "page_supervisor": "",
    "page_kind": "studentship",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "量子元件"
    ],
-   "topic_score": 0,
-   "topics": [],
+   "topic_score": 1,
+   "topics": [
+    "無障礙",
+    "HCI 關鍵字搜尋（弱）"
+   ],
    "fields": [
     "音訊語音"
    ],
@@ -764,7 +2268,6 @@
    "fit_gap": [],
    "fit_block": [],
    "fit_band": "弱相關",
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "101-200",
    "rank_order": 3
@@ -806,7 +2309,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-19",
    "last_seen": "2026-11-19",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "材料合成",
     "量子元件"
@@ -837,8 +2340,8 @@
   },
   {
    "id": "35ad65316a7d25c0",
-   "source": "jobsacuk",
-   "source_name": "jobs.ac.uk（英國）",
+   "source": "jobsacuk_hci",
+   "source_name": "jobs.ac.uk（HCI 關鍵字搜尋）",
    "university": "University of Exeter",
    "country": "United Kingdom",
    "title": "PhD Studentship: Accessing the Nonlinear Regime by Coupling Graphene Resonators with Superconducting Circuits",
@@ -850,33 +2353,30 @@
    "deadline": "2026-12-09",
    "summary": "Quantum optomechanics explores how light can control and measure the motion of tiny mechanical drums using the laws of quantum physics. In most current devices, the interaction is linear: the light changes in direct proportion to the resonator’s displacement (if the motion doubles, the effect doubles). Linear interactions are useful, but they mainly produce smooth motion. Quantum Optomechanics in ",
    "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
+   "found_via": "interaction design",
+   "topic_boost": 3,
+   "enrich_attempts": 1,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "page_tools": [],
+   "score_version": 17,
+   "country_zh": "英國",
    "page_penalties": [
     "量子元件"
    ],
-   "page_fit": {},
-   "page_funding": {},
-   "page_languages": [],
-   "page_supervisor": "",
    "page_kind": "studentship",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "employment": "Full Time,Fixed-Term/Contract",
-   "enrich_attempts": 1,
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "量子元件"
    ],
-   "topic_score": 0,
-   "topics": [],
+   "topic_score": 1,
+   "topics": [
+    "無障礙",
+    "HCI 關鍵字搜尋（弱）"
+   ],
    "fields": [
     "量子",
     "製造工程"
@@ -891,7 +2391,6 @@
    "fit_gap": [],
    "fit_block": [],
    "fit_band": "弱相關",
-   "country_zh": "英國",
    "kind": "studentship",
    "rank_band": "101-200",
    "rank_order": 3
@@ -938,7 +2437,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-19",
    "last_seen": "2026-11-19",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "農業生態"
    ],
@@ -1010,7 +2509,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-19",
    "last_seen": "2026-11-19",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "材料合成"
    ],
@@ -1084,7 +2583,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-19",
    "last_seen": "2026-11-19",
-   "status": "open",
+   "status": "closed",
    "penalties": [],
    "topic_score": 0,
    "topics": [],
@@ -1148,7 +2647,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-19",
    "last_seen": "2026-11-19",
-   "status": "open",
+   "status": "closed",
    "penalties": [],
    "topic_score": 1,
    "topics": [
@@ -1219,7 +2718,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-19",
    "last_seen": "2026-11-19",
-   "status": "open",
+   "status": "closed",
    "penalties": [],
    "topic_score": 2,
    "topics": [
@@ -1289,7 +2788,7 @@
    "enrich_attempts": 1,
    "first_seen": "2026-11-19",
    "last_seen": "2026-11-19",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "基礎物理",
     "藥學腫瘤"
@@ -1356,9 +2855,10 @@
    "page_kind": "job",
    "postdoc_suspect": false,
    "score_version": 17,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "瑞典",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -1387,7 +2887,6 @@
     "要會瑞典文"
    ],
    "fit_band": "排除",
-   "country_zh": "瑞典",
    "kind": "job",
    "rank_band": "51-100",
    "rank_order": 2
@@ -1427,9 +2926,10 @@
    "postdoc_suspect": false,
    "score_version": 17,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -1449,7 +2949,6 @@
    ],
    "fit_block": [],
    "fit_band": "弱相關",
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -1495,9 +2994,10 @@
    "postdoc_suspect": false,
    "score_version": 17,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "材料合成"
@@ -1509,7 +3009,6 @@
     "數學最佳化"
    ],
    "tools": [
-    "Python",
     "PyTorch/TensorFlow",
     "模擬建模"
    ],
@@ -1524,7 +3023,6 @@
    "fit_gap": [],
    "fit_block": [],
    "fit_band": "弱相關",
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -1565,9 +3063,10 @@
    "postdoc_suspect": false,
    "score_version": 17,
    "query_ok": true,
-   "enrich_attempts": 1,
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-11-19",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -1576,7 +3075,6 @@
     "經濟商管"
    ],
    "tools": [
-    "Python",
     "C++/C#"
    ],
    "funding": {},
@@ -1588,7 +3086,6 @@
    "fit_gap": [],
    "fit_block": [],
    "fit_band": "弱相關",
-   "country_zh": "荷蘭",
    "kind": "job",
    "rank_band": "11-50",
    "rank_order": 1
@@ -1688,12 +3185,13 @@
     ]
    },
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
-   "topic_score": 3,
+   "topic_score": 5,
    "topics": [
     "穿戴式",
+    "無障礙",
     "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
@@ -2750,12 +4248,13 @@
    "title_guessed": false,
    "found_via": "usability",
    "topic_boost": 3,
-   "enrich_attempts": 1,
-   "score_version": 17,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "參與式研究"
    ],
-   "country_zh": "荷蘭",
+   "page_penalties": [],
+   "page_fit": {},
    "page_funding": {
     "pay": "Salary indication €3204"
    },
@@ -2764,8 +4263,14 @@
    ],
    "page_supervisor": "Dr Anne Loeber",
    "page_kind": "job",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 1,
@@ -2814,20 +4319,16 @@
    "title_guessed": false,
    "found_via": "accessibility",
    "topic_boost": 3,
-   "enrich_attempts": 1,
-   "score_version": 17,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "焦點團體",
     "工作坊",
     "參與式研究"
    ],
-   "country_zh": "荷蘭",
    "page_penalties": [
     "藥學腫瘤"
    ],
-   "page_funding": {
-    "pay": "Salary indication €3204"
-   },
    "page_fit": {
     "near": [
      "行為改變"
@@ -2836,8 +4337,20 @@
      "訪談"
     ]
    },
+   "page_funding": {
+    "pay": "Salary indication €3204"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "藥學腫瘤"
@@ -2886,24 +4399,32 @@
    "title_guessed": false,
    "found_via": "virtual reality",
    "topic_boost": 3,
-   "enrich_attempts": 1,
-   "score_version": 17,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "模擬建模"
    ],
-   "country_zh": "英國",
-   "page_funding": {
-    "fee": "self",
-    "pay": "Salary: £11,743.27"
-   },
-   "page_kind": "studentship",
+   "page_penalties": [],
    "page_fit": {
     "mismatch": [
      "需要工程模擬"
     ]
    },
+   "page_funding": {
+    "fee": "self",
+    "pay": "Salary: £11,743.27"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "studentship",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "query_ok": false,
+   "employment": "Full Time,Fixed-Term/Contract",
+   "enrich_attempts": 2,
+   "country_zh": "英國",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 1,
@@ -2951,16 +4472,12 @@
    "title_guessed": false,
    "found_via": "human factors",
    "topic_boost": 3,
-   "enrich_attempts": 1,
-   "score_version": 17,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "訪談"
    ],
-   "country_zh": "荷蘭",
-   "page_funding": {
-    "pay": "Salary indication €3204"
-   },
-   "page_supervisor": "Professor Michel van Eeten",
+   "page_penalties": [],
    "page_fit": {
     "methods": [
      "訪談",
@@ -2968,8 +4485,20 @@
      "程式與統計"
     ]
    },
+   "page_funding": {
+    "pay": "Salary indication €3204"
+   },
+   "page_languages": [],
+   "page_supervisor": "Professor Michel van Eeten",
+   "page_kind": "",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 1,
@@ -3012,15 +4541,25 @@
    "title_guessed": false,
    "found_via": "data visualization",
    "topic_boost": 3,
-   "enrich_attempts": 1,
-   "score_version": 17,
-   "country_zh": "荷蘭",
+   "page_score": 0,
+   "page_topics": [],
+   "page_tools": [],
+   "page_penalties": [],
+   "page_fit": {},
    "page_funding": {
     "pay": "Salary indication €3204"
    },
+   "page_languages": [],
+   "page_supervisor": "",
    "page_kind": "job",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 2,
+   "country_zh": "荷蘭",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 1,
@@ -3086,17 +4625,16 @@
    "postdoc_suspect": false,
    "score_version": 17,
    "query_ok": true,
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "country_zh": "荷蘭",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
    "topics": [],
    "fields": [],
    "tools": [
-    "Python",
     "C++/C#"
    ],
    "funding": {
@@ -3156,17 +4694,16 @@
    "postdoc_suspect": false,
    "score_version": 17,
    "query_ok": true,
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "country_zh": "荷蘭",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
    "topics": [],
    "fields": [],
    "tools": [
-    "Python",
     "C++/C#"
    ],
    "funding": {},
@@ -3220,10 +4757,10 @@
    "postdoc_suspect": false,
    "score_version": 17,
    "query_ok": true,
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "country_zh": "荷蘭",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -3292,10 +4829,10 @@
    "page_kind": "job",
    "postdoc_suspect": false,
    "score_version": 17,
-   "enrich_attempts": 2,
+   "enrich_attempts": 3,
    "country_zh": "瑞典",
    "first_seen": "2026-11-18",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -3868,32 +5405,24 @@
    "title_guessed": false,
    "found_via": "human-computer interaction",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
+   "enrich_attempts": 2,
+   "score_version": 17,
+   "country_zh": "荷蘭",
    "page_penalties": [
     "基因體學",
     "生醫材料"
    ],
+   "page_funding": {
+    "pay": "Salary indication €3217"
+   },
+   "page_kind": "job",
    "page_fit": {
     "mismatch": [
      "需要實驗室生醫"
     ]
    },
-   "page_funding": {
-    "pay": "Salary indication €3217"
-   },
-   "page_languages": [],
-   "page_supervisor": "",
-   "page_kind": "job",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 2,
-   "country_zh": "荷蘭",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基因體學",
@@ -4005,32 +5534,25 @@
    "title_guessed": false,
    "found_via": "usability",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
+   "enrich_attempts": 2,
+   "query_ok": true,
+   "score_version": 17,
    "page_tools": [
     "Python"
    ],
-   "page_penalties": [],
+   "country_zh": "荷蘭",
+   "page_funding": {
+    "pay": "Salary indication €3204"
+   },
+   "page_kind": "job",
    "page_fit": {
     "methods": [
      "訪談",
      "程式與統計"
     ]
    },
-   "page_funding": {
-    "pay": "Salary indication €3204"
-   },
-   "page_languages": [],
-   "page_supervisor": "",
-   "page_kind": "job",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "query_ok": true,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 2,
-   "country_zh": "荷蘭",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 3,
@@ -4146,11 +5668,12 @@
    },
    "page_kind": "studentship",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
-   "topic_score": 1,
+   "topic_score": 3,
    "topics": [
+    "無障礙",
     "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
@@ -4311,34 +5834,27 @@
    "title_guessed": false,
    "found_via": "user experience",
    "topic_boost": 3,
-   "page_score": 0,
-   "page_topics": [],
+   "enrich_attempts": 2,
+   "score_version": 17,
    "page_tools": [
     "模擬建模"
    ],
+   "country_zh": "荷蘭",
    "page_penalties": [
     "量子元件",
     "能源工程"
    ],
+   "page_funding": {
+    "pay": "Salary indication €3204"
+   },
+   "page_kind": "job",
    "page_fit": {
     "mismatch": [
      "需要工程模擬"
     ]
    },
-   "page_funding": {
-    "pay": "Salary indication €3204"
-   },
-   "page_languages": [],
-   "page_supervisor": "",
-   "page_kind": "job",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "query_ok": false,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 2,
-   "country_zh": "荷蘭",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "量子元件",
@@ -4389,25 +5905,18 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
-   "page_tools": [],
+   "score_version": 17,
+   "country_zh": "瑞典",
    "page_penalties": [
     "基礎物理"
    ],
-   "page_fit": {},
-   "page_funding": {},
-   "page_languages": [],
-   "page_supervisor": "",
-   "page_kind": "",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "enrich_attempts": 3,
-   "country_zh": "瑞典",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基礎物理"
@@ -4446,13 +5955,16 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
+   "score_version": 17,
    "page_tools": [
     "Python"
    ],
+   "country_zh": "瑞典",
    "page_penalties": [
     "基因體學"
    ],
@@ -4461,16 +5973,8 @@
      "程式與統計"
     ]
    },
-   "page_funding": {},
-   "page_languages": [],
-   "page_supervisor": "",
-   "page_kind": "",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "enrich_attempts": 3,
-   "country_zh": "瑞典",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基因體學"
@@ -4514,30 +6018,24 @@
    "title_guessed": false,
    "found_via": "",
    "topic_boost": 0,
+   "enrich_attempts": 3,
    "page_score": 2,
    "page_topics": [
     "無障礙"
    ],
+   "score_version": 17,
    "page_tools": [
     "Python",
     "MATLAB"
    ],
-   "page_penalties": [],
+   "country_zh": "瑞典",
    "page_fit": {
     "methods": [
      "程式與統計"
     ]
    },
-   "page_funding": {},
-   "page_languages": [],
-   "page_supervisor": "",
-   "page_kind": "",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "enrich_attempts": 3,
-   "country_zh": "瑞典",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -4581,30 +6079,24 @@
    "title_guessed": false,
    "found_via": "PhD",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
+   "enrich_attempts": 3,
+   "query_ok": true,
+   "score_version": 17,
    "page_tools": [
     "Python"
    ],
+   "country_zh": "荷蘭",
    "page_penalties": [
     "能源工程"
    ],
+   "page_supervisor": "Dr. Pedro",
    "page_fit": {
     "methods": [
      "程式與統計"
     ]
    },
-   "page_funding": {},
-   "page_languages": [],
-   "page_supervisor": "Dr. Pedro",
-   "page_kind": "",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "query_ok": true,
-   "enrich_attempts": 3,
-   "country_zh": "荷蘭",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "能源工程"
@@ -4612,9 +6104,7 @@
    "topic_score": 0,
    "topics": [],
    "fields": [],
-   "tools": [
-    "Python"
-   ],
+   "tools": [],
    "funding": {},
    "languages": [],
    "supervisor": "Dr. Pedro",
@@ -4645,24 +6135,16 @@
    "title_guessed": false,
    "found_via": "PhD",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
-   "page_penalties": [],
-   "page_fit": {},
+   "enrich_attempts": 3,
+   "query_ok": true,
+   "score_version": 17,
+   "country_zh": "荷蘭",
    "page_funding": {
     "pay": "€3204"
    },
-   "page_languages": [],
-   "page_supervisor": "",
    "page_kind": "job",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "query_ok": true,
-   "enrich_attempts": 3,
-   "country_zh": "荷蘭",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -4701,12 +6183,15 @@
    "title_guessed": false,
    "found_via": "PhD",
    "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
+   "enrich_attempts": 3,
+   "query_ok": true,
+   "score_version": 17,
    "page_tools": [
     "訪談"
    ],
-   "page_penalties": [],
+   "country_zh": "荷蘭",
+   "page_supervisor": "Professor Michel van Eeten",
+   "page_kind": "job",
    "page_fit": {
     "methods": [
      "訪談",
@@ -4714,17 +6199,8 @@
      "程式與統計"
     ]
    },
-   "page_funding": {},
-   "page_languages": [],
-   "page_supervisor": "Professor Michel van Eeten",
-   "page_kind": "job",
-   "postdoc_suspect": false,
-   "score_version": 17,
-   "query_ok": true,
-   "enrich_attempts": 3,
-   "country_zh": "荷蘭",
    "first_seen": "2026-11-17",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -4763,24 +6239,32 @@
    "title_guessed": false,
    "found_via": "interaction design",
    "topic_boost": 3,
-   "enrich_attempts": 2,
-   "score_version": 17,
+   "page_score": 0,
+   "page_topics": [],
    "page_tools": [
     "Python"
    ],
-   "country_zh": "荷蘭",
-   "page_funding": {
-    "pay": "Salary indication €3204"
-   },
-   "page_kind": "job",
+   "page_penalties": [],
    "page_fit": {
     "methods": [
      "訪談",
      "程式與統計"
     ]
    },
+   "page_funding": {
+    "pay": "Salary indication €3204"
+   },
+   "page_languages": [],
+   "page_supervisor": "",
+   "page_kind": "job",
+   "postdoc_suspect": false,
+   "score_version": 17,
+   "query_ok": false,
+   "employment": "TEMPORARY",
+   "enrich_attempts": 3,
+   "country_zh": "荷蘭",
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 1,
@@ -5286,7 +6770,7 @@
     ]
    },
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "化學分析"
@@ -5405,7 +6889,7 @@
     ]
    },
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -5471,7 +6955,7 @@
     ]
    },
    "first_seen": "2026-11-16",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基礎物理",
@@ -6080,7 +7564,7 @@
     ]
    },
    "first_seen": "2026-11-15",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -6089,7 +7573,6 @@
     "數學最佳化"
    ],
    "tools": [
-    "Python",
     "MATLAB",
     "C++/C#",
     "工作坊"
@@ -6806,13 +8289,14 @@
     ]
    },
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基因體學"
    ],
-   "topic_score": 0,
+   "topic_score": 1,
    "topics": [
+    "無障礙",
     "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
@@ -7019,7 +8503,7 @@
     ]
    },
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "材料合成",
@@ -7638,13 +9122,14 @@
    "page_supervisor": "Thomas O’Shea-Wheller",
    "page_kind": "studentship",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "材料合成"
    ],
-   "topic_score": 0,
+   "topic_score": 1,
    "topics": [
+    "無障礙",
     "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
@@ -7900,7 +9385,7 @@
     ]
    },
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 1,
@@ -8091,7 +9576,7 @@
    "page_supervisor": "Prof. Sebastijan Dumancic",
    "page_kind": "job",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 1,
@@ -8193,7 +9678,7 @@
    "score_version": 17,
    "country_zh": "瑞典",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -8242,7 +9727,7 @@
    "page_supervisor": "Prof. Sebastijan Dumancic",
    "page_kind": "job",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -8993,7 +10478,7 @@
     ]
    },
    "first_seen": "2026-11-13",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 3,
@@ -9418,13 +10903,14 @@
     ]
    },
    "first_seen": "2026-11-13",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "農業生態"
    ],
-   "topic_score": 0,
+   "topic_score": 1,
    "topics": [
+    "無障礙",
     "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
@@ -9485,7 +10971,7 @@
     ]
    },
    "first_seen": "2026-11-13",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 5,
@@ -9558,7 +11044,7 @@
     ]
    },
    "first_seen": "2026-11-13",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "能源工程"
@@ -9621,7 +11107,7 @@
     "農業生態"
    ],
    "first_seen": "2026-11-13",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "農業生態"
@@ -9682,7 +11168,7 @@
     ]
    },
    "first_seen": "2026-11-13",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "材料合成",
@@ -9741,7 +11227,7 @@
     "化學分析"
    ],
    "first_seen": "2026-11-13",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "能源工程",
@@ -9812,7 +11298,7 @@
     ]
    },
    "first_seen": "2026-11-13",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 2,
@@ -9821,7 +11307,6 @@
    ],
    "fields": [],
    "tools": [
-    "Python",
     "Arduino",
     "3D 列印",
     "原型製作"
@@ -10115,7 +11600,7 @@
    },
    "page_kind": "job",
    "first_seen": "2026-11-12",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "材料合成"
@@ -10185,7 +11670,7 @@
     ]
    },
    "first_seen": "2026-11-12",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "材料合成",
@@ -10367,7 +11852,7 @@
    },
    "page_kind": "studentship",
    "first_seen": "2026-11-12",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 1,
@@ -10487,7 +11972,7 @@
    },
    "page_kind": "studentship",
    "first_seen": "2026-11-12",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基因體學"
@@ -10933,7 +12418,7 @@
     ]
    },
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 1,
@@ -11385,7 +12870,7 @@
    "page_supervisor": "Dr Alexander Romanov",
    "page_kind": "studentship",
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "農業生態",
@@ -11776,7 +13261,7 @@
     "基因體學"
    ],
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基因體學"
@@ -11796,13 +13281,7 @@
    "fit_band": "弱相關",
    "kind": "job",
    "rank_band": "201-500",
-   "rank_order": 4,
-   "also_at": [
-    {
-     "source": "Umeå universitet",
-     "url": "https://umu.varbi.com/en/what:job/jobID:984438/"
-    }
-   ]
+   "rank_order": 4
   },
   {
    "id": "352e18d4897024bc",
@@ -11842,7 +13321,7 @@
     ]
    },
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -11898,7 +13377,7 @@
    ],
    "page_kind": "studentship",
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "量子元件",
@@ -11957,7 +13436,7 @@
    },
    "first_seen": "2026-11-10",
    "last_seen": "2026-11-19",
-   "status": "open",
+   "status": "closed",
    "penalties": [],
    "topic_score": 1,
    "topics": [
@@ -12145,11 +13624,12 @@
    },
    "page_kind": "studentship",
    "first_seen": "2026-11-10",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
-   "topic_score": 1,
+   "topic_score": 3,
    "topics": [
+    "無障礙",
     "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
@@ -12270,7 +13750,7 @@
    "page_supervisor": "Dr Yoshikatsu Hayashi",
    "page_kind": "studentship",
    "first_seen": "2026-11-10",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 1,
@@ -12464,7 +13944,7 @@
     ]
    },
    "first_seen": "2026-11-10",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 7,
@@ -12590,8 +14070,8 @@
     ]
    },
    "first_seen": "2026-11-10",
-   "last_seen": "2026-11-16",
-   "status": "closed",
+   "last_seen": "2026-11-20",
+   "status": "open",
    "penalties": [],
    "topic_score": 1,
    "topics": [
@@ -12664,7 +14144,7 @@
     ]
    },
    "first_seen": "2026-11-10",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 9,
@@ -12722,7 +14202,7 @@
    },
    "page_kind": "job",
    "first_seen": "2026-11-10",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -13398,7 +14878,7 @@
     ]
    },
    "first_seen": "2026-11-09",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基因體學",
@@ -13549,7 +15029,7 @@
     ]
    },
    "first_seen": "2026-11-07",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 5,
@@ -13613,7 +15093,7 @@
     ]
    },
    "first_seen": "2026-11-07",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 1,
@@ -13738,7 +15218,7 @@
    },
    "page_kind": "studentship",
    "first_seen": "2026-11-07",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 3,
@@ -13818,7 +15298,7 @@
     ]
    },
    "first_seen": "2026-11-07",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "化學分析"
@@ -14198,60 +15678,6 @@
    "rank_order": 2
   },
   {
-   "id": "fb240f915a48ca3d",
-   "source": "kth",
-   "source_name": "KTH Royal Institute of Technology",
-   "university": "",
-   "country": "SE",
-   "title": "Research student assistent",
-   "url": "https://kth.varbi.com/en/what:job/jobID:987657/",
-   "city": "Stockholm",
-   "location": "",
-   "department": "",
-   "posted": "",
-   "deadline": "2026-11-27",
-   "summary": "Job description The laboratory at Energy Technology is a collaborative environment where we conduct applied research in thermodynamics, heat transfer, heat storage, fluid machines and heat pumps. Our",
-   "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
-   "enrich_attempts": 3,
-   "page_score": 2,
-   "page_topics": [
-    "無障礙"
-   ],
-   "score_version": 17,
-   "country_zh": "瑞典",
-   "page_fit": {
-    "mismatch": [
-     "需要工程模擬"
-    ]
-   },
-   "first_seen": "2026-11-07",
-   "last_seen": "2026-11-19",
-   "status": "open",
-   "penalties": [],
-   "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "能源"
-   ],
-   "tools": [],
-   "funding": {},
-   "languages": [],
-   "supervisor": "",
-   "expired": false,
-   "fit_score": 0,
-   "fit_why": [],
-   "fit_gap": [
-    "需要工程模擬"
-   ],
-   "fit_block": [],
-   "fit_band": "弱相關",
-   "kind": "job",
-   "rank_band": "51-100",
-   "rank_order": 2
-  },
-  {
    "id": "b5c8c5c81184bbc7",
    "source": "lu",
    "source_name": "Lunds universitet",
@@ -14280,7 +15706,7 @@
     ]
    },
    "first_seen": "2026-11-07",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -14605,7 +16031,7 @@
     ]
    },
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 1,
@@ -14664,7 +16090,7 @@
     ]
    },
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 3,
@@ -14791,7 +16217,7 @@
    },
    "first_seen": "2026-11-06",
    "last_seen": "2026-11-19",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "基因體學"
    ],
@@ -14924,13 +16350,14 @@
     ]
    },
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "能源工程"
    ],
-   "topic_score": 1,
+   "topic_score": 3,
    "topics": [
+    "無障礙",
     "人與 AI 協作",
     "HCI 關鍵字搜尋（弱）"
    ],
@@ -15242,7 +16669,7 @@
     "能源工程"
    ],
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "量子元件",
@@ -15304,7 +16731,7 @@
     ]
    },
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基因體學"
@@ -15370,7 +16797,7 @@
     ]
    },
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "農業生態"
@@ -15379,7 +16806,6 @@
    "topics": [],
    "fields": [],
    "tools": [
-    "Python",
     "MATLAB",
     "工作坊"
    ],
@@ -15424,7 +16850,7 @@
    },
    "page_kind": "job",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -15470,7 +16896,7 @@
    "country_zh": "瑞典",
    "page_kind": "job",
    "first_seen": "2026-11-06",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -15657,7 +17083,7 @@
     ]
    },
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 1,
@@ -16671,7 +18097,7 @@
     ]
    },
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "能源工程"
@@ -16808,7 +18234,7 @@
     "瑞典文（必要）"
    ],
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -16982,7 +18408,7 @@
    "country_zh": "瑞典",
    "page_kind": "job",
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -17036,7 +18462,7 @@
     ]
    },
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -17101,7 +18527,7 @@
     ]
    },
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "材料合成"
@@ -17160,7 +18586,7 @@
    ],
    "page_supervisor": "Professor Anders Ansell",
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -17214,7 +18640,7 @@
     "瑞典文（必要）"
    ],
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -17271,7 +18697,7 @@
     "瑞典文（必要）"
    ],
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "化學分析"
@@ -17285,11 +18711,12 @@
     "瑞典文（必要）"
    ],
    "supervisor": "",
-   "expired": false,
+   "expired": true,
    "fit_score": 0,
    "fit_why": [],
    "fit_gap": [],
    "fit_block": [
+    "已經過了截止日",
     "要會瑞典文"
    ],
    "fit_band": "排除",
@@ -17340,7 +18767,7 @@
     ]
    },
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基礎物理"
@@ -17402,7 +18829,7 @@
     "瑞典文（必要）"
    ],
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 2,
@@ -17461,7 +18888,7 @@
     ]
    },
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -17525,7 +18952,7 @@
     ]
    },
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -17584,7 +19011,7 @@
     "瑞典文（必要）"
    ],
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -17652,7 +19079,7 @@
     ]
    },
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "農業生態",
@@ -17783,7 +19210,7 @@
     ]
    },
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 1,
@@ -17870,7 +19297,7 @@
     ]
    },
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 9,
@@ -17953,7 +19380,7 @@
     ]
    },
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 5,
@@ -18224,7 +19651,7 @@
     ]
    },
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "材料合成"
@@ -18364,7 +19791,7 @@
     ]
    },
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "化學分析"
@@ -18442,7 +19869,7 @@
     ]
    },
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 6,
@@ -18519,7 +19946,7 @@
     ]
    },
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 2,
@@ -18531,7 +19958,6 @@
     "影像視覺"
    ],
    "tools": [
-    "Python",
     "原型製作"
    ],
    "funding": {},
@@ -18578,7 +20004,7 @@
    },
    "page_kind": "job",
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -18631,7 +20057,7 @@
    "page_kind": "studentship",
    "postdoc_suspect": true,
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基因體學"
@@ -18692,7 +20118,7 @@
     ]
    },
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -19067,7 +20493,7 @@
    ],
    "page_kind": "studentship",
    "first_seen": "2026-11-03",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基因體學",
@@ -19406,7 +20832,7 @@
     ]
    },
    "first_seen": "2026-11-03",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基因體學"
@@ -19475,7 +20901,7 @@
     ]
    },
    "first_seen": "2026-11-03",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基因體學"
@@ -19541,7 +20967,7 @@
     ]
    },
    "first_seen": "2026-11-03",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -19592,7 +21018,7 @@
    ],
    "country_zh": "瑞典",
    "first_seen": "2026-11-03",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -20196,13 +21622,14 @@
     ]
    },
    "first_seen": "2026-11-02",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "材料合成"
    ],
-   "topic_score": 0,
+   "topic_score": 1,
    "topics": [
+    "無障礙",
     "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
@@ -22251,7 +23678,7 @@
     ]
    },
    "first_seen": "2026-11-02",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基礎物理"
@@ -22727,7 +24154,7 @@
     ]
    },
    "first_seen": "2026-10-31",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基礎物理",
@@ -24889,7 +26316,7 @@
     ]
    },
    "first_seen": "2026-10-30",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -25211,7 +26638,7 @@
     ]
    },
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "量子元件"
@@ -25272,7 +26699,7 @@
    ],
    "page_supervisor": "Dr. Valérie Pattyn",
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 1,
@@ -25335,7 +26762,7 @@
     ]
    },
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "量子元件",
@@ -25591,13 +27018,14 @@
    },
    "page_kind": "studentship",
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基因體學"
    ],
-   "topic_score": 0,
+   "topic_score": 1,
    "topics": [
+    "無障礙",
     "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
@@ -26448,7 +27876,7 @@
    },
    "page_kind": "studentship",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基因體學",
@@ -27081,7 +28509,7 @@
    ],
    "page_kind": "studentship",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基因體學",
@@ -27570,7 +28998,7 @@
    "page_kind": "studentship",
    "first_seen": "2026-10-28",
    "last_seen": "2026-11-19",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "基因體學"
    ],
@@ -28019,7 +29447,7 @@
    },
    "page_kind": "studentship",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 1,
@@ -28904,7 +30332,7 @@
     ]
    },
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 3,
@@ -28962,7 +30390,7 @@
    "country_zh": "芬蘭",
    "page_kind": "studentship",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 1,
@@ -29144,7 +30572,7 @@
    },
    "page_kind": "studentship",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基因體學",
@@ -29153,6 +30581,7 @@
    ],
    "topic_score": 0,
    "topics": [
+    "無障礙",
     "HCI 關鍵字搜尋（弱）"
    ],
    "fields": [
@@ -29212,7 +30641,7 @@
     ]
    },
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 3,
@@ -29276,7 +30705,7 @@
    },
    "first_seen": "2026-10-28",
    "last_seen": "2026-11-19",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "基因體學"
    ],
@@ -29553,7 +30982,7 @@
     ]
    },
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "量子元件"
@@ -30442,7 +31871,7 @@
     ]
    },
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -30735,7 +32164,7 @@
     ]
    },
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -30744,7 +32173,6 @@
     "交通移動"
    ],
    "tools": [
-    "Python",
     "C++/C#"
    ],
    "funding": {
@@ -31090,7 +32518,7 @@
    "page_supervisor": "Dr. Milos Cvetkovic",
    "page_kind": "job",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "能源工程"
@@ -31285,7 +32713,7 @@
     ]
    },
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "藥學腫瘤"
@@ -31295,9 +32723,7 @@
    "fields": [
     "交通移動"
    ],
-   "tools": [
-    "Python"
-   ],
+   "tools": [],
    "funding": {
     "pay": "€3204"
    },
@@ -31422,7 +32848,7 @@
     ]
    },
    "first_seen": "2026-10-27",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 7,
@@ -31584,7 +33010,7 @@
    },
    "first_seen": "2026-10-27",
    "last_seen": "2026-11-19",
-   "status": "open",
+   "status": "closed",
    "penalties": [
     "基因體學"
    ],
@@ -31834,7 +33260,7 @@
     ]
    },
    "first_seen": "2026-10-27",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "藥學腫瘤"
@@ -32141,7 +33567,7 @@
    },
    "page_kind": "job",
    "first_seen": "2026-10-26",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基因體學",
@@ -32203,7 +33629,7 @@
     ]
    },
    "first_seen": "2026-10-26",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基礎物理"
@@ -33603,7 +35029,7 @@
    },
    "page_kind": "job",
    "first_seen": "2026-10-23",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 1,
@@ -33764,7 +35190,7 @@
    "country_zh": "瑞典",
    "page_kind": "job",
    "first_seen": "2026-10-23",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -34168,7 +35594,7 @@
     ]
    },
    "first_seen": "2026-10-22",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基因體學",
@@ -34519,7 +35945,7 @@
     ]
    },
    "first_seen": "2026-10-22",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 1,
@@ -34592,7 +36018,7 @@
     ]
    },
    "first_seen": "2026-10-22",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基礎物理",
@@ -35979,7 +37405,7 @@
     ]
    },
    "first_seen": "2026-10-20",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 1,
@@ -36860,7 +38286,7 @@
     ]
    },
    "first_seen": "2026-10-19",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -37215,7 +38641,7 @@
    },
    "page_kind": "job",
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 3,
@@ -37396,7 +38822,7 @@
    ],
    "country_zh": "瑞典",
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -37447,7 +38873,7 @@
    ],
    "country_zh": "瑞典",
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -37497,7 +38923,7 @@
    ],
    "country_zh": "瑞典",
    "first_seen": "2026-10-17",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -37976,7 +39402,7 @@
    ],
    "country_zh": "瑞典",
    "first_seen": "2026-10-16",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -38027,7 +39453,7 @@
    ],
    "page_kind": "job",
    "first_seen": "2026-10-16",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基因體學"
@@ -38306,8 +39732,8 @@
     ]
    },
    "first_seen": "2026-10-15",
-   "last_seen": "2026-11-16",
-   "status": "closed",
+   "last_seen": "2026-11-20",
+   "status": "open",
    "penalties": [],
    "topic_score": 1,
    "topics": [
@@ -39036,7 +40462,7 @@
     ]
    },
    "first_seen": "2026-10-14",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -41299,7 +42725,7 @@
     ]
    },
    "first_seen": "2026-10-12",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -41367,7 +42793,7 @@
     ]
    },
    "first_seen": "2026-10-12",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 2,
@@ -43423,404 +44849,6 @@
    "rank_order": 4
   },
   {
-   "id": "e690c4d5c999481a",
-   "source": "euraxess",
-   "source_name": "EURAXESS（全歐洲）",
-   "university": "",
-   "country": "EU",
-   "title": "Research Associate (PhD candidate, m/f/d) in the field of Data-Driven Mechanics",
-   "url": "https://euraxess.ec.europa.eu/jobs/470398",
-   "city": "",
-   "location": "",
-   "department": "",
-   "posted": "2026-10-05",
-   "deadline": "2026-10-31",
-   "summary": "Advance your research career and opportunities with EURAXESS. Discover jobs, funding, and partnerships, and programmes for innovation and career growth.",
-   "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
-   "score_version": 7,
-   "enrich_attempts": 1,
-   "first_seen": "2026-10-05",
-   "last_seen": "2026-10-05",
-   "status": "closed",
-   "topic_score": 0,
-   "topics": [],
-   "fields": [],
-   "tools": [],
-   "rank_band": "",
-   "rank_order": 99
-  },
-  {
-   "id": "55ca26768dfd9f5e",
-   "source": "euraxess",
-   "source_name": "EURAXESS（全歐洲）",
-   "university": "",
-   "country": "EU",
-   "title": "PhD position in Reversible Programming Languages (MSCA Doctoral Network E-CoRe, DC1), University of Copenhagen",
-   "url": "https://euraxess.ec.europa.eu/jobs/470407",
-   "city": "",
-   "location": "",
-   "department": "",
-   "posted": "2026-10-05",
-   "deadline": "2026-10-31",
-   "summary": "Advance your research career and opportunities with EURAXESS. Discover jobs, funding, and partnerships, and programmes for innovation and career growth.",
-   "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
-   "score_version": 7,
-   "enrich_attempts": 1,
-   "first_seen": "2026-10-05",
-   "last_seen": "2026-10-05",
-   "status": "closed",
-   "topic_score": 0,
-   "topics": [],
-   "fields": [],
-   "tools": [],
-   "rank_band": "",
-   "rank_order": 99
-  },
-  {
-   "id": "3ddc366f81d9983e",
-   "source": "academictransfer",
-   "source_name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
-   "university": "DIFFER",
-   "country": "NL",
-   "title": "PhD Position: Agentic AI-Driven Experiments for Materials Discovery",
-   "url": "https://www.academictransfer.com/en/jobs/364461/phd-position-agentic-ai-driven-experiments-for-materials-discovery/",
-   "city": "Eindhoven",
-   "location": "Eindhoven, NL",
-   "department": "",
-   "posted": "2026-10-05",
-   "deadline": "2026-10-25",
-   "summary": "PhD candidate who will join the Autonomous Energy Materials Discovery (AMD) group at DIFFER, working with researchers and engineers who are developing autonomous laboratory technologies. The project is carried out in close collaboration with an industrial partner developing generative AI for materials discovery. The position suits a candidate with strong programming skills, from computer science, ",
-   "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [
-    "Python"
-   ],
-   "score_version": 7,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 1,
-   "first_seen": "2026-10-05",
-   "last_seen": "2026-10-05",
-   "status": "closed",
-   "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "能源",
-    "材料化學"
-   ],
-   "tools": [
-    "Python"
-   ],
-   "rank_band": "",
-   "rank_order": 99
-  },
-  {
-   "id": "e6518fbd4ec2ca5e",
-   "source": "academictransfer",
-   "source_name": "AcademicTransfer（荷蘭各大學，含 TU Delft）",
-   "university": "Delft University of Technology (TU Delft)",
-   "country": "NL",
-   "title": "PhD Position Thermal Sensors based on Sigmal-Delta Modulation",
-   "url": "https://www.academictransfer.com/en/jobs/364463/phd-position-thermal-sensors-based-on-sigmal-delta-modulation/",
-   "city": "Delft",
-   "location": "Delft, NL",
-   "department": "",
-   "posted": "2026-10-05",
-   "deadline": "2026-10-22",
-   "summary": "Shape the future of sensor technology! Job description We’re seeking a talented engineer to design next generation thermal sensors, such as flow sensors and temperature sensors, that are based on sigma-delta modulators. The key requirements for this position are a soild understanding of sensor physics, especially about heat transfer, and a solid background in analog circuit design. Only candidates",
-   "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
-   "score_version": 7,
-   "employment": "TEMPORARY",
-   "enrich_attempts": 1,
-   "first_seen": "2026-10-05",
-   "last_seen": "2026-10-05",
-   "status": "closed",
-   "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "農業食品"
-   ],
-   "tools": [],
-   "rank_band": "11-50",
-   "rank_order": 1
-  },
-  {
-   "id": "902de91bdbc73655",
-   "source": "euraxess",
-   "source_name": "EURAXESS（全歐洲）",
-   "university": "",
-   "country": "EU",
-   "title": "PhD Position - Polymer Mechanochemistry",
-   "url": "https://euraxess.ec.europa.eu/jobs/470428",
-   "city": "",
-   "location": "",
-   "department": "",
-   "posted": "2026-10-05",
-   "deadline": "2026-10-31",
-   "summary": "Advance your research career and opportunities with EURAXESS. Discover jobs, funding, and partnerships, and programmes for innovation and career growth.",
-   "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
-   "score_version": 7,
-   "enrich_attempts": 1,
-   "first_seen": "2026-10-05",
-   "last_seen": "2026-10-05",
-   "status": "closed",
-   "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "材料化學"
-   ],
-   "tools": [],
-   "rank_band": "",
-   "rank_order": 99
-  },
-  {
-   "id": "7b786f2c99117dcc",
-   "source": "euraxess",
-   "source_name": "EURAXESS（全歐洲）",
-   "university": "",
-   "country": "EU",
-   "title": "HeartVision - PhD candidate in Optical Microscopy",
-   "url": "https://euraxess.ec.europa.eu/jobs/470399",
-   "city": "",
-   "location": "",
-   "department": "",
-   "posted": "2026-10-05",
-   "deadline": "2026-10-31",
-   "summary": "Advance your research career and opportunities with EURAXESS. Discover jobs, funding, and partnerships, and programmes for innovation and career growth.",
-   "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
-   "score_version": 7,
-   "enrich_attempts": 1,
-   "first_seen": "2026-10-05",
-   "last_seen": "2026-10-05",
-   "status": "closed",
-   "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "光電半導體"
-   ],
-   "tools": [],
-   "rank_band": "",
-   "rank_order": 99
-  },
-  {
-   "id": "16015121af2061c4",
-   "source": "euraxess",
-   "source_name": "EURAXESS（全歐洲）",
-   "university": "Monash University",
-   "country": "EU",
-   "title": "Fully funded PhD scholarship in Animal Behaviour and Evolutionary Ecology, Monash University, Australia",
-   "url": "https://euraxess.ec.europa.eu/jobs/470373",
-   "city": "Clayton Postal",
-   "location": "",
-   "department": "",
-   "posted": "2026-10-05",
-   "deadline": "2026-11-15",
-   "summary": "FULLY FUNDED PHD SCHOLARSHIP Monash Postgraduate Scholarship in Animal Behaviour and Evolutionary EcologySchool of Biological Sciences, Monash University, Melbourne, Australia",
-   "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [
-    "田野／民族誌",
-    "文獻回顧"
-   ],
-   "score_version": 7,
-   "enrich_attempts": 1,
-   "first_seen": "2026-10-05",
-   "last_seen": "2026-10-05",
-   "status": "closed",
-   "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "氣候環境",
-    "生命科學"
-   ],
-   "tools": [
-    "田野／民族誌",
-    "文獻回顧"
-   ],
-   "rank_band": "",
-   "rank_order": 99
-  },
-  {
-   "id": "82002285741d4a42",
-   "source": "euraxess",
-   "source_name": "EURAXESS（全歐洲）",
-   "university": "",
-   "country": "EU",
-   "title": "Doctoral student in Medical Science - CAR T cell therapy for B cell malignancies",
-   "url": "https://euraxess.ec.europa.eu/jobs/470374",
-   "city": "Sahlgrenska Academy",
-   "location": "",
-   "department": "",
-   "posted": "2026-10-05",
-   "deadline": "2026-10-26",
-   "summary": "The University of Gothenburg tackles society’s challenges with diverse knowledge. 58 000 students and 6800 employees make the university a large and inspiring place to work and study. Strong research and attractive study programmes attract researchers and students from around the world.",
-   "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [],
-   "score_version": 7,
-   "enrich_attempts": 1,
-   "first_seen": "2026-10-05",
-   "last_seen": "2026-10-05",
-   "status": "closed",
-   "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "醫療"
-   ],
-   "tools": [],
-   "rank_band": "",
-   "rank_order": 99
-  },
-  {
-   "id": "e1917a05b8204fae",
-   "source": "euraxess",
-   "source_name": "EURAXESS（全歐洲）",
-   "university": "CNRS",
-   "country": "EU",
-   "title": "PhD student (M/F) - Structural transformations of lamellar hydroxides for heat storage",
-   "url": "https://euraxess.ec.europa.eu/jobs/470368",
-   "city": "STRASBOURG Contact",
-   "location": "",
-   "department": "",
-   "posted": "2026-10-04",
-   "deadline": "2026-10-24",
-   "summary": "The PhD thesis, funded by the CNRS, will be carried out within the framework of the CARMEN Joint Research Laboratory (CAractérisation des Matériaux pour les Energies Nouvelles) and will primarily involve the IPCMS (Institute of Physics and Chemistry of Materials of Strasbourg) and the LCMCP (Labo",
-   "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
-   "page_score": 2,
-   "page_topics": [
-    "無障礙"
-   ],
-   "page_tools": [],
-   "score_version": 7,
-   "enrich_attempts": 1,
-   "first_seen": "2026-10-05",
-   "last_seen": "2026-10-05",
-   "status": "closed",
-   "topic_score": 2,
-   "topics": [
-    "無障礙"
-   ],
-   "fields": [
-    "材料化學"
-   ],
-   "tools": [],
-   "rank_band": "",
-   "rank_order": 99
-  },
-  {
-   "id": "269edbec0b577bd9",
-   "source": "euraxess",
-   "source_name": "EURAXESS（全歐洲）",
-   "university": "Itä-Suomen yliopisto",
-   "country": "EU",
-   "title": "Doctoral Researcher/Project Researcher, Molecular Physiology",
-   "url": "https://euraxess.ec.europa.eu/jobs/470364",
-   "city": "Kuopio Contact",
-   "location": "",
-   "department": "",
-   "posted": "2026-10-04",
-   "deadline": "2026-10-29",
-   "summary": "The Molecular Physiology research group at the A.I. Virtanen Institute, University of Eastern Finland, invites applications for a Project or Doctoral Researcher position, which will be filled for a fixed term of 3 years from 1 January 2027 onwards (or as agreed).",
-   "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
-   "page_score": 0,
-   "page_topics": [],
-   "page_tools": [
-    "Python"
-   ],
-   "score_version": 7,
-   "enrich_attempts": 1,
-   "first_seen": "2026-10-05",
-   "last_seen": "2026-10-05",
-   "status": "closed",
-   "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "生命科學"
-   ],
-   "tools": [
-    "Python"
-   ],
-   "rank_band": "",
-   "rank_order": 99
-  },
-  {
-   "id": "cbb87f21ba86934d",
-   "source": "euraxess",
-   "source_name": "EURAXESS（全歐洲）",
-   "university": "Princess Máxima Center for pediatric oncology",
-   "country": "EU",
-   "title": "15 PhD positions in the MSCA-DN ORFeus: decoding the dark proteome",
-   "url": "https://euraxess.ec.europa.eu/jobs/470256",
-   "city": "",
-   "location": "",
-   "department": "",
-   "posted": "2026-10-03",
-   "deadline": "2026-10-22",
-   "summary": "Description",
-   "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
-   "page_score": 2,
-   "page_topics": [
-    "無障礙"
-   ],
-   "page_tools": [
-    "工作坊"
-   ],
-   "score_version": 7,
-   "enrich_attempts": 1,
-   "first_seen": "2026-10-05",
-   "last_seen": "2026-10-05",
-   "status": "closed",
-   "topic_score": 2,
-   "topics": [
-    "無障礙"
-   ],
-   "fields": [],
-   "tools": [
-    "工作坊"
-   ],
-   "rank_band": "",
-   "rank_order": 99
-  },
-  {
    "id": "213b0a8917f1f6cd",
    "source": "academictransfer_hci",
    "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
@@ -44033,7 +45061,7 @@
     ]
    },
    "first_seen": "2026-10-03",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [],
    "topic_score": 0,
@@ -45544,7 +46572,7 @@
     ]
    },
    "first_seen": "2026-09-30",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基礎物理",
@@ -46052,43 +47080,6 @@
    "rank_order": 2
   },
   {
-   "id": "2887bbb16852e9ba",
-   "source": "tum",
-   "source_name": "TU München",
-   "university": "",
-   "country": "DE",
-   "title": "Doctoral Candidate for MSCA Doctoral Network REGULAIRE, DC5: Procurement as a Learning Instrument",
-   "url": "https://portal.mytum.de/jobs/wissenschaftler/NewsArticle_20260924_133111",
-   "city": "München",
-   "location": "",
-   "department": "",
-   "posted": "",
-   "deadline": "2000-10-31",
-   "summary": "Are you curious how governments can use public procurement not just to buy new technologies, but to learn about them? TUM is hiring a doctoral researcher for REGULAIRE, a Marie Skłodowska-Curie Actions (MSCA) Doctoral Network exploring how regulation learns in the governance of emerging technologies. This is a paid, three-year employment contract with full training, international mobility and clos",
-   "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
-   "enrich_attempts": 3,
-   "score_version": 7,
-   "page_tools": [
-    "工作坊"
-   ],
-   "first_seen": "2026-09-25",
-   "last_seen": "2026-10-05",
-   "status": "closed",
-   "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "法律政策",
-    "交通移動"
-   ],
-   "tools": [
-    "工作坊"
-   ],
-   "rank_band": "11-50",
-   "rank_order": 1
-  },
-  {
    "id": "0813ab3b7e6a8ce7",
    "source": "tum",
    "source_name": "TU München",
@@ -46227,7 +47218,7 @@
     "化學分析"
    ],
    "first_seen": "2026-09-24",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "材料合成",
@@ -46947,41 +47938,6 @@
    ],
    "rank_band": "51-100",
    "rank_order": 2
-  },
-  {
-   "id": "9ac5822a6c81b746",
-   "source": "uu",
-   "source_name": "Uppsala universitet",
-   "university": "",
-   "country": "SE",
-   "title": "PhD student in vascular immunology",
-   "url": "https://uu.varbi.com/en/what:job/jobID:962817/",
-   "city": "Uppsala",
-   "location": "",
-   "department": "",
-   "posted": "",
-   "deadline": "2026-10-05",
-   "summary": "The Department of Immunology, Genetics and Pathology at Uppsala University has a broad research profile with strong research groups focused on cancer, autoimmune and genetic diseases. A fundamental id",
-   "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
-   "enrich_attempts": 3,
-   "page_score": 2,
-   "page_topics": [
-    "無障礙"
-   ],
-   "score_version": 7,
-   "first_seen": "2026-09-21",
-   "last_seen": "2026-10-05",
-   "status": "closed",
-   "topic_score": 0,
-   "topics": [],
-   "fields": [
-    "生命科學"
-   ],
-   "tools": [],
-   "rank_band": "101-200",
-   "rank_order": 3
   },
   {
    "id": "5085290d1337bb5f",
@@ -47847,7 +48803,7 @@
    ],
    "page_supervisor": "Associate Professor Nicolò Maccaferri",
    "first_seen": "2026-09-15",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基因體學",
@@ -47906,7 +48862,7 @@
    ],
    "page_supervisor": "Associate Professor Nicolò Maccaferri",
    "first_seen": "2026-09-15",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "基因體學",
@@ -48166,50 +49122,6 @@
    "rank_order": 3
   },
   {
-   "id": "78a89b16161ffcba",
-   "source": "academictransfer_hci",
-   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
-   "university": "Wageningen University & Research",
-   "country": "NL",
-   "title": "PhD position Landscape Governance",
-   "url": "https://www.academictransfer.com/en/jobs/363800/phd-position-landscape-governance/",
-   "city": "Wageningen",
-   "location": "Wageningen, NL",
-   "department": "",
-   "posted": "2026-09-08",
-   "deadline": "2026-10-05",
-   "summary": "Are you a systems thinker passionate about bending the curve of biodiversity loss in agricultural landscapes? Are you looking for a meaningful research path with impact on the ground? Are you eager to join a stimulating environment, collaborate across academic fields, and engage with private and public actors? Are you enthusiastic to dive into effective planning and governance arrangements for bio",
-   "title_guessed": false,
-   "found_via": "interaction design",
-   "topic_boost": 3,
-   "enrich_attempts": 8,
-   "score_version": 7,
-   "page_tools": [
-    "訪談",
-    "工作坊",
-    "混合方法"
-   ],
-   "first_seen": "2026-09-11",
-   "last_seen": "2026-10-05",
-   "status": "closed",
-   "topic_score": 1,
-   "topics": [
-    "HCI 關鍵字搜尋（弱）"
-   ],
-   "fields": [
-    "氣候環境",
-    "法律政策",
-    "農業食品"
-   ],
-   "tools": [
-    "訪談",
-    "工作坊",
-    "混合方法"
-   ],
-   "rank_band": "101-200",
-   "rank_order": 3
-  },
-  {
    "id": "707ce4a8fe401109",
    "source": "academictransfer_hci",
    "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
@@ -48287,87 +49199,6 @@
    ],
    "rank_band": "201-500",
    "rank_order": 4
-  },
-  {
-   "id": "7be57e4793a5d192",
-   "source": "academictransfer_hci",
-   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
-   "university": "Amsterdam UMC",
-   "country": "NL",
-   "title": "MSCA-DN PhD position in liquid biomarkers for leukodystrophies (Tübingen, GE)",
-   "url": "https://www.academictransfer.com/en/jobs/363694/msca-dn-phd-position-in-liquid-biomarkers-for-leukodystrophies-tubingen-ge/",
-   "city": "Amsterdam",
-   "location": "Amsterdam, NL",
-   "department": "",
-   "posted": "2026-09-03",
-   "deadline": "2026-10-05",
-   "summary": "POLARIS doctoral network POLARIS is a European Marie Skłodowska-Curie Doctoral Network focused on accelerating therapy development for leukodystrophies: rare genetic disorders affecting the brain's white matter. The network aims to strengthen the full translational pathway, from understanding disease mechanisms and developing disease models to preclinical therapy testing, clinical readiness and pa",
-   "title_guessed": false,
-   "found_via": "human-computer interaction",
-   "topic_boost": 3,
-   "enrich_attempts": 8,
-   "score_version": 7,
-   "page_tools": [
-    "Python"
-   ],
-   "first_seen": "2026-09-11",
-   "last_seen": "2026-10-05",
-   "status": "closed",
-   "topic_score": 1,
-   "topics": [
-    "HCI 關鍵字搜尋（弱）"
-   ],
-   "fields": [
-    "醫療",
-    "神經科學",
-    "生命科學"
-   ],
-   "tools": [
-    "Python"
-   ],
-   "rank_band": "未列入",
-   "rank_order": 5
-  },
-  {
-   "id": "1effabfc93e195e4",
-   "source": "academictransfer_hci",
-   "source_name": "AcademicTransfer（HCI 關鍵字搜尋）",
-   "university": "Amsterdam UMC",
-   "country": "NL",
-   "title": "MSCA-DN PhD in regulatory & access pathways for leukodystrophy (Utrecht, NL)",
-   "url": "https://www.academictransfer.com/en/jobs/363695/msca-dn-phd-in-regulatory-access-pathways-for-leukodystrophy-utrecht-nl/",
-   "city": "Amsterdam",
-   "location": "Amsterdam, NL",
-   "department": "",
-   "posted": "2026-09-03",
-   "deadline": "2026-10-05",
-   "summary": "POLARIS doctoral network POLARIS is a European Marie Skłodowska-Curie Doctoral Network focused on accelerating therapy development for leukodystrophies: rare genetic disorders affecting the brain's white matter. The network aims to strengthen the full translational pathway, from understanding disease mechanisms and developing disease models to preclinical therapy testing, clinical readiness and pa",
-   "title_guessed": false,
-   "found_via": "accessibility",
-   "topic_boost": 3,
-   "enrich_attempts": 8,
-   "page_score": 2,
-   "page_topics": [
-    "無障礙"
-   ],
-   "query_ok": true,
-   "score_version": 7,
-   "first_seen": "2026-09-11",
-   "last_seen": "2026-10-05",
-   "status": "closed",
-   "topic_score": 5,
-   "topics": [
-    "無障礙",
-    "HCI 關鍵字搜尋"
-   ],
-   "fields": [
-    "醫療",
-    "神經科學",
-    "生命科學"
-   ],
-   "tools": [],
-   "rank_band": "未列入",
-   "rank_order": 5
   },
   {
    "id": "360397abdafbad38",
@@ -49119,7 +49950,7 @@
     "瑞典文（必要）"
    ],
    "first_seen": "2026-09-11",
-   "last_seen": "2026-11-19",
+   "last_seen": "2026-11-20",
    "status": "open",
    "penalties": [
     "資安底層"
@@ -49143,39 +49974,6 @@
    ],
    "fit_band": "排除",
    "kind": "job",
-   "rank_band": "51-100",
-   "rank_order": 2
-  },
-  {
-   "id": "fdb3d69362d89cd4",
-   "source": "kth",
-   "source_name": "KTH Royal Institute of Technology",
-   "university": "",
-   "country": "SE",
-   "title": "Doctoral student in mobile wireless sub-THz MIMO communication for 7G",
-   "url": "https://kth.varbi.com/en/what:job/jobID:962649/",
-   "city": "Stockholm",
-   "location": "",
-   "department": "",
-   "posted": "",
-   "deadline": "2026-10-01",
-   "summary": "Project description Third-cycle subject: Information and Communication Technology In this doctoral project, you will contribute to the theory formation for mobile sub-terahertz (sub-THz) and terahertz",
-   "title_guessed": false,
-   "found_via": "",
-   "topic_boost": 0,
-   "enrich_attempts": 9,
-   "page_score": 2,
-   "page_topics": [
-    "無障礙"
-   ],
-   "score_version": 7,
-   "first_seen": "2026-09-11",
-   "last_seen": "2026-10-05",
-   "status": "closed",
-   "topic_score": 0,
-   "topics": [],
-   "fields": [],
-   "tools": [],
    "rank_band": "51-100",
    "rank_order": 2
   },
